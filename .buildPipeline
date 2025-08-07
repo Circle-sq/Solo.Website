@@ -1,0 +1,5 @@
+@Library("sc-build-pipeline") _
+
+buildFrontend {
+    serviceName = "gpp-website"
+}

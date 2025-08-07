@@ -1,0 +1,14 @@
+import type { IconProps } from '../types';
+import SvgElement from 'src/assets/icons/SvgElement/SvgElement';
+
+const InfoIcon = ({ className, testId = 'testId' }: IconProps) => (
+    <SvgElement className={className} testId={testId}>
+        <path
+            d='M8 0C3.584 0 0 3.584 0 8C0 12.416 3.584 16 8 16C12.416 16 16 12.416 16 8C16 3.584 12.416 0 8 0ZM8.8 12H7.2V7.2H8.8V12ZM8.8 5.6H7.2V4H8.8V5.6Z'
+            data-testid={`info-icon-${testId}`}
+            fill='#00A3FE'
+        />
+    </SvgElement>
+);
+
+export default InfoIcon;

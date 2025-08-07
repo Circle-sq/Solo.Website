@@ -1,0 +1,38 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-self: flex-start;
+  margin: 0;
+  padding: 0;
+  font-size: 0.75em;
+  user-select: none;
+  white-space: nowrap;
+}
+.pagination li a {
+  display: inline-block;
+  border: 1px solid $pagination-element-anchor-borderColor;
+  padding: 0 0.8em;
+  color: $pagination-element-anchor-color;
+  text-decoration: none;
+  margin-left: -1px;
+  text-align: center;
+}
+.pagination li:first-of-type a {
+  border-radius: 15px 0 0 15px;
+}
+.pagination li:first-of-type a:before {
+  content: "\ab";
+  margin-right: 4px;
+}
+.pagination li:last-child a {
+  border-radius: 0 15px 15px 0;
+}
+.pagination li:last-child a:after {
+  content: "\bb";
+  margin-left: 4px;
+}
+.pagination li.pagination__item--disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}

@@ -1,0 +1,11 @@
+.date-range-form__label {
+  line-height: 2.8em;
+  font-size: pxToPr(12px, "em", $basicFontSize);
+  padding: 10px 0;
+}
+.date-range-form .buttons {
+  text-align: right;
+}
+.date-range-form .form {
+  margin: 0;
+}

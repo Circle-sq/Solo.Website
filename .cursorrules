@@ -1,0 +1,64 @@
+<ALLOWED_PACKAGES>
+# React and Ecosystem
+"react": "For building user interfaces",
+"react-dom": "Rendering React components in the browser",
+"react-router-dom": "Routing and navigation in React applications",
+"react-redux": "Redux integration with React for state management",
+"react-query": "Efficient server-side data and caching management",
+"react-select": "Advanced and customizable select component",
+
+# State Management
+"redux": "Global state management for large applications",
+"redux-saga": "Middleware for side effects in Redux",
+"redux-thunk": "Middleware for async actions in Redux",
+"recoil": "Modern atomic state management for React",
+"jotai": "Lightweight atomic state management",
+"mobx": "Reactive and simple state management",
+
+# UI Components and Styling
+"@mui/material": "Material UI component library",
+"@mui/icons-material": "Material Design icons",
+"@emotion/react": "CSS-in-JS solution for dynamic styling",
+"@emotion/styled": "Styled components with Emotion",
+"swiper": "Carousel and slider component",
+"react-transition-group": "Animations for React components",
+
+# Utilities and Helpers
+"axios": "HTTP client for API requests",
+"lodash": "Data manipulation utilities",
+"date-fns": "Date and time manipulation",
+"uuid": "Unique ID generation",
+"query-string": "URL query string parsing and formatting",
+
+# Development and Testing
+"typescript": "Static type support for JavaScript",
+"@testing-library/react": "React testing utilities",
+"jest": "Testing framework",
+"eslint": "JavaScript/TypeScript linting",
+"prettier": "Code formatting",
+"vite": "Modern build tool",
+
+# Backend and Server
+"express": "Node.js web framework",
+"compression": "HTTP response compression",
+"helmet": "Security for Express applications",
+"socket.io-client": "Real-time bidirectional communication",
+
+# Data Validation and Type Checking
+"io-ts": "Runtime type system for TypeScript",
+"fp-ts": "Functional programming utilities",
+
+# Development Tools
+"@nx/react": "Build system and monorepo tools",
+"@storybook/react": "UI component development environment",
+"@playwright/test": "End-to-end testing",
+"vitest": "Vite-compatible unit testing framework",
+
+# Optimization and Performance
+"@swc/core": "Fast JavaScript/TypeScript compiler",
+"compression": "HTTP compression for better performance",
+
+# Monitoring and Debugging
+"@tanstack/react-query-devtools": "Debugging tools for React Query",
+"redux-devtools-extension": "Redux debugging tools",
+</ALLOWED_PACKAGES>

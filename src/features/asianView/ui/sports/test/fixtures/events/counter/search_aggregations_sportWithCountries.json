@@ -1,0 +1,47 @@
+{
+  "sports": [
+    {
+      "id": "football",
+      "count": 33
+    },
+    {
+      "id": "tennis",
+      "count": 16
+    },
+    {
+      "id": "tabletennis",
+      "count": 8
+    },
+    {
+      "id": "esoccer",
+      "count": 6
+    },
+    {
+      "id": "baseball",
+      "count": 5
+    },
+    {
+      "id": "icehockey",
+      "count": 5
+    },
+    {
+      "id": "volleyball",
+      "count": 4
+    },
+    {
+      "id": "basketball",
+      "count": 3
+    },
+    {
+      "id": "csgo",
+      "count": 1
+    },
+    {
+      "id": "handball",
+      "count": 1
+    }
+  ],
+  "country": [],
+  "competitions": [],
+  "total": 82
+}

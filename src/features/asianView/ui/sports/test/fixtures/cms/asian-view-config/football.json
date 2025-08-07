@@ -1,0 +1,46 @@
+{
+  "id": 1,
+  "sport": "football",
+  "startTime": "Time",
+  "event": "Match",
+  "primaryGroup": {
+    "name": "Full Time",
+    "markets": [
+      {
+        "id": "bet-radar-1",
+        "name": "1x2",
+        "order": 1
+      },
+      {
+        "id": "bet-radar-18",
+        "name": "O/U",
+        "order": 2
+      },
+      {
+        "id": "bet-radar-16",
+        "name": "HDP",
+        "order": 3
+      }
+    ]
+  },
+  "secondaryGroup": {
+    "name": "1st Half",
+    "markets": [
+      {
+        "id": "bet-radar-60",
+        "name": "1x2",
+        "order": 1
+      },
+      {
+        "id": "bet-radar-68",
+        "name": "O/U",
+        "order": 2
+      },
+      {
+        "id": "bet-radar-66",
+        "name": "HDP",
+        "order": 3
+      }
+    ]
+  }
+}

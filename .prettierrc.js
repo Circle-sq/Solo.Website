@@ -1,0 +1,28 @@
+module.exports = {
+    bracketSameLine: false,
+    jsxSingleQuote: true,
+    parser: 'typescript',
+    printWidth: 120,
+    quoteProps: 'as-needed',
+    semi: true,
+    singleQuote: true,
+    tabWidth: 4,
+    trailingComma: 'all',
+    bracketSpacing: true,
+    arrowParens: 'always',
+    overrides: [
+        {
+            files: '*.json',
+            options: {
+                tabWidth: 2,
+                parser: 'json',
+            },
+        },
+        {
+            files: '*.md',
+            options: {
+                parser: 'markdown',
+            },
+        },
+    ],
+};

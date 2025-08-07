@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.base.json",
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register"
+    ],
+    "transpileOnly": true,
+    "files": true,
+    "compilerOptions": {
+      "types": [
+        "libs/ui-system/src/**/*.d.ts",
+        "libs/ui-system/src/lib/type**/*.d.ts",
+      ],
+      "module": "commonjs"
+    }
+  },
+}

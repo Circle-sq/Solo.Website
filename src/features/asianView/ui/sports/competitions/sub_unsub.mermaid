@@ -1,0 +1,90 @@
+---
+title: Sub Unsub Feature
+---
+classDiagram
+    WebsocketLayer --> ModelSubscribeBridgeService: Uses
+    note for ModelSubscribeBridgeService  "redux/mobx implementation"
+    WebsocketLayer --> WebsocketSubscriptionProvider: Passes modelSubscribeBridgeService as prop
+
+    ModelSubscribeBridgeService --> WebsocketState
+    PubSubService <|.. WebsocketState : implements
+    ModelSubscribeBridgeService --> ModelState
+    ModelService <|.. ModelState : implements
+
+    WebsocketSubscriptionProvider --> SubscribeBridgeService: Uses
+    WebsocketSubscriptionProvider --> SubscriptionQueueService: Uses
+    WebsocketSubscriptionProvider --> PubSubContext: Provides
+    Queue <|.. SubscriptionQueueService : implements
+
+%%    ReactQuerySubscribeBridgeService --> ReactQuerySubUnsubService
+%%    ReactQuerySubscribeBridgeService --> ReactQueryModelService
+%%    PubSubService <|.. ReactQuerySubUnsubService : implements
+%%    ModelService <|.. ReactQueryModelService : implements
+
+    class WebsocketLayer {
+        +SubscribeBridgeService modelSubscribeBridgeService
+    }
+    class ModelSubscribeBridgeService {
+        <<factory>>
+        +PubSubService websocket
+        +ModelService models
+        +createService() SubscribeBridgeService
+    }
+
+    class WebsocketSubscriptionProvider {
+        <<Provider>>
+        -SubscribeBridgeService modelSubscriptionService
+        -SubscriptionQueueService cachedPubSubService
+    }
+
+    class WebsocketState { }
+    class ModelState { }
+    class SubscriptionQueueService { }
+%%    namespace ReactQueryImplementation {
+%%        class ReactQuerySubscribeBridgeService {
+%%            +PubSubService websocket
+%%            +ModelService models
+%%            +subscribe(id, entity)
+%%            +unsubscribe(id, entity)
+%%        }
+%%        class ReactQuerySubUnsubService { }
+%%        class ReactQueryModelService { }
+%%    }
+    class PubSubContext {
+        +subscribe(entities[])
+        +unsubscribe(entities[])
+    }
+
+        class Queue {
+            <<interface>>
+            + empty()
+            + addToQueue(key, cb, color?)
+            + cancel(key, color?)
+            + inQueue(key)
+            + clear()
+            + log()
+        }
+        class SubscribeBridgeService {
+            <<interface>>
+            +subscribeTo(id,entityType)
+            +unsubscribeFrom(id,entityType)
+        }
+        class ModelService {
+            <<interface>>
+            +getEvent(id)
+            +getMarket(id)
+        }
+        class PubSubService {
+            <<interface>>
+            +subscribeToEvent(eventId, revision)
+            +subscribeToMarketEvent(eventId, marketId, revision)
+            +unsubscribeEvents(eventIds[])
+            +unsubscribeMarkets(marketIds[])
+        }
+
+
+    style ReactQuerySubUnsubService stroke:#1971c2,stroke-width:4px
+    style ReactQuerySubscribeBridgeService stroke:#1971c2,stroke-width:4px
+    style ReactQueryModelService stroke:#1971c2,stroke-width:4px
+
+

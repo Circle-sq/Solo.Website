@@ -1,0 +1,6 @@
+.date-input .form__element {
+  margin: 0;
+}
+.form__element--error .date-input .form__element--select:not(.form__element--empty):not(.form__element--disabled) > select {
+  border-color: $formElementError-dateInput-formElementSelect-notFormElementEmpty-not-formElementDisabled-select-borderColor;
+}

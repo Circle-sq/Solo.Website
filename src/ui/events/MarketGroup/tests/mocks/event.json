@@ -1,0 +1,307 @@
+{
+    "eventType": null,
+    "blockSettlement": null,
+    "autoTakeDown": null,
+    "antePost": null,
+    "streams": [],
+    "inPlayDelaySettings": null,
+    "feedData": {},
+    "marketIndex": [
+        {
+            "id": 258105,
+            "name": "Double chance",
+            "templateId": "bet-radar-10",
+            "active": true,
+            "display": true,
+            "marketType": "double",
+            "marketState": "open",
+            "outright": false
+        },
+        {
+            "id": 258128,
+            "name": "Handicap",
+            "templateId": "bet-radar-16",
+            "active": true,
+            "display": true,
+            "marketType": "twowayhandicap",
+            "marketState": "open",
+            "outright": false
+        },
+        {
+            "id": 258122,
+            "name": "Total",
+            "templateId": "bet-radar-18",
+            "active": true,
+            "display": true,
+            "marketType": "overunder",
+            "marketState": "open",
+            "outright": false
+        },
+        {
+            "id": 258129,
+            "name": "1x2",
+            "templateId": "bet-radar-1",
+            "active": true,
+            "display": true,
+            "marketType": "threewaywinner",
+            "marketState": "open",
+            "outright": false
+        }
+    ],
+    "name": "Adhyaksa Farmel FC vs Persibo Bojonegoro",
+    "type": "multi-participants-event",
+    "originalName": "Adhyaksa Farmel FC vs Persibo Bojonegoro",
+    "state": "open",
+    "template": "match",
+    "sport": "football",
+    "tags": {
+        "website-show": [
+            "yes"
+        ],
+        "highlight": [
+            "no"
+        ],
+        "market-group": [
+            "-"
+        ],
+        "country-label": [
+            "Indonesia"
+        ],
+        "skycity-events": [
+            "-"
+        ],
+        "category-label": [
+            "-"
+        ],
+        "outright": [
+            "no"
+        ],
+        "ante-post": [
+            "no"
+        ],
+        "country": [
+            "INA"
+        ],
+        "region": [
+            "-"
+        ],
+        "category": [
+            "-"
+        ]
+    },
+    "timeSettings": {
+        "startTime": "2024-06-07T07:00:00Z",
+        "timeZone": "UTC",
+        "started": true,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeline": "Started"
+    },
+    "competition": 344,
+    "participants": {
+        "8565": {
+            "id": 8565,
+            "name": "Adhyaksa Farmel FC",
+            "tags": {
+                "uniformUrl": [
+                    "/football/player/881555/home"
+                ]
+            },
+            "metadata": {
+                "silk": null,
+                "silkUrl": null,
+                "number": null,
+                "weight": null,
+                "drawn": null,
+                "jockey": null,
+                "trainer": null,
+                "status": null,
+                "place": null
+            },
+            "role": "home"
+        },
+        "8566": {
+            "id": 8566,
+            "name": "Persibo Bojonegoro",
+            "tags": {
+                "uniformUrl": [
+                    "/football/player/86070/home"
+                ]
+            },
+            "metadata": {
+                "silk": null,
+                "silkUrl": null,
+                "number": null,
+                "weight": null,
+                "drawn": null,
+                "jockey": null,
+                "trainer": null,
+                "status": null,
+                "place": null
+            },
+            "role": "away"
+        }
+    },
+    "active": true,
+    "display": true,
+    "displayOrder": 0,
+    "cashoutAvailable": false,
+    "marketIds": [
+        258123,
+        258141,
+        258134,
+        258117,
+        258154,
+        258152,
+        258106,
+        258115,
+        258139,
+        258156,
+        258124,
+        258125,
+        258133,
+        258135,
+        259691,
+        258116,
+        262982,
+        266699,
+        265772,
+        262985,
+        258128,
+        258138,
+        258136,
+        262986,
+        258112,
+        258107,
+        261004,
+        262987,
+        265773,
+        258118,
+        258150,
+        258113,
+        258145,
+        258122,
+        262994,
+        258105,
+        258110,
+        258148,
+        262980,
+        258129,
+        258140,
+        262988
+    ],
+    "translationData": {
+        "event": "Adhyaksa Farmel FC vs Persibo Bojonegoro",
+        "competition": "Liga 3",
+        "participants": [
+            "Adhyaksa Farmel FC",
+            "Persibo Bojonegoro"
+        ]
+    },
+    "media": {
+        "statistics": [],
+        "liveTrackers": [
+            {
+                "id": "50594985",
+                "provider": "betradar",
+                "externalId": null
+            }
+        ],
+        "streams": []
+    },
+    "revision": 153,
+    "markets": {
+        "258105": true,
+        "258106": true,
+        "258107": true,
+        "258110": true,
+        "258112": true,
+        "258113": true,
+        "258115": true,
+        "258116": true,
+        "258117": true,
+        "258118": true,
+        "258122": true,
+        "258123": true,
+        "258124": true,
+        "258125": true,
+        "258128": true,
+        "258129": true,
+        "258133": true,
+        "258134": true,
+        "258135": true,
+        "258136": true,
+        "258138": true,
+        "258139": true,
+        "258140": true,
+        "258141": true,
+        "258145": true,
+        "258148": true,
+        "258150": true,
+        "258152": true,
+        "258154": true,
+        "258156": true,
+        "259691": true,
+        "261004": true,
+        "262980": true,
+        "262982": true,
+        "262985": true,
+        "262986": true,
+        "262987": true,
+        "262988": true,
+        "262994": true,
+        "265772": true,
+        "265773": true,
+        "266699": true
+    },
+    "id": 2844,
+    "platformId": "02_sr:match:50594985",
+    "statistics": {
+        "score": {
+            "home": "1",
+            "away": "1"
+        },
+        "timer": {
+            "value": "53:16"
+        },
+        "corner-kicks": {
+            "home": "1",
+            "away": "2"
+        },
+        "period": {
+            "value": "2nd half"
+        },
+        "substitution": {
+            "home": "0",
+            "away": "0"
+        },
+        "period-scores": [
+            {
+                "period": "1",
+                "home": "1",
+                "away": "1"
+            },
+            {
+                "period": "2",
+                "home": "0",
+                "away": "0"
+            }
+        ],
+        "yellow-cards": {
+            "home": "2",
+            "away": "2"
+        },
+        "red-cards": {
+            "home": "0",
+            "away": "0"
+        },
+        "yellow-red-cards": {
+            "home": "0",
+            "away": "0"
+        }
+    },
+    "score": {
+        "home": "1",
+        "away": "1"
+    }
+}

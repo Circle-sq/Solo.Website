@@ -1,0 +1,117 @@
+{
+    "id":5224,
+    "name":"Correct score",
+    "active":true,
+    "display":true,
+    "displayOrder":40,
+    "event":{
+        "id":105,
+        "name":"Denmark vs Sweden",
+        "externalId":null
+    },
+    "template":{
+        "id":"bet-radar-199",
+        "eventTemplateId":"multi-participant-event",
+        "sportId":"icehockey",
+        "name":"Correct score (199)",
+        "customName":"Correct score",
+        "url":null,
+        "marketTemplateType":"199",
+        "marketTypeGeneric":"correctscore",
+        "period":"Regular play",
+        "mainGroup":"Correct Score"
+    },
+    "tradedInPlay":false,
+    "tags":{
+        "market-display":[
+            "-"
+        ],
+        "market-group--popular-markets":[
+            "no"
+        ],
+        "website-main":[
+            "no"
+        ],
+        "market-group":[
+            "Main"
+        ],
+        "display-template":[
+            "-"
+        ],
+        "outright":[
+            "no"
+        ],
+        "ante-post":[
+            "no"
+        ],
+        "display-order":[
+            "-"
+        ],
+        "website-popular":[
+            "-"
+        ]
+    },
+    "state":"open",
+    "line":null,
+    "cashoutAvailable":true,
+    "sp":false,
+    "spApplicable":false,
+    "bp":false,
+    "bpApplicable":false,
+    "spOnly":false,
+    "singlesOnly":false,
+    "cashoutMarketSettings":null,
+    "selections":[
+
+        {
+        "id": 17042,
+        "name": "2:0",
+        "nameWithoutLine": null,
+        "active": true,
+        "display": true,
+        "displayOrder": 0,
+        "identifier" : "H",
+        "price": {
+            "d": 151,
+            "f": "150/1"
+        },
+        "state": "open",
+        "tags": {
+            "selection-identifiers--icehockey": [
+                "H"
+            ],
+            "price-boost": [
+                "no"
+            ],
+            "selection-identifier": [
+                "H"
+            ]
+        },
+        "template": {
+            "id": "default-selection",
+            "marketTemplateId": "bet-radar-199",
+            "eventTemplateId": "multi-participant-event",
+            "sportId": "icehockey",
+            "name": "default-selection"
+        },
+        "line": null,
+        "nameWithPlaceholders": "2:0",
+        "eventId": 105,
+        "marketId": 5224,
+        "sp": false
+    }
+    ],
+    "possibleSelections":[
+
+    ],
+    "outright":false,
+    "teams":[
+        "Denmark",
+        "Sweden"
+    ],
+    "time":"",
+    "nameWithPlaceholders":"Correct score",
+    "revision":3,
+    "visible": true,
+    "eventId":105
+}

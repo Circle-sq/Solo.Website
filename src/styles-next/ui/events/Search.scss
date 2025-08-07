@@ -1,0 +1,131 @@
+.search {
+  &__control {
+    width: 100%;
+    border: 0;
+    height: 30px;
+    padding: 0 10px;
+    color: $search-input-color;
+    font-size: 1em;
+    line-height: 1.5;
+    outline: none;
+    padding-left: 35px;
+    background-color: $search-input-backgroundColor;
+    border: 1px solid $secondary;
+
+    &::placeholder {
+      opacity: 0.24;
+      color: $search-input-placeholder-color;
+    }
+    &::-webkit-search-cancel-button {
+      display: none;
+    }
+    &::-ms-clear {
+      display: none;
+    }
+
+    &-group {
+      position: relative;
+      z-index: 1;
+      color: $searchInput-color;
+      margin-bottom: 16px;
+    }
+
+    &-icon {
+      position: absolute;
+      pointer-events: none;
+      color: #5c5c5c;
+      left: 10px;
+      top: 50%;
+      z-index: 25;
+      transform: translateY(-50%);
+      line-height: 1;
+    }
+  }
+
+  &__clear-btn {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    z-index: 25;
+    transform: translateY(-50%);
+    color: #5c5c5c;
+    font-size: 16px;
+    line-height: 0;
+    background: none;
+    border: none;
+    appearance: none;
+  }
+
+  &__content {
+    text-align: left;
+
+    &-header {
+      color: $searchContent-header-color;
+      width: 100%;
+      opacity: 0.24;
+      position: absolute;
+      top: 50%;
+      font-size: 1.5em;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__results {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: pxToPr(14px, "em", $mainFontSize);
+    font-weight: 500;
+    color: #fff;
+
+    &-item {
+      border-bottom: 1px solid #5c5c5c;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &.active {
+        .search__results-link {
+          background-color: $searchContentResults-element-active-anchor-backgroundColor;
+        }
+      }
+    }
+
+    &-link {
+      position: relative;
+      display: block;
+      padding: 6px 35px 6px 10px;
+      color: $searchContentResults-element-anchor-color;
+      text-decoration: none;
+
+      &:after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+    }
+
+    &-icon {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      font-size: 11px;
+      line-height: 1;
+    }
+  }
+
+  &--opened {
+    .search__content {
+      display: block;
+    }
+  }
+
+  .loader {
+    float: right;
+    font-size: 0.7em;
+    opacity: 0.5;
+  }
+}

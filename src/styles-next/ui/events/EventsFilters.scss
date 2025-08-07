@@ -1,0 +1,55 @@
+.events-filters__categories,
+.events-filters .filters {
+  font-size: pxToPr(12px, "em", $mainFontSize);
+  line-height: initial;
+  max-width: 400px;
+}
+.events-filters__categories li a,
+.events-filters .filters li a {
+  height: 24px;
+}
+.events-filters--inline {
+  display: flex;
+}
+.events-filters__categories {
+  position: relative;
+  margin-top: 5px;
+  z-index: 0;
+}
+.events-filters__groups {
+  overflow-y: auto;
+  width: 100%;
+}
+.events-filters__label {
+  width: 12em;
+  line-height: 2;
+  display: block;
+  clear: both;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 400;
+}
+.events-filters__label span {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  background: $eventsFiltersLabel-span-backgroundColor;
+  color: $eventsFiltersLabel-span-color;
+  border-radius: 3px;
+  padding: 0 5px 0 9px;
+}
+.events-filters__label span:before {
+  content: "";
+  z-index: -1;
+  display: block;
+  position: absolute;
+  background: $eventsFiltersLabel-span-before-backgroundColor;
+  width: 1.75em;
+  height: 1.75em;
+  border-radius: 3px;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  right: -0.7em;
+  top: 50%;
+}

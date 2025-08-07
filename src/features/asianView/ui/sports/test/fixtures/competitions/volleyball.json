@@ -1,0 +1,1676 @@
+[
+  {
+    "id": 308,
+    "name": "NCAA, Women",
+    "universe": "skycity",
+    "sport": {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "displayOrder": 75,
+      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "translations": {}
+    },
+    "platformObject": {
+      "id": "02_sr:simple_tournament:18161",
+      "name": "NCAA, Women",
+      "externalId": {
+        "instance": "skycity",
+        "provider": "bet-radar",
+        "feedId": "sr:simple_tournament:18161",
+        "sportId": "bet-radar"
+      }
+    },
+    "feedResponsibilities": [
+      {
+        "feed": {
+          "provider": "bet-radar",
+          "instance": "skycity"
+        },
+        "event-creation": true,
+        "pre-match-pricing": true,
+        "pre-match-management": true,
+        "live-pricing": true,
+        "live-match-management": true,
+        "resulting": true,
+        "competition-update": true
+      }
+    ],
+    "tags": {
+      "category-label": [
+        "-"
+      ],
+      "category": [
+        "-"
+      ],
+      "country-label": [
+        "United States"
+      ],
+      "highlight": [
+        "no"
+      ],
+      "best-of": [
+        "5"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "USA"
+      ]
+    },
+    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/308",
+    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "grades": {
+      "prematch": {
+        "id": 89,
+        "name": "Grade 1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+      },
+      "show": {
+        "id": 22,
+        "name": "default",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+      },
+      "inPlay": {
+        "id": 92,
+        "name": "Grade IP1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+      }
+    },
+    "updatedAt": "2024-04-17T09:12:26.683Z",
+    "createdAt": "2024-04-17T08:23:30.551Z",
+    "displayOrder": 0,
+    "globalDisplayOrder": 0,
+    "active": false,
+    "timeFrameGrade": false,
+    "display": false,
+    "autoTakeDown": true,
+    "inPlayDelaySettings": {},
+    "crossBetSettings": {},
+    "timeFrameGradeSettings": [],
+    "buildABetSettings": {}
+  },
+  {
+    "id": 172,
+    "name": "Pro League",
+    "universe": "skycity",
+    "sport": {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "displayOrder": 75,
+      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "translations": {}
+    },
+    "platformObject": {
+      "id": "02_sr:tournament:32175",
+      "name": "Pro League",
+      "externalId": {
+        "instance": "skycity",
+        "provider": "bet-radar",
+        "feedId": "sr:tournament:32175",
+        "sportId": "bet-radar"
+      }
+    },
+    "feedResponsibilities": [
+      {
+        "feed": {
+          "provider": "bet-radar",
+          "instance": "skycity"
+        },
+        "event-creation": true,
+        "pre-match-pricing": true,
+        "pre-match-management": true,
+        "live-pricing": true,
+        "live-match-management": true,
+        "resulting": true,
+        "competition-update": true
+      }
+    ],
+    "tags": {
+      "category-label": [
+        "-"
+      ],
+      "category": [
+        "-"
+      ],
+      "country-label": [
+        "Russia"
+      ],
+      "highlight": [
+        "no"
+      ],
+      "best-of": [
+        "5"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "RUS"
+      ]
+    },
+    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/172",
+    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "grades": {
+      "prematch": {
+        "id": 89,
+        "name": "Grade 1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+      },
+      "show": {
+        "id": 22,
+        "name": "default",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+      },
+      "inPlay": {
+        "id": 92,
+        "name": "Grade IP1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+      }
+    },
+    "updatedAt": "2024-04-17T09:04:01.105Z",
+    "createdAt": "2024-04-17T07:50:00.760Z",
+    "displayOrder": 0,
+    "globalDisplayOrder": 0,
+    "active": false,
+    "timeFrameGrade": false,
+    "display": false,
+    "autoTakeDown": true,
+    "inPlayDelaySettings": {},
+    "crossBetSettings": {},
+    "timeFrameGradeSettings": [],
+    "buildABetSettings": {}
+  },
+  {
+    "id": 424,
+    "name": "VolleyLigaen Women",
+    "universe": "skycity",
+    "sport": {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "displayOrder": 75,
+      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "translations": {}
+    },
+    "platformObject": {
+      "id": "02_sr:tournament:14445",
+      "name": "VolleyLigaen Women",
+      "externalId": {
+        "instance": "skycity",
+        "provider": "bet-radar",
+        "feedId": "sr:tournament:14445",
+        "sportId": "bet-radar"
+      }
+    },
+    "feedResponsibilities": [
+      {
+        "feed": {
+          "provider": "bet-radar",
+          "instance": "skycity"
+        },
+        "event-creation": true,
+        "pre-match-pricing": true,
+        "pre-match-management": true,
+        "live-pricing": true,
+        "live-match-management": true,
+        "resulting": true,
+        "competition-update": true
+      }
+    ],
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "category-label": [
+        "-"
+      ],
+      "category": [
+        "-"
+      ],
+      "country-label": [
+        "Denmark"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "DEN"
+      ]
+    },
+    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/424",
+    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "grades": {
+      "prematch": {
+        "id": 89,
+        "name": "Grade 1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+      },
+      "show": {
+        "id": 22,
+        "name": "default",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+      },
+      "inPlay": {
+        "id": 92,
+        "name": "Grade IP1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+      }
+    },
+    "updatedAt": "2024-04-17T09:35:57.866Z",
+    "createdAt": "2024-04-17T09:35:57.866Z",
+    "displayOrder": 0,
+    "globalDisplayOrder": 0,
+    "active": false,
+    "timeFrameGrade": false,
+    "display": false,
+    "autoTakeDown": true,
+    "inPlayDelaySettings": {},
+    "crossBetSettings": {},
+    "timeFrameGradeSettings": [],
+    "buildABetSettings": {}
+  },
+  {
+    "id": 350,
+    "name": "Serie A2",
+    "universe": "skycity",
+    "sport": {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "displayOrder": 75,
+      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "translations": {}
+    },
+    "platformObject": {
+      "id": "02_sr:tournament:1444",
+      "name": "Serie A2",
+      "externalId": {
+        "instance": "skycity",
+        "provider": "bet-radar",
+        "feedId": "sr:tournament:1444",
+        "sportId": "bet-radar"
+      }
+    },
+    "feedResponsibilities": [
+      {
+        "feed": {
+          "provider": "bet-radar",
+          "instance": "skycity"
+        },
+        "event-creation": true,
+        "pre-match-pricing": true,
+        "pre-match-management": true,
+        "live-pricing": true,
+        "live-match-management": true,
+        "resulting": true,
+        "competition-update": true
+      }
+    ],
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "category-label": [
+        "-"
+      ],
+      "category": [
+        "-"
+      ],
+      "country-label": [
+        "Italy"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "ITA"
+      ]
+    },
+    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/350",
+    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "grades": {
+      "prematch": {
+        "id": 89,
+        "name": "Grade 1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+      },
+      "show": {
+        "id": 22,
+        "name": "default",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+      },
+      "inPlay": {
+        "id": 92,
+        "name": "Grade IP1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+      }
+    },
+    "updatedAt": "2024-04-17T08:41:22.556Z",
+    "createdAt": "2024-04-17T08:41:22.556Z",
+    "displayOrder": 0,
+    "globalDisplayOrder": 0,
+    "active": false,
+    "timeFrameGrade": false,
+    "display": false,
+    "autoTakeDown": true,
+    "inPlayDelaySettings": {},
+    "crossBetSettings": {},
+    "timeFrameGradeSettings": [],
+    "buildABetSettings": {}
+  },
+  {
+    "id": 418,
+    "name": "CEV Champions League, Women",
+    "universe": "skycity",
+    "sport": {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "displayOrder": 75,
+      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "translations": {}
+    },
+    "platformObject": {
+      "id": "02_sr:tournament:587",
+      "name": "CEV Champions League, Women",
+      "externalId": {
+        "instance": "skycity",
+        "provider": "bet-radar",
+        "feedId": "sr:tournament:587",
+        "sportId": "bet-radar"
+      }
+    },
+    "feedResponsibilities": [
+      {
+        "feed": {
+          "provider": "bet-radar",
+          "instance": "skycity"
+        },
+        "event-creation": true,
+        "pre-match-pricing": true,
+        "pre-match-management": true,
+        "live-pricing": true,
+        "live-match-management": true,
+        "resulting": true,
+        "competition-update": true
+      }
+    ],
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "category-label": [
+        "International"
+      ],
+      "category": [
+        "International"
+      ],
+      "country-label": [
+        "World"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "WRL"
+      ]
+    },
+    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/418",
+    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "grades": {
+      "prematch": {
+        "id": 89,
+        "name": "Grade 1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+      },
+      "show": {
+        "id": 22,
+        "name": "default",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+      },
+      "inPlay": {
+        "id": 92,
+        "name": "Grade IP1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+      }
+    },
+    "updatedAt": "2024-04-17T09:31:34.088Z",
+    "createdAt": "2024-04-17T09:31:34.088Z",
+    "displayOrder": 0,
+    "globalDisplayOrder": 0,
+    "active": false,
+    "timeFrameGrade": false,
+    "display": false,
+    "autoTakeDown": true,
+    "inPlayDelaySettings": {},
+    "crossBetSettings": {},
+    "timeFrameGradeSettings": [],
+    "buildABetSettings": {}
+  },
+  {
+    "id": 419,
+    "name": "Champions League",
+    "universe": "skycity",
+    "sport": {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "displayOrder": 75,
+      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "translations": {}
+    },
+    "platformObject": {
+      "id": "02_sr:tournament:586",
+      "name": "Champions League",
+      "externalId": {
+        "instance": "skycity",
+        "provider": "bet-radar",
+        "feedId": "sr:tournament:586",
+        "sportId": "bet-radar"
+      }
+    },
+    "feedResponsibilities": [
+      {
+        "feed": {
+          "provider": "bet-radar",
+          "instance": "skycity"
+        },
+        "event-creation": true,
+        "pre-match-pricing": true,
+        "pre-match-management": true,
+        "live-pricing": true,
+        "live-match-management": true,
+        "resulting": true,
+        "competition-update": true
+      }
+    ],
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "category-label": [
+        "International"
+      ],
+      "category": [
+        "International"
+      ],
+      "country-label": [
+        "World"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "WRL"
+      ]
+    },
+    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/419",
+    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "grades": {
+      "prematch": {
+        "id": 89,
+        "name": "Grade 1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+      },
+      "show": {
+        "id": 22,
+        "name": "default",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+      },
+      "inPlay": {
+        "id": 92,
+        "name": "Grade IP1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+      }
+    },
+    "updatedAt": "2024-04-17T09:32:07.811Z",
+    "createdAt": "2024-04-17T09:32:07.811Z",
+    "displayOrder": 0,
+    "globalDisplayOrder": 0,
+    "active": false,
+    "timeFrameGrade": false,
+    "display": false,
+    "autoTakeDown": true,
+    "inPlayDelaySettings": {},
+    "crossBetSettings": {},
+    "timeFrameGradeSettings": [],
+    "buildABetSettings": {}
+  },
+  {
+    "id": 321,
+    "name": "Liga Siatkowki, Women",
+    "universe": "skycity",
+    "sport": {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "displayOrder": 75,
+      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "translations": {}
+    },
+    "platformObject": {
+      "id": "02_sr:tournament:1173",
+      "name": "Liga Siatkowki, Women",
+      "externalId": {
+        "instance": "skycity",
+        "provider": "bet-radar",
+        "feedId": "sr:tournament:1173",
+        "sportId": "bet-radar"
+      }
+    },
+    "feedResponsibilities": [
+      {
+        "feed": {
+          "provider": "bet-radar",
+          "instance": "skycity"
+        },
+        "event-creation": true,
+        "pre-match-pricing": true,
+        "pre-match-management": true,
+        "live-pricing": true,
+        "live-match-management": true,
+        "resulting": true,
+        "competition-update": true
+      }
+    ],
+    "tags": {
+      "category-label": [
+        "-"
+      ],
+      "category": [
+        "-"
+      ],
+      "country-label": [
+        "Poland"
+      ],
+      "highlight": [
+        "no"
+      ],
+      "best-of": [
+        "5"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "POL"
+      ],
+      "period-length": [
+        "25"
+      ]
+    },
+    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/321",
+    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "grades": {
+      "prematch": {
+        "id": 89,
+        "name": "Grade 1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+      },
+      "show": {
+        "id": 22,
+        "name": "default",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+      },
+      "inPlay": {
+        "id": 92,
+        "name": "Grade IP1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+      }
+    },
+    "updatedAt": "2024-04-17T08:31:41.007Z",
+    "createdAt": "2024-04-17T08:30:31.080Z",
+    "displayOrder": 0,
+    "globalDisplayOrder": 0,
+    "active": false,
+    "timeFrameGrade": false,
+    "display": false,
+    "autoTakeDown": true,
+    "inPlayDelaySettings": {},
+    "crossBetSettings": {},
+    "timeFrameGradeSettings": [],
+    "buildABetSettings": {}
+  },
+  {
+    "id": 379,
+    "name": "VolleyLigaen",
+    "universe": "skycity",
+    "sport": {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "displayOrder": 75,
+      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "translations": {}
+    },
+    "platformObject": {
+      "id": "02_sr:tournament:1450",
+      "name": "VolleyLigaen",
+      "externalId": {
+        "instance": "skycity",
+        "provider": "bet-radar",
+        "feedId": "sr:tournament:1450",
+        "sportId": "bet-radar"
+      }
+    },
+    "feedResponsibilities": [
+      {
+        "feed": {
+          "provider": "bet-radar",
+          "instance": "skycity"
+        },
+        "event-creation": true,
+        "pre-match-pricing": true,
+        "pre-match-management": true,
+        "live-pricing": true,
+        "live-match-management": true,
+        "resulting": true,
+        "competition-update": true
+      }
+    ],
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "category-label": [
+        "-"
+      ],
+      "category": [
+        "-"
+      ],
+      "country-label": [
+        "Denmark"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "DEN"
+      ]
+    },
+    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/379",
+    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "grades": {
+      "prematch": {
+        "id": 89,
+        "name": "Grade 1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+      },
+      "show": {
+        "id": 22,
+        "name": "default",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+      },
+      "inPlay": {
+        "id": 92,
+        "name": "Grade IP1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+      }
+    },
+    "updatedAt": "2024-04-17T08:53:00.825Z",
+    "createdAt": "2024-04-17T08:53:00.825Z",
+    "displayOrder": 0,
+    "globalDisplayOrder": 0,
+    "active": false,
+    "timeFrameGrade": false,
+    "display": false,
+    "autoTakeDown": true,
+    "inPlayDelaySettings": {},
+    "crossBetSettings": {},
+    "timeFrameGradeSettings": [],
+    "buildABetSettings": {}
+  },
+  {
+    "id": 266,
+    "name": "Superliga, Women",
+    "universe": "skycity",
+    "sport": {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "displayOrder": 75,
+      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "translations": {}
+    },
+    "platformObject": {
+      "id": "02_sr:tournament:1486",
+      "name": "Superliga, Women",
+      "externalId": {
+        "instance": "skycity",
+        "provider": "bet-radar",
+        "feedId": "sr:tournament:1486",
+        "sportId": "bet-radar"
+      }
+    },
+    "feedResponsibilities": [
+      {
+        "feed": {
+          "provider": "bet-radar",
+          "instance": "skycity"
+        },
+        "event-creation": true,
+        "pre-match-pricing": true,
+        "pre-match-management": true,
+        "live-pricing": true,
+        "live-match-management": true,
+        "resulting": true,
+        "competition-update": true
+      }
+    ],
+    "tags": {
+      "category-label": [
+        "-"
+      ],
+      "category": [
+        "-"
+      ],
+      "country-label": [
+        "Russia"
+      ],
+      "highlight": [
+        "no"
+      ],
+      "best-of": [
+        "5"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "RUS"
+      ],
+      "period-length": [
+        "25"
+      ]
+    },
+    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/266",
+    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "grades": {
+      "prematch": {
+        "id": 89,
+        "name": "Grade 1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+      },
+      "show": {
+        "id": 22,
+        "name": "default",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+      },
+      "inPlay": {
+        "id": 92,
+        "name": "Grade IP1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+      }
+    },
+    "updatedAt": "2024-04-17T08:50:31.769Z",
+    "createdAt": "2024-04-17T08:14:08.086Z",
+    "displayOrder": 0,
+    "globalDisplayOrder": 0,
+    "active": false,
+    "timeFrameGrade": false,
+    "display": false,
+    "autoTakeDown": true,
+    "inPlayDelaySettings": {},
+    "crossBetSettings": {},
+    "timeFrameGradeSettings": [],
+    "buildABetSettings": {}
+  },
+  {
+    "id": 175,
+    "name": "Volleyball Super League, Women",
+    "universe": "skycity",
+    "sport": {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "displayOrder": 75,
+      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "translations": {}
+    },
+    "platformObject": {
+      "id": "02_sr:tournament:27116",
+      "name": "Volleyball Super League, Women",
+      "externalId": {
+        "instance": "skycity",
+        "provider": "bet-radar",
+        "feedId": "sr:tournament:27116",
+        "sportId": "bet-radar"
+      }
+    },
+    "feedResponsibilities": [
+      {
+        "feed": {
+          "provider": "bet-radar",
+          "instance": "skycity"
+        },
+        "event-creation": true,
+        "pre-match-pricing": true,
+        "pre-match-management": true,
+        "live-pricing": true,
+        "live-match-management": true,
+        "resulting": true,
+        "competition-update": true
+      }
+    ],
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "category-label": [
+        "-"
+      ],
+      "category": [
+        "-"
+      ],
+      "country-label": [
+        "Bulgaria"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "BUL"
+      ]
+    },
+    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/175",
+    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "grades": {
+      "prematch": {
+        "id": 89,
+        "name": "Grade 1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+      },
+      "show": {
+        "id": 22,
+        "name": "default",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+      },
+      "inPlay": {
+        "id": 92,
+        "name": "Grade IP1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+      }
+    },
+    "updatedAt": "2024-04-17T07:50:29.584Z",
+    "createdAt": "2024-04-17T07:50:29.584Z",
+    "displayOrder": 0,
+    "globalDisplayOrder": 0,
+    "active": false,
+    "timeFrameGrade": false,
+    "display": false,
+    "autoTakeDown": true,
+    "inPlayDelaySettings": {},
+    "crossBetSettings": {},
+    "timeFrameGradeSettings": [],
+    "buildABetSettings": {}
+  },
+  {
+    "id": 395,
+    "name": "SuperLega",
+    "universe": "skycity",
+    "sport": {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "displayOrder": 75,
+      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "translations": {}
+    },
+    "platformObject": {
+      "id": "02_sr:tournament:517",
+      "name": "SuperLega",
+      "externalId": {
+        "instance": "skycity",
+        "provider": "bet-radar",
+        "feedId": "sr:tournament:517",
+        "sportId": "bet-radar"
+      }
+    },
+    "feedResponsibilities": [
+      {
+        "feed": {
+          "provider": "bet-radar",
+          "instance": "skycity"
+        },
+        "event-creation": true,
+        "pre-match-pricing": true,
+        "pre-match-management": true,
+        "live-pricing": true,
+        "live-match-management": true,
+        "resulting": true,
+        "competition-update": true
+      }
+    ],
+    "tags": {
+      "category-label": [
+        "-"
+      ],
+      "category": [
+        "-"
+      ],
+      "country-label": [
+        "Italy"
+      ],
+      "highlight": [
+        "no"
+      ],
+      "best-of": [
+        "5"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "ITA"
+      ],
+      "period-length": [
+        "25"
+      ]
+    },
+    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/395",
+    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "grades": {
+      "prematch": {
+        "id": 89,
+        "name": "Grade 1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+      },
+      "show": {
+        "id": 22,
+        "name": "default",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+      },
+      "inPlay": {
+        "id": 92,
+        "name": "Grade IP1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+      }
+    },
+    "updatedAt": "2024-04-17T09:41:24.714Z",
+    "createdAt": "2024-04-17T09:12:37.644Z",
+    "displayOrder": 0,
+    "globalDisplayOrder": 0,
+    "active": false,
+    "timeFrameGrade": false,
+    "display": false,
+    "autoTakeDown": true,
+    "inPlayDelaySettings": {},
+    "crossBetSettings": {},
+    "timeFrameGradeSettings": [],
+    "buildABetSettings": {}
+  },
+  {
+    "id": 431,
+    "name": "Ligue A",
+    "universe": "skycity",
+    "sport": {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "displayOrder": 75,
+      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "translations": {}
+    },
+    "platformObject": {
+      "id": "02_sr:tournament:833",
+      "name": "Ligue A",
+      "externalId": {
+        "instance": "skycity",
+        "provider": "bet-radar",
+        "feedId": "sr:tournament:833",
+        "sportId": "bet-radar"
+      }
+    },
+    "feedResponsibilities": [
+      {
+        "feed": {
+          "provider": "bet-radar",
+          "instance": "skycity"
+        },
+        "event-creation": true,
+        "pre-match-pricing": true,
+        "pre-match-management": true,
+        "live-pricing": true,
+        "live-match-management": true,
+        "resulting": true,
+        "competition-update": true
+      }
+    ],
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "category-label": [
+        "-"
+      ],
+      "category": [
+        "-"
+      ],
+      "country-label": [
+        "France"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "FRA"
+      ]
+    },
+    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/431",
+    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "grades": {
+      "prematch": {
+        "id": 89,
+        "name": "Grade 1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+      },
+      "show": {
+        "id": 22,
+        "name": "default",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+      },
+      "inPlay": {
+        "id": 92,
+        "name": "Grade IP1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+      }
+    },
+    "updatedAt": "2024-04-17T09:43:06.522Z",
+    "createdAt": "2024-04-17T09:43:06.522Z",
+    "displayOrder": 0,
+    "globalDisplayOrder": 0,
+    "active": false,
+    "timeFrameGrade": false,
+    "display": false,
+    "autoTakeDown": true,
+    "inPlayDelaySettings": {},
+    "crossBetSettings": {},
+    "timeFrameGradeSettings": [],
+    "buildABetSettings": {}
+  },
+  {
+    "id": 439,
+    "name": "Extraliga, Women",
+    "universe": "skycity",
+    "sport": {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "displayOrder": 75,
+      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "translations": {}
+    },
+    "platformObject": {
+      "id": "02_sr:tournament:1408",
+      "name": "Extraliga, Women",
+      "externalId": {
+        "instance": "skycity",
+        "provider": "bet-radar",
+        "feedId": "sr:tournament:1408",
+        "sportId": "bet-radar"
+      }
+    },
+    "feedResponsibilities": [
+      {
+        "feed": {
+          "provider": "bet-radar",
+          "instance": "skycity"
+        },
+        "event-creation": true,
+        "pre-match-pricing": true,
+        "pre-match-management": true,
+        "live-pricing": true,
+        "live-match-management": true,
+        "resulting": true,
+        "competition-update": true
+      }
+    ],
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "category-label": [
+        "-"
+      ],
+      "category": [
+        "-"
+      ],
+      "country-label": [
+        "Slovakia"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "SVK"
+      ]
+    },
+    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/439",
+    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "grades": {
+      "prematch": {
+        "id": 89,
+        "name": "Grade 1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+      },
+      "show": {
+        "id": 22,
+        "name": "default",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+      },
+      "inPlay": {
+        "id": 92,
+        "name": "Grade IP1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+      }
+    },
+    "updatedAt": "2024-04-17T09:48:56.540Z",
+    "createdAt": "2024-04-17T09:48:56.540Z",
+    "displayOrder": 0,
+    "globalDisplayOrder": 0,
+    "active": false,
+    "timeFrameGrade": false,
+    "display": false,
+    "autoTakeDown": true,
+    "inPlayDelaySettings": {},
+    "crossBetSettings": {},
+    "timeFrameGradeSettings": [],
+    "buildABetSettings": {}
+  },
+  {
+    "id": 427,
+    "name": "Liga Siatkowki",
+    "universe": "skycity",
+    "sport": {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "displayOrder": 75,
+      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "translations": {}
+    },
+    "platformObject": {
+      "id": "02_sr:tournament:831",
+      "name": "Liga Siatkowki",
+      "externalId": {
+        "instance": "skycity",
+        "provider": "bet-radar",
+        "feedId": "sr:tournament:831",
+        "sportId": "bet-radar"
+      }
+    },
+    "feedResponsibilities": [
+      {
+        "feed": {
+          "provider": "bet-radar",
+          "instance": "skycity"
+        },
+        "event-creation": true,
+        "pre-match-pricing": true,
+        "pre-match-management": true,
+        "live-pricing": true,
+        "live-match-management": true,
+        "resulting": true,
+        "competition-update": true
+      }
+    ],
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "category-label": [
+        "-"
+      ],
+      "category": [
+        "-"
+      ],
+      "country-label": [
+        "Poland"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "POL"
+      ]
+    },
+    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/427",
+    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "grades": {
+      "prematch": {
+        "id": 89,
+        "name": "Grade 1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+      },
+      "show": {
+        "id": 22,
+        "name": "default",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+      },
+      "inPlay": {
+        "id": 92,
+        "name": "Grade IP1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+      }
+    },
+    "updatedAt": "2024-04-17T09:41:07.703Z",
+    "createdAt": "2024-04-17T09:41:07.703Z",
+    "displayOrder": 0,
+    "globalDisplayOrder": 0,
+    "active": false,
+    "timeFrameGrade": false,
+    "display": false,
+    "autoTakeDown": true,
+    "inPlayDelaySettings": {},
+    "crossBetSettings": {},
+    "timeFrameGradeSettings": [],
+    "buildABetSettings": {}
+  },
+  {
+    "id": 298,
+    "name": "Superliga, Women",
+    "universe": "skycity",
+    "sport": {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "displayOrder": 75,
+      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "translations": {}
+    },
+    "platformObject": {
+      "id": "02_sr:tournament:26530",
+      "name": "Superliga, Women",
+      "externalId": {
+        "instance": "skycity",
+        "provider": "bet-radar",
+        "feedId": "sr:tournament:26530",
+        "sportId": "bet-radar"
+      }
+    },
+    "feedResponsibilities": [
+      {
+        "feed": {
+          "provider": "bet-radar",
+          "instance": "skycity"
+        },
+        "event-creation": true,
+        "pre-match-pricing": true,
+        "pre-match-management": true,
+        "live-pricing": true,
+        "live-match-management": true,
+        "resulting": true,
+        "competition-update": true
+      }
+    ],
+    "tags": {
+      "category-label": [
+        "-"
+      ],
+      "category": [
+        "-"
+      ],
+      "country-label": [
+        "Serbia"
+      ],
+      "highlight": [
+        "no"
+      ],
+      "best-of": [
+        "5"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "SRB"
+      ],
+      "period-length": [
+        "25"
+      ]
+    },
+    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/298",
+    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "grades": {
+      "prematch": {
+        "id": 89,
+        "name": "Grade 1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+      },
+      "show": {
+        "id": 22,
+        "name": "default",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+      },
+      "inPlay": {
+        "id": 92,
+        "name": "Grade IP1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+      }
+    },
+    "updatedAt": "2024-04-17T09:07:37.489Z",
+    "createdAt": "2024-04-17T08:22:40.754Z",
+    "displayOrder": 0,
+    "globalDisplayOrder": 0,
+    "active": false,
+    "timeFrameGrade": false,
+    "display": false,
+    "autoTakeDown": true,
+    "inPlayDelaySettings": {},
+    "crossBetSettings": {},
+    "timeFrameGradeSettings": [],
+    "buildABetSettings": {}
+  },
+  {
+    "id": 389,
+    "name": "Extraliga",
+    "universe": "skycity",
+    "sport": {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "displayOrder": 75,
+      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "translations": {}
+    },
+    "platformObject": {
+      "id": "02_sr:tournament:1406",
+      "name": "Extraliga",
+      "externalId": {
+        "instance": "skycity",
+        "provider": "bet-radar",
+        "feedId": "sr:tournament:1406",
+        "sportId": "bet-radar"
+      }
+    },
+    "feedResponsibilities": [
+      {
+        "feed": {
+          "provider": "bet-radar",
+          "instance": "skycity"
+        },
+        "event-creation": true,
+        "pre-match-pricing": true,
+        "pre-match-management": true,
+        "live-pricing": true,
+        "live-match-management": true,
+        "resulting": true,
+        "competition-update": true
+      }
+    ],
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "category-label": [
+        "-"
+      ],
+      "category": [
+        "-"
+      ],
+      "country-label": [
+        "Slovakia"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "SVK"
+      ]
+    },
+    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/389",
+    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "grades": {
+      "prematch": {
+        "id": 89,
+        "name": "Grade 1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+      },
+      "show": {
+        "id": 22,
+        "name": "default",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+      },
+      "inPlay": {
+        "id": 92,
+        "name": "Grade IP1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+      }
+    },
+    "updatedAt": "2024-04-17T09:06:18.858Z",
+    "createdAt": "2024-04-17T09:06:18.858Z",
+    "displayOrder": 0,
+    "globalDisplayOrder": 0,
+    "active": false,
+    "timeFrameGrade": false,
+    "display": false,
+    "autoTakeDown": true,
+    "inPlayDelaySettings": {},
+    "crossBetSettings": {},
+    "timeFrameGradeSettings": [],
+    "buildABetSettings": {}
+  },
+  {
+    "id": 149,
+    "name": "Superliga",
+    "universe": "skycity",
+    "sport": {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "displayOrder": 75,
+      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "translations": {}
+    },
+    "platformObject": {
+      "id": "02_sr:tournament:1199",
+      "name": "Superliga",
+      "externalId": {
+        "instance": "skycity",
+        "provider": "bet-radar",
+        "feedId": "sr:tournament:1199",
+        "sportId": "bet-radar"
+      }
+    },
+    "feedResponsibilities": [
+      {
+        "feed": {
+          "provider": "bet-radar",
+          "instance": "skycity"
+        },
+        "event-creation": true,
+        "pre-match-pricing": true,
+        "pre-match-management": true,
+        "live-pricing": true,
+        "live-match-management": true,
+        "resulting": true,
+        "competition-update": true
+      }
+    ],
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "category-label": [
+        "-"
+      ],
+      "category": [
+        "-"
+      ],
+      "country-label": [
+        "Serbia"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "SRB"
+      ]
+    },
+    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/149",
+    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "grades": {
+      "prematch": {
+        "id": 89,
+        "name": "Grade 1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+      },
+      "show": {
+        "id": 22,
+        "name": "default",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+      },
+      "inPlay": {
+        "id": 92,
+        "name": "Grade IP1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+      }
+    },
+    "updatedAt": "2024-04-17T07:46:54.946Z",
+    "createdAt": "2024-04-17T07:46:54.946Z",
+    "displayOrder": 0,
+    "globalDisplayOrder": 0,
+    "active": false,
+    "timeFrameGrade": false,
+    "display": false,
+    "autoTakeDown": true,
+    "inPlayDelaySettings": {},
+    "crossBetSettings": {},
+    "timeFrameGradeSettings": [],
+    "buildABetSettings": {}
+  },
+  {
+    "id": 216,
+    "name": "Nationalliga A, Women",
+    "universe": "skycity",
+    "sport": {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "displayOrder": 75,
+      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "translations": {}
+    },
+    "platformObject": {
+      "id": "02_sr:tournament:14480",
+      "name": "Nationalliga A, Women",
+      "externalId": {
+        "instance": "skycity",
+        "provider": "bet-radar",
+        "feedId": "sr:tournament:14480",
+        "sportId": "bet-radar"
+      }
+    },
+    "feedResponsibilities": [
+      {
+        "feed": {
+          "provider": "bet-radar",
+          "instance": "skycity"
+        },
+        "event-creation": true,
+        "pre-match-pricing": true,
+        "pre-match-management": true,
+        "live-pricing": true,
+        "live-match-management": true,
+        "resulting": true,
+        "competition-update": true
+      }
+    ],
+    "tags": {
+      "category-label": [
+        "-"
+      ],
+      "category": [
+        "-"
+      ],
+      "country-label": [
+        "Switzerland"
+      ],
+      "highlight": [
+        "no"
+      ],
+      "best-of": [
+        "5"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "SUI"
+      ],
+      "period-length": [
+        "25"
+      ]
+    },
+    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/216",
+    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "grades": {
+      "prematch": {
+        "id": 89,
+        "name": "Grade 1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+      },
+      "show": {
+        "id": 22,
+        "name": "default",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+      },
+      "inPlay": {
+        "id": 92,
+        "name": "Grade IP1",
+        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+      }
+    },
+    "updatedAt": "2024-04-17T09:48:54.323Z",
+    "createdAt": "2024-04-17T07:59:08.799Z",
+    "displayOrder": 0,
+    "globalDisplayOrder": 0,
+    "active": false,
+    "timeFrameGrade": false,
+    "display": false,
+    "autoTakeDown": true,
+    "inPlayDelaySettings": {},
+    "crossBetSettings": {},
+    "timeFrameGradeSettings": [],
+    "buildABetSettings": {}
+  }
+]

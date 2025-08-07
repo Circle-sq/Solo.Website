@@ -1,0 +1,74 @@
+image: node:20.17.0
+
+clone:
+  depth: full
+
+definitions:
+  caches:
+    npm: ~/.npm
+  sharedBuildCommands: &sharedBuildCommands |
+    npm i nx --no-save
+    git log --oneline origin/develop..HEAD
+    affected_libs=$(npx nx show projects --affected --base=$BASE_PARAM --head=$HEAD_PARAM --exclude=sportsbook,ui-asian-view)
+    # Check if the affected libraries include ui-beteast (excluded ui-asian-view)
+    if [[ $affected_libs != *"ui-beteast"* ]]; then
+      echo "No relevant libraries (ui-beteast) affected. Skipping build."
+      exit 0
+    fi
+    echo "affected libs: $affected_libs"
+    npm ci
+    npx nx affected -t build-storybook --exclude=sportsbook,ui-asian-view --base=$BASE_PARAM --head=$HEAD_PARAM --parallel --maxParallel=1
+    build_storybook() {
+      echo "Building storybook for $1"
+      lib_name=$1
+      chromatic_token=$2
+      output_dir=./dist/storybook/$1
+      storybook_target="build-storybook"
+      if [ "$BRANCH_NAME" = "develop" ]; then
+        # Auto-accept changes for develop branch
+        npx chromatic --project-token=$chromatic_token --storybookBuildDir=$output_dir --zip --exit-zero-on-changes --ci --auto-accept-changes
+      else
+        # Manual review for other branches
+        npx chromatic --project-token=$chromatic_token --storybookBuildDir=$output_dir --zip --exit-zero-on-changes --ci
+      fi
+    }
+    if [[ $affected_libs == *"ui-beteast"* ]]; then
+      build_storybook "ui-beteast" $CHROMATIC_BETEAST_TOKEN
+    fi
+
+pipelines:
+  pull-requests:
+    '**':
+      - step:
+          name: Build Storybooks for Pull Request
+          caches:
+            - node
+            - npm
+          script:
+            - ./node_task/omitPrivateStuff.sh
+            - export BASE_PARAM="origin/develop"
+            - export HEAD_PARAM="HEAD"
+            - export BRANCH_NAME="${BITBUCKET_BRANCH}"
+            - *sharedBuildCommands
+          after-script:
+            - cat /root/.npm/_logs/*.log
+          artifacts:
+            - /root/.npm/_logs/*.log
+
+  branches:
+    develop:
+      - step:
+          name: Build Storybooks for Develop
+          caches:
+            - node
+            - npm
+          script:
+            - ./node_task/omitPrivateStuff.sh
+            - export BASE_PARAM="HEAD~1"
+            - export HEAD_PARAM="HEAD"
+            - export BRANCH_NAME="develop"
+            - *sharedBuildCommands
+          after-script:
+            - cat /root/.npm/_logs/*.log
+          artifacts:
+            - /root/.npm/_logs/*.log

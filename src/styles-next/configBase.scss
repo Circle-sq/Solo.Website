@@ -1,0 +1,762 @@
+/* Color palette */
+
+$clear: transparent !default;
+
+$white: #fff !default;
+$white-20: rgba($white, 0.2) !default;
+
+$black: #000 !default;
+$black-20: rgba($black, 0.2) !default;
+
+$primary: #141414 !default;
+$secondary: rgba(255, 255, 255, 0.24) !default;
+$secondary-80: rgba($secondary, 0.8) !default;
+$tertiary: #055ca9 !default;
+
+$black-primary: #1e1e1e !default;
+$black-second: #242424 !default;
+$black-thred: #1a1a1a !default;
+
+$yellow: #ffcc00  !default;
+$yellow-lighter: #ffe066 !default;
+$yellow-light: #fff7d9 !default;
+$blue-lighter: #154674 !default;
+$dark-yellow: #eeb900 !default;
+$light-gray: #cdcdcd !default;
+$gray: #333 !default;
+$pale-grey: #e8ebef !default;
+$battleship-grey: #656d7d !default;
+$cool-grey: #9196a2 !default;
+$blue-gray: #61798f !default;
+$white-two: #f2f2f2 !default;
+$grey-darker: #444953 !default;
+$warm-grey: #8c8c8c !default;
+$dark-sky-blue: #3c8edb !default;
+$dark-grey: #7a7a7a !default;
+$bright-grey: #d5d5d5 !default;
+
+$dark-white: #e5e7ec !default;
+
+$success-green: #39b54a !default;
+$error-red: #fa5858 !default;
+$status-error: #f44336 !default;
+$status-warning: #ffeb3b !default;
+$success-text-color: #42b153 !default;
+
+$primary-red: #de3e3e !default;
+$primary-red-lighter: #f7565a !default;
+
+$primary-dark: #020d16 !default;
+$primary-dark-50: rgba($primary-dark, 0.5) !default;
+$primary-dark-80: rgba($primary-dark, 0.8) !default;
+
+$primary-dark-grey: #2a2a3c !default;
+$primary-white-grey: #acacac !default;
+
+$primary-shade-1: $black !default;
+$primary-shade-2: $grey-darker !default;
+$primary-shade-3: #acacac !default;
+$primary-shade-4: #c1ccd7 !default;
+$primary-shade-5: $pale-grey !default;
+$primary-shade-6: $white-two !default;
+
+$shade-dark: #060c18 !default;
+$shades-darker: rgba($primary-dark, 0.7) !default;
+
+$shade-light: $primary !default;
+$shade-light-2: $blue-lighter !default;
+$shade-light-3: #d9e3ec !default;
+$shade-light-4: #e3eaf1 !default;
+$shade-light-5: #edf2f6 !default;
+$shade-light-6: #f8f9fb !default;
+
+$midnight-50: $primary-dark-50 !default;
+$midnight-20: $black-20 !default;
+
+$form-disabled-color: #fbba00 !default;
+$form-disabled-label-color: $white !default;
+$form-border-color: #c8c8c8 !default;
+$form-text-color: #282828 !default;
+$form-success-background-color: #3dcb35 !default;
+$form-input-background-color: #021c55 !default;
+$form-dark-border-color: #c6c6c6 !default;
+
+$base-text-color: #2b2b2b !default;
+
+// Some other colors
+
+$selected-box: $secondary !default;
+
+$odds-lengthen: #f7b1b1 !default;
+$odds-shorten: #bbd8f3 !default;
+$odds-suspended: $dark-grey !default;
+
+// Dimensions
+$radius-100: 100px !default;
+
+// Should hide event score (on sport page?)
+$shouldHideEventRowScoreOnSmallDevices: true !default;
+
+// Breakpoints
+// Good breakpoints
+
+$bp-960: 960px !default;
+$bp-600: 600px !default;
+
+// Old breakpoints
+$bp-mobile: 849px !default;
+$bp-1280: 1280px !default;
+$bp-769: 769px !default;
+
+$grid-columns: 12 !default;
+$grid-glue: 5px !default;
+
+$account-width: 280px !default;
+
+$header-height: 55px !default;
+$mobile-header-height: 50px !default;
+$footer-mobile-height: 55px !default;
+
+$max-page-width: 1440px !default;
+
+$selection-width: 68px !default;
+$header-selection-width: 69px !default;
+
+// Default font size
+$mainFontSize: 16px !default;
+$basicFontSize: 14px !default;
+
+// Color constants to calculate brightness
+$red-magic-number: 241;
+$green-magic-number: 691;
+$blue-magic-number: 68;
+$brightness-divisor: $red-magic-number + $green-magic-number + $blue-magic-number;
+
+$radioButtonIndicator-backgroundColor: $primary-shade-6 !default;
+$radioButtonIndicator-boxShadowColor: $black-20 !default;
+$radioButtonIndicator-borderColor: $primary-shade-6 !default;
+$radioButtonIndicatorActive-backgroundColor: $yellow !default;
+$radioButtonIndicatorActive-borderColor: $yellow !default;
+$radioButtonIndicatorActive-boxShadowColor: $white !default;
+
+/* ui/betting/BetslipCar/BetslipOfferTimer */
+$size: 0.4 * 1.4em !default;
+
+/* ui/events/MarketHeader */
+$market-header-border-color: #999 !default;
+$market-header-text-color: #7ab9e0 !default;
+
+/* index */
+$body-color: $base-text-color !default;
+$anchor-color: $yellow !default;
+
+$selection-hover: #ababab !default;
+
+/* layout */
+$content-backgroundColor: transparent !default;
+$body-backgroundColor: $black-primary !default;
+$account-boxShadowColor: $black-20 !default;
+$tabsIsToggle-nextOffHeader-backgroundColor: $primary-shade-1 !default;
+$formElement-label-color: rgba($black, 0.7) !default;
+
+$formElement-error-formElementCheckbox-checkbox-span-color: $primary-red !default;
+$navigationSidebarSearch-search-backgroundColor: transparent !default;
+$navigationSidebarSearch-search-input-backgroundColor: $pale-grey !default;
+$navigationSidebarSearch-search-input-placeholder-color: $primary-shade-3 !default;
+$navigationSidebarSearch-search-content-header-color: $yellow !default;
+$navigationSidebarSearch-search-input-color: $primary !default;
+$navigationSidebarSearch-searchOpened-backgroundColor: $white !default;
+$navigationSidebarSearch-searchOpened-before-backgroundColor: $black !default;
+$navigationSidebarSearch-searchOpened-searchInput-input-color: $black-second !default;
+$content-aside-backgroundColor: $white !default;
+$navigationSidebar-isOpen-boxShadowColor: $black-20 !default;
+$navigationSidebarContent-backgroundColor: $black !default;
+$navigationSidebarSearch-searchInput-backgroundColor: $primary !default;
+$navigationSidebarSearch-searchContent-backgroundColor: $black !default;
+$navigationSidebarClose-backgroundColor: $primary !default;
+$navigationSidebarClose-color: $white !default;
+$navigationSidebar-headerLink-backgroundColor: $black !default;
+$navigationSidebar-header-backgroundColor: $black !default;
+$accountHelperForm-loginHelpers-rememberMeCheckbox-color: $white !default;
+$accountHelperForm-loginHelpers-anchor-color: $yellow !default;
+$eventsTable-eventRowSelections-element-lastChild-borderRightColor: transparent !default;
+
+/* ui/common/ErrorMessage */
+$errorMessage-backgroundColor: $primary-red !default;
+$errorMessage-color: $white !default;
+$errorMessageChildren-color: $white !default;
+
+/* ui/common/Header */
+$headerLink-color: #adadad !default;
+$headerLink-hover-color: $yellow !default;
+$headerLogo-backgroundColor: transparent !default;
+
+/* ui/common/QuickHeader */
+$quickHeader-color: $white !default;
+$quickHeaderCounter-backgroundColor: $error-red !default;
+$quickHeaderCounter-color: $white !default;
+$quickHeader-anchor-color: $white !default;
+$quickHeaderLinkActive-backgroundColor: $pale-grey !default;
+$quickHeaderLinkActive-color: $primary !default;
+
+/* ui/common/Panel */
+$panel-header-color: $yellow !default;
+$panel-header-span-borderBottomColor: $yellow !default;
+$panel-header-before-backgroundColor: $primary-shade-3 !default;
+
+/* ui/common/NavigationList */
+$navigationList-element-anchor-boxShadowColor: $primary-shade-3 !default;
+$navigationList-anchor-color: $white !default;
+$navigationList-anchor-hover-color: $yellow !default;
+$navigationListItem-color: $white !default;
+
+/* ui/common/Filters */
+$filters-element-anchor-borderRadius: $radius-100 !default;
+$filters-element-anchor-color: $white !default;
+$filters-element-anchor-borderColor: $dark-grey !default;
+$filters-filterActive-anchor-backgroundColor: $dark-grey !default;
+$filters-filterActive-anchor-color: $white !default;
+$filters-filterActive-anchor-borderColor: $filters-element-anchor-borderColor !default;
+$filtersLight-element-anchor-backgroundColor: $white !default;
+$filtersLight-element-anchor-borderColor: $yellow !default;
+$filtersLight-element-anchor-color: $white !default;
+$filtersLight-filtersFilterActive-anchor-borderColor: $yellow !default;
+$filtersLight-filtersFilterActive-anchor-color: $white !default;
+$filtersLight-filtersFilterActive-anchor-backgroundColor: $yellow !default;
+
+/* ui/common/LabeledFilters */
+$labeledFiltersLabel-span-backgroundColor: $primary-shade-2 !default;
+$labeledFiltersLabel-span-color: $white !default;
+$labeledFiltersLabel-span-before-backgroundColor: $primary-shade-2 !default;
+
+/* ui/common/Tabs */
+$tabs-backgroundColor: #29293b !default;
+$tabs-list-backgroundColor: #363e5b !default;
+$tabs-list-element-notTabsSpecial-anchor-color: $white !default;
+$tabs-list-element-tabsTabCurrent-anchor-backgroundColor: #29293b !default;
+$tabs-list-element-tabsTabCurrent-anchor-color: $form-disabled-color !default;
+$tabs-div-color: $white !default;
+$tabsFullSquare-list-element-notTabsSpecial-anchor-labelWithBOG-bogIndicator-icon-color: $success-green !default;
+$tabsFullSquare-list-element-notTabsSpecial-anchor-labelFinished-color: $primary-shade-3 !default;
+$tabsFullSquare-list-element-tabsTabCurrent-anchor-backgroundColor: $white !default;
+$tabsFullSquare-list-element-tabsTabCurrent-anchor-color: $primary-shade-1 !default;
+$tabsFullSquare-list-element-tabsTabCurrent-anchor-labelFinished-backgroundColor: $white !default;
+$tabsFilterStyle-backgroundColor: $white !default;
+$tabsFilterStyle-color: $primary-dark !default;
+$tabsFilterStyle-list-backgroundColor: $primary-shade-1 !default;
+$tabsFilterStyle-list-element-notTabsSpecial-anchor-color: $yellow !default;
+$tabsFilterStyle-list-element-notTabsSpecial-anchor-borderColor: $yellow !default;
+$tabsFilterStyle-list-element-notTabsSpecial-anchor-borderRadius: 12px !default;
+$tabsFilterStyle-list-element-tabsTabCurrent-anchor-backgroundColor: $yellow !default;
+$tabsFilterStyle-list-element-tabsTabCurrent-anchor-color: $black-primary !default;
+$tabsFilterStyle-div-color: $base-text-color !default;
+$tabsFilterStyleLight-list-backgroundColor: $black !default;
+$tabsFilterStyleLight-list-element-notTabsSpecial-anchor-backgroundColor: $white !default;
+$tabsFilterStyleLight-list-element-notTabsSpecial-anchor-borderColor: $yellow !default;
+$tabsFilterStyleLight-list-element-notTabsSpecial-anchor-color: $yellow !default;
+$tabsFilterStyleLight-list-element-tabsTabCurrent-anchor-borderColor: $yellow !default;
+$tabsFilterStyleLight-list-element-tabsTabCurrent-anchor-color: $black !default;
+$tabsFilterStyleLight-list-element-tabsTabCurrent-anchor-backgroundColor: $yellow !default;
+$tabsLight-backgroundColor: $black !default;
+$tabsLight-color: $primary-dark !default;
+$tabsLight-list-backgroundColor: $primary-shade-1 !default;
+$tabsLight-list-color: $white !default;
+$tabsLight-list-element-notTabsSpecial-anchor-color: $white !default;
+$tabsLight-list-element-tabsTabCurrent-anchor-backgroundColor: $yellow !default;
+$tabsLight-list-element-tabsTabCurrent-anchor-color: #363e5b !default;
+$tabsLight-div-color: $base-text-color !default;
+$tabsTitle-color: $white !default;
+$tabsAccount-backgroundColor: $white !default;
+$tabsAccount-list-backgroundColor: transparent !default;
+$tabsAccount-list-element-anchor-color: $primary !default;
+$tabsAccount-list-element-anchor-borderColor: $primary-shade-3 !default;
+$tabsAccount-list-element-anchor-backgroundColor: transparent !default;
+$tabsAccount-list-element-tabsTabCurrent-anchor-color: $white !default;
+$tabsAccount-list-element-tabsTabCurrent-anchor-backgroundColor: $tertiary !default;
+$tabsAccount-list-element-tabsTabCurrent-anchor-borderColor: $tertiary !default;
+$tabsIsToggle-tabsGroupTitle-backgroundColor: $tertiary !default;
+$tabsIsToggle-tabsGroupTitle-color: $white !default;
+$tabsIsToggle-tabsHeader-backgroundColor: $primary-shade-1 !default;
+$tabsIsToggle-tabsHeader-color: $white !default;
+$tabsIsToggle-tabsHeader-borderBottomColor: darken($primary-shade-2, 10%) !default;
+$tabsIsToggle-tabsBody-backgroundColor: $white !default;
+
+/* ui/common/LineChart */
+$lineChart-text-fillColor: $primary-dark !default;
+$lineChart-path-line-strokeColor: $primary !default;
+$lineChart-path-line-fillColor: transparent !default;
+$lineChart-path-area-fillColor: rgba($primary, 0.6) !default;
+$lineChart-circle-strokeColor: $white !default;
+$lineChart-circle-fillColor: $primary !default;
+$lineChart-circle-hover-strokeColor: $primary !default;
+
+/* ui/common/Checkbox */
+$checkboxWrap-boxShadowColor: $black-20 !default;
+$checkboxWrap-backgroundColor: $primary-shade-6 !default;
+$checkboxWrap-isActive-backgroundColor: $yellow !default;
+$checkboxWrap-isActive-color: $white !default;
+
+/* ui/common/DateInput */
+$formElementError-dateInput-formElementSelect-notFormElementEmpty-not-formElementDisabled-select-borderColor: #ff0000 !default;
+
+/* ui/common/Popup */
+$popup-backgroundColor: $white !default;
+$popup-boxShadowColor: rgba($black, 0.3) !default;
+$popupOverlay-backgroundColor: rgba($black, 0.93) !default;
+$popupTitle-color: #222 !default;
+$popupClose-color: #666 !default;
+$popupClose-backgroundColor: #eee !default;
+$popupClose-hover-backgroundColor: #666 !default;
+
+/* ui/common/ConfirmationBox */
+$confirmationBox-gamstopText-backgroundColor: $primary-shade-6 !default;
+
+/* ui/common/PopOver */
+$popover-backgroundColor: $white !default;
+$popover-borderColor: $primary-dark-grey !default;
+$popover-after-borderColor: transparent !default;
+$popover-after-borderBottomColor: $white !default;
+$popover-before-borderBottomColor: $primary-dark-grey !default;
+
+/* ui/common/Wizard */
+$wizardHeader-after-backgroundColor: rgba($white, 0.1) !default;
+$wizard-element-h3-borderBottomColor: $black !default;
+$wizard-element-h3-backgroundColor: $black-second !default;
+$wizard-element-h3-color: inherit !default;
+$wizard-element-wizardTabCompleted-h3-backgroundColor: $success-green !default;
+
+/* ui/common/Pagination */
+$pagination-element-anchor-borderColor: #4d5165 !default;
+$pagination-element-anchor-color: #2d334b !default;
+
+/* ui/common/RatingTooltip */
+$ratingTooltip-backgroundColor: $pale-grey !default;
+$ratingTooltip-boxShadowColor: $black-20 !default;
+$ratingTooltipContent-after-borderColor: $pale-grey !default;
+$ratingTooltipLabel-color: $primary-dark !default;
+$ratingTooltipStar-backgroundColor: $clear !default;
+$ratingTooltipStar-color: $primary-shade-4 !default;
+
+/* utils/Form */
+$formElement-input-backgroundColor: $white !default;
+$formElement-input-borderColor: $black !default;
+$formElement-input-color: $black !default;
+$formElement-input-autofill-boxShadowColor: $pale-grey !default;
+$formElement-select-autofill-color: $primary !default;
+$formElement-input-placeholder-color: rgba($black, 0.2) !default;
+$formElement-input-placeholder-disabled-color: $yellow !default;
+$formElementSelect-before-backgroundColor: $primary !default;
+$formElementError-input-backgroundColor: $white !default;
+$formElementError-input-borderColor: $primary-red !default;
+$formElementFocus-input-borderColor: $black !default;
+$formElement-select-focus-backgroundColor: $white !default;
+$formElement-error-input-borderColor: $primary-red !default;
+$form-elementDisabled-label-color: $form-disabled-label-color !default;
+$form-elementDisabled-input-backgroundColor: $yellow !default;
+$form-elementDisabled-input-color: $white !default;
+$form-elementDisabled-input-borderColor: transparent !default;
+
+$form-elementDisabled-input-placeholder-color: $form-disabled-color !default;
+$formElement-errorMessage-backgroundColor: $primary-red !default;
+$formElement-errorMessage-color: $white !default;
+$formSuccess-backgroundColor: $form-success-background-color !default;
+$formSuccess-color: $white !default;
+$formError-backgroundColor: $primary-red !default;
+
+/* ui/content/Highlights */
+$highlights-backgroundColor: rgba($black, 0.1) !default;
+$highlights-tabs-backgroundColor: transparent !default;
+$highlights-tabs-list-element-anchor-borderRightColor: #29293b !default;
+$highlightsArticle-textShadowColor: rgba($black, 0.4) !default;
+$highlightsArticle-btn-color: $white !default;
+$highlightsArticle-btn-backgroundColor: $form-disabled-color !default;
+$highlightsArticleDescription-color: $white !default;
+$highlightsArticleDescription-before-backgroundColor: $white !default;
+$highlightsArticleContent-color: $form-disabled-color !default;
+$highlightsInfo-borderTopColor: rgba($black, 0.05) !default;
+
+/* ui/content/NotificationsList */
+$notificationsPage-before-backgroundColor: $primary !default;
+$notificationsListNotification-color: $black !default;
+$notificationsListNotification-header-backgroundColor: transparent !default;
+$notificationsListNotification-header-color: $white !default;
+$notificationsListNotification-header-before-backgroundColor: $white !default;
+$notificationsListNotification-div-color: $form-disabled-color !default;
+$notificationsListNotification-div-textShadowColor: rgba($black, 0.6) !default;
+$notificationsListNotificationBtn-backgroundColor: $form-disabled-color !default;
+$notificationsListNotificationBtn-color: $white !default;
+$notificationsListNotificationBtn-after-backgroundColor: rgba($black, 0.4) !default;
+$notificationsListNotificationBtn-after-boxShadowColor: rgba($black, 0.6) !default;
+$notificationsListNotification_t_and_c-t_and_c_link-textShadowColor: #666 !default;
+$notificationsListNotification_t_and_c-t_and_c_link-color: $black !default;
+
+/* ui/account/AccountHelperInfo */
+$accountHelperContainerWrapper-backgroundColor: $black !default;
+$accountHelperContainerWrapperHeader-color: $white !default;
+$accountHelperContainerWrapperItem-icon-color: $yellow !default;
+$accountHelperContainerWrapperItemValue-color: $yellow !default;
+
+/* ui/account/AccountLinks */
+$accountLinks-element-anchor-backgroundColor: $black !default;
+$accountLinks-element-anchor-color: $white !default;
+$accountLinks-element-anchor-backgroundColor-hover: $yellow !default;
+$accountLinks-element-anchor-color-hover: $dark-grey !default;
+$accountLinksExpandable-div-color: $primary-dark !default;
+
+/* ui/account/AccountNavigation */
+$accountNavigation-backgroundColor: $yellow !default;
+$accountNavigation-list-element-borderRightColor: $black-20 !default;
+$accountNavigation-anchor-color: $primary-dark !default;
+$accountNavigation-anchor-hover-backgroundColor: darken($yellow, 3%) !default;
+
+/* ui/account/HelpBox */
+$account-helpBox-backgroundColor: $primary !default;
+$account-helpBox-color: $white !default;
+$account-helpBox-backgroundColor-mobile: $pale-grey !default;
+$account-helpBox-color-mobile: $primary !default;
+$account-helpBoxLinks-list-element-span-color: #7b96c4 !default;
+$account-helpBox-h3-color: $white !default;
+$account-helpBoxSubHeader-backgroundColor: $pale-grey !default;
+$account-helpBoxSubHeader-icon-color: $primary !default;
+$account-helpBoxSubHeader-h3-color: $primary !default;
+$account-helpBoxSubHeader-helpBoxLogout-backgroundColor-1: rgba($black, 0.1) !default;
+$account-helpBoxSubHeader-helpBoxLogout-color: $primary !default;
+
+/* ui/account/AccountTab */
+$accountTabContent-backgroundColor: $primary !default;
+$accountTabContent-color: $white !default;
+$accountTabContent-loginSignupTab-list-backgroundColor: $pale-grey !default;
+$accountTabContent-loginSignupTab-list-tabsTabCurrent-anchor-backgroundColor: $white !default;
+$accountTabContent-loginSignupTab-list-tabsTabCurrent-anchor-color: $primary-shade-1 !default;
+$accountTabContent-loginSignupTab-list-element-anchor-backgroundColor: $pale-grey !default;
+$accountTabContent-loginSignupTab-list-element-anchor-color: $primary-shade-2 !default;
+$accountTabContent-h3-color: $black !default;
+$accountTabContent-forgotPassword-color: $primary !default;
+
+/* ui/account/AccountBettingTab */
+$bettingTabContent-backgroundColor: $primary !default;
+$bettingTab-betslip-backgroundColor: $black-thred !default;
+
+/* ui/account/AccountSummary */
+$accountSummary-backgroundColor: $primary !default;
+$accountSummary-color: $white !default;
+$accountSummaryBalance-span-before-backgroundColor: $primary !default;
+$accountSummaryBalance-span-before-boxShadowColor: $black-20 !default;
+$accountSummaryBalance-input-checked-span-before-backgroundColor: $tertiary !default;
+$accountSummaryOdds-anchor-color: $white !default;
+
+/* ui/account/StaticPage */
+$staticPageInner-h6-color: $tertiary !default;
+$staticPageInner-list-element-before-borderColor: $primary-shade-3 !default;
+
+/* ui/account/Account */
+$account-bettingTabAccount-betslipTabHeader-backgroundColor: $black !default;
+$account-bettingTabAccount-betslipTabHeader-color: $white !default;
+$account-bettingTabAccount-betslipTabHeader-span-text-backgroundColor: $error-red !default;
+$account-bettingTabAccount-betslipTabHeader-span-text-color: $white !default;
+$account-bettingTabAccount-betslipTabHeader-anchor-color: $white !default;
+$account-bettingTabAccount-betslipTab-list-backgroundColor: $gray !default;
+$account-bettingTabAccount-betslipTab-list-element-anchor-color: $primary-white-grey !default;
+$account-bettingTabAccount-betslipTab-list-tabsTabCurrent-anchor-color: $white !default;
+
+/* ui/account/CountryDropdown */
+$countryDropdown-selectMenuOuter-backgroundColor: $white !default;
+$countryDropdown-selectMenuOuter-borderColor: #ccc !default;
+$countryDropdown-selectMenuOuter-boxShadowColor: rgba($black, 0.06) !default;
+$countryDropdown-selectOption-borderBottomColor: #ccc !default;
+$countryDropdown-selectOption-hover-backgroundColor: rgba($black, 0.1) !default;
+
+/* ui/account/AmountInput */
+$amountInputSymbol-color: $white !default;
+$formElementDisabled-amountInputSymbol-color: $form-disabled-color !default;
+$formElementError-amountInputSymbol-color: #ff0000 !default;
+
+/* ui/account/VerifyAccountTab/VerifyAccount */
+$verifyAccountTab-btnDisabled-backgroundColor: $secondary !default;
+$verifyAccountTab-verifyAccountWithEmail-backgroundColor: $shade-light-6 !default;
+$verifyAccountTab-verifyAccountWithEmail-color: $shade-dark !default;
+$verifyAccountTab-verifyAccountWithEmailSendAgain-anchor-color: $yellow !default;
+$sidebarPolicyWrapper-backgroundColor: $white !default;
+$verifyAccountWithSms-backgroundColor: $shade-light-6 !default;
+$verifyAccountWithSms-formInputField-backgroundColor: $shade-light-5 !default;
+$verifyAccountWithSms-formInputField-color: $shade-dark !default;
+$verifyAccountWithSms-formInputField-borderColor: $shade-light-5 !default;
+$verifyAccountWithSmsMsg-color: $shade-dark !default;
+$verifyAccountWithSmsCells-input-placeholder-color: $cool-grey !default;
+
+/* ui/betting/Betslip */
+$betslip-backgroundColor: $black-second !default;
+$betslip-color: $white !default;
+$betslip-header-boxShadowColor: $white-20 !default;
+$betslipBalanceDeposit-backgroundColor: rgba($black, 0.3) !default;
+$betslipBalanceDeposit-anchor-color: $white !default;
+$betslipBalanceDeposit-hover-backgroundColor: rgba($black, 0.5) !default;
+$betslipContentWaiting-color: $white !default;
+$betslipContent-list-selectionToggle-backgroundColor: $yellow !default;
+$betslipContent-list-selectionToggle-color: $black !default;
+$betslipContent-list-selectionToggle-before-backgroundColor: $black !default;
+$betslipContent-errorMessage-backgroundColor: $error-red !default;
+$betslipMessage-backgroundColor: $yellow !default;
+$betslipMessage-color: $white !default;
+$betslipActions-anchor-color: $white !default;
+$betslipActions-anchor-hover-color: rgba($white, 0.7) !default;
+$betslipInfoContent-backgroundColor: rgba($black, 0.9) !default;
+$betslipInfoContent-color: $white !default;
+$betslipInfoContent-before-borderColor: rgba($black, 0.9) !default;
+$betslip-cancel-color: $black-primary !default;
+$betslipWarning-backgroundColor: $primary-red !default;
+$betslipWarning-color: $white !default;
+$betslip-btn-color: $primary-dark !default;
+$betslip-btn-backgroundColor: $yellow !default;
+$betslip-returns-color: $black-primary !default;
+
+/* ui/betting/Betslip Tabs */
+$no-betslipTabs-background-color: $black-thred;
+$no-betslipTabs-text-color: $white;
+$betslipTabs-background-color: $black-second;
+
+/* ui/betting/BetslipSelection */
+$betslipSelection-backgroundColor: $black-second !default;
+$betslipSelection-color: $black !default;
+$betslipSelection-after-backgroundColor: rgba($white, 0.3) !default;
+$betslipSelection-h3-color: $black !default;
+$betslipSelectionEvent-color: $black-primary !default;
+$betslipSelectionEachWay-backgroundColor: $primary-shade-3 !default;
+$betslipSelectionEachWay-label-color: $primary !default;
+$betslipSelectionEachWay-input-backgroundColor: $primary-shade-6 !default;
+$betslipSelectionEachWay-input-color: $primary !default;
+$betslipSelectionEachWay-input-checked-icon-color: $white !default;
+$betslipSelectionEachWay-input-checked-backgroundColor: $yellow !default;
+$betslipSelectionEachWay-input-checked-boxShadowColor: $black-20 !default;
+$betslipSelectionOptions-backgroundColor: $white !default;
+$betslipSelectionReturns-color: $primary-dark !default;
+$betslipSelectionRelated-h3-icon-color: $error-red !default;
+$betslipSelectionRelated-h3-icon-before-backgroundColor: $white !default;
+
+/* ui/betting/StakeInput */
+$stakeInput-before-color: $market-header-border-color !default;
+$stakeInput-input-backgroundColor: $black-second !default;
+$stakeInput-input-color: $white !default;
+$stakeInput-input-disabled-color: $primary !default;
+$stakeInput-input-placeholder-color: $primary-shade-3 !default;
+
+/* ui/betting/PriceInput */
+$priceInput-select-backgroundColor: $primary-shade-4 !default;
+$priceInput-select-color: $primary !default;
+$priceInput-icon-color: $primary !default;
+$priceInputDisabled-backgroundColor: transparent !default;
+
+/* ui/betting/BetsList */
+$betsList-color: $white !default;
+$betsListInfo-backgroundColor: $white !default;
+$betsListHeader-backgroundColor: $primary-shade-4 !default;
+$betsListHeader-color: $primary-shade-2 !default;
+$betsListMonth-color: $yellow !default;
+$betsListBet-after-borderBottomColor: $black-20 !default;
+
+/* ui/betting/BetslipOfferTimer */
+$betslipOfferTimer-backgroundColor: #ed3838 !default;
+$betslipOfferTimer-color: $white !default;
+$betslipOfferTimer-anchor-color: $white !default;
+
+/* ui/betting/containers/QuickBet */
+$quickbetHeader-backgroundColor: $black-second !default;
+$quickbetHeader-color: $white !default;
+$quickbetClose-backgroundColor: transparent !default;
+$quickbet-betslip-backgroundColor: $black-thred !default;
+$quickbet-success-backgroundColor: $success-green !default;
+$quickbet-success-color: $black !default;
+$quickbet-success-boxShadowColor: $black-20 !default;
+
+/* ui/cashout/Bets */
+$bets-backgroundColor: $black !default;
+$bets-boxShadowColor: $black !default;
+$bets-color: $white !default;
+$bets-labeledFilters-backgroundColor: $black-second !default;
+$bets-filtersLight-element-anchor-color: $white !default;
+$bets-filtersLight-filtersFilterActive-anchor-color: $yellow !default;
+$bets-filtersLight-filtersFilterActive-anchor-backgroundColor: $white !default;
+$bets-btn-color: $primary-dark !default;
+$bets-btnPrimary-backgroundColor: $yellow !default;
+$bets-returns-color: $white !default;
+
+/* ui/cashout/Selection */
+$betSelection-header-color: $white !default;
+$betSelection-h3-color: $black-primary !default;
+$betSelectionReturns-potentialReturns-color: $white !default;
+$betSelectionMessage-backgroundColor: $success-green !default;
+$betSelectionMessage-color: $white !default;
+
+/* ui/events/MatchLead */
+$matchLeadContent-backgroundColor: $tertiary !default;
+$matchLeadContent-color: $white !default;
+$matchLeadContent-after-backgroundColor: $primary-dark-50 !default;
+$matchLeadContentHighlighted-backgroundColor: $tertiary !default;
+$matchLeadContentHighlighted-boxShadowColor: rgba($black, 0.1) !default;
+$matchLeadStarted-matchLeadContentScore-backgroundColor: $white !default;
+$matchLeadStarted-matchLeadContentScore-color: $base-text-color !default;
+
+/* ui/events/Selection */
+$selection-backgroundColor: $white !default;
+$selection-color: $yellow !default;
+$selection-before-backgroundColor: $white !default;
+$selection-before-boxShadowColor: rgba($black, 0.1) !default;
+$selectionSelected-backgroundColor: $yellow !default;
+$selectionSelected-before-backgroundColor: $yellow !default;
+$selectionSelected-hover-before-backgroundColor: $yellow !default;
+$selectionSuspended-after-color: $white !default;
+
+/* ui/events/EventRow */
+$eventRow-borderColor: $black-second !default;
+$eventRowMetaScore-backgroundColor: $yellow !default;
+$eventRowMetaScore-color: $white !default;
+$eventRowScore-backgroundColor: $yellow !default;
+$eventRowScore-color: $black-primary !default;
+$eventRow-hover-eventRowHeader-backgroundColor: $black-second !default;
+$eventRowMarkets-borderTopColor: $primary-shade-3 !default;
+
+/* ui/events/MarketHeader */
+$marketHeaderDetailed-list-backgroundColor: $white !default;
+$marketHeaderEachway-backgroundColor: $white !default;
+$marketHeaderEachway-borderColor: $primary-shade-3 !default;
+$marketHeader-header-button-color: $primary-shade-2 !default;
+$marketHeader-header-button-backgroundColor: transparent !default;
+$marketHeaderDescription-backgroundColor: $white !default;
+$marketHeaderDescription-boxShadowColor: rgba($black, 0.1) !default;
+$marketHeaderDescription-before-borderColor: $white !default;
+$marketHeaderDescription-button-backgroundColor: transparent !default;
+
+/* ui/events/GoalscorerMarketGroup */
+$marketGroupGoalscorer-marketGroupTeams-anchor-borderColor: $primary-shade-3 !default;
+$marketGroupGoalscorer-marketGroupTeams-anchor-color: $primary-dark !default;
+$marketGroupGoalscorer-marketGroupTeams-element-active-anchor-color: $white !default;
+$marketGroupGoalscorer-marketGroupTeams-element-active-anchor-backgroundColor: $tertiary !default;
+$marketGroupGoalscorer-marketGroupTeams-element-active-anchor-borderColor: $tertiary !default;
+$marketGroupGoalscorer-marketGroupHeader-strong-color: $black !default;
+$marketGroupGoalscorer-marketGroupGoalscorers-borderTopColor: $primary-shade-3 !default;
+$marketGroupGoalscorer-marketGroupGoalscorers-element-backgroundColor: transparent !default;
+$marketGroupGoalscorer-marketGroupGoalscorers-element-marketGroupGoalscorersNG-marketGroupGoalscorersName-backgroundColor: $white !default;
+$marketGroupGoalscorer-marketGroupGoalscorers-selection-lastOfType-borderRightColor: $primary-shade-3 !default;
+$marketGroupGoalscorer-marketGroupGoalscorersName-backgroundColor: $primary-shade-6 !default;
+$marketGroupGoalscorer-marketGroupGoalscorersName-borderBottomColor: $primary-shade-3 !default;
+$marketGroupGoalscorer-marketGroupGoalscorersOtherName-backgroundColor: $primary-shade-6 !default;
+$marketGroupGoalscorer-marketGroupGoalscorersOtherName-color: rgba($primary-dark, 0.3) !default;
+$marketGroupGoalscorer-marketGroupGoalscorersOtherName-firstChild-borderBottomColor: $primary-shade-3 !default;
+$marketGroupGoalscorer-marketGroupGoalscorers-selection-borderBottomColor: $primary-shade-3 !default;
+
+/* ui/events/OverUnderMarketGroup */
+$marketGroupOverUnder-header-color: $primary-dark !default;
+$marketGroupOverUnder-header-borderBottomColor: $primary-shade-3 !default;
+$marketGroupOverUnder-header-borderTopColor: $primary-shade-3 !default;
+$marketGroupOverUnder-marketGroupHeader-strong-color: #233f5d !default;
+
+/* ui/events/SelectionsGroup */
+$selectionsGroup-list-element-backgroundColor: $black-primary !default;
+$selectionsGroup-list-twoColumn-element-anchor-borderRightColor: $primary-shade-3 !default;
+$selectionsGroup-list-threeColumn-element-anchor-borderRightColor: $primary-shade-3 !default;
+$selectionsGroupMultiple-list-lastOfType-borderRightColor: $primary-shade-3 !default;
+$selectionsGroupName-borderBottomColor: $black-second !default;
+$selectionGroupOutright-list-borderRightColor: $primary-shade-3 !default;
+
+/* ui/events/EventsFilters */
+$eventsFiltersLabel-span-backgroundColor: $primary-shade-2 !default;
+$eventsFiltersLabel-span-color: $white !default;
+$eventsFiltersLabel-span-before-backgroundColor: $primary-shade-2 !default;
+
+/* ui/events/EventsTable */
+$eventsTable-color: $white !default;
+$eventsTable-notEventsTableDark-filters-element-anchor-backgroundColor: $white !default;
+$eventsTable-notEventsTableDark-filters-element-anchor-borderColor: $black-primary !default;
+$eventsTable-notEventsTableDark-filters-element-anchor-color: $black-primary !default;
+$eventsTable-notEventsTableDark-filters-filterActive-anchor-backgroundColor: $yellow !default;
+$eventsTable-notEventsTableDark-filters-filterActive-anchor-color: $white !default;
+$eventsTableHeaderTitle-backgroundColor: $primary-shade-1 !default;
+$eventsTableHeaderTitle-color: $white !default;
+$eventsTable-eventRow-color: $white !default;
+$eventsTable-eventRow-backgroundColor: $black-primary !default;
+
+/* ui/events/EventGroupHeader */
+$eventGroupHeaderSmall-backgroundColor: $primary-shade-4 !default;
+$eventGroupHeader-hover-before-backgroundColor: rgba($white, 0.15) !default;
+
+/* ui/events/EventCard */
+$eventCardInfo-iconLoader-color: $yellow !default;
+
+/* ui/events/MatchCard */
+$matchCard-color: $primary-dark !default;
+$matchCardHeader-borderColor: $primary-shade-3 !default;
+$matchCardHeader-color: $primary-dark !default;
+$matchCardHeader-backgroundColor: $primary-shade-4 !default;
+$matchCardContent-borderColor: $primary-shade-3 !default;
+$matchCardContent-backgroundColor: $white !default;
+$matchCard-marketHeader-header-borderColor: $primary-shade-3 !default;
+$matchCard-marketHeader-header-backgroundColor: $primary-shade-4 !default;
+
+/* ui/events/Search */
+$search-input-color: $white !default;
+$search-input-backgroundColor: $primary !default;
+$search-input-placeholder-color: $white !default;
+$searchInput-color: $primary !default;
+$searchContent-header-color: $primary !default;;
+$searchContentResults-element-anchor-color: $white !default;
+$searchContentResults-element-active-anchor-backgroundColor: $black-second !default;
+
+/* ui/events/HomepageContentTabs */
+$homepageContentTabs-tabs-backgroundColor: $primary-shade-1 !default;
+$homepageContentTabs-tabs-list-backgroundColor: $primary-shade-3 !default;
+$homepageContentTabs-tabs-list-element-anchor-color: $primary-dark !default;
+$homepageContentTabs-tabs-list-element-tabsTabCurrent-anchor-backgroundColor: $primary-shade-1 !default;
+$homepageContentTabs-tabs-list-element-tabsTabCurrent-anchor-color: $white !default;
+$homepageContentTabs-tabs-pagination-backgroundColor: $primary-shade-1 !default;
+$homepageContentTabs-tabs-pagination-element-anchor-color: $white !default;
+$homepageContentTabs-tabs-pagination-element-anchor-borderColor: $white !default;
+
+/* ui/events/containers/EventsInPlay */
+$eventsTableInPlay-header-color: $white !default;
+$noEventsHeader-headerTitle-color: $primary-shade-1 !default;
+$noEventsHeader-headerText-color: $primary-dark !default;
+
+/* ui/events/containers/EventsOnLater */
+$eventsTableOnLater-header-backgroundColor: $primary-shade-1 !default;
+$eventsTableOnLater-header-color: $white !default;
+
+/* ui/events/containers/SportEventsList */
+$eventsTableSportList-eventsTableHeaderTitle-backgroundColor: $primary-shade-1 !default;
+$eventsTableSportList-eventsTableHeaderTitle-color: $white !default;
+
+/* ui/sports/General */
+$sportGeneralHeader-backgroundColor: #121524 !default;
+$sportGeneralHeader-color: $white !default;
+$sportGeneralHeader-after-backgroundColor: $white !default;
+$sportGeneralHeader-before-backgroundColor: $primary-dark-50 !default;
+
+/* ui/betting/BettingCustomKeyboard */
+$customKeyboard-shortKeyboardDigits-anchor-backgroundColor: $white !default;
+$customKeyboard-shortKeyboardDigits-anchor-boxShadowColor: $warm-grey !default;
+$customKeyboard-shortKeyboardDigits-anchor-nthLastChildN-4-color: $primary !default;
+$customKeyboard-fullKeyboardHeader-backgroundColor: $white-two !default;
+$customKeyboard-fullKeyboardHeader-color: $black !default;
+$customKeyboard-fullKeyboardHeader-icon-color: $primary !default;
+$customKeyboard-fullKeyboardHeader-addToBetslipBtn-color: $primary !default;
+$customKeyboard-fullKeyboardDigits-borderTopColor: $warm-grey !default;
+$customKeyboard-fullKeyboardDigits-anchor-lastChild-backgroundColor: lighten($warm-grey, 25%) !default;
+$customKeyboard-fullKeyboardDigits-anchor-backgroundColor: $white !default;
+$customKeyboard-fullKeyboardDigits-anchor-color: $black !default;
+$customKeyboard-fullKeyboardDigits-anchor-borderRightColor: $warm-grey !default;
+$customKeyboard-fullKeyboardDigits-anchor-borderBottomColor: $warm-grey !default;
+
+/* common */
+$btn-backgroundColor: $yellow !default;
+$btn-color: $primary-dark !default;
+$btn-hover-backgroundColor: darken($yellow, 4%) !default;
+$btnPrimary-backgroundColor: $yellow !default;
+$comingSoon-backgroundColor: transparent !default;
+$comingSoon-after-backgroundColor: $tertiary !default;
+$comingSoon-after-color: $white !default;
+$customDropdownSelect-selectMenuOuter-backgroundColor: $pale-grey !default;
+$customDropdownSelect-selectMenuOuter-boxShadowColor: $primary-shade-3 !default;
+$customDropdownSelect-selectArrow-before-backgroundColor: $primary !default;
+$customDropdownSelect-selectOption-hover-backgroundColor: $primary-shade-4 !default;
+$eventNavigation-color: $primary !default;
+$eventNavigation-backgroundColor: $black !default;
+$message-icon-color: $white !default;

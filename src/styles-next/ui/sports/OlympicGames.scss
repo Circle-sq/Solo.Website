@@ -1,0 +1,34 @@
+.OLYMPICGAMES:before {
+  display: block;
+  content: '';
+  background-image: url('/libs/ui-icons/src/assets/icons/OlympicGames.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 8px;
+}
+
+.subnavhead_OLYMPICGAMES:before {
+  background-size: 21px;
+  padding: 0;
+}
+
+.subnavheadmobile_OLYMPICGAMES:before {
+  height: 16px;
+  background-size: 23px;
+  padding: 13px;
+  margin-top: -6px;
+}
+
+.subnav_OLYMPICGAMES:before {
+  max-height: 0;
+  padding: 10px;
+}
+
+.subnavmobile_OLYMPICGAMES:before {
+  padding: 12px;
+}
+
+.marquee_OLYMPICGAMES:before {
+  padding: 7px 8px;
+}

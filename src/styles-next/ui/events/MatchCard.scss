@@ -1,0 +1,22 @@
+.match-card {
+  color: $matchCard-color;
+}
+.match-card__header {
+  padding: 2px 10px;
+  font-weight: 500;
+  border: 1px solid $matchCardHeader-borderColor;
+  border-bottom: none;
+  font-size: pxToPr(12px, "em", $basicFontSize);
+  color: $matchCardHeader-color;
+  background-color: $matchCardHeader-backgroundColor;
+}
+.match-card__content {
+  border: 1px solid $matchCardContent-borderColor;
+  margin-top: -1px;
+  background: $matchCardContent-backgroundColor;
+}
+.match-card .market-header header {
+  border: 1px solid $matchCard-marketHeader-header-borderColor;
+  margin-top: -1px;
+  background-color: $matchCard-marketHeader-header-backgroundColor;
+}

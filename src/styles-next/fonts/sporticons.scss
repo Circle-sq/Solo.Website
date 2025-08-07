@@ -1,0 +1,879 @@
+[class*=" sports-"]:before,[class^=sports]:before{font-family:sportsicons;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;display:inline-block;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+
+.sports-stats-active:before {
+  content: "\e903"
+}
+
+.sports-circle-minus:before {
+  content: "\e904"
+}
+
+.sports-circle-plus:before {
+  content: "\e905"
+}
+
+.sports-globe:before {
+  content: "\e001"
+}
+
+.sports-calendar:before {
+  content: "\e004"
+}
+
+.sports-soon:before {
+  content: "\e006"
+}
+
+.sports-topbets:before {
+  content: "\e007"
+}
+
+.sports-filter:before {
+  content: "\e008"
+}
+
+.sports-sb-flag:before {
+  content: "\e01c"
+}
+
+.sports-sb-card:before {
+  content: "\e01d"
+}
+
+.sports-sb-tiebreaks-start:before {
+  content: "\e025"
+}
+
+.sports-sb-tiebreaks-end:before {
+  content: "\e026"
+}
+
+.sports-sb-set-won:before {
+  content: "\e02a"
+}
+
+.sports-sb-set-point:before {
+  content: "\e02b"
+}
+
+.sports-sb-safety-car:before {
+  content: "\e02c"
+}
+
+.sports-sb-powerplay:before {
+  content: "\e031"
+}
+
+.sports-sb-pit-stop:before {
+  content: "\e032"
+}
+
+.sports-sb-penalty-shootout-f:before {
+  content: "\e033"
+}
+
+.sports-sb-penalty-h:before {
+  content: "\e034"
+}
+
+.sports-sb-penalty-f:before {
+  content: "\e035"
+}
+
+.sports-sb-offside:before {
+  content: "\e038"
+}
+
+.sports-sb-goal-h:before {
+  content: "\e03b"
+}
+
+.sports-sb-goal-f:before {
+  content: "\e03c"
+}
+
+.sports-sb-goal-kick-f:before {
+  content: "\e03d"
+}
+
+.sports-sb-free-kick-f:before {
+  content: "\e03e"
+}
+
+.sports-sb-extra-time:before {
+  content: "\e044"
+}
+
+.sports-sb-drop-out:before {
+  content: "\e045"
+}
+
+.sports-sb-double-fault:before {
+  content: "\e046"
+}
+
+.sports-sb-corner:before {
+  content: "\e047"
+}
+
+.sports-sb-break-t:before {
+  content: "\e049"
+}
+
+.sports-sb-ace-t:before {
+  content: "\e04b"
+}
+
+.sports-sb-setball-t:before {
+  content: "\e04a"
+}
+
+.sports-refresh:before {
+  content: "\e0cf"
+}
+
+.sports-minus:before {
+  content: "\e0da"
+}
+
+.sports-competition:before {
+  content: "\e0f5"
+}
+
+.sports-tournament:before {
+  content: "\e0f6"
+}
+
+.sports-sb-weather-0:before {
+  content: "\e0f8"
+}
+
+.sports-sb-weather-0-i:before {
+  content: "\e0f9"
+}
+
+.sports-sb-weather-1:before {
+  content: "\e0fa"
+}
+
+.sports-sb-weather-1-i:before {
+  content: "\e0fb"
+}
+
+.sports-sb-weather-2:before {
+  content: "\e0fc"
+}
+
+.sports-sb-weather-2-i:before {
+  content: "\e0fd"
+}
+
+.sports-sb-weather-3:before {
+  content: "\e0fe"
+}
+
+.sports-sb-weather-3-i:before {
+  content: "\e0ff"
+}
+
+.sports-league:before {
+  content: "\e100"
+}
+
+.sports-highlights:before {
+  content: "\e11b"
+}
+
+.sports-favourites:before {
+  content: "\e600"
+}
+
+.sports-home:before {
+  content: "\e601"
+}
+
+.sports-check:before {
+  content: "\e602"
+}
+
+.sports-glove:before {
+  content: "\e603"
+}
+
+.sports-all:before {
+  content: "\e604"
+}
+
+.sports-bat:before {
+  content: "\e605"
+}
+
+.sports-sb-timeout:before {
+  content: "\e606"
+}
+
+.sports-sb-setball-v:before {
+  content: "\e607"
+}
+
+.sports-4:before {
+  content: "\e608"
+}
+
+.sports-sb-point-v:before {
+  content: "\e609"
+}
+
+.sports-sb-point-t:before {
+  content: "\e60a"
+}
+
+.sports-sb-retirement-t:before {
+  content: "\e60b"
+}
+
+.sports-country:before {
+  content: "\e60c"
+}
+
+.sports-sb-fault:before {
+  content: "\e60d"
+}
+
+.sports-sb-doublefault:before {
+  content: "\e60e"
+}
+
+.sports-sb-ace:before {
+  content: "\e60f"
+}
+
+.sports-sb-summary:before {
+  content: "\e610"
+}
+
+.sports-5:before {
+  content: "\e611"
+}
+
+.sports-sb-throw-in:before {
+  content: "\e612"
+}
+
+.sports-sb-race-to:before {
+  content: "\e613"
+}
+
+.sports-sb-intermission:before {
+  content: "\e614"
+}
+
+.sports-sb-foul:before {
+  content: "\e615"
+}
+
+.sports-sb-even:before {
+  content: "\e616"
+}
+
+.sports-sb-empty-net:before {
+  content: "\e617"
+}
+
+.sports-sb-penalty-scored-hand:before {
+  content: "\e618"
+}
+
+.sports-sb-penalty-missed-hand:before {
+  content: "\e619"
+}
+
+.sports-sb-goal-hand:before {
+  content: "\e61a"
+}
+
+.sports-sb-penalty-hand:before {
+  content: "\e61b"
+}
+
+.sports-sb-substitution:before {
+  content: "\e61c"
+}
+
+.sports-sb-flag-revoked:before {
+  content: "\e61d"
+}
+
+.sports-sb-score-b:before {
+  content: "\e61e"
+}
+
+.sports-sb-rebound:before {
+  content: "\e61f"
+}
+
+.sports-sb-freethrow-b:before {
+  content: "\e620"
+}
+
+.sports-sb-freethrow-missed-b:before {
+  content: "\e621"
+}
+
+.sports-6:before {
+  content: "\e622"
+}
+
+.sports-sb-assist-b:before {
+  content: "\e623"
+}
+
+.sports-sb-3point-b:before {
+  content: "\e624"
+}
+
+.sports-sb-2point-b:before {
+  content: "\e625"
+}
+
+.sports-7:before {
+  content: "\e626"
+}
+
+.sports-8:before {
+  content: "\e627"
+}
+
+.sports-9:before {
+  content: "\e628"
+}
+
+.sports-10:before {
+  content: "\e629"
+}
+
+.sports-11:before {
+  content: "\e62a"
+}
+
+.sports-12:before {
+  content: "\e62b"
+}
+
+.sports-13:before {
+  content: "\e62c"
+}
+
+.sports-14:before {
+  content: "\e62d"
+}
+
+.sports-15:before {
+  content: "\e62e"
+}
+
+.sports-16:before {
+  content: "\e62f"
+}
+
+.sports-17:before {
+  content: "\e630"
+}
+
+.sports-18:before {
+  content: "\e631"
+}
+
+.sports-21:before {
+  content: "\e632"
+}
+
+.sports-22:before {
+  content: "\e633"
+}
+
+.sports-23:before {
+  content: "\e634"
+}
+
+.sports-25:before {
+  content: "\e635"
+}
+
+.sports-26:before {
+  content: "\e636"
+}
+
+.sports-27:before {
+  content: "\e637"
+}
+
+.sports-28:before {
+  content: "\e638"
+}
+
+.sports-29:before {
+  content: "\e639"
+}
+
+.sports-30:before {
+  content: "\e63a"
+}
+
+.sports-31:before {
+  content: "\e63b"
+}
+
+.sports-32:before {
+  content: "\e63c"
+}
+
+.sports-33:before {
+  content: "\e63d"
+}
+
+.sports-34:before {
+  content: "\e63e"
+}
+
+.sports-35:before {
+  content: "\e63f"
+}
+
+.sports-36:before {
+  content: "\e640"
+}
+
+.sports-37:before {
+  content: "\e641"
+}
+
+.sports-38:before {
+  content: "\e642"
+}
+
+.sports-39:before {
+  content: "\e643"
+}
+
+.sports-40:before {
+  content: "\e644"
+}
+
+.sports-41:before {
+  content: "\e645"
+}
+
+.sports-42:before {
+  content: "\e646"
+}
+
+.sports-44:before {
+  content: "\e647"
+}
+
+.sports-45:before {
+  content: "\e648"
+}
+
+.sports-46:before {
+  content: "\e649"
+}
+
+.sports-47:before {
+  content: "\e64a"
+}
+
+.sports-48:before {
+  content: "\e64b"
+}
+
+.sports-49:before {
+  content: "\e64c"
+}
+
+.sports-50:before {
+  content: "\e64d"
+}
+
+.sports-51:before {
+  content: "\e64e"
+}
+
+.sports-52:before {
+  content: "\e64f"
+}
+
+.sports-53:before {
+  content: "\e650"
+}
+
+.sports-55:before {
+  content: "\e652"
+}
+
+.sports-56:before {
+  content: "\e653"
+}
+
+.sports-57:before {
+  content: "\e654"
+}
+
+.sports-58:before {
+  content: "\e655"
+}
+
+.sports-59:before {
+  content: "\e656"
+}
+
+.sports-60:before {
+  content: "\e657"
+}
+
+.sports-61:before {
+  content: "\e658"
+}
+
+.sports-63:before {
+  content: "\e659"
+}
+
+.sports-64:before {
+  content: "\e65a"
+}
+
+.sports-65:before {
+  content: "\e65b"
+}
+
+.sports-66:before {
+  content: "\e65c"
+}
+
+.sports-67:before {
+  content: "\e65d"
+}
+
+.sports-68:before {
+  content: "\e65e"
+}
+
+.sports-69:before {
+  content: "\e65f"
+}
+
+.sports-70:before {
+  content: "\e660"
+}
+
+.sports-71:before {
+  content: "\e661"
+}
+
+.sports-72:before {
+  content: "\e662"
+}
+
+.sports-73:before {
+  content: "\e663"
+}
+
+.sports-74:before {
+  content: "\e664"
+}
+
+.sports-75:before {
+  content: "\e665"
+}
+
+.sports-76:before {
+  content: "\e666"
+}
+
+.sports-77:before {
+  content: "\e667"
+}
+
+.sports-78:before {
+  content: "\e668"
+}
+
+.sports-79:before {
+  content: "\e669"
+}
+
+.sports-80:before {
+  content: "\e66a"
+}
+
+.sports-82:before {
+  content: "\e66b"
+}
+
+.sports-83:before {
+  content: "\e66c"
+}
+
+.sports-84:before {
+  content: "\e66d"
+}
+
+.sports-85:before {
+  content: "\e66e"
+}
+
+.sports-86:before {
+  content: "\e66f"
+}
+
+.sports-87:before {
+  content: "\e670"
+}
+
+.sports-88:before {
+  content: "\e671"
+}
+
+.sports-89:before {
+  content: "\e672"
+}
+
+.sports-90:before {
+  content: "\e673"
+}
+
+.sports-91:before {
+  content: "\e674"
+}
+
+.sports-92:before {
+  content: "\e675"
+}
+
+.sports-93:before {
+  content: "\e676"
+}
+
+.sports-94:before {
+  content: "\e677"
+}
+
+.sports-95:before {
+  content: "\e678"
+}
+
+.sports-96:before {
+  content: "\e679"
+}
+
+.sports-97:before {
+  content: "\e67a"
+}
+
+.sports-98:before {
+  content: "\e67b"
+}
+
+.sports-99:before {
+  content: "\e67c"
+}
+
+.sports-81:before {
+  content: "\e67d"
+}
+
+.sports-62:before {
+  content: "\e67e"
+}
+
+.sports-43:before {
+  content: "\e67f"
+}
+
+.sports-24:before {
+  content: "\e680"
+}
+
+.sports-handle:before {
+  content: "\e681"
+}
+
+.sports-handle-reversed:before {
+  content: "\e682"
+}
+
+.sports-gd-home:before {
+  content: "\e683"
+}
+
+.sports-protektor-i:before {
+  content: "\e684"
+}
+
+.sports-protektor:before {
+  content: "\e685"
+}
+
+.sports-live:before {
+  content: "\e686"
+}
+
+.sports-sb-circle-i:before {
+  content: "\e901"
+}
+
+.sports-match:before {
+  content: "\e902"
+}
+
+.sports-virtual-tennis:before {
+  content: "\e906"
+}
+
+.sports-beta:before {
+  content: "\e907"
+}
+
+.sports-badge-live:before {
+  content: "\e908"
+}
+
+.sports-glyph-video-i:before {
+  content: "\e900";
+  color: #FF4333;
+}
+
+.sports-54:before {
+  content: "\e90b"
+}
+
+.sports-100:before {
+  content: "\e90c"
+}
+
+.sports-new-badge:before {
+  content: "\e90d"
+}
+
+.sports-video-badge-b:before {
+  content: "\e909"
+}
+
+.sports-odd-range-arrow:before {
+  content: "\e90a"
+}
+
+.sports-coupons-bg:before {
+  content: "\e90e"
+}
+
+.sports-coupons-icon:before {
+  content: "\e910"
+}
+
+.sports-coupons-arrow-description:before {
+  content: "\e90f"
+}
+
+.sports-race-resulted:before {
+  content: "\e912"
+}
+
+.sports-sorting-asc:before {
+  content: "\e911"
+}
+
+.sports-silk-placeholder:before {
+  content: "\e913"
+}
+
+.sports-each-way:before {
+  content: "\e914"
+}
+
+.sports-alert-o:before {
+  content: "\e915"
+}
+
+.sports-alert:before {
+  content: "\e916"
+}
+
+.sports-alert-multiple-o:before {
+  content: "\e917"
+}
+
+.sports-alert-multiple:before {
+  content: "\e918"
+}
+
+.sports-edit-bet-delete:before {
+  content: "\e919"
+}
+
+.sports-edit-stake:before {
+  content: "\e91a"
+}
+
+.sports-swap:before {
+  content: "\e91b"
+}
+
+.sports-stats:before {
+  content: "\e91c"
+}
+
+.sports-video:before {
+  content: "\e91d"
+}
+
+.sports-video-active:before {
+  content: "\e91e"
+}
+
+.sports-4-match:before {
+  content: "\e91f"
+}
+
+.sports-4-match-active:before {
+  content: "\e920"
+}
+
+.sports-5-match-active:before {
+  content: "\e921"
+}
+
+.sports-5-match:before {
+  content: "\e922"
+}
+
+.sports-7-match-active:before {
+  content: "\e923"
+}
+
+.sports-7-match:before {
+  content: "\e924"
+}
+
+.sports-12-match-active:before {
+  content: "\e925"
+}
+
+.sports-12-match:before {
+  content: "\e926"
+}
+
+.sports-score:before {
+  content: "\e927"
+}
+
+.sports-paypal:before {
+  content: "\e928"
+}
+
+.sports-baseball-inning-button:before {
+  content: "\e929";
+  color: #fff
+}

@@ -1,0 +1,3 @@
+export const MAX_BUILD_A_BET_SELECTIONS_COUNT = 6;
+
+export const MIN_BUILD_A_BET_MARKETS_COUNT = 2;

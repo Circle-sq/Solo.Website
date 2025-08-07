@@ -1,0 +1,18 @@
+{
+  "name": "ui-icons-svg",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "scripts": {
+    "generate": "node ./tools/svgToComponent.mjs",
+    "copy:helper": "shx cp -r helpers/ src",
+    "generate:index": "node ./tools-mui/builder.mjs --svg-dir=src --output-dir=src",
+    "postgenerate": "npm run copy:helper ; npm run generate:index"
+  },
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "universe": "skycity",
+        "title": "fun_mode",
+        "background": {
+          "id": 1,
+          "label": null,
+          "url": "https://s3.eu-central-1.amazonaws.com/skycityhub-sandbox-cms/images/6c017141-abb4-478c-b834-145e8a4a9ac1.png",
+          "width": 2720,
+          "height": 836,
+          "caption": null,
+          "sha1": "22a97574da509f564328a6d858627accc5bc1e9d",
+          "altText": "Alt Text"
+        },
+        "contentType": {
+          "contentTypeId": 2,
+          "contentTypeName": "pop-up",
+          "contentTypeDescription": "pop-ups to inform client about important info"
+        },
+        "sport": null,
+        "content": "",
+        "published": true,
+        "displayOrder": 50,
+        "openUrl": "same_tab",
+        "buttonLabel": null,
+        "buttonUrl": null,
+        "eventId": null,
+        "marketId": null,
+        "selectionId": null,
+        "lang": "en-US",
+        "clientLabel": null,
+        "dateStart": "2023-09-01T15:25:33Z",
+        "dateStop": "2050-10-02T15:25:33Z",
+        "open": false
+    },
+    {
+        "id": 2,
+        "universe": "skycity",
+        "title": "comtrade",
+        "background": {
+          "id": 1,
+          "label": null,
+          "url": "https://s3.eu-central-1.amazonaws.com/skycityhub-sandbox-cms/images/6c017141-abb4-478c-b834-145e8a4a9ac1.png",
+          "width": 2720,
+          "height": 836,
+          "caption": null,
+          "sha1": "22a97574da509f564328a6d858627accc5bc1e9d",
+          "altText": "Comtrade"
+        },
+        "contentType": {
+          "contentTypeId": 2,
+          "contentTypeName": "pop-up",
+          "contentTypeDescription": "pop-ups to inform client about important info"
+        },
+        "sport": null,
+        "content": "",
+        "published": true,
+        "displayOrder": 50,
+        "openUrl": "same_tab",
+        "buttonLabel": null,
+        "buttonUrl": null,
+        "eventId": null,
+        "marketId": null,
+        "selectionId": null,
+        "lang": "en-US",
+        "clientLabel": "comtrade",
+        "dateStart": "2023-09-01T15:25:33Z",
+        "dateStop": "2050-10-02T15:25:33Z",
+        "open": false
+    }
+]

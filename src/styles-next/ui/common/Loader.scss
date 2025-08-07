@@ -1,0 +1,26 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader.inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+.loader > .icon {
+  position: relative;
+  display: inline-block;
+  transform-origin: 50% 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 4px;
+  vertical-align: middle;
+}

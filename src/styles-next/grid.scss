@@ -1,0 +1,52 @@
+%clearfix:before,
+%clearfix:after {
+  content: " ";
+  display: table;
+}
+%clearfix:after {
+  clear: both;
+}
+
+%col {
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  padding-left: ($grid-glue / 2);
+  padding-right: ($grid-glue / 2);
+  min-height: 1px;
+}
+
+// Mixins
+@mixin prepare-grid-columns($n, $prefix: "") {
+  @for $i from 1 through $n {
+    .col-#{$prefix}#{$i} {
+      @extend %col;
+      @extend %clearfix;
+    }
+  }
+}
+
+@mixin grid-columns($n, $prefix: "") {
+  @for $i from 1 through $n {
+    .col-#{$prefix}#{$i} {
+      width: $i * 100% / $n;
+    }
+  }
+}
+
+// Main style
+
+.row {
+  @extend %clearfix;
+  position: relative;
+  margin-left: ($grid-glue / -2);
+  margin-right: ($grid-glue / -2);
+}
+
+.container {
+  width: auto;
+  margin: 0 5px;
+}
+
+@include prepare-grid-columns($grid-columns);
+@include grid-columns($grid-columns);

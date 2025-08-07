@@ -1,0 +1,402 @@
+@import "./config";
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  65% {
+    opacity: 0.1;
+  }
+
+  80% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.tabs {
+  background: $tabs-backgroundColor;
+  margin-bottom: 10px;
+}
+.tabs > ul {
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 8px 8px 0;
+  background: $tabs-list-backgroundColor;
+  font-size: 1em;
+}
+.tabs > ul:before {
+  content: "";
+  display: table;
+}
+.tabs > ul li {
+  display: inline-block;
+}
+.tabs > ul li:not(.tabs__special) a {
+  display: inline-block;
+  padding: 8px 10px;
+  color: $tabs-list-element-notTabsSpecial-anchor-color;
+  text-decoration: none;
+  border-radius: 10px 10px 0 0;
+}
+.tabs > ul li.tabs__tab--current a {
+  //background: $tabs-list-element-tabsTabCurrent-anchor-backgroundColor;
+  color: $tabs-list-element-tabsTabCurrent-anchor-color;
+}
+.tabs > div {
+  color: $tabs-div-color;
+  transition: 300ms all ease-in-out;
+}
+.tabs--full-square > ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  transition: 500ms transform cubic-bezier(0, 0, 0, 1.04);
+  overflow: hidden;
+}
+@media (max-width: $bp-mobile) {
+  .tabs--full-square > ul {
+    overflow-x: auto;
+  }
+}
+.tabs--full-square > ul .label__hour {
+  color: currentColor;
+}
+.tabs--full-square > ul li {
+  max-height: 40px;
+  min-width: 70px;
+  width: 70px;
+}
+.tabs--full-square > ul li a {
+  width: 100%;
+  vertical-align: middle;
+}
+.tabs--full-square > ul li:not(.tabs__special) a {
+  height: 40px;
+  min-height: 40px !important;
+
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  border: 0;
+}
+
+.tabs--full-square > ul li:not(.tabs__special) a .label {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 40px;
+}
+.tabs--full-square > ul li:not(.tabs__special) a .label__group {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.tabs--full-square > ul li:not(.tabs__special) a .label__with-BOG {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+.tabs--full-square > ul li:not(.tabs__special) a .label__with-BOG .bog-indicator > .icon {
+  position: absolute;
+  right: 0px;
+  top: 3px;
+
+  font-size: 10px;
+  color: $tabsFullSquare-list-element-notTabsSpecial-anchor-labelWithBOG-bogIndicator-icon-color;
+
+  width: initial;
+  height: auto;
+}
+.tabs--full-square > ul li:not(.tabs__special) a .label__finished {
+  align-items: center;
+  color: $tabsFullSquare-list-element-notTabsSpecial-anchor-labelFinished-color;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: space-evenly;
+  line-height: normal;
+  text-align: center;
+}
+.tabs--full-square > ul li:not(.tabs__special) a .label__finished .place-indicator {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  transform: translateX(9px);
+}
+.tabs--full-square > ul li:not(.tabs__special) a .label__finished .place-indicator img {
+  width: 15px;
+}
+.tabs--full-square > ul li:not(.tabs__special) a .label__hour,
+.tabs--full-square > ul li:not(.tabs__special) a .label__competition {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  line-height: initial;
+  width: 100%;
+}
+.tabs--full-square > ul li:not(.tabs__special) a .label__hour {
+  font-size: 14px;
+  font-weight: 500;
+
+}
+.tabs--full-square > ul li:not(.tabs__special) a .label__competition {
+  font-size: 10px;
+  font-weight: 400;
+}
+.tabs--full-square > ul li.tabs__tab--current a {
+  background: $tabsFullSquare-list-element-tabsTabCurrent-anchor-backgroundColor;
+  color: $tabsFullSquare-list-element-tabsTabCurrent-anchor-color;
+}
+.tabs--full-square > ul li.tabs__tab--current a .label__finished {
+  background: $tabsFullSquare-list-element-tabsTabCurrent-anchor-labelFinished-backgroundColor;
+}
+.tabs--full-square > ul li.tabs__tab--current a .label__with-BOG .bog-indicator {
+  display: none;
+}
+.tabs--filter-style {
+  border-top: 0;
+  color: $tabsFilterStyle-color;
+}
+.tabs--filter-style > div {
+  padding-top: 0;
+}
+.tabs--filter-style > ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: $tabsFilterStyle-list-backgroundColor;
+
+  padding: 10px;
+}
+.tabs--filter-style > ul li:not(.tabs__special) a {
+  align-items: center;
+  border-radius: $tabsFilterStyle-list-element-notTabsSpecial-anchor-borderRadius;
+  border: 1px solid $tabsFilterStyle-list-element-notTabsSpecial-anchor-borderColor;
+  color: $tabsFilterStyle-list-element-notTabsSpecial-anchor-color;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 12px;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 1.89;
+  margin-right: 5px;
+  padding: 0 10px;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tabs--filter-style > ul li.tabs__tab--current a {
+  background: $tabsFilterStyle-list-element-tabsTabCurrent-anchor-backgroundColor;
+  color: $tabsFilterStyle-list-element-tabsTabCurrent-anchor-color;
+}
+.tabs--filter-style > div {
+  color: $tabsFilterStyle-div-color;
+  background: $black;
+}
+.tabs--filter-style__light > ul {
+  background: $tabsFilterStyleLight-list-backgroundColor;
+}
+.tabs--filter-style__light > ul li:not(.tabs__special) a {
+  //background-color: $tabsFilterStyleLight-list-element-notTabsSpecial-anchor-backgroundColor;
+  border-color: $tabsFilterStyleLight-list-element-notTabsSpecial-anchor-borderColor;
+  color: $tabsFilterStyleLight-list-element-notTabsSpecial-anchor-color;
+}
+.tabs--filter-style__light > ul li.tabs__tab--current a {
+  border-color: $tabsFilterStyleLight-list-element-tabsTabCurrent-anchor-borderColor;
+  color: $tabsFilterStyleLight-list-element-tabsTabCurrent-anchor-color;
+  background-color: $tabsFilterStyleLight-list-element-tabsTabCurrent-anchor-backgroundColor;
+}
+.tabs--light {
+  background: $tabsLight-backgroundColor;
+  border-top: 0;
+  color: $tabsLight-color;
+}
+.tabs--light > ul {
+  border-bottom: 0;
+  background-color: $tabsLight-list-backgroundColor;
+  color: $tabsLight-list-color;
+}
+.tabs--light > ul li:not(.tabs__special) a {
+  color: $tabsLight-list-element-notTabsSpecial-anchor-color;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  font-weight: 700;
+}
+.tabs--light > ul li.tabs__tab--current a {
+  background: $tabsLight-list-element-tabsTabCurrent-anchor-backgroundColor;
+  color: $tabsLight-list-element-tabsTabCurrent-anchor-color;
+}
+.tabs--light > div {
+  color: $tabsLight-div-color;
+  padding-top: 6px;
+}
+.tabs__title {
+  color: $tabsTitle-color;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+.tabs .tabs__special {
+  float: right;
+  padding-right: 10px;
+}
+.tabs .tabs__special a {
+  margin-top: -1px;
+  font-size: 0.9em;
+  border-radius: 3px;
+  padding: 4px 9px;
+}
+.tabs--account {
+  background-color: $tabsAccount-backgroundColor;
+}
+.tabs--account > ul {
+  font-size: 1.1em;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  background-color: $tabsAccount-list-backgroundColor;
+}
+.tabs--account > ul li > a {
+  color: $tabsAccount-list-element-anchor-color !important;
+  border: 1px solid $tabsAccount-list-element-anchor-borderColor;
+  background: $tabsAccount-list-element-anchor-backgroundColor;
+  border-radius: 0 !important;
+  padding: 10px 20px !important;
+  font-weight: 400;
+  min-width: 10em;
+  line-height: 1.3;
+  font-size: pxToPr(10px, "em", $basicFontSize);
+}
+.tabs--account > ul li.tabs__tab--current a {
+  color: $tabsAccount-list-element-tabsTabCurrent-anchor-color !important;
+  background-color: $tabsAccount-list-element-tabsTabCurrent-anchor-backgroundColor;
+  border-color: $tabsAccount-list-element-tabsTabCurrent-anchor-borderColor;
+}
+.tabs--account > div {
+  color: inherit;
+}
+.tabs--smooth {
+  transition: 500ms min-height ease-in-out, 550ms max-height ease-in-out;
+}
+.tabs--smooth > div {
+  overflow: hidden;
+
+  /*& > * {
+        animation: 900ms fadeIn;
+      }*/
+}
+.tabs--reverse > div {
+  border-bottom: 0;
+}
+.tabs-wrapper {
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.tabs-wrapper--smooth {
+  min-height: 0;
+  transition: 1000ms min-height ease-in-out;
+}
+.tabs--hidden-content > div {
+  display: none;
+}
+.tabs--is-toggle {
+  // position: sticky;
+  bottom: -1px;
+  left: 0;
+}
+.tabs--is-toggle .tabs__group-title {
+  padding: 10px;
+  background-color: $tabsIsToggle-tabsGroupTitle-backgroundColor;
+  color: $tabsIsToggle-tabsGroupTitle-color;
+}
+.tabs--is-toggle .tabs__header {
+  user-select: none;
+  background-color: $tabsIsToggle-tabsHeader-backgroundColor;
+  font-weight: 700;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: pxToPr(12px, "em", $basicFontSize);
+  color: $tabsIsToggle-tabsHeader-color;
+  position: relative;
+  cursor: pointer;
+  border-bottom: 1px solid $tabsIsToggle-tabsHeader-borderBottomColor;
+  margin-bottom: 10px;
+}
+.tabs--is-toggle .tabs__header:before,
+.tabs--is-toggle .tabs__header:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 1.5em;
+  top: 50%;
+  transform: translateY(-50%) translateX(50%) rotate(45deg);
+  width: 1px;
+  height: 10px;
+  background-color: currentColor;
+  z-index: 1;
+  pointer-events: none;
+  transition: 350ms ease-in-out;
+}
+.tabs--is-toggle .tabs__header:after {
+  transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+  margin-right: 6px;
+}
+.tabs--is-toggle .tabs__header.is-open {
+  margin-bottom: 0;
+}
+.tabs--is-toggle .tabs__header.is-open:before {
+  transform: translateY(-50%) translateX(50%) rotate(-45deg);
+}
+.tabs--is-toggle .tabs__header.is-open:after {
+  transform: translateY(-50%) translateX(-50%) rotate(45deg);
+}
+.tabs--is-toggle .tabs__body {
+  background-color: $tabsIsToggle-tabsBody-backgroundColor;
+  margin: 0;
+  overflow: hidden;
+  display: block;
+}
+.tabs--is-toggle .tabs__body:not(.is-open) {
+  height: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+.mobile-tabs-inline ul {
+  overflow-x: scroll;
+  display: flex;
+}
+.mobile-tabs-inline ul li {
+  display: flex;
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: center;
+}

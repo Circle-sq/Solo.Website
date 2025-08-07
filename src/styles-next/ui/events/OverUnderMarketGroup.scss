@@ -1,0 +1,42 @@
+.market-group--over-under ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.market-group--over-under > header {
+  display: flex;
+  padding-right: 0;
+  font-weight: 400;
+  color: $marketGroupOverUnder-header-color;
+  justify-content: space-between;
+  border-bottom: 1px solid $marketGroupOverUnder-header-borderBottomColor;
+  border-top: 1px solid $marketGroupOverUnder-header-borderTopColor;
+  margin: -1px 0;
+}
+.market-group--over-under .market-group__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.market-group--over-under .market-group__header > strong {
+  width: pxToPr($header-selection-width, "em", $basicFontSize);
+  font-size: 12px;
+  text-align: center;
+  color: $marketGroupOverUnder-marketGroupHeader-strong-color;
+  transform: scale(0.8);
+  font-weight: 400;
+}
+
+.market-group--over-under .market-group__selection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.market-group--over-under .market-group__selection__name {
+  flex: 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 10px;
+  font-weight: 400;
+}

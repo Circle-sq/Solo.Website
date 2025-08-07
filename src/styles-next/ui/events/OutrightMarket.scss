@@ -1,0 +1,25 @@
+
+.market-group--outright.toggle-group--is-expand:last-child header:not(.is-open) {
+  margin-bottom: -1px;
+}
+
+.market-group--outright .market-header--detailed {
+  margin-top: -1px;
+}
+
+.market-group--outright .details--each-way {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  font-size: .9em;
+  font-weight: 400;
+  margin: 0 30px 0 0;
+}
+
+.market-group--outright .details--each-way > li {
+  margin-left: 5px;
+}
+
+.market-group--outright .details--each-way > li:first-of-type {
+  margin-left: 0;
+}

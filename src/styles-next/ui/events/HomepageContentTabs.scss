@@ -1,0 +1,70 @@
+.homepage-content-tabs {
+  padding-bottom: 0;
+}
+.homepage-content-tabs.tabs,
+.homepage-content-tabs.tabs .events-filters,
+.homepage-content-tabs.tabs .races-slider {
+  background-color: $homepageContentTabs-tabs-backgroundColor;
+}
+.homepage-content-tabs.tabs > ul {
+  background: $homepageContentTabs-tabs-list-backgroundColor;
+}
+.homepage-content-tabs.tabs > ul li a {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+  color: $homepageContentTabs-tabs-list-element-anchor-color;
+  text-transform: uppercase;
+}
+.homepage-content-tabs.tabs > ul li.tabs__tab--current a {
+  background-color: $homepageContentTabs-tabs-list-element-tabsTabCurrent-anchor-backgroundColor;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+  color: $homepageContentTabs-tabs-list-element-tabsTabCurrent-anchor-color;
+}
+.homepage-content-tabs.tabs .pagination {
+  background-color: $homepageContentTabs-tabs-pagination-backgroundColor;
+}
+.homepage-content-tabs.tabs .pagination li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 12px;
+}
+.homepage-content-tabs.tabs .pagination li:first-of-type a:before {
+  content: none;
+}
+.homepage-content-tabs.tabs .pagination li:last-child a:after {
+  content: none;
+}
+.homepage-content-tabs.tabs .pagination li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 24px;
+  width: 24px;
+
+  font-size: 12px;
+  color: $homepageContentTabs-tabs-pagination-element-anchor-color;
+
+  padding: 0;
+  margin-left: 5px;
+
+  border: solid 1px $homepageContentTabs-tabs-pagination-element-anchor-borderColor;
+  border-radius: 100px;
+}
+.homepage-content-tabs.tabs .pagination li .icon--arrow-right {
+  margin-left: 2px;
+}
+.homepage-content-tabs.tabs .pagination li .icon--arrow-left {
+  margin-right: 2px;
+}
+@media (min-width: $bp-mobile) {
+  .homepage-content-tabs.tabs .races-slider,
+  .homepage-content-tabs.tabs .races-slider__races {
+    margin-bottom: 0;
+  }
+}

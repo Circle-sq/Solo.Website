@@ -1,0 +1,27 @@
+@keyframes openTab {
+    0%,
+    99% {
+      overflow: hidden;
+    }
+    100% {
+      overflow: visible;
+    }
+}
+
+.wizard > li:not(:first-of-type) > h3 {
+    margin-top: 0;
+}
+
+.wizard > li.wizard__tab--open > div {
+    animation: 300ms openTab;
+    max-height: 1200px;
+    overflow: visible;
+    padding: 10px 20px;
+}
+.wizard > li.wizard__tab--back > h3 {
+    cursor: pointer;
+}
+
+.wizard > li.wizard__tab--completed > h3 {
+    background-color: $wizard-element-wizardTabCompleted-h3-backgroundColor;
+}

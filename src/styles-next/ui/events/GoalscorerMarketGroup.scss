@@ -1,0 +1,103 @@
+.market-group--goalscorer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.market-group--goalscorer .market-group__teams {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  text-align: center;
+  margin: 10px 0;
+}
+.market-group--goalscorer .market-group__teams a {
+  display: block;
+  margin-left: -1px;
+  border: 1px solid $marketGroupGoalscorer-marketGroupTeams-anchor-borderColor;
+  color: $marketGroupGoalscorer-marketGroupTeams-anchor-color;
+  padding: 5px 10px;
+  text-decoration: none;
+  min-width: 152px;
+  font-size: 10px;
+  font-weight: 400;
+}
+.market-group--goalscorer .market-group__teams li.active a {
+  color: $marketGroupGoalscorer-marketGroupTeams-element-active-anchor-color;
+  background-color: $marketGroupGoalscorer-marketGroupTeams-element-active-anchor-backgroundColor;
+  border-color: $marketGroupGoalscorer-marketGroupTeams-element-active-anchor-borderColor;
+}
+.market-group--goalscorer .market-group__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+@media (max-width: 420px) {
+  .market-group--goalscorer .market-group__header {
+    margin-right: 0;
+  }
+}
+.market-group--goalscorer .market-group__header > strong {
+  width: 100%;
+  font-size: 12px;
+  padding: 5px 0;
+  text-align: center;
+  color: $marketGroupGoalscorer-marketGroupHeader-strong-color;
+  font-weight: 400;
+
+  //@media(max-width: 480px){
+  //  font-size: 10px;
+  //}
+}
+.market-group--goalscorer .market-group__goalscorers {
+  border-top: 1px solid $marketGroupGoalscorer-marketGroupGoalscorers-borderTopColor;
+}
+.market-group--goalscorer .market-group__goalscorers li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background: $marketGroupGoalscorer-marketGroupGoalscorers-element-backgroundColor;
+  border-bottom-width: 0;
+}
+.market-group--goalscorer .market-group__goalscorers li.market-group__goalscorers--NG .market-group__goalscorers__name,
+.market-group--goalscorer .market-group__goalscorers li.market-group__goalscorers--NG .selection {
+  background: $marketGroupGoalscorer-marketGroupGoalscorers-element-marketGroupGoalscorersNG-marketGroupGoalscorersName-backgroundColor;
+}
+.market-group--goalscorer .market-group__goalscorers .selection:last-of-type {
+  border-right: 1px solid $marketGroupGoalscorer-marketGroupGoalscorers-selection-lastOfType-borderRightColor;
+}
+.market-group--goalscorer .market-group__goalscorers__name {
+  flex: 1 0;
+  background: $marketGroupGoalscorer-marketGroupGoalscorersName-backgroundColor;
+}
+.market-group--goalscorer .market-group__goalscorers__other-name {
+  background-color: $marketGroupGoalscorer-marketGroupGoalscorersOtherName-backgroundColor;
+  color: $marketGroupGoalscorer-marketGroupGoalscorersOtherName-color;
+}
+.market-group--goalscorer .market-group__goalscorers__other-name:first-of-type {
+  border-bottom: 1px solid $marketGroupGoalscorer-marketGroupGoalscorersOtherName-firstChild-borderBottomColor;
+}
+.market-group--goalscorer .market-group__goalscorers__name,
+.market-group--goalscorer .market-group__goalscorers__other-name {
+  display: block;
+  padding: 5px 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 1px solid $marketGroupGoalscorer-marketGroupGoalscorersName-borderBottomColor;
+}
+.market-group--goalscorer .market-group__goalscorers .selection {
+  width: 100% !important;
+  border-bottom: 1px solid $marketGroupGoalscorer-marketGroupGoalscorers-selection-borderBottomColor;
+  flex-shrink: initial;
+}
+.market-group--goalscorer .market-group__goalscorers__name,
+.market-group--goalscorer .market-group__goalscorers__other-name {
+  width: 25%;
+}
+.market-group--goalscorer .market-group__goalscorers__selections {
+  display: flex;
+  flex-flow: nowrap;
+  width: 50%;
+}

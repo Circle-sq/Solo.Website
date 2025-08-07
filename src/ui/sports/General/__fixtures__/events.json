@@ -1,0 +1,1485 @@
+[
+    {
+        "participants": {
+          "16548": {
+            "id": 16548,
+            "name": "Sesi SP",
+            "tags": {
+              "uniformUrl": [
+                "/volleyball/player/56117/home"
+              ]
+            },
+            "metadata": {
+              "jockey": null,
+              "place": null,
+              "number": null,
+              "drawn": null,
+              "status": null,
+              "trainer": null,
+              "silk": null,
+              "weight": null,
+              "silkUrl": null
+            },
+            "role": "home"
+          },
+          "188148": {
+            "id": 188148,
+            "name": "Joinville Volei",
+            "tags": {
+              "uniformUrl": [
+                "/volleyball/player/1055267/home"
+              ]
+            },
+            "metadata": {
+              "jockey": null,
+              "place": null,
+              "number": null,
+              "drawn": null,
+              "status": null,
+              "trainer": null,
+              "silk": null,
+              "weight": null,
+              "silkUrl": null
+            },
+            "role": "away"
+          }
+        },
+        "homeParticipantUniform": "/volleyball/player/56117/home",
+        "awayParticipantUniform": "/volleyball/player/1055267/home",
+        "competitionId": 444,
+        "display": true,
+        "statistics": {
+          "full-point-score": [],
+          "turn": {
+            "value": ""
+          },
+          "period": {
+            "value": ""
+          }
+        },
+        "media": {
+          "statistics": [
+            {
+              "id": "54431825",
+              "provider": "betradar"
+            }
+          ],
+          "liveTrackers": [
+            {
+              "id": "54431825",
+              "provider": "betradar"
+            }
+          ],
+          "streams": []
+        },
+        "active": true,
+        "feedData": {},
+        "name": "Sesi SP vs Joinville Volei",
+        "displayOrder": 0,
+        "inPlayDelaySettings": null,
+        "cashoutAvailable": false,
+        "timeSettingsStartTime": "2050-11-22T00:30:00Z",
+        "timeSettings": {
+          "startTime": "2050-11-22T00:30:00Z",
+          "started": false,
+          "tradedInPlay": true,
+          "offAtStartTime": false,
+          "timeZone": "UTC"
+        },
+        "state": "open",
+        "score": null,
+        "streams": [],
+        "eventType": null,
+        "sport": "volleyball",
+        "blockSettlement": null,
+        "marketIndex": [
+          {
+            "id": 12240843,
+            "name": "Set handicap",
+            "templateId": "bet-radar-188",
+            "active": true,
+            "display": true,
+            "marketType": "twowayhandicap",
+            "marketState": "open",
+            "outright": false
+          },
+          {
+            "id": 12255237,
+            "name": "Total points",
+            "templateId": "bet-radar-238",
+            "active": true,
+            "display": true,
+            "marketType": "overunder",
+            "marketState": "open",
+            "outright": false
+          },
+          {
+            "id": 12240835,
+            "name": "Winner",
+            "templateId": "bet-radar-186",
+            "active": true,
+            "display": true,
+            "marketType": "twowaywinner",
+            "marketState": "open",
+            "outright": false
+          },
+          {
+            "id": 12240842,
+            "name": "Total sets",
+            "templateId": "bet-radar-314",
+            "active": true,
+            "display": true,
+            "marketType": "overunder",
+            "marketState": "open",
+            "outright": false
+          },
+          {
+            "id": 12240844,
+            "name": "Point handicap",
+            "templateId": "bet-radar-237",
+            "active": true,
+            "display": true,
+            "marketType": "twowayhandicap",
+            "marketState": "open",
+            "outright": false
+          }
+        ],
+        "markets": {
+          "12240835": {
+            "display": true,
+            "forecastsOffered": null,
+            "speedBetContext": null,
+            "active": true,
+            "isSuspended": true,
+            "selections": {
+              "33225881": {
+                "display": true,
+                "active": true,
+                "price": {
+                  "d": 1.2,
+                  "f": "1/5"
+                },
+                "name": "Sesi SP",
+                "displayOrder": 0,
+                "metadata": {
+                  "jockey": null,
+                  "place": null,
+                  "number": null,
+                  "drawn": null,
+                  "status": null,
+                  "trainer": null,
+                  "silk": null,
+                  "weight": null,
+                  "silkUrl": null
+                },
+                "state": "open",
+                "eventId": 52098,
+                "marketId": 12240835,
+                "tags": {
+                  "price-boost": [
+                    "no"
+                  ],
+                  "selection-identifier": [
+                    "H"
+                  ],
+                  "selection-identifiers--volleyball": [
+                    "H"
+                  ]
+                },
+                "template": {
+                  "id": "default-selection",
+                  "marketTemplateId": "bet-radar-186",
+                  "eventTemplateId": "multi-participant-event",
+                  "sportId": "volleyball",
+                  "name": "default-selection"
+                },
+                "id": 33225881,
+                "sp": false
+              },
+              "33225882": {
+                "display": true,
+                "active": true,
+                "price": {
+                  "d": 4.25,
+                  "f": "13/4"
+                },
+                "name": "Joinville Volei",
+                "displayOrder": 0,
+                "metadata": {
+                  "jockey": null,
+                  "place": null,
+                  "number": null,
+                  "drawn": null,
+                  "status": null,
+                  "trainer": null,
+                  "silk": null,
+                  "weight": null,
+                  "silkUrl": null
+                },
+                "state": "open",
+                "eventId": 52098,
+                "marketId": 12240835,
+                "tags": {
+                  "price-boost": [
+                    "no"
+                  ],
+                  "selection-identifier": [
+                    "A"
+                  ],
+                  "selection-identifiers--volleyball": [
+                    "A"
+                  ]
+                },
+                "template": {
+                  "id": "default-selection",
+                  "marketTemplateId": "bet-radar-186",
+                  "eventTemplateId": "multi-participant-event",
+                  "sportId": "volleyball",
+                  "name": "default-selection"
+                },
+                "id": 33225882,
+                "sp": false
+              }
+            },
+            "eachWayStakeReduction": null,
+            "suspendTime": null,
+            "spOnly": false,
+            "name": "Winner",
+            "displayOrder": 1,
+            "inPlayDelaySettings": null,
+            "bpApplicable": null,
+            "time": null,
+            "bp": null,
+            "eachWay": null,
+            "cashoutAvailable": true,
+            "outright": false,
+            "asianInPlayLine": null,
+            "tricastsOffered": null,
+            "betReferralEnabled": null,
+            "line": null,
+            "autoTakeDown": null,
+            "tags": {
+              "display-order": [
+                "-"
+              ],
+              "display-template": [
+                "-"
+              ],
+              "build-a-bet": [
+                "no"
+              ],
+              "website-popular": [
+                "-"
+              ],
+              "website-main": [
+                "yes"
+              ],
+              "market-group": [
+                "Main"
+              ],
+              "asian-view": [
+                "yes"
+              ],
+              "outright": [
+                "no"
+              ],
+              "ante-post": [
+                "no"
+              ],
+              "market-display": [
+                "cross-bet-view"
+              ],
+              "market-group--popular-markets": [
+                "no"
+              ]
+            },
+            "tradedInPlay": false,
+            "template": {
+              "period": "Regular play",
+              "marketTypeGeneric": "twowaywinner",
+              "mainGroup": null,
+              "name": "Winner (186)",
+              "eventTemplateId": "multi-participant-event",
+              "sportId": "volleyball",
+              "marketTemplateType": "186",
+              "id": "bet-radar-186",
+              "customName": null
+            },
+            "event": {
+              "id": 52098,
+              "name": "Sesi SP vs Joinville Volei"
+            },
+            "id": 12240835,
+            "revision": 0,
+            "spApplicable": null,
+            "sp": false,
+            "team": null
+          },
+          "12240842": {
+            "displayed": true,
+            "display": true,
+            "forecastsOffered": null,
+            "speedBetContext": null,
+            "active": true,
+            "isSuspended": true,
+            "selections": {
+              "33225900": {
+                "display": true,
+                "active": true,
+                "price": {
+                  "d": 1.69,
+                  "f": "69/100"
+                },
+                "name": "over 3.5",
+                "displayOrder": 0,
+                "state": "open",
+                "nameWithoutLine": "over",
+                "line": "3.5",
+                "eventId": 52098,
+                "marketId": 12240842,
+                "tags": {
+                  "price-boost": [
+                    "no"
+                  ],
+                  "selection-identifier": [
+                    "O"
+                  ],
+                  "selection-identifiers--volleyball": [
+                    "O"
+                  ]
+                },
+                "template": {
+                  "id": "default-selection",
+                  "marketTemplateId": "bet-radar-314",
+                  "eventTemplateId": "multi-participant-event",
+                  "sportId": "volleyball",
+                  "name": "default-selection"
+                },
+                "id": 33225900,
+                "sp": false
+              },
+              "33225901": {
+                "display": true,
+                "active": true,
+                "price": {
+                  "d": 2.09,
+                  "f": "109/100"
+                },
+                "name": "under 3.5",
+                "displayOrder": 0,
+                "state": "open",
+                "nameWithoutLine": "under",
+                "line": "3.5",
+                "eventId": 52098,
+                "marketId": 12240842,
+                "tags": {
+                  "price-boost": [
+                    "no"
+                  ],
+                  "selection-identifier": [
+                    "U"
+                  ],
+                  "selection-identifiers--volleyball": [
+                    "U"
+                  ]
+                },
+                "template": {
+                  "id": "default-selection",
+                  "marketTemplateId": "bet-radar-314",
+                  "eventTemplateId": "multi-participant-event",
+                  "sportId": "volleyball",
+                  "name": "default-selection"
+                },
+                "id": 33225901,
+                "sp": false
+              }
+            },
+            "eachWayStakeReduction": null,
+            "suspendTime": null,
+            "spOnly": false,
+            "name": "Total sets",
+            "displayOrder": 7,
+            "inPlayDelaySettings": null,
+            "bpApplicable": null,
+            "time": null,
+            "bp": null,
+            "eachWay": null,
+            "cashoutAvailable": true,
+            "outright": false,
+            "asianInPlayLine": null,
+            "tricastsOffered": null,
+            "betReferralEnabled": null,
+            "line": 3.5,
+            "autoTakeDown": null,
+            "tags": {
+              "display-order": [
+                "-"
+              ],
+              "display-template": [
+                "-"
+              ],
+              "build-a-bet": [
+                "no"
+              ],
+              "website-popular": [
+                "-"
+              ],
+              "website-main": [
+                "yes"
+              ],
+              "market-group": [
+                "Main"
+              ],
+              "asian-view": [
+                "no"
+              ],
+              "outright": [
+                "no"
+              ],
+              "ante-post": [
+                "no"
+              ],
+              "market-display": [
+                "-"
+              ],
+              "market-group--popular-markets": [
+                "no"
+              ]
+            },
+            "tradedInPlay": false,
+            "template": {
+              "period": "Regular play",
+              "marketTypeGeneric": "overunder",
+              "mainGroup": null,
+              "name": "Set Total (314)",
+              "eventTemplateId": "multi-participant-event",
+              "sportId": "volleyball",
+              "marketTemplateType": "314",
+              "id": "bet-radar-314",
+              "customName": null
+            },
+            "event": {
+              "id": 52098,
+              "name": "Sesi SP vs Joinville Volei"
+            },
+            "id": 12240842,
+            "revision": 0,
+            "spApplicable": null,
+            "sp": false,
+            "team": null
+          },
+          "12240843": {
+            "displayed": true,
+            "display": true,
+            "forecastsOffered": null,
+            "speedBetContext": null,
+            "active": true,
+            "isSuspended": true,
+            "selections": {
+              "33225902": {
+                "display": true,
+                "active": true,
+                "price": {
+                  "d": 2.3,
+                  "f": "13/10"
+                },
+                "name": "Sesi SP (-2.5)",
+                "displayOrder": 0,
+                "state": "open",
+                "nameWithoutLine": "Sesi SP",
+                "line": "-2.5",
+                "eventId": 52098,
+                "marketId": 12240843,
+                "tags": {
+                  "price-boost": [
+                    "no"
+                  ],
+                  "selection-identifier": [
+                    "H"
+                  ],
+                  "selection-identifiers--volleyball": [
+                    "H"
+                  ]
+                },
+                "template": {
+                  "id": "default-selection",
+                  "marketTemplateId": "bet-radar-188",
+                  "eventTemplateId": "multi-participant-event",
+                  "sportId": "volleyball",
+                  "name": "default-selection"
+                },
+                "id": 33225902,
+                "sp": false
+              },
+              "33225903": {
+                "display": true,
+                "active": true,
+                "price": {
+                  "d": 1.57,
+                  "f": "57/100"
+                },
+                "name": "Joinville Volei (+2.5)",
+                "displayOrder": 0,
+                "state": "open",
+                "nameWithoutLine": "Joinville Volei",
+                "line": "+2.5",
+                "eventId": 52098,
+                "marketId": 12240843,
+                "tags": {
+                  "price-boost": [
+                    "no"
+                  ],
+                  "selection-identifier": [
+                    "A"
+                  ],
+                  "selection-identifiers--volleyball": [
+                    "A"
+                  ]
+                },
+                "template": {
+                  "id": "default-selection",
+                  "marketTemplateId": "bet-radar-188",
+                  "eventTemplateId": "multi-participant-event",
+                  "sportId": "volleyball",
+                  "name": "default-selection"
+                },
+                "id": 33225903,
+                "sp": false
+              }
+            },
+            "eachWayStakeReduction": null,
+            "suspendTime": null,
+            "spOnly": false,
+            "name": "Set handicap",
+            "displayOrder": 6,
+            "inPlayDelaySettings": null,
+            "bpApplicable": null,
+            "time": null,
+            "bp": null,
+            "eachWay": null,
+            "cashoutAvailable": true,
+            "outright": false,
+            "asianInPlayLine": null,
+            "tricastsOffered": null,
+            "betReferralEnabled": null,
+            "line": -2.5,
+            "autoTakeDown": null,
+            "tags": {
+              "display-order": [
+                "-"
+              ],
+              "display-template": [
+                "-"
+              ],
+              "build-a-bet": [
+                "no"
+              ],
+              "website-popular": [
+                "-"
+              ],
+              "website-main": [
+                "yes"
+              ],
+              "market-group": [
+                "Main"
+              ],
+              "asian-view": [
+                "no"
+              ],
+              "outright": [
+                "no"
+              ],
+              "ante-post": [
+                "no"
+              ],
+              "market-display": [
+                "-"
+              ],
+              "market-group--popular-markets": [
+                "no"
+              ]
+            },
+            "tradedInPlay": false,
+            "template": {
+              "period": "Regular play",
+              "marketTypeGeneric": "twowayhandicap",
+              "mainGroup": null,
+              "name": "Set handicap (188)",
+              "eventTemplateId": "multi-participant-event",
+              "sportId": "volleyball",
+              "marketTemplateType": "188",
+              "id": "bet-radar-188",
+              "customName": null
+            },
+            "event": {
+              "id": 52098,
+              "name": "Sesi SP vs Joinville Volei"
+            },
+            "id": 12240843,
+            "revision": 0,
+            "spApplicable": null,
+            "sp": false,
+            "team": null
+          },
+          "12240844": {
+            "displayed": true,
+            "display": true,
+            "forecastsOffered": null,
+            "speedBetContext": null,
+            "active": true,
+            "isSuspended": true,
+            "selections": {
+              "33225904": {
+                "display": true,
+                "active": true,
+                "price": {
+                  "d": 1.86,
+                  "f": "43/50"
+                },
+                "name": "Sesi SP (-12.5)",
+                "displayOrder": 0,
+                "state": "open",
+                "nameWithoutLine": "Sesi SP",
+                "line": "-12.5",
+                "eventId": 52098,
+                "marketId": 12240844,
+                "tags": {
+                  "price-boost": [
+                    "no"
+                  ],
+                  "selection-identifier": [
+                    "H"
+                  ],
+                  "selection-identifiers--volleyball": [
+                    "H"
+                  ]
+                },
+                "template": {
+                  "id": "default-selection",
+                  "marketTemplateId": "bet-radar-237",
+                  "eventTemplateId": "multi-participant-event",
+                  "sportId": "volleyball",
+                  "name": "default-selection"
+                },
+                "id": 33225904,
+                "sp": false
+              },
+              "33225905": {
+                "display": true,
+                "active": true,
+                "price": {
+                  "d": 1.88,
+                  "f": "22/25"
+                },
+                "name": "Joinville Volei (+12.5)",
+                "displayOrder": 0,
+                "state": "open",
+                "nameWithoutLine": "Joinville Volei",
+                "line": "+12.5",
+                "eventId": 52098,
+                "marketId": 12240844,
+                "tags": {
+                  "price-boost": [
+                    "no"
+                  ],
+                  "selection-identifier": [
+                    "A"
+                  ],
+                  "selection-identifiers--volleyball": [
+                    "A"
+                  ]
+                },
+                "template": {
+                  "id": "default-selection",
+                  "marketTemplateId": "bet-radar-237",
+                  "eventTemplateId": "multi-participant-event",
+                  "sportId": "volleyball",
+                  "name": "default-selection"
+                },
+                "id": 33225905,
+                "sp": false
+              }
+            },
+            "eachWayStakeReduction": null,
+            "suspendTime": null,
+            "spOnly": false,
+            "name": "Point handicap",
+            "displayOrder": 4,
+            "inPlayDelaySettings": null,
+            "bpApplicable": null,
+            "time": null,
+            "bp": null,
+            "eachWay": null,
+            "cashoutAvailable": true,
+            "outright": false,
+            "asianInPlayLine": null,
+            "tricastsOffered": null,
+            "betReferralEnabled": null,
+            "line": -12.5,
+            "autoTakeDown": null,
+            "tags": {
+              "display-order": [
+                "-"
+              ],
+              "display-template": [
+                "-"
+              ],
+              "build-a-bet": [
+                "no"
+              ],
+              "website-popular": [
+                "-"
+              ],
+              "website-main": [
+                "yes"
+              ],
+              "market-group": [
+                "Main"
+              ],
+              "asian-view": [
+                "yes"
+              ],
+              "outright": [
+                "no"
+              ],
+              "ante-post": [
+                "no"
+              ],
+              "market-display": [
+                "cross-bet-view"
+              ],
+              "market-group--popular-markets": [
+                "no"
+              ]
+            },
+            "tradedInPlay": false,
+            "template": {
+              "period": "Regular play",
+              "marketTypeGeneric": "twowayhandicap",
+              "mainGroup": null,
+              "name": "Point handicap (237)",
+              "eventTemplateId": "multi-participant-event",
+              "sportId": "volleyball",
+              "marketTemplateType": "237",
+              "id": "bet-radar-237",
+              "customName": null
+            },
+            "event": {
+              "id": 52098,
+              "name": "Sesi SP vs Joinville Volei"
+            },
+            "id": 12240844,
+            "revision": 0,
+            "spApplicable": null,
+            "sp": false,
+            "team": null
+          },
+          "12255237": {
+            "display": true,
+            "forecastsOffered": null,
+            "speedBetContext": null,
+            "active": true,
+            "isSuspended": true,
+            "selections": {
+              "33265742": {
+                "display": true,
+                "active": true,
+                "price": {
+                  "d": 1.86,
+                  "f": "43/50"
+                },
+                "name": "over 174.5",
+                "displayOrder": 0,
+                "state": "open",
+                "nameWithoutLine": "over",
+                "line": "174.5",
+                "eventId": 52098,
+                "marketId": 12255237,
+                "tags": {
+                  "price-boost": [
+                    "no"
+                  ],
+                  "selection-identifier": [
+                    "O"
+                  ],
+                  "selection-identifiers--volleyball": [
+                    "O"
+                  ]
+                },
+                "template": {
+                  "id": "default-selection",
+                  "marketTemplateId": "bet-radar-238",
+                  "eventTemplateId": "multi-participant-event",
+                  "sportId": "volleyball",
+                  "name": "default-selection"
+                },
+                "id": 33265742,
+                "sp": false
+              },
+              "33265743": {
+                "display": true,
+                "active": true,
+                "price": {
+                  "d": 1.88,
+                  "f": "22/25"
+                },
+                "name": "under 174.5",
+                "displayOrder": 0,
+                "state": "open",
+                "nameWithoutLine": "under",
+                "line": "174.5",
+                "eventId": 52098,
+                "marketId": 12255237,
+                "tags": {
+                  "price-boost": [
+                    "no"
+                  ],
+                  "selection-identifier": [
+                    "U"
+                  ],
+                  "selection-identifiers--volleyball": [
+                    "U"
+                  ]
+                },
+                "template": {
+                  "id": "default-selection",
+                  "marketTemplateId": "bet-radar-238",
+                  "eventTemplateId": "multi-participant-event",
+                  "sportId": "volleyball",
+                  "name": "default-selection"
+                },
+                "id": 33265743,
+                "sp": false
+              }
+            },
+            "eachWayStakeReduction": null,
+            "suspendTime": null,
+            "spOnly": false,
+            "name": "Total points",
+            "displayOrder": 5,
+            "inPlayDelaySettings": null,
+            "bpApplicable": null,
+            "time": null,
+            "bp": null,
+            "eachWay": null,
+            "cashoutAvailable": true,
+            "outright": false,
+            "asianInPlayLine": null,
+            "tricastsOffered": null,
+            "betReferralEnabled": null,
+            "line": 174.5,
+            "autoTakeDown": null,
+            "tags": {
+              "display-order": [
+                "-"
+              ],
+              "display-template": [
+                "-"
+              ],
+              "build-a-bet": [
+                "no"
+              ],
+              "website-popular": [
+                "-"
+              ],
+              "website-main": [
+                "yes"
+              ],
+              "market-group": [
+                "Main"
+              ],
+              "asian-view": [
+                "yes"
+              ],
+              "outright": [
+                "no"
+              ],
+              "ante-post": [
+                "no"
+              ],
+              "market-display": [
+                "cross-bet-view"
+              ],
+              "market-group--popular-markets": [
+                "no"
+              ]
+            },
+            "tradedInPlay": false,
+            "template": {
+              "period": "Regular play",
+              "marketTypeGeneric": "overunder",
+              "mainGroup": null,
+              "name": "Total points (238)",
+              "eventTemplateId": "multi-participant-event",
+              "sportId": "volleyball",
+              "marketTemplateType": "238",
+              "id": "bet-radar-238",
+              "customName": null
+            },
+            "event": {
+              "id": 52098,
+              "name": "Sesi SP vs Joinville Volei"
+            },
+            "id": 12255237,
+            "revision": 0,
+            "spApplicable": null,
+            "sp": false,
+            "team": null
+          }
+        },
+        "autoTakeDown": null,
+        "tags": {
+          "best-of": [
+            "5"
+          ],
+          "category-label": [
+            "-"
+          ],
+          "market-group": [
+            "-"
+          ],
+          "asian-view": [
+            "no"
+          ],
+          "outright": [
+            "no"
+          ],
+          "ante-post": [
+            "no"
+          ],
+          "period-length": [
+            "25"
+          ],
+          "highlight": [
+            "no"
+          ],
+          "country": [
+            "BRA"
+          ],
+          "skycity-events": [
+            "-"
+          ],
+          "original-sport": [
+            "volleyball"
+          ],
+          "country-label": [
+            "Brasil"
+          ],
+          "category": [
+            "-"
+          ]
+        },
+        "template": "multi-participant-event",
+        "id": 52098,
+        "translationData": {
+          "event": "Sesi SP vs Joinville Volei",
+          "competition": "Serie A2",
+          "participants": [
+            "Sesi SP",
+            "Joinville Volei"
+          ]
+        },
+        "revision": 4,
+        "originalName": "Sesi SP vs Joinville Volei",
+        "antePost": null,
+        "competition": 444
+    },
+    {
+        "participants": {
+          "16528": {
+            "id": 16528,
+            "name": "Minas",
+            "tags": {
+              "uniformUrl": [
+                "/volleyball/player/119342/home"
+              ]
+            },
+            "metadata": {
+              "jockey": null,
+              "place": null,
+              "number": null,
+              "drawn": null,
+              "status": null,
+              "trainer": null,
+              "silk": null,
+              "weight": null,
+              "silkUrl": null
+            },
+            "role": "away"
+          },
+          "16554": {
+            "id": 16554,
+            "name": "Neurologia Ativa GO",
+            "tags": {
+              "uniformUrl": [
+                "/volleyball/player/756509/home"
+              ]
+            },
+            "metadata": {
+              "jockey": null,
+              "place": null,
+              "number": null,
+              "drawn": null,
+              "status": null,
+              "trainer": null,
+              "silk": null,
+              "weight": null,
+              "silkUrl": null
+            },
+            "role": "home"
+          }
+        },
+        "homeParticipantUniform": "/volleyball/player/756509/home",
+        "awayParticipantUniform": "/volleyball/player/119342/home",
+        "competitionId": 444,
+        "display": true,
+        "statistics": {
+          "full-point-score": [],
+          "turn": {
+            "value": ""
+          },
+          "period": {
+            "value": ""
+          }
+        },
+        "media": {
+          "statistics": [
+            {
+              "id": "54431831",
+              "provider": "betradar"
+            }
+          ],
+          "liveTrackers": [
+            {
+              "id": "54431831",
+              "provider": "betradar"
+            }
+          ],
+          "streams": []
+        },
+        "active": true,
+        "feedData": {},
+        "name": "Neurologia Ativa GO vs Minas",
+        "displayOrder": 0,
+        "timeSettingsStartTime": "2050-11-11T14:00:00Z",
+        "inPlayDelaySettings": null,
+        "cashoutAvailable": false,
+        "timeSettings": {
+          "startTime": "2050-11-11T14:00:00Z",
+          "started": false,
+          "tradedInPlay": true,
+          "offAtStartTime": false,
+          "timeZone": "UTC"
+        },
+        "state": "open",
+        "score": null,
+        "streams": [],
+        "eventType": null,
+        "sport": "volleyball",
+        "blockSettlement": null,
+        "marketIndex": [
+          {
+            "id": 11820691,
+            "name": "Total points",
+            "templateId": "bet-radar-238",
+            "active": true,
+            "display": true,
+            "marketType": "overunder",
+            "marketState": "open",
+            "outright": false
+          },
+          {
+            "id": 11770735,
+            "name": "Winner",
+            "templateId": "bet-radar-186",
+            "active": true,
+            "display": true,
+            "marketType": "twowaywinner",
+            "marketState": "open",
+            "outright": false
+          }
+        ],
+        "markets": {
+          "11770735": {
+            "displayed": true,
+            "display": true,
+            "forecastsOffered": null,
+            "speedBetContext": null,
+            "active": true,
+            "isSuspended": true,
+            "selections": {
+              "31964142": {
+                "display": true,
+                "active": true,
+                "price": {
+                  "d": 6.6,
+                  "f": "28/5"
+                },
+                "name": "Neurologia Ativa GO",
+                "displayOrder": 0,
+                "metadata": {
+                  "jockey": null,
+                  "place": null,
+                  "number": null,
+                  "drawn": null,
+                  "status": null,
+                  "trainer": null,
+                  "silk": null,
+                  "weight": null,
+                  "silkUrl": null
+                },
+                "state": "open",
+                "eventId": 56917,
+                "marketId": 11770735,
+                "tags": {
+                  "price-boost": [
+                    "no"
+                  ],
+                  "selection-identifier": [
+                    "H"
+                  ],
+                  "selection-identifiers--volleyball": [
+                    "H"
+                  ]
+                },
+                "template": {
+                  "id": "default-selection",
+                  "marketTemplateId": "bet-radar-186",
+                  "eventTemplateId": "multi-participant-event",
+                  "sportId": "volleyball",
+                  "name": "default-selection"
+                },
+                "id": 31964142,
+                "sp": false
+              },
+              "31964143": {
+                "display": true,
+                "active": true,
+                "price": {
+                  "d": 1.09,
+                  "f": "9/100"
+                },
+                "name": "Minas",
+                "displayOrder": 0,
+                "metadata": {
+                  "jockey": null,
+                  "place": null,
+                  "number": null,
+                  "drawn": null,
+                  "status": null,
+                  "trainer": null,
+                  "silk": null,
+                  "weight": null,
+                  "silkUrl": null
+                },
+                "state": "open",
+                "eventId": 56917,
+                "marketId": 11770735,
+                "tags": {
+                  "price-boost": [
+                    "no"
+                  ],
+                  "selection-identifier": [
+                    "A"
+                  ],
+                  "selection-identifiers--volleyball": [
+                    "A"
+                  ]
+                },
+                "template": {
+                  "id": "default-selection",
+                  "marketTemplateId": "bet-radar-186",
+                  "eventTemplateId": "multi-participant-event",
+                  "sportId": "volleyball",
+                  "name": "default-selection"
+                },
+                "id": 31964143,
+                "sp": false
+              }
+            },
+            "eachWayStakeReduction": null,
+            "suspendTime": null,
+            "spOnly": false,
+            "name": "Winner",
+            "displayOrder": 1,
+            "inPlayDelaySettings": null,
+            "bpApplicable": null,
+            "time": null,
+            "bp": null,
+            "eachWay": null,
+            "cashoutAvailable": true,
+            "outright": false,
+            "asianInPlayLine": null,
+            "tricastsOffered": null,
+            "betReferralEnabled": null,
+            "line": null,
+            "autoTakeDown": null,
+            "tags": {
+              "display-order": [
+                "-"
+              ],
+              "display-template": [
+                "-"
+              ],
+              "build-a-bet": [
+                "no"
+              ],
+              "website-popular": [
+                "-"
+              ],
+              "website-main": [
+                "yes"
+              ],
+              "market-group": [
+                "Main"
+              ],
+              "asian-view": [
+                "yes"
+              ],
+              "outright": [
+                "no"
+              ],
+              "ante-post": [
+                "no"
+              ],
+              "market-display": [
+                "cross-bet-view"
+              ],
+              "market-group--popular-markets": [
+                "no"
+              ]
+            },
+            "tradedInPlay": false,
+            "template": {
+              "period": "Regular play",
+              "marketTypeGeneric": "twowaywinner",
+              "mainGroup": null,
+              "name": "Winner (186)",
+              "eventTemplateId": "multi-participant-event",
+              "sportId": "volleyball",
+              "marketTemplateType": "186",
+              "id": "bet-radar-186",
+              "customName": null
+            },
+            "event": {
+              "id": 56917,
+              "name": "Neurologia Ativa GO vs Minas"
+            },
+            "id": 11770735,
+            "revision": 4,
+            "spApplicable": null,
+            "sp": false,
+            "team": null
+          },
+          "11820691": {
+            "displayed": true,
+            "display": true,
+            "forecastsOffered": null,
+            "speedBetContext": null,
+            "active": true,
+            "isSuspended": true,
+            "selections": {
+              "32099670": {
+                "display": true,
+                "active": true,
+                "price": {
+                  "d": 1.9,
+                  "f": "9/10"
+                },
+                "name": "over 146.5",
+                "displayOrder": 0,
+                "state": "open",
+                "nameWithoutLine": "over",
+                "line": "146.5",
+                "eventId": 56917,
+                "marketId": 11820691,
+                "tags": {
+                  "price-boost": [
+                    "no"
+                  ],
+                  "selection-identifier": [
+                    "O"
+                  ],
+                  "selection-identifiers--volleyball": [
+                    "O"
+                  ]
+                },
+                "template": {
+                  "id": "default-selection",
+                  "marketTemplateId": "bet-radar-238",
+                  "eventTemplateId": "multi-participant-event",
+                  "sportId": "volleyball",
+                  "name": "default-selection"
+                },
+                "id": 32099670,
+                "sp": false
+              },
+              "32099671": {
+                "display": true,
+                "active": true,
+                "price": {
+                  "d": 1.84,
+                  "f": "21/25"
+                },
+                "name": "under 146.5",
+                "displayOrder": 0,
+                "state": "open",
+                "nameWithoutLine": "under",
+                "line": "146.5",
+                "eventId": 56917,
+                "marketId": 11820691,
+                "tags": {
+                  "price-boost": [
+                    "no"
+                  ],
+                  "selection-identifier": [
+                    "U"
+                  ],
+                  "selection-identifiers--volleyball": [
+                    "U"
+                  ]
+                },
+                "template": {
+                  "id": "default-selection",
+                  "marketTemplateId": "bet-radar-238",
+                  "eventTemplateId": "multi-participant-event",
+                  "sportId": "volleyball",
+                  "name": "default-selection"
+                },
+                "id": 32099671,
+                "sp": false
+              }
+            },
+            "eachWayStakeReduction": null,
+            "suspendTime": null,
+            "spOnly": false,
+            "name": "Total points",
+            "displayOrder": 5,
+            "inPlayDelaySettings": null,
+            "bpApplicable": null,
+            "time": null,
+            "bp": null,
+            "eachWay": null,
+            "cashoutAvailable": true,
+            "outright": false,
+            "asianInPlayLine": null,
+            "tricastsOffered": null,
+            "betReferralEnabled": null,
+            "line": 146.5,
+            "autoTakeDown": null,
+            "tags": {
+              "display-order": [
+                "-"
+              ],
+              "display-template": [
+                "-"
+              ],
+              "build-a-bet": [
+                "no"
+              ],
+              "website-popular": [
+                "-"
+              ],
+              "website-main": [
+                "yes"
+              ],
+              "market-group": [
+                "Main"
+              ],
+              "asian-view": [
+                "yes"
+              ],
+              "outright": [
+                "no"
+              ],
+              "ante-post": [
+                "no"
+              ],
+              "market-display": [
+                "cross-bet-view"
+              ],
+              "market-group--popular-markets": [
+                "no"
+              ]
+            },
+            "tradedInPlay": false,
+            "template": {
+              "period": "Regular play",
+              "marketTypeGeneric": "overunder",
+              "mainGroup": null,
+              "name": "Total points (238)",
+              "eventTemplateId": "multi-participant-event",
+              "sportId": "volleyball",
+              "marketTemplateType": "238",
+              "id": "bet-radar-238",
+              "customName": null
+            },
+            "event": {
+              "id": 56917,
+              "name": "Neurologia Ativa GO vs Minas"
+            },
+            "id": 11820691,
+            "revision": 1,
+            "spApplicable": null,
+            "sp": false,
+            "team": null
+          }
+        },
+        "autoTakeDown": null,
+        "tags": {
+          "best-of": [
+            "5"
+          ],
+          "category-label": [
+            "-"
+          ],
+          "market-group": [
+            "-"
+          ],
+          "asian-view": [
+            "no"
+          ],
+          "outright": [
+            "no"
+          ],
+          "ante-post": [
+            "no"
+          ],
+          "period-length": [
+            "25"
+          ],
+          "highlight": [
+            "no"
+          ],
+          "country": [
+            "BRA"
+          ],
+          "skycity-events": [
+            "-"
+          ],
+          "original-sport": [
+            "volleyball"
+          ],
+          "country-label": [
+            "Brasil"
+          ],
+          "category": [
+            "-"
+          ]
+        },
+        "template": "multi-participant-event",
+        "id": 56917,
+        "translationData": {
+          "event": "Neurologia Ativa GO vs Minas",
+          "competition": "Superliga",
+          "participants": [
+            "Neurologia Ativa GO",
+            "Minas"
+          ]
+        },
+        "revision": 7,
+        "originalName": "Neurologia Ativa GO vs Minas",
+        "antePost": null,
+        "competition": 444
+    }
+]

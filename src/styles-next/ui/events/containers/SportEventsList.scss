@@ -1,0 +1,10 @@
+.events-table--sport-list .events-filters {
+    padding: 8px 0;
+}
+
+.events-table--sport-list .events-table__header-title {
+    background-color: $eventsTableSportList-eventsTableHeaderTitle-backgroundColor;
+    color: $eventsTableSportList-eventsTableHeaderTitle-color;
+    font-weight: 700;
+    padding: 10px;
+}

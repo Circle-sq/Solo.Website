@@ -1,0 +1,39 @@
+.labeled-filters {
+  position: relative;
+  margin: 15px 0 11px; // bottom because of margin-bottom on each filter
+}
+.labeled-filters__label {
+  position: absolute;
+  z-index: 1;
+  top: 0.22em;
+  left: 0;
+  font-size: 0.75em;
+  width: (1 / 0.75 * 6em);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.75em;
+}
+.labeled-filters__label span {
+  position: relative;
+  display: inline-block;
+  background: $labeledFiltersLabel-span-backgroundColor;
+  color: $labeledFiltersLabel-span-color;
+  border-radius: 3px;
+  padding: 0 5px 0 9px;
+}
+.labeled-filters__label span:before {
+  content: "";
+  z-index: -1;
+  display: block;
+  position: absolute;
+  background: $labeledFiltersLabel-span-before-backgroundColor;
+  width: 1.75em;
+  height: 1.75em;
+  border-radius: 3px;
+
+  -webkit-transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  right: -0.7em;
+  top: 50%;
+}

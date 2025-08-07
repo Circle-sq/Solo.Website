@@ -1,0 +1,64 @@
+@import "./configBase";
+
+// Normalize
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html,
+body,
+#root,
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  background-color: $primary;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: 100%;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+p {
+  margin: .5em 0;
+}
+
+#root {
+  position: relative;
+}
+
+@media (min-width: $max-page-width) {
+  .header {
+      right: auto;
+      width: 75%;
+  }
+}
+
+@import "./grid";
+@import "./mixins";
+@import "./components";
+@import "./layout";
+@import "./iconfont";
+@import "./betradar";

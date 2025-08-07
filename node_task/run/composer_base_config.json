@@ -1,0 +1,33 @@
+{
+    "version": "2",
+    "services": {
+        "node": {
+            "image": "${image}",
+            "environment": {
+                "UNIVERSE": "${UNIVERSE}",
+                "OPERATOR": "${OPERATOR}",
+                "HTTP_INTERFACE": "${HTTP_INTERFACE}",
+                "HTTP_PORT": "${HTTP_PORT}",
+                "API_URL": "${API_URL}",
+                "API_USERNAME": "${API_USERNAME}",
+                "API_PASSWORD": "${API_PASSWORD}",
+                "WEBSOCKET_HOST": "${WEBSOCKET_HOST}",
+                "LOG_FORMAT": "${LOG_FORMAT}",
+                "LOG_LEVEL": "${LOG_LEVEL}",
+
+                "IMG_API_URL": "${IMG_API_URL}",
+                "REDIS_MASTER_NAME": "${REDIS_MASTER_NAME}",
+                "REDIS_NODES": "${REDIS_NODES}",
+                "REDIS_PORT": "${REDIS_PORT}",
+                "REDIS_PASSWORD": "${REDIS_PASSWORD}",
+                "REDIS_HOST": "${REDIS_HOST}",
+                "REDIS_TYPE": "${REDIS_TYPE}",
+
+                "MAINTENANCE_PAGE": "${MAINTENANCE_PAGE}",
+                "STANDALONE": "${STANDALONE}"
+            },
+            "ports": ["0.0.0.0:${HTTP_PORT}:${HTTP_PORT}"],
+            "command": "npm start"
+        }
+    }
+}

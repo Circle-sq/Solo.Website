@@ -1,0 +1,33 @@
+.line-chart {
+  width: 100%;
+  height: auto;
+}
+.line-chart text {
+  text-anchor: middle;
+  font-size: 1.45em;
+  fill: $lineChart-text-fillColor;
+  letter-spacing: 0.08em;
+}
+@media (max-width: 420px) {
+  .line-chart text {
+    transform: translateY(15px);
+  }
+}
+.line-chart path.line {
+  stroke-width: 2px;
+  stroke: $lineChart-path-line-strokeColor;
+  fill: $lineChart-path-line-fillColor;
+}
+.line-chart path.area {
+  stroke: none;
+  fill: $lineChart-path-area-fillColor;
+}
+.line-chart circle {
+  stroke: $lineChart-circle-strokeColor;
+  stroke-width: 1px;
+  fill: $lineChart-circle-fillColor;
+}
+.line-chart circle:hover {
+  stroke-width: 5px;
+  stroke: $lineChart-circle-hover-strokeColor;
+}

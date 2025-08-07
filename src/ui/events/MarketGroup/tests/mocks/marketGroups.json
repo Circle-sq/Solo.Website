@@ -1,0 +1,262 @@
+{
+    "displayOrder": 2,
+    "groupName": "Spreads",
+    "markets": [
+        {
+            "name": "Handicap",
+            "active": true,
+            "display": true,
+            "displayOrder": 2,
+            "template": {
+                "id": "bet-radar-16",
+                "eventTemplateId": "match",
+                "sportId": "football",
+                "name": "Handicap (16)",
+                "customName": "Handicap",
+                "url": null,
+                "marketTemplateType": "16",
+                "marketTypeGeneric": "twowayhandicap",
+                "period": "Regular play",
+                "mainGroup": "Spreads"
+            },
+            "templateId": "bet-radar-16",
+            "tradedInPlay": true,
+            "tags": {
+                "market-display": [
+                    "-"
+                ],
+                "market-group--popular-markets": [
+                    "no"
+                ],
+                "website-main": [
+                    "yes"
+                ],
+                "build-a-bet": [
+                    "no"
+                ],
+                "market-group": [
+                    "Main",
+                    "Asians"
+                ],
+                "display-template": [
+                    "-"
+                ],
+                "outright": [
+                    "no"
+                ],
+                "ante-post": [
+                    "no"
+                ],
+                "display-order": [
+                    "-"
+                ],
+                "website-popular": [
+                    "-"
+                ]
+            },
+            "state": "open",
+            "line": 0.75,
+            "cashoutAvailable": true,
+            "sp": false,
+            "spApplicable": false,
+            "bp": false,
+            "bpApplicable": false,
+            "spOnly": false,
+            "singlesOnly": false,
+            "cashoutMarketSettings": null,
+            "possibleSelections": [],
+            "outright": false,
+            "teams": [
+                "Adhyaksa Farmel FC",
+                "Persibo Bojonegoro"
+            ],
+            "time": "",
+            "nameWithPlaceholders": "Handicap",
+            "revision": 69,
+            "id": 258107,
+            "selections": {
+                "682054": true,
+                "682055": true
+            },
+            "event": null,
+            "market": null,
+            "eventId": 2844
+        },
+        {
+            "autoTakeDown": null,
+            "forecastsOffered": null,
+            "tricastsOffered": null,
+            "inPlayDelaySettings": null,
+            "eachWayStakeReduction": null,
+            "betReferralEnabled": null,
+            "team": null,
+            "suspendTime": null,
+            "eachWay": null,
+            "name": "Handicap",
+            "active": true,
+            "display": true,
+            "displayOrder": 2,
+            "template": {
+                "id": "bet-radar-16",
+                "eventTemplateId": "match",
+                "sportId": "football",
+                "name": "Handicap (16)",
+                "customName": "Handicap",
+                "url": null,
+                "marketTemplateType": "16",
+                "marketTypeGeneric": "twowayhandicap",
+                "period": "Regular play",
+                "mainGroup": "Spreads"
+            },
+            "tradedInPlay": true,
+            "tags": {
+                "market-display": [
+                    "-"
+                ],
+                "market-group--popular-markets": [
+                    "no"
+                ],
+                "website-main": [
+                    "yes"
+                ],
+                "build-a-bet": [
+                    "no"
+                ],
+                "market-group": [
+                    "Main",
+                    "Asians"
+                ],
+                "display-template": [
+                    "-"
+                ],
+                "outright": [
+                    "no"
+                ],
+                "ante-post": [
+                    "no"
+                ],
+                "display-order": [
+                    "-"
+                ],
+                "website-popular": [
+                    "-"
+                ]
+            },
+            "state": "open",
+            "line": 0.25,
+            "cashoutAvailable": true,
+            "sp": false,
+            "spApplicable": false,
+            "bp": false,
+            "bpApplicable": false,
+            "spOnly": false,
+            "singlesOnly": false,
+            "cashoutMarketSettings": null,
+            "possibleSelections": [],
+            "outright": false,
+            "teams": [
+                "Adhyaksa Farmel FC",
+                "Persibo Bojonegoro"
+            ],
+            "time": "",
+            "nameWithPlaceholders": "Handicap",
+            "revision": 94,
+            "id": 258128,
+            "selections": {
+                "682110": true,
+                "682111": true
+            },
+            "event": null,
+            "market": null,
+            "eventId": 2844
+        },
+        {
+            "autoTakeDown": null,
+            "forecastsOffered": null,
+            "tricastsOffered": null,
+            "inPlayDelaySettings": null,
+            "eachWayStakeReduction": null,
+            "betReferralEnabled": null,
+            "team": null,
+            "suspendTime": null,
+            "eachWay": null,
+            "name": "Handicap",
+            "active": true,
+            "display": true,
+            "displayOrder": 2,
+            "template": {
+                "id": "bet-radar-16",
+                "eventTemplateId": "match",
+                "sportId": "football",
+                "name": "Handicap (16)",
+                "customName": "Handicap",
+                "url": null,
+                "marketTemplateType": "16",
+                "marketTypeGeneric": "twowayhandicap",
+                "period": "Regular play",
+                "mainGroup": "Spreads"
+            },
+            "tradedInPlay": true,
+            "tags": {
+                "market-display": [
+                    "-"
+                ],
+                "market-group--popular-markets": [
+                    "no"
+                ],
+                "website-main": [
+                    "yes"
+                ],
+                "build-a-bet": [
+                    "no"
+                ],
+                "market-group": [
+                    "Main",
+                    "Asians"
+                ],
+                "display-template": [
+                    "-"
+                ],
+                "outright": [
+                    "no"
+                ],
+                "ante-post": [
+                    "no"
+                ],
+                "display-order": [
+                    "-"
+                ],
+                "website-popular": [
+                    "-"
+                ]
+            },
+            "state": "open",
+            "line": 0.5,
+            "cashoutAvailable": true,
+            "sp": false,
+            "spApplicable": false,
+            "bp": false,
+            "bpApplicable": false,
+            "spOnly": false,
+            "singlesOnly": false,
+            "cashoutMarketSettings": null,
+            "possibleSelections": [],
+            "outright": false,
+            "teams": [
+                "Adhyaksa Farmel FC",
+                "Persibo Bojonegoro"
+            ],
+            "time": "",
+            "nameWithPlaceholders": "Handicap",
+            "revision": 94,
+            "id": 258136,
+            "selections": {
+                "682131": true,
+                "682132": true
+            },
+            "event": null,
+            "market": null,
+            "eventId": 2844
+        }
+    ]
+}

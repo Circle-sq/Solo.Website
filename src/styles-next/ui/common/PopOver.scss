@@ -1,0 +1,48 @@
+.popover-parent {
+  position: relative;
+}
+.popover-parent .popover {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 100ms, opacity 100ms linear;
+}
+.popover-parent:hover .popover {
+  transition: visibility 600ms, opacity 600ms linear;
+  visibility: visible;
+  opacity: 1;
+}
+
+.popover {
+  position: absolute;
+  left: -50px;
+  top: 115%;
+  width: 200px;
+  background: $popover-backgroundColor;
+  border: 2px solid $popover-borderColor;
+  z-index: 1;
+  white-space: pre;
+}
+.popover:after,
+.popover:before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  border: solid $popover-after-borderColor;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+}
+.popover:after {
+  border-bottom-color: $popover-after-borderBottomColor;
+  border-width: 13px;
+  margin-left: -15px;
+}
+.popover:before {
+  border-bottom-color: $popover-before-borderBottomColor;
+  border-width: 16px;
+  margin-left: -18px;
+}
+.popover p {
+  margin: 1em;
+}

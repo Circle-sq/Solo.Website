@@ -1,0 +1,43 @@
+.events-table--on-later > header .icon {
+  position: relative;
+  top: -0.1em;
+}
+.events-table--on-later > header {
+  display: flex;
+  flex-flow: row wrap;
+  background: $eventsTableOnLater-header-backgroundColor;
+  color: $eventsTableOnLater-header-color;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media (max-width: $bp-960 - 1) {
+  .events-table--on-later > header {
+    flex-direction: column;
+    align-items: left;
+    flex-flow: wrap;
+  }
+}
+.events-table--on-later .events-table__header-title {
+  flex: 1;
+  min-width: 100%;
+  align-self: center;
+}
+@media (max-width: $bp-960 - 1) {
+  .events-table--on-later .events-table__header-title {
+    align-self: left;
+    width: 100%;
+  }
+}
+.events-table--on-later .events-filters {
+  flex: 1;
+  min-width: 100%;
+  margin: 5px 0;
+}
+@media (max-width: $bp-960 - 1) {
+  .events-table--on-later .events-filters {
+    margin: 0 0 5px 0;
+    padding-left: 10px;
+    text-align: left;
+    max-width: 100%;
+  }
+}

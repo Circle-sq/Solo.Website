@@ -1,0 +1,25 @@
+.event-card {
+  position: relative;
+}
+.event-card__info {
+  position: relative;
+  padding: 30px 5px;
+  text-align: center;
+  color: $white;
+  &__loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.event-card__info .icon--loader {
+  position: relative;
+  font-size: 5em;
+  line-height: 1.1em;
+  opacity: 0.6;
+  color: $eventCardInfo-iconLoader-color;
+}
+.event-card__info .icon--loader + span {
+  display: block;
+  opacity: 0.8;
+}

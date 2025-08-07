@@ -1,0 +1,335 @@
+[
+  {
+    "id": "football",
+    "name": "Football",
+    "tags": {
+      "website-show": [
+        "yes"
+      ],
+      "highlight": [
+        "no"
+      ],
+      "skycity-events": [
+        "-"
+      ],
+      "market-group": [
+        "Main",
+        "Asians",
+        "Goals",
+        "Halves",
+        "Team",
+        "Corners",
+        "Cards",
+        "Players"
+      ],
+      "region": [
+        "-"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "-"
+      ]
+    },
+    "displayOrder": 100,
+    "eventCount": 163,
+    "translations": {}
+  },
+  {
+    "id": "baseball",
+    "name": "Baseball",
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "skycity-events": [
+        "-"
+      ],
+      "market-group": [
+        "Main",
+        "1st 5 Innings",
+        "Innings",
+        "Game Props",
+        "Player Props"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "-"
+      ]
+    },
+    "displayOrder": 90,
+    "eventCount": 50,
+    "translations": {}
+  },
+  {
+    "id": "basketball",
+    "name": "Basketball",
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "skycity-events": [
+        "-"
+      ],
+      "market-group": [
+        "Main",
+        "Halves",
+        "Quarters",
+        "Game Props",
+        "Player Props"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "-"
+      ]
+    },
+    "displayOrder": 95,
+    "eventCount": 40,
+    "translations": {}
+  },
+  {
+    "id": "icehockey",
+    "name": "Ice Hockey",
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "skycity-events": [
+        "-"
+      ],
+      "market-group": [
+        "Main",
+        "Periods",
+        "Game Props",
+        "Player Props"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "-"
+      ]
+    },
+    "displayOrder": 70,
+    "eventCount": 10,
+    "translations": {}
+  },
+  {
+    "id": "volleyball",
+    "name": "Volleyball",
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "skycity-events": [
+        "-"
+      ],
+      "market-group": [
+        "Main"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "-"
+      ]
+    },
+    "displayOrder": 75,
+    "eventCount": 8,
+    "translations": {}
+  },
+  {
+    "id": "handball",
+    "name": "Handball",
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "skycity-events": [
+        "-"
+      ],
+      "market-group": [
+        "Main",
+        "Halves"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "-"
+      ]
+    },
+    "displayOrder": 9,
+    "eventCount": 5,
+    "translations": {}
+  },
+  {
+    "id": "rugbyleague",
+    "name": "Rugby League",
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "skycity-events": [
+        "-"
+      ],
+      "market-group": [
+        "Main",
+        "Halftime",
+        "Players"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "-"
+      ]
+    },
+    "displayOrder": 11,
+    "eventCount": 2,
+    "translations": {}
+  },
+  {
+    "id": "boxing",
+    "name": "Boxing/MMA",
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "skycity-events": [
+        "-"
+      ],
+      "market-group": [
+        "Main",
+        "Other"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "-"
+      ]
+    },
+    "displayOrder": 45,
+    "eventCount": 1,
+    "translations": {}
+  },
+  {
+    "id": "golf",
+    "name": "Golf",
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "skycity-events": [
+        "-"
+      ],
+      "market-group": [
+        "Main",
+        "Special Bets",
+        "Outrights",
+        "Specials Bets"
+      ],
+      "golf-tour": [
+        "-"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "-"
+      ]
+    },
+    "displayOrder": 35,
+    "eventCount": 1,
+    "translations": {}
+  },
+  {
+    "id": "rugbyunion",
+    "name": "Rugby Union",
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "skycity-events": [
+        "-"
+      ],
+      "market-group": [
+        "Main",
+        "Halftime",
+        "Players"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "-"
+      ]
+    },
+    "displayOrder": 11,
+    "eventCount": 1,
+    "translations": {}
+  },
+  {
+    "id": "tabletennis",
+    "name": "Table Tennis",
+    "tags": {
+      "highlight": [
+        "no"
+      ],
+      "skycity-events": [
+        "-"
+      ],
+      "market-group": [
+        "Main"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "country": [
+        "-"
+      ]
+    },
+    "displayOrder": 55,
+    "eventCount": 1,
+    "translations": {}
+  }
+]

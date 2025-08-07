@@ -1,0 +1,36 @@
+/// Strip unit from a number
+///
+/// @param $number {Number} the property that will have its unit remove
+///
+/// @output {number} unitless number
+@function strip-unit($number) {
+  @if unitless($number) {
+    @return $number;
+  } @else {
+    @return $number / ($number * 0 + 1);
+  }
+}
+
+/// Calculates a dimension using a specified unit
+/// @param $target {Number} the dimension to calculate
+/// @param $returns {String} output unit
+/// @param $container {Number} relative dimension for calculations
+/// @output {List} width and height of the sprite
+@function pxToPr($target, $returns: "", $container: $basicFontSize) {
+  $target: strip-unit($target);
+  $container: strip-unit($container);
+  @if $returns == "%" {
+    @return ($target / $container) * 100%;
+  }
+  @if $returns == "vh" {
+    @return ($target / $container) * 100vh;
+  }
+  @if $returns == "vw" {
+    @return ($target / $container) * 100vw;
+  }
+  @if $returns == "em" {
+    @return #{$target/$container}em;
+  }
+  // just number, no units
+  @return ($target / $container) * 100;
+}

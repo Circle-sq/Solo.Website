@@ -1,0 +1,51 @@
+.rating-tooltip {
+  position: absolute;
+  top: 30px;
+  left: 200px;
+  width: 162px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: $ratingTooltip-backgroundColor;
+  box-shadow: 0 0 5px 0 $ratingTooltip-boxShadowColor;
+}
+
+.rating-tooltip--content {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  height: 100%;
+}
+.rating-tooltip--content:after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent $ratingTooltipContent-after-borderColor transparent;
+}
+
+.rating-tooltip--label {
+  color: $ratingTooltipLabel-color;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.star-container {
+  display: flex;
+  margin: auto;
+}
+
+.rating-tooltip--star {
+  display: flex;
+  padding: 1px;
+  font-size: 24px;
+  justify-content: center;
+  background: $ratingTooltipStar-backgroundColor;
+  object-fit: contain;
+  cursor: pointer;
+  color: $ratingTooltipStar-color;
+}

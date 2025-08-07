@@ -1,0 +1,14 @@
+.event-group-header:hover:before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: $eventGroupHeader-hover-before-backgroundColor;
+}
+
+.event-group-header--hidden {
+  height: 0 !important;
+}

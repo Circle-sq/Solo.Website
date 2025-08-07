@@ -1,0 +1,33 @@
+import { renderWithTheme } from '@sc-tests/unit/mocks/renderMocks';
+
+import { BreadcrumbLink } from './BreadcrumbLink';
+
+describe('BreadcrumLink', () => {
+    const label = <>{`Basketball Betting`}</>;
+
+    it('should render breadcrumbicon', () => {
+        const icon = 'sports-globe';
+        const counter = 0;
+        const liveType = false;
+
+        const { getByTestId, queryByTestId } = renderWithTheme(
+            <BreadcrumbLink icon={icon} counter={counter} liveType={liveType} label={label} />,
+        );
+
+        expect(getByTestId('globeIcon')).toBeTruthy();
+        expect(queryByTestId('live-button-label')).toBeFalsy();
+    });
+
+    it('should render live button and counter', () => {
+        const icon = 'sports-globe';
+        const counter = 1;
+        const liveType = true;
+
+        const { getByTestId } = renderWithTheme(
+            <BreadcrumbLink icon={icon} counter={counter} liveType={liveType} label={label} />,
+        );
+
+        expect(getByTestId('live-button-label')).toBeTruthy();
+        expect(getByTestId('live-button-counter')).toBeTruthy();
+    });
+});

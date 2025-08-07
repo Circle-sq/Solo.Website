@@ -1,0 +1,863 @@
+{
+  "id": 7729,
+  "name": "로스앤젤레스 차저스 vs 마이애미 돌핀스",
+  "originalName": "Los Angeles Chargers vs Miami Dolphins",
+  "state": "open",
+  "sport": "basketball",
+  "competition": "36",
+  "template": "multi-participant-event",
+  "eventType": null,
+  "displayOrder": 0,
+  "active": true,
+  "display": true,
+  "cashoutAvailable": false,
+  "blockSettlement": null,
+  "autoTakeDown": null,
+  "antePost": null,
+  "streams": [],
+  "tags": {
+    "highlight": [
+      "no"
+    ],
+    "skycity-events": [
+      "-"
+    ],
+    "outright": [
+      "no"
+    ],
+    "ante-post": [
+      "no"
+    ],
+    "country": [
+      "USA"
+    ],
+    "market-group": [
+      "-"
+    ],
+    "country-label": [
+      "미국"
+    ]
+  },
+  "inPlayDelaySettings": null,
+  "timeSettings": {
+    "startTime": "2022-12-12T01:20:00Z",
+    "started": false,
+    "tradedInPlay": true,
+    "offAtStartTime": false,
+    "timeZone": "UTC"
+  },
+  "feedData": {},
+  "participants": [
+    {
+      "id": 260,
+      "role": "home"
+    },
+    {
+      "id": 542,
+      "role": "away"
+    }
+  ],
+  "statistics": {},
+  "markets": [
+    {
+      "id": 16248900,
+      "name": "1x2",
+      "active": true,
+      "autoTakeDown": null,
+      "display": true,
+      "visible": true,
+      "displayOrder": 1,
+      "tradedInPlay": false,
+      "forecastsOffered": null,
+      "tricastsOffered": null,
+      "inPlayDelaySettings": null,
+      "sp": false,
+      "line": 1,
+      "cashoutAvailable": true,
+      "outright": false,
+      "bp": null,
+      "bpApplicable": null,
+      "spApplicable": null,
+      "spOnly": false,
+      "eachWayStakeReduction": null,
+      "betReferralEnabled": null,
+      "time": null,
+      "team": null,
+      "selections": [
+        {
+          "id": 41816631,
+          "name": "Name Home",
+          "active": true,
+          "display": true,
+          "displayOrder": 0,
+          "price": {
+            "d": 2.54,
+            "f": "77/50"
+          },
+          "state": "open",
+          "tags": {
+            "selection-identifiers--basketball": [
+              "H"
+            ],
+            "price-boost": [
+              "no"
+            ],
+            "selection-identifier": [
+              "H"
+            ]
+          },
+          "templateId": "default-selection",
+          "templateMarketId": "bet-radar-210",
+          "template": {
+            "id": "default-selection",
+            "marketTemplateId": "bet-radar-210",
+            "eventTemplateId": "multi-participant-event",
+            "sportId": "basketball",
+            "name": "default-selection"
+          },
+          "metadata": {
+            "silk": null,
+            "silkUrl": null,
+            "number": null,
+            "weight": null,
+            "drawn": null,
+            "jockey": null,
+            "trainer": null,
+            "status": null,
+            "place": null
+          }
+        },
+        {
+          "id": 41816632,
+          "name": "Name Away",
+          "active": true,
+          "display": true,
+          "displayOrder": 0,
+          "price": {
+            "d": 1.58,
+            "f": "29/50"
+          },
+          "state": "open",
+          "tags": {
+            "selection-identifiers--basketball": [
+              "A"
+            ],
+            "price-boost": [
+              "no"
+            ],
+            "selection-identifier": [
+              "A"
+            ]
+          },
+          "templateId": "default-selection",
+          "templateMarketId": "bet-radar-210",
+          "template": {
+            "id": "default-selection",
+            "marketTemplateId": "bet-radar-210",
+            "eventTemplateId": "multi-participant-event",
+            "sportId": "basketball",
+            "name": "default-selection"
+          },
+          "metadata": {
+            "silk": null,
+            "silkUrl": null,
+            "number": null,
+            "weight": null,
+            "drawn": null,
+            "jockey": null,
+            "trainer": null,
+            "status": null,
+            "place": null
+          }
+        }
+      ],
+      "suspendTime": null,
+      "event": {
+        "id": 7729,
+        "name": "Home vs Away"
+      },
+      "template": {
+        "id": "bet-radar-210",
+        "eventTemplateId": "multi-participant-event",
+        "customName": null,
+        "sportId": "basketball",
+        "name": "1x2 (210)",
+        "marketTemplateType": "210",
+        "mainGroup": null,
+        "period": "Regular Play",
+        "marketTypeGeneric": "twowaywinner"
+      },
+      "eachWay": null,
+      "tags": {
+        "market-display": [
+          "cross-bet-view"
+        ],
+        "market-group--popular-markets": [
+          "no"
+        ],
+        "website-main": [
+          "yes"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "market-group": [
+          "Game Props",
+          "Halves",
+          "Main",
+          "Player Props",
+          "Quarters"
+        ],
+        "display-template": [
+          "-"
+        ],
+        "display-order": [
+          "-"
+        ],
+        "website-popular": [
+          "-"
+        ]
+      },
+      "revision": 12,
+      "templateId": "bet-radar-210",
+      "marketTypeGeneric": "twowaywinner"
+    },
+    {
+      "id": 16248910,
+      "name": "Winner (incl. overtime)",
+      "active": true,
+      "autoTakeDown": null,
+      "display": true,
+      "visible": true,
+      "displayOrder": 1,
+      "tradedInPlay": false,
+      "forecastsOffered": null,
+      "tricastsOffered": null,
+      "inPlayDelaySettings": null,
+      "sp": false,
+      "line": 1,
+      "cashoutAvailable": true,
+      "outright": false,
+      "bp": null,
+      "bpApplicable": null,
+      "spApplicable": null,
+      "spOnly": false,
+      "eachWayStakeReduction": null,
+      "betReferralEnabled": null,
+      "time": null,
+      "team": null,
+      "selections": [
+        {
+          "id": 41816631,
+          "name": "Hapoel Tel-Aviv",
+          "active": true,
+          "display": true,
+          "displayOrder": 0,
+          "price": {
+            "d": 2.54,
+            "f": "77/50"
+          },
+          "state": "open",
+          "tags": {
+            "selection-identifiers--basketball": [
+              "H"
+            ],
+            "price-boost": [
+              "no"
+            ],
+            "selection-identifier": [
+              "H"
+            ]
+          },
+          "templateId": "default-selection",
+          "templateMarketId": "bet-radar-219",
+          "template": {
+            "id": "default-selection",
+            "marketTemplateId": "bet-radar-219",
+            "eventTemplateId": "multi-participant-event",
+            "sportId": "basketball",
+            "name": "default-selection"
+          },
+          "metadata": {
+            "silk": null,
+            "silkUrl": null,
+            "number": null,
+            "weight": null,
+            "drawn": null,
+            "jockey": null,
+            "trainer": null,
+            "status": null,
+            "place": null
+          }
+        },
+        {
+          "id": 41816632,
+          "name": "Hapoel Galil Elyon",
+          "active": true,
+          "display": true,
+          "displayOrder": 0,
+          "price": {
+            "d": 1.58,
+            "f": "29/50"
+          },
+          "state": "open",
+          "tags": {
+            "selection-identifiers--basketball": [
+              "A"
+            ],
+            "price-boost": [
+              "no"
+            ],
+            "selection-identifier": [
+              "A"
+            ]
+          },
+          "templateId": "default-selection",
+          "templateMarketId": "bet-radar-219",
+          "template": {
+            "id": "default-selection",
+            "marketTemplateId": "bet-radar-219",
+            "eventTemplateId": "multi-participant-event",
+            "sportId": "basketball",
+            "name": "default-selection"
+          },
+          "metadata": {
+            "silk": null,
+            "silkUrl": null,
+            "number": null,
+            "weight": null,
+            "drawn": null,
+            "jockey": null,
+            "trainer": null,
+            "status": null,
+            "place": null
+          }
+        }
+      ],
+      "suspendTime": null,
+      "event": {
+        "id": 7729,
+        "name": "Hapoel Tel-Aviv vs Hapoel Galil Elyon"
+      },
+      "template": {
+        "id": "bet-radar-219",
+        "eventTemplateId": "multi-participant-event",
+        "customName": null,
+        "sportId": "basketball",
+        "name": "Winner (incl. overtime) (219)",
+        "marketTemplateType": "219",
+        "mainGroup": null,
+        "period": "Including overtime",
+        "marketTypeGeneric": "twowaywinner"
+      },
+      "eachWay": null,
+      "tags": {
+        "market-display": [
+          "cross-bet-view"
+        ],
+        "market-group--popular-markets": [
+          "no"
+        ],
+        "website-main": [
+          "yes"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "market-group": [
+          "Game Props",
+          "Halves",
+          "Main",
+          "Player Props",
+          "Quarters"
+        ],
+        "display-template": [
+          "-"
+        ],
+        "display-order": [
+          "-"
+        ],
+        "website-popular": [
+          "-"
+        ]
+      },
+      "revision": 12,
+      "templateId": "bet-radar-219",
+      "marketTypeGeneric": "twowaywinner"
+    },
+    {
+      "id": 17338965,
+      "name": "Handicap (incl. overtime)",
+      "active": true,
+      "autoTakeDown": null,
+      "display": true,
+      "visible": true,
+      "displayOrder": 1,
+      "tradedInPlay": false,
+      "forecastsOffered": null,
+      "tricastsOffered": null,
+      "inPlayDelaySettings": null,
+      "sp": false,
+      "line": 2,
+      "cashoutAvailable": true,
+      "outright": false,
+      "bp": null,
+      "bpApplicable": null,
+      "spApplicable": null,
+      "spOnly": false,
+      "eachWayStakeReduction": null,
+      "betReferralEnabled": null,
+      "time": null,
+      "team": null,
+      "selections": [
+        {
+          "id": 41816633,
+          "name": "Hapoel Tel-Aviv",
+          "active": true,
+          "display": true,
+          "displayOrder": 0,
+          "price": {
+            "d": 2.54,
+            "f": "77/50"
+          },
+          "state": "open",
+          "tags": {
+            "selection-identifiers--basketball": [
+              "H"
+            ],
+            "price-boost": [
+              "no"
+            ],
+            "selection-identifier": [
+              "H"
+            ]
+          },
+          "templateId": "default-selection",
+          "templateMarketId": "bet-radar-220",
+          "template": {
+            "id": "default-selection",
+            "marketTemplateId": "bet-radar-220",
+            "eventTemplateId": "multi-participant-event",
+            "sportId": "basketball",
+            "name": "default-selection"
+          },
+          "metadata": {
+            "silk": null,
+            "silkUrl": null,
+            "number": null,
+            "weight": null,
+            "drawn": null,
+            "jockey": null,
+            "trainer": null,
+            "status": null,
+            "place": null
+          }
+        },
+        {
+          "id": 41816634,
+          "name": "Hapoel Galil Elyon",
+          "active": true,
+          "display": true,
+          "displayOrder": 0,
+          "price": {
+            "d": 1.58,
+            "f": "29/50"
+          },
+          "state": "open",
+          "tags": {
+            "selection-identifiers--basketball": [
+              "A"
+            ],
+            "price-boost": [
+              "no"
+            ],
+            "selection-identifier": [
+              "A"
+            ]
+          },
+          "templateId": "default-selection",
+          "templateMarketId": "bet-radar-220",
+          "template": {
+            "id": "default-selection",
+            "marketTemplateId": "bet-radar-220",
+            "eventTemplateId": "multi-participant-event",
+            "sportId": "basketball",
+            "name": "default-selection"
+          },
+          "metadata": {
+            "silk": null,
+            "silkUrl": null,
+            "number": null,
+            "weight": null,
+            "drawn": null,
+            "jockey": null,
+            "trainer": null,
+            "status": null,
+            "place": null
+          }
+        }
+      ],
+      "suspendTime": null,
+      "event": {
+        "id": 7729,
+        "name": "Hapoel Tel-Aviv vs Hapoel Galil Elyon"
+      },
+      "template": {
+        "id": "bet-radar-220",
+        "eventTemplateId": "multi-participant-event",
+        "customName": null,
+        "sportId": "basketball",
+        "name": "Handicap (incl. overtime) (220)",
+        "marketTemplateType": "220",
+        "mainGroup": null,
+        "period": "Including overtime",
+        "marketTypeGeneric": "twowaywinner"
+      },
+      "eachWay": null,
+      "tags": {
+        "market-display": [
+          "cross-bet-view"
+        ],
+        "market-group--popular-markets": [
+          "no"
+        ],
+        "website-main": [
+          "yes"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "market-group": [
+          "Game Props",
+          "Halves",
+          "Main",
+          "Player Props",
+          "Quarters"
+        ],
+        "display-template": [
+          "-"
+        ],
+        "display-order": [
+          "-"
+        ],
+        "website-popular": [
+          "-"
+        ]
+      },
+      "revision": 12,
+      "templateId": "bet-radar-220",
+      "marketTypeGeneric": "twowaywinner"
+    },
+    {
+      "id": 16347586,
+      "name": "Total (incl. overtime)",
+      "active": true,
+      "autoTakeDown": null,
+      "display": true,
+      "visible": true,
+      "displayOrder": 1,
+      "tradedInPlay": false,
+      "forecastsOffered": null,
+      "tricastsOffered": null,
+      "inPlayDelaySettings": null,
+      "sp": false,
+      "line": 3,
+      "cashoutAvailable": true,
+      "outright": false,
+      "bp": null,
+      "bpApplicable": null,
+      "spApplicable": null,
+      "spOnly": false,
+      "eachWayStakeReduction": null,
+      "betReferralEnabled": null,
+      "time": null,
+      "team": null,
+      "selections": [
+        {
+          "id": 41816635,
+          "name": "Hapoel Tel-Aviv",
+          "active": true,
+          "display": true,
+          "displayOrder": 0,
+          "price": {
+            "d": 2.54,
+            "f": "77/50"
+          },
+          "state": "open",
+          "tags": {
+            "selection-identifiers--basketball": [
+              "H"
+            ],
+            "price-boost": [
+              "no"
+            ],
+            "selection-identifier": [
+              "H"
+            ]
+          },
+          "templateId": "default-selection",
+          "templateMarketId": "bet-radar-221",
+          "template": {
+            "id": "default-selection",
+            "marketTemplateId": "bet-radar-221",
+            "eventTemplateId": "multi-participant-event",
+            "sportId": "basketball",
+            "name": "default-selection"
+          },
+          "metadata": {
+            "silk": null,
+            "silkUrl": null,
+            "number": null,
+            "weight": null,
+            "drawn": null,
+            "jockey": null,
+            "trainer": null,
+            "status": null,
+            "place": null
+          }
+        },
+        {
+          "id": 41816636,
+          "name": "Hapoel Galil Elyon",
+          "active": true,
+          "display": true,
+          "displayOrder": 0,
+          "price": {
+            "d": 1.58,
+            "f": "29/50"
+          },
+          "state": "open",
+          "tags": {
+            "selection-identifiers--basketball": [
+              "A"
+            ],
+            "price-boost": [
+              "no"
+            ],
+            "selection-identifier": [
+              "A"
+            ]
+          },
+          "templateId": "default-selection",
+          "templateMarketId": "bet-radar-221",
+          "template": {
+            "id": "default-selection",
+            "marketTemplateId": "bet-radar-221",
+            "eventTemplateId": "multi-participant-event",
+            "sportId": "basketball",
+            "name": "default-selection"
+          },
+          "metadata": {
+            "silk": null,
+            "silkUrl": null,
+            "number": null,
+            "weight": null,
+            "drawn": null,
+            "jockey": null,
+            "trainer": null,
+            "status": null,
+            "place": null
+          }
+        }
+      ],
+      "suspendTime": null,
+      "event": {
+        "id": 7729,
+        "name": "Hapoel Tel-Aviv vs Hapoel Galil Elyon"
+      },
+      "template": {
+        "id": "bet-radar-221",
+        "eventTemplateId": "multi-participant-event",
+        "customName": null,
+        "sportId": "basketball",
+        "name": "Total (incl. overtime) (221)",
+        "marketTemplateType": "221",
+        "mainGroup": null,
+        "period": "Including overtime",
+        "marketTypeGeneric": "twowaywinner"
+      },
+      "eachWay": null,
+      "tags": {
+        "market-display": [
+          "cross-bet-view"
+        ],
+        "market-group--popular-markets": [
+          "no"
+        ],
+        "website-main": [
+          "yes"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "market-group": [
+          "Game Props",
+          "Halves",
+          "Main",
+          "Player Props",
+          "Quarters"
+        ],
+        "display-template": [
+          "-"
+        ],
+        "display-order": [
+          "-"
+        ],
+        "website-popular": [
+          "-"
+        ]
+      },
+      "revision": 12,
+      "templateId": "bet-radar-221",
+      "marketTypeGeneric": "twowaywinner"
+    }
+  ],
+  "marketIndex": [
+    {
+      "id": 16248910,
+      "name": "승패(연장 포함)",
+      "templateId": "bet-radar-219",
+      "active": true,
+      "display": true,
+      "marketType": "twowaywinner",
+      "marketState": "open",
+      "outright": false
+    },
+    {
+      "id": 16347586,
+      "name": "핸디캡(연장 포함)",
+      "templateId": "bet-radar-223",
+      "active": true,
+      "display": true,
+      "marketType": "twowayhandicap",
+      "marketState": "open",
+      "outright": false
+    },
+    {
+      "id": 17338965,
+      "name": "핸디캡(연장 포함)",
+      "templateId": "bet-radar-223",
+      "active": true,
+      "display": true,
+      "marketType": "twowayhandicap",
+      "marketState": "open",
+      "outright": false
+    },
+    {
+      "id": 17360165,
+      "name": "오버언더(연장 포함)",
+      "templateId": "bet-radar-225",
+      "active": true,
+      "display": true,
+      "marketType": "overunder",
+      "marketState": "open",
+      "outright": false
+    },
+    {
+      "id": 17432229,
+      "name": "핸디캡(연장 포함)",
+      "templateId": "bet-radar-223",
+      "active": true,
+      "display": true,
+      "marketType": "twowayhandicap",
+      "marketState": "open",
+      "outright": false
+    },
+    {
+      "id": 18258163,
+      "name": "핸디캡(연장 포함)",
+      "templateId": "bet-radar-223",
+      "active": true,
+      "display": true,
+      "marketType": "twowayhandicap",
+      "marketState": "open",
+      "outright": false
+    },
+    {
+      "id": 18258164,
+      "name": "핸디캡(연장 포함)",
+      "templateId": "bet-radar-223",
+      "active": true,
+      "display": true,
+      "marketType": "twowayhandicap",
+      "marketState": "open",
+      "outright": false
+    },
+    {
+      "id": 18258165,
+      "name": "오버언더(연장 포함)",
+      "templateId": "bet-radar-225",
+      "active": true,
+      "display": true,
+      "marketType": "overunder",
+      "marketState": "open",
+      "outright": false
+    },
+    {
+      "id": 18328245,
+      "name": "오버언더(연장 포함)",
+      "templateId": "bet-radar-225",
+      "active": true,
+      "display": true,
+      "marketType": "overunder",
+      "marketState": "open",
+      "outright": false
+    },
+    {
+      "id": 18522248,
+      "name": "오버언더(연장 포함)",
+      "templateId": "bet-radar-225",
+      "active": true,
+      "display": true,
+      "marketType": "overunder",
+      "marketState": "open",
+      "outright": false
+    },
+    {
+      "id": 18546711,
+      "name": "오버언더(연장 포함)",
+      "templateId": "bet-radar-225",
+      "active": true,
+      "display": true,
+      "marketType": "overunder",
+      "marketState": "open",
+      "outright": false
+    }
+  ],
+  "translationData": {
+    "event": "Los Angeles Chargers vs Miami Dolphins",
+    "competition": "NFL",
+    "participants": [
+      "Los Angeles Chargers",
+      "Miami Dolphins"
+    ]
+  },
+  "media": {
+    "statistics": [
+      {
+        "id": "33623565",
+        "provider": "betradar"
+      }
+    ],
+    "liveTrackers": [
+      {
+        "id": "33623565",
+        "provider": "betradar"
+      }
+    ],
+    "streams": []
+  },
+  "revision": 104
+}

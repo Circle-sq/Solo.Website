@@ -1,0 +1,25 @@
+.market-group {
+  margin-top: -1px;
+}
+
+.market-group__header {
+  font-size: pxToPr(12.5px, "em", $basicFontSize);
+}
+
+@media (max-width: $bp-960 - 1) {
+  .event-card .market-group > header,
+  .event-card .market-group .market-header > header {
+    height: pxToPr(36px, "em", 12px);
+    line-height: pxToPr(34px, "em", 12px);
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.market-group:last-child {
+  border-bottom-width: 1px;
+}
+
+.market-group:last-child .toggle-group--is-expand header:not(.is-open) {
+  margin-bottom: -1px;
+}

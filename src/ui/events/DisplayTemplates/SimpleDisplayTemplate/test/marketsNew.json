@@ -1,0 +1,68 @@
+[
+    {
+        "template": {
+            "id": "bet-radar-204",
+            "eventTemplateId": "multi-participant-event",
+            "sportId": "tennis",
+            "name": "{!setnr} set - total games (204)",
+            "customName": "{!setnr} set - total games",
+            "url": null,
+            "marketTemplateType": "204",
+            "marketTypeGeneric": "overunder",
+            "period": "1st set",
+            "mainGroup": "Total Games"
+        },
+        "active": true,
+        "visible": true,
+        "selections":[
+            {
+                "display": true,
+                "id": "content 1"
+            }
+        ]
+    },
+    {
+        "template": {
+            "id": "bet-radar-205",
+            "eventTemplateId": "multi-participant-event",
+            "sportId": "tennis",
+            "name": "{!setnr} set - total games (205)",
+            "customName": "{!setnr} set - total games",
+            "url": null,
+            "marketTemplateType": "205",
+            "marketTypeGeneric": "overunder",
+            "period": "2nd set",
+            "mainGroup": "Total Games"
+        },
+        "active": true,
+        "visible": true,
+        "selections":[
+            {
+                "display": true,
+                "id": "content 2"
+            }
+        ]
+    },
+    {
+        "template": {
+            "id": "bet-radar-206",
+            "eventTemplateId": "multi-participant-event",
+            "sportId": "tennis",
+            "name": "{!setnr} set - total games (206)",
+            "customName": "{!setnr} set - total games",
+            "url": null,
+            "marketTemplateType": "206",
+            "marketTypeGeneric": "overunder",
+            "period": "3rd set",
+            "mainGroup": "Total Games"
+        },
+        "active": true,
+        "visible": true,
+        "selections":[
+            {
+                "display": true,
+                "id": "content 3"
+            }
+        ]
+    }
+]

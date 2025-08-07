@@ -1,0 +1,6129 @@
+{
+  "events": [
+    {
+      "id": 571,
+      "name": "Atletico Lanus vs Deportivo Garcilaso",
+      "originalName": "Atletico Lanus vs Deportivo Garcilaso",
+      "state": "open",
+      "sport": "football",
+      "competition": "240",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "World"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "International Clubs"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "WRL"
+        ],
+        "period-length": [
+          "45"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "International Clubs"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-11T22:00:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 981,
+          "role": "home"
+        },
+        {
+          "id": 982,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [
+        28028,
+        28029,
+        28030,
+        28031,
+        28032,
+        28033,
+        28034,
+        28035,
+        28036,
+        28037,
+        28038,
+        28089,
+        28112,
+        28113,
+        28115,
+        28116
+      ],
+      "marketIndex": [
+        {
+          "id": 28028,
+          "name": "Total",
+          "templateId": "bet-radar-18",
+          "active": true,
+          "display": true,
+          "marketType": "overunder",
+          "marketState": "open",
+          "outright": false
+        },
+        {
+          "id": 28029,
+          "name": "Total",
+          "templateId": "bet-radar-18",
+          "active": true,
+          "display": true,
+          "marketType": "overunder",
+          "marketState": "open",
+          "outright": false
+        },
+        {
+          "id": 28030,
+          "name": "Total",
+          "templateId": "bet-radar-18",
+          "active": true,
+          "display": true,
+          "marketType": "overunder",
+          "marketState": "open",
+          "outright": false
+        },
+        {
+          "id": 28031,
+          "name": "Total",
+          "templateId": "bet-radar-18",
+          "active": true,
+          "display": true,
+          "marketType": "overunder",
+          "marketState": "open",
+          "outright": false
+        },
+        {
+          "id": 28032,
+          "name": "Total",
+          "templateId": "bet-radar-18",
+          "active": true,
+          "display": true,
+          "marketType": "overunder",
+          "marketState": "open",
+          "outright": false
+        },
+        {
+          "id": 28033,
+          "name": "Total",
+          "templateId": "bet-radar-18",
+          "active": true,
+          "display": true,
+          "marketType": "overunder",
+          "marketState": "open",
+          "outright": false
+        },
+        {
+          "id": 28034,
+          "name": "Total",
+          "templateId": "bet-radar-18",
+          "active": true,
+          "display": true,
+          "marketType": "overunder",
+          "marketState": "open",
+          "outright": false
+        },
+        {
+          "id": 28035,
+          "name": "Total",
+          "templateId": "bet-radar-18",
+          "active": true,
+          "display": true,
+          "marketType": "overunder",
+          "marketState": "open",
+          "outright": false
+        },
+        {
+          "id": 28036,
+          "name": "Total",
+          "templateId": "bet-radar-18",
+          "active": true,
+          "display": true,
+          "marketType": "overunder",
+          "marketState": "open",
+          "outright": false
+        },
+        {
+          "id": 28037,
+          "name": "Total",
+          "templateId": "bet-radar-18",
+          "active": true,
+          "display": true,
+          "marketType": "overunder",
+          "marketState": "open",
+          "outright": false
+        },
+        {
+          "id": 28038,
+          "name": "Total",
+          "templateId": "bet-radar-18",
+          "active": true,
+          "display": true,
+          "marketType": "overunder",
+          "marketState": "open",
+          "outright": false
+        },
+        {
+          "id": 28089,
+          "name": "1x2",
+          "templateId": "bet-radar-1",
+          "active": true,
+          "display": true,
+          "marketType": "threewaywinner",
+          "marketState": "open",
+          "outright": false
+        },
+        {
+          "id": 28112,
+          "name": "Handicap",
+          "templateId": "bet-radar-16",
+          "active": true,
+          "display": true,
+          "marketType": "twowayhandicap",
+          "marketState": "open",
+          "outright": false
+        },
+        {
+          "id": 28113,
+          "name": "Handicap",
+          "templateId": "bet-radar-16",
+          "active": true,
+          "display": true,
+          "marketType": "twowayhandicap",
+          "marketState": "open",
+          "outright": false
+        },
+        {
+          "id": 28115,
+          "name": "Handicap",
+          "templateId": "bet-radar-16",
+          "active": true,
+          "display": true,
+          "marketType": "twowayhandicap",
+          "marketState": "open",
+          "outright": false
+        },
+        {
+          "id": 28116,
+          "name": "Handicap",
+          "templateId": "bet-radar-16",
+          "active": true,
+          "display": true,
+          "marketType": "twowayhandicap",
+          "marketState": "open",
+          "outright": false
+        }
+      ],
+      "translationData": {
+        "event": "Atletico Lanus vs Deportivo Garcilaso",
+        "competition": "Copa Sudamericana",
+        "participants": [
+          "Atletico Lanus",
+          "Deportivo Garcilaso"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "48721923",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "48721923",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 37
+    },
+    {
+      "id": 899,
+      "name": "Club Bolivar vs Millionarios",
+      "originalName": "Club Bolivar vs Millionarios",
+      "state": "open",
+      "sport": "football",
+      "competition": "253",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "World"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "International Clubs"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "WRL"
+        ],
+        "period-length": [
+          "45"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "International Clubs"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-11T22:00:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 1685,
+          "role": "home"
+        },
+        {
+          "id": 1686,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "Club Bolivar vs Millionarios",
+        "competition": "Copa Libertadores",
+        "participants": [
+          "Club Bolivar",
+          "Millionarios"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "48722645",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "48722645",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 1
+    },
+    {
+      "id": 1097,
+      "name": "Metropolitanos FC vs Cuiaba EC",
+      "originalName": "Metropolitanos FC vs Cuiaba EC",
+      "state": "open",
+      "sport": "football",
+      "competition": "240",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "World"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "International Clubs"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "WRL"
+        ],
+        "period-length": [
+          "45"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "International Clubs"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-11T22:00:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 2171,
+          "role": "home"
+        },
+        {
+          "id": 904,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "Metropolitanos FC vs Cuiaba EC",
+        "competition": "Copa Sudamericana",
+        "participants": [
+          "Metropolitanos FC",
+          "Cuiaba EC"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "48721921",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "48721921",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 1
+    },
+    {
+      "id": 1118,
+      "name": "Fortaleza EC CE vs Botafogo FR RJ",
+      "originalName": "Fortaleza EC CE vs Botafogo FR RJ",
+      "state": "open",
+      "sport": "football",
+      "competition": "279",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "Brasil"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "BRA"
+        ],
+        "period-length": [
+          "45"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "-"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-11T22:00:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 2217,
+          "role": "home"
+        },
+        {
+          "id": 1193,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "Fortaleza EC CE vs Botafogo FR RJ",
+        "competition": "U20 Campeonato Brasileiro",
+        "participants": [
+          "Fortaleza EC CE",
+          "Botafogo FR RJ"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "49008885",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "49008885",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 1
+    },
+    {
+      "id": 1216,
+      "name": "LDU Quito vs Botafogo RJ",
+      "originalName": "LDU Quito vs Botafogo RJ",
+      "state": "open",
+      "sport": "football",
+      "competition": "253",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "World"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "International Clubs"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "WRL"
+        ],
+        "period-length": [
+          "45"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "International Clubs"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-11T22:00:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 2501,
+          "role": "home"
+        },
+        {
+          "id": 2502,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "LDU Quito vs Botafogo RJ",
+        "competition": "Copa Libertadores",
+        "participants": [
+          "LDU Quito",
+          "Botafogo RJ"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "48722701",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "48722701",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 0
+    },
+    {
+      "id": 610,
+      "name": "Palmeiras vs Liverpool Montevideo",
+      "originalName": "Palmeiras vs Liverpool Montevideo",
+      "state": "open",
+      "sport": "football",
+      "competition": "253",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "World"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "International Clubs"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "WRL"
+        ],
+        "period-length": [
+          "45"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "International Clubs"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-12T00:00:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 1057,
+          "role": "home"
+        },
+        {
+          "id": 1058,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "Palmeiras vs Liverpool Montevideo",
+        "competition": "Copa Libertadores",
+        "participants": [
+          "Palmeiras",
+          "Liverpool Montevideo"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "48722575",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "48722575",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 2
+    },
+    {
+      "id": 738,
+      "name": "CA River Plate (ARG) vs Club Nacional de Football",
+      "originalName": "CA River Plate (ARG) vs Club Nacional de Football",
+      "state": "open",
+      "sport": "football",
+      "competition": "253",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "World"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "International Clubs"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "WRL"
+        ],
+        "period-length": [
+          "45"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "International Clubs"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-12T00:00:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 1315,
+          "role": "home"
+        },
+        {
+          "id": 1316,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "CA River Plate (ARG) vs Club Nacional de Football",
+        "competition": "Copa Libertadores",
+        "participants": [
+          "CA River Plate (ARG)",
+          "Club Nacional de Football"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "48722511",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "48722511",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 2
+    },
+    {
+      "id": 914,
+      "name": "Cruzeiro EC MG vs Alianza FC Valledupar",
+      "originalName": "Cruzeiro EC MG vs Alianza FC Valledupar",
+      "state": "open",
+      "sport": "football",
+      "competition": "240",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "World"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "International Clubs"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "WRL"
+        ],
+        "period-length": [
+          "45"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "International Clubs"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-12T00:00:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 1721,
+          "role": "home"
+        },
+        {
+          "id": 1722,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "Cruzeiro EC MG vs Alianza FC Valledupar",
+        "competition": "Copa Sudamericana",
+        "participants": [
+          "Cruzeiro EC MG",
+          "Alianza FC Valledupar"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "48722389",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "48722389",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 1
+    },
+    {
+      "id": 617,
+      "name": "Sepahan SC vs Nassaji Mazandaran FC",
+      "originalName": "Sepahan SC vs Nassaji Mazandaran FC",
+      "state": "open",
+      "sport": "football",
+      "competition": "219",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "Iran"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "IRI"
+        ],
+        "period-length": [
+          "45"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "-"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-12T14:20:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 1069,
+          "role": "home"
+        },
+        {
+          "id": 1070,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "Sepahan SC vs Nassaji Mazandaran FC",
+        "competition": "Pro League",
+        "participants": [
+          "Sepahan SC",
+          "Nassaji Mazandaran FC"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "49007545",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "49007545",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 0
+    },
+    {
+      "id": 493,
+      "name": "Esteghlal Khuzestan FC vs Sanat Naft Abadan FC",
+      "originalName": "Esteghlal Khuzestan FC vs Sanat Naft Abadan FC",
+      "state": "open",
+      "sport": "football",
+      "competition": "219",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "Iran"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "IRI"
+        ],
+        "period-length": [
+          "45"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "-"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-12T14:30:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 833,
+          "role": "home"
+        },
+        {
+          "id": 834,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "Esteghlal Khuzestan FC vs Sanat Naft Abadan FC",
+        "competition": "Pro League",
+        "participants": [
+          "Esteghlal Khuzestan FC",
+          "Sanat Naft Abadan FC"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "49007549",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "49007549",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 4
+    },
+    {
+      "id": 766,
+      "name": "Aluminium Arak vs Esteghlal",
+      "originalName": "Aluminium Arak vs Esteghlal",
+      "state": "open",
+      "sport": "football",
+      "competition": "219",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "Iran"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "IRI"
+        ],
+        "period-length": [
+          "45"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "-"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-12T14:30:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 1373,
+          "role": "home"
+        },
+        {
+          "id": 1374,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "Aluminium Arak vs Esteghlal",
+        "competition": "Pro League",
+        "participants": [
+          "Aluminium Arak",
+          "Esteghlal"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "49007551",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "49007551",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 0
+    },
+    {
+      "id": 778,
+      "name": "FC Vitebsk vs FC Slutsk",
+      "originalName": "FC Vitebsk vs FC Slutsk",
+      "state": "open",
+      "sport": "football",
+      "competition": "303",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "Belarus"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "BLR"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "-"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-12T14:30:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 1397,
+          "role": "home"
+        },
+        {
+          "id": 1398,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "FC Vitebsk vs FC Slutsk",
+        "competition": "Vysshaya Liga",
+        "participants": [
+          "FC Vitebsk",
+          "FC Slutsk"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "48171699",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "48171699",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 0
+    },
+    {
+      "id": 1063,
+      "name": "FC Haka Valkeakoski vs Ekenas Idrottsforening",
+      "originalName": "FC Haka Valkeakoski vs Ekenas Idrottsforening",
+      "state": "open",
+      "sport": "football",
+      "competition": "254",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "Finland"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "FIN"
+        ],
+        "period-length": [
+          "45"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "-"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-12T15:00:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 2075,
+          "role": "home"
+        },
+        {
+          "id": 720,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "FC Haka Valkeakoski vs Ekenas Idrottsforening",
+        "competition": "Veikkausliiga",
+        "participants": [
+          "FC Haka Valkeakoski",
+          "Ekenas Idrottsforening"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "47114227",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "47114227",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 0
+    },
+    {
+      "id": 1067,
+      "name": "Sumgayit FK vs Zira FK",
+      "originalName": "Sumgayit FK vs Zira FK",
+      "state": "open",
+      "sport": "football",
+      "competition": "359",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "Azerbaijan"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "AZE"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "-"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-12T15:00:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 2091,
+          "role": "home"
+        },
+        {
+          "id": 2092,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "Sumgayit FK vs Zira FK",
+        "competition": "Premier League",
+        "participants": [
+          "Sumgayit FK",
+          "Zira FK"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "42709209",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "42709209",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 0
+    },
+    {
+      "id": 1079,
+      "name": "NK Rudes Zagreb vs NK Slaven Belupo",
+      "originalName": "NK Rudes Zagreb vs NK Slaven Belupo",
+      "state": "open",
+      "sport": "football",
+      "competition": "361",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "Croatia"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "CRO"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "-"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-12T15:00:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 2125,
+          "role": "home"
+        },
+        {
+          "id": 2126,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "NK Rudes Zagreb vs NK Slaven Belupo",
+        "competition": "HNL",
+        "participants": [
+          "NK Rudes Zagreb",
+          "NK Slaven Belupo"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "41736983",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "41736983",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 1
+    },
+    {
+      "id": 516,
+      "name": "Warta Poznan vs Korona Kielce",
+      "originalName": "Warta Poznan vs Korona Kielce",
+      "state": "open",
+      "sport": "football",
+      "competition": "226",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "Poland"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "POL"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "-"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-12T16:00:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 877,
+          "role": "home"
+        },
+        {
+          "id": 878,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "Warta Poznan vs Korona Kielce",
+        "competition": "Ekstraklasa",
+        "participants": [
+          "Warta Poznan",
+          "Korona Kielce"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "41755663",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "41755663",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 2
+    },
+    {
+      "id": 1182,
+      "name": "SFC Opava vs Sparta Prague B",
+      "originalName": "SFC Opava vs Sparta Prague B",
+      "state": "open",
+      "sport": "football",
+      "competition": "327",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "Czech Republic"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "CZE"
+        ],
+        "period-length": [
+          "45"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "-"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-12T16:00:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 2387,
+          "role": "home"
+        },
+        {
+          "id": 2388,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "SFC Opava vs Sparta Prague B",
+        "competition": "FNL",
+        "participants": [
+          "SFC Opava",
+          "Sparta Prague B"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "41878119",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "41878119",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 1
+    },
+    {
+      "id": 1165,
+      "name": "MSV Duisburg vs SV Waldhof Mannheim 07",
+      "originalName": "MSV Duisburg vs SV Waldhof Mannheim 07",
+      "state": "open",
+      "sport": "football",
+      "competition": "315",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "Germany"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "GER"
+        ],
+        "period-length": [
+          "45"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "-"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-12T17:00:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 2335,
+          "role": "home"
+        },
+        {
+          "id": 2336,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "MSV Duisburg vs SV Waldhof Mannheim 07",
+        "competition": "3. Liga",
+        "participants": [
+          "MSV Duisburg",
+          "SV Waldhof Mannheim 07"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "42187859",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "42187859",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 0
+    },
+    {
+      "id": 1105,
+      "name": "US Avranches vs Epinal",
+      "originalName": "US Avranches vs Epinal",
+      "state": "open",
+      "sport": "football",
+      "competition": "283",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "France"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "FRA"
+        ],
+        "period-length": [
+          "45"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "-"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-12T17:30:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 2187,
+          "role": "home"
+        },
+        {
+          "id": 2188,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "US Avranches vs Epinal",
+        "competition": "National",
+        "participants": [
+          "US Avranches",
+          "Epinal"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "42337109",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "42337109",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 1
+    },
+    {
+      "id": 840,
+      "name": "Norwich City FC vs West Ham United FC",
+      "originalName": "Norwich City FC vs West Ham United FC",
+      "state": "open",
+      "sport": "football",
+      "competition": "162",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "England"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "ENG"
+        ],
+        "period-length": [
+          "45"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "-"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-12T18:00:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 1537,
+          "role": "home"
+        },
+        {
+          "id": 1538,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "Norwich City FC vs West Ham United FC",
+        "competition": "Premier League 2",
+        "participants": [
+          "Norwich City FC",
+          "West Ham United FC"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "42794133",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [],
+        "streams": []
+      },
+      "revision": 1
+    },
+    {
+      "id": 1138,
+      "name": "FC Everton vs Blackburn Rovers",
+      "originalName": "FC Everton vs Blackburn Rovers",
+      "state": "open",
+      "sport": "football",
+      "competition": "162",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "England"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "ENG"
+        ],
+        "period-length": [
+          "45"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "-"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-12T18:00:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 2271,
+          "role": "home"
+        },
+        {
+          "id": 2272,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "FC Everton vs Blackburn Rovers",
+        "competition": "Premier League 2",
+        "participants": [
+          "FC Everton",
+          "Blackburn Rovers"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "42794147",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [],
+        "streams": []
+      },
+      "revision": 1
+    },
+    {
+      "id": 1140,
+      "name": "FC Augsburg vs FC Union Berlin",
+      "originalName": "FC Augsburg vs FC Union Berlin",
+      "state": "open",
+      "sport": "football",
+      "competition": "179",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "Germany"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "GER"
+        ],
+        "period-length": [
+          "45"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "-"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-12T18:30:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 1417,
+          "role": "home"
+        },
+        {
+          "id": 2276,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "FC Augsburg vs FC Union Berlin",
+        "competition": "Bundesliga",
+        "participants": [
+          "FC Augsburg",
+          "FC Union Berlin"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "42023593",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "42023593",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 0
+    },
+    {
+      "id": 567,
+      "name": "FC Metz vs RC Lens",
+      "originalName": "FC Metz vs RC Lens",
+      "state": "open",
+      "sport": "football",
+      "competition": "227",
+      "template": "match",
+      "eventType": null,
+      "displayOrder": 0,
+      "active": true,
+      "display": true,
+      "cashoutAvailable": false,
+      "blockSettlement": null,
+      "autoTakeDown": null,
+      "antePost": null,
+      "streams": [],
+      "tags": {
+        "website-show": [
+          "yes"
+        ],
+        "market-group": [
+          "-"
+        ],
+        "country-label": [
+          "France"
+        ],
+        "asian-view": [
+          "no"
+        ],
+        "highlight": [
+          "no"
+        ],
+        "skycity-events": [
+          "-"
+        ],
+        "category-label": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "country": [
+          "FRA"
+        ],
+        "period-length": [
+          "45"
+        ],
+        "region": [
+          "-"
+        ],
+        "category": [
+          "-"
+        ]
+      },
+      "inPlayDelaySettings": null,
+      "timeSettings": {
+        "startTime": "2024-04-12T19:00:00Z",
+        "started": false,
+        "tradedInPlay": true,
+        "offAtStartTime": false,
+        "timeZone": "UTC"
+      },
+      "feedData": {},
+      "participants": [
+        {
+          "id": 906,
+          "role": "home"
+        },
+        {
+          "id": 911,
+          "role": "away"
+        }
+      ],
+      "statistics": {},
+      "markets": [],
+      "marketIndex": [],
+      "translationData": {
+        "event": "FC Metz vs RC Lens",
+        "competition": "Ligue 1",
+        "participants": [
+          "FC Metz",
+          "RC Lens"
+        ]
+      },
+      "media": {
+        "statistics": [
+          {
+            "id": "42005043",
+            "provider": "betradar"
+          }
+        ],
+        "liveTrackers": [
+          {
+            "id": "42005043",
+            "provider": "betradar"
+          }
+        ],
+        "streams": []
+      },
+      "revision": 3
+    }
+  ],
+  "markets": [
+    {
+      "id": 28028,
+      "name": "Total",
+      "active": true,
+      "autoTakeDown": null,
+      "display": true,
+      "displayOrder": 3,
+      "tradedInPlay": false,
+      "forecastsOffered": null,
+      "tricastsOffered": null,
+      "inPlayDelaySettings": null,
+      "sp": false,
+      "line": 2,
+      "cashoutAvailable": true,
+      "outright": false,
+      "bp": null,
+      "bpApplicable": null,
+      "spApplicable": null,
+      "spOnly": false,
+      "eachWayStakeReduction": null,
+      "betReferralEnabled": null,
+      "time": null,
+      "team": null,
+      "selections": [
+        87373,
+        87374
+      ],
+      "suspendTime": null,
+      "event": {
+        "id": 571,
+        "name": "Atletico Lanus vs Deportivo Garcilaso"
+      },
+      "template": {
+        "id": "bet-radar-18",
+        "eventTemplateId": "match",
+        "customName": null,
+        "sportId": "football",
+        "name": "Total (18)",
+        "marketTemplateType": "18",
+        "mainGroup": "Totals",
+        "period": "Regular play",
+        "marketTypeGeneric": "overunder"
+      },
+      "eachWay": null,
+      "tags": {
+        "market-display": [
+          "-"
+        ],
+        "market-group--popular-markets": [
+          "no"
+        ],
+        "website-main": [
+          "yes"
+        ],
+        "asian-view": [
+          "yes"
+        ],
+        "build-a-bet": [
+          "no"
+        ],
+        "market-group": [
+          "Main",
+          "Asians",
+          "Goals"
+        ],
+        "display-template": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "display-order": [
+          "-"
+        ],
+        "website-popular": [
+          "-"
+        ]
+      },
+      "revision": 6
+    },
+    {
+      "id": 28029,
+      "name": "Total",
+      "active": true,
+      "autoTakeDown": null,
+      "display": true,
+      "displayOrder": 3,
+      "tradedInPlay": false,
+      "forecastsOffered": null,
+      "tricastsOffered": null,
+      "inPlayDelaySettings": null,
+      "sp": false,
+      "line": 3,
+      "cashoutAvailable": true,
+      "outright": false,
+      "bp": null,
+      "bpApplicable": null,
+      "spApplicable": null,
+      "spOnly": false,
+      "eachWayStakeReduction": null,
+      "betReferralEnabled": null,
+      "time": null,
+      "team": null,
+      "selections": [
+        87375,
+        87376
+      ],
+      "suspendTime": null,
+      "event": {
+        "id": 571,
+        "name": "Atletico Lanus vs Deportivo Garcilaso"
+      },
+      "template": {
+        "id": "bet-radar-18",
+        "eventTemplateId": "match",
+        "customName": null,
+        "sportId": "football",
+        "name": "Total (18)",
+        "marketTemplateType": "18",
+        "mainGroup": "Totals",
+        "period": "Regular play",
+        "marketTypeGeneric": "overunder"
+      },
+      "eachWay": null,
+      "tags": {
+        "market-display": [
+          "-"
+        ],
+        "market-group--popular-markets": [
+          "no"
+        ],
+        "website-main": [
+          "yes"
+        ],
+        "asian-view": [
+          "yes"
+        ],
+        "build-a-bet": [
+          "no"
+        ],
+        "market-group": [
+          "Main",
+          "Asians",
+          "Goals"
+        ],
+        "display-template": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "display-order": [
+          "-"
+        ],
+        "website-popular": [
+          "-"
+        ]
+      },
+      "revision": 6
+    },
+    {
+      "id": 28030,
+      "name": "Total",
+      "active": true,
+      "autoTakeDown": null,
+      "display": true,
+      "displayOrder": 3,
+      "tradedInPlay": false,
+      "forecastsOffered": null,
+      "tricastsOffered": null,
+      "inPlayDelaySettings": null,
+      "sp": false,
+      "line": 4,
+      "cashoutAvailable": true,
+      "outright": false,
+      "bp": null,
+      "bpApplicable": null,
+      "spApplicable": null,
+      "spOnly": false,
+      "eachWayStakeReduction": null,
+      "betReferralEnabled": null,
+      "time": null,
+      "team": null,
+      "selections": [
+        87377,
+        87378
+      ],
+      "suspendTime": null,
+      "event": {
+        "id": 571,
+        "name": "Atletico Lanus vs Deportivo Garcilaso"
+      },
+      "template": {
+        "id": "bet-radar-18",
+        "eventTemplateId": "match",
+        "customName": null,
+        "sportId": "football",
+        "name": "Total (18)",
+        "marketTemplateType": "18",
+        "mainGroup": "Totals",
+        "period": "Regular play",
+        "marketTypeGeneric": "overunder"
+      },
+      "eachWay": null,
+      "tags": {
+        "market-display": [
+          "-"
+        ],
+        "market-group--popular-markets": [
+          "no"
+        ],
+        "website-main": [
+          "yes"
+        ],
+        "asian-view": [
+          "yes"
+        ],
+        "build-a-bet": [
+          "no"
+        ],
+        "market-group": [
+          "Main",
+          "Asians",
+          "Goals"
+        ],
+        "display-template": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "display-order": [
+          "-"
+        ],
+        "website-popular": [
+          "-"
+        ]
+      },
+      "revision": 6
+    },
+    {
+      "id": 28031,
+      "name": "Total",
+      "active": true,
+      "autoTakeDown": null,
+      "display": true,
+      "displayOrder": 3,
+      "tradedInPlay": false,
+      "forecastsOffered": null,
+      "tricastsOffered": null,
+      "inPlayDelaySettings": null,
+      "sp": false,
+      "line": 4.25,
+      "cashoutAvailable": true,
+      "outright": false,
+      "bp": null,
+      "bpApplicable": null,
+      "spApplicable": null,
+      "spOnly": false,
+      "eachWayStakeReduction": null,
+      "betReferralEnabled": null,
+      "time": null,
+      "team": null,
+      "selections": [
+        87379,
+        87380
+      ],
+      "suspendTime": null,
+      "event": {
+        "id": 571,
+        "name": "Atletico Lanus vs Deportivo Garcilaso"
+      },
+      "template": {
+        "id": "bet-radar-18",
+        "eventTemplateId": "match",
+        "customName": null,
+        "sportId": "football",
+        "name": "Total (18)",
+        "marketTemplateType": "18",
+        "mainGroup": "Totals",
+        "period": "Regular play",
+        "marketTypeGeneric": "overunder"
+      },
+      "eachWay": null,
+      "tags": {
+        "market-display": [
+          "-"
+        ],
+        "market-group--popular-markets": [
+          "no"
+        ],
+        "website-main": [
+          "yes"
+        ],
+        "asian-view": [
+          "yes"
+        ],
+        "build-a-bet": [
+          "no"
+        ],
+        "market-group": [
+          "Main",
+          "Asians",
+          "Goals"
+        ],
+        "display-template": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "display-order": [
+          "-"
+        ],
+        "website-popular": [
+          "-"
+        ]
+      },
+      "revision": 6
+    },
+    {
+      "id": 28032,
+      "name": "Total",
+      "active": true,
+      "autoTakeDown": null,
+      "display": true,
+      "displayOrder": 3,
+      "tradedInPlay": false,
+      "forecastsOffered": null,
+      "tricastsOffered": null,
+      "inPlayDelaySettings": null,
+      "sp": false,
+      "line": 2.25,
+      "cashoutAvailable": true,
+      "outright": false,
+      "bp": null,
+      "bpApplicable": null,
+      "spApplicable": null,
+      "spOnly": false,
+      "eachWayStakeReduction": null,
+      "betReferralEnabled": null,
+      "time": null,
+      "team": null,
+      "selections": [
+        87381,
+        87382
+      ],
+      "suspendTime": null,
+      "event": {
+        "id": 571,
+        "name": "Atletico Lanus vs Deportivo Garcilaso"
+      },
+      "template": {
+        "id": "bet-radar-18",
+        "eventTemplateId": "match",
+        "customName": null,
+        "sportId": "football",
+        "name": "Total (18)",
+        "marketTemplateType": "18",
+        "mainGroup": "Totals",
+        "period": "Regular play",
+        "marketTypeGeneric": "overunder"
+      },
+      "eachWay": null,
+      "tags": {
+        "market-display": [
+          "-"
+        ],
+        "market-group--popular-markets": [
+          "no"
+        ],
+        "website-main": [
+          "yes"
+        ],
+        "asian-view": [
+          "yes"
+        ],
+        "build-a-bet": [
+          "no"
+        ],
+        "market-group": [
+          "Main",
+          "Asians",
+          "Goals"
+        ],
+        "display-template": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "display-order": [
+          "-"
+        ],
+        "website-popular": [
+          "-"
+        ]
+      },
+      "revision": 6
+    },
+    {
+      "id": 28033,
+      "name": "Total",
+      "active": true,
+      "autoTakeDown": null,
+      "display": true,
+      "displayOrder": 3,
+      "tradedInPlay": false,
+      "forecastsOffered": null,
+      "tricastsOffered": null,
+      "inPlayDelaySettings": null,
+      "sp": false,
+      "line": 3.25,
+      "cashoutAvailable": true,
+      "outright": false,
+      "bp": null,
+      "bpApplicable": null,
+      "spApplicable": null,
+      "spOnly": false,
+      "eachWayStakeReduction": null,
+      "betReferralEnabled": null,
+      "time": null,
+      "team": null,
+      "selections": [
+        87383,
+        87384
+      ],
+      "suspendTime": null,
+      "event": {
+        "id": 571,
+        "name": "Atletico Lanus vs Deportivo Garcilaso"
+      },
+      "template": {
+        "id": "bet-radar-18",
+        "eventTemplateId": "match",
+        "customName": null,
+        "sportId": "football",
+        "name": "Total (18)",
+        "marketTemplateType": "18",
+        "mainGroup": "Totals",
+        "period": "Regular play",
+        "marketTypeGeneric": "overunder"
+      },
+      "eachWay": null,
+      "tags": {
+        "market-display": [
+          "-"
+        ],
+        "market-group--popular-markets": [
+          "no"
+        ],
+        "website-main": [
+          "yes"
+        ],
+        "asian-view": [
+          "yes"
+        ],
+        "build-a-bet": [
+          "no"
+        ],
+        "market-group": [
+          "Main",
+          "Asians",
+          "Goals"
+        ],
+        "display-template": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "display-order": [
+          "-"
+        ],
+        "website-popular": [
+          "-"
+        ]
+      },
+      "revision": 6
+    },
+    {
+      "id": 28034,
+      "name": "Total",
+      "active": true,
+      "autoTakeDown": null,
+      "display": true,
+      "displayOrder": 3,
+      "tradedInPlay": false,
+      "forecastsOffered": null,
+      "tricastsOffered": null,
+      "inPlayDelaySettings": null,
+      "sp": false,
+      "line": 2.5,
+      "cashoutAvailable": true,
+      "outright": false,
+      "bp": null,
+      "bpApplicable": null,
+      "spApplicable": null,
+      "spOnly": false,
+      "eachWayStakeReduction": null,
+      "betReferralEnabled": null,
+      "time": null,
+      "team": null,
+      "selections": [
+        87385,
+        87386
+      ],
+      "suspendTime": null,
+      "event": {
+        "id": 571,
+        "name": "Atletico Lanus vs Deportivo Garcilaso"
+      },
+      "template": {
+        "id": "bet-radar-18",
+        "eventTemplateId": "match",
+        "customName": null,
+        "sportId": "football",
+        "name": "Total (18)",
+        "marketTemplateType": "18",
+        "mainGroup": "Totals",
+        "period": "Regular play",
+        "marketTypeGeneric": "overunder"
+      },
+      "eachWay": null,
+      "tags": {
+        "market-display": [
+          "-"
+        ],
+        "market-group--popular-markets": [
+          "no"
+        ],
+        "website-main": [
+          "yes"
+        ],
+        "asian-view": [
+          "yes"
+        ],
+        "build-a-bet": [
+          "no"
+        ],
+        "market-group": [
+          "Main",
+          "Asians",
+          "Goals"
+        ],
+        "display-template": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "display-order": [
+          "-"
+        ],
+        "website-popular": [
+          "-"
+        ]
+      },
+      "revision": 6
+    },
+    {
+      "id": 28035,
+      "name": "Total",
+      "active": true,
+      "autoTakeDown": null,
+      "display": true,
+      "displayOrder": 3,
+      "tradedInPlay": false,
+      "forecastsOffered": null,
+      "tricastsOffered": null,
+      "inPlayDelaySettings": null,
+      "sp": false,
+      "line": 3.5,
+      "cashoutAvailable": true,
+      "outright": false,
+      "bp": null,
+      "bpApplicable": null,
+      "spApplicable": null,
+      "spOnly": false,
+      "eachWayStakeReduction": null,
+      "betReferralEnabled": null,
+      "time": null,
+      "team": null,
+      "selections": [
+        87387,
+        87388
+      ],
+      "suspendTime": null,
+      "event": {
+        "id": 571,
+        "name": "Atletico Lanus vs Deportivo Garcilaso"
+      },
+      "template": {
+        "id": "bet-radar-18",
+        "eventTemplateId": "match",
+        "customName": null,
+        "sportId": "football",
+        "name": "Total (18)",
+        "marketTemplateType": "18",
+        "mainGroup": "Totals",
+        "period": "Regular play",
+        "marketTypeGeneric": "overunder"
+      },
+      "eachWay": null,
+      "tags": {
+        "market-display": [
+          "-"
+        ],
+        "market-group--popular-markets": [
+          "no"
+        ],
+        "website-main": [
+          "yes"
+        ],
+        "asian-view": [
+          "yes"
+        ],
+        "build-a-bet": [
+          "no"
+        ],
+        "market-group": [
+          "Main",
+          "Asians",
+          "Goals"
+        ],
+        "display-template": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "display-order": [
+          "-"
+        ],
+        "website-popular": [
+          "-"
+        ]
+      },
+      "revision": 6
+    },
+    {
+      "id": 28036,
+      "name": "Total",
+      "active": true,
+      "autoTakeDown": null,
+      "display": true,
+      "displayOrder": 3,
+      "tradedInPlay": false,
+      "forecastsOffered": null,
+      "tricastsOffered": null,
+      "inPlayDelaySettings": null,
+      "sp": false,
+      "line": 1.75,
+      "cashoutAvailable": true,
+      "outright": false,
+      "bp": null,
+      "bpApplicable": null,
+      "spApplicable": null,
+      "spOnly": false,
+      "eachWayStakeReduction": null,
+      "betReferralEnabled": null,
+      "time": null,
+      "team": null,
+      "selections": [
+        87389,
+        87390
+      ],
+      "suspendTime": null,
+      "event": {
+        "id": 571,
+        "name": "Atletico Lanus vs Deportivo Garcilaso"
+      },
+      "template": {
+        "id": "bet-radar-18",
+        "eventTemplateId": "match",
+        "customName": null,
+        "sportId": "football",
+        "name": "Total (18)",
+        "marketTemplateType": "18",
+        "mainGroup": "Totals",
+        "period": "Regular play",
+        "marketTypeGeneric": "overunder"
+      },
+      "eachWay": null,
+      "tags": {
+        "market-display": [
+          "-"
+        ],
+        "market-group--popular-markets": [
+          "no"
+        ],
+        "website-main": [
+          "yes"
+        ],
+        "asian-view": [
+          "yes"
+        ],
+        "build-a-bet": [
+          "no"
+        ],
+        "market-group": [
+          "Main",
+          "Asians",
+          "Goals"
+        ],
+        "display-template": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "display-order": [
+          "-"
+        ],
+        "website-popular": [
+          "-"
+        ]
+      },
+      "revision": 6
+    },
+    {
+      "id": 28037,
+      "name": "Total",
+      "active": true,
+      "autoTakeDown": null,
+      "display": true,
+      "displayOrder": 3,
+      "tradedInPlay": false,
+      "forecastsOffered": null,
+      "tricastsOffered": null,
+      "inPlayDelaySettings": null,
+      "sp": false,
+      "line": 2.75,
+      "cashoutAvailable": true,
+      "outright": false,
+      "bp": null,
+      "bpApplicable": null,
+      "spApplicable": null,
+      "spOnly": false,
+      "eachWayStakeReduction": null,
+      "betReferralEnabled": null,
+      "time": null,
+      "team": null,
+      "selections": [
+        87391,
+        87392
+      ],
+      "suspendTime": null,
+      "event": {
+        "id": 571,
+        "name": "Atletico Lanus vs Deportivo Garcilaso"
+      },
+      "template": {
+        "id": "bet-radar-18",
+        "eventTemplateId": "match",
+        "customName": null,
+        "sportId": "football",
+        "name": "Total (18)",
+        "marketTemplateType": "18",
+        "mainGroup": "Totals",
+        "period": "Regular play",
+        "marketTypeGeneric": "overunder"
+      },
+      "eachWay": null,
+      "tags": {
+        "market-display": [
+          "-"
+        ],
+        "market-group--popular-markets": [
+          "no"
+        ],
+        "website-main": [
+          "yes"
+        ],
+        "asian-view": [
+          "yes"
+        ],
+        "build-a-bet": [
+          "no"
+        ],
+        "market-group": [
+          "Main",
+          "Asians",
+          "Goals"
+        ],
+        "display-template": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "display-order": [
+          "-"
+        ],
+        "website-popular": [
+          "-"
+        ]
+      },
+      "revision": 6
+    },
+    {
+      "id": 28038,
+      "name": "Total",
+      "active": true,
+      "autoTakeDown": null,
+      "display": true,
+      "displayOrder": 3,
+      "tradedInPlay": false,
+      "forecastsOffered": null,
+      "tricastsOffered": null,
+      "inPlayDelaySettings": null,
+      "sp": false,
+      "line": 3.75,
+      "cashoutAvailable": true,
+      "outright": false,
+      "bp": null,
+      "bpApplicable": null,
+      "spApplicable": null,
+      "spOnly": false,
+      "eachWayStakeReduction": null,
+      "betReferralEnabled": null,
+      "time": null,
+      "team": null,
+      "selections": [
+        87393,
+        87394
+      ],
+      "suspendTime": null,
+      "event": {
+        "id": 571,
+        "name": "Atletico Lanus vs Deportivo Garcilaso"
+      },
+      "template": {
+        "id": "bet-radar-18",
+        "eventTemplateId": "match",
+        "customName": null,
+        "sportId": "football",
+        "name": "Total (18)",
+        "marketTemplateType": "18",
+        "mainGroup": "Totals",
+        "period": "Regular play",
+        "marketTypeGeneric": "overunder"
+      },
+      "eachWay": null,
+      "tags": {
+        "market-display": [
+          "-"
+        ],
+        "market-group--popular-markets": [
+          "no"
+        ],
+        "website-main": [
+          "yes"
+        ],
+        "asian-view": [
+          "yes"
+        ],
+        "build-a-bet": [
+          "no"
+        ],
+        "market-group": [
+          "Main",
+          "Asians",
+          "Goals"
+        ],
+        "display-template": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "display-order": [
+          "-"
+        ],
+        "website-popular": [
+          "-"
+        ]
+      },
+      "revision": 6
+    },
+    {
+      "id": 28089,
+      "name": "1x2",
+      "active": true,
+      "autoTakeDown": null,
+      "display": true,
+      "displayOrder": 1,
+      "tradedInPlay": false,
+      "forecastsOffered": null,
+      "tricastsOffered": null,
+      "inPlayDelaySettings": null,
+      "sp": false,
+      "line": null,
+      "cashoutAvailable": true,
+      "outright": false,
+      "bp": null,
+      "bpApplicable": null,
+      "spApplicable": null,
+      "spOnly": false,
+      "eachWayStakeReduction": null,
+      "betReferralEnabled": null,
+      "time": null,
+      "team": null,
+      "selections": [
+        87575,
+        87576,
+        87577
+      ],
+      "suspendTime": null,
+      "event": {
+        "id": 571,
+        "name": "Atletico Lanus vs Deportivo Garcilaso"
+      },
+      "template": {
+        "id": "bet-radar-1",
+        "eventTemplateId": "match",
+        "customName": null,
+        "sportId": "football",
+        "name": "1x2 (1)",
+        "marketTemplateType": "1",
+        "mainGroup": "Match Result",
+        "period": "Regular play",
+        "marketTypeGeneric": "threewaywinner"
+      },
+      "eachWay": null,
+      "tags": {
+        "market-display": [
+          "-"
+        ],
+        "market-group--popular-markets": [
+          "no"
+        ],
+        "website-main": [
+          "yes"
+        ],
+        "asian-view": [
+          "yes"
+        ],
+        "build-a-bet": [
+          "no"
+        ],
+        "market-group": [
+          "Main"
+        ],
+        "display-template": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "display-order": [
+          "-"
+        ],
+        "website-popular": [
+          "-"
+        ]
+      },
+      "revision": 3
+    },
+    {
+      "id": 28112,
+      "name": "Handicap",
+      "active": true,
+      "autoTakeDown": null,
+      "display": true,
+      "displayOrder": 2,
+      "tradedInPlay": false,
+      "forecastsOffered": null,
+      "tricastsOffered": null,
+      "inPlayDelaySettings": null,
+      "sp": false,
+      "line": -2,
+      "cashoutAvailable": true,
+      "outright": false,
+      "bp": null,
+      "bpApplicable": null,
+      "spApplicable": null,
+      "spOnly": false,
+      "eachWayStakeReduction": null,
+      "betReferralEnabled": null,
+      "time": null,
+      "team": null,
+      "selections": [
+        87653,
+        87654
+      ],
+      "suspendTime": null,
+      "event": {
+        "id": 571,
+        "name": "Atletico Lanus vs Deportivo Garcilaso"
+      },
+      "template": {
+        "id": "bet-radar-16",
+        "eventTemplateId": "match",
+        "customName": null,
+        "sportId": "football",
+        "name": "Handicap (16)",
+        "marketTemplateType": "16",
+        "mainGroup": "Spreads",
+        "period": "Regular play",
+        "marketTypeGeneric": "twowayhandicap"
+      },
+      "eachWay": null,
+      "tags": {
+        "market-display": [
+          "-"
+        ],
+        "market-group--popular-markets": [
+          "no"
+        ],
+        "website-main": [
+          "yes"
+        ],
+        "asian-view": [
+          "yes"
+        ],
+        "build-a-bet": [
+          "no"
+        ],
+        "market-group": [
+          "Main",
+          "Asians"
+        ],
+        "display-template": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "display-order": [
+          "-"
+        ],
+        "website-popular": [
+          "-"
+        ]
+      },
+      "revision": 6
+    },
+    {
+      "id": 28113,
+      "name": "Handicap",
+      "active": true,
+      "autoTakeDown": null,
+      "display": true,
+      "displayOrder": 2,
+      "tradedInPlay": false,
+      "forecastsOffered": null,
+      "tricastsOffered": null,
+      "inPlayDelaySettings": null,
+      "sp": false,
+      "line": -1.75,
+      "cashoutAvailable": true,
+      "outright": false,
+      "bp": null,
+      "bpApplicable": null,
+      "spApplicable": null,
+      "spOnly": false,
+      "eachWayStakeReduction": null,
+      "betReferralEnabled": null,
+      "time": null,
+      "team": null,
+      "selections": [
+        87655,
+        87656
+      ],
+      "suspendTime": null,
+      "event": {
+        "id": 571,
+        "name": "Atletico Lanus vs Deportivo Garcilaso"
+      },
+      "template": {
+        "id": "bet-radar-16",
+        "eventTemplateId": "match",
+        "customName": null,
+        "sportId": "football",
+        "name": "Handicap (16)",
+        "marketTemplateType": "16",
+        "mainGroup": "Spreads",
+        "period": "Regular play",
+        "marketTypeGeneric": "twowayhandicap"
+      },
+      "eachWay": null,
+      "tags": {
+        "market-display": [
+          "-"
+        ],
+        "market-group--popular-markets": [
+          "no"
+        ],
+        "website-main": [
+          "yes"
+        ],
+        "asian-view": [
+          "yes"
+        ],
+        "build-a-bet": [
+          "no"
+        ],
+        "market-group": [
+          "Main",
+          "Asians"
+        ],
+        "display-template": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "display-order": [
+          "-"
+        ],
+        "website-popular": [
+          "-"
+        ]
+      },
+      "revision": 6
+    },
+    {
+      "id": 28115,
+      "name": "Handicap",
+      "active": true,
+      "autoTakeDown": null,
+      "display": true,
+      "displayOrder": 2,
+      "tradedInPlay": false,
+      "forecastsOffered": null,
+      "tricastsOffered": null,
+      "inPlayDelaySettings": null,
+      "sp": false,
+      "line": -2.25,
+      "cashoutAvailable": true,
+      "outright": false,
+      "bp": null,
+      "bpApplicable": null,
+      "spApplicable": null,
+      "spOnly": false,
+      "eachWayStakeReduction": null,
+      "betReferralEnabled": null,
+      "time": null,
+      "team": null,
+      "selections": [
+        87659,
+        87660
+      ],
+      "suspendTime": null,
+      "event": {
+        "id": 571,
+        "name": "Atletico Lanus vs Deportivo Garcilaso"
+      },
+      "template": {
+        "id": "bet-radar-16",
+        "eventTemplateId": "match",
+        "customName": null,
+        "sportId": "football",
+        "name": "Handicap (16)",
+        "marketTemplateType": "16",
+        "mainGroup": "Spreads",
+        "period": "Regular play",
+        "marketTypeGeneric": "twowayhandicap"
+      },
+      "eachWay": null,
+      "tags": {
+        "market-display": [
+          "-"
+        ],
+        "market-group--popular-markets": [
+          "no"
+        ],
+        "website-main": [
+          "yes"
+        ],
+        "asian-view": [
+          "yes"
+        ],
+        "build-a-bet": [
+          "no"
+        ],
+        "market-group": [
+          "Main",
+          "Asians"
+        ],
+        "display-template": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "display-order": [
+          "-"
+        ],
+        "website-popular": [
+          "-"
+        ]
+      },
+      "revision": 6
+    },
+    {
+      "id": 28116,
+      "name": "Handicap",
+      "active": true,
+      "autoTakeDown": null,
+      "display": true,
+      "displayOrder": 2,
+      "tradedInPlay": false,
+      "forecastsOffered": null,
+      "tricastsOffered": null,
+      "inPlayDelaySettings": null,
+      "sp": false,
+      "line": -1.5,
+      "cashoutAvailable": true,
+      "outright": false,
+      "bp": null,
+      "bpApplicable": null,
+      "spApplicable": null,
+      "spOnly": false,
+      "eachWayStakeReduction": null,
+      "betReferralEnabled": null,
+      "time": null,
+      "team": null,
+      "selections": [
+        87661,
+        87662
+      ],
+      "suspendTime": null,
+      "event": {
+        "id": 571,
+        "name": "Atletico Lanus vs Deportivo Garcilaso"
+      },
+      "template": {
+        "id": "bet-radar-16",
+        "eventTemplateId": "match",
+        "customName": null,
+        "sportId": "football",
+        "name": "Handicap (16)",
+        "marketTemplateType": "16",
+        "mainGroup": "Spreads",
+        "period": "Regular play",
+        "marketTypeGeneric": "twowayhandicap"
+      },
+      "eachWay": null,
+      "tags": {
+        "market-display": [
+          "-"
+        ],
+        "market-group--popular-markets": [
+          "no"
+        ],
+        "website-main": [
+          "yes"
+        ],
+        "asian-view": [
+          "yes"
+        ],
+        "build-a-bet": [
+          "no"
+        ],
+        "market-group": [
+          "Main",
+          "Asians"
+        ],
+        "display-template": [
+          "-"
+        ],
+        "outright": [
+          "no"
+        ],
+        "ante-post": [
+          "no"
+        ],
+        "display-order": [
+          "-"
+        ],
+        "website-popular": [
+          "-"
+        ]
+      },
+      "revision": 6
+    }
+  ],
+  "participants": [
+    {
+      "id": 981,
+      "name": "Atletico Lanus",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/3218/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 982,
+      "name": "Deportivo Garcilaso",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/655773/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 1685,
+      "name": "Club Bolivar",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/7059/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 1686,
+      "name": "Millionarios",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/6117/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 2171,
+      "name": "Metropolitanos FC",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/162480/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 904,
+      "name": "Cuiaba EC",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/49202/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 2217,
+      "name": "Fortaleza EC CE",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/299172/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 1193,
+      "name": "Botafogo FR RJ",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/210350/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 2501,
+      "name": "LDU Quito",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/5257/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 2502,
+      "name": "Botafogo RJ",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/1958/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 1057,
+      "name": "Palmeiras",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/1963/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 1058,
+      "name": "Liverpool Montevideo",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/6879/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 1315,
+      "name": "CA River Plate (ARG)",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/3211/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 1316,
+      "name": "Club Nacional de Football",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/3230/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 1721,
+      "name": "Cruzeiro EC MG",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/1954/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 1722,
+      "name": "Alianza FC Valledupar",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/1098993/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 1069,
+      "name": "Sepahan SC",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/8018/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 1070,
+      "name": "Nassaji Mazandaran FC",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/392492/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 833,
+      "name": "Esteghlal Khuzestan FC",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/109573/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 834,
+      "name": "Sanat Naft Abadan FC",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/53701/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 1373,
+      "name": "Aluminium Arak",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/390344/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 1374,
+      "name": "Esteghlal",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/34316/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 1397,
+      "name": "FC Vitebsk",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/3351/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 1398,
+      "name": "FC Slutsk",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/36881/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 2075,
+      "name": "FC Haka Valkeakoski",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/2240/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 720,
+      "name": "Ekenas Idrottsforening",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/22372/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 2091,
+      "name": "Sumgayit FK",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/44497/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 2092,
+      "name": "Zira FK",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/173406/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 2125,
+      "name": "NK Rudes Zagreb",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/35226/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 2126,
+      "name": "NK Slaven Belupo",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/2042/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 877,
+      "name": "Warta Poznan",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/7922/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 878,
+      "name": "Korona Kielce",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/5065/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 2387,
+      "name": "SFC Opava",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/2215/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 2388,
+      "name": "Sparta Prague B",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/4866/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 2335,
+      "name": "MSV Duisburg",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/2543/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 2336,
+      "name": "SV Waldhof Mannheim 07",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/2680/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 2187,
+      "name": "US Avranches",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/35066/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 2188,
+      "name": "Epinal",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/35064/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 1537,
+      "name": "Norwich City FC",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/54367/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 1538,
+      "name": "West Ham United FC",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/36552/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 2271,
+      "name": "FC Everton",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/36553/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 2272,
+      "name": "Blackburn Rovers",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/36543/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 1417,
+      "name": "FC Augsburg",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/2600/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 2276,
+      "name": "FC Union Berlin",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/2547/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 906,
+      "name": "FC Metz",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/1651/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 911,
+      "name": "RC Lens",
+      "tags": {
+        "uniformUrl": [
+          "/football/player/1648/home"
+        ]
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    }
+  ],
+  "selections": [
+    {
+      "id": 87373,
+      "name": "over 2",
+      "nameWithoutLine": "over",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 1.26,
+        "f": "13/50"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "O"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "O"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "2"
+    },
+    {
+      "id": 87374,
+      "name": "under 2",
+      "nameWithoutLine": "under",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 3.8,
+        "f": "14/5"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "U"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "U"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "2"
+    },
+    {
+      "id": 87375,
+      "name": "over 3",
+      "nameWithoutLine": "over",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 1.98,
+        "f": "49/50"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "O"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "O"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "3"
+    },
+    {
+      "id": 87376,
+      "name": "under 3",
+      "nameWithoutLine": "under",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 1.9,
+        "f": "9/10"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "U"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "U"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "3"
+    },
+    {
+      "id": 87377,
+      "name": "over 4",
+      "nameWithoutLine": "over",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 3.6,
+        "f": "13/5"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "O"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "O"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "4"
+    },
+    {
+      "id": 87378,
+      "name": "under 4",
+      "nameWithoutLine": "under",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 1.29,
+        "f": "29/100"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "U"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "U"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "4"
+    },
+    {
+      "id": 87379,
+      "name": "over 4.25",
+      "nameWithoutLine": "over",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 3.95,
+        "f": "59/20"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "O"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "O"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "4.25"
+    },
+    {
+      "id": 87380,
+      "name": "under 4.25",
+      "nameWithoutLine": "under",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 1.25,
+        "f": "1/4"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "U"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "U"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "4.25"
+    },
+    {
+      "id": 87381,
+      "name": "over 2.25",
+      "nameWithoutLine": "over",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 1.43,
+        "f": "43/100"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "O"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "O"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "2.25"
+    },
+    {
+      "id": 87382,
+      "name": "under 2.25",
+      "nameWithoutLine": "under",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 2.9,
+        "f": "19/10"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "U"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "U"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "2.25"
+    },
+    {
+      "id": 87383,
+      "name": "over 3.25",
+      "nameWithoutLine": "over",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 2.24,
+        "f": "31/25"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "O"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "O"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "3.25"
+    },
+    {
+      "id": 87384,
+      "name": "under 3.25",
+      "nameWithoutLine": "under",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 1.69,
+        "f": "69/100"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "U"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "U"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "3.25"
+    },
+    {
+      "id": 87385,
+      "name": "over 2.5",
+      "nameWithoutLine": "over",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 1.6,
+        "f": "3/5"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "O"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "O"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "2.5"
+    },
+    {
+      "id": 87386,
+      "name": "under 2.5",
+      "nameWithoutLine": "under",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 2.4,
+        "f": "7/5"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "U"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "U"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "2.5"
+    },
+    {
+      "id": 87387,
+      "name": "over 3.5",
+      "nameWithoutLine": "over",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 2.48,
+        "f": "37/25"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "O"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "O"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "3.5"
+    },
+    {
+      "id": 87388,
+      "name": "under 3.5",
+      "nameWithoutLine": "under",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 1.56,
+        "f": "14/25"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "U"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "U"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "3.5"
+    },
+    {
+      "id": 87389,
+      "name": "over 1.75",
+      "nameWithoutLine": "over",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 1.22,
+        "f": "11/50"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "O"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "O"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "1.75"
+    },
+    {
+      "id": 87390,
+      "name": "under 1.75",
+      "nameWithoutLine": "under",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 4.25,
+        "f": "13/4"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "U"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "U"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "1.75"
+    },
+    {
+      "id": 87391,
+      "name": "over 2.75",
+      "nameWithoutLine": "over",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 1.75,
+        "f": "3/4"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "O"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "O"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "2.75"
+    },
+    {
+      "id": 87392,
+      "name": "under 2.75",
+      "nameWithoutLine": "under",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 2.15,
+        "f": "23/20"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "U"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "U"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "2.75"
+    },
+    {
+      "id": 87393,
+      "name": "over 3.75",
+      "nameWithoutLine": "over",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 2.9,
+        "f": "19/10"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "O"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "O"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "3.75"
+    },
+    {
+      "id": 87394,
+      "name": "under 3.75",
+      "nameWithoutLine": "under",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 1.43,
+        "f": "43/100"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "U"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "U"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-18",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "3.75"
+    },
+    {
+      "id": 87575,
+      "name": "Atletico Lanus",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 1.21,
+        "f": "21/100"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "H"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "H"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-1",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 87576,
+      "name": "draw",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 6.8,
+        "f": "29/5"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "D"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "D"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-1",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      }
+    },
+    {
+      "id": 87577,
+      "name": "Deportivo Garcilaso",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 14,
+        "f": "13/1"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "A"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "A"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-1",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "metadata": {
+        "silk": null,
+        "silkUrl": null,
+        "number": null,
+        "weight": null,
+        "drawn": null,
+        "jockey": null,
+        "trainer": null,
+        "status": null,
+        "place": null
+      }
+    },
+    {
+      "id": 87653,
+      "name": "Atletico Lanus (-2.0)",
+      "nameWithoutLine": "Atletico Lanus",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 2.09,
+        "f": "109/100"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "H"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "H"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-16",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "-2.0"
+    },
+    {
+      "id": 87654,
+      "name": "Deportivo Garcilaso (+2.0)",
+      "nameWithoutLine": "Deportivo Garcilaso",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 1.83,
+        "f": "83/100"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "A"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "A"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-16",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "+2.0"
+    },
+    {
+      "id": 87655,
+      "name": "Atletico Lanus (-1.75)",
+      "nameWithoutLine": "Atletico Lanus",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 1.83,
+        "f": "83/100"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "H"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "H"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-16",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "-1.75"
+    },
+    {
+      "id": 87656,
+      "name": "Deportivo Garcilaso (+1.75)",
+      "nameWithoutLine": "Deportivo Garcilaso",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 2.09,
+        "f": "109/100"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "A"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "A"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-16",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "+1.75"
+    },
+    {
+      "id": 87659,
+      "name": "Atletico Lanus (-2.25)",
+      "nameWithoutLine": "Atletico Lanus",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 2.38,
+        "f": "69/50"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "H"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "H"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-16",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "-2.25"
+    },
+    {
+      "id": 87660,
+      "name": "Deportivo Garcilaso (+2.25)",
+      "nameWithoutLine": "Deportivo Garcilaso",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 1.63,
+        "f": "63/100"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "A"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "A"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-16",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "+2.25"
+    },
+    {
+      "id": 87661,
+      "name": "Atletico Lanus (-1.5)",
+      "nameWithoutLine": "Atletico Lanus",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 1.66,
+        "f": "33/50"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "H"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "H"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-16",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "-1.5"
+    },
+    {
+      "id": 87662,
+      "name": "Deportivo Garcilaso (+1.5)",
+      "nameWithoutLine": "Deportivo Garcilaso",
+      "active": true,
+      "display": true,
+      "displayOrder": 0,
+      "price": {
+        "d": 2.34,
+        "f": "67/50"
+      },
+      "state": "open",
+      "tags": {
+        "selection-identifiers--football": [
+          "A"
+        ],
+        "price-boost": [
+          "no"
+        ],
+        "selection-identifier": [
+          "A"
+        ]
+      },
+      "template": {
+        "id": "default-selection",
+        "marketTemplateId": "bet-radar-16",
+        "eventTemplateId": "match",
+        "sportId": "football",
+        "name": "default-selection"
+      },
+      "line": "+1.5"
+    }
+  ],
+  "competitions": [
+    {
+      "id": "240",
+      "name": "Copa Sudamericana",
+      "displayOrder": 0,
+      "globalDisplayOrder": 0,
+      "platformObject": {
+        "id": "02_sr:tournament:480",
+        "name": "Copa Sudamericana",
+        "externalId": {
+          "instance": "skycity",
+          "provider": "bet-radar",
+          "feedId": "sr:tournament:480"
+        }
+      }
+    },
+    {
+      "id": "253",
+      "name": "Copa Libertadores",
+      "displayOrder": 0,
+      "globalDisplayOrder": 0,
+      "platformObject": {
+        "id": "02_sr:tournament:384",
+        "name": "Copa Libertadores",
+        "externalId": {
+          "instance": "skycity",
+          "provider": "bet-radar",
+          "feedId": "sr:tournament:384"
+        }
+      }
+    },
+    {
+      "id": "279",
+      "name": "U20 Campeonato Brasileiro",
+      "displayOrder": 0,
+      "globalDisplayOrder": 0,
+      "platformObject": {
+        "id": "02_sr:tournament:13685",
+        "name": "U20 Campeonato Brasileiro",
+        "externalId": {
+          "instance": "skycity",
+          "provider": "bet-radar",
+          "feedId": "sr:tournament:13685"
+        }
+      }
+    },
+    {
+      "id": "219",
+      "name": "Pro League",
+      "displayOrder": 0,
+      "globalDisplayOrder": 0,
+      "platformObject": {
+        "id": "02_sr:tournament:915",
+        "name": "Pro League",
+        "externalId": {
+          "instance": "skycity",
+          "provider": "bet-radar",
+          "feedId": "sr:tournament:915"
+        }
+      }
+    },
+    {
+      "id": "303",
+      "name": "Vysshaya Liga",
+      "displayOrder": 0,
+      "globalDisplayOrder": 0,
+      "platformObject": {
+        "id": "02_sr:tournament:169",
+        "name": "Vysshaya Liga",
+        "externalId": {
+          "instance": "skycity",
+          "provider": "bet-radar",
+          "feedId": "sr:tournament:169"
+        }
+      }
+    },
+    {
+      "id": "254",
+      "name": "Veikkausliiga",
+      "displayOrder": 0,
+      "globalDisplayOrder": 0,
+      "platformObject": {
+        "id": "02_sr:tournament:41",
+        "name": "Veikkausliiga",
+        "externalId": {
+          "instance": "skycity",
+          "provider": "bet-radar",
+          "feedId": "sr:tournament:41"
+        }
+      }
+    },
+    {
+      "id": "359",
+      "name": "Premier League",
+      "displayOrder": 0,
+      "globalDisplayOrder": 0,
+      "platformObject": {
+        "id": "02_sr:tournament:709",
+        "name": "Premier League",
+        "externalId": {
+          "instance": "skycity",
+          "provider": "bet-radar",
+          "feedId": "sr:tournament:709"
+        }
+      }
+    },
+    {
+      "id": "361",
+      "name": "HNL",
+      "displayOrder": 0,
+      "globalDisplayOrder": 0,
+      "platformObject": {
+        "id": "02_sr:tournament:170",
+        "name": "HNL",
+        "externalId": {
+          "instance": "skycity",
+          "provider": "bet-radar",
+          "feedId": "sr:tournament:170"
+        }
+      }
+    },
+    {
+      "id": "226",
+      "name": "Ekstraklasa",
+      "displayOrder": 0,
+      "globalDisplayOrder": 0,
+      "platformObject": {
+        "id": "02_sr:tournament:202",
+        "name": "Ekstraklasa",
+        "externalId": {
+          "instance": "skycity",
+          "provider": "bet-radar",
+          "feedId": "sr:tournament:202"
+        }
+      }
+    },
+    {
+      "id": "327",
+      "name": "FNL",
+      "displayOrder": 0,
+      "globalDisplayOrder": 0,
+      "platformObject": {
+        "id": "02_sr:tournament:205",
+        "name": "FNL",
+        "externalId": {
+          "instance": "skycity",
+          "provider": "bet-radar",
+          "feedId": "sr:tournament:205"
+        }
+      }
+    },
+    {
+      "id": "315",
+      "name": "3. Liga",
+      "displayOrder": 0,
+      "globalDisplayOrder": 0,
+      "platformObject": {
+        "id": "02_sr:tournament:491",
+        "name": "3. Liga",
+        "externalId": {
+          "instance": "skycity",
+          "provider": "bet-radar",
+          "feedId": "sr:tournament:491"
+        }
+      }
+    },
+    {
+      "id": "283",
+      "name": "National",
+      "displayOrder": 0,
+      "globalDisplayOrder": 0,
+      "platformObject": {
+        "id": "02_sr:tournament:183",
+        "name": "National",
+        "externalId": {
+          "instance": "skycity",
+          "provider": "bet-radar",
+          "feedId": "sr:tournament:183"
+        }
+      }
+    },
+    {
+      "id": "162",
+      "name": "Premier League 2",
+      "displayOrder": 0,
+      "globalDisplayOrder": 0,
+      "platformObject": {
+        "id": "02_sr:tournament:1129",
+        "name": "Premier League 2",
+        "externalId": {
+          "instance": "skycity",
+          "provider": "bet-radar",
+          "feedId": "sr:tournament:1129"
+        }
+      }
+    },
+    {
+      "id": "179",
+      "name": "Bundesliga",
+      "displayOrder": 0,
+      "globalDisplayOrder": 0,
+      "platformObject": {
+        "id": "02_sr:tournament:35",
+        "name": "Bundesliga",
+        "externalId": {
+          "instance": "skycity",
+          "provider": "bet-radar",
+          "feedId": "sr:tournament:35"
+        }
+      }
+    },
+    {
+      "id": "227",
+      "name": "Ligue 1",
+      "displayOrder": 0,
+      "globalDisplayOrder": 0,
+      "platformObject": {
+        "id": "02_sr:tournament:34",
+        "name": "Ligue 1",
+        "externalId": {
+          "instance": "skycity",
+          "provider": "bet-radar",
+          "feedId": "sr:tournament:34"
+        }
+      }
+    }
+  ],
+  "sports": [],
+  "tags": {
+    "country": [],
+    "region": []
+  },
+  "total": 23
+}

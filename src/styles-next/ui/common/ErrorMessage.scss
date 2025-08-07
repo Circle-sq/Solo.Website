@@ -1,0 +1,28 @@
+.error-message {
+  background-color: $errorMessage-backgroundColor;
+  color: $errorMessage-color;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 15px 0;
+  padding: 5px;
+  position: relative;
+  text-align: left;
+}
+.error-message__content {
+  display: flex;
+}
+.error-message__children > * {
+  color: $errorMessageChildren-color;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+}
+.error-message .icon {
+  margin-right: 5px;
+  padding: 2px;
+}
+.icon--warning-fill{
+  color: $error-red;
+}

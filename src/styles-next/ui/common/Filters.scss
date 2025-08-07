@@ -1,0 +1,46 @@
+.filters {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 1;
+}
+.filters > li {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.filters > li a {
+  line-height: 1.89;
+  padding: 0 10px;
+  display: block;
+  //border-radius: $filters-element-anchor-borderRadius;
+  color: $filters-element-anchor-color;
+  border: 1px solid $filters-element-anchor-borderColor;
+  text-decoration: none;
+  font-weight: 500;
+}
+.filters .filters__filter--active a {
+  background-color: $filters-filterActive-anchor-backgroundColor;
+  color: $filters-filterActive-anchor-color;
+  border-color: $filters-filterActive-anchor-borderColor;
+}
+.filters .filters__filter--more a:after {
+  content: "\bb";
+  margin-left: 4px;
+}
+.filters .filters__filter--less a:before {
+  content: "\ab";
+  margin-right: 4px;
+}
+.filters--light li a {
+  background-color: $filtersLight-element-anchor-backgroundColor;
+  border-color: $filtersLight-element-anchor-borderColor;
+  color: $filtersLight-element-anchor-color;
+}
+.filters--light .filters__filter--active a {
+  border-color: $filtersLight-filtersFilterActive-anchor-borderColor;
+  color: $filtersLight-filtersFilterActive-anchor-color;
+  background-color: $filtersLight-filtersFilterActive-anchor-backgroundColor;
+}

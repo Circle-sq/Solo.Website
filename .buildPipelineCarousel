@@ -1,0 +1,5 @@
+@Library("gp-pipeline") _
+
+buildFrontendCarousel {
+    serviceName = "gpp-website"
+}

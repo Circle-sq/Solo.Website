@@ -1,0 +1,129 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "lib": [
+      "dom",
+      "es6",
+      "esnext"
+    ],
+    "downlevelIteration": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "noUnusedParameters": false,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "types": [
+      "node",
+      "@testing-library/jest-dom",
+      "express",
+      "vite/client",
+      "vitest",
+      "vitest/globals",
+      "vitest/jsdom"
+    ],
+    "paths": {
+      "@sc-api/*": [
+        "src/api/*"
+      ],
+      "@sc-account/*": [
+        "src/features/account/*"
+      ],
+      "@sc-asianView/*": [
+        "src/features/asianView/*"
+      ],
+      "@sc-betslip/*": [
+        "src/features/betslip/*"
+      ],
+      "@sc-buildABet/*": [
+        "src/features/buildABet/*"
+      ],
+      "@sc-data/subscriptions-storage": [
+        "libs/data-subscriptions-storage/src/index.ts"
+      ],
+      "@sc-devtools/*": [
+        "libs/sc-devtools/*"
+      ],
+      "@sc-feature-flags": [
+        "libs/feature-flags/src/index.ts"
+      ],
+      "@sc-features/subscription-manager/*": [
+        "libs/sc-feature-subscription-manager/*"
+      ],
+      "@sc-hooks": [
+        "src/common/hooks/index.ts"
+      ],
+      "@sc-media/*": [
+        "src/features/media/*"
+      ],
+      "@sc-sb-assets/*": [
+        "libs/assets-shared/*"
+      ],
+      "@sc-tests/*": [
+        "tests/*"
+      ],
+      "@sc-ui-atoms/asian": [
+        "libs/asian-view/ui-atoms/src/index.ts"
+      ],
+      "@sc-ui/beteast": [
+        "libs/ui-beteast/src/index.ts"
+      ],
+      "@sc-ui/beteast/icons": [
+        "libs/ui-icons/src/index.ts"
+      ],
+      "@sc-ui/icons/svg": [
+        "libs/ui-icons-svg/src/index.ts"
+      ],
+      "@sc-ui/system": [
+        "libs/ui-system/src/index.ts"
+      ],
+      "@sc-utils/jotai": [
+        "libs/utils/jotai/src/index.ts"
+      ],
+      "@sc-utils/tanstack": [
+        "libs/utils/tanstack/src/index.ts"
+      ],
+      "@sc-webapi/*": [
+        "src_server/*"
+      ]
+    },
+    "noEmit": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": true
+  },
+  "include": [
+    "src",
+    "libs",
+    "src_server",
+    "src_server/typings/express.d.ts",
+    "src/typings/window.d.ts",
+    "src/typings/emotion.d.ts",
+    "tests",
+    "tests/vitest.d.ts",
+    "vite.config.mts",
+    "vite.server.config.mts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "scoreboard_static",
+    "src_sassbuild"
+  ],
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register"
+    ],
+    "transpileOnly": true,
+    "files": true
+  }
+}

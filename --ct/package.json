@@ -1,0 +1,16 @@
+{
+  "name": "--ct",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:e2e-examples": "playwright test --config pwc-examples/playwright.config.ts",
+    "test:e2e": "playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "1.36.2"
+  }
+}

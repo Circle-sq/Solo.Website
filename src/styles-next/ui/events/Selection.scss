@@ -1,0 +1,103 @@
+.selection {
+  background-color: #333;
+  color: $white;
+  font-size: 12px;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: font-size 0.3s ease-in;
+  width: $selection-width - 18;
+  z-index: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .selection {
+    font-size: 14px;
+    width: $selection-width;
+  }
+}
+
+.selection::before {
+  //background-color: $selection-before-backgroundColor;
+  bottom: 0;
+  box-shadow: 0 0 10px 3px $selection-before-boxShadowColor;
+  content: "";
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scale(1);
+  transition: box-shadow 0.3s ease-in, transform 0.1s ease-in, opacity 0.3s ease-in;
+  z-index: -1;
+}
+
+.selection:hover::before{
+  background-color: $yellow;
+  color: $white;
+}
+
+@media (min-width: $bp-960) {
+  .selection:hover {
+    font-size: 15px;
+    z-index: 1;
+    color: $white;
+  }
+  .selection:hover::before {
+    opacity: 1;
+    transform: scale(1.08);
+    transition: box-shadow 0.3s ease, transform 0.1s ease, opacity 0.3s ease;
+  }
+}
+.selection--empty {
+  pointer-events: none;
+  user-select: none;
+}
+.selection--selected {
+  background: $selectionSelected-backgroundColor;
+}
+.selection--selected::before {
+  background-color: $selectionSelected-before-backgroundColor;
+  color: $white;
+}
+.selection--selected:hover::before {
+  background-color: $selectionSelected-hover-before-backgroundColor;
+  color: $white;
+}
+.selection--up {
+  background: $odds-lengthen !important;
+}
+.selection--down {
+  background: $odds-shorten !important;
+}
+.selection--suspended {
+  pointer-events: none;
+  user-select: none;
+}
+.selection--suspended::before {
+  background: $odds-suspended;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 1;
+  z-index: 2;
+  box-shadow: unset;
+}
+.selection--suspended::after {
+  color: $selectionSuspended-after-color;
+  content: attr(data-suspended);
+  font-size: pxToPr(14px, "em", $mainFontSize);
+  left: 0;
+  line-height: 1;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}

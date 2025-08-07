@@ -1,0 +1,30 @@
+.radio-btn {
+    cursor: pointer;
+}
+.radio-btn__group-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0 0 8px;
+}
+.radio-btn input {
+    display: none;
+}
+.radio-btn:before {
+    background-color: $radioButtonIndicator-backgroundColor;
+    border-radius: 50%;
+    border: 1px solid $radioButtonIndicator-borderColor;
+    box-shadow: inset 0 1px 0 0 $radioButtonIndicator-boxShadowColor;
+    content: '';
+    display: inline-block;
+    height: 20px;
+    margin-right: 8px;
+    transition: 100ms ease-in;
+    vertical-align: top;
+    width: 20px;
+}
+.radio-btn.is-active:before {
+    background-color: $radioButtonIndicatorActive-backgroundColor;
+    border-color: $radioButtonIndicatorActive-borderColor;
+    box-shadow: inset 0 0 0 3px $radioButtonIndicatorActive-boxShadowColor;
+}

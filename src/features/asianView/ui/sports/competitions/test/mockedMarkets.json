@@ -1,0 +1,147 @@
+[
+  {
+    "id": 54544,
+    "name": "Total",
+    "active": true,
+    "autoTakeDown": null,
+    "display": true,
+    "displayOrder": 3,
+    "tradedInPlay": false,
+    "forecastsOffered": null,
+    "tricastsOffered": null,
+    "inPlayDelaySettings": null,
+    "sp": false,
+    "line": 0.75,
+    "cashoutAvailable": true,
+    "outright": false,
+    "bp": null,
+    "bpApplicable": null,
+    "spApplicable": null,
+    "spOnly": false,
+    "eachWayStakeReduction": null,
+    "betReferralEnabled": null,
+    "time": null,
+    "team": null,
+    "selections": [
+      {
+        "id": 166038,
+        "name": "over 0.75",
+        "nameWithoutLine": "over",
+        "active": true,
+        "display": true,
+        "displayOrder": 0,
+        "price": {
+          "d": 1.09,
+          "f": "9/100"
+        },
+        "state": "open",
+        "tags": {
+          "selection-identifiers--football": [
+            "O"
+          ],
+          "price-boost": [
+            "no"
+          ],
+          "selection-identifier": [
+            "O"
+          ]
+        },
+        "template": {
+          "id": "default-selection",
+          "marketTemplateId": "bet-radar-18",
+          "eventTemplateId": "match",
+          "sportId": "football",
+          "name": "default-selection"
+        },
+        "line": "0.75"
+      },
+      {
+        "id": 166039,
+        "name": "under 0.75",
+        "nameWithoutLine": "under",
+        "active": true,
+        "display": true,
+        "displayOrder": 0,
+        "price": {
+          "d": 6,
+          "f": "5/1"
+        },
+        "state": "open",
+        "tags": {
+          "selection-identifiers--football": [
+            "U"
+          ],
+          "price-boost": [
+            "no"
+          ],
+          "selection-identifier": [
+            "U"
+          ]
+        },
+        "template": {
+          "id": "default-selection",
+          "marketTemplateId": "bet-radar-18",
+          "eventTemplateId": "match",
+          "sportId": "football",
+          "name": "default-selection"
+        },
+        "line": "0.75"
+      }
+    ],
+    "suspendTime": null,
+    "event": {
+      "id": 427,
+      "name": "Union Touarga vs Maghreb AS de Fes"
+    },
+    "template": {
+      "id": "bet-radar-18",
+      "eventTemplateId": "match",
+      "customName": null,
+      "sportId": "football",
+      "name": "Total (18)",
+      "marketTemplateType": "18",
+      "mainGroup": "Totals",
+      "period": "Regular play",
+      "marketTypeGeneric": "overunder"
+    },
+    "eachWay": null,
+    "tags": {
+      "market-display": [
+        "-"
+      ],
+      "market-group--popular-markets": [
+        "no"
+      ],
+      "website-main": [
+        "yes"
+      ],
+      "asian-view": [
+        "yes"
+      ],
+      "build-a-bet": [
+        "no"
+      ],
+      "market-group": [
+        "Main",
+        "Asians",
+        "Goals"
+      ],
+      "display-template": [
+        "-"
+      ],
+      "outright": [
+        "no"
+      ],
+      "ante-post": [
+        "no"
+      ],
+      "display-order": [
+        "-"
+      ],
+      "website-popular": [
+        "-"
+      ]
+    },
+    "revision": 1
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "id": 7,
+  "sport": "volleyball",
+  "startTime": "Time",
+  "event": "Match",
+  "primaryGroup": {
+    "name": "Match",
+    "markets": [
+      {
+        "id": "bet-radar-186",
+        "name": "Winner",
+        "order": 1
+      },
+      {
+        "id": "bet-radar-237",
+        "name": "Point HDP",
+        "order": 2
+      },
+      {
+        "id": "bet-radar-238",
+        "name": "Point O/U",
+        "order": 3
+      }
+    ]
+  },
+  "secondaryGroup": {
+    "name": "Current Set",
+    "markets": [
+      {
+        "id": "bet-radar-202",
+        "name": "Winner",
+        "order": 1
+      },
+      {
+        "id": "bet-radar-309",
+        "name": "Games HDP",
+        "order": 2
+      },
+      {
+        "id": "bet-radar-310",
+        "name": "Games O/U",
+        "order": 3
+      }
+    ]
+  }
+}
