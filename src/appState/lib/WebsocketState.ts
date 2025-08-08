@@ -4,10 +4,10 @@ import isEmpty from 'lodash/isEmpty';
 import omit from 'lodash/omit';
 import { getRecoil, setRecoil } from 'recoil-nexus';
 
-import { updateMarketLineEntity } from '@sc-betslip/store/helpers/marketBets';
-import { syncPriceChangeTransaction, syncPriceDirectionTransaction } from '@sc-betslip/store/transactions/betslip';
-import { getUniqueMonitorInstance } from '@sc-features/subscription-manager/SubscribeMonitor';
-import type { PubSubService } from '@sc-features/subscription-manager/types';
+import { updateMarketLineEntity } from '@solo-betslip/store/helpers/marketBets';
+import { syncPriceChangeTransaction, syncPriceDirectionTransaction } from '@solo-betslip/store/transactions/betslip';
+import { getUniqueMonitorInstance } from '@solo-features/subscription-manager/SubscribeMonitor';
+import type { PubSubService } from '@solo-features/subscription-manager/types';
 
 import type { ReduxState } from 'src/appState/redux/ReduxState';
 import type { MarketItem } from 'src/common/types/market';

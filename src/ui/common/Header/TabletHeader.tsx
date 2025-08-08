@@ -1,10 +1,10 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { useAtomValue } from 'jotai';
 import includes from 'lodash/includes';
 import { observer } from 'mobx-react-lite';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import LogoNew from 'src/assets/icons/logo/LogoNew';

@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { useAtomValue } from 'jotai';
 
-import { brandNameSelector } from '@sc-account/store/selectors';
+import { brandNameSelector } from '@solo-account/store/selectors';
 
 import { queryKeys } from '../../queryKeys';
 

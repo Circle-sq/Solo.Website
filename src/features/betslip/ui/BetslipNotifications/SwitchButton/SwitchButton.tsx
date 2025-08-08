@@ -1,7 +1,7 @@
-import { useLazyEffect } from '@sc-hooks';
+import { useLazyEffect } from '@solo-hooks';
 import { useRef, useState } from 'react';
 
-import { useChangeBetslipSettings } from '@sc-account/api/mutations';
+import { useChangeBetslipSettings } from '@solo-account/api/mutations';
 
 import { BetslipOdds } from 'src/common/enums';
 import type { Timeout } from 'src/utils/hooks/useTimer/types';

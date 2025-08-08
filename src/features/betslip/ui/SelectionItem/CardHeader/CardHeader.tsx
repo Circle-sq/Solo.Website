@@ -2,8 +2,8 @@ import get from 'lodash/get';
 import isNil from 'lodash/isNil';
 import type { MouseEvent } from 'react';
 
-import { CloseIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { CloseIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import type { Leg } from '../../../api/types/leg';
 import { VerticalDivider } from '../../styled';

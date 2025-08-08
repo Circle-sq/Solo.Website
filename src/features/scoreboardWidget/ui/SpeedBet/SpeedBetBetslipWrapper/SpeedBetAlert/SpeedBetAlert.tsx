@@ -2,7 +2,7 @@ import { Typography } from '@mui/material';
 import { useEffect } from 'react';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import { typographyColor } from '@sc-ui/system';
+import { typographyColor } from '@solo-ui/system';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 

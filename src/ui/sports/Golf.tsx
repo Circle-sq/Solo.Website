@@ -4,7 +4,7 @@ import { observer } from 'mobx-react-lite';
 import { useCallback, useEffect, useState } from 'react';
 import { useAtomValue } from 'jotai';
 
-import { currencySelector, userIdSelector } from '@sc-account/store/selectors';
+import { currencySelector, userIdSelector } from '@solo-account/store/selectors';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { LANGUAGES } from 'src/utils/constants';

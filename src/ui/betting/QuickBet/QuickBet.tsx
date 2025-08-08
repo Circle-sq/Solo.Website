@@ -4,8 +4,8 @@ import { useEffect, useRef } from 'react';
 import { Transition } from 'react-transition-group';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import Betslip from '@sc-betslip/ui/Betslip';
-import { DarkBluePalette } from '@sc-ui/system';
+import Betslip from '@solo-betslip/ui/Betslip';
+import { DarkBluePalette } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 

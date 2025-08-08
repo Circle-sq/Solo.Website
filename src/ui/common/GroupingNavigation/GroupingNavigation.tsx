@@ -4,8 +4,8 @@ import map from 'lodash/map';
 import { useEffect, useState } from 'react';
 import { useRecoilValue, useRecoilState } from 'recoil';
 
-import { isEnabledBuildABetFeatureSelectorFamily } from '@sc-buildABet/store/selectors';
-import BuildABetFeatureToggle from '@sc-buildABet/ui/BuildABetFeatureToggle/BuildABetFeatureToggle';
+import { isEnabledBuildABetFeatureSelectorFamily } from '@solo-buildABet/store/selectors';
+import BuildABetFeatureToggle from '@solo-buildABet/ui/BuildABetFeatureToggle/BuildABetFeatureToggle';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { RouteName } from 'src/common/enums';

@@ -7,9 +7,9 @@ import { useMemo, useState } from 'react';
 import { batch, useDispatch, useSelector } from 'react-redux';
 import useDeepCompareEffect from 'use-deep-compare-effect';
 
-import { SubKey } from '@sc-features/subscription-manager/subKeys';
-import { SubscribeElement } from '@sc-features/subscription-manager/SubscribeElement';
-import { cssColor } from '@sc-ui/system';
+import { SubKey } from '@solo-features/subscription-manager/subKeys';
+import { SubscribeElement } from '@solo-features/subscription-manager/SubscribeElement';
+import { cssColor } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import type { EventsCollectionQuery } from 'src/appState/EventsCollection/types';

@@ -2,9 +2,9 @@ import { useAtomValue } from 'jotai';
 import get from 'lodash/get';
 import { useSelector } from 'react-redux';
 
-import MediaWidget from '@sc-media/ui/widgets/MediaWidget';
-import ShadowWidget from '@sc-media/ui/widgets/ShadowWidget/ShadowWidget';
-import StatsCoreWidget from '@sc-media/ui/widgets/StatsCoreWidget/StatsCoreWidget';
+import MediaWidget from '@solo-media/ui/widgets/MediaWidget';
+import ShadowWidget from '@solo-media/ui/widgets/ShadowWidget/ShadowWidget';
+import StatsCoreWidget from '@solo-media/ui/widgets/StatsCoreWidget/StatsCoreWidget';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { LiveTrackerProviders, SportType } from 'src/common/enums';

@@ -1,7 +1,7 @@
 import { useAtomValue } from 'jotai';
 import { observer } from 'mobx-react-lite';
 
-import { oddsFormatSelector } from '@sc-account/store/selectors';
+import { oddsFormatSelector } from '@solo-account/store/selectors';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { getOddsFormatPrice } from 'src/utils/common';

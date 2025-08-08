@@ -3,9 +3,9 @@ import { atomWithQuery } from 'jotai-tanstack-query';
 import isEqual from 'lodash/isEqual';
 import keyBy from 'lodash/keyBy';
 
-import { queryKeys } from '@sc-api/queryKeys';
-import { UniformsService } from '@sc-api/uniforms/services';
-import type { Uniform, UniformParams } from '@sc-api/uniforms/types';
+import { queryKeys } from '@solo-api/queryKeys';
+import { UniformsService } from '@solo-api/uniforms/services';
+import type { Uniform, UniformParams } from '@solo-api/uniforms/types';
 
 export const uniformsAtomFamilyWithQuery = atomFamily(
     (params: UniformParams) =>

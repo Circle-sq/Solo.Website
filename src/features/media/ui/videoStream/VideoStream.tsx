@@ -1,12 +1,12 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { List } from 'immutable';
 import { useAtomValue } from 'jotai';
 import isEmpty from 'lodash/isEmpty';
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
-import { useBlacklistQuery } from '@sc-api/streams/blacklist/queries';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
+import { useBlacklistQuery } from '@solo-api/streams/blacklist/queries';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { RequestStatus, RouteName } from 'src/common/enums';

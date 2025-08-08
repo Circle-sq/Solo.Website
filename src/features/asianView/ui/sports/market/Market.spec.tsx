@@ -11,11 +11,11 @@ import reject from 'lodash/reject';
 import type { PropsWithChildren } from 'react';
 import { useEffect } from 'react';
 
-import { isAuthenticatedAtom, userDataAtom } from '@sc-account/store/atoms';
-import type { UserData } from '@sc-account/types';
-import { MockStoreProvider } from '@sc-tests/unit/mocks/jotai/store';
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
-import { store, useJotaiCallback } from '@sc-utils/jotai';
+import { isAuthenticatedAtom, userDataAtom } from '@solo-account/store/atoms';
+import type { UserData } from '@solo-account/types';
+import { MockStoreProvider } from '@solo-tests/unit/mocks/jotai/store';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
+import { store, useJotaiCallback } from '@solo-utils/jotai';
 
 import { ApiWrapper } from 'src/appState/ApiWrapper';
 import { OddsFormatLong, SportType } from 'src/common/enums';
@@ -52,7 +52,7 @@ vi.mock('src/appState/AppState', () => {
     return { __esModule: true, useAppStateContext: () => appState, default: vi.fn() };
 });
 
-vi.mock('@sc-features/subscription-manager/SubscribeElement', () => ({
+vi.mock('@solo-features/subscription-manager/SubscribeElement', () => ({
     SubscribeElement: ({ children }: PropsWithChildren) => children,
 }));
 

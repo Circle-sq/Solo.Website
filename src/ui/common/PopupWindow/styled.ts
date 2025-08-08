@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, breakpoints, DarkBluePalette, GenericColors } from '@sc-ui/system';
+import { fontWeight, breakpoints, DarkBluePalette, GenericColors } from '@solo-ui/system';
 
 import { S_BaseOverlay } from 'src/ui/common/Backdrop/styled';
 

@@ -1,7 +1,7 @@
 import { useRecoilValue } from 'recoil';
 
-import { SubKey } from '@sc-features/subscription-manager/subKeys';
-import { SubscribeElement } from '@sc-features/subscription-manager/SubscribeElement';
+import { SubKey } from '@solo-features/subscription-manager/subKeys';
+import { SubscribeElement } from '@solo-features/subscription-manager/SubscribeElement';
 
 import { PriceChange, OddsFormat } from 'src/common/enums';
 import type { Price } from 'src/common/types/selectionPrice';

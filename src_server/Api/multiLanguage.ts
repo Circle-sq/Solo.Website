@@ -3,7 +3,7 @@ import type * as express from 'express';
 import isEmpty from 'lodash/isEmpty';
 import ms from 'ms';
 
-import type { PlatformApi } from '@sc-webapi/realtime-server/PlatformApi/PlatformApi';
+import type { PlatformApi } from '@solo-webapi/realtime-server/PlatformApi/PlatformApi';
 
 import type { LangDetailsMapType } from '../../src/appState/LanguagesState';
 import { convertRecordToMapDefault } from '../../src/appState/utils';

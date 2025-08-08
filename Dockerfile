@@ -9,7 +9,7 @@ CMD ["npm", "start"]
 ARG lastCommit="noCommit"
 ARG buildTime="noTime"
 ARG gitBranch="develop"
-ARG name="gpp-backoffice"
+ARG name="solo-backoffice"
 ARG version="1.0.1"
 
 LABEL name=$name

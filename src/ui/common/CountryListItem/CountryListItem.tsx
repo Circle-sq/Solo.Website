@@ -7,8 +7,8 @@ import { observer } from 'mobx-react-lite';
 import { type MouseEvent, useEffect, useMemo, useState } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import { CupIcon, DownArrowIcon, UpArrowIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { CupIcon, DownArrowIcon, UpArrowIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { getCompetitionLocation } from 'src/appState/utils';

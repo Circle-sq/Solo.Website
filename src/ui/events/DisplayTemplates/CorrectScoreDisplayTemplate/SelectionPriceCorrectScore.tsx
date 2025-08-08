@@ -1,7 +1,7 @@
 import { useAtomValue } from 'jotai';
 import { observer } from 'mobx-react-lite';
 
-import { isFractionalOddsFormatSelector } from '@sc-account/store/selectors';
+import { isFractionalOddsFormatSelector } from '@solo-account/store/selectors';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { RouteName } from 'src/common/enums';

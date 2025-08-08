@@ -1,7 +1,7 @@
 import type { MouseEvent, PropsWithChildren } from 'react';
 
-import { DownArrowIcon, LockIcon } from '@sc-ui/icons/svg';
-import { DarkBluePalette, cssColor } from '@sc-ui/system';
+import { DownArrowIcon, LockIcon } from '@solo-ui/icons/svg';
+import { DarkBluePalette, cssColor } from '@solo-ui/system';
 
 import { S_MarketHeaderTitle, S_MarketHeaderWrapper, S_MarketHeaderContent, S_TitleWrapper } from './styled';
 

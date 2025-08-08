@@ -63,7 +63,7 @@ export class LanguagesState implements LanguageStore {
 
         this.allTranslations = importLanguages(allTranslations);
 
-        this.userLang = userLang;
+        this.userLang = userLang ?? LANGUAGES.english;
 
         this.userLangShort = userLang && includes(userLang, DASH) ? userLang.split(DASH)[0] : LANGUAGES.en;
 

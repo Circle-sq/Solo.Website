@@ -1,4 +1,4 @@
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import Corners from 'src/assets/statistics_icons/Corners.svg';
 import RedCard from 'src/assets/statistics_icons/RedCard.svg';

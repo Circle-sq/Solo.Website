@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 
-import { languagesMock } from '@sc-tests/unit/mocks/languagesMock';
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { languagesMock } from '@solo-tests/unit/mocks/languagesMock';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import type { AppState } from 'src/appState/AppState';
 import { SportType } from 'src/common/enums';

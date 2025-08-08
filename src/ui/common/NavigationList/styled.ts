@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { cssColor, fontWeight, GreyPalette } from '@sc-ui/system';
+import { cssColor, fontWeight, GreyPalette } from '@solo-ui/system';
 
 import TooltipTruncatedText from 'src/ui/common/TooltipTruncatedText/TooltipTruncatedText';
 import { LHNRowColors } from 'src/ui/crossbetting/TopSportsNavigationSidebar/SportItem/styled';

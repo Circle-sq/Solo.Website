@@ -1,6 +1,6 @@
-import { CloseIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
-import { useJotaiCallback } from '@sc-utils/jotai';
+import { CloseIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
+import { useJotaiCallback } from '@solo-utils/jotai';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 

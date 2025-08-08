@@ -4,7 +4,7 @@ import type { MutableSnapshot } from 'recoil';
 import { RecoilRoot } from 'recoil';
 import { SyncReduxToRecoil } from 'redux-to-recoil';
 
-import { ThemeSwitchProvider } from '@sc-ui/system';
+import { ThemeSwitchProvider } from '@solo-ui/system';
 
 import type { ReduxState } from 'src/appState/redux/types';
 

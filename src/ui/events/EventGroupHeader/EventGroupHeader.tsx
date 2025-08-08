@@ -1,4 +1,4 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import type { ReactElement, MouseEvent } from 'react';
 
 import { useAppStateContext } from 'src/appState/AppState';

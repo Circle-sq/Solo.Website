@@ -2,7 +2,7 @@ import isEmpty from 'lodash/isEmpty';
 import { observer } from 'mobx-react-lite';
 import { useMemo } from 'react';
 
-import type { MarketAndSelection } from '@sc-betslip/api/types/leg';
+import type { MarketAndSelection } from '@solo-betslip/api/types/leg';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import BetStatusIcon from 'src/assets/icons/betStatusIcon/BetStatusIcon';

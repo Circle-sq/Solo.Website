@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 import { EventRowSeparator, NumberRow, S_EventInfoBase, S_EventScore } from 'src/ui/common/EventInfographics/styled';
 import { S_MyBetEventTime, S_MyBetParticipants } from 'src/ui/myBets/MyBetEventInfographics/styled';
-import { breakpoints } from '@sc-ui/system';
+import { breakpoints } from '@solo-ui/system';
 
 export const S_BuildABetEventInfographics = styled(S_EventInfoBase)`
     margin-top: 14px;

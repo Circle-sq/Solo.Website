@@ -3,8 +3,8 @@ import ms from 'ms';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import { RightArrowIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { RightArrowIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { useInterval } from 'src/appState/customHooks';

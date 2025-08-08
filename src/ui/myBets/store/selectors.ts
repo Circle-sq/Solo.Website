@@ -1,6 +1,6 @@
 import { selector } from 'recoil';
 
-import type { MyBetsQueryKeyParams } from '@sc-api/bets/types';
+import type { MyBetsQueryKeyParams } from '@solo-api/bets/types';
 
 import { BetStatus, MyBetsTab } from 'src/common/enums';
 

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, radius, GenericColors, Opacities } from '@sc-ui/system';
+import { fontWeight, radius, GenericColors, Opacities } from '@solo-ui/system';
 
 import Button from 'src/ui/common/Button/Button';
 

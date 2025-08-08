@@ -1,4 +1,4 @@
-import { CrossBetIcon } from '@sc-ui/icons/svg';
+import { CrossBetIcon } from '@solo-ui/icons/svg';
 
 import type { BetStatus } from 'src/common/enums';
 import type { MyCrossBetLeg } from 'src/common/types/myBet';

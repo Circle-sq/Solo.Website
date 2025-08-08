@@ -11,7 +11,7 @@ import type { GroupHeadingProps, MultiValue, SingleValue } from 'react-select';
 import { components } from 'react-select';
 import { useSetRecoilState } from 'recoil';
 
-import { eventMediaAtom } from '@sc-media/store/atoms';
+import { eventMediaAtom } from '@solo-media/store/atoms';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { ThemeNames } from 'src/common/enums';

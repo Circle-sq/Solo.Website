@@ -1,12 +1,12 @@
 /* eslint-disable @nx/enforce-module-boundaries */
 import { css, Global } from '@emotion/react';
 
-import fontThemeIconsEot from '@sc-sb-assets/fonts/themeicons.eot';
-import fontThemeIconsSvg from '@sc-sb-assets/fonts/themeicons.svg';
-import fontThemeIconsTtf from '@sc-sb-assets/fonts/themeicons.ttf';
-import fontThemeIconsWoff from '@sc-sb-assets/fonts/themeicons.woff';
-import { fontCssForIcon, fontCssSportIcons } from '@sc-ui/beteast/icons';
-import { GreyPalette } from '@sc-ui/system';
+import fontThemeIconsEot from '@solo-sb-assets/fonts/themeicons.eot';
+import fontThemeIconsSvg from '@solo-sb-assets/fonts/themeicons.svg';
+import fontThemeIconsTtf from '@solo-sb-assets/fonts/themeicons.ttf';
+import fontThemeIconsWoff from '@solo-sb-assets/fonts/themeicons.woff';
+import { fontCssForIcon, fontCssSportIcons } from '@solo-ui/beteast/icons';
+import { GreyPalette } from '@solo-ui/system';
 
 export const fontCssThemeIcons = `
     @font-face {

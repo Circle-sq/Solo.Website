@@ -1,6 +1,6 @@
 import isEmpty from 'lodash/isEmpty';
 
-import { PortalLanguageShortcuts } from '@sc-webapi/handlers/handlerDynamicContent/types';
+import { PortalLanguageShortcuts } from '@solo-webapi/handlers/handlerDynamicContent/types';
 
 const isLanguageDefined = (lang: string | undefined): lang is string => {
     return !isEmpty(lang);

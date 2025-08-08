@@ -1,4 +1,4 @@
-import type { AsianViewSportConfig, MarketConfig, SportConfigGroup } from '@sc-asianView/api/cms/types';
+import type { AsianViewSportConfig, MarketConfig, SportConfigGroup } from '@solo-asianView/api/cms/types';
 
 import type { MarketItem, SelectionItem } from 'src/store/events/types';
 

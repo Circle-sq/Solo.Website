@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, GenericColors, RedPalette } from '@sc-ui/system';
+import { breakpoints, GenericColors, RedPalette } from '@solo-ui/system';
 
 export const Live = styled.span`
     margin-right: 5px;

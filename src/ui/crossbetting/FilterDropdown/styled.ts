@@ -9,7 +9,7 @@ import {
     YellowPalette,
     Opacities,
     cssColor,
-} from '@sc-ui/system';
+} from '@solo-ui/system';
 
 import Link from 'src/utils/Router/Link';
 
@@ -111,7 +111,7 @@ export const S_MarketDropdownValueContainer = styled.div<Market>`
     color: ${GreyPalette.grey7};
     border: 1px solid ${cssColor('--dropdown-border')};
     font-weight: ${fontWeight.medium};
-    // FIXME - ditch isMarket - https://bitbucket.org/code-factory-group/sc-website/pull-requests/4344/diff#comment-573918360
+    // FIXME - ditch isMarket - https://bitbucket.org/code-factory-group/solo-website/pull-requests/4344/diff#comment-573918360
     background-color: ${({ isMarket }) => (isMarket ? GenericColors.transparent : cssColor('--dropdown-bg'))};
 
     &:hover {

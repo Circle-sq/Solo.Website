@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import Typography, { type TypographyProps } from '@mui/material/Typography';
 
-import { fontWeight, RedPalette, typographyColor } from '@sc-ui/system';
+import { fontWeight, RedPalette, typographyColor } from '@solo-ui/system';
 
 import { HIGHLIGHTS_HEIGHT, OFFSET_TOP } from '../utils/constants';
 

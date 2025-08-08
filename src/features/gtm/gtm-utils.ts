@@ -1,6 +1,6 @@
-import type { BetslipSelections, BetslipSelection } from '@sc-betslip/store/types';
-import type { GtmSelection, PlacedBet } from '@sc-betslip/api/types/placedBet';
-import { currencySelector } from '@sc-account/store/selectors';
+import type { BetslipSelections, BetslipSelection } from '@solo-betslip/store/types';
+import type { GtmSelection, PlacedBet } from '@solo-betslip/api/types/placedBet';
+import { currencySelector } from '@solo-account/store/selectors';
 import { store as jotaiStore } from 'libs/utils/jotai/src/store';
 
 const PathTypes = {

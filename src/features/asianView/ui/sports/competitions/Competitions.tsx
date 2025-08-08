@@ -1,4 +1,4 @@
-import type { EventGroup } from '@sc-asianView/types';
+import type { EventGroup } from '@solo-asianView/types';
 
 import CompetitionGroup from './CompetitionGroup';
 

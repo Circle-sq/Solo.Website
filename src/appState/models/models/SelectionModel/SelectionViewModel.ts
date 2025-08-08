@@ -1,7 +1,7 @@
 import { computed, makeObservable } from 'mobx';
 import { getRecoil } from 'recoil-nexus';
 
-import { betslipSelectionSelectorFamily } from '@sc-betslip/store/selectors/selections';
+import { betslipSelectionSelectorFamily } from '@solo-betslip/store/selectors/selections';
 
 import type { ModelBoxContext } from 'src/appState/models/ModelWrapper';
 

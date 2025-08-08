@@ -1,7 +1,7 @@
 import { fireEvent, screen } from '@testing-library/react';
 import { expect, it } from 'vitest';
 
-import { renderWithTheme } from '@sc-ui/system';
+import { renderWithTheme } from '@solo-ui/system';
 
 import Pitcher from './Pitcher';
 

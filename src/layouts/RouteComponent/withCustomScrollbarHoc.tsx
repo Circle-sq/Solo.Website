@@ -1,4 +1,4 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import includes from 'lodash/includes';
 import type { FunctionComponent, PropsWithChildren } from 'react';
 import { useCallback } from 'react';

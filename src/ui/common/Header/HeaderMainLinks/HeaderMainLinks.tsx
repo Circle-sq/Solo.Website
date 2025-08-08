@@ -1,10 +1,10 @@
-import { useAsianViewFlag } from '@sc-feature-flags';
+import { useAsianViewFlag } from '@solo-feature-flags';
 import classNames from 'classnames';
 import isEmpty from 'lodash/isEmpty';
 import { observer } from 'mobx-react-lite';
 import { useMemo } from 'react';
 
-import { useSyncCrossSelections } from '@sc-betslip/store/hooks/useSyncCrossSelections';
+import { useSyncCrossSelections } from '@solo-betslip/store/hooks/useSyncCrossSelections';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { RouteName, SportType } from 'src/common/enums';

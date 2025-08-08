@@ -1,5 +1,5 @@
-import { BuildABetFeatureToggle } from '@sc-buildABet/ui';
-import { useBuildABetFeature } from '@sc-buildABet/hooks/useBuildABetFeature';
+import { BuildABetFeatureToggle } from '@solo-buildABet/ui';
+import { useBuildABetFeature } from '@solo-buildABet/hooks/useBuildABetFeature';
 
 import type { MockEvent } from './types';
 import MockEventMarkets from './MockEventMarkets';

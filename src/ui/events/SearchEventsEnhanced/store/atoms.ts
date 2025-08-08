@@ -1,6 +1,6 @@
 import { atom } from 'jotai';
 
-import { atomWithDebounce } from '@sc-utils/jotai';
+import { atomWithDebounce } from '@solo-utils/jotai';
 
 import type { SportType } from 'src/common/enums';
 

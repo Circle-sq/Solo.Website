@@ -1,7 +1,7 @@
 import { fireEvent } from '@testing-library/react';
 import map from 'lodash/map';
 
-import { buildSubUnsubWrapper, renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { buildSubUnsubWrapper, renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import CorrectScoreDisplayTemplate from 'src/ui/events/DisplayTemplates/CorrectScoreDisplayTemplate/CorrectScoreDisplayTemplate';
 

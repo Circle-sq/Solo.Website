@@ -1,4 +1,4 @@
-import { isCrossBetLegType, isStandardBetLegType } from '@sc-betslip/typeGuards/leg';
+import { isCrossBetLegType, isStandardBetLegType } from '@solo-betslip/typeGuards/leg';
 
 import type { MyBetLeg, MyCrossBetLeg, MyStandardBetLeg } from 'src/common/types/myBet';
 import { WsChannel } from 'src/utils/socket-io/enums';

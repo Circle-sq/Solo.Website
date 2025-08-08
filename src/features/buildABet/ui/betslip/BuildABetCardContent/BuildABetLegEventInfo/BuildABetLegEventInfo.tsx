@@ -1,10 +1,10 @@
 import { observer } from 'mobx-react-lite';
 import { useRecoilValue } from 'recoil';
 
-import type { Leg } from '@sc-betslip/api/types/leg';
-import useSelectionState from '@sc-betslip/hooks/useSelectionState';
-import { isSingleTabSelector } from '@sc-betslip/store/selectors/betslipTab';
-import { BuildABetIcon } from '@sc-buildABet/ui';
+import type { Leg } from '@solo-betslip/api/types/leg';
+import useSelectionState from '@solo-betslip/hooks/useSelectionState';
+import { isSingleTabSelector } from '@solo-betslip/store/selectors/betslipTab';
+import { BuildABetIcon } from '@solo-buildABet/ui';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 

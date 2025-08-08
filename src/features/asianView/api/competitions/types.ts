@@ -6,7 +6,7 @@ import type {
     ShouldMatchTermParam,
     StringBoolean,
     YesNo,
-} from '@sc-api/types';
+} from '@solo-api/types';
 
 import type { BetStatus, SportType } from 'src/common/enums';
 import type { CompetitionLocationItem } from 'src/common/types/competition';

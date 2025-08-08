@@ -2,8 +2,8 @@ import includes from 'lodash/includes';
 import isEmpty from 'lodash/isEmpty';
 import type { TransactionInterface_UNSTABLE as TransactionInterface } from 'recoil';
 
-import { enabledBuildABetIdsAtom } from '@sc-buildABet/store/atoms';
-import { store } from '@sc-utils/jotai';
+import { enabledBuildABetIdsAtom } from '@solo-buildABet/store/atoms';
+import { store } from '@solo-utils/jotai';
 
 import { LegType, RouteName } from 'src/common/enums';
 import { routeNameAtom } from 'src/store/common/atoms';

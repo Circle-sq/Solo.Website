@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, fontWeight, GreyPalette, Gradients, cssColor } from '@sc-ui/system';
+import { breakpoints, fontWeight, GreyPalette, Gradients, cssColor } from '@solo-ui/system';
 
 export const BasicEventScore = styled.div`
     flex-direction: column;

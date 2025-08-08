@@ -2,15 +2,15 @@ import find from 'lodash/find';
 import keys from 'lodash/keys';
 import { useRecoilCallback } from 'recoil';
 
-import { hasBuildABetMaximumSelectionsAtomFamily } from '@sc-buildABet/store/atoms';
-import { isEnabledBuildABetFeatureSelectorFamily } from '@sc-buildABet/store/selectors';
+import { hasBuildABetMaximumSelectionsAtomFamily } from '@solo-buildABet/store/atoms';
+import { isEnabledBuildABetFeatureSelectorFamily } from '@solo-buildABet/store/selectors';
 import {
     findBuildABetByEventId,
     findBuildABetBySelectionId,
     hasBuildABetReachedMaxSelections,
     isBuildABetReachedMaxLegsCount,
-} from '@sc-buildABet/utils/helpers';
-import { store } from '@sc-utils/jotai';
+} from '@solo-buildABet/utils/helpers';
+import { store } from '@solo-utils/jotai';
 
 import { RouteName } from 'src/common/enums';
 import { getValue } from 'src/common/recoil/snapshot';

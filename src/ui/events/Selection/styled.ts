@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, selections, breakpoints, GreyPalette, GenericColors, cssColor } from '@sc-ui/system';
+import { fontWeight, selections, breakpoints, GreyPalette, GenericColors, cssColor } from '@solo-ui/system';
 
 import { incrementBreakpointValue } from 'src/common/helpers/styled';
 import TooltipTruncatedText from 'src/ui/common/TooltipTruncatedText/TooltipTruncatedText';

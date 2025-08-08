@@ -1,7 +1,7 @@
 import { fromJS } from 'immutable';
 import type { PropsWithChildren } from 'react';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import NavigationSidebar from './NavigationSidebar';
 

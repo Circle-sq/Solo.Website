@@ -1,6 +1,6 @@
-import { createPromiseBox } from '@sc-webapi/mobx-utils/createPromiseBox';
-import { readFile } from '@sc-webapi/mobx-utils/stdfs';
-import { timeout } from '@sc-webapi/mobx-utils/timeout';
+import { createPromiseBox } from '@solo-webapi/mobx-utils/createPromiseBox';
+import { readFile } from '@solo-webapi/mobx-utils/stdfs';
+import { timeout } from '@solo-webapi/mobx-utils/timeout';
 
 import type { GetParamsWithoutToken, PostParamWithoutToken, FetchGeneralResponseType } from '../../fetch';
 import { fetchGeneral, decodeResponse } from '../../fetch';

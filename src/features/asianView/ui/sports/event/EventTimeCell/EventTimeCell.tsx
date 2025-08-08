@@ -1,6 +1,6 @@
 import { useAtomValue } from 'jotai';
 
-import { isTwoRowStyleSport } from '@sc-asianView/helpers';
+import { isTwoRowStyleSport } from '@solo-asianView/helpers';
 
 import { eventInPlaySelectorFamily, eventSportSelectorFamily } from 'src/store/events/selectors/event';
 

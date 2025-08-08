@@ -2,8 +2,8 @@ import type { UseQueryOptions } from '@tanstack/react-query';
 import userEvent from '@testing-library/user-event';
 import type { SetterOrUpdater } from 'recoil';
 
-import RecoilObserver from '@sc-tests/unit/mocks/recoil/RecoilObserver';
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import RecoilObserver from '@solo-tests/unit/mocks/recoil/RecoilObserver';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import { ApiWrapper } from 'src/appState/ApiWrapper';
 import { MyBetsTab } from 'src/common/enums';

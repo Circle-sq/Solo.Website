@@ -1,4 +1,4 @@
-import { cssColor } from '@sc-ui/system';
+import { cssColor } from '@solo-ui/system';
 
 const CheckboxCheckedIcon = () => {
     return (

@@ -1,5 +1,5 @@
-import { LiveStreamingIcon } from '@sc-ui/icons/svg';
-import { RedPalette } from '@sc-ui/system';
+import { LiveStreamingIcon } from '@solo-ui/icons/svg';
+import { RedPalette } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import type { EventModel } from 'src/appState/models/models/EventModel';

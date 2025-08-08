@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { cssColor, fontWeight, GenericColors, Opacities } from '@sc-ui/system';
+import { cssColor, fontWeight, GenericColors, Opacities } from '@solo-ui/system';
 
 export const S_CompetitionGroup = styled.tbody`
     width: 100%;

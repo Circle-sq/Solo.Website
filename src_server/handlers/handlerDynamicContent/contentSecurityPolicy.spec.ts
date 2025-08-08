@@ -4,10 +4,10 @@ import toLower from 'lodash/toLower';
 import request from 'supertest';
 import type { Mock } from 'vitest';
 
-import { server } from '@sc-tests/unit/mocks/server.setup';
-import type { ConfigServer } from '@sc-webapi/ConfigServer';
-import { AppLocals, ResponseHeaders } from '@sc-webapi/enums';
-import type { PlatformApi } from '@sc-webapi/realtime-server/PlatformApi/PlatformApi';
+import { server } from '@solo-tests/unit/mocks/server.setup';
+import type { ConfigServer } from '@solo-webapi/ConfigServer';
+import { AppLocals, ResponseHeaders } from '@solo-webapi/enums';
+import type { PlatformApi } from '@solo-webapi/realtime-server/PlatformApi/PlatformApi';
 
 import { setContentSecurityPolicyAPI, setContentSecurityPolicyENV } from './contentSecurityPolicy';
 
@@ -113,7 +113,7 @@ describe('setContentSecurityPolicyENV', () => {
             .get('/some-endpoint')
             .set(
                 'X-Ancestor-Origins',
-                JSON.stringify(['https://stage.xyzblue.com%2C/', 'https://wbc-stg.xyzwhite.com/']),
+                JSON.stringify(['https://stage.sportsbookblue.com%2C/', 'https://stage.sportsbookwhite.com/']),
             );
 
         log('info', 'Response received:', {
@@ -123,7 +123,7 @@ describe('setContentSecurityPolicyENV', () => {
 
         expect(response.status).toBe(200);
         expect(response.headers[toLower(ResponseHeaders.ContentSecurityPolicy)]).toEqual(
-            `frame-ancestors 'self' stage.xyzblue.com wbc-stg.xyzwhite.com`,
+            `frame-ancestors 'self' stage.sportsbookblue.com stage.sportsbookwhite.com`,
         );
     });
 });
@@ -184,8 +184,8 @@ describe('setContentSecurityPolicyAPI', () => {
         (platformApi.fetchPost as Mock).mockResolvedValue({
             status: 200,
             bodyJson: {
-                'stage.xyzblue.com': true,
-                'wbc-stg.xyzwhite.com': true,
+                'stage.spotsbookblue.com': true,
+                'stage.spotsbookwhite.com': true,
             },
         });
 
@@ -193,12 +193,12 @@ describe('setContentSecurityPolicyAPI', () => {
             .get('/some-endpoint')
             .set(
                 'X-Ancestor-Origins',
-                JSON.stringify(['https://stage.xyzblue.com%2C/', 'https://wbc-stg.xyzwhite.com/']),
+                JSON.stringify(['https://stage.spotsbookblue.com%2C/', 'https://stage.spotsbookwhite.com/']),
             );
 
         expect(response.status).toBe(200);
         expect(response.headers[toLower(ResponseHeaders.ContentSecurityPolicy)]).toEqual(
-            `frame-ancestors 'self' stage.xyzblue.com wbc-stg.xyzwhite.com`,
+            `frame-ancestors 'self' stage.spotsbookblue.com stage.spotsbookwhite.com`,
         );
     });
 

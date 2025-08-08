@@ -5,9 +5,10 @@ import { autorun, configure } from 'mobx';
 import queryString from 'query-string';
 import React from 'react';
 
-import { signIn } from '@sc-account/actions';
-import { isAuthenticatedAtom, userDataAtom } from '@sc-account/store/atoms';
-import { store } from '@sc-utils/jotai';
+import { signIn } from '@solo-account/actions';
+import { isAuthenticatedAtom, userDataAtom } from '@solo-account/store/atoms';
+import { store } from '@solo-utils/jotai';
+import { PlatformIdTypes } from '@solo-webapi/enums';
 
 import { ModalRouteName, RouteName } from 'src/common/enums';
 import { getCookie, setCookie } from 'src/config/config';
@@ -212,7 +213,7 @@ export const initIndex = () => {
             externalJwt: window.$loginjwt,
             platformId: window.$platformId,
         });
-    } else if (missingLocalStorageToken || window.$platformId === 'comtrade') {
+    } else if (missingLocalStorageToken || window.$platformId === PlatformIdTypes.SomePlatformId) {
         //If one of them is missing - make sure no residue for proper flow.
         console.warn('No external token provided - cleaning previous session residuals from local storage');
         tokenStorage.removeItem();
@@ -230,7 +231,7 @@ export const initIndex = () => {
     }
 
     if (window.$guestCurrency) {
-        store.set(guestCurrencyAtom, window.$guestCurrency as 'KRW' | 'USD');
+        store.set(guestCurrencyAtom, window.$guestCurrency);
     }
 
     if (window.$platformId != null) {

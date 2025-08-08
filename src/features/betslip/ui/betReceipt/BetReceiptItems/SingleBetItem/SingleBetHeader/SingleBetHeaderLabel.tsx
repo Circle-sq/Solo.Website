@@ -1,5 +1,5 @@
-import SingleBuildABetHeaderLabel from '@sc-buildABet/ui/betslip/BetReceipt/SingleBuildABetHeaderLabel/SingleBuildABetHeaderLabel';
-import { CrossBetIcon } from '@sc-ui/icons/svg';
+import SingleBuildABetHeaderLabel from '@solo-buildABet/ui/betslip/BetReceipt/SingleBuildABetHeaderLabel/SingleBuildABetHeaderLabel';
+import { CrossBetIcon } from '@solo-ui/icons/svg';
 
 import { LegType } from 'src/common/enums';
 import { I18n } from 'src/ui/common/Language/I18n';

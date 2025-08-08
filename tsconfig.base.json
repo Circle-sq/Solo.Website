@@ -29,67 +29,67 @@
       "vitest/jsdom"
     ],
     "paths": {
-      "@sc-api/*": [
+      "@solo-api/*": [
         "src/api/*"
       ],
-      "@sc-account/*": [
+      "@solo-account/*": [
         "src/features/account/*"
       ],
-      "@sc-asianView/*": [
+      "@solo-asianView/*": [
         "src/features/asianView/*"
       ],
-      "@sc-betslip/*": [
+      "@solo-betslip/*": [
         "src/features/betslip/*"
       ],
-      "@sc-buildABet/*": [
+      "@solo-buildABet/*": [
         "src/features/buildABet/*"
       ],
-      "@sc-data/subscriptions-storage": [
+      "@solo-data/subscriptions-storage": [
         "libs/data-subscriptions-storage/src/index.ts"
       ],
-      "@sc-devtools/*": [
-        "libs/sc-devtools/*"
+      "@solo-devtools/*": [
+        "libs/solo-devtools/*"
       ],
-      "@sc-feature-flags": [
+      "@solo-feature-flags": [
         "libs/feature-flags/src/index.ts"
       ],
-      "@sc-features/subscription-manager/*": [
-        "libs/sc-feature-subscription-manager/*"
+      "@solo-features/subscription-manager/*": [
+        "libs/solo-feature-subscription-manager/*"
       ],
-      "@sc-hooks": [
+      "@solo-hooks": [
         "src/common/hooks/index.ts"
       ],
-      "@sc-media/*": [
+      "@solo-media/*": [
         "src/features/media/*"
       ],
-      "@sc-sb-assets/*": [
+      "@solo-sb-assets/*": [
         "libs/assets-shared/*"
       ],
-      "@sc-tests/*": [
+      "@solo-tests/*": [
         "tests/*"
       ],
-      "@sc-ui-atoms/asian": [
+      "@solo-ui-atoms/asian": [
         "libs/asian-view/ui-atoms/src/index.ts"
       ],
-      "@sc-ui/beteast": [
+      "@solo-ui/beteast": [
         "libs/ui-beteast/src/index.ts"
       ],
-      "@sc-ui/beteast/icons": [
+      "@solo-ui/beteast/icons": [
         "libs/ui-icons/src/index.ts"
       ],
-      "@sc-ui/icons/svg": [
+      "@solo-ui/icons/svg": [
         "libs/ui-icons-svg/src/index.ts"
       ],
-      "@sc-ui/system": [
+      "@solo-ui/system": [
         "libs/ui-system/src/index.ts"
       ],
-      "@sc-utils/jotai": [
+      "@solo-utils/jotai": [
         "libs/utils/jotai/src/index.ts"
       ],
-      "@sc-utils/tanstack": [
+      "@solo-utils/tanstack": [
         "libs/utils/tanstack/src/index.ts"
       ],
-      "@sc-webapi/*": [
+      "@solo-webapi/*": [
         "src_server/*"
       ]
     },

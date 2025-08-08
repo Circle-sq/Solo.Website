@@ -5,7 +5,7 @@ import type { ReactNode } from 'react';
 import { useDispatch } from 'react-redux';
 import type { MultiValue, SingleValue as SingleValueType } from 'react-select';
 
-import type { MediaOption } from '@sc-media/ui/videoStream/dropdown/types';
+import type { MediaOption } from '@solo-media/ui/videoStream/dropdown/types';
 
 import { hasParamsInValue, hasValueInValue } from 'src/common/typeGuards/select';
 import { setEventFilter } from 'src/modules/content/actions/event-filters';

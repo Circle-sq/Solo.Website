@@ -1,7 +1,7 @@
 import { useMutation } from '@tanstack/react-query';
 import { useAtomValue } from 'jotai';
 
-import { useJotaiCallback } from '@sc-utils/jotai';
+import { useJotaiCallback } from '@solo-utils/jotai';
 
 import {
     cashoutAcceptModeSelector,

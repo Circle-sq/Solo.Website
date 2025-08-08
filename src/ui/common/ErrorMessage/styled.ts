@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { cssColor, fontWeight } from '@sc-ui/system';
+import { cssColor, fontWeight } from '@solo-ui/system';
 
 import type { Icon } from 'src/ui/common/ErrorMessage/types';
 

@@ -1,9 +1,9 @@
 import { useCallback, useRef } from 'react';
 import { useRecoilCallback } from 'recoil';
 
-import { useMyBetsQueryCache } from '@sc-api/bets/queryCache';
-import { useMakeCashOutApi } from '@sc-api/cashout/queries';
-import { queryKeys } from '@sc-api/queryKeys';
+import { useMyBetsQueryCache } from '@solo-api/bets/queryCache';
+import { useMakeCashOutApi } from '@solo-api/cashout/queries';
+import { queryKeys } from '@solo-api/queryKeys';
 
 import { useQueryCache } from 'src/api/queryCache';
 import { getValue } from 'src/common/recoil/snapshot';

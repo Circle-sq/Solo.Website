@@ -15,7 +15,7 @@ const plugins = [
         ? viteStaticCopy({
               targets: [
                   {
-                      src: './src_server/template/maintenance-skycity-kr.html',
+                      src: './src_server/template/maintenance-solo.html',
                       dest: 'assets',
                   },
                   {

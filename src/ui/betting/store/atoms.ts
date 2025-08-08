@@ -1,7 +1,7 @@
 import { atom, selector } from 'recoil';
 import size from 'lodash/size';
 
-import { betslipSelectionsAtom } from '@sc-betslip/store/atoms/selections';
+import { betslipSelectionsAtom } from '@solo-betslip/store/atoms/selections';
 
 import { BettingTab } from 'src/common/enums';
 

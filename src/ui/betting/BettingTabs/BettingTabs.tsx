@@ -1,7 +1,7 @@
 import { useRecoilValue } from 'recoil';
 
-import { betslipBetsCounterSelector } from '@sc-betslip/store/selectors/betslipBets';
-import Betslip from '@sc-betslip/ui/Betslip';
+import { betslipBetsCounterSelector } from '@solo-betslip/store/selectors/betslipBets';
+import Betslip from '@solo-betslip/ui/Betslip';
 
 import { BettingTab } from 'src/common/enums';
 import { I18n } from 'src/ui/common/Language/I18n';

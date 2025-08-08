@@ -3,17 +3,14 @@ export enum AppLocals {
 }
 
 export enum PlatformIdTypes {
-    Comtrade = 'comtrade',
-    Xyz = 'xyz',
-    SkyHub = 'skyhub',
+    Sportsbook = 'sportsbook',
+    SomePlatformId = 'someplatformid',
 }
 
 export enum Endpoints {
     any = '*',
     root = '/',
-    comtradeLogin = '/loginComtrade',
-    xyzLogin = '/loginXYZ',
-    skyHubLogin = '/loginSkyHUB',
+    SportsbookLogin = '/loginSportsbook',
 }
 
 export enum HttpStatusCode {

@@ -2,7 +2,7 @@ import get from 'lodash/get';
 import isEmpty from 'lodash/isEmpty';
 import map from 'lodash/map';
 
-import { api } from '@sc-api/api';
+import { api } from '@solo-api/api';
 
 import type { EventQueryRequest } from 'src/appState/EventsCollection/types';
 import type { Sport } from 'src/appState/EventsCollection/utils';

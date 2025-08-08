@@ -1,4 +1,4 @@
-import type { PlacedBet } from '@sc-betslip/api/types/placedBet';
+import type { PlacedBet } from '@solo-betslip/api/types/placedBet';
 import { store } from 'libs/utils/jotai/src/store';
 import { Currency, OddsFormat } from 'src/common/enums';
 import { MarketType } from 'src/common/enums/market';

@@ -2,8 +2,8 @@ import { waitFor } from '@testing-library/react';
 import { http, HttpResponse } from 'msw';
 import type { ReactNode } from 'react';
 
-import { renderWithTheme } from '@sc-tests/unit/mocks/renderMocks';
-import { server } from '@sc-tests/unit/mocks/server.setup';
+import { renderWithTheme } from '@solo-tests/unit/mocks/renderMocks';
+import { server } from '@solo-tests/unit/mocks/server.setup';
 
 import CardContent from './CardContent';
 

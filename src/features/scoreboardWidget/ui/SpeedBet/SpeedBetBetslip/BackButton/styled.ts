@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, cssColor, breakpoints } from '@sc-ui/system';
+import { fontWeight, cssColor, breakpoints } from '@solo-ui/system';
 
 export const S_BackButton = styled.button`
     outline: none;

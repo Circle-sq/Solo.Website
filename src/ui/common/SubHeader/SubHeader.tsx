@@ -1,6 +1,6 @@
 import { type ReactElement } from 'react';
 
-import { useSyncCrossSelections } from '@sc-betslip/store/hooks/useSyncCrossSelections';
+import { useSyncCrossSelections } from '@solo-betslip/store/hooks/useSyncCrossSelections';
 import isEmpty from 'lodash/isEmpty';
 import reject from 'lodash/reject';
 import { useAppStateContext } from 'src/appState/AppState';

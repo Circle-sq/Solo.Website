@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 
-import { radius, DarkBluePalette, breakpoints } from '@sc-ui/system';
+import { radius, DarkBluePalette, breakpoints } from '@solo-ui/system';
 
 interface TrackProps {
     direction: 'horizontal' | 'vertical';

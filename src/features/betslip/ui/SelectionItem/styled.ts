@@ -1,8 +1,11 @@
 import styled from '@emotion/styled';
 
-import { S_BuildABetCardEventName, S_BuildABetIconWrapper } from '@sc-buildABet/ui/betslip/BuildABetCardContent/styled';
-import { S_SelectionName } from '@sc-buildABet/ui/myBet/styled';
-import { fontWeight, GenericColors, cssColor } from '@sc-ui/system';
+import {
+    S_BuildABetCardEventName,
+    S_BuildABetIconWrapper,
+} from '@solo-buildABet/ui/betslip/BuildABetCardContent/styled';
+import { S_SelectionName } from '@solo-buildABet/ui/myBet/styled';
+import { fontWeight, GenericColors, cssColor } from '@solo-ui/system';
 
 import Button from 'src/ui/common/Button/Button';
 

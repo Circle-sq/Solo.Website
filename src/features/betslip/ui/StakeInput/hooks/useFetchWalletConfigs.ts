@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import get from 'lodash/get';
 
-import { api } from '@sc-api/api';
+import { api } from '@solo-api/api';
 
 import { Currency } from 'src/common/enums';
 

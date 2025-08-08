@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { DarkBluePalette, LightBluePalette, RedPalette, cssColor } from '@sc-ui/system';
+import { DarkBluePalette, LightBluePalette, RedPalette, cssColor } from '@solo-ui/system';
 
 export const S_Input = styled.input<{ error?: boolean }>`
     border-radius: 3px;

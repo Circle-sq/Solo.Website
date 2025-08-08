@@ -22,7 +22,7 @@ export const footballEvent = {
         'speed-bet': ['no'],
         'asian-view': ['no'],
         highlight: ['no'],
-        'skycity-events': ['-'],
+        'solo-events': ['-'],
         'category-label': ['-'],
         outright: ['no'],
         'ante-post': ['no'],

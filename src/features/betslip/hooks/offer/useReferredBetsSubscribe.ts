@@ -2,9 +2,9 @@ import { useAtomValue } from 'jotai';
 import { useEffect } from 'react';
 import { useRecoilCallback } from 'recoil';
 
-import { freebetCreditsAtomWithQuery } from '@sc-account/store/queries';
-import { userIdSelector } from '@sc-account/store/selectors';
-import { store } from '@sc-utils/jotai';
+import { freebetCreditsAtomWithQuery } from '@solo-account/store/queries';
+import { userIdSelector } from '@solo-account/store/selectors';
+import { store } from '@solo-utils/jotai';
 
 import { BetslipTab, OfferStatus } from 'src/common/enums';
 import { getValue } from 'src/common/recoil/snapshot';

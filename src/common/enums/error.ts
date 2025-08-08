@@ -30,7 +30,7 @@ export enum PriceErrorCode {
     ZeroWinExpectation = 'zero-win-expectation',
 }
 
-export enum XyzProviderErrorCode {
+export enum SportsbookProviderErrorCode {
     AlreadyProcessed = 'already-processed',
     DifferentCurrencies = 'different-currencies',
     FailedToUpdateData = 'failed-to-update-data',

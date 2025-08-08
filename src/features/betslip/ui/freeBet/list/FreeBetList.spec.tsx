@@ -1,7 +1,7 @@
 import type { RenderResult } from '@testing-library/react';
 import { fireEvent } from '@testing-library/react';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import { CurrencySymbol } from 'src/common/enums';
 

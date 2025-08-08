@@ -1,7 +1,7 @@
 import { useAtomValue } from 'jotai';
 import { useRecoilValue } from 'recoil';
 
-import { oddsFormatSelector } from '@sc-account/store/selectors';
+import { oddsFormatSelector } from '@solo-account/store/selectors';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 import { formatDecimalPart } from 'src/utils/format';

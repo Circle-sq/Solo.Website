@@ -1,7 +1,7 @@
 import get from 'lodash/get';
 import isUndefined from 'lodash/isUndefined';
 
-import { api } from '@sc-api/api';
+import { api } from '@solo-api/api';
 
 import { remapCompetitionLocations, buildCacheUrl } from 'src/appState/utils';
 import { SPORT_TYPE } from 'src/utils/constants';

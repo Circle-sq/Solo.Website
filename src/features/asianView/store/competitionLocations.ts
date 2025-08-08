@@ -2,8 +2,8 @@ import { atom } from 'jotai';
 import map from 'lodash/map';
 import sortBy from 'lodash/sortBy';
 
-import { getSportTerm } from '@sc-api/helpers/params';
-import { atomWithQueryCbk, store } from '@sc-utils/jotai';
+import { getSportTerm } from '@solo-api/helpers/params';
+import { atomWithQueryCbk, store } from '@solo-utils/jotai';
 
 import { defaultTerms } from '../api/competitions/configs';
 import { getCompetitionTermsByTimeTab } from '../api/competitions/helpers';

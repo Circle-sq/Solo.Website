@@ -1,7 +1,7 @@
 import { observer } from 'mobx-react-lite';
 
-import { LiveStreamingIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { LiveStreamingIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import type { EventModel } from 'src/appState/models/models/EventModel';
 

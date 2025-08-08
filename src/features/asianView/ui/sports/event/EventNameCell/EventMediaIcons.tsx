@@ -3,12 +3,12 @@ import { type MouseEvent } from 'react';
 import { useDispatch } from 'react-redux';
 import { useSetRecoilState } from 'recoil';
 
-import { useBlacklistQuery } from '@sc-api/streams/blacklist/queries';
-import { eventMediaAtom } from '@sc-media/store/atoms';
-import BetRadarStatisticsButton from '@sc-media/ui/actionButtons/BetRadarStatisticsButton';
-import { S_AlignmentBox, S_IconsWrapper, S_StatisticsWrapper } from '@sc-media/ui/actionButtons/styled';
-import { FootballFieldIcon, LiveStreamingIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { useBlacklistQuery } from '@solo-api/streams/blacklist/queries';
+import { eventMediaAtom } from '@solo-media/store/atoms';
+import BetRadarStatisticsButton from '@solo-media/ui/actionButtons/BetRadarStatisticsButton';
+import { S_AlignmentBox, S_IconsWrapper, S_StatisticsWrapper } from '@solo-media/ui/actionButtons/styled';
+import { FootballFieldIcon, LiveStreamingIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import type { EventModel } from 'src/appState/models/models/EventModel';
 import {

@@ -1,8 +1,8 @@
 import isEmpty from 'lodash/isEmpty';
 
-import { useSubscriptions } from '@sc-data/subscriptions-storage';
-import { DevToolWrapper } from '@sc-features/subscription-manager/DevToolWrapper';
-import { WebsocketSubscriptionsDisplay } from '@sc-features/subscription-manager/WebsocketSubscriptionsDisplay';
+import { useSubscriptions } from '@solo-data/subscriptions-storage';
+import { DevToolWrapper } from '@solo-features/subscription-manager/DevToolWrapper';
+import { WebsocketSubscriptionsDisplay } from '@solo-features/subscription-manager/WebsocketSubscriptionsDisplay';
 
 import { WebsocketNamespace } from 'src/utils/socket-io/types';
 

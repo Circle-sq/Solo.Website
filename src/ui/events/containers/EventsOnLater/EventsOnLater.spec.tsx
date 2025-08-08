@@ -1,8 +1,8 @@
 import { fromJS, List, Map } from 'immutable';
 import map from 'lodash/map';
 
-import MockComponent from '@sc-tests/unit/mocks/MockComponent';
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import MockComponent from '@solo-tests/unit/mocks/MockComponent';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import EventsOnLater from './EventsOnLater';
 
@@ -125,7 +125,7 @@ vi.mock('src/appState/AppState', function AppState() {
                                         externalId: {
                                             eventId: undefined,
                                             feedId: 'sr:tournament:782',
-                                            instance: 'skycity',
+                                            instance: 'solo',
                                             producerId: undefined,
                                             provider: 'bet-radar',
                                             sportId: undefined,
@@ -142,7 +142,7 @@ vi.mock('src/appState/AppState', function AppState() {
                                         externalId: {
                                             eventId: undefined,
                                             feedId: 'sr:tournament:1654',
-                                            instance: 'skycity',
+                                            instance: 'solo',
                                             producerId: undefined,
                                             provider: 'bet-radar',
                                             sportId: undefined,

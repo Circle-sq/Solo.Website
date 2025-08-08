@@ -2,9 +2,9 @@ import { useMemo } from 'react';
 import { useAtomValue } from 'jotai';
 import { useRecoilValue } from 'recoil';
 
-import { isDecimalOddsFormatSelector } from '@sc-account/store/selectors';
-import { isSelectedSelectorFamily } from '@sc-betslip/store/selectors/selections';
-import { useBuildABetHighlighted } from '@sc-buildABet/hooks/useBuildABetHighlighted';
+import { isDecimalOddsFormatSelector } from '@solo-account/store/selectors';
+import { isSelectedSelectorFamily } from '@solo-betslip/store/selectors/selections';
+import { useBuildABetHighlighted } from '@solo-buildABet/hooks/useBuildABetHighlighted';
 
 import type { Price } from 'src/common/types/selectionPrice';
 

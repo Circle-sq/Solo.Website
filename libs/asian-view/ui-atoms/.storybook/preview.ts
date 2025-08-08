@@ -2,7 +2,7 @@ import { ThemeProvider as EmotionThemeProvider } from '@emotion/react';
 import { CssBaseline, ThemeProvider as MuiThemeProvider } from '@mui/material';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 
-import { BeteastTheme } from '@sc-ui/system';
+import { BeteastTheme } from '@solo-ui/system';
 
 import { materialTheme } from '../src/lib/theme';
 

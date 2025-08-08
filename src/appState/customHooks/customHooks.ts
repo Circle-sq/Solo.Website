@@ -1,4 +1,4 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import find from 'lodash/find';
 import isUndefined from 'lodash/isUndefined';
 import throttle from 'lodash/throttle';

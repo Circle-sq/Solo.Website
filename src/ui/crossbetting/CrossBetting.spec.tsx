@@ -3,9 +3,9 @@ import { fromJS } from 'immutable';
 import type { PropsWithChildren } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import { languagesMock } from '@sc-tests/unit/mocks/languagesMock';
-import '@sc-tests/unit/mocks/matchMedia.mock';
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { languagesMock } from '@solo-tests/unit/mocks/languagesMock';
+import '@solo-tests/unit/mocks/matchMedia.mock';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import type { AppState } from 'src/appState/AppState';
 import type { RecursivePartial } from 'src/common/types/main';
@@ -15,7 +15,7 @@ import { selectedMarketTypeAtom } from './store/atoms';
 
 let isTablet = false;
 
-vi.mock('@sc-hooks', () => ({
+vi.mock('@solo-hooks', () => ({
     __esModule: true,
     useWindowWidth: () => ({ isTablet }),
 }));

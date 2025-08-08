@@ -7,8 +7,8 @@ import { observer } from 'mobx-react-lite';
 import { useEffect, useMemo, useState } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import { SubKey } from '@sc-features/subscription-manager/subKeys';
-import { SubscribeElement } from '@sc-features/subscription-manager/SubscribeElement';
+import { SubKey } from '@solo-features/subscription-manager/subKeys';
+import { SubscribeElement } from '@solo-features/subscription-manager/SubscribeElement';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { BetStatus } from 'src/common/enums';

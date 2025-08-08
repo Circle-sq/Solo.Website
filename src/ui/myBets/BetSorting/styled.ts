@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { cssColor } from '@sc-ui/system';
+import { cssColor } from '@solo-ui/system';
 
 export const S_BetSortingWrapper = styled.div`
     margin: 16px 8px 0 16px;

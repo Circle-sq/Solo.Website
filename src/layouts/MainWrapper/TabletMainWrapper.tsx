@@ -3,10 +3,10 @@ import { observer } from 'mobx-react-lite';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import { betslipBetsCounterSelector } from '@sc-betslip/store/selectors/betslipBets';
-import { possibleWinningsSelector, tabTotalStakeSelector } from '@sc-betslip/store/selectors/stake';
-import { CloseIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { betslipBetsCounterSelector } from '@solo-betslip/store/selectors/betslipBets';
+import { possibleWinningsSelector, tabTotalStakeSelector } from '@solo-betslip/store/selectors/stake';
+import { CloseIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import type Application from 'src/app';
 import { useAppStateContext } from 'src/appState/AppState';

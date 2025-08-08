@@ -1,7 +1,7 @@
 import type { PropsWithChildren } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import BuildABetLeg from '@sc-buildABet/ui/BuildABetLeg/BuildABetLeg';
+import BuildABetLeg from '@solo-buildABet/ui/BuildABetLeg/BuildABetLeg';
 
 import type { EventModel } from 'src/appState/models/models/EventModel';
 import type { BetStatus } from 'src/common/enums';

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { RedPalette, fontWeight } from '@sc-ui/system';
+import { RedPalette, fontWeight } from '@solo-ui/system';
 
 export const S_ValidationError = styled.div`
     font-size: 12px;

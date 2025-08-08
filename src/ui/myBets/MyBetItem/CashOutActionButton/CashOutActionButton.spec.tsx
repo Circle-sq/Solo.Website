@@ -1,4 +1,4 @@
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import type { MyBet } from 'src/common/types/myBet';
 

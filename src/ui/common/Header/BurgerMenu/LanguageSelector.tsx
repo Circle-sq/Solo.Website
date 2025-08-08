@@ -1,10 +1,10 @@
-import { useChineseLangSupportFlag, useJapaneseLangSupportFlag } from '@sc-feature-flags';
+import { useChineseLangSupportFlag, useJapaneseLangSupportFlag } from '@solo-feature-flags';
 import filter from 'lodash/filter';
 import map from 'lodash/map';
 import { memo, useState } from 'react';
 import type { MultiValue, SingleValue } from 'react-select';
 
-import type { MediaOption } from '@sc-media/ui/videoStream/dropdown/types';
+import type { MediaOption } from '@solo-media/ui/videoStream/dropdown/types';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import China from 'src/assets/countries_flags/china_flag_24px.svg';

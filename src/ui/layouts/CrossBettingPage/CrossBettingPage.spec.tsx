@@ -1,8 +1,8 @@
 import { waitFor } from '@testing-library/react';
 import { http, HttpResponse } from 'msw';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
-import { server } from '@sc-tests/unit/mocks/server.setup';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
+import { server } from '@solo-tests/unit/mocks/server.setup';
 
 import CrossBettingPage from './CrossBettingPage';
 
@@ -52,7 +52,7 @@ vi.mock('src/ui/crossbetting/TopSportsNavigationSidebar', () => ({
 
 vi.mock('src/ui/crossbetting/CrossBetting', () => ({ default: () => <div data-testid='crossbetContent' /> }));
 
-vi.mock('@sc-hooks', () => ({
+vi.mock('@solo-hooks', () => ({
     __esModule: true,
     useWindowWidth: () => ({ isTablet: false }),
 }));

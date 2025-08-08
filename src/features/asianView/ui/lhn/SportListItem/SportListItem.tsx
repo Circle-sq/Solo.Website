@@ -1,7 +1,7 @@
 import { useAtom, useAtomValue } from 'jotai';
 import type { MouseEvent } from 'react';
 
-import { useSportIconUrlQuerySelector } from '@sc-api/icons/querySelectors';
+import { useSportIconUrlQuerySelector } from '@solo-api/icons/querySelectors';
 
 import { SportType } from 'src/common/enums';
 import { SPORT_ICONS } from 'src/config/sport-icons';

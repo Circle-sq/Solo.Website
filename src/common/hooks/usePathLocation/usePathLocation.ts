@@ -1,6 +1,6 @@
 import { useRecoilValue } from 'recoil';
 
-import { lastSelectionSelector } from '@sc-betslip/store/selectors/selections';
+import { lastSelectionSelector } from '@solo-betslip/store/selectors/selections';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { RouteName } from 'src/common/enums';

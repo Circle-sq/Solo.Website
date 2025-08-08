@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, fontWeight, GreyPalette } from '@sc-ui/system';
+import { breakpoints, fontWeight, GreyPalette } from '@solo-ui/system';
 
 import { S_SwiperContainer } from 'src/ui/common/Carousel/styled';
 import LinesEllipsis from 'src/ui/common/LinesEllipsis';

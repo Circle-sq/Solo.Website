@@ -2,7 +2,7 @@ import Box from '@mui/material/Box';
 import find from 'lodash/find';
 import orderBy from 'lodash/orderBy';
 
-import { ClockIcon, CupIcon } from '@sc-ui/icons/svg';
+import { ClockIcon, CupIcon } from '@solo-ui/icons/svg';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import EventsFilter from 'src/ui/common/EventsFilter/EventsFilter';

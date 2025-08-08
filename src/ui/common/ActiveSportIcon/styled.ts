@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { GenericColors } from '@sc-ui/system';
+import { GenericColors } from '@solo-ui/system';
 
 import { NumberRow } from 'src/ui/common/EventInfographics/styled';
 

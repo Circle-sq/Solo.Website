@@ -1,10 +1,10 @@
 import type { MouseEvent, PropsWithChildren, RefObject } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import { useToggleStandardSelection } from '@sc-betslip/store/hooks/useToggleStandardSelection';
-import type { SelectionPayload } from '@sc-betslip/store/types';
-import { useBuildABetHighlighted } from '@sc-buildABet/hooks/useBuildABetHighlighted';
-import { S_BuildABetSelectionAction } from '@sc-buildABet/ui/selection/styled';
+import { useToggleStandardSelection } from '@solo-betslip/store/hooks/useToggleStandardSelection';
+import type { SelectionPayload } from '@solo-betslip/store/types';
+import { useBuildABetHighlighted } from '@solo-buildABet/hooks/useBuildABetHighlighted';
+import { S_BuildABetSelectionAction } from '@solo-buildABet/ui/selection/styled';
 
 import { priceDirectionAtomFamily } from '../../store/atoms';
 import SelectionValue from '../SelectionValue/SelectionValue';

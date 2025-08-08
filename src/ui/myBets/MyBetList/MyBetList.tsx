@@ -1,7 +1,7 @@
 import { Fragment, memo } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import type { MyBetsPageData } from '@sc-api/bets/types';
+import type { MyBetsPageData } from '@solo-api/bets/types';
 
 import useRetrieveCashOut from '../hooks/useRetrieveCashOut';
 import MyBetItem from '../MyBetItem/MyBetItem';

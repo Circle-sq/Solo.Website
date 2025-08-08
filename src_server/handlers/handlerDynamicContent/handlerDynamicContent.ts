@@ -1,8 +1,8 @@
-import type { PlatformIdTypes } from '@sc-webapi/enums';
-import { HttpStatusCode } from '@sc-webapi/enums';
-import { assignAppEndpoints } from '@sc-webapi/handlers/entryPointRouter';
-import { ReplaceGtmPlaceholdersWithComment } from '@sc-webapi/metrics/gtm';
-import type { PlatformApi } from '@sc-webapi/realtime-server/PlatformApi/PlatformApi';
+import type { PlatformIdTypes } from '@solo-webapi/enums';
+import { HttpStatusCode } from '@solo-webapi/enums';
+import { assignAppEndpoints } from '@solo-webapi/handlers/entryPointRouter';
+import { ReplaceGtmPlaceholdersWithComment } from '@solo-webapi/metrics/gtm';
+import type { PlatformApi } from '@solo-webapi/realtime-server/PlatformApi/PlatformApi';
 import dotenv from 'dotenv';
 import type { Express, Request, Response } from 'express';
 import fs from 'fs';
@@ -15,12 +15,12 @@ import { StatisticWidgetScript } from '../indexScripts';
 import type { RenderMainHtmlParamsType } from './RenderMainHtmlParamsType';
 import { RenderMainHtml } from './mainHTML';
 import { extractPayload } from './portal-body-parser';
-import { initTranslationData, initUserLang } from '@sc-webapi/Api/multiLanguage';
+import { initTranslationData, initUserLang } from '@solo-webapi/Api/multiLanguage';
 import type { LangDetailsRecordType } from 'src/appState/LanguagesState';
 import { exportLanguages, LanguagesState } from 'src/appState/LanguagesState';
-import { getNoVpnConnectionMessage, isProduction } from '@sc-webapi/infra.server';
+import { getNoVpnConnectionMessage, isProduction } from '@solo-webapi/infra.server';
 import { convertMapToRecordDefault } from 'src/appState/utils';
-import { healthCheck } from '@sc-webapi/Api/healthCheck';
+import { healthCheck } from '@solo-webapi/Api/healthCheck';
 
 dotenv.config();
 
@@ -83,7 +83,7 @@ export const handlerDynamicContent = async (config: ConfigServer, platformApi: P
             sportRemapping: convertMapToRecordDefault(config.SPORT_REMAPPING),
             host: res?.locals?.host ?? '',
             theme: theme ?? 'blue',
-            guestCurrency: guestCurrency ?? 'KRW',
+            guestCurrency: guestCurrency ?? 'USD',
         };
 
         const renderMainParams: RenderMainHtmlParamsType = {

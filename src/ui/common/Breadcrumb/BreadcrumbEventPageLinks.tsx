@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box';
 
-import { CupIcon } from '@sc-ui/icons/svg';
+import { CupIcon } from '@solo-ui/icons/svg';
 
 import CompetitionLocationIcon from 'src/assets/icons/competitionLocationIcon/CompetitionLocationIcon';
 import { SportType } from 'src/common/enums';

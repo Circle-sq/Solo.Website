@@ -3,7 +3,7 @@ import { queryClientAtom } from 'jotai-tanstack-query';
 import { RESET } from 'jotai/utils';
 import type { MouseEvent } from 'react';
 
-import { useJotaiCallback } from '@sc-utils/jotai';
+import { useJotaiCallback } from '@solo-utils/jotai';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 

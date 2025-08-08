@@ -1,4 +1,4 @@
-import { searchFlagSelector } from '@sc-feature-flags';
+import { searchFlagSelector } from '@solo-feature-flags';
 import { useAtomValue } from 'jotai';
 import isEmpty from 'lodash/isEmpty';
 import isUndefined from 'lodash/isUndefined';
@@ -6,9 +6,9 @@ import { memo, useEffect, useMemo, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useRecoilValue } from 'recoil';
 
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
-import { freebetCreditsAtomWithQuery } from '@sc-account/store/queries';
-import { AZIcon } from '@sc-ui/icons/svg';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
+import { freebetCreditsAtomWithQuery } from '@solo-account/store/queries';
+import { AZIcon } from '@solo-ui/icons/svg';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { useOnClickOutsidePreventFirstClick } from 'src/appState/customHooks';

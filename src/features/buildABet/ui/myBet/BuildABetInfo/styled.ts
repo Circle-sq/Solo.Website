@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, breakpoints, cssColor } from '@sc-ui/system';
+import { fontWeight, breakpoints, cssColor } from '@solo-ui/system';
 
 import { S_LiveShort } from 'src/ui/common/LiveLabel/styled';
 import { S_Participant } from 'src/ui/common/Participants/styled';

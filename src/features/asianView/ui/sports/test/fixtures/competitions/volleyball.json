@@ -2,19 +2,19 @@
   {
     "id": 308,
     "name": "NCAA, Women",
-    "universe": "skycity",
+    "universe": "solo",
     "sport": {
       "id": "volleyball",
       "name": "Volleyball",
       "displayOrder": 75,
-      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "url": "http://cf-vandries-sandbox.solohub.com/operator-sports/solo/volleyball",
       "translations": {}
     },
     "platformObject": {
       "id": "02_sr:simple_tournament:18161",
       "name": "NCAA, Women",
       "externalId": {
-        "instance": "skycity",
+        "instance": "solo",
         "provider": "bet-radar",
         "feedId": "sr:simple_tournament:18161",
         "sportId": "bet-radar"
@@ -24,7 +24,7 @@
       {
         "feed": {
           "provider": "bet-radar",
-          "instance": "skycity"
+          "instance": "solo"
         },
         "event-creation": true,
         "pre-match-pricing": true,
@@ -61,23 +61,23 @@
         "USA"
       ]
     },
-    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/308",
-    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "url": "http://cf-vandries-sandbox.solohub.com/operator-competitions/solo/308",
+    "eventsUrl": "http://cf-vandries-sandbox.solohub.com/operator-events/solo",
     "grades": {
       "prematch": {
         "id": 89,
         "name": "Grade 1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/89"
       },
       "show": {
         "id": 22,
         "name": "default",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/22"
       },
       "inPlay": {
         "id": 92,
         "name": "Grade IP1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/92"
       }
     },
     "updatedAt": "2024-04-17T09:12:26.683Z",
@@ -96,19 +96,19 @@
   {
     "id": 172,
     "name": "Pro League",
-    "universe": "skycity",
+    "universe": "solo",
     "sport": {
       "id": "volleyball",
       "name": "Volleyball",
       "displayOrder": 75,
-      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "url": "http://cf-vandries-sandbox.solohub.com/operator-sports/solo/volleyball",
       "translations": {}
     },
     "platformObject": {
       "id": "02_sr:tournament:32175",
       "name": "Pro League",
       "externalId": {
-        "instance": "skycity",
+        "instance": "solo",
         "provider": "bet-radar",
         "feedId": "sr:tournament:32175",
         "sportId": "bet-radar"
@@ -118,7 +118,7 @@
       {
         "feed": {
           "provider": "bet-radar",
-          "instance": "skycity"
+          "instance": "solo"
         },
         "event-creation": true,
         "pre-match-pricing": true,
@@ -155,23 +155,23 @@
         "RUS"
       ]
     },
-    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/172",
-    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "url": "http://cf-vandries-sandbox.solohub.com/operator-competitions/solo/172",
+    "eventsUrl": "http://cf-vandries-sandbox.solohub.com/operator-events/solo",
     "grades": {
       "prematch": {
         "id": 89,
         "name": "Grade 1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/89"
       },
       "show": {
         "id": 22,
         "name": "default",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/22"
       },
       "inPlay": {
         "id": 92,
         "name": "Grade IP1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/92"
       }
     },
     "updatedAt": "2024-04-17T09:04:01.105Z",
@@ -190,19 +190,19 @@
   {
     "id": 424,
     "name": "VolleyLigaen Women",
-    "universe": "skycity",
+    "universe": "solo",
     "sport": {
       "id": "volleyball",
       "name": "Volleyball",
       "displayOrder": 75,
-      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "url": "http://cf-vandries-sandbox.solohub.com/operator-sports/solo/volleyball",
       "translations": {}
     },
     "platformObject": {
       "id": "02_sr:tournament:14445",
       "name": "VolleyLigaen Women",
       "externalId": {
-        "instance": "skycity",
+        "instance": "solo",
         "provider": "bet-radar",
         "feedId": "sr:tournament:14445",
         "sportId": "bet-radar"
@@ -212,7 +212,7 @@
       {
         "feed": {
           "provider": "bet-radar",
-          "instance": "skycity"
+          "instance": "solo"
         },
         "event-creation": true,
         "pre-match-pricing": true,
@@ -246,23 +246,23 @@
         "DEN"
       ]
     },
-    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/424",
-    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "url": "http://cf-vandries-sandbox.solohub.com/operator-competitions/solo/424",
+    "eventsUrl": "http://cf-vandries-sandbox.solohub.com/operator-events/solo",
     "grades": {
       "prematch": {
         "id": 89,
         "name": "Grade 1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/89"
       },
       "show": {
         "id": 22,
         "name": "default",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/22"
       },
       "inPlay": {
         "id": 92,
         "name": "Grade IP1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/92"
       }
     },
     "updatedAt": "2024-04-17T09:35:57.866Z",
@@ -281,19 +281,19 @@
   {
     "id": 350,
     "name": "Serie A2",
-    "universe": "skycity",
+    "universe": "solo",
     "sport": {
       "id": "volleyball",
       "name": "Volleyball",
       "displayOrder": 75,
-      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "url": "http://cf-vandries-sandbox.solohub.com/operator-sports/solo/volleyball",
       "translations": {}
     },
     "platformObject": {
       "id": "02_sr:tournament:1444",
       "name": "Serie A2",
       "externalId": {
-        "instance": "skycity",
+        "instance": "solo",
         "provider": "bet-radar",
         "feedId": "sr:tournament:1444",
         "sportId": "bet-radar"
@@ -303,7 +303,7 @@
       {
         "feed": {
           "provider": "bet-radar",
-          "instance": "skycity"
+          "instance": "solo"
         },
         "event-creation": true,
         "pre-match-pricing": true,
@@ -337,23 +337,23 @@
         "ITA"
       ]
     },
-    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/350",
-    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "url": "http://cf-vandries-sandbox.solohub.com/operator-competitions/solo/350",
+    "eventsUrl": "http://cf-vandries-sandbox.solohub.com/operator-events/solo",
     "grades": {
       "prematch": {
         "id": 89,
         "name": "Grade 1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/89"
       },
       "show": {
         "id": 22,
         "name": "default",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/22"
       },
       "inPlay": {
         "id": 92,
         "name": "Grade IP1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/92"
       }
     },
     "updatedAt": "2024-04-17T08:41:22.556Z",
@@ -372,19 +372,19 @@
   {
     "id": 418,
     "name": "CEV Champions League, Women",
-    "universe": "skycity",
+    "universe": "solo",
     "sport": {
       "id": "volleyball",
       "name": "Volleyball",
       "displayOrder": 75,
-      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "url": "http://cf-vandries-sandbox.solohub.com/operator-sports/solo/volleyball",
       "translations": {}
     },
     "platformObject": {
       "id": "02_sr:tournament:587",
       "name": "CEV Champions League, Women",
       "externalId": {
-        "instance": "skycity",
+        "instance": "solo",
         "provider": "bet-radar",
         "feedId": "sr:tournament:587",
         "sportId": "bet-radar"
@@ -394,7 +394,7 @@
       {
         "feed": {
           "provider": "bet-radar",
-          "instance": "skycity"
+          "instance": "solo"
         },
         "event-creation": true,
         "pre-match-pricing": true,
@@ -428,23 +428,23 @@
         "WRL"
       ]
     },
-    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/418",
-    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "url": "http://cf-vandries-sandbox.solohub.com/operator-competitions/solo/418",
+    "eventsUrl": "http://cf-vandries-sandbox.solohub.com/operator-events/solo",
     "grades": {
       "prematch": {
         "id": 89,
         "name": "Grade 1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/89"
       },
       "show": {
         "id": 22,
         "name": "default",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/22"
       },
       "inPlay": {
         "id": 92,
         "name": "Grade IP1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/92"
       }
     },
     "updatedAt": "2024-04-17T09:31:34.088Z",
@@ -463,19 +463,19 @@
   {
     "id": 419,
     "name": "Champions League",
-    "universe": "skycity",
+    "universe": "solo",
     "sport": {
       "id": "volleyball",
       "name": "Volleyball",
       "displayOrder": 75,
-      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "url": "http://cf-vandries-sandbox.solohub.com/operator-sports/solo/volleyball",
       "translations": {}
     },
     "platformObject": {
       "id": "02_sr:tournament:586",
       "name": "Champions League",
       "externalId": {
-        "instance": "skycity",
+        "instance": "solo",
         "provider": "bet-radar",
         "feedId": "sr:tournament:586",
         "sportId": "bet-radar"
@@ -485,7 +485,7 @@
       {
         "feed": {
           "provider": "bet-radar",
-          "instance": "skycity"
+          "instance": "solo"
         },
         "event-creation": true,
         "pre-match-pricing": true,
@@ -519,23 +519,23 @@
         "WRL"
       ]
     },
-    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/419",
-    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "url": "http://cf-vandries-sandbox.solohub.com/operator-competitions/solo/419",
+    "eventsUrl": "http://cf-vandries-sandbox.solohub.com/operator-events/solo",
     "grades": {
       "prematch": {
         "id": 89,
         "name": "Grade 1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/89"
       },
       "show": {
         "id": 22,
         "name": "default",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/22"
       },
       "inPlay": {
         "id": 92,
         "name": "Grade IP1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/92"
       }
     },
     "updatedAt": "2024-04-17T09:32:07.811Z",
@@ -554,19 +554,19 @@
   {
     "id": 321,
     "name": "Liga Siatkowki, Women",
-    "universe": "skycity",
+    "universe": "solo",
     "sport": {
       "id": "volleyball",
       "name": "Volleyball",
       "displayOrder": 75,
-      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "url": "http://cf-vandries-sandbox.solohub.com/operator-sports/solo/volleyball",
       "translations": {}
     },
     "platformObject": {
       "id": "02_sr:tournament:1173",
       "name": "Liga Siatkowki, Women",
       "externalId": {
-        "instance": "skycity",
+        "instance": "solo",
         "provider": "bet-radar",
         "feedId": "sr:tournament:1173",
         "sportId": "bet-radar"
@@ -576,7 +576,7 @@
       {
         "feed": {
           "provider": "bet-radar",
-          "instance": "skycity"
+          "instance": "solo"
         },
         "event-creation": true,
         "pre-match-pricing": true,
@@ -616,23 +616,23 @@
         "25"
       ]
     },
-    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/321",
-    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "url": "http://cf-vandries-sandbox.solohub.com/operator-competitions/solo/321",
+    "eventsUrl": "http://cf-vandries-sandbox.solohub.com/operator-events/solo",
     "grades": {
       "prematch": {
         "id": 89,
         "name": "Grade 1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/89"
       },
       "show": {
         "id": 22,
         "name": "default",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/22"
       },
       "inPlay": {
         "id": 92,
         "name": "Grade IP1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/92"
       }
     },
     "updatedAt": "2024-04-17T08:31:41.007Z",
@@ -651,19 +651,19 @@
   {
     "id": 379,
     "name": "VolleyLigaen",
-    "universe": "skycity",
+    "universe": "solo",
     "sport": {
       "id": "volleyball",
       "name": "Volleyball",
       "displayOrder": 75,
-      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "url": "http://cf-vandries-sandbox.solohub.com/operator-sports/solo/volleyball",
       "translations": {}
     },
     "platformObject": {
       "id": "02_sr:tournament:1450",
       "name": "VolleyLigaen",
       "externalId": {
-        "instance": "skycity",
+        "instance": "solo",
         "provider": "bet-radar",
         "feedId": "sr:tournament:1450",
         "sportId": "bet-radar"
@@ -673,7 +673,7 @@
       {
         "feed": {
           "provider": "bet-radar",
-          "instance": "skycity"
+          "instance": "solo"
         },
         "event-creation": true,
         "pre-match-pricing": true,
@@ -707,23 +707,23 @@
         "DEN"
       ]
     },
-    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/379",
-    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "url": "http://cf-vandries-sandbox.solohub.com/operator-competitions/solo/379",
+    "eventsUrl": "http://cf-vandries-sandbox.solohub.com/operator-events/solo",
     "grades": {
       "prematch": {
         "id": 89,
         "name": "Grade 1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/89"
       },
       "show": {
         "id": 22,
         "name": "default",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/22"
       },
       "inPlay": {
         "id": 92,
         "name": "Grade IP1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/92"
       }
     },
     "updatedAt": "2024-04-17T08:53:00.825Z",
@@ -742,19 +742,19 @@
   {
     "id": 266,
     "name": "Superliga, Women",
-    "universe": "skycity",
+    "universe": "solo",
     "sport": {
       "id": "volleyball",
       "name": "Volleyball",
       "displayOrder": 75,
-      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "url": "http://cf-vandries-sandbox.solohub.com/operator-sports/solo/volleyball",
       "translations": {}
     },
     "platformObject": {
       "id": "02_sr:tournament:1486",
       "name": "Superliga, Women",
       "externalId": {
-        "instance": "skycity",
+        "instance": "solo",
         "provider": "bet-radar",
         "feedId": "sr:tournament:1486",
         "sportId": "bet-radar"
@@ -764,7 +764,7 @@
       {
         "feed": {
           "provider": "bet-radar",
-          "instance": "skycity"
+          "instance": "solo"
         },
         "event-creation": true,
         "pre-match-pricing": true,
@@ -804,23 +804,23 @@
         "25"
       ]
     },
-    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/266",
-    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "url": "http://cf-vandries-sandbox.solohub.com/operator-competitions/solo/266",
+    "eventsUrl": "http://cf-vandries-sandbox.solohub.com/operator-events/solo",
     "grades": {
       "prematch": {
         "id": 89,
         "name": "Grade 1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/89"
       },
       "show": {
         "id": 22,
         "name": "default",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/22"
       },
       "inPlay": {
         "id": 92,
         "name": "Grade IP1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/92"
       }
     },
     "updatedAt": "2024-04-17T08:50:31.769Z",
@@ -839,19 +839,19 @@
   {
     "id": 175,
     "name": "Volleyball Super League, Women",
-    "universe": "skycity",
+    "universe": "solo",
     "sport": {
       "id": "volleyball",
       "name": "Volleyball",
       "displayOrder": 75,
-      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "url": "http://cf-vandries-sandbox.solohub.com/operator-sports/solo/volleyball",
       "translations": {}
     },
     "platformObject": {
       "id": "02_sr:tournament:27116",
       "name": "Volleyball Super League, Women",
       "externalId": {
-        "instance": "skycity",
+        "instance": "solo",
         "provider": "bet-radar",
         "feedId": "sr:tournament:27116",
         "sportId": "bet-radar"
@@ -861,7 +861,7 @@
       {
         "feed": {
           "provider": "bet-radar",
-          "instance": "skycity"
+          "instance": "solo"
         },
         "event-creation": true,
         "pre-match-pricing": true,
@@ -895,23 +895,23 @@
         "BUL"
       ]
     },
-    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/175",
-    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "url": "http://cf-vandries-sandbox.solohub.com/operator-competitions/solo/175",
+    "eventsUrl": "http://cf-vandries-sandbox.solohub.com/operator-events/solo",
     "grades": {
       "prematch": {
         "id": 89,
         "name": "Grade 1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/89"
       },
       "show": {
         "id": 22,
         "name": "default",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/22"
       },
       "inPlay": {
         "id": 92,
         "name": "Grade IP1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/92"
       }
     },
     "updatedAt": "2024-04-17T07:50:29.584Z",
@@ -930,19 +930,19 @@
   {
     "id": 395,
     "name": "SuperLega",
-    "universe": "skycity",
+    "universe": "solo",
     "sport": {
       "id": "volleyball",
       "name": "Volleyball",
       "displayOrder": 75,
-      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "url": "http://cf-vandries-sandbox.solohub.com/operator-sports/solo/volleyball",
       "translations": {}
     },
     "platformObject": {
       "id": "02_sr:tournament:517",
       "name": "SuperLega",
       "externalId": {
-        "instance": "skycity",
+        "instance": "solo",
         "provider": "bet-radar",
         "feedId": "sr:tournament:517",
         "sportId": "bet-radar"
@@ -952,7 +952,7 @@
       {
         "feed": {
           "provider": "bet-radar",
-          "instance": "skycity"
+          "instance": "solo"
         },
         "event-creation": true,
         "pre-match-pricing": true,
@@ -992,23 +992,23 @@
         "25"
       ]
     },
-    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/395",
-    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "url": "http://cf-vandries-sandbox.solohub.com/operator-competitions/solo/395",
+    "eventsUrl": "http://cf-vandries-sandbox.solohub.com/operator-events/solo",
     "grades": {
       "prematch": {
         "id": 89,
         "name": "Grade 1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/89"
       },
       "show": {
         "id": 22,
         "name": "default",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/22"
       },
       "inPlay": {
         "id": 92,
         "name": "Grade IP1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/92"
       }
     },
     "updatedAt": "2024-04-17T09:41:24.714Z",
@@ -1027,19 +1027,19 @@
   {
     "id": 431,
     "name": "Ligue A",
-    "universe": "skycity",
+    "universe": "solo",
     "sport": {
       "id": "volleyball",
       "name": "Volleyball",
       "displayOrder": 75,
-      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "url": "http://cf-vandries-sandbox.solohub.com/operator-sports/solo/volleyball",
       "translations": {}
     },
     "platformObject": {
       "id": "02_sr:tournament:833",
       "name": "Ligue A",
       "externalId": {
-        "instance": "skycity",
+        "instance": "solo",
         "provider": "bet-radar",
         "feedId": "sr:tournament:833",
         "sportId": "bet-radar"
@@ -1049,7 +1049,7 @@
       {
         "feed": {
           "provider": "bet-radar",
-          "instance": "skycity"
+          "instance": "solo"
         },
         "event-creation": true,
         "pre-match-pricing": true,
@@ -1083,23 +1083,23 @@
         "FRA"
       ]
     },
-    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/431",
-    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "url": "http://cf-vandries-sandbox.solohub.com/operator-competitions/solo/431",
+    "eventsUrl": "http://cf-vandries-sandbox.solohub.com/operator-events/solo",
     "grades": {
       "prematch": {
         "id": 89,
         "name": "Grade 1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/89"
       },
       "show": {
         "id": 22,
         "name": "default",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/22"
       },
       "inPlay": {
         "id": 92,
         "name": "Grade IP1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/92"
       }
     },
     "updatedAt": "2024-04-17T09:43:06.522Z",
@@ -1118,19 +1118,19 @@
   {
     "id": 439,
     "name": "Extraliga, Women",
-    "universe": "skycity",
+    "universe": "solo",
     "sport": {
       "id": "volleyball",
       "name": "Volleyball",
       "displayOrder": 75,
-      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "url": "http://cf-vandries-sandbox.solohub.com/operator-sports/solo/volleyball",
       "translations": {}
     },
     "platformObject": {
       "id": "02_sr:tournament:1408",
       "name": "Extraliga, Women",
       "externalId": {
-        "instance": "skycity",
+        "instance": "solo",
         "provider": "bet-radar",
         "feedId": "sr:tournament:1408",
         "sportId": "bet-radar"
@@ -1140,7 +1140,7 @@
       {
         "feed": {
           "provider": "bet-radar",
-          "instance": "skycity"
+          "instance": "solo"
         },
         "event-creation": true,
         "pre-match-pricing": true,
@@ -1174,23 +1174,23 @@
         "SVK"
       ]
     },
-    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/439",
-    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "url": "http://cf-vandries-sandbox.solohub.com/operator-competitions/solo/439",
+    "eventsUrl": "http://cf-vandries-sandbox.solohub.com/operator-events/solo",
     "grades": {
       "prematch": {
         "id": 89,
         "name": "Grade 1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/89"
       },
       "show": {
         "id": 22,
         "name": "default",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/22"
       },
       "inPlay": {
         "id": 92,
         "name": "Grade IP1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/92"
       }
     },
     "updatedAt": "2024-04-17T09:48:56.540Z",
@@ -1209,19 +1209,19 @@
   {
     "id": 427,
     "name": "Liga Siatkowki",
-    "universe": "skycity",
+    "universe": "solo",
     "sport": {
       "id": "volleyball",
       "name": "Volleyball",
       "displayOrder": 75,
-      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "url": "http://cf-vandries-sandbox.solohub.com/operator-sports/solo/volleyball",
       "translations": {}
     },
     "platformObject": {
       "id": "02_sr:tournament:831",
       "name": "Liga Siatkowki",
       "externalId": {
-        "instance": "skycity",
+        "instance": "solo",
         "provider": "bet-radar",
         "feedId": "sr:tournament:831",
         "sportId": "bet-radar"
@@ -1231,7 +1231,7 @@
       {
         "feed": {
           "provider": "bet-radar",
-          "instance": "skycity"
+          "instance": "solo"
         },
         "event-creation": true,
         "pre-match-pricing": true,
@@ -1265,23 +1265,23 @@
         "POL"
       ]
     },
-    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/427",
-    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "url": "http://cf-vandries-sandbox.solohub.com/operator-competitions/solo/427",
+    "eventsUrl": "http://cf-vandries-sandbox.solohub.com/operator-events/solo",
     "grades": {
       "prematch": {
         "id": 89,
         "name": "Grade 1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/89"
       },
       "show": {
         "id": 22,
         "name": "default",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/22"
       },
       "inPlay": {
         "id": 92,
         "name": "Grade IP1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/92"
       }
     },
     "updatedAt": "2024-04-17T09:41:07.703Z",
@@ -1300,19 +1300,19 @@
   {
     "id": 298,
     "name": "Superliga, Women",
-    "universe": "skycity",
+    "universe": "solo",
     "sport": {
       "id": "volleyball",
       "name": "Volleyball",
       "displayOrder": 75,
-      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "url": "http://cf-vandries-sandbox.solohub.com/operator-sports/solo/volleyball",
       "translations": {}
     },
     "platformObject": {
       "id": "02_sr:tournament:26530",
       "name": "Superliga, Women",
       "externalId": {
-        "instance": "skycity",
+        "instance": "solo",
         "provider": "bet-radar",
         "feedId": "sr:tournament:26530",
         "sportId": "bet-radar"
@@ -1322,7 +1322,7 @@
       {
         "feed": {
           "provider": "bet-radar",
-          "instance": "skycity"
+          "instance": "solo"
         },
         "event-creation": true,
         "pre-match-pricing": true,
@@ -1362,23 +1362,23 @@
         "25"
       ]
     },
-    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/298",
-    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "url": "http://cf-vandries-sandbox.solohub.com/operator-competitions/solo/298",
+    "eventsUrl": "http://cf-vandries-sandbox.solohub.com/operator-events/solo",
     "grades": {
       "prematch": {
         "id": 89,
         "name": "Grade 1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/89"
       },
       "show": {
         "id": 22,
         "name": "default",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/22"
       },
       "inPlay": {
         "id": 92,
         "name": "Grade IP1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/92"
       }
     },
     "updatedAt": "2024-04-17T09:07:37.489Z",
@@ -1397,19 +1397,19 @@
   {
     "id": 389,
     "name": "Extraliga",
-    "universe": "skycity",
+    "universe": "solo",
     "sport": {
       "id": "volleyball",
       "name": "Volleyball",
       "displayOrder": 75,
-      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "url": "http://cf-vandries-sandbox.solohub.com/operator-sports/solo/volleyball",
       "translations": {}
     },
     "platformObject": {
       "id": "02_sr:tournament:1406",
       "name": "Extraliga",
       "externalId": {
-        "instance": "skycity",
+        "instance": "solo",
         "provider": "bet-radar",
         "feedId": "sr:tournament:1406",
         "sportId": "bet-radar"
@@ -1419,7 +1419,7 @@
       {
         "feed": {
           "provider": "bet-radar",
-          "instance": "skycity"
+          "instance": "solo"
         },
         "event-creation": true,
         "pre-match-pricing": true,
@@ -1453,23 +1453,23 @@
         "SVK"
       ]
     },
-    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/389",
-    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "url": "http://cf-vandries-sandbox.solohub.com/operator-competitions/solo/389",
+    "eventsUrl": "http://cf-vandries-sandbox.solohub.com/operator-events/solo",
     "grades": {
       "prematch": {
         "id": 89,
         "name": "Grade 1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/89"
       },
       "show": {
         "id": 22,
         "name": "default",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/22"
       },
       "inPlay": {
         "id": 92,
         "name": "Grade IP1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/92"
       }
     },
     "updatedAt": "2024-04-17T09:06:18.858Z",
@@ -1488,19 +1488,19 @@
   {
     "id": 149,
     "name": "Superliga",
-    "universe": "skycity",
+    "universe": "solo",
     "sport": {
       "id": "volleyball",
       "name": "Volleyball",
       "displayOrder": 75,
-      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "url": "http://cf-vandries-sandbox.solohub.com/operator-sports/solo/volleyball",
       "translations": {}
     },
     "platformObject": {
       "id": "02_sr:tournament:1199",
       "name": "Superliga",
       "externalId": {
-        "instance": "skycity",
+        "instance": "solo",
         "provider": "bet-radar",
         "feedId": "sr:tournament:1199",
         "sportId": "bet-radar"
@@ -1510,7 +1510,7 @@
       {
         "feed": {
           "provider": "bet-radar",
-          "instance": "skycity"
+          "instance": "solo"
         },
         "event-creation": true,
         "pre-match-pricing": true,
@@ -1544,23 +1544,23 @@
         "SRB"
       ]
     },
-    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/149",
-    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "url": "http://cf-vandries-sandbox.solohub.com/operator-competitions/solo/149",
+    "eventsUrl": "http://cf-vandries-sandbox.solohub.com/operator-events/solo",
     "grades": {
       "prematch": {
         "id": 89,
         "name": "Grade 1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/89"
       },
       "show": {
         "id": 22,
         "name": "default",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/22"
       },
       "inPlay": {
         "id": 92,
         "name": "Grade IP1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/92"
       }
     },
     "updatedAt": "2024-04-17T07:46:54.946Z",
@@ -1579,19 +1579,19 @@
   {
     "id": 216,
     "name": "Nationalliga A, Women",
-    "universe": "skycity",
+    "universe": "solo",
     "sport": {
       "id": "volleyball",
       "name": "Volleyball",
       "displayOrder": 75,
-      "url": "http://cf-vandries-sandbox.skycityhub.com/operator-sports/skycity/volleyball",
+      "url": "http://cf-vandries-sandbox.solohub.com/operator-sports/solo/volleyball",
       "translations": {}
     },
     "platformObject": {
       "id": "02_sr:tournament:14480",
       "name": "Nationalliga A, Women",
       "externalId": {
-        "instance": "skycity",
+        "instance": "solo",
         "provider": "bet-radar",
         "feedId": "sr:tournament:14480",
         "sportId": "bet-radar"
@@ -1601,7 +1601,7 @@
       {
         "feed": {
           "provider": "bet-radar",
-          "instance": "skycity"
+          "instance": "solo"
         },
         "event-creation": true,
         "pre-match-pricing": true,
@@ -1641,23 +1641,23 @@
         "25"
       ]
     },
-    "url": "http://cf-vandries-sandbox.skycityhub.com/operator-competitions/skycity/216",
-    "eventsUrl": "http://cf-vandries-sandbox.skycityhub.com/operator-events/skycity",
+    "url": "http://cf-vandries-sandbox.solohub.com/operator-competitions/solo/216",
+    "eventsUrl": "http://cf-vandries-sandbox.solohub.com/operator-events/solo",
     "grades": {
       "prematch": {
         "id": 89,
         "name": "Grade 1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/89"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/89"
       },
       "show": {
         "id": 22,
         "name": "default",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/22"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/22"
       },
       "inPlay": {
         "id": 92,
         "name": "Grade IP1",
-        "url": "http://cf-vandries-sandbox.skycityhub.com/grades/skycity/volleyball/92"
+        "url": "http://cf-vandries-sandbox.solohub.com/grades/solo/volleyball/92"
       }
     },
     "updatedAt": "2024-04-17T09:48:54.323Z",

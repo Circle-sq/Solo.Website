@@ -1,5 +1,5 @@
 import Box from '@mui/material/Box';
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { useAtomValue } from 'jotai';
 
 import type { EventModel } from 'src/appState/models/models/EventModel';

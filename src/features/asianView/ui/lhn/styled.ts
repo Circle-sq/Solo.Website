@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { cssColor, radius } from '@sc-ui/system';
+import { cssColor, radius } from '@solo-ui/system';
 
 export const S_Tabs = styled.div`
     background-color: ${cssColor('--tabs-secondary-bg')};

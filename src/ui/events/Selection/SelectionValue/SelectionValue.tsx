@@ -1,12 +1,12 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { useAtomValue } from 'jotai';
 import isNumber from 'lodash/isNumber';
 import type { RefObject } from 'react';
 import { useMemo } from 'react';
 
-import { isDecimalOddsFormatSelector } from '@sc-account/store/selectors';
-import { LockIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { isDecimalOddsFormatSelector } from '@solo-account/store/selectors';
+import { LockIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { formatDecimalPart, formatNumber } from 'src/utils/format';

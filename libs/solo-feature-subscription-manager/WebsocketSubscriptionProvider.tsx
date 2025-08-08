@@ -6,8 +6,8 @@ import map from 'lodash/map';
 import type { PropsWithChildren } from 'react';
 import { useCallback, useMemo } from 'react';
 
-import { useSubscriptions } from '@sc-data/subscriptions-storage';
-import { useSubscriptionDevTool } from '@sc-devtools/hooks';
+import { useSubscriptions } from '@solo-data/subscriptions-storage';
+import { useSubscriptionDevTool } from '@solo-devtools/hooks';
 
 import { WebsocketNamespace } from 'src/utils/socket-io/types';
 import { validRevision } from 'src/utils/socket-io/utils';

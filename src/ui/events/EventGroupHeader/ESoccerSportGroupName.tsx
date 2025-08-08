@@ -1,7 +1,7 @@
 import { memo } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import { CupIcon } from '@sc-ui/icons/svg';
+import { CupIcon } from '@solo-ui/icons/svg';
 
 import ESoccerIcon from 'src/assets/icons/ESoccerIcon';
 import { SportType } from 'src/common/enums';

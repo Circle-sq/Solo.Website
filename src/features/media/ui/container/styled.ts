@@ -9,7 +9,7 @@ import {
     GreyPalette,
     LightBluePalette,
     cssColor,
-} from '@sc-ui/system';
+} from '@solo-ui/system';
 
 interface TabButtonProps {
     active: boolean;

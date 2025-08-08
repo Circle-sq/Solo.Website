@@ -1,4 +1,4 @@
-import { atomFamilyWithKey } from '@sc-utils/jotai';
+import { atomFamilyWithKey } from '@solo-utils/jotai';
 
 import { subscribeEventEffect, subscribeMarketEffect } from './effects/subscribes';
 import type { EventItem, MarketItem, SelectionItem } from './types';

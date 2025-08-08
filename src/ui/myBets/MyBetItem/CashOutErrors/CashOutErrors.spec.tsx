@@ -1,4 +1,4 @@
-import { renderWithTheme } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithTheme } from '@solo-tests/unit/mocks/renderMocks';
 
 import type { AppState } from 'src/appState/AppState';
 import type { LanguagesState } from 'src/appState/LanguagesState';

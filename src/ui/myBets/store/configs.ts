@@ -1,4 +1,4 @@
-import type { MyBetsInfiniteData } from '@sc-api/bets/types';
+import type { MyBetsInfiniteData } from '@solo-api/bets/types';
 
 import { BetStatus } from 'src/common/enums';
 

@@ -1,4 +1,4 @@
-import { useLazyEffect, useWindowWidth } from '@sc-hooks';
+import { useLazyEffect, useWindowWidth } from '@solo-hooks';
 import { useRecoilValue } from 'recoil';
 
 import { showBackdropSelector } from 'src/ui/betting/store/selectors';

@@ -1,5 +1,5 @@
 {
-  "name": "@sc-ui/beteast/icons",
+  "name": "@solo-ui/beteast/icons",
   "version": "0.0.1",
   "main": "./index.js",
   "types": "./index.d.ts",

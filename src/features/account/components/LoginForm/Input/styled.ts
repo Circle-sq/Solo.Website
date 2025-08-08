@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { GenericColors, GreyPalette, RedPalette } from '@sc-ui/system';
+import { GenericColors, GreyPalette, RedPalette } from '@solo-ui/system';
 
 export const S_LoginFormInput = styled.div`
     display: inline-flex;

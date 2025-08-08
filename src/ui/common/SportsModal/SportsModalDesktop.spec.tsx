@@ -1,7 +1,7 @@
 import { Map as ImmutableMap } from 'immutable';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
-import { store } from '@sc-utils/jotai';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
+import { store } from '@solo-utils/jotai';
 
 import { isSportModalOpenAtom } from 'src/store/common/atoms';
 import { MODAL_ROUTE_NAME } from 'src/utils/constants';

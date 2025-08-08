@@ -1,8 +1,8 @@
 import isString from 'lodash/isString';
 
-import type { UserData } from '@sc-account/types';
-import type { GameId } from '@sc-betslip/api/types/placedBet';
-import { getChannel } from '@sc-betslip/helpers/helpers';
+import type { UserData } from '@solo-account/types';
+import type { GameId } from '@solo-betslip/api/types/placedBet';
+import { getChannel } from '@solo-betslip/helpers/helpers';
 
 import { Currency } from 'src/common/enums';
 import { STORAGE_KEYS } from 'src/utils/constants';

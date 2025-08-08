@@ -1,7 +1,7 @@
 import { useAtomValue } from 'jotai';
 
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
-import { currencySelector } from '@sc-account/store/selectors';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
+import { currencySelector } from '@solo-account/store/selectors';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { getCurrencyTranslations } from 'src/appState/translation-helper';

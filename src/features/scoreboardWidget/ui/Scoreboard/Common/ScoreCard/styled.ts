@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, fontWeight } from '@sc-ui/system';
+import { breakpoints, fontWeight } from '@solo-ui/system';
 
 export const S_ScoreWrapper = styled.div`
     display: flex;

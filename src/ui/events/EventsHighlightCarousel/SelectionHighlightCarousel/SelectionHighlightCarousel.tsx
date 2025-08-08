@@ -1,7 +1,7 @@
 import { useAtomValue } from 'jotai';
 import { observer } from 'mobx-react-lite';
 
-import { isFractionalOddsFormatSelector } from '@sc-account/store/selectors';
+import { isFractionalOddsFormatSelector } from '@solo-account/store/selectors';
 
 import IdentifierLabel from 'src/ui/events/Selection/IdentifierLabel/IdentifierLabel';
 import SelectionAction from 'src/ui/events/Selection/SelectionAction/SelectionAction';

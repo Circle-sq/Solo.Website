@@ -1,4 +1,4 @@
-import { BuildABetIcon } from '@sc-buildABet/ui';
+import { BuildABetIcon } from '@solo-buildABet/ui';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 

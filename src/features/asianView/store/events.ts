@@ -3,11 +3,11 @@ import delay from 'lodash/delay';
 import map from 'lodash/map';
 import ms from 'ms';
 
-import { EventsService } from '@sc-api/events/services';
-import { getCompetitionTerm, getSportTerm } from '@sc-api/helpers/params';
-import { defaultTerms, EVENTS_PER_PAGE, sortParams } from '@sc-asianView/api/events/configs';
-import type { SearchEventsPageData, SearchEventsResponse } from '@sc-asianView/api/events/types';
-import { atomWithInfiniteQueryCbk, jotaiCallback, store } from '@sc-utils/jotai';
+import { EventsService } from '@solo-api/events/services';
+import { getCompetitionTerm, getSportTerm } from '@solo-api/helpers/params';
+import { defaultTerms, EVENTS_PER_PAGE, sortParams } from '@solo-asianView/api/events/configs';
+import type { SearchEventsPageData, SearchEventsResponse } from '@solo-asianView/api/events/types';
+import { atomWithInfiniteQueryCbk, jotaiCallback, store } from '@solo-utils/jotai';
 
 import { resetEventItemWithDescendantsTask, setEntitiesTask } from 'src/store/events/tasks/entities';
 

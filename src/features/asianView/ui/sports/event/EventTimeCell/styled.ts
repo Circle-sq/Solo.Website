@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, GenericColors } from '@sc-ui/system';
+import { fontWeight, GenericColors } from '@solo-ui/system';
 
 import { S_CommonCell } from '../styled';
 

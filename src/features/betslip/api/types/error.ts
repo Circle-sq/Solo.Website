@@ -1,4 +1,9 @@
-import type { BetslipErrorCode, ErrorResource, MinMaxErrorCode, XyzProviderErrorCode } from 'src/common/enums/error';
+import type {
+    BetslipErrorCode,
+    ErrorResource,
+    MinMaxErrorCode,
+    SportsbookProviderErrorCode,
+} from 'src/common/enums/error';
 import type { ErrorDetails, ErrorLeg } from 'src/common/types/error';
 
 export interface BetError<T = ErrorDetails> {
@@ -33,8 +38,8 @@ export type OfferErrors = {
     [key in OfferErrorType]: MessageParams;
 };
 
-export type XyzErrors = {
-    [key in XyzProviderErrorCode]: MessageParams;
+export type SportsbookErrors = {
+    [key in SportsbookProviderErrorCode]: MessageParams;
 };
 
 export interface MessageParams {

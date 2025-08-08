@@ -1,4 +1,4 @@
-import { filterHostPortalsAPI, filterHostPortalsENV } from '@sc-webapi/utils';
+import { filterHostPortalsAPI, filterHostPortalsENV } from '@solo-webapi/utils';
 
 import type { ConfigServer } from './ConfigServer';
 import type { PlatformApi } from './realtime-server/PlatformApi/PlatformApi';
@@ -20,7 +20,7 @@ afterAll(() => {
 
 const platformApi = {
     fetchPost: ({ url, postBody }: { url: string; postBody: string[] }) => {
-        if (url === 'api/betting-configs/skycity/domains/whitelisted' && postBody.includes('foo')) {
+        if (url === 'api/betting-configs/solo/domains/whitelisted' && postBody.includes('foo')) {
             return { status: 200, bodyJson: { foo: true } };
         } else {
             return { status: 200, bodyJson: { [postBody[0]]: false } };
@@ -29,7 +29,7 @@ const platformApi = {
 } as unknown as PlatformApi;
 
 const config = {
-    universe: 'skycity',
+    universe: 'solo',
     API_URL: 'api',
 } as ConfigServer;
 

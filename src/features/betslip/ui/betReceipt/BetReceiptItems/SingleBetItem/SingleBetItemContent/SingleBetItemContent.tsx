@@ -1,5 +1,5 @@
-import { SingleBuildABetContent } from '@sc-buildABet/ui';
-import { isBuildABetLegType } from '@sc-buildABet/utils/typeGuards';
+import { SingleBuildABetContent } from '@solo-buildABet/ui';
+import { isBuildABetLegType } from '@solo-buildABet/utils/typeGuards';
 
 import type { PlacedBetLeg, PlacedBuildABetLeg, PlacedCrossBetLeg } from '../../../../../api/types/placedBet';
 import { isCrossBetLegType } from '../../../../../typeGuards/leg';

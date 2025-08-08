@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { Typography } from '@mui/material';
 
-import { cssColor, fontWeight, GenericColors } from '@sc-ui/system';
+import { cssColor, fontWeight, GenericColors } from '@solo-ui/system';
 
 import { SPORT_ROW_HEIGHT } from './utils';
 

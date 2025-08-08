@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, cssColor } from '@sc-ui/system';
+import { fontWeight, cssColor } from '@solo-ui/system';
 
 const S_BaseName = styled.span`
     flex: 1 1 auto;

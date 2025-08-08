@@ -1,6 +1,6 @@
 import { atom } from 'recoil';
 
-import type { Problem } from '@sc-betslip/api/types/problem';
+import type { Problem } from '@solo-betslip/api/types/problem';
 
 import type { SportType } from 'src/common/enums';
 import type { EventItem } from 'src/common/types/event';

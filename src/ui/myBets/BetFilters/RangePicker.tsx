@@ -1,4 +1,4 @@
-import { InfoBlueIcon } from '@sc-ui/icons/svg';
+import { InfoBlueIcon } from '@solo-ui/icons/svg';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 import type { DateRange, RangeType } from 'src/ui/myBets/store/types';

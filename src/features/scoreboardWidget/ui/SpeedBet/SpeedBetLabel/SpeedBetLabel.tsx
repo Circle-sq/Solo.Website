@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 

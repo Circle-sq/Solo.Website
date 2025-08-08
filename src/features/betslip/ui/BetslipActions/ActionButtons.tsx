@@ -2,9 +2,9 @@ import { useAtomValue } from 'jotai';
 import { useEffect, useRef, useState } from 'react';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
-import { BinIcon, GearIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
+import { BinIcon, GearIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import type { TimeOut } from 'src/common/types/main';
 import { I18n } from 'src/ui/common/Language/I18n';

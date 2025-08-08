@@ -2,7 +2,7 @@
 import includes from 'lodash/includes';
 import type { ReactElement } from 'react';
 
-import { CrossBetIcon, LiveSportsIcon, SportsIcon } from '@sc-ui/icons/svg';
+import { CrossBetIcon, LiveSportsIcon, SportsIcon } from '@solo-ui/icons/svg';
 
 import { RouteName, SportType } from 'src/common/enums';
 import { I18n } from 'src/ui/common/Language/I18n';

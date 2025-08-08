@@ -1,6 +1,6 @@
 import { fireEvent } from '@testing-library/react';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import { mockUseAppStateContext } from 'src/ui/common/SubNavigation/tests/test-helper';
 

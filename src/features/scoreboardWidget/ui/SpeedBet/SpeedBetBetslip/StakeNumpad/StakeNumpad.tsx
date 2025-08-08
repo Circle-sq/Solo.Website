@@ -1,4 +1,4 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import get from 'lodash/get';
 import { useRef, useEffect } from 'react';
 import { useRecoilValue } from 'recoil';

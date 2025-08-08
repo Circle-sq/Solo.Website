@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { LightBluePalette } from '@sc-ui/system';
+import { LightBluePalette } from '@solo-ui/system';
 
 import type { Testable } from 'src/utils/Testable/types';
 

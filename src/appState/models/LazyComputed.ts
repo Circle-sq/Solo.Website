@@ -2,7 +2,7 @@ import type * as t from 'io-ts';
 import type { IComputedValue } from 'mobx';
 import { computed } from 'mobx';
 
-import { buildValidator } from '@sc-webapi/mobx-utils/buildValidator';
+import { buildValidator } from '@solo-webapi/mobx-utils/buildValidator';
 
 type GetterFnType<A> = (data: unknown) => A;
 

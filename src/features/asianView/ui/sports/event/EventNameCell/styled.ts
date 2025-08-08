@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, fontWeight, Gradients, GreyPalette } from '@sc-ui/system';
+import { breakpoints, fontWeight, Gradients, GreyPalette } from '@solo-ui/system';
 
 import TeamImage from 'src/ui/common/TeamImage/TeamImage';
 import TooltipTruncatedText from 'src/ui/common/TooltipTruncatedText/TooltipTruncatedText';

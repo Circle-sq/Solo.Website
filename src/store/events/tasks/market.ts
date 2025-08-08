@@ -1,8 +1,8 @@
 import { getRecoil, setRecoil } from 'recoil-nexus';
 
-import { updateMainLineMarketIdTask } from '@sc-asianView/store/tasks/mainLine';
-import { syncSuspendedBetslipProblemsTransaction } from '@sc-betslip/store/transactions/problems';
-import type { CallbackParams } from '@sc-utils/jotai';
+import { updateMainLineMarketIdTask } from '@solo-asianView/store/tasks/mainLine';
+import { syncSuspendedBetslipProblemsTransaction } from '@solo-betslip/store/transactions/problems';
+import type { CallbackParams } from '@solo-utils/jotai';
 
 import { marketItemAtomFamily } from '../entities';
 

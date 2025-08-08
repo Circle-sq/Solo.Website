@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, GenericColors, GreyPalette, LightBluePalette, DarkBluePalette, Opacities } from '@sc-ui/system';
+import { breakpoints, GenericColors, GreyPalette, LightBluePalette, DarkBluePalette, Opacities } from '@solo-ui/system';
 
 import { Image, SlideAnchor } from '../../content/Banners/components/styled';
 

@@ -1,5 +1,5 @@
 import Box from '@mui/material/Box';
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import get from 'lodash/get';
 import isNil from 'lodash/isNil';
 import isString from 'lodash/isString';
@@ -12,8 +12,8 @@ import { FreeMode, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import type { Swiper as SwiperType } from 'swiper/types';
 
-import { LeftArrowIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { LeftArrowIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import {

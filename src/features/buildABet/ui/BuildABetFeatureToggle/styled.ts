@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, breakpoints, cssColor } from '@sc-ui/system';
+import { fontWeight, breakpoints, cssColor } from '@solo-ui/system';
 
 export const S_BuildABetFeatureToggle = styled.div<{ checked: boolean }>`
     padding: 15px 12px;

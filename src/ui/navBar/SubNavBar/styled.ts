@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { cssColor, RedPalette } from '@sc-ui/system';
+import { cssColor, RedPalette } from '@solo-ui/system';
 
 export const S_NavigationBar = styled.div`
     display: flex;

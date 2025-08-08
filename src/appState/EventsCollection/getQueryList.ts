@@ -46,7 +46,7 @@ export const getQueryList = (collectionId: string): EventsCollectionQuery => {
 
     if (collectionId.includes(EVENTS_COLLECTIONS.highlightCarousel)) {
         return {
-            'tags.skycity-events': { from: 1, to: 20 },
+            'tags.solo-events': { from: 1, to: 20 },
             perPage: 20,
             sort: ['timeSettings.startTime'],
             state: 'open',

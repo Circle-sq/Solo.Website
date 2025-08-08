@@ -1,7 +1,7 @@
 import { useAtomValue } from 'jotai';
 import { useCallback } from 'react';
 
-import { MarketTypeGeneric } from '@sc-asianView/constants';
+import { MarketTypeGeneric } from '@solo-asianView/constants';
 
 import {
     selectionActiveSelectorFamily,

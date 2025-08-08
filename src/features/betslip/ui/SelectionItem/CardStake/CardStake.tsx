@@ -2,8 +2,8 @@ import { observer } from 'mobx-react-lite';
 import type { MouseEvent } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import { LockIcon } from '@sc-ui/icons/svg';
-import { DarkBluePalette } from '@sc-ui/system';
+import { LockIcon } from '@solo-ui/icons/svg';
+import { DarkBluePalette } from '@solo-ui/system';
 
 import type { Leg } from '../../../api/types/leg';
 import useGetOddsPrice from '../../../hooks/useGetOddsPrice';

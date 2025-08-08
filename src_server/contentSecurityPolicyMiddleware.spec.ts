@@ -3,10 +3,10 @@ import toLower from 'lodash/toLower';
 import request from 'supertest';
 import { describe, it, vi } from 'vitest';
 
-import { server } from '@sc-tests/unit/mocks/server.setup';
-import type { PlatformIdTypes } from '@sc-webapi/enums';
-import { Endpoints, ResponseHeaders } from '@sc-webapi/enums';
-import { assignAppEndpoints } from '@sc-webapi/handlers/entryPointRouter';
+import { server } from '@solo-tests/unit/mocks/server.setup';
+import type { PlatformIdTypes } from '@solo-webapi/enums';
+import { Endpoints, ResponseHeaders } from '@solo-webapi/enums';
+import { assignAppEndpoints } from '@solo-webapi/handlers/entryPointRouter';
 
 import type { ConfigServer } from './ConfigServer';
 import { CSP_DEFAULT_POLICY } from './handlers/handlerDynamicContent/contentSecurityPolicy';
@@ -33,19 +33,19 @@ afterAll(() => {
 
 const platformApi = {
     fetchPost: ({ url, postBody }: { url: string; postBody: string[] }) => {
-        if (url === 'api/betting-configs/skycity/domains/whitelisted') {
+        if (url === 'api/betting-configs/solo/domains/whitelisted') {
             return {
                 status: 200,
-                bodyJson: { [supermarketDomain]: postBody[1] === 'foo', [xyzDomain]: postBody[0] === 'bar' },
+                bodyJson: { [supermarketDomain]: postBody[1] === 'foo', [sportsbookDomain]: postBody[0] === 'bar' },
             };
         } else {
-            return { status: 200, bodyJson: { [supermarketDomain]: false, [xyzDomain]: false } };
+            return { status: 200, bodyJson: { [supermarketDomain]: false, [sportsbookDomain]: false } };
         }
     },
 } as unknown as PlatformApi;
 
 const config = {
-    universe: 'skycity',
+    universe: 'solo',
     API_URL: 'api',
 } as ConfigServer;
 
@@ -66,16 +66,16 @@ const appBuilder = (env: NodeJS.ProcessEnv) => {
 };
 
 const supermarketDomain = 'foo';
-const xyzDomain = 'bar';
-const validPayload = [`parentReferer=https://${supermarketDomain}`, `referer=https://${xyzDomain}`].join('&');
+const sportsbookDomain = 'bar';
+const validPayload = [`parentReferer=https://${supermarketDomain}`, `referer=https://${sportsbookDomain}`].join('&');
 const invalidPayload = [`parentReferer=https://${supermarketDomain}`, `referer=https://unknown.host`].join('&');
-const allowedHosts = `${supermarketDomain} ${xyzDomain}`;
+const allowedHosts = `${supermarketDomain} ${sportsbookDomain}`;
 
 describe('Content-Security-Policy', () => {
     const emptyEnv = {} as NodeJS.ProcessEnv;
 
     it('should set Content-Security-Policy with "parent" and "grandparent"', async () => {
-        const response = await request(appBuilder(emptyEnv)).post(Endpoints.xyzLogin).send(validPayload);
+        const response = await request(appBuilder(emptyEnv)).post(Endpoints.SportsbookLogin).send(validPayload);
 
         expect(response.status).toBe(200);
         expect(response.headers[toLower(ResponseHeaders.ContentSecurityPolicy)]).toEqual(
@@ -84,7 +84,7 @@ describe('Content-Security-Policy', () => {
     });
 
     it('should set Content-Security-Policy with valid domain', async () => {
-        const response = await request(appBuilder(emptyEnv)).post(Endpoints.xyzLogin).send(invalidPayload);
+        const response = await request(appBuilder(emptyEnv)).post(Endpoints.SportsbookLogin).send(invalidPayload);
 
         expect(response.status).toBe(200);
         expect(response.headers[toLower(ResponseHeaders.ContentSecurityPolicy)]).toEqual(
@@ -94,12 +94,12 @@ describe('Content-Security-Policy', () => {
 
     it('should set Content-Security-Policy with "parent"', async () => {
         const response = await request(appBuilder(emptyEnv))
-            .post(Endpoints.comtradeLogin)
-            .send(`referer=https://${xyzDomain}`);
+            .post(Endpoints.SportsbookLogin)
+            .send(`referer=https://${sportsbookDomain}`);
 
         expect(response.status).toBe(200);
         expect(response.headers[toLower(ResponseHeaders.ContentSecurityPolicy)]).toEqual(
-            `${CSP_DEFAULT_POLICY} ${xyzDomain}`,
+            `${CSP_DEFAULT_POLICY} ${sportsbookDomain}`,
         );
     });
 

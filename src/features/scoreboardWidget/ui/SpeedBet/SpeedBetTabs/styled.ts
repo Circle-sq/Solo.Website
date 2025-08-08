@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, fontWeight, GenericColors, GreyPalette, LightBluePalette, Opacities } from '@sc-ui/system';
+import { breakpoints, fontWeight, GenericColors, GreyPalette, LightBluePalette, Opacities } from '@solo-ui/system';
 
 export const S_Tabs = styled.ul`
     list-style: none;

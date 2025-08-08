@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { GreyPalette, fontWeight,radius } from '@sc-ui/system';
+import { GreyPalette, fontWeight,radius } from '@solo-ui/system';
 
 export const Button = styled.div`
     display: inline-flex;

@@ -1,8 +1,8 @@
 import type { ReactNode, RefObject } from 'react';
 import { useCallback, useState, createRef, useEffect } from 'react';
 
-import { DownArrowIcon, UpArrowIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { DownArrowIcon, UpArrowIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { useOnClickOutside } from 'src/appState/customHooks';
 

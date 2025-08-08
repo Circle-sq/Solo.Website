@@ -1,7 +1,7 @@
 import { useAtomValue } from 'jotai';
 import { useEffect, useRef } from 'react';
 
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
 
 import { socketIoClientGeneral } from 'src/utils/socket-io/clients';
 import type SocketIoClient from 'src/utils/socket-io/SocketIoClient';

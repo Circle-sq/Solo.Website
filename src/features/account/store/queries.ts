@@ -1,7 +1,7 @@
 import { atomWithMutation, atomWithQuery } from 'jotai-tanstack-query';
 import ms from 'ms';
 
-import { atomWithQueryCbk, store } from '@sc-utils/jotai';
+import { atomWithQueryCbk, store } from '@solo-utils/jotai';
 
 import isLocal from 'src/utils/isLocal';
 

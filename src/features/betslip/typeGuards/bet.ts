@@ -2,7 +2,7 @@ import get from 'lodash/get';
 import includes from 'lodash/includes';
 import some from 'lodash/some';
 
-import { isBuildABetLegType } from '@sc-buildABet/utils/typeGuards';
+import { isBuildABetLegType } from '@solo-buildABet/utils/typeGuards';
 
 import { CastBetType } from 'src/common/enums';
 

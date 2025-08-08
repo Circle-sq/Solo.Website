@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { getButtonSize } from 'src/ui/common/Button/helpers';
 import type { ButtonUniversalType } from './types';
-import { DarkBluePalette, fontWeight, GreyPalette } from '@sc-ui/system';
+import { DarkBluePalette, fontWeight, GreyPalette } from '@solo-ui/system';
 
 export const NewLinkWrapper = styled.a<ButtonUniversalType>`
     ${({ size, isButton = false }): string => {

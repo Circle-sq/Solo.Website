@@ -1,7 +1,7 @@
 import map from 'lodash/map';
 
-import MockComponent from '@sc-tests/unit/mocks/MockComponent';
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import MockComponent from '@solo-tests/unit/mocks/MockComponent';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import { SportType } from 'src/common/enums';
 import { MARKET_TEMPLATE, MARKET_TEMPLATE_GROUP } from 'src/utils/constants';

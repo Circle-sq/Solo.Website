@@ -1,9 +1,9 @@
 import { type Request, type Response } from 'express';
 import type { Mock } from 'vitest';
 
-import type { ConfigServer } from '@sc-webapi/ConfigServer';
-import { AppLocals, ResponseHeaders } from '@sc-webapi/enums';
-import type { PlatformApi } from '@sc-webapi/realtime-server/PlatformApi/PlatformApi';
+import type { ConfigServer } from '@solo-webapi/ConfigServer';
+import { AppLocals, ResponseHeaders } from '@solo-webapi/enums';
+import type { PlatformApi } from '@solo-webapi/realtime-server/PlatformApi/PlatformApi';
 
 import * as CSP from './contentSecurityPolicy';
 import {
@@ -31,9 +31,9 @@ describe('PortalBodyParser', () => {
     });
 
     it('get language', () => {
-        expect(sanitizePortalLanguage('')).toBe('ko-KR');
-        expect(sanitizePortalLanguage(undefined)).toBe('ko-KR');
-        expect(sanitizePortalLanguage('ro')).toBe('ko-KR');
+        expect(sanitizePortalLanguage('')).toBe('en-US');
+        expect(sanitizePortalLanguage(undefined)).toBe('en-US');
+        expect(sanitizePortalLanguage('ro')).toBe('en-US');
         expect(sanitizePortalLanguage('ko')).toBe('ko-KR');
         expect(sanitizePortalLanguage('en')).toBe('en-US');
         expect(sanitizePortalLanguage('en-US')).toBe('en-US');
@@ -41,7 +41,7 @@ describe('PortalBodyParser', () => {
     });
 
     it('should extract the payload (no data)', () => {
-        const language = 'ko-KR';
+        const language = 'en-US';
         expect(extractPayload({} as Request)).toEqual({ logintoken: '', loginjwt: '', language });
         expect(extractPayload({ portalBody: {} } as Request)).toEqual({ logintoken: '', loginjwt: '', language });
     });
@@ -68,7 +68,7 @@ describe('PortalBodyParser', () => {
         expect(extractPayload({ portalBody: { logintoken: 'foo', loginjwt: 'bar' } } as Request)).toEqual({
             logintoken: 'foo',
             loginjwt: 'bar',
-            language: 'ko-KR',
+            language: 'en-US',
         });
         expect(consoleSpy).toHaveBeenCalledWith(
             expect.any(String),
@@ -118,7 +118,7 @@ describe('PortalBodyParser', () => {
         const req = {
             method: 'GET',
             headers: {
-                cookie: `someCookie=someValue; ${CSP.COOKIE_NAME}=stage.xyzblue.com%2Cwbc-stg.xyzwhite.com`,
+                cookie: `someCookie=someValue; ${CSP.COOKIE_NAME}=stage.spotsbookblue.com%2Cstage.spotsbookwhite.com`,
             },
         } as Request;
         const res = { locals: { [AppLocals.X_ANCESTOR_ORIGINS]: [] } } as unknown as Response;
@@ -127,8 +127,8 @@ describe('PortalBodyParser', () => {
         portalBodyParser(req, res, next);
 
         expect(res.locals[AppLocals.X_ANCESTOR_ORIGINS]).toEqual([
-            'https://stage.xyzblue.com/',
-            'https://wbc-stg.xyzwhite.com/',
+            'https://stage.spotsbookblue.com/',
+            'https://stage.spotsbookwhite.com/',
         ]);
         expect(next).toHaveBeenCalledTimes(1);
     });

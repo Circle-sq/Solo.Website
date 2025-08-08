@@ -2,9 +2,9 @@ import { atom } from 'jotai';
 import { atomFamily, atomWithReset } from 'jotai/utils';
 import { atomWithMutation } from 'jotai-tanstack-query';
 
-import { EventsService } from '@sc-api/events/services';
-import { queryKeys } from '@sc-api/queryKeys';
-import { jotaiCallback } from '@sc-utils/jotai';
+import { EventsService } from '@solo-api/events/services';
+import { queryKeys } from '@solo-api/queryKeys';
+import { jotaiCallback } from '@solo-utils/jotai';
 
 export const eventsMarketsCountAtom = atomWithReset<Record<number, number>>({});
 

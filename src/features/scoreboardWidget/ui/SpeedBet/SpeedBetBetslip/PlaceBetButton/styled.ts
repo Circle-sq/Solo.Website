@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { LightBluePalette, fontWeight, breakpoints, cssColor } from '@sc-ui/system';
+import { LightBluePalette, fontWeight, breakpoints, cssColor } from '@solo-ui/system';
 
 export const S_PlaceBetButton = styled.div<{ disabled?: boolean | undefined; isLoading?: boolean | undefined }>`
     background: ${cssColor('--speedbet-confirm-button-bg')};

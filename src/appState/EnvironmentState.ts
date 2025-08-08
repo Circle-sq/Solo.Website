@@ -1,6 +1,6 @@
 import { computed, observable, makeObservable } from 'mobx';
 
-import { BeteastTheme } from '@sc-ui/system';
+import { BeteastTheme } from '@solo-ui/system';
 
 import { SPORT_REMAPPING as SPORT_REMAPPING_DEFAULT } from 'src/config/config';
 

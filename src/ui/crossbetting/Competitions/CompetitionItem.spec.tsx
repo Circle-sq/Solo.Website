@@ -1,8 +1,8 @@
 import type { PropsWithChildren } from 'react';
 
-import { appStateContextMock } from '@sc-tests/unit/mocks/contexts/appStateContextMock';
-import { eventsSortContextMock } from '@sc-tests/unit/mocks/contexts/eventsSortContextMock';
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { appStateContextMock } from '@solo-tests/unit/mocks/contexts/appStateContextMock';
+import { eventsSortContextMock } from '@solo-tests/unit/mocks/contexts/eventsSortContextMock';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import type { AppState } from 'src/appState/AppState';
 import type { EventModel } from 'src/appState/models/models/EventModel';

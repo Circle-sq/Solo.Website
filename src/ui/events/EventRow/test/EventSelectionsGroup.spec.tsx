@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import EmptySelection from 'src/ui/events/Selection/EmptySelection';
 import { formatNumber } from 'src/utils/format';

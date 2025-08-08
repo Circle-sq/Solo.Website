@@ -2,7 +2,7 @@ import isEmpty from 'lodash/isEmpty';
 import isNull from 'lodash/isNull';
 import { useEffect, useState } from 'react';
 
-import { useBannersDevTool } from '@sc-devtools/hooks';
+import { useBannersDevTool } from '@solo-devtools/hooks';
 
 import type { Notification as Banner } from 'src/appState/redux/types';
 import useTimer, { TimerStatus } from 'src/utils/hooks/useTimer';

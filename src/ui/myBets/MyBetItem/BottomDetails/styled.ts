@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { cssColor, fontWeight } from '@sc-ui/system';
+import { cssColor, fontWeight } from '@solo-ui/system';
 
 export const S_BetBottomContainer = styled.div`
     border-top: 1px solid ${cssColor('--card-border')};

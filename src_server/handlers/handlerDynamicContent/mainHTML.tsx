@@ -1,7 +1,7 @@
 import fs from 'fs';
 
-import { isProduction } from '@sc-webapi/infra.server';
-import { GTMContainer, GtmNoJsSupportInBrowser } from '@sc-webapi/metrics/gtm';
+import { isProduction } from '@solo-webapi/infra.server';
+import { GTMContainer, GtmNoJsSupportInBrowser } from '@solo-webapi/metrics/gtm';
 
 import type { RenderMainHtmlParamsType } from './RenderMainHtmlParamsType';
 

@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react';
 import type { ReactNode } from 'react';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import { SportType } from 'src/common/enums';
 

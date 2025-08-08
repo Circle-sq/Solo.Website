@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import { renderWithTheme } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithTheme } from '@solo-tests/unit/mocks/renderMocks';
 
 import Panel from './Panel';
 

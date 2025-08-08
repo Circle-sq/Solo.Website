@@ -1,6 +1,6 @@
 import get from 'lodash/get';
 
-import { isCrossBetLegType, isStandardBetLegType } from '@sc-betslip/typeGuards/leg';
+import { isCrossBetLegType, isStandardBetLegType } from '@solo-betslip/typeGuards/leg';
 
 import type { MyBet, MyCrossBetLeg, MyStandardBetLeg } from 'src/common/types/myBet';
 

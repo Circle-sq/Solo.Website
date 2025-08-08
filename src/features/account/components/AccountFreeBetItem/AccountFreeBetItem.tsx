@@ -1,8 +1,8 @@
 import { format } from 'date-fns';
 import { useAtomValue } from 'jotai';
 
-import { currencySelector } from '@sc-account/store/selectors';
-import type { FreebetBonusCredit } from '@sc-account/types';
+import { currencySelector } from '@solo-account/store/selectors';
+import type { FreebetBonusCredit } from '@solo-account/types';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { I18n } from 'src/ui/common/Language/I18n';

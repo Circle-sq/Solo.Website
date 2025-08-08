@@ -1,8 +1,8 @@
 import type { MouseEvent, PropsWithChildren, ReactNode, LegacyRef } from 'react';
 import { createRef } from 'react';
 
-import { CloseIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { CloseIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { useOnClickOutside } from 'src/appState/customHooks';
 

@@ -2,7 +2,7 @@ import fs from 'fs';
 import v8 from 'v8';
 
 import { format } from 'date-fns';
-import { isProduction } from '@sc-webapi/infra.server';
+import { isProduction } from '@solo-webapi/infra.server';
 
 function createHeapSnapshot(src: string) {
     const snapshotStream = v8.getHeapSnapshot();

@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { Modal } from '@mui/base/Modal';
 import { styled as muiStyled } from '@mui/system';
 
-import { DarkBluePalette, GreyPalette, Opacities } from '@sc-ui/system';
+import { DarkBluePalette, GreyPalette, Opacities } from '@solo-ui/system';
 
 import Backdrop from 'src/ui/common/Backdrop/Backdrop';
 import Link from 'src/utils/Router/NewLink';

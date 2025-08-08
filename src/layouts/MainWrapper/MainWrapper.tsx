@@ -1,19 +1,19 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { useAtomValue, useSetAtom } from 'jotai';
 import { observer } from 'mobx-react-lite';
 import { useEffect } from 'react';
 import { useRecoilCallback } from 'recoil';
 
-import { useWalletSubscribe } from '@sc-account/hooks/useWalletSubscribe';
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
-import { freebetCreditsAtomWithQuery } from '@sc-account/store/queries';
-import { useGetBettingConfigsApi } from '@sc-api/configs/queries';
-import { useGetCategoriesIconsApi } from '@sc-api/icons/queries';
-import { iconCategories } from '@sc-asianView/configs';
-import { usePossibleBets } from '@sc-betslip/api/possibleBets/queries';
-import { PossibleBetsTriggeredBy } from '@sc-betslip/enums';
-import useReferredBetslip from '@sc-betslip/hooks/offer/useReferredBetslip';
-import useReferredBetsSubscribe from '@sc-betslip/hooks/offer/useReferredBetsSubscribe';
+import { useWalletSubscribe } from '@solo-account/hooks/useWalletSubscribe';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
+import { freebetCreditsAtomWithQuery } from '@solo-account/store/queries';
+import { useGetBettingConfigsApi } from '@solo-api/configs/queries';
+import { useGetCategoriesIconsApi } from '@solo-api/icons/queries';
+import { iconCategories } from '@solo-asianView/configs';
+import { usePossibleBets } from '@solo-betslip/api/possibleBets/queries';
+import { PossibleBetsTriggeredBy } from '@solo-betslip/enums';
+import useReferredBetslip from '@solo-betslip/hooks/offer/useReferredBetslip';
+import useReferredBetsSubscribe from '@solo-betslip/hooks/offer/useReferredBetsSubscribe';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { RouteName } from 'src/common/enums';

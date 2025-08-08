@@ -2,16 +2,16 @@ import userEvent from '@testing-library/user-event';
 import map from 'lodash/map';
 import type { PropsWithChildren } from 'react';
 
-import MockComponent from '@sc-tests/unit/mocks/MockComponent';
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
-import { fontWeight } from '@sc-ui/system';
+import MockComponent from '@solo-tests/unit/mocks/MockComponent';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
+import { fontWeight } from '@solo-ui/system';
 
 import SimpleDisplayTemplate, { type Props } from './SimpleDisplayTemplate';
 import markets from './test/markets.json';
 import newMarkets from './test/marketsNew.json';
 
 // we don't need to test the actual functionality of the components, just that they render correctly
-vi.mock('@sc-features/subscription-manager/SubscribeElement', () => ({
+vi.mock('@solo-features/subscription-manager/SubscribeElement', () => ({
     SubscribeElement: ({ children }: PropsWithChildren) => children,
 }));
 

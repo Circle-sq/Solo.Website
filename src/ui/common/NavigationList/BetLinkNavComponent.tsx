@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 
-import { GolfIcon } from '@sc-ui/icons/svg';
+import { GolfIcon } from '@solo-ui/icons/svg';
 
 import { S_LinkLabel, NavigationLink } from './styled';
 

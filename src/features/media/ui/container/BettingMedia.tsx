@@ -1,5 +1,5 @@
 import Box from '@mui/material/Box';
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { useAtomValue } from 'jotai';
 import find from 'lodash/find';
 import get from 'lodash/get';
@@ -10,8 +10,8 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useRecoilState } from 'recoil';
 
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
-import { eventMediaAtom } from '@sc-media/store/atoms';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
+import { eventMediaAtom } from '@solo-media/store/atoms';
 import {
     DownArrowIcon,
     FootballFieldActiveIcon,
@@ -19,8 +19,8 @@ import {
     PlayActiveIcon,
     PlayOutlineIcon,
     UpArrowIcon,
-} from '@sc-ui/icons/svg';
-import { cssColor, DarkBluePalette } from '@sc-ui/system';
+} from '@solo-ui/icons/svg';
+import { cssColor, DarkBluePalette } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { RouteName } from 'src/common/enums';

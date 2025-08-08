@@ -1,7 +1,7 @@
 import { useRecoilValue } from 'recoil';
 
-import { possibleBetsTriggersAtom } from '@sc-betslip/store/atoms/betslip';
-import { betslipBetsCounterSelector } from '@sc-betslip/store/selectors/betslipBets';
+import { possibleBetsTriggersAtom } from '@solo-betslip/store/atoms/betslip';
+import { betslipBetsCounterSelector } from '@solo-betslip/store/selectors/betslipBets';
 
 export const useIsInitializing = () => {
     const betsCount = useRecoilValue(betslipBetsCounterSelector);

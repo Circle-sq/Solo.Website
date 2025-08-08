@@ -1,5 +1,5 @@
-import CheckboxCheckedIcon from '@sc-asianView/icons/CheckboxCheckedIcon';
-import CheckboxUncheckedIcon from '@sc-asianView/icons/CheckboxUncheckedIcon';
+import CheckboxCheckedIcon from '@solo-asianView/icons/CheckboxCheckedIcon';
+import CheckboxUncheckedIcon from '@solo-asianView/icons/CheckboxUncheckedIcon';
 
 import { S_CompetitionItem } from '../styled';
 

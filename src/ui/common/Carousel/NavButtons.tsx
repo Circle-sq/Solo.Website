@@ -1,5 +1,5 @@
-import { LeftArrowIcon, RightArrowIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { LeftArrowIcon, RightArrowIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { S_NavigationButton } from './styled';
 import type { ArrowSize } from './types';

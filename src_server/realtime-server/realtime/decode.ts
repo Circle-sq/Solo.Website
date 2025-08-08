@@ -1,6 +1,6 @@
 import * as t from 'io-ts';
 
-import { buildValidator } from '@sc-webapi/mobx-utils/buildValidator';
+import { buildValidator } from '@solo-webapi/mobx-utils/buildValidator';
 
 const _MessageHeartbeatIO = t.interface({
     type: t.literal('heartbeat'),

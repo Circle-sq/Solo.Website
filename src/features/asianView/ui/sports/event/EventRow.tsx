@@ -1,7 +1,7 @@
 import { useAtomValue } from 'jotai';
 
-import LockIcon from '@sc-asianView/icons/LockIcon';
-import { S_LockedCellWrapper, S_LockedCellWrapperLive } from '@sc-asianView/ui/sports/market/styled';
+import LockIcon from '@solo-asianView/icons/LockIcon';
+import { S_LockedCellWrapper, S_LockedCellWrapperLive } from '@solo-asianView/ui/sports/market/styled';
 
 import {
     eventInPlaySelectorFamily,

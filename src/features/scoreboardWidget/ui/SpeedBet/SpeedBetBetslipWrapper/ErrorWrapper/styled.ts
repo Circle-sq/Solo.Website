@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { GreyPalette } from '@sc-ui/system';
+import { GreyPalette } from '@solo-ui/system';
 
 export const S_ErrorWrapper = styled.div`
     text-align: center;

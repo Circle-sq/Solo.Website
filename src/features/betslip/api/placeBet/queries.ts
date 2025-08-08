@@ -1,4 +1,4 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { useMutation } from '@tanstack/react-query';
 import { useAtomValue } from 'jotai';
 import filter from 'lodash/filter';
@@ -7,10 +7,10 @@ import isEmpty from 'lodash/isEmpty';
 import reject from 'lodash/reject';
 import { useRecoilCallback } from 'recoil';
 
-import { isAuthenticatedAtom, userDataAtom } from '@sc-account/store/atoms';
-import { updateUserData } from '@sc-account/store/helpers';
-import { freebetCreditsAtomWithQuery, lastDepositAtomWithMutation } from '@sc-account/store/queries';
-import { store } from '@sc-utils/jotai';
+import { isAuthenticatedAtom, userDataAtom } from '@solo-account/store/atoms';
+import { updateUserData } from '@solo-account/store/helpers';
+import { freebetCreditsAtomWithQuery, lastDepositAtomWithMutation } from '@solo-account/store/queries';
+import { store } from '@solo-utils/jotai';
 
 import { MutationStatus } from 'src/common/enums/status';
 import { getValue } from 'src/common/recoil/snapshot';

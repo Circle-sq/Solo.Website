@@ -1,8 +1,8 @@
 import { useAtomValue } from 'jotai';
 import { useRecoilCallback } from 'recoil';
 
-import { useChangeBetslipSettings } from '@sc-account/api/mutations';
-import { cashoutAcceptModeSelector, oddsUpdateSelector } from '@sc-account/store/selectors';
+import { useChangeBetslipSettings } from '@solo-account/api/mutations';
+import { cashoutAcceptModeSelector, oddsUpdateSelector } from '@solo-account/store/selectors';
 
 import CloseIcon from 'src/assets/icons/BeslipClose';
 import { BetslipCashout, BetslipOdds } from 'src/common/enums';

@@ -5,8 +5,8 @@ import type { ChangeEvent, FormEvent } from 'react';
 import { useState } from 'react';
 import { useRecoilCallback } from 'recoil';
 
-import { resetBetslipStateTransaction } from '@sc-betslip/store/transactions/betslip';
-import { useJotaiCallback } from '@sc-utils/jotai';
+import { resetBetslipStateTransaction } from '@solo-betslip/store/transactions/betslip';
+import { useJotaiCallback } from '@solo-utils/jotai';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { I18n } from 'src/ui/common/Language/I18n';

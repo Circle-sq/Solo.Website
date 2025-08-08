@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { DarkBluePalette, GreenPalette, LightBluePalette, RedPalette } from '@sc-ui/system';
+import { DarkBluePalette, GreenPalette, LightBluePalette, RedPalette } from '@solo-ui/system';
 
 import { type AlertVariant } from '../../../../enums';
 

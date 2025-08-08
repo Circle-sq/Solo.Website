@@ -1,9 +1,9 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import reject from 'lodash/reject';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import { SportsIcon, CrossBetIcon, LiveSportsIcon, RightArrowIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { SportsIcon, CrossBetIcon, LiveSportsIcon, RightArrowIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { IconPositionTypes, RouteName, SportTab, SportType } from 'src/common/enums';
 import { isStandalone } from 'src/infra.client';

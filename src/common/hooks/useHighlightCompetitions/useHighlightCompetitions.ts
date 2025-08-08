@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import includes from 'lodash/includes';
 import { atom, useSetRecoilState } from 'recoil';
 
-import { api } from '@sc-api/api';
+import { api } from '@solo-api/api';
 
 import type { SportType } from 'src/common/enums';
 import type { CountersCounterType } from 'src/ui/crossbetting/hooks/types';

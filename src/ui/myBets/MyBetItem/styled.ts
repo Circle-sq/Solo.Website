@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, breakpoints, GreyPalette, cssColor } from '@sc-ui/system';
+import { fontWeight, breakpoints, GreyPalette, cssColor } from '@solo-ui/system';
 
 import StatefulButton from 'src/ui/common/Button/StatefulButton';
 import { EventRowActiveIcon, EventRowName } from 'src/ui/common/EventInfographics/styled';

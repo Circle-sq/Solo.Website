@@ -24,7 +24,7 @@ vi.mock('src/appState/AppState', () => ({
 vi.mock('src/utils/hooks/usePriceChange', () => ({
     default: vi.fn(),
 }));
-vi.mock('@sc-features/subscription-manager/SubscribeElement', () => ({
+vi.mock('@solo-features/subscription-manager/SubscribeElement', () => ({
     SubscribeElement: ({ children }: { children: React.ReactNode }) => <div>{children}</div>,
 }));
 describe('MarketSelectionResult', () => {

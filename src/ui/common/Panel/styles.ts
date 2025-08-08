@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, radius, breakpoints, GenericColors, cssColor } from '@sc-ui/system';
+import { fontWeight, radius, breakpoints, GenericColors, cssColor } from '@solo-ui/system';
 
 const DEFAULT_HEADER_FONT_SIZE = 14;
 

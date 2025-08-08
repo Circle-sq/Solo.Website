@@ -1,7 +1,7 @@
 import isNil from 'lodash/isNil';
 import { useEffect, useRef } from 'react';
 
-import { type ThemeNames, ThemeSelect, useThemeSwitchContext } from '@sc-ui/system';
+import { type ThemeNames, ThemeSelect, useThemeSwitchContext } from '@solo-ui/system';
 
 import isLocal from 'src/utils/isLocal';
 import buildStorageService, { type ValueStorage } from 'src/utils/StorageService';

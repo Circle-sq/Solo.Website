@@ -1,7 +1,7 @@
 import { observer } from 'mobx-react-lite';
 import { useRecoilValue } from 'recoil';
 
-import { CrossBetIcon } from '@sc-ui/icons/svg';
+import { CrossBetIcon } from '@solo-ui/icons/svg';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 

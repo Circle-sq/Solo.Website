@@ -2,7 +2,7 @@ import { useAtomValue } from 'jotai';
 import get from 'lodash/get';
 import { useRecoilValue } from 'recoil';
 
-import { isDecimalOddsFormatSelector, oddsFormatSelector } from '@sc-account/store/selectors';
+import { isDecimalOddsFormatSelector, oddsFormatSelector } from '@solo-account/store/selectors';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { OddsFormat } from 'src/common/enums';

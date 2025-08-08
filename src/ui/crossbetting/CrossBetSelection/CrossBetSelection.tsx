@@ -1,12 +1,12 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { useAtomValue } from 'jotai';
 import isUndefined from 'lodash/isUndefined';
 import { observer } from 'mobx-react-lite';
 import { useRecoilValue } from 'recoil';
 
-import { isFractionalOddsFormatSelector } from '@sc-account/store/selectors';
-import { useToggleCrossSelection } from '@sc-betslip/store/hooks/useToggleCrossSelection';
-import { isBuildABetPageRelatedSelectionSelector } from '@sc-betslip/store/selectors/selections';
+import { isFractionalOddsFormatSelector } from '@solo-account/store/selectors';
+import { useToggleCrossSelection } from '@solo-betslip/store/hooks/useToggleCrossSelection';
+import { isBuildABetPageRelatedSelectionSelector } from '@solo-betslip/store/selectors/selections';
 
 import { SelectionIdentifier } from 'src/common/enums';
 import SelectionValue from 'src/ui/events/Selection/SelectionValue/SelectionValue';

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { GenericColors, GreyPalette, LightBluePalette } from '@sc-ui/system';
+import { GenericColors, GreyPalette, LightBluePalette } from '@solo-ui/system';
 
 export const S_Loading = styled.div`
     position: fixed;

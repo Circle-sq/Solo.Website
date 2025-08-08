@@ -1,6 +1,6 @@
 import { waitFor } from '@testing-library/dom';
 
-import { renderWithTheme } from '@sc-ui/system';
+import { renderWithTheme } from '@solo-ui/system';
 
 import StakeInput from './StakeInput';
 

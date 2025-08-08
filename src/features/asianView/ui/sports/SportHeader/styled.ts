@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, GreyPalette, cssColor } from '@sc-ui/system';
+import { fontWeight, GreyPalette, cssColor } from '@solo-ui/system';
 
 export const S_SportHeader = styled.thead`
     width: 100%;

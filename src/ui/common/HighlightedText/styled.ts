@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { cssColor } from '@sc-ui/system';
+import { cssColor } from '@solo-ui/system';
 
 export const S_HighlightStrong = styled.strong`
     background-color: ${cssColor('--text-highlight-bg')};

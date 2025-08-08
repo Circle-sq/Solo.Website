@@ -2,10 +2,10 @@ import isNil from 'lodash/isNil';
 import { useEffect } from 'react';
 import { useSetRecoilState } from 'recoil';
 
-import { useBuildABetState } from '@sc-buildABet/hooks/useBuildABetState';
-import { useToggleBuildABet } from '@sc-buildABet/hooks/useToggleBuildABet';
-import { enabledBuildABetIdsAtom } from '@sc-buildABet/store/atoms';
-import { BuildABetIcon } from '@sc-buildABet/ui';
+import { useBuildABetState } from '@solo-buildABet/hooks/useBuildABetState';
+import { useToggleBuildABet } from '@solo-buildABet/hooks/useToggleBuildABet';
+import { enabledBuildABetIdsAtom } from '@solo-buildABet/store/atoms';
+import { BuildABetIcon } from '@solo-buildABet/ui';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { removeId } from 'src/common/recoil/updaters';

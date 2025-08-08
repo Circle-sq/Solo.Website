@@ -1,6 +1,6 @@
 import type { CSSProperties, PropsWithChildren } from 'react';
 
-import { useSubscriptionDevTool } from '@sc-devtools/hooks';
+import { useSubscriptionDevTool } from '@solo-devtools/hooks';
 
 import { DebugSubscribableElement } from './debug/DebugSubscribableElement';
 import type { SubKey } from './subKeys';

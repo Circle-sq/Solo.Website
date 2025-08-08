@@ -2,7 +2,7 @@ import mergeWith from 'lodash/mergeWith';
 import { type PropsWithChildren, useMemo } from 'react';
 import { useReducer } from 'react';
 
-// NXTODO vandries move StorageService to (new) @sc-utils library
+// NXTODO vandries move StorageService to (new) @solo-utils library
 import buildStorageService from 'src/utils/StorageService';
 
 import { DevToolsContext } from './hooks';

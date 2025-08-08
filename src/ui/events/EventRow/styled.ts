@@ -7,7 +7,7 @@ import {
     dynamicContainers,
     dynamicSelections,
     fontWeight,
-} from '@sc-ui/system';
+} from '@solo-ui/system';
 
 import { incrementBreakpointValue } from 'src/common/helpers/styled';
 import { S_EventInfo, S_EventInfoParticipants, S_EventScore } from 'src/ui/common/EventInfographics/styled';

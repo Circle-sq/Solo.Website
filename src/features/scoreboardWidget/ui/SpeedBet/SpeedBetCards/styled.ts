@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { GreenPalette, GenericColors, LightBluePalette, RedPalette, Opacities, fontWeight } from '@sc-ui/system';
+import { GreenPalette, GenericColors, LightBluePalette, RedPalette, Opacities, fontWeight } from '@solo-ui/system';
 
 import {
     CARDS_PADDING,

@@ -1,4 +1,4 @@
-declare module '@gp-ninja/gpp-frontend-api' {
+declare module '@solo/solo-frontend-api' {
     import type { RequestHandler } from 'express';
 
     interface Params {

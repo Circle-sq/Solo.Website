@@ -1,5 +1,5 @@
-import { searchFlagSelector } from '@sc-feature-flags';
-import { useWindowWidth } from '@sc-hooks';
+import { searchFlagSelector } from '@solo-feature-flags';
+import { useWindowWidth } from '@solo-hooks';
 import classnames from 'classnames';
 import { useAtom, useAtomValue, useSetAtom } from 'jotai';
 import find from 'lodash/find';

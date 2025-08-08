@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, DarkBluePalette } from '@sc-ui/system';
+import { fontWeight, DarkBluePalette } from '@solo-ui/system';
 
 export const Wrapper = styled.div`
     display: flex;

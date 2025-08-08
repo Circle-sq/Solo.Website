@@ -1,8 +1,8 @@
 import { useAtomValue } from 'jotai';
 import { useRecoilValue } from 'recoil';
 
-import { lhnSportAtom } from '@sc-asianView/store/lhn';
-import { S_ContentIcon } from '@sc-asianView/ui/lhn/SportListItem/styled';
+import { lhnSportAtom } from '@solo-asianView/store/lhn';
+import { S_ContentIcon } from '@solo-asianView/ui/lhn/SportListItem/styled';
 
 import { sportIconUrlSelectorFamily } from 'src/common/store/icons/selectors';
 import { SPORT_ICONS } from 'src/config/sport-icons';

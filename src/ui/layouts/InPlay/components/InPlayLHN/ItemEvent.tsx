@@ -3,11 +3,11 @@ import { useMemo } from 'react';
 import { useDispatch } from 'react-redux';
 import { useSetRecoilState } from 'recoil';
 
-import { SubscribeElement } from '@sc-features/subscription-manager/SubscribeElement';
-import { SubKey } from '@sc-features/subscription-manager/subKeys';
-import { eventMediaAtom } from '@sc-media/store/atoms';
-import { LockIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { SubscribeElement } from '@solo-features/subscription-manager/SubscribeElement';
+import { SubKey } from '@solo-features/subscription-manager/subKeys';
+import { eventMediaAtom } from '@solo-media/store/atoms';
+import { LockIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import type { EventModel } from 'src/appState/models/models/EventModel';

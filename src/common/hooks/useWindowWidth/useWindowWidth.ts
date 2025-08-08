@@ -1,6 +1,6 @@
 import { useWindowWidth as useWidth } from '@react-hook/window-size';
 
-import { BreakPoints } from '@sc-ui/system';
+import { BreakPoints } from '@solo-ui/system';
 
 const defaultDelay = 150;
 

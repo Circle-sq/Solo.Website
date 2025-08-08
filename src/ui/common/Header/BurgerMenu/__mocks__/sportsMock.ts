@@ -1,4 +1,4 @@
-import type { AggregatedSport } from '@sc-asianView/types';
+import type { AggregatedSport } from '@solo-asianView/types';
 
 import type { SportType } from 'src/common/enums';
 
@@ -9,7 +9,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
         tags: {
             'website-show': ['yes'],
             highlight: ['no'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Asians', 'Goals', 'Halves', 'Team', 'Corners', 'Cards', 'Players'],
             region: ['-'],
             outright: ['no'],
@@ -25,7 +25,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
         name: 'Ice Hockey',
         tags: {
             highlight: ['no'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Periods', 'Game Props', 'Player Props'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -40,7 +40,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
         name: 'Basketball',
         tags: {
             highlight: ['no'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Halves', 'Quarters', 'Game Props', 'Player Props'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -55,7 +55,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
         name: 'Table Tennis',
         tags: {
             highlight: ['no'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -70,7 +70,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
         name: 'American Football',
         tags: {
             highlight: ['no'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Halves', 'Quarters', 'Game Props', 'Player Props'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -85,7 +85,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
         name: 'Handball',
         tags: {
             highlight: ['no'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Halves'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -100,7 +100,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
         name: 'Boxing/MMA',
         tags: {
             highlight: ['no'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Other'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -114,7 +114,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
         id: 'tennis',
         name: 'Tennis',
         tags: {
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Game Bets', 'Set Bets'],
             'tennis-tour': ['-'],
             highlight: ['no'],
@@ -131,7 +131,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
         name: 'Volleyball',
         tags: {
             highlight: ['no'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -156,7 +156,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
         name: 'Rugby Union',
         tags: {
             highlight: ['no'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Halftime', 'Players'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -171,7 +171,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
         name: 'Darts',
         tags: {
             highlight: ['no'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Handicaps', "180's", 'Totals', 'Set Betting'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -186,7 +186,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
         name: 'Golf',
         tags: {
             highlight: ['no'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Special Bets', 'Outrights', 'Specials Bets'],
             'golf-tour': ['-'],
             outright: ['no'],
@@ -202,7 +202,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
         name: 'Baseball',
         tags: {
             highlight: ['no'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', '1st 5 Innings', 'Innings', 'Game Props', 'Player Props'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -216,7 +216,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
         id: 'lol',
         name: 'League of Legends',
         tags: {
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['-'],
             category: ['-'],
             'asian-view': ['no'],
@@ -234,7 +234,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
         name: 'Futsal',
         tags: {
             highlight: ['no'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Handicap', 'Handicaps', 'Totals', 'Halves', 'Team', 'Race to', 'Other'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -249,7 +249,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
         name: 'Formula One',
         tags: {
             highlight: ['no'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Top Drivers', 'Head-to-head', 'Other/Specials', 'Outright'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -264,7 +264,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
         name: 'Snooker',
         tags: {
             highlight: ['no'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Frames', 'Breaks', 'Race to', 'Other'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -279,7 +279,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
         name: 'Motorbikes',
         tags: {
             highlight: ['no'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Outright'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -300,7 +300,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
             'ante-post': ['no'],
             highlight: ['no'],
             country: ['-'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             category: ['-'],
         },
         displayOrder: 77,
@@ -312,7 +312,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
         name: 'Rugby League',
         tags: {
             highlight: ['no'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Halftime', 'Players'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -333,7 +333,7 @@ export const sportsMock: Record<SportType, AggregatedSport> = {
             'ante-post': ['no'],
             highlight: ['no'],
             country: ['-'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             category: ['-'],
         },
         displayOrder: 76,

@@ -1,8 +1,8 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { createRef, useEffect, useMemo, useRef, useState } from 'react';
 
-import { SubKey } from '@sc-features/subscription-manager/subKeys';
-import { SubscribeElement } from '@sc-features/subscription-manager/SubscribeElement';
+import { SubKey } from '@solo-features/subscription-manager/subKeys';
+import { SubscribeElement } from '@solo-features/subscription-manager/SubscribeElement';
 
 import type { MarketModel } from 'src/appState/models/models/MarketModel';
 import { ExpandButton } from 'src/ui/common/ExpandButton/ExpandButton';

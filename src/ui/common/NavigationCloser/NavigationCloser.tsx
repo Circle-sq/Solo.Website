@@ -1,11 +1,11 @@
-import { useWindowResize } from '@sc-hooks';
+import { useWindowResize } from '@solo-hooks';
 import { useAtomValue } from 'jotai';
 import { observer } from 'mobx-react-lite';
 import type { MouseEvent } from 'react';
 import { useEffect } from 'react';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { showQuickBetSelector } from 'src/ui/betting/store/selectors';

@@ -1,9 +1,9 @@
 import { useAtomValue } from 'jotai';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
-import { openLoginPopupTask } from '@sc-account/store/tasks';
-import { useJotaiCallback } from '@sc-utils/jotai';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
+import { openLoginPopupTask } from '@solo-account/store/tasks';
+import { useJotaiCallback } from '@solo-utils/jotai';
 
 import { isStandalone } from 'src/infra.client';
 import { I18n } from 'src/ui/common/Language/I18n';

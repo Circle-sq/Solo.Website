@@ -3,7 +3,7 @@ import orderBy from 'lodash/orderBy';
 import { observer } from 'mobx-react-lite';
 import { useMemo } from 'react';
 
-import { useCompetitionIconUrlQuerySelector } from '@sc-api/icons/querySelectors';
+import { useCompetitionIconUrlQuerySelector } from '@solo-api/icons/querySelectors';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { SportType } from 'src/common/enums';

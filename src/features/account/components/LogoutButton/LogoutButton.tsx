@@ -1,7 +1,7 @@
 import type { MouseEvent } from 'react';
 import { useRecoilCallback } from 'recoil';
 
-import { resetBetslipStateTransaction } from '@sc-betslip/store/transactions/betslip';
+import { resetBetslipStateTransaction } from '@solo-betslip/store/transactions/betslip';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { I18n } from 'src/ui/common/Language/I18n';

@@ -1,6 +1,6 @@
 import { useAtomValue } from 'jotai';
 
-import { oddsFormatSelector } from '@sc-account/store/selectors';
+import { oddsFormatSelector } from '@solo-account/store/selectors';
 
 import type { Price } from 'src/common/types/selectionPrice';
 import { getOddsFormatPrice } from 'src/utils/common';

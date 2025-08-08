@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useRecoilState } from 'recoil';
 
-import { eventMediaAtom } from '@sc-media/store/atoms';
+import { eventMediaAtom } from '@solo-media/store/atoms';
 
 import { setStream } from 'src/modules/media/actions/stream';
 import GroupingNavigation from 'src/ui/common/GroupingNavigation/GroupingNavigation';

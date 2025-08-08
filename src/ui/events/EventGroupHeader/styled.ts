@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, selections, breakpoints, dynamicContainers, DarkBluePalette, GreyPalette } from '@sc-ui/system';
+import { fontWeight, selections, breakpoints, dynamicContainers, DarkBluePalette, GreyPalette } from '@solo-ui/system';
 
 import { S_ContentIcon } from 'src/ui/common/NavigationList/styled';
 

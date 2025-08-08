@@ -1,4 +1,4 @@
-import { MobxValue } from '@sc-webapi/mobx-utils/MobxValue';
+import { MobxValue } from '@solo-webapi/mobx-utils/MobxValue';
 import {
     addDays,
     addHours,

@@ -2,7 +2,7 @@ import get from 'lodash/get';
 import includes from 'lodash/includes';
 import { computed, makeObservable, observable, runInAction } from 'mobx';
 
-import { timeout } from '@sc-webapi/mobx-utils/timeout';
+import { timeout } from '@solo-webapi/mobx-utils/timeout';
 
 import { finishCounters } from 'src/modules/events/actions/query';
 import { parseData } from 'src/modules/events/services/events-counter';

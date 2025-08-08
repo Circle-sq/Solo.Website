@@ -3,7 +3,7 @@ import { Modal } from '@mui/base/Modal';
 import type { MouseEvent, Ref } from 'react';
 import { forwardRef } from 'react';
 
-import { cssColor } from '@sc-ui/system';
+import { cssColor } from '@solo-ui/system';
 
 interface BackdropProps {
     'aria-hidden': boolean;

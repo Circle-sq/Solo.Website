@@ -1,4 +1,4 @@
-import { isProduction } from '@sc-webapi/infra.server';
+import { isProduction } from '@solo-webapi/infra.server';
 import type * as express from 'express';
 import fs from 'fs';
 import path from 'path';

@@ -7,10 +7,10 @@ import pick from 'lodash/pick';
 import split from 'lodash/split';
 import startsWith from 'lodash/startsWith';
 
-import type { ConfigServer } from '@sc-webapi/ConfigServer';
-import { AppLocals, ResponseHeaders } from '@sc-webapi/enums';
-import type { PlatformApi } from '@sc-webapi/realtime-server/PlatformApi/PlatformApi';
-import { unleash } from '@sc-webapi/unleash-client';
+import type { ConfigServer } from '@solo-webapi/ConfigServer';
+import { AppLocals, ResponseHeaders } from '@solo-webapi/enums';
+import type { PlatformApi } from '@solo-webapi/realtime-server/PlatformApi/PlatformApi';
+import { unleash } from '@solo-webapi/unleash-client';
 
 import { LANGUAGES } from 'src/utils/constants';
 
@@ -19,11 +19,11 @@ import { PortalLanguageShortcuts } from './types';
 
 export const sanitizePortalLanguage = (language: string | undefined): string => {
     if (!isString(language)) {
-        return PortalLanguageShortcuts.ko;
+        return PortalLanguageShortcuts.en;
     }
 
     if (isEmpty(language)) {
-        return PortalLanguageShortcuts.ko;
+        return PortalLanguageShortcuts.en;
     }
 
     if (!isEmpty(PortalLanguageShortcuts[language])) {
@@ -38,7 +38,7 @@ export const sanitizePortalLanguage = (language: string | undefined): string => 
         return language;
     }
 
-    return PortalLanguageShortcuts.ko;
+    return PortalLanguageShortcuts.en;
 };
 const portalOptionalFields = ['redirectURL', 'userLang', 'portalMessage', 'loginjwt', 'theme', 'guestCurrency'];
 const portalBodyMandatoryFields = ['logintoken', 'dateFormat', 'shortDateFormat', 'language', 'oddsFormat', 'gameId'];
@@ -48,7 +48,7 @@ export const extractPayload = (req: Request): Request['portalBody'] => {
         const defaultLanguageHeader = req?.headers?.['default-language'] as string | undefined;
         const acceptLanguageHeader = req?.headers?.['accept-language'];
 
-        const language = sanitizePortalLanguage(defaultLanguageHeader || acceptLanguageHeader || LANGUAGES.ko);
+        const language = sanitizePortalLanguage(defaultLanguageHeader || acceptLanguageHeader || LANGUAGES.en);
 
         return {
             loginjwt: '',
@@ -155,7 +155,7 @@ export const portalBodyParser = (req: Request & { portalBody: unknown }, res: Re
 export const setContentSecurityPolicy =
     (platformApi: PlatformApi, config: ConfigServer, PORTAL_HOST: string | undefined) =>
     async (req: Request, res: Response, next: () => void) => {
-        if (unleash.isEnabled('SC-9043')) {
+        if (unleash.isEnabled('SOLO-9043')) {
             console.info(`_CFG:FE_WEB_ALLOWED_HOST / 2. Validating by API`);
 
             return setContentSecurityPolicyAPI(platformApi, config)(req, res, next);

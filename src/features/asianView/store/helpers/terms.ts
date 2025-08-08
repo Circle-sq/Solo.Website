@@ -1,6 +1,6 @@
 import { endOfDay, startOfDay, subDays } from 'date-fns';
 
-import type { SearchEventsTermsByTimeTab } from '@sc-api/events/types';
+import type { SearchEventsTermsByTimeTab } from '@solo-api/events/types';
 
 import { getQueryStartTimes } from '../../api/helpers/date';
 import { DayOffset, LHNTimeTab, type TimePeriod } from '../../enums';

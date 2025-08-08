@@ -5,9 +5,7 @@ import { getProxyHTTPPort, isProduction } from './infra.server';
 
 export const getMaintenance = async (): Promise<string> => {
     const maintenanceHtmlPath = path.resolve(
-        isProduction()
-            ? './build/server/assets/maintenance-skycity-kr.html'
-            : './src_server/template/maintenance-skycity-kr.html',
+        isProduction() ? './build/server/assets/maintenance-solo.html' : './src_server/template/maintenance-solo.html',
     );
     const maintenanceHtml = fs.readFileSync(maintenanceHtmlPath);
 

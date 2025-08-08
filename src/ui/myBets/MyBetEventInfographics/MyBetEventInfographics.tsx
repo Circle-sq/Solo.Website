@@ -1,4 +1,4 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { observer } from 'mobx-react-lite';
 
 import type { EventModel } from 'src/appState/models/models/EventModel';

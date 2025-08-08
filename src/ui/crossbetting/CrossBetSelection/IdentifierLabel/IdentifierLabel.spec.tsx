@@ -1,5 +1,5 @@
-import MockComponent from '@sc-tests/unit/mocks/MockComponent';
-import { renderWithTheme } from '@sc-tests/unit/mocks/renderMocks';
+import MockComponent from '@solo-tests/unit/mocks/MockComponent';
+import { renderWithTheme } from '@solo-tests/unit/mocks/renderMocks';
 
 import IdentifierLabel from 'src/ui/crossbetting/CrossBetSelection/IdentifierLabel/IdentifierLabel';
 

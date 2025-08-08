@@ -1,9 +1,9 @@
-import { useWindowResize, useWindowWidth } from '@sc-hooks';
+import { useWindowResize, useWindowWidth } from '@solo-hooks';
 import classnames from 'classnames';
 import { useAtomValue } from 'jotai';
 import { observer } from 'mobx-react-lite';
 
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
 
 import { IconPositionTypes } from 'src/common/enums';
 import type { PopUpProps } from 'src/common/types/popup';

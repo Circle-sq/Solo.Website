@@ -1,6 +1,6 @@
-import { api } from '@sc-api/api';
-import type { PossibleBetApiResponse } from '@sc-betslip/api/types';
-import type { PlacedBet } from '@sc-betslip/api/types/placedBet';
+import { api } from '@solo-api/api';
+import type { PossibleBetApiResponse } from '@solo-betslip/api/types';
+import type { PlacedBet } from '@solo-betslip/api/types/placedBet';
 
 import type { PlaceBetPayload, PossibleBetPayload } from '../types';
 

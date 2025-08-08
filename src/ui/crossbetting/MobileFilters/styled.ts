@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { S_PaddingBox } from 'src/ui/common/DropdownSelect/styled';
 
 import { S_DropdownSingleValue } from '../FilterDropdown/styled';
-import { breakpoints } from '@sc-ui/system';
+import { breakpoints } from '@solo-ui/system';
 
 export const S_FiltersWrapper = styled.div`
     display: flex;

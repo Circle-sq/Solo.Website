@@ -1,4 +1,4 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { useRecoilState, useRecoilValue, useSetRecoilState } from 'recoil';
 
 import CrossBettingEvents from 'src/ui/events/containers/CrossBettingEvents/CrossBettingEvents';

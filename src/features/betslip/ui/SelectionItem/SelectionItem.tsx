@@ -3,8 +3,8 @@ import type { MouseEvent } from 'react';
 import { useEffect } from 'react';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import { SubKey } from '@sc-features/subscription-manager/subKeys';
-import { SubscribeElement } from '@sc-features/subscription-manager/SubscribeElement';
+import { SubKey } from '@solo-features/subscription-manager/subKeys';
+import { SubscribeElement } from '@solo-features/subscription-manager/SubscribeElement';
 
 import { BetslipTab } from 'src/common/enums';
 import { getValue } from 'src/common/recoil/snapshot';

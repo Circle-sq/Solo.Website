@@ -4,11 +4,11 @@ import pick from 'lodash/pick';
 import { type ReactNode } from 'react';
 import { useSetRecoilState } from 'recoil';
 
-import { SubKey } from '@sc-features/subscription-manager/subKeys';
-import { SubscribeElement } from '@sc-features/subscription-manager/SubscribeElement';
-import { eventMediaAtom } from '@sc-media/store/atoms';
-import { LiveStreamingIcon, CupIcon } from '@sc-ui/icons/svg';
-import { RedPalette, useThemeSwitchContext, ThemeNames } from '@sc-ui/system';
+import { SubKey } from '@solo-features/subscription-manager/subKeys';
+import { SubscribeElement } from '@solo-features/subscription-manager/SubscribeElement';
+import { eventMediaAtom } from '@solo-media/store/atoms';
+import { LiveStreamingIcon, CupIcon } from '@solo-ui/icons/svg';
+import { RedPalette, useThemeSwitchContext, ThemeNames } from '@solo-ui/system';
 
 import type { EventModel } from 'src/appState/models/models/EventModel';
 import { SCORE_SUPPORTED_MARQUEE_SPORTS, SCOREBOARD_SPORTS } from 'src/config/config';

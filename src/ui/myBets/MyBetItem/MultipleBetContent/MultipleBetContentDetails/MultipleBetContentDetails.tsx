@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { useRecoilValue } from 'recoil';
 import { observer } from 'mobx-react-lite';
 
-import { S_BetStatusType } from '@sc-buildABet/ui/myBet/styled';
+import { S_BetStatusType } from '@solo-buildABet/ui/myBet/styled';
 
 import type { MyBetLeg } from 'src/common/types/myBet';
 import type { BetStatus } from 'src/common/enums';

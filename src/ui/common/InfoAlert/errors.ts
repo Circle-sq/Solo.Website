@@ -2,8 +2,8 @@ import isString from 'lodash/isString';
 import type { ReactElement } from 'react';
 import { isValidElement } from 'react';
 
-import type { BetError } from '@sc-betslip/api/types/error';
-import { isBetErrorType } from '@sc-betslip/typeGuards/error';
+import type { BetError } from '@solo-betslip/api/types/error';
+import { isBetErrorType } from '@solo-betslip/typeGuards/error';
 
 import { BetslipErrorCode, PriceErrorCode } from 'src/common/enums/error';
 import type { BettingErrorsItem } from 'src/common/types/error';

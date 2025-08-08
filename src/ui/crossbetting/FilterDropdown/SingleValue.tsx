@@ -1,7 +1,7 @@
 import { components } from 'react-select';
 import type { GroupBase, SingleValueProps } from 'react-select';
 
-import type { MediaOptionGroup } from '@sc-media/ui/videoStream/dropdown/types';
+import type { MediaOptionGroup } from '@solo-media/ui/videoStream/dropdown/types';
 
 import { S_DropdownSingleValue, S_DropdownSingleValueContainer } from './styled';
 import type { Option } from './types';

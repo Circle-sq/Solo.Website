@@ -1,4 +1,4 @@
-import type { LinesRange } from '@sc-asianView/types';
+import type { LinesRange } from '@solo-asianView/types';
 
 import { IconCategory, SelectionIdentifier } from 'src/common/enums';
 

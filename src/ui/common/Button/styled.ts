@@ -6,7 +6,7 @@ import Link from 'src/utils/Router/Link';
 
 import { getButtonSize, getButtonColors } from './helpers';
 import type { ButtonSizes, Color } from './types';
-import { fontWeight, LightBluePalette, radius } from '@sc-ui/system';
+import { fontWeight, LightBluePalette, radius } from '@solo-ui/system';
 
 interface ButtonProps {
     size: ButtonSizes;

@@ -1,4 +1,4 @@
-import { GreyPalette } from '@sc-ui/system';
+import { GreyPalette } from '@solo-ui/system';
 
 const ArrowUpIcon = () => {
     return (

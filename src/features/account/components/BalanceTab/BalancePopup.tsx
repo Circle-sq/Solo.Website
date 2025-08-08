@@ -1,4 +1,4 @@
-import { useWindowResize, useWindowWidth } from '@sc-hooks';
+import { useWindowResize, useWindowWidth } from '@solo-hooks';
 
 import type { PopUpProps } from 'src/common/types/popup';
 import { I18n } from 'src/ui/common/Language/I18n';

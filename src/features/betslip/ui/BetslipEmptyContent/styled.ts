@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { DarkBluePalette, GreyPalette, LightBluePalette } from '@sc-ui/system';
+import { DarkBluePalette, GreyPalette, LightBluePalette } from '@solo-ui/system';
 
 import Link from 'src/utils/Router/Link';
 

@@ -1,4 +1,4 @@
-import { unleashClient, unleashClientAtom } from '@sc-feature-flags';
+import { unleashClient, unleashClientAtom } from '@solo-feature-flags';
 import { QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { FlagProvider } from '@unleash/proxy-client-react';
@@ -9,7 +9,7 @@ import 'jotai-devtools/styles.css';
 import { queryClientAtom } from 'jotai-tanstack-query';
 import type { PropsWithChildren } from 'react';
 
-import { queryClient } from '@sc-utils/tanstack';
+import { queryClient } from '@solo-utils/tanstack';
 
 import { store } from './store';
 

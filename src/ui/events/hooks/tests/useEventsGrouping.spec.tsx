@@ -1,4 +1,4 @@
-import { renderWithTheme } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithTheme } from '@solo-tests/unit/mocks/renderMocks';
 
 import { EventModel } from 'src/appState/models/models/EventModel';
 import type { ModelBoxContext } from 'src/appState/models/ModelWrapper';
@@ -83,7 +83,7 @@ describe('useEventsGrouping', () => {
                     id: '02_sr:tournament:18',
                     name: 'Championship',
                     externalId: {
-                        instance: 'skycity',
+                        instance: 'solo',
                         provider: 'bet-radar',
                         feedId: 'sr:tournament:18',
                     },
@@ -97,7 +97,7 @@ describe('useEventsGrouping', () => {
                     id: '02_sr:tournament:18',
                     name: 'Championship',
                     externalId: {
-                        instance: 'skycity',
+                        instance: 'solo',
                         provider: 'bet-radar',
                         feedId: 'sr:tournament:18',
                     },
@@ -128,7 +128,7 @@ describe('useEventsGrouping', () => {
                     id: '02_sr:tournament:1772',
                     name: 'WK-League',
                     externalId: {
-                        instance: 'skycity',
+                        instance: 'solo',
                         provider: 'bet-radar',
                         feedId: 'sr:tournament:1772',
                     },
@@ -142,7 +142,7 @@ describe('useEventsGrouping', () => {
                     id: '02_sr:tournament:615',
                     name: 'FA Cup',
                     externalId: {
-                        instance: 'skycity',
+                        instance: 'solo',
                         provider: 'bet-radar',
                         feedId: 'sr:tournament:615',
                     },
@@ -156,7 +156,7 @@ describe('useEventsGrouping', () => {
                     id: '02_sr:tournament:777',
                     name: 'K-League 2',
                     externalId: {
-                        instance: 'skycity',
+                        instance: 'solo',
                         provider: 'bet-radar',
                         feedId: 'sr:tournament:777',
                     },
@@ -170,7 +170,7 @@ describe('useEventsGrouping', () => {
                     id: '02_sr:tournament:410',
                     name: 'K-League 1',
                     externalId: {
-                        instance: 'skycity',
+                        instance: 'solo',
                         provider: 'bet-radar',
                         feedId: 'sr:tournament:410',
                     },
@@ -198,7 +198,7 @@ describe('useEventsGrouping', () => {
                     id: '02_sr:tournament:1772',
                     name: 'WK-League',
                     externalId: {
-                        instance: 'skycity',
+                        instance: 'solo',
                         provider: 'bet-radar',
                         feedId: 'sr:tournament:1772',
                     },

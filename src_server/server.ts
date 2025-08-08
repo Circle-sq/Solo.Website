@@ -3,8 +3,8 @@ import dotenv from 'dotenv';
 dotenv.config();
 import type { Express } from 'express';
 
-import { createResultReady } from '@sc-webapi/mobx-utils/Result';
-import { createServerApp } from '@sc-webapi/realtime-server/realtime/createServerApp/createServerApp';
+import { createResultReady } from '@solo-webapi/mobx-utils/Result';
+import { createServerApp } from '@solo-webapi/realtime-server/realtime/createServerApp/createServerApp';
 
 import { getServerHTTPPort } from './infra.server';
 import { serverInit } from './server_init';

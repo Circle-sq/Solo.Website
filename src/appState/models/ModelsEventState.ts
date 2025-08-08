@@ -1,7 +1,7 @@
 import { action, makeObservable } from 'mobx';
 
-import { assertNever } from '@sc-webapi/mobx-utils/assertNever';
-import { MobxMapAutoNew } from '@sc-webapi/mobx-utils/MobxMapAutoNew';
+import { assertNever } from '@solo-webapi/mobx-utils/assertNever';
+import { MobxMapAutoNew } from '@solo-webapi/mobx-utils/MobxMapAutoNew';
 
 import { ServerTimeState } from 'src/appState/models/ServerTimeState';
 

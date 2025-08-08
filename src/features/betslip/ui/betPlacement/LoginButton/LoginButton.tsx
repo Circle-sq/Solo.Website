@@ -1,7 +1,7 @@
 import { useRecoilCallback } from 'recoil';
 
-import { openLoginPopupTask } from '@sc-account/store/tasks';
-import { useJotaiCallback } from '@sc-utils/jotai';
+import { openLoginPopupTask } from '@solo-account/store/tasks';
+import { useJotaiCallback } from '@solo-utils/jotai';
 
 import { isStandalone } from 'src/infra.client';
 import { closeMyBetsAndQuickBetTask } from 'src/ui/betting/store/tasks';

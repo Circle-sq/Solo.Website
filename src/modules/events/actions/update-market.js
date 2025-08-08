@@ -1,7 +1,7 @@
 import { getRecoil, setRecoil } from 'recoil-nexus';
 import isEmpty from 'lodash/isEmpty';
 
-import { betslipProblemsAtom } from '@sc-betslip/store/atoms/betslip';
+import { betslipProblemsAtom } from '@solo-betslip/store/atoms/betslip';
 
 import { syncSuspendedBetslipProblems } from '/src/features/betslip/store/helpers/problems';
 import { betslipSelectionsAtom } from '/src/features/betslip/store/atoms/selections';

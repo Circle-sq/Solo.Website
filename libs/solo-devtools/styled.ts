@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, radius, GenericColors, GreyPalette } from '@sc-ui/system';
+import { breakpoints, radius, GenericColors, GreyPalette } from '@solo-ui/system';
 
 export const S_DevTools_Wrapper = styled.div`
     display: flex;

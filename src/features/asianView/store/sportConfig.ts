@@ -1,6 +1,6 @@
 import { atom } from 'jotai';
 
-import { atomWithQueryCbk, jotaiCallback } from '@sc-utils/jotai';
+import { atomWithQueryCbk, jotaiCallback } from '@solo-utils/jotai';
 
 import { SportType } from 'src/common/enums';
 

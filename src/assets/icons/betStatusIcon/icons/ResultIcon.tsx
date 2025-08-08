@@ -1,4 +1,4 @@
-import { cssColor } from '@sc-ui/system';
+import { cssColor } from '@solo-ui/system';
 
 import SvgElement from 'src/assets/icons/SvgElement/SvgElement';
 import type { Testable } from 'src/utils/Testable/types';

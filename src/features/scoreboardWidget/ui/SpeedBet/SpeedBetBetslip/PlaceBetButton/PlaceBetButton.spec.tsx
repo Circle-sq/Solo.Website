@@ -2,9 +2,9 @@ import { render, screen } from '@testing-library/react';
 import { RecoilRoot } from 'recoil';
 import { vi } from 'vitest';
 
-import { isAuthenticatedAtom, userDataAtom } from '@sc-account/store/atoms';
-import type { UserData } from '@sc-account/types';
-import { MockStoreProvider } from '@sc-tests/unit/mocks/jotai/store';
+import { isAuthenticatedAtom, userDataAtom } from '@solo-account/store/atoms';
+import type { UserData } from '@solo-account/types';
+import { MockStoreProvider } from '@solo-tests/unit/mocks/jotai/store';
 
 import { speedBetStakeAtom } from '../../../../store/atoms';
 

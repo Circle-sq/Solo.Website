@@ -107,4 +107,5 @@ export interface UserSettings {
     oddsFormat: OddsFormat;
     dateFormat: string;
     shortDateFormat: string;
+    language?: string;
 }

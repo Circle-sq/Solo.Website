@@ -1,5 +1,5 @@
-import { eventMediaAtom } from '@sc-media/store/atoms';
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { eventMediaAtom } from '@solo-media/store/atoms';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import { SportType } from 'src/common/enums';
 import type { EventMediaItem } from 'src/common/types/event';

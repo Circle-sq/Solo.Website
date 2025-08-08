@@ -3,10 +3,10 @@ import { useAtomValue } from 'jotai';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import { currencySelector } from '@sc-account/store/selectors';
-import { tabTotalStakeSelector } from '@sc-betslip/store/selectors/stake';
-import { DownArrowIcon, UpArrowIcon } from '@sc-ui/icons/svg';
-import { cssColor, fontWeight, typographyColor } from '@sc-ui/system';
+import { currencySelector } from '@solo-account/store/selectors';
+import { tabTotalStakeSelector } from '@solo-betslip/store/selectors/stake';
+import { DownArrowIcon, UpArrowIcon } from '@solo-ui/icons/svg';
+import { cssColor, fontWeight, typographyColor } from '@solo-ui/system';
 
 import useTranslatedCurrency from 'src/appState/customHooks/useTranslatedCurrency';
 import { I18n } from 'src/ui/common/Language/I18n';

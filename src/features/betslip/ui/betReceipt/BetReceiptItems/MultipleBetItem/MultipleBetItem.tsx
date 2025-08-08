@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 
-import { cssColor } from '@sc-ui/system';
+import { cssColor } from '@solo-ui/system';
 
 import type { PlacedBetLeg } from '../../../../api/types/placedBet';
 

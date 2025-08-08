@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, breakpoints, DarkBluePalette, GreyPalette } from '@sc-ui/system';
+import { fontWeight, breakpoints, DarkBluePalette, GreyPalette } from '@solo-ui/system';
 
 export const S_Wrapper = styled.div`
     display: flex;

@@ -1,4 +1,4 @@
-import { LightBluePalette } from '@sc-ui/system';
+import { LightBluePalette } from '@solo-ui/system';
 
 const BlueArrowDownIcon = () => (
     <svg xmlns='http://www.w3.org/2000/svg' width='8' height='11' viewBox='0 0 8 11'>

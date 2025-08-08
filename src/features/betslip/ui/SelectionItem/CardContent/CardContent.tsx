@@ -3,8 +3,8 @@ import type { MouseEvent } from 'react';
 import { useCallback } from 'react';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import { CloseIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { CloseIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { closeQuickBetTask } from 'src/ui/betting/store/tasks';

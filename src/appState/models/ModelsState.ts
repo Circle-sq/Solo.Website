@@ -4,7 +4,7 @@ import isEmpty from 'lodash/isEmpty';
 import isUndefined from 'lodash/isUndefined';
 import map from 'lodash/map';
 
-import type { ModelService } from '@sc-features/subscription-manager/ModelSubscribeBridgeService';
+import type { ModelService } from '@solo-features/subscription-manager/ModelSubscribeBridgeService';
 
 import { ReduxState } from '../redux/ReduxState';
 

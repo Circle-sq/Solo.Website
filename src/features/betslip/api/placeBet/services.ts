@@ -1,6 +1,6 @@
 import isString from 'lodash/isString';
 
-import { api } from '@sc-api/api';
+import { api } from '@solo-api/api';
 
 import { STORAGE_KEYS } from 'src/utils/constants';
 import buildLocalStorageService from 'src/utils/StorageService';

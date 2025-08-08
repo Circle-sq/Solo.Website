@@ -1,7 +1,7 @@
 import type { MouseEvent } from 'react';
 
-import { InfoOutlineIcon } from '@sc-ui/icons/svg';
-import { DarkBluePalette } from '@sc-ui/system';
+import { InfoOutlineIcon } from '@solo-ui/icons/svg';
+import { DarkBluePalette } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { isStandalone } from 'src/infra.client';

@@ -1,4 +1,4 @@
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import { ErrorResource, MinMaxErrorCode } from 'src/common/enums/error';
 

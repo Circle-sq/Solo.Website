@@ -2,8 +2,8 @@ import classnames from 'classnames';
 import type { ReactNode } from 'react';
 import { Fragment } from 'react';
 
-import { CloseIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { CloseIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { S_BaseOverlay } from 'src/ui/common/Backdrop/styled';
 import CustomScrollbar from 'src/ui/common/CustomScrollbar';

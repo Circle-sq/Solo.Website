@@ -3,12 +3,12 @@ import { RecoilRoot } from 'recoil';
 import RecoilNexus from 'recoil-nexus';
 import { SyncReduxToRecoil } from 'redux-to-recoil';
 
-import { SubscriptionsStorageProvider } from '@sc-data/subscriptions-storage';
-import { DevToolsProvider } from '@sc-devtools/DevTools';
-import { QuickThemeSelector } from '@sc-devtools/QuickThemeSelector';
-import { WebsocketSubscriptionsInspector } from '@sc-devtools/WebsocketSubscriptionsInspector';
-import { ThemeSwitchProvider } from '@sc-ui/system';
-import { StoreProvider } from '@sc-utils/jotai';
+import { SubscriptionsStorageProvider } from '@solo-data/subscriptions-storage';
+import { DevToolsProvider } from '@solo-devtools/DevTools';
+import { QuickThemeSelector } from '@solo-devtools/QuickThemeSelector';
+import { WebsocketSubscriptionsInspector } from '@solo-devtools/WebsocketSubscriptionsInspector';
+import { ThemeSwitchProvider } from '@solo-ui/system';
+import { StoreProvider } from '@solo-utils/jotai';
 
 import { Provider as AppStateProvider } from 'src/appState/AppState';
 import AppContent from 'src/layouts/AppContent/AppContent';

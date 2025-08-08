@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box';
 
-import { CupIcon } from '@sc-ui/icons/svg';
+import { CupIcon } from '@solo-ui/icons/svg';
 
 const DefaultCupIcon = () => {
     return (

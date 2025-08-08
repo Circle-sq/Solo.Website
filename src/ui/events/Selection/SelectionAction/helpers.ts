@@ -1,4 +1,4 @@
-import { GenericColors, LightBluePalette, RedPalette } from '@sc-ui/system';
+import { GenericColors, LightBluePalette, RedPalette } from '@solo-ui/system';
 
 import { PriceChange } from 'src/common/enums';
 

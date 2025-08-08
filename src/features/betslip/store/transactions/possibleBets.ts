@@ -9,7 +9,7 @@ import some from 'lodash/some';
 import values from 'lodash/values';
 import type { TransactionInterface_UNSTABLE as TransactionInterface } from 'recoil';
 
-import { findBuildABetByEventId } from '@sc-buildABet/utils/helpers';
+import { findBuildABetByEventId } from '@solo-buildABet/utils/helpers';
 
 import { BetslipTab } from 'src/common/enums';
 

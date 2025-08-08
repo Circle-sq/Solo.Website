@@ -1,8 +1,8 @@
 import userEvent from '@testing-library/user-event';
 import { List as ImmutableList, Map as ImmutableMap } from 'immutable';
 
-import '@sc-tests/unit/mocks/matchMedia.mock';
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import '@solo-tests/unit/mocks/matchMedia.mock';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import FiltersByCountryCompetitionsMobile from 'src/ui/crossbetting/MobileFilters/MobileFilters';
 
@@ -39,7 +39,7 @@ vi.mock('src/appState/AppState', () => {
                             id: '02_sr:tournament:17782',
                             name: 'ITF Italy F10, Men Singles',
                             externalId: {
-                                instance: 'skycity',
+                                instance: 'solo',
                                 provider: 'bet-radar',
                                 feedId: 'sr:tournament:17782',
                                 sportId: 'bet-radar',

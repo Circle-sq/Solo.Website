@@ -1,7 +1,7 @@
 import { CircularProgress, Stack, Tooltip, Typography } from '@mui/material';
 
-import { useSportIconUrlQuerySelector } from '@sc-api/icons/querySelectors';
-import { DownArrowIcon, HideIcon, ShowIcon } from '@sc-ui/icons/svg';
+import { useSportIconUrlQuerySelector } from '@solo-api/icons/querySelectors';
+import { DownArrowIcon, HideIcon, ShowIcon } from '@solo-ui/icons/svg';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { SPORT_ICONS } from 'src/config/sport-icons';

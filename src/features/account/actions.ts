@@ -1,4 +1,4 @@
-import { store } from '@sc-utils/jotai';
+import { store } from '@solo-utils/jotai';
 
 import type { OddsFormatLong } from 'src/common/enums';
 import { STORAGE_KEYS } from 'src/utils/constants';

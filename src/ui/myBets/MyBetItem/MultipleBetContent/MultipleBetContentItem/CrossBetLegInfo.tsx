@@ -1,10 +1,10 @@
 import { Box } from '@mui/system';
 import { useRecoilValue } from 'recoil';
 
-import CrossBetLeg from '@sc-betslip/ui/SelectionItem/CrossBet/CrossBetLeg/CrossBetLeg';
-import { S_MultiBetEventInfo, S_MultiBetInfo, S_MultiBetTime } from '@sc-buildABet/ui/myBet/BuildABetInfo/styled';
-import { S_SelectionEventContainer } from '@sc-buildABet/ui/myBet/styled';
-import { CrossBetIcon } from '@sc-ui/icons/svg';
+import CrossBetLeg from '@solo-betslip/ui/SelectionItem/CrossBet/CrossBetLeg/CrossBetLeg';
+import { S_MultiBetEventInfo, S_MultiBetInfo, S_MultiBetTime } from '@solo-buildABet/ui/myBet/BuildABetInfo/styled';
+import { S_SelectionEventContainer } from '@solo-buildABet/ui/myBet/styled';
+import { CrossBetIcon } from '@solo-ui/icons/svg';
 
 import type { EventModel } from 'src/appState/models/models/EventModel';
 import type { BetStatus } from 'src/common/enums';

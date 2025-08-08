@@ -1,4 +1,4 @@
-import { api } from '@sc-api/api';
+import { api } from '@solo-api/api';
 
 export function getStreams() {
     return api.get('/streams/events');

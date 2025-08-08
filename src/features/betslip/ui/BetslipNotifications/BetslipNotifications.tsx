@@ -1,9 +1,9 @@
-import { usePathLocation } from '@sc-hooks';
+import { usePathLocation } from '@solo-hooks';
 import { useAtomValue } from 'jotai';
 import isEmpty from 'lodash/isEmpty';
 import { useRecoilValue } from 'recoil';
 
-import { currencySelector, oddsUpdateSelector } from '@sc-account/store/selectors';
+import { currencySelector, oddsUpdateSelector } from '@solo-account/store/selectors';
 
 import { BetslipErrorCode } from 'src/common/enums/error';
 import { moneyAccountSymbolBeforeValue } from 'src/utils/format';

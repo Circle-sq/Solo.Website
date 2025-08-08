@@ -4,7 +4,7 @@ import map from 'lodash/map';
 import pick from 'lodash/pick';
 import reject from 'lodash/reject';
 
-import type { UserData } from '@sc-account/types';
+import type { UserData } from '@solo-account/types';
 
 import { Currency } from 'src/common/enums';
 

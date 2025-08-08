@@ -2,8 +2,8 @@ import { observer } from 'mobx-react-lite';
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { usePossibleBets } from '@sc-betslip/api/possibleBets/queries';
-import { PossibleBetsTriggeredBy } from '@sc-betslip/enums';
+import { usePossibleBets } from '@solo-betslip/api/possibleBets/queries';
+import { PossibleBetsTriggeredBy } from '@solo-betslip/enums';
 
 import { refreshEvent, request as getEvent } from 'src/modules/events/actions/get';
 import { eventSelector } from 'src/modules/events/selectors';

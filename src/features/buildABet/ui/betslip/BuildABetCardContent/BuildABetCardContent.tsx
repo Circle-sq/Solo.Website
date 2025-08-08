@@ -2,12 +2,12 @@ import get from 'lodash/get';
 import { observer } from 'mobx-react-lite';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import type { Leg, MultiBetLeg } from '@sc-betslip/api/types/leg';
-import { showFadeInAnimationSelectorFamily } from '@sc-betslip/store/selectors/animation';
-import { isSingleTabSelector } from '@sc-betslip/store/selectors/betslipTab';
-import { animationEndTask } from '@sc-betslip/store/tasks/betslipBet/animation';
-import CardStake from '@sc-betslip/ui/SelectionItem/CardStake/CardStake';
-import BuildABetLeg from '@sc-buildABet/ui/BuildABetLeg/BuildABetLeg';
+import type { Leg, MultiBetLeg } from '@solo-betslip/api/types/leg';
+import { showFadeInAnimationSelectorFamily } from '@solo-betslip/store/selectors/animation';
+import { isSingleTabSelector } from '@solo-betslip/store/selectors/betslipTab';
+import { animationEndTask } from '@solo-betslip/store/tasks/betslipBet/animation';
+import CardStake from '@solo-betslip/ui/SelectionItem/CardStake/CardStake';
+import BuildABetLeg from '@solo-buildABet/ui/BuildABetLeg/BuildABetLeg';
 
 import BuildABetLegEventInfo from './BuildABetLegEventInfo/BuildABetLegEventInfo';
 import { S_BuildABetCardContent, S_CardSelection, S_NameStakeWrapper } from './styled';

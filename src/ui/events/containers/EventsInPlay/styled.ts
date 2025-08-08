@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, fontWeight, GenericColors, RedPalette } from '@sc-ui/system';
+import { breakpoints, fontWeight, GenericColors, RedPalette } from '@solo-ui/system';
 
 import LiveLabel from 'src/ui/common/LiveLabel/LiveLabel';
 

@@ -1,9 +1,9 @@
 import type { RenderResult } from '@testing-library/react';
 import type { ReactElement } from 'react';
 
-import { DevToolsProvider } from '@sc-devtools/DevTools';
-import MockComponent from '@sc-tests/unit/mocks/MockComponent';
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { DevToolsProvider } from '@solo-devtools/DevTools';
+import MockComponent from '@solo-tests/unit/mocks/MockComponent';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import type { Notification } from 'src/appState/redux/types';
 
@@ -59,8 +59,8 @@ describe('BannersContainer', () => {
             expect(banner).toHaveTextContent(`Banner ${index + 1}`);
         });
     });
-    it('should render comtrade banners', async () => {
-        window.$platformId = 'comtrade';
+    it('should render sportsbook banners', async () => {
+        window.$platformId = 'sportsbook';
         // set clientLabel for banners
         (banners as Notification[]).forEach((banner) => {
             if (banner.clientLabel === null) {
@@ -72,6 +72,6 @@ describe('BannersContainer', () => {
         const bannersLinks = await findAllByRole('link');
 
         expect(bannersLinks.length).toEqual(1);
-        expect(bannersLinks[0]).toHaveTextContent('Comtrade Banner');
+        expect(bannersLinks[0]).toHaveTextContent('Sportsbook Banner');
     });
 });

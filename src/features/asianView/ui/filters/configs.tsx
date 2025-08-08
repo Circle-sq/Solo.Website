@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { Lines, SortBy, TimePeriod } from '@sc-asianView/enums';
-import ClockIcon from '@sc-asianView/icons/ClockIcon';
-import TrophyIcon from '@sc-asianView/icons/TrophyIcon';
-import { getDateRange } from '@sc-asianView/ui/filters/helpers';
+import { Lines, SortBy, TimePeriod } from '@solo-asianView/enums';
+import ClockIcon from '@solo-asianView/icons/ClockIcon';
+import TrophyIcon from '@solo-asianView/icons/TrophyIcon';
+import { getDateRange } from '@solo-asianView/ui/filters/helpers';
 
 import { DATE_FORMAT } from 'src/utils/constants';
 

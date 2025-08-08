@@ -1,8 +1,8 @@
 import isUndefined from 'lodash/isUndefined';
 import type { ReactNode } from 'react';
 
-import { CupIcon, GlobeIcon, RightArrowIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { CupIcon, GlobeIcon, RightArrowIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { S_ContentIcon } from '../NavigationList/styled';
 

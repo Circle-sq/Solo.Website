@@ -1,6 +1,6 @@
 import map from 'lodash/map';
 
-import { fontWeight } from '@sc-ui/system';
+import { fontWeight } from '@solo-ui/system';
 
 const headingFontWeights = [
     { weightName: 'bold', fontWeight: fontWeight.bold },

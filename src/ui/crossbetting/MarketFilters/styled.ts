@@ -1,7 +1,14 @@
 import styled from '@emotion/styled';
 import { formControlLabelClasses } from '@mui/material/FormControlLabel';
 
-import { GreyPalette, DarkBluePalette, LightBluePalette, fontWeight, breakpoints, GenericColors } from '@sc-ui/system';
+import {
+    GreyPalette,
+    DarkBluePalette,
+    LightBluePalette,
+    fontWeight,
+    breakpoints,
+    GenericColors,
+} from '@solo-ui/system';
 
 export const S_MarketFiltersWrapper = styled.div`
     display: flex;

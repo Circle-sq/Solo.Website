@@ -1,7 +1,7 @@
 import { format } from 'date-fns';
 import { useAtomValue } from 'jotai';
 
-import { currencySelector } from '@sc-account/store/selectors';
+import { currencySelector } from '@solo-account/store/selectors';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 import ReadMore from 'src/ui/common/ReadMore';

@@ -1,4 +1,4 @@
-import { DarkBluePalette, GenericColors, GreenPalette, GreyPalette } from '@sc-ui/system';
+import { DarkBluePalette, GenericColors, GreenPalette, GreyPalette } from '@solo-ui/system';
 
 import type { ButtonSizes, Color } from './types';
 

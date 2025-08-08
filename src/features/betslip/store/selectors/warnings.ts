@@ -6,8 +6,8 @@ import isUndefined from 'lodash/isUndefined';
 import size from 'lodash/size';
 import { selector, selectorFamily } from 'recoil';
 
-import { hasPriceWentDownSelector } from '@sc-betslip/store/selectors/animation';
-import { hasBuildABetMaximumSelectionsAtomFamily } from '@sc-buildABet/store/atoms';
+import { hasPriceWentDownSelector } from '@solo-betslip/store/selectors/animation';
+import { hasBuildABetMaximumSelectionsAtomFamily } from '@solo-buildABet/store/atoms';
 
 import { BetslipOdds, OfferStatus, OfferUser } from 'src/common/enums';
 import { BetslipErrorCode, ErrorResource } from 'src/common/enums/error';
@@ -26,7 +26,7 @@ import {
     hasServerSideErrorSelector,
     hasStartedBuildABetErrorSelector,
     hasStartedCrossBetErrorSelector,
-    xyzErrorMessagesSelector,
+    sportsbookErrorMessagesSelector,
 } from './errors';
 import { hasOfferSelector, isOfferRejectedSelector, offerStatusSelector, offerUserSelector } from './offer';
 import { isPlaceBetLoadingSelector } from './placeBet';
@@ -160,7 +160,7 @@ export const betslipNotificationsSelector = selectorFamily<
         ({ eventId, oddsUpdate }) =>
         ({ get: getRecoilValue }) => {
             const betslipWarnings = getRecoilValue(betslipWarningsSelector);
-            const xyzErrorMessages = getRecoilValue(xyzErrorMessagesSelector);
+            const sportsbookErrorMessages = getRecoilValue(sportsbookErrorMessagesSelector);
             const betslipNotificationsMap = getRecoilValue(
                 betslipNotificationsMappingSelector({ eventId, oddsUpdate }),
             );
@@ -178,8 +178,8 @@ export const betslipNotificationsSelector = selectorFamily<
                 }
             });
 
-            if (!isEmpty(xyzErrorMessages)) {
-                notifications.push(...xyzErrorMessages);
+            if (!isEmpty(sportsbookErrorMessages)) {
+                notifications.push(...sportsbookErrorMessages);
             }
 
             const accountErrorMessage = find(notifications, ({ error }) => error?.resource === ErrorResource.Account);

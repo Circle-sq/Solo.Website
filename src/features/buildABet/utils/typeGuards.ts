@@ -1,7 +1,7 @@
 import get from 'lodash/get';
 import has from 'lodash/has';
 
-import type { BaseLeg, BuildABetLeg, Leg } from '@sc-betslip/api/types/leg';
+import type { BaseLeg, BuildABetLeg, Leg } from '@solo-betslip/api/types/leg';
 
 import { LegType } from 'src/common/enums';
 import type { MyBet, MyBuildABetLeg } from 'src/common/types/myBet';

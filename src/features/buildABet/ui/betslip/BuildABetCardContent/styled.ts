@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import styled from '@emotion/styled';
 
-import { GreyPalette, cssColor } from '@sc-ui/system';
+import { GreyPalette, cssColor } from '@solo-ui/system';
 
 export const S_BuildABetCardContent = styled.div<{ showFadeInAnimation: boolean }>`
     display: flex;

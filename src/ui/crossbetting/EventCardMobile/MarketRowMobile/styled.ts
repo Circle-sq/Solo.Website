@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, radius, breakpoints, GreyPalette } from '@sc-ui/system';
+import { fontWeight, radius, breakpoints, GreyPalette } from '@solo-ui/system';
 
 export const S_MarketRowMobile = styled.div`
     display: flex;

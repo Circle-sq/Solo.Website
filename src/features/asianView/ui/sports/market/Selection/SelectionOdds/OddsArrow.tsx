@@ -1,5 +1,5 @@
-import BlueArrowDownIcon from '@sc-asianView/icons/BlueArrowDownIcon';
-import RedArrowUpIcon from '@sc-asianView/icons/RedArrowUpIcon';
+import BlueArrowDownIcon from '@solo-asianView/icons/BlueArrowDownIcon';
+import RedArrowUpIcon from '@solo-asianView/icons/RedArrowUpIcon';
 
 import { PriceChange } from 'src/common/enums';
 import usePriceChange from 'src/utils/hooks/usePriceChange';

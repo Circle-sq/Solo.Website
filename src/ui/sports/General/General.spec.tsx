@@ -4,9 +4,9 @@ import { Map as ImmutableMap, fromJS, List } from 'immutable';
 import map from 'lodash/map';
 import { http, HttpResponse } from 'msw';
 
-import MockComponent from '@sc-tests/unit/mocks/MockComponent';
-import { buildSubUnsubWrapper, renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
-import { server } from '@sc-tests/unit/mocks/server.setup';
+import MockComponent from '@solo-tests/unit/mocks/MockComponent';
+import { buildSubUnsubWrapper, renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
+import { server } from '@solo-tests/unit/mocks/server.setup';
 
 import { LOAD_MORE_TIMEOUT } from 'src/ui/events/EventsList/EventsList';
 
@@ -31,7 +31,7 @@ const countryList = fromJS([
             name: 'Primera Division',
             externalId: {
                 feedId: 'sr:tournament:406',
-                instance: 'skycity',
+                instance: 'solo',
                 provider: 'bet-radar',
                 sportId: 'bet-radar',
             },
@@ -49,7 +49,7 @@ const countryList = fromJS([
             name: 'Premier League',
             externalId: {
                 feedId: 'sr:tournament:218',
-                instance: 'skycity',
+                instance: 'solo',
                 provider: 'bet-radar',
                 sportId: 'bet-radar',
             },
@@ -71,7 +71,7 @@ const countryCustomList = [
                     platformObject: {
                         externalId: {
                             feedId: 'sr:tournament:7',
-                            instance: 'skycity',
+                            instance: 'solo',
                             provider: 'bet-radar',
                             sportId: 'bet-radar',
                         },
@@ -104,7 +104,7 @@ const tournamentCustomList = [
                     platformObject: {
                         externalId: {
                             feedId: 'sr:tournament:406',
-                            instance: 'skycity',
+                            instance: 'solo',
                             provider: 'bet-radar',
                             sportId: 'bet-radar',
                         },

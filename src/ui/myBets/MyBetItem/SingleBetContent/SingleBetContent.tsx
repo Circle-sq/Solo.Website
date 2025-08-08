@@ -1,5 +1,5 @@
-import { SingleBuildABetContent } from '@sc-buildABet/ui/myBet';
-import { isMyBetBuildABet } from '@sc-buildABet/utils/typeGuards';
+import { SingleBuildABetContent } from '@solo-buildABet/ui/myBet';
+import { isMyBetBuildABet } from '@solo-buildABet/utils/typeGuards';
 
 import type { BetStatus } from 'src/common/enums';
 import type { MyBet } from 'src/common/types/myBet';

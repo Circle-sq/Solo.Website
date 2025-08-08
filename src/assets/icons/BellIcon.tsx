@@ -1,4 +1,4 @@
-import { cssColor } from '@sc-ui/system';
+import { cssColor } from '@solo-ui/system';
 
 const BellIcon = () => (
     <svg width='16' height='16' fill='none' viewBox='0 0 28 28' xmlns='http://www.w3.org/2000/svg'>

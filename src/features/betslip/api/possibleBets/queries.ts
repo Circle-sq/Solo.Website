@@ -8,7 +8,7 @@ import reduce from 'lodash/reduce';
 import { batch, useDispatch } from 'react-redux';
 import { useRecoilCallback, useRecoilTransaction_UNSTABLE as useRecoilTransaction } from 'recoil';
 
-import { store, useJotaiCallback } from '@sc-utils/jotai';
+import { store, useJotaiCallback } from '@solo-utils/jotai';
 
 import { BetslipTab, RouteName } from 'src/common/enums';
 import { getValue } from 'src/common/recoil/snapshot';

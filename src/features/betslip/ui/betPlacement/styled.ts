@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { LightBluePalette, cssColor } from '@sc-ui/system';
+import { LightBluePalette, cssColor } from '@solo-ui/system';
 
 import Button from 'src/ui/common/Button/Button';
 import StatefulButton from 'src/ui/common/Button/StatefulButton';

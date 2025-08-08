@@ -1,7 +1,7 @@
-import { asianInPlayHandicapLineFlagAtom } from '@sc-feature-flags';
+import { asianInPlayHandicapLineFlagAtom } from '@solo-feature-flags';
 import getIn from 'lodash/get';
 
-import { selectorFamily } from '@sc-utils/jotai';
+import { selectorFamily } from '@solo-utils/jotai';
 
 import { type SelectionIdentifier, SportType } from 'src/common/enums';
 import type { Price } from 'src/common/types/selectionPrice';

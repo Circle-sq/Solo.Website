@@ -40,7 +40,7 @@ export const currencyToSymbol = (currency: CurrencyType): CurrencySymbol => {
         return CurrencySymbol[currency.toUpperCase() as Currency];
     }
 
-    return CurrencySymbol.KRW;
+    return CurrencySymbol.USD;
 };
 
 export const isDecimalCheck = (stake: string): boolean => {

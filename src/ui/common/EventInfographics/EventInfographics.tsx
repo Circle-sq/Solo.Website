@@ -1,7 +1,7 @@
 import { observer } from 'mobx-react-lite';
 import { Box } from '@mui/material';
 
-import { useBlacklistQuery } from '@sc-api/streams/blacklist/queries';
+import { useBlacklistQuery } from '@solo-api/streams/blacklist/queries';
 
 import type { EventModel } from 'src/appState/models/models/EventModel';
 import { isLiveEventPeriod } from 'src/common/helpers/event';

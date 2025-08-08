@@ -1,4 +1,4 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import classnames from 'classnames';
 import includes from 'lodash/includes';
 import { observer } from 'mobx-react-lite';

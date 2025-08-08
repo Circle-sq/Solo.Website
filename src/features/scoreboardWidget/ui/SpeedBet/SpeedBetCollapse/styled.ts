@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, fontWeight, GenericColors, GreyPalette, Opacities } from '@sc-ui/system';
+import { breakpoints, fontWeight, GenericColors, GreyPalette, Opacities } from '@solo-ui/system';
 
 export const S_SpeedBet = styled.div``;
 

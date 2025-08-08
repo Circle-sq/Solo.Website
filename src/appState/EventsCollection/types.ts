@@ -32,7 +32,7 @@ export interface EventsCollectionQuery {
     'market.popular'?: string;
     'market.outright'?: string;
     'timeSettings.tradedInPlay'?: 'true';
-    'tags.skycity-events'?: string | TimeRange<number>;
+    'tags.solo-events'?: string | TimeRange<number>;
     'tags.outright'?: string;
     'tags.country'?: string;
     'tags.tennis-tour'?: string;

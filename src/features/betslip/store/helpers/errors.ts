@@ -3,14 +3,14 @@ import includes from 'lodash/includes';
 import keys from 'lodash/keys';
 import some from 'lodash/some';
 
-import type { XyzProviderErrorCode } from 'src/common/enums/error';
+import type { SportsbookProviderErrorCode } from 'src/common/enums/error';
 import { BetslipErrorCode, PriceErrorCode } from 'src/common/enums/error';
 
 import type { BetError } from '../../api/types/error';
 import type { Legs } from '../../api/types/leg';
 import type { Problem } from '../../api/types/problem';
 import { splitIds } from '../../helpers/multiBet';
-import { xyzErrors } from '../../i18n/errors/xyzProvider';
+import { sportsbookErrors } from '../../i18n/errors/provider';
 import { isCrossBetType } from '../../typeGuards/bet';
 import type { BetslipWarning } from '../types';
 
@@ -20,12 +20,12 @@ export const filterAlgoSportErrors = (errors: BetError[]) =>
 export const filterZeroWinExpectationErrors = (errors: BetError[]) =>
     filter(errors, { code: PriceErrorCode.ZeroWinExpectation });
 
-export const filterXyzErrorCodes = (errors: BetError[]): XyzProviderErrorCode[] =>
-    filter(keys(xyzErrors) as XyzProviderErrorCode[], (code) => some(errors, { code }));
+export const filterSportsbookErrorCodes = (errors: BetError[]): SportsbookProviderErrorCode[] =>
+    filter(keys(sportsbookErrors) as SportsbookProviderErrorCode[], (code) => some(errors, { code }));
 
-export const getXyzErrors = (errorCodes: XyzProviderErrorCode[]): BetslipWarning[] => {
+export const getSportsbookErrors = (errorCodes: SportsbookProviderErrorCode[]): BetslipWarning[] => {
     return errorCodes.map((code) => {
-        const { key, type, langKey, defaultText } = xyzErrors[code];
+        const { key, type, langKey, defaultText } = sportsbookErrors[code];
 
         return { key, type, langKey, defaultText };
     });

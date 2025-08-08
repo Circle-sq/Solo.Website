@@ -1,11 +1,11 @@
 import { Meta } from '@storybook/blocks';
-import { Icon } from '@sc-ui/beteast/icons';
+import { Icon } from '@solo-ui/beteast/icons';
 
 <Meta title="Atoms/Icons" component={Icon} />
 
 # Icon Component
 
-The `Icon` component is used to render icons in your application. It's part of the `@sc-ui/beteast/icons` package.
+The `Icon` component is used to render icons in your application. It's part of the `@solo-ui/beteast/icons` package.
 
 ## Usage
 
@@ -13,7 +13,7 @@ Below is an example of how to use the `Icon` component:
 
 ```jsx
 import React from 'react';
-import { Icon } from '@sc-ui/beteast/icons';
+import { Icon } from '@solo-ui/beteast/icons';
 
 const MyComponent = () => (
     <div>

@@ -1,7 +1,7 @@
 import isEqual from 'lodash/isEqual';
 import pick from 'lodash/pick';
 
-import type { Problem } from '@sc-betslip/api/types/problem';
+import type { Problem } from '@solo-betslip/api/types/problem';
 
 import type { MarketItem } from 'src/common/types/market';
 

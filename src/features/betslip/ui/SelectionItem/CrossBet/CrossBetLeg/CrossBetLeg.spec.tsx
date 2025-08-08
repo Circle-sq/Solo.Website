@@ -1,6 +1,6 @@
 import find from 'lodash/find';
 
-import { buildSubUnsubWrapper, renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { buildSubUnsubWrapper, renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import CrossBetLeg from './CrossBetLeg';
 

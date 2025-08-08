@@ -1,11 +1,11 @@
-import { useSpeedBetFlag } from '@sc-feature-flags';
+import { useSpeedBetFlag } from '@solo-feature-flags';
 import { useQuery } from '@tanstack/react-query';
 import map from 'lodash/map';
 import orderBy from 'lodash/orderBy';
 import partition from 'lodash/partition';
 import { useSetRecoilState } from 'recoil';
 
-import { api } from '@sc-api/api';
+import { api } from '@solo-api/api';
 
 import type { EventItem } from 'src/common/types/event';
 import type { MarketItem } from 'src/common/types/market';

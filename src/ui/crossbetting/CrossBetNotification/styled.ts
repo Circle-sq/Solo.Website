@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, fontWeight, LightBluePalette } from '@sc-ui/system';
+import { breakpoints, fontWeight, LightBluePalette } from '@solo-ui/system';
 
 export const S_Notification = styled.div`
     display: flex;

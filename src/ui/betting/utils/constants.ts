@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react';
 
-import { GenericColors, Opacities } from '@sc-ui/system';
+import { GenericColors, Opacities } from '@solo-ui/system';
 
 import { QuickBetAnimationState } from '../store/types';
 

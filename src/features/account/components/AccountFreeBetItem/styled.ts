@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import Typography from '@mui/material/Typography';
 
-import { fontWeight, GenericColors, cssColor } from '@sc-ui/system';
+import { fontWeight, GenericColors, cssColor } from '@solo-ui/system';
 
 export const S_FreeBetBadgeWrapper = styled.div`
     display: flex;

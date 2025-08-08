@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, radius, GenericColors, Opacities, cssColor } from '@sc-ui/system';
+import { fontWeight, radius, GenericColors, Opacities, cssColor } from '@solo-ui/system';
 
 export const S_Container = styled.div`
     display: flex;

@@ -2,7 +2,7 @@ import { Box, Stack } from '@mui/material';
 import { observer } from 'mobx-react-lite';
 import { useState } from 'react';
 
-import { DownArrowIcon } from '@sc-ui/icons/svg';
+import { DownArrowIcon } from '@solo-ui/icons/svg';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { I18n } from 'src/ui/common/Language/I18n';

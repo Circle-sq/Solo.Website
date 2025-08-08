@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight } from '@sc-ui/system';
+import { fontWeight } from '@solo-ui/system';
 
 import TeamShirt from 'src/ui/common/TeamImage/TeamImage';
 

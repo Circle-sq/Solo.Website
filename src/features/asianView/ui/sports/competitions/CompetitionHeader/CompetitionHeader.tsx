@@ -1,10 +1,10 @@
 import {
     useCompetitionIconUrlQuerySelector,
     useCompetitionLocationIconUrlQuerySelector,
-} from '@sc-api/icons/querySelectors';
-import type { EventGroup } from '@sc-asianView/types';
-import { DownArrowIcon, UpArrowIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+} from '@solo-api/icons/querySelectors';
+import type { EventGroup } from '@solo-asianView/types';
+import { DownArrowIcon, UpArrowIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import CompetitionLocationIcon from 'src/assets/icons/competitionLocationIcon/CompetitionLocationIcon';
 import { SportType } from 'src/common/enums';

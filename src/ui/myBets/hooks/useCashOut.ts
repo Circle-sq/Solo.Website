@@ -1,8 +1,8 @@
 import { useCallback } from 'react';
 import { useRecoilCallback } from 'recoil';
 
-import { useMyBetsQueryCache } from '@sc-api/bets/queryCache';
-import { useRetrieveCashOutApi } from '@sc-api/cashout/queries';
+import { useMyBetsQueryCache } from '@solo-api/bets/queryCache';
+import { useRetrieveCashOutApi } from '@solo-api/cashout/queries';
 
 import { BetStatus } from 'src/common/enums';
 import { getValue } from 'src/common/recoil/snapshot';

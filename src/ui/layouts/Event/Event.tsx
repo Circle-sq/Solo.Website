@@ -1,15 +1,15 @@
-import { useInPlayLHNFlag } from '@sc-feature-flags';
-import { useWindowWidth } from '@sc-hooks';
+import { useInPlayLHNFlag } from '@solo-feature-flags';
+import { useWindowWidth } from '@solo-hooks';
 import pick from 'lodash/pick';
 import { observer } from 'mobx-react-lite';
 import { type ReactElement, useEffect, useMemo, useRef, useState } from 'react';
 import { useRecoilCallback, useSetRecoilState } from 'recoil';
 
-import { usePossibleBets } from '@sc-betslip/api/possibleBets/queries';
-import { PossibleBetsTriggeredBy } from '@sc-betslip/enums';
-import { normalizeSelection } from '@sc-betslip/store/helpers/selection/common';
-import { addStandardSelectionTask } from '@sc-betslip/store/tasks/selection/add';
-import { eventMediaAtom } from '@sc-media/store/atoms';
+import { usePossibleBets } from '@solo-betslip/api/possibleBets/queries';
+import { PossibleBetsTriggeredBy } from '@solo-betslip/enums';
+import { normalizeSelection } from '@solo-betslip/store/helpers/selection/common';
+import { addStandardSelectionTask } from '@solo-betslip/store/tasks/selection/add';
+import { eventMediaAtom } from '@solo-media/store/atoms';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { useFullscreenMode } from 'src/appState/customHooks';

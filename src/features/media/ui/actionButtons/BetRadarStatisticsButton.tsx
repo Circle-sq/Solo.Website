@@ -5,8 +5,8 @@ import isEmpty from 'lodash/isEmpty';
 import { type MouseEvent, useCallback, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { BoldChartIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { BoldChartIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import type { EventModel } from 'src/appState/models/models/EventModel';

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useAtomValue } from 'jotai';
 
-import { userIdSelector } from '@sc-account/store/selectors';
+import { userIdSelector } from '@solo-account/store/selectors';
 
 import type { MyBet } from 'src/common/types/myBet';
 import { buildBetsChannel } from 'src/utils/socket-io/buildChannel';

@@ -15,8 +15,8 @@ import {
 import { RecoilRoot } from 'recoil';
 import { describe, expect, it, vi } from 'vitest';
 
-import RecoilObserver from '@sc-tests/unit/mocks/recoil/RecoilObserver';
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import RecoilObserver from '@solo-tests/unit/mocks/recoil/RecoilObserver';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import type { LanguageStore } from 'src/appState/LanguageStore';
 import type { EventModel } from 'src/appState/models/models/EventModel';

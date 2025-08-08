@@ -23,7 +23,7 @@ import Draggable from 'react-draggable';
 import { ResizableBox } from 'react-resizable';
 import { useLocalStorage } from 'usehooks-ts';
 
-import { useSubscriptionDevTool, useWebsocketLogsDevTool } from '@sc-devtools/hooks';
+import { useSubscriptionDevTool, useWebsocketLogsDevTool } from '@solo-devtools/hooks';
 
 import useGeneralSocket from 'src/utils/socket-io/hooks/useGeneralSocket';
 

@@ -1,11 +1,11 @@
 import { useAtomValue } from 'jotai';
 import { memo, useMemo } from 'react';
 
-import { oddsFormatSelector } from '@sc-account/store/selectors';
-import { isMultipleBetType } from '@sc-betslip/helpers/combinations';
-import { calcTotalOdds } from '@sc-betslip/helpers/price';
-import { isCrossBetLegType } from '@sc-betslip/typeGuards/leg';
-import { FreeBetsLabel, FreeBetsLabelElWrapper, FreeBetsSelect } from '@sc-betslip/ui/freeBet/dropdown/styled';
+import { oddsFormatSelector } from '@solo-account/store/selectors';
+import { isMultipleBetType } from '@solo-betslip/helpers/combinations';
+import { calcTotalOdds } from '@solo-betslip/helpers/price';
+import { isCrossBetLegType } from '@solo-betslip/typeGuards/leg';
+import { FreeBetsLabel, FreeBetsLabelElWrapper, FreeBetsSelect } from '@solo-betslip/ui/freeBet/dropdown/styled';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import useTranslatedCurrency from 'src/appState/customHooks/useTranslatedCurrency';

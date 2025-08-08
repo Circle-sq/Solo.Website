@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, cssColor, GenericColors, LightBluePalette, Opacities, YellowPalette } from '@sc-ui/system';
+import { breakpoints, cssColor, GenericColors, LightBluePalette, Opacities, YellowPalette } from '@solo-ui/system';
 
 export const S_SingleValueCell = styled.div`
     position: relative;

@@ -2,8 +2,8 @@ import { useEffect, useRef } from 'react';
 import { components } from 'react-select';
 import type { ControlProps, IndicatorsContainerProps, MenuListProps, OptionProps } from 'react-select';
 
-import { DownArrowIcon, UpArrowIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { DownArrowIcon, UpArrowIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import CustomScrollbar from 'src/ui/common/CustomScrollbar';
 import { S_DropdownOption } from 'src/ui/crossbetting/FilterDropdown/styled';

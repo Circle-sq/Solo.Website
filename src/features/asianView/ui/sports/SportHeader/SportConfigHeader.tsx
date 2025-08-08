@@ -1,7 +1,7 @@
 import { useAtomValue } from 'jotai';
 import map from 'lodash/map';
 
-import { LHNTimeTab } from '@sc-asianView/enums';
+import { LHNTimeTab } from '@solo-asianView/enums';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 

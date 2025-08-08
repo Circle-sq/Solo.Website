@@ -3,9 +3,9 @@ import { screen } from '@testing-library/dom';
 import userEvent from '@testing-library/user-event';
 import { Map } from 'immutable';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
-import MockComponent from '@sc-tests/unit/mocks/MockComponent';
+import MockComponent from '@solo-tests/unit/mocks/MockComponent';
 
 import GroupingNavigation from '../GroupingNavigation';
 const eventId = 111;

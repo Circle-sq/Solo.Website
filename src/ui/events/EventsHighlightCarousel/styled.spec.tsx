@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react';
 import type { ReactNode } from 'react';
 
-import { renderWithTheme } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithTheme } from '@solo-tests/unit/mocks/renderMocks';
 
 import { S_NameContainer, S_Score, S_TeamImage } from './MarqueeCard/CardContent/styled';
 import { S_Footer, S_Header, S_Time, S_MarketName } from './MarqueeCard/styled';

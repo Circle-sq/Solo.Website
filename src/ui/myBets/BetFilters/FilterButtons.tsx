@@ -2,7 +2,7 @@ import map from 'lodash/map';
 import type { ChangeEvent } from 'react';
 import { memo } from 'react';
 
-import { S_FilterButtonsContainer, S_FilterRadioItem } from '@sc-ui/beteast';
+import { S_FilterButtonsContainer, S_FilterRadioItem } from '@solo-ui/beteast';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import type { TabStatus } from 'src/ui/myBets/store/types';

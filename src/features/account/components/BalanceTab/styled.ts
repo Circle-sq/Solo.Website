@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, radius, breakpoints, GenericColors, GreyPalette, cssColor } from '@sc-ui/system';
+import { fontWeight, radius, breakpoints, GenericColors, GreyPalette, cssColor } from '@solo-ui/system';
 
 import PopupWindow from 'src/ui/common/PopupWindow/PopupWindow';
 import { S_Header } from 'src/ui/common/PopupWindow/styled';

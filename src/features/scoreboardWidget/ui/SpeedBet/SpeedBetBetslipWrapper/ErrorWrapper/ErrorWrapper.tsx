@@ -1,6 +1,6 @@
 import Typography from '@mui/material/Typography';
 
-import { typographyColor } from '@sc-ui/system';
+import { typographyColor } from '@solo-ui/system';
 
 import { SpeedBetStatus } from 'src/features/scoreboardWidget/enums';
 import { I18n } from 'src/ui/common/Language/I18n';

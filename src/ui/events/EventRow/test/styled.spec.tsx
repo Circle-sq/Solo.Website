@@ -1,9 +1,9 @@
 import { screen } from '@testing-library/react';
 import type { PropsWithChildren } from 'react';
 
-import { renderWithTheme } from '@sc-tests/unit/mocks/renderMocks';
-import { RightArrowIcon } from '@sc-ui/icons/svg';
-import { cssColor, DarkBluePalette, fontWeight } from '@sc-ui/system';
+import { renderWithTheme } from '@solo-tests/unit/mocks/renderMocks';
+import { RightArrowIcon } from '@solo-ui/icons/svg';
+import { cssColor, DarkBluePalette, fontWeight } from '@solo-ui/system';
 
 import type { AppState } from 'src/appState/AppState';
 import type { RecursivePartial } from 'src/common/types/main';
@@ -146,8 +146,6 @@ describe('RightArrowIcon', () => {
         expect(arrowEl).toHaveStyleRule('font-size', '12px');
     });
 });
-
-//TODO: To include @emotion/babel-plugin in JEST config https://codefactorygroup.atlassian.net/browse/SC-7713
 
 describe('EventLink', () => {
     it('should have default state color and different hover color', () => {

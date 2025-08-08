@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, fontWeight, GenericColors } from '@sc-ui/system';
+import { breakpoints, fontWeight, GenericColors } from '@solo-ui/system';
 
 export const S_Period = styled.span`
     font-size: 14px;

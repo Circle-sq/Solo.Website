@@ -1,6 +1,6 @@
-import MockComponent from '@sc-tests/unit/mocks/MockComponent';
-import { renderWithTheme } from '@sc-tests/unit/mocks/renderMocks';
-import { cssColor, GreyPalette } from '@sc-ui/system';
+import MockComponent from '@solo-tests/unit/mocks/MockComponent';
+import { renderWithTheme } from '@solo-tests/unit/mocks/renderMocks';
+import { cssColor, GreyPalette } from '@solo-ui/system';
 
 import { S_SelectionAction } from 'src/ui/events/Selection/SelectionAction/styled';
 
@@ -40,13 +40,9 @@ describe('IdentifierLabel', () => {
     });
 });
 
-//TODO: To include @emotion/babel-plugin in JEST config https://codefactorygroup.atlassian.net/browse/SC-7713
-
 describe('SelectionAction', () => {
     const hover = { target: ':hover' };
     const testId = 'selectionAction-testId';
-
-    //TODO: SC-15784
     it.skip('should have default state background color and different hover background color', () => {
         const defaultProps = {
             isSuspended: false,

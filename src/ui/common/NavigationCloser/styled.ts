@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 import Link from 'src/utils/Router/Link';
-import { breakpoints } from '@sc-ui/system';
+import { breakpoints } from '@solo-ui/system';
 
 interface FrameActionProps {
     visible: 'on' | 'off';

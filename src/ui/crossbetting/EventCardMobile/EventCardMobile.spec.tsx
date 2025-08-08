@@ -3,11 +3,11 @@ import { addDays, addHours, startOfDay } from 'date-fns';
 import { http, HttpResponse } from 'msw';
 import type { ComponentProps, PropsWithChildren, ReactElement } from 'react';
 
-import { appStateContextMock } from '@sc-tests/unit/mocks/contexts/appStateContextMock';
-import { eventsSortContextMock } from '@sc-tests/unit/mocks/contexts/eventsSortContextMock';
-import RecoilObserver from '@sc-tests/unit/mocks/recoil/RecoilObserver';
-import { buildSubUnsubWrapper, renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
-import { server } from '@sc-tests/unit/mocks/server.setup';
+import { appStateContextMock } from '@solo-tests/unit/mocks/contexts/appStateContextMock';
+import { eventsSortContextMock } from '@solo-tests/unit/mocks/contexts/eventsSortContextMock';
+import RecoilObserver from '@solo-tests/unit/mocks/recoil/RecoilObserver';
+import { buildSubUnsubWrapper, renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
+import { server } from '@solo-tests/unit/mocks/server.setup';
 
 import type { AppState } from 'src/appState/AppState';
 import type { EventModel } from 'src/appState/models/models/EventModel';

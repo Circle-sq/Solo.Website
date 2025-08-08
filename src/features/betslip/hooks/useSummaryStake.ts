@@ -2,10 +2,10 @@ import get from 'lodash/get';
 import omitBy from 'lodash/omitBy';
 import reduce from 'lodash/reduce';
 import { useRecoilCallback } from 'recoil';
-import { decimalSeparator } from '@sc-betslip/ui/StakeNumpad/config';
+import { decimalSeparator } from '@solo-betslip/ui/StakeNumpad/config';
 
-import { playableBalanceSelector } from '@sc-account/store/selectors';
-import { store } from '@sc-utils/jotai';
+import { playableBalanceSelector } from '@solo-account/store/selectors';
+import { store } from '@solo-utils/jotai';
 
 import { BetslipTab } from 'src/common/enums';
 import { getValue } from 'src/common/recoil/snapshot';

@@ -1,4 +1,4 @@
-import { useWindowResize } from '@sc-hooks';
+import { useWindowResize } from '@solo-hooks';
 import { List } from 'immutable';
 import get from 'lodash/get';
 import includes from 'lodash/includes';
@@ -12,7 +12,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useRecoilValue } from 'recoil';
 
-import { COLUMN_BREAKPOINTS } from '@sc-ui/system';
+import { COLUMN_BREAKPOINTS } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { useInterval } from 'src/appState/customHooks';

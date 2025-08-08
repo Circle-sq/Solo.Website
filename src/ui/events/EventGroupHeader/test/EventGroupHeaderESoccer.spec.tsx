@@ -1,7 +1,7 @@
 import { fireEvent } from '@testing-library/react';
 import type { ComponentProps } from 'react';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import { SPORT_TYPE } from 'src/utils/constants';
 

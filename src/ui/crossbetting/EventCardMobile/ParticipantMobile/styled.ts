@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, fontWeight, GreyPalette } from '@sc-ui/system';
+import { breakpoints, fontWeight, GreyPalette } from '@solo-ui/system';
 
 import { S_PitcherName } from 'src/ui/common/Pitcher/styled';
 import TeamShirt from 'src/ui/common/TeamImage';

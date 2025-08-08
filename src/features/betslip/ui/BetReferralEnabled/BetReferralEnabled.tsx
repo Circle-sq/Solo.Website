@@ -1,4 +1,4 @@
-import { CoinsPileIcon } from '@sc-ui/icons/svg';
+import { CoinsPileIcon } from '@solo-ui/icons/svg';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 

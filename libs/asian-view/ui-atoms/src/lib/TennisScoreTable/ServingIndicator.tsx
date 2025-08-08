@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box';
 
-import { GenericColors } from '@sc-ui/system';
+import { GenericColors } from '@solo-ui/system';
 
 function ServingIndicator({ serving }: { serving: boolean }) {
     return (

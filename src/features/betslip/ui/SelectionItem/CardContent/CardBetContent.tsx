@@ -1,6 +1,6 @@
 import { useRecoilValue } from 'recoil';
 
-import { BuildABetCardContent } from '@sc-buildABet/ui';
+import { BuildABetCardContent } from '@solo-buildABet/ui';
 
 import type { Leg } from '../../../api/types/leg';
 import useBetType from '../../../hooks/useBetType';

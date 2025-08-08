@@ -1,10 +1,10 @@
 import { queryClientAtom } from 'jotai-tanstack-query';
 
-import type { CompetitionsWithEventsResponse } from '@sc-asianView/api/competitions/types';
-import { queryKeys } from '@sc-asianView/api/queryKeys';
-import { moveStartedEventToLiveGroup, removeFinishedEvent } from '@sc-asianView/store/helpers/updaters';
-import { competitionsQueryKeyParamsAtom, eventsQueryKeyParamsAtom } from '@sc-asianView/store/keyParams';
-import type { CallbackParams } from '@sc-utils/jotai';
+import type { CompetitionsWithEventsResponse } from '@solo-asianView/api/competitions/types';
+import { queryKeys } from '@solo-asianView/api/queryKeys';
+import { moveStartedEventToLiveGroup, removeFinishedEvent } from '@solo-asianView/store/helpers/updaters';
+import { competitionsQueryKeyParamsAtom, eventsQueryKeyParamsAtom } from '@solo-asianView/store/keyParams';
+import type { CallbackParams } from '@solo-utils/jotai';
 
 import { eventItemAtomFamily } from '../entities';
 import { updateInfiniteEventsQueryCache } from '../helpers/queryCache';

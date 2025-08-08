@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, DarkBluePalette, LightBluePalette, cssColor } from '@sc-ui/system';
+import { fontWeight, DarkBluePalette, LightBluePalette, cssColor } from '@solo-ui/system';
 
 export const S_Icon = styled.span`
     position: absolute;

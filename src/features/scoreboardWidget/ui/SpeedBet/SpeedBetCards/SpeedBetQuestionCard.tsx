@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { useRecoilValue, useRecoilCallback } from 'recoil';
 
-import { GreenPalette, LightBluePalette, YellowPalette } from '@sc-ui/system';
+import { GreenPalette, LightBluePalette, YellowPalette } from '@solo-ui/system';
 
 import { SportType, OddsFormat } from 'src/common/enums';
 import type { MarketItem } from 'src/common/types/market';

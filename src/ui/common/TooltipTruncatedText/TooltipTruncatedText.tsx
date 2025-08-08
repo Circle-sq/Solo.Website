@@ -1,5 +1,5 @@
 import { Tooltip } from '@mui/material';
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { type PropsWithChildren } from 'react';
 
 import { S_Label } from './styled';

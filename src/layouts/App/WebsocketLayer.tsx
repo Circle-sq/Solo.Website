@@ -1,4 +1,4 @@
-import { useAsianViewFlag } from '@sc-feature-flags';
+import { useAsianViewFlag } from '@solo-feature-flags';
 import { useFlagsStatus } from '@unleash/proxy-client-react';
 import { observer } from 'mobx-react-lite';
 import { type PropsWithChildren, useEffect } from 'react';
@@ -6,8 +6,8 @@ import { type PropsWithChildren, useEffect } from 'react';
 import {
     type ModelService,
     ModelSubscribeBridgeService,
-} from '@sc-features/subscription-manager/ModelSubscribeBridgeService';
-import { WebsocketSubscriptionProvider } from '@sc-features/subscription-manager/WebsocketSubscriptionProvider';
+} from '@solo-features/subscription-manager/ModelSubscribeBridgeService';
+import { WebsocketSubscriptionProvider } from '@solo-features/subscription-manager/WebsocketSubscriptionProvider';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { RouteName } from 'src/common/enums';

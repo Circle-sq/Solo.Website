@@ -1,6 +1,6 @@
 import { fetchPost } from '../../fetch';
 import * as t from 'io-ts';
-import { buildValidator } from '@sc-webapi/mobx-utils/buildValidator';
+import { buildValidator } from '@solo-webapi/mobx-utils/buildValidator';
 
 export interface ProgramConfigType {
     readonly host: string;

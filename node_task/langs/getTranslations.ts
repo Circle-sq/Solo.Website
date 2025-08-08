@@ -1,4 +1,4 @@
-import { getListFromDir, lstat, readFile } from '@sc-webapi/mobx-utils/stdfs';
+import { getListFromDir, lstat, readFile } from '@solo-webapi/mobx-utils/stdfs';
 
 import type {
     TranslationItem,

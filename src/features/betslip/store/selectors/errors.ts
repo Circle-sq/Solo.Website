@@ -29,9 +29,9 @@ import { betsLimitByTab } from '../configs';
 import { getBetsWithProblems } from '../helpers/betslipBets';
 import {
     filterAlgoSportErrors,
-    filterXyzErrorCodes,
+    filterSportsbookErrorCodes,
     filterZeroWinExpectationErrors,
-    getXyzErrors,
+    getSportsbookErrors,
     hasStartedCrossBetError,
 } from '../helpers/errors';
 import type { BetslipWarning } from '../types';
@@ -227,12 +227,12 @@ export const hasStartedCrossBetErrorSelector = selector<boolean>({
     get: ({ get }) => hasStartedCrossBetError(get(betslipProblemsAtom), get(betslipBetsSelector)),
 });
 
-export const xyzErrorMessagesSelector = selector<BetslipWarning[]>({
-    key: 'xyzErrorMessagesSelector',
+export const sportsbookErrorMessagesSelector = selector<BetslipWarning[]>({
+    key: 'sportsbookErrorMessagesSelector',
     get: ({ get }) => {
-        const placeBetXyzErrorCodes = filterXyzErrorCodes(get(betslipErrorsAtom));
+        const placeBetSportsbookErrorCodes = filterSportsbookErrorCodes(get(betslipErrorsAtom));
 
-        return getXyzErrors(placeBetXyzErrorCodes);
+        return getSportsbookErrors(placeBetSportsbookErrorCodes);
     },
 });
 

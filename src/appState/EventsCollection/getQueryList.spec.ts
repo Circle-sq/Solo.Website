@@ -49,7 +49,7 @@ describe('getQueryList fn', () => {
 
     it('should return expected query params if collection name contains highlight-carousel', () => {
         const expected = {
-            'tags.skycity-events': { from: 1, to: 20 },
+            'tags.solo-events': { from: 1, to: 20 },
             perPage: 20,
             sort: ['timeSettings.startTime'],
             state: 'open',

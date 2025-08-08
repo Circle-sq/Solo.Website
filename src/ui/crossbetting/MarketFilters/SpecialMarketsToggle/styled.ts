@@ -1,7 +1,7 @@
 import { styled } from '@mui/material/styles';
 import Switch, { switchClasses } from '@mui/material/Switch';
 
-import { cssColor } from '@sc-ui/system';
+import { cssColor } from '@solo-ui/system';
 
 export const S_SpecialMarketsToggle = styled(Switch)(({ theme }) => ({
     width: 28,

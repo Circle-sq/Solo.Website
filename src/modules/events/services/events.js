@@ -4,7 +4,7 @@ import getIn from 'lodash/get';
 import keyBy from 'lodash/keyBy';
 import reduce from 'lodash/reduce';
 
-import { api } from '@sc-api/api';
+import { api } from '@solo-api/api';
 
 import { buildCacheUrl } from 'src/appState/utils';
 import { remapEventsSport } from 'src/utils/sportRemapping';

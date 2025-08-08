@@ -1,4 +1,4 @@
-import type { UniformType } from '@sc-api/uniforms/types';
+import type { UniformType } from '@solo-api/uniforms/types';
 
 export const parseUniformUrlParams = (uniformUrl: string) => {
     const [sport, , playerId, uniformType] = uniformUrl.split('/').filter(Boolean);

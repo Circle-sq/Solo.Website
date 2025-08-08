@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, breakpoints, DarkBluePalette, GreyPalette, GenericColors } from '@sc-ui/system';
+import { fontWeight, breakpoints, DarkBluePalette, GreyPalette, GenericColors } from '@solo-ui/system';
 
 import Link from 'src/utils/Router/NewLink';
 

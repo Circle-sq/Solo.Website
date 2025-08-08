@@ -2,10 +2,10 @@ import userEvent from '@testing-library/user-event';
 import { add } from 'date-fns';
 import { http, HttpResponse } from 'msw';
 
-import { MockStoreProvider } from '@sc-tests/unit/mocks/jotai/store';
-import { languagesMock } from '@sc-tests/unit/mocks/languagesMock';
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
-import { server } from '@sc-tests/unit/mocks/server.setup';
+import { MockStoreProvider } from '@solo-tests/unit/mocks/jotai/store';
+import { languagesMock } from '@solo-tests/unit/mocks/languagesMock';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
+import { server } from '@solo-tests/unit/mocks/server.setup';
 
 import { Currency, OddsFormatLong } from 'src/common/enums';
 

@@ -1,9 +1,9 @@
 import { useAtomValue } from 'jotai';
 import { useRecoilState, useRecoilValue } from 'recoil';
 
-import { currencySelector, oddsFormatSelector } from '@sc-account/store/selectors';
-import { CheckboxIcon } from '@sc-ui/icons/svg';
-import { LightBluePalette } from '@sc-ui/system';
+import { currencySelector, oddsFormatSelector } from '@solo-account/store/selectors';
+import { CheckboxIcon } from '@solo-ui/icons/svg';
+import { LightBluePalette } from '@solo-ui/system';
 
 import useTranslatedCurrency from 'src/appState/customHooks/useTranslatedCurrency';
 import { toggleState } from 'src/common/helpers/state';

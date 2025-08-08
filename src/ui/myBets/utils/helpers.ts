@@ -10,7 +10,7 @@ import join from 'lodash/join';
 import map from 'lodash/map';
 import some from 'lodash/some';
 
-import { isMultiBetLegType } from '@sc-betslip/typeGuards/leg';
+import { isMultiBetLegType } from '@solo-betslip/typeGuards/leg';
 
 import type { EventModel } from 'src/appState/models/models/EventModel';
 import type { ModelsState } from 'src/appState/models/ModelsState';

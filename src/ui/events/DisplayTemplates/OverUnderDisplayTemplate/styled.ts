@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, cssColor } from '@sc-ui/system';
+import { fontWeight, cssColor } from '@solo-ui/system';
 
 export const S_OverUnderDisplayTemplateWrapper = styled.div`
     font-size: 14px;

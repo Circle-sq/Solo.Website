@@ -1,14 +1,14 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { useAtomValue } from 'jotai';
 import { useState } from 'react';
 import { useRecoilCallback } from 'recoil';
 
-import BalancePopup from '@sc-account/components/BalanceTab/BalancePopup';
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
-import { freebetCreditsAtomWithQuery } from '@sc-account/store/queries';
-import { currencySelector, playableBalanceSelector } from '@sc-account/store/selectors';
-import { openLoginPopupTask } from '@sc-account/store/tasks';
-import { useJotaiCallback } from '@sc-utils/jotai';
+import BalancePopup from '@solo-account/components/BalanceTab/BalancePopup';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
+import { freebetCreditsAtomWithQuery } from '@solo-account/store/queries';
+import { currencySelector, playableBalanceSelector } from '@solo-account/store/selectors';
+import { openLoginPopupTask } from '@solo-account/store/tasks';
+import { useJotaiCallback } from '@solo-utils/jotai';
 
 import { closeMyBetsAndQuickBetTask } from 'src/ui/betting/store/tasks';
 import { I18n } from 'src/ui/common/Language/I18n';

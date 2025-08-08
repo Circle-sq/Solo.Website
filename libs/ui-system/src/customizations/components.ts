@@ -8,8 +8,8 @@ export const componentsOptions: ThemeOptions['components'] = {
         styleOverrides: {
             root: {
                 borderRadius: '6px',
-                backgroundColor: 'var(--mui-sc-accordion-background, royalblue)',
-                borderColor: 'var(--mui-sc-accordion-border, royalblue)',
+                backgroundColor: 'var(--mui-solo-accordion-background, royalblue)',
+                borderColor: 'var(--mui-solo-accordion-border, royalblue)',
             },
         },
     }

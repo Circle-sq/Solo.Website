@@ -1,8 +1,8 @@
 import { useRef } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import { isPossibleBetsLoadingSelector } from '@sc-betslip/store/selectors/betslip';
-import { possibleWinningsSelector } from '@sc-betslip/store/selectors/stake';
+import { isPossibleBetsLoadingSelector } from '@solo-betslip/store/selectors/betslip';
+import { possibleWinningsSelector } from '@solo-betslip/store/selectors/stake';
 
 export const useStableWinnings = () => {
     const isPossibleBetsLoading = useRecoilValue(isPossibleBetsLoadingSelector);

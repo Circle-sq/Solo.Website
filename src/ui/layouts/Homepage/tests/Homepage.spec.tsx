@@ -1,5 +1,5 @@
 import { screen, fireEvent, act } from '@testing-library/react';
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import { Homepage } from 'src/ui/layouts/Homepage/Homepage';
 

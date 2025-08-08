@@ -12,7 +12,7 @@ const WORLD = {
         id: '02_sr:tournament:853',
         name: 'Club Friendly Games',
         externalId: {
-            instance: 'skycity',
+            instance: 'solo',
             provider: 'bet-radar',
             feedId: 'sr:tournament:853',
             sportId: 'bet-radar',
@@ -31,7 +31,7 @@ const GEORGIA = {
         id: '02_sr:tournament:704',
         name: 'Erovnuli Liga',
         externalId: {
-            instance: 'skycity',
+            instance: 'solo',
             provider: 'bet-radar',
             feedId: 'sr:tournament:704',
             sportId: 'bet-radar',
@@ -49,7 +49,7 @@ const AUSTRALIA1 = {
         id: '02_sr:tournament:1274',
         name: 'NSW NPL 1',
         externalId: {
-            instance: 'skycity',
+            instance: 'solo',
             provider: 'bet-radar',
             feedId: 'sr:tournament:1274',
             sportId: 'bet-radar',
@@ -67,7 +67,7 @@ const AUSTRALIA2 = {
         id: '02_sr:tournament:18340',
         name: 'South Australia NPL, Women',
         externalId: {
-            instance: 'skycity',
+            instance: 'solo',
             provider: 'bet-radar',
             feedId: 'sr:tournament:18340',
             sportId: 'bet-radar',

@@ -1,11 +1,11 @@
 import usePrevious from '@react-hook/previous';
-import { useLazyEffect, useWindowWidth } from '@sc-hooks';
+import { useLazyEffect, useWindowWidth } from '@solo-hooks';
 import { useAtomValue } from 'jotai';
 import { useEffect, useRef } from 'react';
 import { useRecoilCallback, useRecoilValue, useResetRecoilState } from 'recoil';
 
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
-import { enabledBuildABetIdsAtom } from '@sc-buildABet/store/atoms';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
+import { enabledBuildABetIdsAtom } from '@solo-buildABet/store/atoms';
 
 import { setShowBackdropTask } from 'src/ui/betting/store/tasks';
 

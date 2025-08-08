@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, cssColor, DarkBluePalette, fontWeight, GenericColors, radius } from '@sc-ui/system';
+import { breakpoints, cssColor, DarkBluePalette, fontWeight, GenericColors, radius } from '@solo-ui/system';
 
 import type { Theme } from './types';
 

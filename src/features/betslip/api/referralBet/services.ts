@@ -1,7 +1,7 @@
 import isEmpty from 'lodash/isEmpty';
 import isString from 'lodash/isString';
 
-import { api } from '@sc-api/api';
+import { api } from '@solo-api/api';
 
 import type { OfferStatus } from 'src/common/enums';
 

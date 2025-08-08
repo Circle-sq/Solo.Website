@@ -1,11 +1,11 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import filter from 'lodash/filter';
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import { useRecoilValue, useRecoilCallback } from 'recoil';
 
-import { SubKey } from '@sc-features/subscription-manager/subKeys';
-import { SubscribeElement } from '@sc-features/subscription-manager/SubscribeElement';
+import { SubKey } from '@solo-features/subscription-manager/subKeys';
+import { SubscribeElement } from '@solo-features/subscription-manager/SubscribeElement';
 
 import { Direction } from '../../../enums';
 import { speedBetMarketsAtom } from '../../../store/atoms';

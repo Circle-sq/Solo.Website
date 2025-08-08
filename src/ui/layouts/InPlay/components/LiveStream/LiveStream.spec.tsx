@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import MockComponent from '@sc-tests/unit/mocks/MockComponent';
+import MockComponent from '@solo-tests/unit/mocks/MockComponent';
 
 import LiveStream from './LiveStream';
 

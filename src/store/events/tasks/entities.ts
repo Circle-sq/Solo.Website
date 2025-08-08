@@ -3,14 +3,14 @@ import forEach from 'lodash/forEach';
 import isEmpty from 'lodash/isEmpty';
 import map from 'lodash/map';
 
-import { getMarkets } from '@sc-asianView/store/helpers/getters';
-import { getMainLineMarketIdsGroups } from '@sc-asianView/store/helpers/mainLine';
-import { mapEventMarketsToIds, prepareMarket } from '@sc-asianView/store/helpers/prepare';
-import { sortMarkets } from '@sc-asianView/store/helpers/sort';
-import { mainLineMarketIdsAtomFamily } from '@sc-asianView/store/mainLine';
-import { sportConfigAtom } from '@sc-asianView/store/sportConfig';
-import type { PossibleBetEvent } from '@sc-betslip/api/types';
-import type { CallbackParams } from '@sc-utils/jotai';
+import { getMarkets } from '@solo-asianView/store/helpers/getters';
+import { getMainLineMarketIdsGroups } from '@solo-asianView/store/helpers/mainLine';
+import { mapEventMarketsToIds, prepareMarket } from '@solo-asianView/store/helpers/prepare';
+import { sortMarkets } from '@solo-asianView/store/helpers/sort';
+import { mainLineMarketIdsAtomFamily } from '@solo-asianView/store/mainLine';
+import { sportConfigAtom } from '@solo-asianView/store/sportConfig';
+import type { PossibleBetEvent } from '@solo-betslip/api/types';
+import type { CallbackParams } from '@solo-utils/jotai';
 
 import type { SelectionItem } from 'src/common/types/selection';
 

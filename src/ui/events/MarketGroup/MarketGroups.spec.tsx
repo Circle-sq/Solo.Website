@@ -1,6 +1,6 @@
 import { vi, describe } from 'vitest';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import { SportType } from 'src/common/enums';
 
@@ -17,7 +17,7 @@ vi.mock('src/appState/AppState', () => ({
     }),
 }));
 
-vi.mock('@sc-feature-flags', () => ({
+vi.mock('@solo-feature-flags', () => ({
     useAsianInPlayHandicapLineFlag: () => true,
 }));
 

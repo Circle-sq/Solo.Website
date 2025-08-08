@@ -1,7 +1,7 @@
 import { memo } from 'react';
 
-import { DownArrowIcon, UpArrowIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { DownArrowIcon, UpArrowIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 interface Props {
     isOpen: boolean;

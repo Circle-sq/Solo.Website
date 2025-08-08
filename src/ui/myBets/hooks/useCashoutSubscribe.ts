@@ -4,8 +4,8 @@ import { useCallback, useEffect, useRef } from 'react';
 import { batch, useDispatch } from 'react-redux';
 import { useRecoilValue } from 'recoil';
 
-import { useMyBetsQueryCache } from '@sc-api/bets/queryCache';
-import type { MyBetsPageData } from '@sc-api/bets/types';
+import { useMyBetsQueryCache } from '@solo-api/bets/queryCache';
+import type { MyBetsPageData } from '@solo-api/bets/types';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { MyBetsTab } from 'src/common/enums';

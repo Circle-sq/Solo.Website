@@ -1,6 +1,6 @@
-import MockComponent from '@sc-tests/unit/mocks/MockComponent';
-import { renderWithTheme } from '@sc-tests/unit/mocks/renderMocks';
-import { cssColor } from '@sc-ui/system';
+import MockComponent from '@solo-tests/unit/mocks/MockComponent';
+import { renderWithTheme } from '@solo-tests/unit/mocks/renderMocks';
+import { cssColor } from '@solo-ui/system';
 
 import { S_BuildABetSelectionAction } from './styled';
 

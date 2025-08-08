@@ -2,9 +2,9 @@ import { format } from 'date-fns';
 import { type ChangeEvent, type MouseEvent, useCallback, useState } from 'react';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import { S_FilterItemsContainer } from '@sc-ui/beteast';
-import { CloseIcon, FilterIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { S_FilterItemsContainer } from '@solo-ui/beteast';
+import { CloseIcon, FilterIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 import { myBetsFiltersAtom } from 'src/ui/myBets/store/atoms';

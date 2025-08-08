@@ -1,7 +1,7 @@
-import consoleApi from '@gp-ninja/gpp-frontend-api/src/lib/console';
+import consoleApi from '@solo/solo-frontend-api/src/lib/console';
 import { enableStaticRendering } from 'mobx-react-lite';
 
-consoleApi.hook('gpp-website');
+consoleApi.hook('solo-website');
 
 process.on('unhandledRejection', (error) => {
     console.error('unhandledRejection', error, '_CFG:FE_WEB_server_init');

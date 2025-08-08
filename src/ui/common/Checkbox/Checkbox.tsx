@@ -1,8 +1,8 @@
 import classNames from 'classnames';
 import type { ReactElement } from 'react';
 
-import { CheckboxIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { CheckboxIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import type { Testable } from 'src/utils/Testable/types';
 

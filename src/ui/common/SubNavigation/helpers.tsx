@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { AZIcon, BettingRulesIcon, GlobeIcon, LiveScoreIcon, PlayIcon, SearchIcon, GolfIcon } from '@sc-ui/icons/svg';
+import { AZIcon, BettingRulesIcon, GlobeIcon, LiveScoreIcon, PlayIcon, SearchIcon, GolfIcon } from '@solo-ui/icons/svg';
 
 import { SPORT_ICONS } from 'src/config/sport-icons';
 

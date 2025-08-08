@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, radius, cssColor } from '@sc-ui/system';
+import { fontWeight, radius, cssColor } from '@solo-ui/system';
 
 export const S_MarketHeaderWrapper = styled.div<{ isOpen?: boolean }>`
     background-color: ${cssColor('--accordion-header-bg')};

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import isNil from 'lodash/isNil';
 
-import { GenericColors, RedPalette, Opacities, fontWeight, GreyPalette, LightBluePalette } from '@sc-ui/system';
+import { GenericColors, RedPalette, Opacities, fontWeight, GreyPalette, LightBluePalette } from '@solo-ui/system';
 
 export const S_MarketName = styled.p`
     font-size: 14px;

@@ -4,7 +4,7 @@ interface CssProperty {
     text: string;
 }
 
-export interface SkyCityVariablesNamespace {
+export interface SoloVariablesNamespace {
     accordion: {
         default: Partial<CssProperty>;
     };
@@ -16,7 +16,7 @@ declare module '@mui/material/styles' {
     }
 
     interface ThemeOptions {
-        sc?: SkyCityVariablesNamespace;
+        sc?: SoloVariablesNamespace;
         star?: typeof BeteastTheme;
     }
 

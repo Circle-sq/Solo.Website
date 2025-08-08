@@ -1,6 +1,6 @@
 import map from 'lodash/map';
 
-import { isBuildABetMarket } from '@sc-buildABet/utils/helpers';
+import { isBuildABetMarket } from '@solo-buildABet/utils/helpers';
 
 import type { MockMarket } from './types';
 

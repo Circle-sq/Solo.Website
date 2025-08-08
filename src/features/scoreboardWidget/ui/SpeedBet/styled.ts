@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { GreyPalette, Opacities } from '@sc-ui/system';
+import { GreyPalette, Opacities } from '@solo-ui/system';
 
 export const S_SpeedBet = styled.div`
     overflow: hidden;

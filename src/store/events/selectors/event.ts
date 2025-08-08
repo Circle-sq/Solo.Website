@@ -3,10 +3,13 @@ import findIndex from 'lodash/findIndex';
 import forEach from 'lodash/forEach';
 import lodashGet from 'lodash/get';
 
-import { Lines } from '@sc-asianView/enums';
-import { linesFilterAtom } from '@sc-asianView/store/filters';
-import { primaryMainLineMarketIdsAtomFamily, secondaryMainLineMarketIdsAtomFamily } from '@sc-asianView/store/mainLine';
-import { selectorFamily } from '@sc-utils/jotai';
+import { Lines } from '@solo-asianView/enums';
+import { linesFilterAtom } from '@solo-asianView/store/filters';
+import {
+    primaryMainLineMarketIdsAtomFamily,
+    secondaryMainLineMarketIdsAtomFamily,
+} from '@solo-asianView/store/mainLine';
+import { selectorFamily } from '@solo-utils/jotai';
 
 import { LiveTrackerProviders, type SportType } from 'src/common/enums';
 import type { TimeSettings } from 'src/common/types/event';

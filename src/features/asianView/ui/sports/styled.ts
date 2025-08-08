@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, cssColor } from '@sc-ui/system';
+import { breakpoints, cssColor } from '@solo-ui/system';
 
 export const S_SportItem = styled.table`
     display: flex;

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import type { HTMLAttributes } from 'react';
 
-import { cssColor } from '@sc-ui/system';
+import { cssColor } from '@solo-ui/system';
 
 import { S_EventInfo, S_EventInfoColumn, S_EventTime } from 'src/ui/common/EventInfographics/styled';
 import { S_Participant } from 'src/ui/common/Participants/styled';

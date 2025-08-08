@@ -1,5 +1,5 @@
 import Box from '@mui/material/Box';
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import type { ReactNode } from 'react';
 import type {
     MenuPlacement,
@@ -14,8 +14,8 @@ import type {
 } from 'react-select';
 import Select from 'react-select';
 
-import type { MediaOption, MediaOptionGroup } from '@sc-media/ui/videoStream/dropdown/types';
-import { DarkBluePalette, GreyPalette, GenericColors } from '@sc-ui/system';
+import type { MediaOption, MediaOptionGroup } from '@solo-media/ui/videoStream/dropdown/types';
+import { DarkBluePalette, GreyPalette, GenericColors } from '@solo-ui/system';
 
 import { ThemeNames } from 'src/common/enums';
 import type { ThemeName } from 'src/typings/react-select';

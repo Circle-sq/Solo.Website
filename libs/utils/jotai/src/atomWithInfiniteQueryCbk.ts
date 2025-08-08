@@ -9,7 +9,7 @@ import type {
 } from 'jotai-tanstack-query';
 import { atomWithInfiniteQuery } from 'jotai-tanstack-query';
 
-import { extendedQueryFn, type OptionsWithCbk } from '@sc-utils/tanstack';
+import { extendedQueryFn, type OptionsWithCbk } from '@solo-utils/tanstack';
 
 export function atomWithInfiniteQueryCbk<
     TQueryFnData,

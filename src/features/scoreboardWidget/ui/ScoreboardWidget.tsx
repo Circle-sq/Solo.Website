@@ -1,12 +1,12 @@
-import { useSpeedBetFlag } from '@sc-feature-flags';
-import { useWindowWidth } from '@sc-hooks';
+import { useSpeedBetFlag } from '@solo-feature-flags';
+import { useWindowWidth } from '@solo-hooks';
 import get from 'lodash/get';
 import { observer } from 'mobx-react-lite';
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { useSetRecoilState, useRecoilState } from 'recoil';
 
-import { useThemeSwitchContext, ThemeNames } from '@sc-ui/system';
+import { useThemeSwitchContext, ThemeNames } from '@solo-ui/system';
 
 import { SportType } from 'src/common/enums';
 import useSpeedBetMarkets from 'src/features/scoreboardWidget/hooks/useSpeedBetMarkets';

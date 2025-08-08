@@ -1,6 +1,6 @@
 import map from 'lodash/map';
 
-import type { MyBetsInfiniteData, MyBetsPageData } from '@sc-api/bets/types';
+import type { MyBetsInfiniteData, MyBetsPageData } from '@solo-api/bets/types';
 
 import type { ModelsState } from 'src/appState/models/ModelsState';
 import { MyBetsTab } from 'src/common/enums';

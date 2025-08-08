@@ -1,11 +1,11 @@
 import * as fs from 'fs';
 
-import frontendApi from '@gp-ninja/gpp-frontend-api';
-import operatorMiddleware from '@gp-ninja/gpp-frontend-api/src/lib/middlewares/operator';
+import frontendApi from '@solo/solo-frontend-api';
+import operatorMiddleware from '@solo/solo-frontend-api/src/lib/middlewares/operator';
 import type * as express from 'express';
 import onFinished from 'on-finished';
 
-import { getOperatorConfigs } from '@sc-webapi/utils';
+import { getOperatorConfigs } from '@solo-webapi/utils';
 
 import type { ConfigServer } from '../ConfigServer';
 import { getMaintenance } from '../maintenance';

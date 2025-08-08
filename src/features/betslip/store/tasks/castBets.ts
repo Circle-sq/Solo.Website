@@ -1,7 +1,7 @@
 import type { CallbackInterface } from 'recoil';
 
-import { userDataAtom } from '@sc-account/store/atoms';
-import { store } from '@sc-utils/jotai';
+import { userDataAtom } from '@solo-account/store/atoms';
+import { store } from '@solo-utils/jotai';
 
 import { BetslipTab } from 'src/common/enums';
 import { getValue } from 'src/common/recoil/snapshot';

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { GreyPalette } from '@sc-ui/system';
+import { GreyPalette } from '@solo-ui/system';
 
 interface ReadMoreContentProps {
     isOverflowing: boolean;

@@ -1,7 +1,7 @@
 import type { MouseEvent } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import { RedPalette, YellowPalette } from '@sc-ui/system';
+import { RedPalette, YellowPalette } from '@solo-ui/system';
 
 import Icon from 'src/ui/common/Icon/Icon';
 import { I18n } from 'src/ui/common/Language/I18n';

@@ -10,7 +10,7 @@ import {
     GenericColors,
     GreyPalette,
     selections,
-} from '@sc-ui/system';
+} from '@solo-ui/system';
 
 import DropdownSelect from 'src/ui/common/DropdownSelect/DropdownSelect';
 import { S_DropDownFilterContainer, S_MarketDropdownValueContainer } from 'src/ui/crossbetting/FilterDropdown/styled';

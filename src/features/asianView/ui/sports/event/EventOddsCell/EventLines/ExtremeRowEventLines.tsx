@@ -1,8 +1,8 @@
 import { useAtomValue } from 'jotai';
 
-import { linesRange } from '@sc-asianView/configs';
-import { linesFilterAtom } from '@sc-asianView/store/filters';
-import { S_MarketWrapper } from '@sc-asianView/ui/sports/market/styled';
+import { linesRange } from '@solo-asianView/configs';
+import { linesFilterAtom } from '@solo-asianView/store/filters';
+import { S_MarketWrapper } from '@solo-asianView/ui/sports/market/styled';
 
 import { eventInPlaySelectorFamily } from 'src/store/events/selectors/event';
 

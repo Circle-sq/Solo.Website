@@ -3,8 +3,8 @@ import { useCallback, useEffect, useState } from 'react';
 import type { MouseEvent } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { BoldChartIcon } from '@sc-ui/icons/svg';
-import { GenericColors, GreyPalette } from '@sc-ui/system';
+import { BoldChartIcon } from '@solo-ui/icons/svg';
+import { GenericColors, GreyPalette } from '@solo-ui/system';
 
 import { setMediaEventId } from 'src/modules/media/actions/media';
 

@@ -1,4 +1,4 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import size from 'lodash/size';
 import { observer } from 'mobx-react-lite';
 import { useRecoilValue } from 'recoil';

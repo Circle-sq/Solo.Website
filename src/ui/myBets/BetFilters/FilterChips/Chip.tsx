@@ -1,5 +1,5 @@
-import { CloseIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { CloseIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { S_Chip, S_RemoveFilterButton } from '../styled';
 

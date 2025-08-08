@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react';
 
-import { DarkBluePalette, GenericColors } from '@sc-ui/system';
+import { DarkBluePalette, GenericColors } from '@solo-ui/system';
 
 export const errorStyles: CSSProperties = {
     padding: '18px',

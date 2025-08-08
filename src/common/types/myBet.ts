@@ -1,5 +1,5 @@
-import type { BaseBet, Market, Selection } from '@sc-betslip/api/types/bet';
-import type { BaseLeg, LegFeedProperties } from '@sc-betslip/api/types/leg';
+import type { BaseBet, Market, Selection } from '@solo-betslip/api/types/bet';
+import type { BaseLeg, LegFeedProperties } from '@solo-betslip/api/types/leg';
 
 import type { BetStatus, LegType, RequestStatus } from 'src/common/enums';
 import type { CurrencyType } from 'src/config/types';

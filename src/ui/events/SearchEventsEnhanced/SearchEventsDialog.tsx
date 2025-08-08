@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material';
 import { useAtom, useSetAtom } from 'jotai';
 
-import { cssColor } from '@sc-ui/system';
+import { cssColor } from '@solo-ui/system';
 
 import { isSearchModalOpenAtom } from 'src/store/common/atoms';
 import { I18n } from 'src/ui/common/Language/I18n';

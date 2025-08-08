@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, fontWeight, GenericColors, Opacities } from '@sc-ui/system';
+import { breakpoints, fontWeight, GenericColors, Opacities } from '@solo-ui/system';
 
 import BaseballBat from 'src/assets/icons/baseballBat.svg';
 

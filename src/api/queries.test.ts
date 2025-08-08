@@ -1,4 +1,4 @@
-import type { UniformParams } from '@sc-api/uniforms/types';
+import type { UniformParams } from '@solo-api/uniforms/types';
 
 import { queryKeys } from './queryKeys';
 

@@ -1,6 +1,9 @@
 import { useAtomValue } from 'jotai';
 
-import { primaryMainLineMarketIdsAtomFamily, secondaryMainLineMarketIdsAtomFamily } from '@sc-asianView/store/mainLine';
+import {
+    primaryMainLineMarketIdsAtomFamily,
+    secondaryMainLineMarketIdsAtomFamily,
+} from '@solo-asianView/store/mainLine';
 
 import { S_CommonCell } from '../styled';
 

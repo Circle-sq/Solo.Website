@@ -1,6 +1,6 @@
 import { render, waitFor } from '@testing-library/react';
 
-import { ThemeSwitchProvider, ThemeNames } from '@sc-ui/system';
+import { ThemeSwitchProvider, ThemeNames } from '@solo-ui/system';
 
 import ShadowWidget from './ShadowWidget';
 

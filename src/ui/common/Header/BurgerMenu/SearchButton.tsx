@@ -1,6 +1,6 @@
 import { useSetAtom } from 'jotai';
 
-import { SearchIcon } from '@sc-ui/icons/svg';
+import { SearchIcon } from '@solo-ui/icons/svg';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { RouteName } from 'src/common/enums';

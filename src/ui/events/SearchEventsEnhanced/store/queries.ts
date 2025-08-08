@@ -1,8 +1,8 @@
 import lodashGet from 'lodash/get';
 
-import { EventsService } from '@sc-api/events/services';
-import { queryKeys } from '@sc-api/queryKeys';
-import { atomWithInfiniteQueryCbk, jotaiCallback, store } from '@sc-utils/jotai';
+import { EventsService } from '@solo-api/events/services';
+import { queryKeys } from '@solo-api/queryKeys';
+import { atomWithInfiniteQueryCbk, jotaiCallback, store } from '@solo-utils/jotai';
 
 import { searchDebouncedValueAtom, searchWarningAtom } from './atoms';
 import { extraTerms, getDefaultTerms, query, sortParams } from './config';

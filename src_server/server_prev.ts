@@ -1,17 +1,17 @@
 import fs from 'fs';
 import * as path from 'path';
 
-import * as apiConsole from '@gp-ninja/gpp-frontend-api/src/lib/console';
+import * as apiConsole from '@solo/solo-frontend-api/src/lib/console';
 import compression from 'compression';
 import dotenv from 'dotenv';
 import * as express from 'express';
 import helmet from 'helmet';
 import ms from 'ms';
 
-import { PlatformApi } from '@sc-webapi/realtime-server/PlatformApi/PlatformApi';
-import type { ConfigJsonAccess } from '@sc-webapi/realtime-server/PlatformApi/PlatformApi';
-import { PlatformApiTokenManager } from '@sc-webapi/realtime-server/PlatformApi/PlatformApiTokenManager';
-import { TokenManager } from '@sc-webapi/realtime-server/PlatformApi/TokenManager/TokenManager';
+import { PlatformApi } from '@solo-webapi/realtime-server/PlatformApi/PlatformApi';
+import type { ConfigJsonAccess } from '@solo-webapi/realtime-server/PlatformApi/PlatformApi';
+import { PlatformApiTokenManager } from '@solo-webapi/realtime-server/PlatformApi/PlatformApiTokenManager';
+import { TokenManager } from '@solo-webapi/realtime-server/PlatformApi/TokenManager/TokenManager';
 
 import { ConfigServer } from './ConfigServer';
 import { handlerDynamicContent } from './handlers/handlerDynamicContent/handlerDynamicContent';
@@ -22,7 +22,7 @@ import { isProduction } from './infra.server';
 import { getMaintenance } from './maintenance';
 dotenv.config();
 
-apiConsole.hook('gpp-website');
+apiConsole.hook('solo-website');
 
 interface InitConfigType {
     configJsonAccess: ConfigJsonAccess;

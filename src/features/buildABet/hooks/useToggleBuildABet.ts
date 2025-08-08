@@ -1,9 +1,9 @@
 import isNil from 'lodash/isNil';
 import { useRecoilCallback } from 'recoil';
 
-import { betReceiptAtom } from '@sc-betslip/store/atoms/betReceipt';
-import { showBetReceiptSelector } from '@sc-betslip/store/selectors/betReceipt';
-import { resetBetslipStateTransaction } from '@sc-betslip/store/transactions/betslip';
+import { betReceiptAtom } from '@solo-betslip/store/atoms/betReceipt';
+import { showBetReceiptSelector } from '@solo-betslip/store/selectors/betReceipt';
+import { resetBetslipStateTransaction } from '@solo-betslip/store/transactions/betslip';
 
 import { getValue } from 'src/common/recoil/snapshot';
 import { toggleId } from 'src/common/recoil/updaters';

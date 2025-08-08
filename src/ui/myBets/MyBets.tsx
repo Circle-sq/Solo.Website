@@ -2,7 +2,7 @@ import { useAtomValue } from 'jotai';
 import { useEffect } from 'react';
 import { useRecoilCallback } from 'recoil';
 
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
 
 import MyBetsContainer from './MyBetsContainer/MyBetsContainer';
 import MyBetsTabs from './MyBetsTabs/MyBetsTabs';

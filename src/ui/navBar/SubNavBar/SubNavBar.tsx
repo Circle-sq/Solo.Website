@@ -1,4 +1,4 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { List, Map } from 'immutable';
 import get from 'lodash/get';
 import includes from 'lodash/includes';

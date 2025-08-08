@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { DarkBluePalette, fontWeight, Opacities } from '@sc-ui/system';
+import { DarkBluePalette, fontWeight, Opacities } from '@solo-ui/system';
 
 export const S_EventPeriodWrapper = styled.div`
     display: flex;

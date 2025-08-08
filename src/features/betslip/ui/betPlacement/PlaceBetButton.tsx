@@ -1,9 +1,9 @@
 import { useAtomValue } from 'jotai';
 import { useRecoilValue } from 'recoil';
 
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
-import { oddsUpdateSelector } from '@sc-account/store/selectors';
-import { hasPriceWentDownSelector } from '@sc-betslip/store/selectors/animation';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
+import { oddsUpdateSelector } from '@solo-account/store/selectors';
+import { hasPriceWentDownSelector } from '@solo-betslip/store/selectors/animation';
 
 import { BetslipOdds } from 'src/common/enums';
 import { I18n } from 'src/ui/common/Language/I18n';

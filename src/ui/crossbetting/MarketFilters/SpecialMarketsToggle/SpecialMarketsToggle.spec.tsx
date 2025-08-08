@@ -2,9 +2,9 @@ import { type RenderResult } from '@testing-library/react';
 import type { ReactElement } from 'react';
 import { RecoilRoot } from 'recoil';
 
-import { appStateContextMock } from '@sc-tests/unit/mocks/contexts/appStateContextMock';
-import { eventsSortContextMock } from '@sc-tests/unit/mocks/contexts/eventsSortContextMock';
-import { buildSubUnsubWrapper, renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { appStateContextMock } from '@solo-tests/unit/mocks/contexts/appStateContextMock';
+import { eventsSortContextMock } from '@solo-tests/unit/mocks/contexts/eventsSortContextMock';
+import { buildSubUnsubWrapper, renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import SpecialsMarketToggle from './SpecialMarketsToggle';
 

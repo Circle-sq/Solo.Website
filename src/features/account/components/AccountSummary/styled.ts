@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, GenericColors, GreyPalette, LightBluePalette, cssColor } from '@sc-ui/system';
+import { fontWeight, GenericColors, GreyPalette, LightBluePalette, cssColor } from '@solo-ui/system';
 
 import Checkbox from 'src/ui/common/Checkbox';
 import { S_CheckmarkWrap } from 'src/ui/common/Checkbox/styled';

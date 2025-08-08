@@ -3,8 +3,8 @@ import { useAtomValue } from 'jotai';
 import { useEffect } from 'react';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import { userDataAtom } from '@sc-account/store/atoms';
-import type { PossibleBetApiResponse } from '@sc-betslip/api/types';
+import { userDataAtom } from '@solo-account/store/atoms';
+import type { PossibleBetApiResponse } from '@solo-betslip/api/types';
 
 import { possibleBetsApi } from '../services/api';
 import { formatPossibleBetsPayload } from '../services/utils';

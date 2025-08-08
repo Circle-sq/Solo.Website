@@ -2,7 +2,7 @@ import { screen } from '@testing-library/dom';
 import { fromJS, Map, List } from 'immutable';
 import type { PropsWithChildren } from 'react';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import { RequestStatus } from 'src/common/enums';
 
@@ -26,7 +26,7 @@ const normalizedCompetitionLocations = [
                     platformObject: {
                         externalId: {
                             feedId: 'sr:tournament:8',
-                            instance: 'skycity',
+                            instance: 'solo',
                             provider: 'bet-radar',
                             sportId: 'bet-radar',
                         },
@@ -149,7 +149,7 @@ const defaultCompetitionLocations = {
             platformObject: {
                 externalId: {
                     feedId: 'sr:tournament:8',
-                    instance: 'skycity',
+                    instance: 'solo',
                     provider: 'bet-radar',
                     sportId: 'bet-radar',
                 },

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, GreyPalette, LightBluePalette, cssColor } from '@sc-ui/system';
+import { fontWeight, GreyPalette, LightBluePalette, cssColor } from '@solo-ui/system';
 
 import TooltipTruncatedText from 'src/ui/common/TooltipTruncatedText/TooltipTruncatedText';
 

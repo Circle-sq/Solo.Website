@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import { StatisticsErrorIcon } from '@sc-ui/icons/svg';
+import { StatisticsErrorIcon } from '@solo-ui/icons/svg';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 

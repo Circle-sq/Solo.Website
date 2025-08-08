@@ -13,8 +13,8 @@ import {
     Typography,
 } from '@mui/material';
 
-import { CloseIcon } from '@sc-ui/icons/svg';
-import { breakpoints, cssColor, fontWeight } from '@sc-ui/system';
+import { CloseIcon } from '@solo-ui/icons/svg';
+import { breakpoints, cssColor, fontWeight } from '@solo-ui/system';
 
 import Button from 'src/ui/common/Button/Button';
 import { S_SwiperContainer } from 'src/ui/common/Carousel/styled';

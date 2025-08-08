@@ -2,11 +2,11 @@ import { useAtomValue } from 'jotai';
 import type { MouseEvent } from 'react';
 import { useLocalStorage } from 'usehooks-ts';
 
-import { useChangeCrossInfoDismiss } from '@sc-account/api/mutations';
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
-import { crossInfoDismissSelector } from '@sc-account/store/selectors';
-import { CloseIcon, InfoBlueIcon } from '@sc-ui/icons/svg';
-import { LightBluePalette } from '@sc-ui/system';
+import { useChangeCrossInfoDismiss } from '@solo-account/api/mutations';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
+import { crossInfoDismissSelector } from '@solo-account/store/selectors';
+import { CloseIcon, InfoBlueIcon } from '@solo-ui/icons/svg';
+import { LightBluePalette } from '@solo-ui/system';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 

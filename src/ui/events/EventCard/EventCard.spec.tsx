@@ -1,14 +1,14 @@
 import { fromJS } from 'immutable';
 import type { PropsWithChildren } from 'react';
 
-import { buildSubUnsubWrapper, renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { buildSubUnsubWrapper, renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import { RequestStatus, RouteName } from 'src/common/enums';
 import type { EventItem } from 'src/common/types/event';
 
 import EventCard from './EventCard';
 
-vi.mock('@sc-features/subscription-manager/SubscribeElement', () => ({
+vi.mock('@solo-features/subscription-manager/SubscribeElement', () => ({
     SubscribeElement: ({ children }: PropsWithChildren) => children,
 }));
 

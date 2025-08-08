@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import { ThemeNames, useThemeSwitchContext, darkBlue, ioDarkBlue, grey, lightBlue, red } from '@sc-ui/system';
+import { ThemeNames, useThemeSwitchContext, darkBlue, ioDarkBlue, grey, lightBlue, red } from '@solo-ui/system';
 
 const clientId = 'vsUJMaEA42DHViP1o9HsAXHuY9Z7FAiG';
 

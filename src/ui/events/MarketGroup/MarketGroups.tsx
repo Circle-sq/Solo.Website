@@ -1,12 +1,12 @@
-import { useAsianInPlayHandicapLineFlag } from '@sc-feature-flags';
+import { useAsianInPlayHandicapLineFlag } from '@solo-feature-flags';
 import get from 'lodash/get';
 import isNil from 'lodash/isNil';
 import { observer } from 'mobx-react-lite';
 import { useCallback, useState, useEffect, type MouseEvent } from 'react';
 import { useRecoilValue, useRecoilState } from 'recoil';
 
-import { InfoOutlineIcon } from '@sc-ui/icons/svg';
-import { GreyPalette, DarkBluePalette } from '@sc-ui/system';
+import { InfoOutlineIcon } from '@solo-ui/icons/svg';
+import { GreyPalette, DarkBluePalette } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import type { EventModel } from 'src/appState/models/models/EventModel';

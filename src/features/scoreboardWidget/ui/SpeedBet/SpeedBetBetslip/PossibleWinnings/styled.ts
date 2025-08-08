@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { GreenPalette, fontWeight } from '@sc-ui/system';
+import { GreenPalette, fontWeight } from '@solo-ui/system';
 
 export const S_PossibleWinnings = styled.div`
     font-size: 12px;

@@ -1,8 +1,8 @@
 import { useAtomValue } from 'jotai';
 import { observer } from 'mobx-react-lite';
 
-import { oddsFormatSelector } from '@sc-account/store/selectors';
-import { CrossBetIcon } from '@sc-ui/icons/svg';
+import { oddsFormatSelector } from '@solo-account/store/selectors';
+import { CrossBetIcon } from '@solo-ui/icons/svg';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { getOddsFormatPrice } from 'src/utils/common';

@@ -4,7 +4,7 @@ import isUndefined from 'lodash/isUndefined';
 import size from 'lodash/size';
 import startsWith from 'lodash/startsWith';
 
-import { BreakPoints } from '@sc-ui/system';
+import { BreakPoints } from '@solo-ui/system';
 
 import { BetType, LegType } from 'src/common/enums';
 import { isMobile } from 'src/common/helpers/device';

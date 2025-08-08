@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { GenericColors, GreyPalette, LightBluePalette, Opacities, fontWeight, breakpoints } from '@sc-ui/system';
+import { GenericColors, GreyPalette, LightBluePalette, Opacities, fontWeight, breakpoints } from '@solo-ui/system';
 
 export const S_NumpadContainer = styled.div`
     display: grid;

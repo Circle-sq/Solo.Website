@@ -11,20 +11,18 @@ const testProcess = spawn('npm', ['run', 'test:unit:coverage'], { env });
 
 // skip first 5 lines of output (they are not part of the test output)
 /*
-> gpp-website@1.1.0 test
+> solo-website@1.1.0 test
 > node tests/test-runner.js
 
 
-> gpp-website@1.1.0 test:unit:coverage
+> solo-website@1.1.0 test:unit:coverage
 > npm run test:unit -- --coverage
 
 
-> gpp-website@1.1.0 test:unit
+> solo-website@1.1.0 test:unit
 > vitest --run --coverage
 
-
- RUN  v0.34.6 /Users/vandries/sm-workspace/skycity/work/sc-website
-      Coverage enabled with v8
+    Coverage enabled with v8
  */
 let forthTime = 0;
 testProcess.stdout.on('data', (data) => {

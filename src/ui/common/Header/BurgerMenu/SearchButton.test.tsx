@@ -3,7 +3,7 @@ import userEvent from '@testing-library/user-event';
 import { useAtomValue } from 'jotai';
 import { vi, describe, expect, it } from 'vitest';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import { RouteName } from 'src/common/enums';
 import { isSearchModalOpenAtom } from 'src/store/common/atoms';

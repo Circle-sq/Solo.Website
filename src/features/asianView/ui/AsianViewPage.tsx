@@ -1,4 +1,4 @@
-import BettingMedia from '@sc-media/ui/container/BettingMedia';
+import BettingMedia from '@solo-media/ui/container/BettingMedia';
 
 import CustomScrollbar from 'src/ui/common/CustomScrollbar';
 import { useFetchStreams } from 'src/ui/layouts/InPlay/hooks/useFetchStreams';

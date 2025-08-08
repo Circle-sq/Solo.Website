@@ -1,8 +1,8 @@
 import { useAtomValue } from 'jotai';
 import get from 'lodash/get';
 
-import { getParticipantInfo } from '@sc-asianView/helpers';
-import { hasDrawSelectionAtomFamily } from '@sc-asianView/store/mainLine';
+import { getParticipantInfo } from '@solo-asianView/helpers';
+import { hasDrawSelectionAtomFamily } from '@solo-asianView/store/mainLine';
 
 import { SportType } from 'src/common/enums';
 import {

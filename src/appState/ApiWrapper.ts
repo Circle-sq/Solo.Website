@@ -1,4 +1,4 @@
-import { api } from '@sc-api/api';
+import { api } from '@solo-api/api';
 
 import type { EventsResponse } from 'src/appState/EventsCollection/utils';
 import { buildCacheUrl } from 'src/appState/utils';

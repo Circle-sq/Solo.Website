@@ -2,7 +2,7 @@ import { screen, fireEvent } from '@testing-library/react';
 import { RecoilRoot } from 'recoil';
 import { vi } from 'vitest';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import { AlertType } from '../../../../enums';
 import { speedBetAlertAtom } from '../../../../store/atoms';

@@ -3,10 +3,10 @@ import { Map as ImmutableMap } from 'immutable';
 import { http, HttpResponse } from 'msw';
 import type { PropsWithChildren } from 'react';
 
-import '@sc-tests/unit/mocks/matchMedia.mock';
-import MockComponent from '@sc-tests/unit/mocks/MockComponent';
-import { buildSubUnsubWrapper, renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
-import { server } from '@sc-tests/unit/mocks/server.setup';
+import '@solo-tests/unit/mocks/matchMedia.mock';
+import MockComponent from '@solo-tests/unit/mocks/MockComponent';
+import { buildSubUnsubWrapper, renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
+import { server } from '@solo-tests/unit/mocks/server.setup';
 
 import type { LanguageStore } from 'src/appState/LanguageStore';
 import { buildTranslateStatisticsPeriodNameHelper } from 'src/appState/translation-helper';
@@ -82,7 +82,6 @@ describe('EventsHighlightCarousel', () => {
         expect(marqueeCard).toBeInTheDocument();
     });
 
-    // TODO - SC-15519
     it.skip('should render marquee card', () => {
         const normalize = (row: string[]) => row.join('').replace(/\s+/g, ' ').trim();
         const { container } = renderWithAppWrapper(

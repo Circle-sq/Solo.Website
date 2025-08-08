@@ -1,6 +1,6 @@
 import { type ChangeEvent, useEffect, useRef } from 'react';
 
-import { ThemeNames, useThemeSwitchContext } from '@sc-ui/system';
+import { ThemeNames, useThemeSwitchContext } from '@solo-ui/system';
 
 import buildStorageService, { type ValueStorage } from 'src/utils/StorageService';
 

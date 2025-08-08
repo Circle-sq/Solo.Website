@@ -1,4 +1,4 @@
-import Betslip from '@sc-betslip/ui/Betslip';
+import Betslip from '@solo-betslip/ui/Betslip';
 
 import MyBets from 'src/ui/myBets/MyBets';
 

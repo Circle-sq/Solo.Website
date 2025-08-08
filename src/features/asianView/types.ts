@@ -1,4 +1,4 @@
-import type { Lines } from '@sc-asianView/enums';
+import type { Lines } from '@solo-asianView/enums';
 
 import type { SportType } from 'src/common/enums';
 import type { PlatformObject } from 'src/common/types/competition';
@@ -23,7 +23,7 @@ export interface AggregatedSport {
     name: string;
     tags: {
         'website-show'?: string[];
-        'skycity-events'?: string[];
+        'solo-events'?: string[];
         'market-group'?: string[];
         region?: string[];
         outright?: string[];

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { GreyPalette, fontWeight, cssColor } from '@sc-ui/system';
+import { GreyPalette, fontWeight, cssColor } from '@solo-ui/system';
 
 import { ThemeNames } from 'src/common/enums';
 import type { ThemeName } from 'src/typings/react-select';

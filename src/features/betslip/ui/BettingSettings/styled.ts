@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, cssColor, fontWeight, GenericColors } from '@sc-ui/system';
+import { breakpoints, cssColor, fontWeight, GenericColors } from '@solo-ui/system';
 
 import Button from 'src/ui/common/Button/Button';
 

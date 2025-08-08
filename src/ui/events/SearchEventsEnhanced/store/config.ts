@@ -1,5 +1,5 @@
-import type { SearchEventsQueryParams } from '@sc-api/events/types';
-import type { SortParam } from '@sc-api/types';
+import type { SearchEventsQueryParams } from '@solo-api/events/types';
+import type { SortParam } from '@solo-api/types';
 
 import { BetStatus } from 'src/common/enums';
 

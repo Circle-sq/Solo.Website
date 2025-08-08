@@ -1,9 +1,9 @@
 import * as t from 'io-ts';
 import ms from 'ms';
 
-import { assertNever } from '@sc-webapi/mobx-utils/assertNever';
-import { buildValidator } from '@sc-webapi/mobx-utils/buildValidator';
-import type { PlatformApi } from '@sc-webapi/realtime-server/PlatformApi/PlatformApi';
+import { assertNever } from '@solo-webapi/mobx-utils/assertNever';
+import { buildValidator } from '@solo-webapi/mobx-utils/buildValidator';
+import type { PlatformApi } from '@solo-webapi/realtime-server/PlatformApi/PlatformApi';
 
 import { SPORT_REMAPPING as SPORT_REMAPPING_DEFAULT } from 'src/config/config';
 

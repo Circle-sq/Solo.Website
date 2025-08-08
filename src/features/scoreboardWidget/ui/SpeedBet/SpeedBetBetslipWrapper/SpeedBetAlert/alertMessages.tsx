@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 
-import type { BetError } from '@sc-betslip/api/types/error';
+import type { BetError } from '@solo-betslip/api/types/error';
 
 import { moneyAccountSymbolBeforeValue } from 'src/utils/format';
 

@@ -1,4 +1,4 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import filter from 'lodash/filter';
 import get from 'lodash/get';
 import groupBy from 'lodash/groupBy';

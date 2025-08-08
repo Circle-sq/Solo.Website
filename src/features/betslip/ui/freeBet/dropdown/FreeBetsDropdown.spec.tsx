@@ -1,6 +1,6 @@
 import userEvent from '@testing-library/user-event';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import FreeBetsDropdown from './FreeBetsDropdown';
 

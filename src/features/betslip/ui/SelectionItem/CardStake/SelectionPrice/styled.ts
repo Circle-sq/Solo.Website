@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import isNil from 'lodash/isNil';
 
-import { fontWeight, cssColor } from '@sc-ui/system';
+import { fontWeight, cssColor } from '@solo-ui/system';
 
 import { PriceChange } from 'src/common/enums';
 

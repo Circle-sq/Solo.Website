@@ -5,7 +5,7 @@ import find from 'lodash/find';
 import isEmpty from 'lodash/isEmpty';
 import orderBy from 'lodash/orderBy';
 
-import { atomWithQueryCbk, jotaiCallback } from '@sc-utils/jotai';
+import { atomWithQueryCbk, jotaiCallback } from '@solo-utils/jotai';
 
 import { i18nextAtom } from 'src/store/i18next';
 

@@ -1,4 +1,4 @@
-import { ArrowUpDiagonalIcon, ArrowDownDiagonalIcon } from '@sc-ui/icons/svg';
+import { ArrowUpDiagonalIcon, ArrowDownDiagonalIcon } from '@solo-ui/icons/svg';
 
 import { PriceChange } from 'src/common/enums';
 // TODO NX:a domain-utils candidate

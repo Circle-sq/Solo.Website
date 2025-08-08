@@ -1,5 +1,5 @@
-import { BuildABetIcon } from '@sc-buildABet/ui';
-import { S_BuildABetHeaderTitle } from '@sc-buildABet/ui/myBet/styled';
+import { BuildABetIcon } from '@solo-buildABet/ui';
+import { S_BuildABetHeaderTitle } from '@solo-buildABet/ui/myBet/styled';
 
 import type { BetStatus } from 'src/common/enums';
 import type { MyBuildABetLeg } from 'src/common/types/myBet';

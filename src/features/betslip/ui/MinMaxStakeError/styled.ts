@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, RedPalette } from '@sc-ui/system';
+import { fontWeight, RedPalette } from '@solo-ui/system';
 
 export const BetSelectionInfoAlert = styled.div`
     display: block;

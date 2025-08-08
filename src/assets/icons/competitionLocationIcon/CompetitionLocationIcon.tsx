@@ -1,7 +1,7 @@
 import isUndefined from 'lodash/isUndefined';
 import { useState } from 'react';
 
-import { CupIcon } from '@sc-ui/icons/svg';
+import { CupIcon } from '@solo-ui/icons/svg';
 
 import { SIMULATED_REALITY_LEAGUES } from 'src/config/config';
 import {

@@ -1,4 +1,4 @@
-import { useSubscriptionDevTool } from '@sc-devtools/hooks';
+import { useSubscriptionDevTool } from '@solo-devtools/hooks';
 
 import { loggers } from './configs';
 

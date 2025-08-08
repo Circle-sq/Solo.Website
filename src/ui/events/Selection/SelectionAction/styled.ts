@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, cssColor, fontWeight, radius } from '@sc-ui/system';
+import { breakpoints, cssColor, fontWeight, radius } from '@solo-ui/system';
 
 import { PriceChange } from 'src/common/enums';
 import { incrementBreakpointValue } from 'src/common/helpers/styled';

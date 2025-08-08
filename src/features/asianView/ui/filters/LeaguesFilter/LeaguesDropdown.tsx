@@ -6,7 +6,7 @@ import orderBy from 'lodash/orderBy';
 import sortBy from 'lodash/sortBy';
 import { useCallback, useMemo, useState } from 'react';
 
-import { useJotaiCallback } from '@sc-utils/jotai';
+import { useJotaiCallback } from '@solo-utils/jotai';
 
 import { getCompetitionLocationInfoFromTags } from 'src/appState/utils';
 import { I18n } from 'src/ui/common/Language/I18n';

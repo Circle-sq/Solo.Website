@@ -1,7 +1,7 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { observer } from 'mobx-react-lite';
 
-import { GreyPalette } from '@sc-ui/system';
+import { GreyPalette } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { NavigatorPlatforms } from 'src/common/enums';

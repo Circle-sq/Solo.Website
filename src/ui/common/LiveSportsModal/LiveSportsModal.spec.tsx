@@ -1,8 +1,8 @@
 import { screen } from '@testing-library/react';
 import type { ReactNode } from 'react';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
-import { store } from '@sc-utils/jotai';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
+import { store } from '@solo-utils/jotai';
 
 import { isLiveSportsModalOpenAtom } from 'src/store/common/atoms';
 
@@ -58,7 +58,7 @@ vi.mock('src/ui/common/Portal/Portal', () => ({
     },
 }));
 
-vi.mock('@sc-hooks', () => ({
+vi.mock('@solo-hooks', () => ({
     __esModule: true,
     useWindowWidth: () => ({ isLaptop: false }),
 }));

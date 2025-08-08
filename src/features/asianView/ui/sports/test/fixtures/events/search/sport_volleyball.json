@@ -33,7 +33,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -132,7 +132,7 @@
         "best-of": [
           "5"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -555,7 +555,7 @@
         "best-of": [
           "5"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -657,7 +657,7 @@
         "best-of": [
           "5"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -5389,7 +5389,7 @@
         "id": "02_sr:simple_tournament:18161",
         "name": "NCAA, Women",
         "externalId": {
-          "instance": "skycity",
+          "instance": "solo",
           "provider": "bet-radar",
           "feedId": "sr:simple_tournament:18161"
         }
@@ -5404,7 +5404,7 @@
         "id": "02_sr:tournament:26530",
         "name": "Superliga, Women",
         "externalId": {
-          "instance": "skycity",
+          "instance": "solo",
           "provider": "bet-radar",
           "feedId": "sr:tournament:26530"
         }
@@ -5419,7 +5419,7 @@
         "id": "02_sr:tournament:1173",
         "name": "Liga Siatkowki, Women",
         "externalId": {
-          "instance": "skycity",
+          "instance": "solo",
           "provider": "bet-radar",
           "feedId": "sr:tournament:1173"
         }
@@ -5434,7 +5434,7 @@
         "id": "02_sr:tournament:517",
         "name": "SuperLega",
         "externalId": {
-          "instance": "skycity",
+          "instance": "solo",
           "provider": "bet-radar",
           "feedId": "sr:tournament:517"
         }

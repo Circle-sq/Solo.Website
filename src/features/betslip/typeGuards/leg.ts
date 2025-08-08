@@ -1,7 +1,7 @@
 import has from 'lodash/has';
 import includes from 'lodash/includes';
 
-import { isBuildABetLegType } from '@sc-buildABet/utils/typeGuards';
+import { isBuildABetLegType } from '@solo-buildABet/utils/typeGuards';
 
 import { LegType } from 'src/common/enums';
 

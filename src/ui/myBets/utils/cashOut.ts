@@ -6,7 +6,7 @@ import isEmpty from 'lodash/isEmpty';
 import omit from 'lodash/omit';
 import reject from 'lodash/reject';
 
-import type { MyBetsInfiniteData, MyBetsPageData } from '@sc-api/bets/types';
+import type { MyBetsInfiniteData, MyBetsPageData } from '@solo-api/bets/types';
 
 import { BetStatus, MyBetsTab, RequestStatus } from 'src/common/enums';
 import type { RequestError } from 'src/common/types/error';

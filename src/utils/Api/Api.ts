@@ -9,11 +9,11 @@ import axios from 'axios';
 import includes from 'lodash/includes';
 import isNull from 'lodash/isNull';
 
-import { signOut } from '@sc-account/actions';
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
-import { resetBetslipState } from '@sc-betslip/store/tasks/betslip';
-import { store } from '@sc-utils/jotai';
-import { HttpStatusCode } from '@sc-webapi/enums';
+import { signOut } from '@solo-account/actions';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
+import { resetBetslipState } from '@solo-betslip/store/tasks/betslip';
+import { store } from '@solo-utils/jotai';
+import { HttpStatusCode } from '@solo-webapi/enums';
 
 import { ErrorCodes, HttpMethod } from 'src/utils/enums';
 import buildStorageService, { getStorageBuilder, type ValueStorage } from 'src/utils/StorageService';

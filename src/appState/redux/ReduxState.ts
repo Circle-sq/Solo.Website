@@ -9,7 +9,7 @@ import { action, computed, makeObservable, observable } from 'mobx';
 import { batch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 
-import { buildValidator } from '@sc-webapi/mobx-utils/buildValidator';
+import { buildValidator } from '@solo-webapi/mobx-utils/buildValidator';
 
 // Actions Creators
 import type { ReduxState as ReduxStateType } from 'src/appState/redux/types';

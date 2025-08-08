@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, GenericColors, LightBluePalette } from '@sc-ui/system';
+import { fontWeight, GenericColors, LightBluePalette } from '@solo-ui/system';
 
 export const S_AcceptOddsNotification = styled.div`
     padding: 15px 9px;

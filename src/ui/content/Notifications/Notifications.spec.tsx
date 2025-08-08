@@ -1,8 +1,8 @@
 import { fireEvent } from '@testing-library/react';
 import { http, HttpResponse } from 'msw';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
-import { server } from '@sc-tests/unit/mocks/server.setup';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
+import { server } from '@solo-tests/unit/mocks/server.setup';
 
 import { ApiWrapper } from 'src/appState/ApiWrapper';
 
@@ -55,16 +55,16 @@ describe('Notifications', () => {
 
         expect(mockClickHandler).toHaveBeenCalled();
     });
-    it('should display comtrade notifications', async () => {
-        window.$platformId = 'comtrade';
-        notifications[0].clientLabel = 'xyz';
+    it('should display sportsbook notifications', async () => {
+        window.$platformId = 'sportsbook';
+        notifications[0].clientLabel = '_sportsbook2';
 
         const { findByTestId, queryByTestId } = renderWithAppWrapper(<Notifications />);
 
-        const comtradeNotification = await findByTestId(`notification-anchor-2`);
-        expect(comtradeNotification).toBeInTheDocument();
+        const sportsbookNotification = await findByTestId(`notification-anchor-2`);
+        expect(sportsbookNotification).toBeInTheDocument();
 
-        const xyzNotification = queryByTestId('notification-anchor-1');
-        expect(xyzNotification).not.toBeInTheDocument();
+        const otherNotification = queryByTestId('notification-anchor-1');
+        expect(otherNotification).not.toBeInTheDocument();
     });
 });

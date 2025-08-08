@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { radius, fontWeight, cssColor } from '@sc-ui/system';
+import { radius, fontWeight, cssColor } from '@solo-ui/system';
 
 export const S_FiltersWrapper = styled.header`
     display: flex;

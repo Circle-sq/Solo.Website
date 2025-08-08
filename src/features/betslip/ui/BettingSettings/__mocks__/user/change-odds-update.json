@@ -1,10 +1,10 @@
 {
   "id": 100,
   "type": "customer",
-  "universe": "skycity",
+  "universe": "solo",
   "name": "Customer Online",
-  "url": "/accounts/skycity/customer/100",
-  "walletUrl": "/wallets/skycity/100",
+  "url": "/accounts/solo/customer/100",
+  "walletUrl": "/wallets/solo/100",
   "revision": 0,
   "addressLine1": "Soseaua 7",
   "email": null,

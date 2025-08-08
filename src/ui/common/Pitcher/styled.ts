@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 
-import { BaseballPitcherIcon } from '@sc-ui/icons/svg';
+import { BaseballPitcherIcon } from '@solo-ui/icons/svg';
 
 import type { Testable } from 'src/utils/Testable/types';
-import { breakpoints } from '@sc-ui/system';
+import { breakpoints } from '@solo-ui/system';
 
 interface PitcherProps extends Testable {
     invert: boolean;

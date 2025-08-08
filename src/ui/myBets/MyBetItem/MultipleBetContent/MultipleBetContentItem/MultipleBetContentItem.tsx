@@ -1,9 +1,9 @@
 import { observer } from 'mobx-react-lite';
 import { useRecoilCallback } from 'recoil';
 
-import { isCrossBetLegType } from '@sc-betslip/typeGuards/leg';
-import { MultipleBuildABetContent } from '@sc-buildABet/ui/myBet';
-import { isBuildABetLegType } from '@sc-buildABet/utils/typeGuards';
+import { isCrossBetLegType } from '@solo-betslip/typeGuards/leg';
+import { MultipleBuildABetContent } from '@solo-buildABet/ui/myBet';
+import { isBuildABetLegType } from '@solo-buildABet/utils/typeGuards';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import BetStatusIcon from 'src/assets/icons/betStatusIcon/BetStatusIcon';

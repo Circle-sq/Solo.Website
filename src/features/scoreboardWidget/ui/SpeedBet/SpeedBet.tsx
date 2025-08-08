@@ -1,8 +1,8 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { useState, useCallback, useEffect, useMemo } from 'react';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import StatisticsWidget from '@sc-media/ui/widgets/StatisticsWidget/StatisticsWidget';
+import StatisticsWidget from '@solo-media/ui/widgets/StatisticsWidget/StatisticsWidget';
 
 import { useAppStateContext } from 'src/appState/AppState';
 

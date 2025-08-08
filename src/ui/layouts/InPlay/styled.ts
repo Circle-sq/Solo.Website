@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, fontWeight, GenericColors, GreyPalette, cssColor } from '@sc-ui/system';
+import { breakpoints, fontWeight, GenericColors, GreyPalette, cssColor } from '@solo-ui/system';
 
 import { S_PageContent } from 'src/layouts/MainWrapper/styled';
 import { S_Container, S_SwiperContainer } from 'src/ui/common/Carousel/styled';

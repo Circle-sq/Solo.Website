@@ -1,9 +1,9 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { observer } from 'mobx-react-lite';
 import { useRecoilState } from 'recoil';
 
-import { CrossBetIcon, FilterIcon } from '@sc-ui/icons/svg';
-import { GreyPalette } from '@sc-ui/system';
+import { CrossBetIcon, FilterIcon } from '@solo-ui/icons/svg';
+import { GreyPalette } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { toggleState } from 'src/common/helpers/state';

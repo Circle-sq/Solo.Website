@@ -3,12 +3,12 @@ import userEvent from '@testing-library/user-event';
 import { http, HttpResponse } from 'msw';
 import type { ReactNode } from 'react';
 
-import { isAuthenticatedAtom, userDataAtom } from '@sc-account/store/atoms';
-import type { UserData } from '@sc-account/types';
-import { MockStoreProvider } from '@sc-tests/unit/mocks/jotai/store';
-import MockReactQueryProvider from '@sc-tests/unit/mocks/MockReactQueryProvider';
-import { server } from '@sc-tests/unit/mocks/server.setup';
-import { ThemeSwitchProvider } from '@sc-ui/system';
+import { isAuthenticatedAtom, userDataAtom } from '@solo-account/store/atoms';
+import type { UserData } from '@solo-account/types';
+import { MockStoreProvider } from '@solo-tests/unit/mocks/jotai/store';
+import MockReactQueryProvider from '@solo-tests/unit/mocks/MockReactQueryProvider';
+import { server } from '@solo-tests/unit/mocks/server.setup';
+import { ThemeSwitchProvider } from '@solo-ui/system';
 
 import { ApiWrapper } from 'src/appState/ApiWrapper';
 import { BetslipCashout, BetslipOdds } from 'src/common/enums';

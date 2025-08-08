@@ -1,4 +1,4 @@
-import type { SortParam } from '@sc-api/types';
+import type { SortParam } from '@solo-api/types';
 
 import { BetStatus } from 'src/common/enums';
 

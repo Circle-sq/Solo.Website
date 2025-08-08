@@ -1,10 +1,10 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import debounce from 'lodash/debounce';
 import { type MouseEventHandler, type RefObject, useEffect, useState } from 'react';
 import type Scrollbars from 'react-custom-scrollbars-2';
 import { useRecoilValue } from 'recoil';
 
-import { ScrollTopIcon } from '@sc-ui/icons/svg';
+import { ScrollTopIcon } from '@solo-ui/icons/svg';
 
 import { useCustomScroll } from 'src/appState/customHooks';
 import { quickBetAnimationStateSelector } from 'src/ui/betting/store/selectors';

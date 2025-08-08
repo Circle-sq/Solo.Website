@@ -1,6 +1,6 @@
 import { memo } from 'react';
 
-import { CupIcon } from '@sc-ui/icons/svg';
+import { CupIcon } from '@solo-ui/icons/svg';
 
 import { S_CompetitionName, S_CountryName } from 'src/ui/crossbetting/Competitions/styled';
 import {

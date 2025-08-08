@@ -1,6 +1,6 @@
 import * as t from 'io-ts';
-import { buildValidator } from '@sc-webapi/mobx-utils/buildValidator';
-import type { PlatformApi } from '@sc-webapi/realtime-server/PlatformApi/PlatformApi';
+import { buildValidator } from '@solo-webapi/mobx-utils/buildValidator';
+import type { PlatformApi } from '@solo-webapi/realtime-server/PlatformApi/PlatformApi';
 import type { ConfigServer } from '../ConfigServer';
 
 const LanguagesResponseIO = t.union([

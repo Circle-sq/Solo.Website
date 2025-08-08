@@ -1,5 +1,5 @@
-## GP Platform Table of Contents
-- [GP Platform Table of Contents](#gp-platform-table-of-contents)
+## SOLO Platform Table of Contents
+- [SOLO Platform Table of Contents](#solo-platform-table-of-contents)
 - [Preparing application](#preparing-application)
 - [Operators](#operators)
 - [Basic commands](#basic-commands)
@@ -71,7 +71,7 @@ You should include them in your `.env` file.
 - `API_URL` - needed for API working version
 - `API_USERNAME` - username for `program` user
 - `API_PASSWORD` - password for this user
-- `NPM_TOKEN` - Access Token for NPM account with access to `@gp-ninja/gpp-frontend-api`
+- `NPM_TOKEN` - Access Token for NPM account with access to `@solo/solo-frontend-api`
 - `LOG_FORMAT` - Logs formatter - you can switch for development to `pretty`
 - `LOG_LEVEL` - Logs level - you can switch for development to `debug`
 - `REDIS_MASTER_NAME` - Master name of Redis instance used by Frontend API
@@ -208,7 +208,7 @@ When matching `getTranslation` it will match anything from he name for the funct
 >
 ```
 
-If no error occurs you should see a message like `sc-website/node_task/../build/lang.csv saved.` after all the key values were shown in the console.
+If no error occurs you should see a message like `solo-website/node_task/../build/lang.csv saved.` after all the key values were shown in the console.
 
 ### **Possible issues**
 There are some cases that the generation of the language file is not finished successfully. Some possible issues may be related to having two translations with the same key, regex fails to match translation because of unknown words/symbols in translation.

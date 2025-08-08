@@ -9,11 +9,11 @@ import { act, useEffect } from 'react';
 import { RecoilRoot } from 'recoil';
 import { vi } from 'vitest';
 
-import { SubscriptionsStorageProvider } from '@sc-data/subscriptions-storage';
-import { DevToolsProvider } from '@sc-devtools/DevTools';
-import MockReactQueryProvider from '@sc-tests/unit/mocks/MockReactQueryProvider';
-import { renderWithTheme } from '@sc-tests/unit/mocks/renderMocks';
-import { useJotaiCallback } from '@sc-utils/jotai';
+import { SubscriptionsStorageProvider } from '@solo-data/subscriptions-storage';
+import { DevToolsProvider } from '@solo-devtools/DevTools';
+import MockReactQueryProvider from '@solo-tests/unit/mocks/MockReactQueryProvider';
+import { renderWithTheme } from '@solo-tests/unit/mocks/renderMocks';
+import { useJotaiCallback } from '@solo-utils/jotai';
 
 import { ApiWrapper } from 'src/appState/ApiWrapper';
 import type { SelectionItem } from 'src/common/types/selection';
@@ -30,9 +30,9 @@ import OddsArrow from '../Selection/SelectionOdds/OddsArrow';
 import { S_OddsValue, S_ValueWithRangeCell } from '../Selection/styled';
 import { formatDecimals } from '../utils';
 
-vi.mock('@sc-asianView/icons/RedArrowUpIcon', () => ({ default: () => ' ↑' }));
-vi.mock('@sc-asianView/icons/BlueArrowDownIcon', () => ({ default: () => ' ↓' }));
-vi.mock('@sc-asianView/icons/LockIcon', () => ({ default: () => '🔒' }));
+vi.mock('@solo-asianView/icons/RedArrowUpIcon', () => ({ default: () => ' ↑' }));
+vi.mock('@solo-asianView/icons/BlueArrowDownIcon', () => ({ default: () => ' ↓' }));
+vi.mock('@solo-asianView/icons/LockIcon', () => ({ default: () => '🔒' }));
 
 const MOCK_EVENT_ID = 42;
 

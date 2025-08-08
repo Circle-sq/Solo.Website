@@ -1,7 +1,7 @@
 import { atom } from 'jotai';
 import { atomFamily, atomWithDefault } from 'jotai/utils';
 
-import { MarketTypeGeneric } from '@sc-asianView/constants';
+import { MarketTypeGeneric } from '@solo-asianView/constants';
 
 import { SelectionIdentifier } from 'src/common/enums';
 import {

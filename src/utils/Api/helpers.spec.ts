@@ -9,13 +9,13 @@ describe('Api helpers', () => {
         page: 1,
         sort: ['timeSettings.startTime'],
         state: 'open',
-        'tags.skycity-events': { from: 1, to: 20 },
+        'tags.solo-events': { from: 1, to: 20 },
         time: undefined,
     } as Record<string, unknown>;
 
     const url = '/events/search';
     const expectedQueryParams =
-        'market.display=true&market.popular=1%2C2&page=1&sort=timeSettings.startTime&state=open&tags.skycity-events%5Bfrom%5D=1&tags.skycity-events%5Bto%5D=20';
+        'market.display=true&market.popular=1%2C2&page=1&sort=timeSettings.startTime&state=open&tags.solo-events%5Bfrom%5D=1&tags.solo-events%5Bto%5D=20';
 
     afterEach(() => {
         vi.clearAllMocks();

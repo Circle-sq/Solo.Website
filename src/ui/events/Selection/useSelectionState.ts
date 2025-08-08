@@ -1,5 +1,5 @@
-import { useAsianInPlayHandicapLineFlag } from '@sc-feature-flags';
-import { usePathLocation } from '@sc-hooks';
+import { useAsianInPlayHandicapLineFlag } from '@solo-feature-flags';
+import { usePathLocation } from '@solo-hooks';
 import { useAtomValue } from 'jotai';
 import get from 'lodash/get';
 import isEmpty from 'lodash/isEmpty';
@@ -7,15 +7,15 @@ import isNull from 'lodash/isNull';
 import type { MouseEvent } from 'react';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import { oddsFormatSelector } from '@sc-account/store/selectors';
-import { selectionView } from '@sc-betslip/helpers/selectionView';
-import { betslipSelectionsAtom } from '@sc-betslip/store/atoms/selections';
-import { showBetReceiptSelector } from '@sc-betslip/store/selectors/betReceipt';
-import { hasOfferSelector } from '@sc-betslip/store/selectors/offer';
-import { isPlaceBetLoadingSelector } from '@sc-betslip/store/selectors/placeBet';
-import { isSelectedSelectorFamily } from '@sc-betslip/store/selectors/selections';
-import { resetBetslipStateTransaction } from '@sc-betslip/store/transactions/betslip';
-import type { SelectionPayload } from '@sc-betslip/store/types';
+import { oddsFormatSelector } from '@solo-account/store/selectors';
+import { selectionView } from '@solo-betslip/helpers/selectionView';
+import { betslipSelectionsAtom } from '@solo-betslip/store/atoms/selections';
+import { showBetReceiptSelector } from '@solo-betslip/store/selectors/betReceipt';
+import { hasOfferSelector } from '@solo-betslip/store/selectors/offer';
+import { isPlaceBetLoadingSelector } from '@solo-betslip/store/selectors/placeBet';
+import { isSelectedSelectorFamily } from '@solo-betslip/store/selectors/selections';
+import { resetBetslipStateTransaction } from '@solo-betslip/store/transactions/betslip';
+import type { SelectionPayload } from '@solo-betslip/store/types';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { BettingTab } from 'src/common/enums';

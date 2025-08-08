@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, GenericColors, cssColor } from '@sc-ui/system';
+import { fontWeight, GenericColors, cssColor } from '@solo-ui/system';
 
 export const MarketGroupContainer = styled.section`
     column-break-inside: avoid;

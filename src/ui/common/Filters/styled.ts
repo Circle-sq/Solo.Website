@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import type { MouseEvent } from 'react';
 
-import { fontWeight, breakpoints, GenericColors, cssColor } from '@sc-ui/system';
+import { fontWeight, breakpoints, GenericColors, cssColor } from '@solo-ui/system';
 
 import { S_ContentIcon } from 'src/ui/common/CountryListItem/styled';
 import TabsBar from 'src/ui/common/TabsBar';

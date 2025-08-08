@@ -4,7 +4,7 @@ import reduce from 'lodash/reduce';
 import size from 'lodash/size';
 import { useSelector } from 'react-redux';
 
-import { useBuildABetFeature } from '@sc-buildABet/hooks/useBuildABetFeature';
+import { useBuildABetFeature } from '@solo-buildABet/hooks/useBuildABetFeature';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { sportsAllItemsSelector } from 'src/modules/sports/selectors';

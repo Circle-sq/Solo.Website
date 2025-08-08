@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 
-import type { EventGroup } from '@sc-asianView/types';
+import type { EventGroup } from '@solo-asianView/types';
 
 import { toggleState } from 'src/common/helpers/state';
 

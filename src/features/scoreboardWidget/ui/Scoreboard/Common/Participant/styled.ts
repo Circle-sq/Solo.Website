@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints } from '@sc-ui/system';
+import { breakpoints } from '@solo-ui/system';
 
 export const S_ParticipantDetails = styled.div<{ layout?: 'horizontal' | 'vertical' }>`
     overflow: hidden;

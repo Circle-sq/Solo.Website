@@ -1,4 +1,4 @@
-import { api } from '@sc-api/api';
+import { api } from '@solo-api/api';
 
 import type { Uniform, UniformParams } from './types';
 

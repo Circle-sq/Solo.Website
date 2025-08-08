@@ -2,9 +2,9 @@ import { waitFor } from '@testing-library/react';
 import get from 'lodash/get';
 import { http, HttpResponse } from 'msw';
 
-import { api } from '@sc-api/api';
-import { server } from '@sc-tests/unit/mocks/server.setup';
-import { HttpStatusCode } from '@sc-webapi/enums';
+import { api } from '@solo-api/api';
+import { server } from '@solo-tests/unit/mocks/server.setup';
+import { HttpStatusCode } from '@solo-webapi/enums';
 
 import type { AppState } from 'src/appState/AppState';
 import type { ReduxState } from 'src/appState/redux/ReduxState';

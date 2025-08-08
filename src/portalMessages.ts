@@ -2,12 +2,11 @@ import isEmpty from 'lodash/isEmpty';
 import isEqual from 'lodash/isEqual';
 import { getRecoil, setRecoil } from 'recoil-nexus';
 
-import { signIn, signOut, updateOddsFormat } from '@sc-account/actions';
-import { isAuthenticatedAtom, userDataAtom, userSettingsAtom } from '@sc-account/store/atoms';
-import { currencySelector, playableBalanceSelector } from '@sc-account/store/selectors';
-import { BreakPoints } from '@sc-ui/system';
-import { store } from '@sc-utils/jotai';
-import { PlatformIdTypes } from '@sc-webapi/enums';
+import { signIn, signOut, updateOddsFormat } from '@solo-account/actions';
+import { isAuthenticatedAtom, userDataAtom, userSettingsAtom } from '@solo-account/store/atoms';
+import { currencySelector, playableBalanceSelector } from '@solo-account/store/selectors';
+import { BreakPoints } from '@solo-ui/system';
+import { store } from '@solo-utils/jotai';
 
 import { SPORT_BOOK_MESSAGES, STORAGE_KEYS } from 'src/utils/constants';
 import { guestCurrencyAtom } from 'src/utils/standalone/store/atom';
@@ -139,7 +138,7 @@ export const onReceiveMessage = (data: PostMessageData, app: Application) => {
 
             case SPORT_BOOK_MESSAGES.set_guest_currency: {
                 if (guestCurrency != null) {
-                    store.set(guestCurrencyAtom, guestCurrency as 'KRW' | 'USD');
+                    store.set(guestCurrencyAtom, guestCurrency);
                 } else {
                     console.error('No currency provided in message', data);
                 }
@@ -227,16 +226,14 @@ export const onReceiveMessage = (data: PostMessageData, app: Application) => {
 
 // #region listeners
 
-export function initListeners(app: Application) {
-    const platformId = getStorageBuilder()('platformId').getItem();
-
-    if (platformId === PlatformIdTypes.Comtrade) {
-        handleResizeUpdate(app);
-    }
-
-    if (platformId === PlatformIdTypes.Comtrade || platformId === PlatformIdTypes.SkyHub) {
-        initBalanceUpdate(app);
-    }
+export function initListeners(_app: Application) {
+    //const platformId = getStorageBuilder()('platformId').getItem();
+    // if (platformId === PlatformIdTypes.Sportsbook1) {
+    //     handleResizeUpdate(app);
+    // }
+    // if (platformId === PlatformIdTypes.Sportsbook1 || platformId === PlatformIdTypes.Sportsbook2) {
+    //     initBalanceUpdate(app);
+    // }
 }
 
 function findHighestNode(nodesList: NodeListOf<ChildNode>): number {
@@ -280,7 +277,7 @@ function findHighestNode(nodesList: NodeListOf<ChildNode>): number {
     return highestNodeHeight;
 }
 
-function handleResizeUpdate(app: Application) {
+function _handleResizeUpdate(app: Application) {
     LogStandaloneMessage(IFRAME_ACTION_TYPE.info, 'Height Update initialized');
     const defaultHeight = 400;
     const heightCheckInterval = 1000;

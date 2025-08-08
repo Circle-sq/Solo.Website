@@ -1,7 +1,7 @@
 import has from 'lodash/has';
 import type { MultiValue, SingleValue } from 'react-select';
 
-import type { MediaOption } from '@sc-media/ui/videoStream/dropdown/types';
+import type { MediaOption } from '@solo-media/ui/videoStream/dropdown/types';
 
 import type { Option } from 'src/ui/crossbetting/FilterDropdown/types';
 

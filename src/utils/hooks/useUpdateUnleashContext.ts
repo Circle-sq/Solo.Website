@@ -2,7 +2,7 @@ import { useUnleashContext } from '@unleash/proxy-client-react';
 import { useAtomValue } from 'jotai';
 import { useEffect } from 'react';
 
-import { userDataAtom } from '@sc-account/store/atoms';
+import { userDataAtom } from '@solo-account/store/atoms';
 
 const useUpdateUnleashContext = () => {
     const userData = useAtomValue(userDataAtom);

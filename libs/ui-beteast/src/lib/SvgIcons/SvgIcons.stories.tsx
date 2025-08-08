@@ -6,7 +6,7 @@ import type { Meta } from '@storybook/react';
 import map from 'lodash/map';
 import { type ElementType, Fragment } from 'react';
 
-import * as Icons from '@sc-ui/icons/svg';
+import * as Icons from '@solo-ui/icons/svg';
 
 const iconEntries = Object.entries(Icons) as [string, ElementType][];
 
@@ -25,9 +25,9 @@ export const SvgIconsGrid = () => {
             <Source
                 dark
                 code={`
-import { AZIcon } from '@sc-ui/icons/svg';
+import { AZIcon } from '@solo-ui/icons/svg';
 // or
-import { AZ as AZIcon } from '@sc-ui/icons/svg';
+import { AZ as AZIcon } from '@solo-ui/icons/svg';
 
 ...
 // Usage

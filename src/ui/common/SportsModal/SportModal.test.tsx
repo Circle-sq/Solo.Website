@@ -1,8 +1,8 @@
 import { screen } from '@testing-library/react';
 import { Map as ImmutableMap } from 'immutable';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
-import { store } from '@sc-utils/jotai';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
+import { store } from '@solo-utils/jotai';
 
 import { SportType } from 'src/common/enums';
 import { isSportModalOpenAtom } from 'src/store/common/atoms';
@@ -87,7 +87,7 @@ describe('SportModal', () => {
             [SportType.Baseball]: {
                 id: 31,
                 label: null,
-                url: 'https://s3.eu-central-1.amazonaws.com/skycityhub-qa-cms/icons/sports/9d9227ae-9581-4300-9720-430b11f4a9b4.svg',
+                url: 'https://s3.eu-central-1.amazonaws.com/solohub-qa-cms/icons/sports/9d9227ae-9581-4300-9720-430b11f4a9b4.svg',
                 width: 20,
                 height: 20,
                 caption: null,
@@ -113,7 +113,7 @@ describe('SportModal', () => {
             sportIcon: {
                 id: 31,
                 label: null,
-                url: 'https://s3.eu-central-1.amazonaws.com/skycityhub-qa-cms/icons/sports/9d9227ae-9581-4300-9720-430b11f4a9b4.svg',
+                url: 'https://s3.eu-central-1.amazonaws.com/solohub-qa-cms/icons/sports/9d9227ae-9581-4300-9720-430b11f4a9b4.svg',
                 width: 20,
                 height: 20,
                 caption: null,
@@ -134,7 +134,7 @@ describe('SportModal', () => {
             [SportType.Baseball]: {
                 id: 31,
                 label: null,
-                url: 'https://s3.eu-central-1.amazonaws.com/skycityhub-qa-cms/icons/sports/9d9227ae-9581-4300-9720-430b11f4a9b4.svg',
+                url: 'https://s3.eu-central-1.amazonaws.com/solohub-qa-cms/icons/sports/9d9227ae-9581-4300-9720-430b11f4a9b4.svg',
                 width: 20,
                 height: 20,
                 caption: null,

@@ -1,11 +1,11 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import includes from 'lodash/includes';
 import isEmpty from 'lodash/isEmpty';
 import { observer } from 'mobx-react-lite';
 import { useEffect } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import { eventMediaAtom } from '@sc-media/store/atoms';
+import { eventMediaAtom } from '@solo-media/store/atoms';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { LiveTrackerProviders, SportType } from 'src/common/enums';

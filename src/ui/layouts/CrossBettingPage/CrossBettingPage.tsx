@@ -1,11 +1,11 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { observer } from 'mobx-react-lite';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { Scrollbars } from 'react-custom-scrollbars-2';
 import { Redirect } from 'react-router-dom';
 import { useRecoilCallback } from 'recoil';
 
-import { resetCrossPageRelationForOrphanSelectionsTask } from '@sc-betslip/store/tasks/selection/relation';
+import { resetCrossPageRelationForOrphanSelectionsTask } from '@solo-betslip/store/tasks/selection/relation';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { RouteName, SportType } from 'src/common/enums';

@@ -1,6 +1,6 @@
 import { useRecoilCallback } from 'recoil';
 
-import { useQueryWithCbk } from '@sc-utils/tanstack';
+import { useQueryWithCbk } from '@solo-utils/tanstack';
 
 import { bettingConfigsAtom } from 'src/store/configs/atoms';
 

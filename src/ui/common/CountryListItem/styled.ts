@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, breakpoints, GenericColors, GreyPalette } from '@sc-ui/system';
+import { fontWeight, breakpoints, GenericColors, GreyPalette } from '@solo-ui/system';
 
 import type { ContentIconStyle } from 'src/ui/common/NavigationList/types';
 import TooltipTruncatedText from 'src/ui/common/TooltipTruncatedText/TooltipTruncatedText';

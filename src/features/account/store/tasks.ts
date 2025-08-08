@@ -1,4 +1,4 @@
-import type { CallbackParams } from '@sc-utils/jotai';
+import type { CallbackParams } from '@solo-utils/jotai';
 
 import isLocal from 'src/utils/isLocal';
 

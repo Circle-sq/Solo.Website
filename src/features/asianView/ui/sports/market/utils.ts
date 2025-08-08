@@ -1,4 +1,4 @@
-import { MarketTypeGeneric } from '@sc-asianView/constants';
+import { MarketTypeGeneric } from '@solo-asianView/constants';
 
 import { SelectionIdentifier, SportType } from 'src/common/enums';
 import { MarketType } from 'src/common/enums/market';

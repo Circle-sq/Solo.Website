@@ -2,7 +2,7 @@ import { waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import type { PropsWithChildren } from 'react';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import { mockUseAppStateContext } from 'src/ui/common/SubNavigation/tests/test-helper';
 
@@ -21,12 +21,12 @@ vi.mock('src/appState/AppState', () => {
 
 const isDesktop = true;
 
-vi.mock('@sc-hooks', () => ({
+vi.mock('@solo-hooks', () => ({
     __esModule: true,
     useWindowWidth: () => ({ isDesktop }),
 }));
 
-vi.mock('@sc-features/subscription-manager/SubscribeElement', () => ({
+vi.mock('@solo-features/subscription-manager/SubscribeElement', () => ({
     SubscribeElement: ({ children }: PropsWithChildren) => children,
 }));
 

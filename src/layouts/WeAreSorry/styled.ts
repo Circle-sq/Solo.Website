@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { LightBluePalette } from '@sc-ui/system';
+import { LightBluePalette } from '@solo-ui/system';
 
 export const S_SorryMessage = styled.div`
     padding: 10px;

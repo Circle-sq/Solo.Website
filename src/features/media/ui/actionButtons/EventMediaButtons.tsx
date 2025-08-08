@@ -4,10 +4,10 @@ import { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import { useSetRecoilState } from 'recoil';
 
-import { useBlacklistQuery } from '@sc-api/streams/blacklist/queries';
-import { eventMediaAtom } from '@sc-media/store/atoms';
-import { FootballFieldIcon, LiveStreamingIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { useBlacklistQuery } from '@solo-api/streams/blacklist/queries';
+import { eventMediaAtom } from '@solo-media/store/atoms';
+import { FootballFieldIcon, LiveStreamingIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import type { EventModel } from 'src/appState/models/models/EventModel';
 import type { MediaItem } from 'src/common/types/media';

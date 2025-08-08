@@ -5,6 +5,6 @@ export const reInitTrackRenderDoneAtom = atom(false);
 
 export const isBackFromEventPageAtom = atom(false);
 
-export const guestCurrencyAtom = atomWithStorage<'KRW' | 'USD'>('guestCurrencyAtom', 'KRW', undefined, {
+export const guestCurrencyAtom = atomWithStorage<string>('guestCurrencyAtom', 'USD', undefined, {
     getOnInit: true,
 });

@@ -5,7 +5,7 @@ import { http, HttpResponse } from 'msw';
 import type { PropsWithChildren } from 'react';
 import { RecoilRoot } from 'recoil';
 
-import { server } from '@sc-tests/unit/mocks/server.setup';
+import { server } from '@solo-tests/unit/mocks/server.setup';
 
 import { mockUseAppStateContext } from 'src/ui/common/SubNavigation/tests/test-helper';
 

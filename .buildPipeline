@@ -1,5 +1,5 @@
-@Library("sc-build-pipeline") _
+@Library("solo-build-pipeline") _
 
 buildFrontend {
-    serviceName = "gpp-website"
+    serviceName = "solo-website"
 }

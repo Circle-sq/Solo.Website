@@ -1,6 +1,6 @@
 import type { PropsWithChildren } from 'react';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import { ApiWrapper } from 'src/appState/ApiWrapper';
 import { LanguagesState } from 'src/appState/LanguagesState';

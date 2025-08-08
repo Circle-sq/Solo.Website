@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, fontWeight, cssColor } from '@sc-ui/system';
+import { breakpoints, fontWeight, cssColor } from '@solo-ui/system';
 
 export const S_BetslipActions = styled.div<{ isDisabled: boolean }>`
     min-height: 36px;

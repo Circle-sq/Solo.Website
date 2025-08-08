@@ -8,7 +8,7 @@ import {
     LightBluePalette,
     GenericColors,
     cssColor,
-} from '@sc-ui/system';
+} from '@solo-ui/system';
 
 import Link from 'src/utils/Router/NewLink';
 

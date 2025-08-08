@@ -6,12 +6,12 @@ import size from 'lodash/size';
 import { useCallback, useEffect, useMemo } from 'react';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import { cashoutEnabledSelector, currencySelector } from '@sc-account/store/selectors';
-import { getMyBetsParams } from '@sc-api/bets/helpers';
-import { useMyBetsQueryCache } from '@sc-api/bets/queryCache';
-import { BetsService } from '@sc-api/bets/services';
-import { queryKeys } from '@sc-api/queryKeys';
-import { store } from '@sc-utils/jotai';
+import { cashoutEnabledSelector, currencySelector } from '@solo-account/store/selectors';
+import { getMyBetsParams } from '@solo-api/bets/helpers';
+import { useMyBetsQueryCache } from '@solo-api/bets/queryCache';
+import { BetsService } from '@solo-api/bets/services';
+import { queryKeys } from '@solo-api/queryKeys';
+import { store } from '@solo-utils/jotai';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { MyBetsTab } from 'src/common/enums';

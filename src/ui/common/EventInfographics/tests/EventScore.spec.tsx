@@ -1,6 +1,6 @@
 import EventScore from 'src/ui/common/EventInfographics/EventScore';
 import { SportType } from 'src/common/enums';
-import { renderWithTheme } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithTheme } from '@solo-tests/unit/mocks/renderMocks';
 import type { RenderResult } from '@testing-library/react';
 import { fireEvent, act } from '@testing-library/react';
 import type { Matcher, SelectorMatcherOptions, queries } from '@testing-library/dom';

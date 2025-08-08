@@ -3,8 +3,8 @@ import { fromJS, List, Map } from 'immutable';
 import { http, HttpResponse } from 'msw';
 import type { ReactNode } from 'react';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
-import { server } from '@sc-tests/unit/mocks/server.setup';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
+import { server } from '@solo-tests/unit/mocks/server.setup';
 
 import LeftSideNavigation from './LeftSideNavigation';
 
@@ -77,13 +77,13 @@ const events = [
     },
 ];
 
-vi.mock('@sc-hooks', () => ({
+vi.mock('@solo-hooks', () => ({
     __esModule: true,
     useWindowResize: vi.fn(),
     useWindowWidth: () => ({ isMobileLandscape: false }),
 }));
 
-vi.mock('@sc-feature-flags', () => ({
+vi.mock('@solo-feature-flags', () => ({
     useBetLinkGolfFlag: () => true,
 }));
 
@@ -148,7 +148,7 @@ vi.mock('src/appState/AppState', async function AppState() {
                                         externalId: {
                                             eventId: undefined,
                                             feedId: 'sr:tournament:782',
-                                            instance: 'skycity',
+                                            instance: 'solo',
                                             producerId: undefined,
                                             provider: 'bet-radar',
                                             sportId: undefined,
@@ -165,7 +165,7 @@ vi.mock('src/appState/AppState', async function AppState() {
                                         externalId: {
                                             eventId: undefined,
                                             feedId: 'sr:tournament:1654',
-                                            instance: 'skycity',
+                                            instance: 'solo',
                                             producerId: undefined,
                                             provider: 'bet-radar',
                                             sportId: undefined,

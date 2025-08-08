@@ -1,6 +1,6 @@
 import { memo } from 'react';
 
-import { InfoBlueIcon } from '@sc-ui/icons/svg';
+import { InfoBlueIcon } from '@solo-ui/icons/svg';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { I18n } from 'src/ui/common/Language/I18n';

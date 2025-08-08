@@ -4,9 +4,9 @@ import type { MouseEvent } from 'react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import { currencySelector } from '@sc-account/store/selectors';
-import { DownArrowIcon, UpArrowIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { currencySelector } from '@solo-account/store/selectors';
+import { DownArrowIcon, UpArrowIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { useOnClickOutside } from 'src/appState/customHooks';
 import { setShowBackdropTask } from 'src/ui/betting/store/tasks';

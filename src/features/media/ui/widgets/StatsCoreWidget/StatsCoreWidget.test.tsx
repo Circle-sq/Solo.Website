@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import { ThemeSwitchProvider } from '@sc-ui/system';
+import { ThemeSwitchProvider } from '@solo-ui/system';
 
 import StatsCoreWidget from './StatsCoreWidget';
 

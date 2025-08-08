@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, cssColor } from '@sc-ui/system';
+import { fontWeight, cssColor } from '@solo-ui/system';
 
 import { S_Item } from 'src/ui/common/DropdownList/styled';
 

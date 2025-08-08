@@ -6,8 +6,8 @@ import ms from 'ms';
 import { createServer as createViteServer } from 'vite';
 import { WebSocketServer } from 'ws';
 
-import { isDevelopment } from '@sc-webapi/infra.server';
-import { getTimeout } from '@sc-webapi/websocket/config';
+import { isDevelopment } from '@solo-webapi/infra.server';
+import { getTimeout } from '@solo-webapi/websocket/config';
 
 import { createMessageHeartbeat } from '../decode';
 

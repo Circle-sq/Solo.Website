@@ -7,7 +7,7 @@ import startsWith from 'lodash/startsWith';
 import { useEffect } from 'react';
 import { v4 as uuidV4 } from 'uuid';
 
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
 
 import { currencyToSymbol } from 'src/appState/utils';
 import type { CurrencyType } from 'src/config/types';
@@ -27,7 +27,7 @@ interface Props {
 export const ImgBetlinkIntegration = ({ accountId, userLang, currency, onClose }: Props) => {
     const currencySymbol = currencyToSymbol(currency);
     const language = startsWith(userLang, 'en') ? LANGUAGES.en : LANGUAGES.ko;
-    const OPERATOR_NAME = 'skycity';
+    const OPERATOR_NAME = 'solo';
     const env = 'sims';
     const initializationOptions = {
         videoPlaybackEnabled: true,

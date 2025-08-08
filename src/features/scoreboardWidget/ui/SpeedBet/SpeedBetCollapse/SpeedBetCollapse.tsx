@@ -1,10 +1,10 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import find from 'lodash/find';
 import { useMemo } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import { SpeedBetIcon, DownArrowIcon, UpArrowIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { SpeedBetIcon, DownArrowIcon, UpArrowIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 

@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
-import { cssColor, GreyPalette, fontWeight, breakpoints } from '@sc-ui/system';
+import { cssColor, GreyPalette, fontWeight, breakpoints } from '@solo-ui/system';
 
 import { incrementBreakpointValue } from 'src/common/helpers/styled';
 import { S_BaseSelectionAction } from 'src/ui/events/Selection/SelectionAction/styled';

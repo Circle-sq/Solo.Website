@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { radius, cssColor } from '@sc-ui/system';
+import { radius, cssColor } from '@solo-ui/system';
 
 export const S_BottomSection = styled.div<{ minHeight?: number }>`
     padding: 6px;

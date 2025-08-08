@@ -1,4 +1,4 @@
-import { BaseballBatIcon } from '@sc-ui/icons/svg';
+import { BaseballBatIcon } from '@solo-ui/icons/svg';
 
 import { TurnValue } from 'src/common/enums';
 import type { Score } from 'src/common/types/statistics';

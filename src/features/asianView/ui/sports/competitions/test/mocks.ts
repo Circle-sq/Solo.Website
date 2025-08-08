@@ -1,5 +1,5 @@
-import type { AsianViewSportConfig } from '@sc-asianView/api/cms/types';
-import type { EventGroup } from '@sc-asianView/types';
+import type { AsianViewSportConfig } from '@solo-asianView/api/cms/types';
+import type { EventGroup } from '@solo-asianView/types';
 
 import type { MarketItem } from 'src/store/events/types';
 
@@ -432,7 +432,7 @@ export const mockedEventGroupForHeader: EventGroup = {
         id: '02_sr:tournament:1258',
         name: 'South Australia NPL',
         externalId: {
-            instance: 'skycity',
+            instance: 'solo',
             provider: 'bet-radar',
             feedId: 'sr:tournament:1258',
             sportId: 'bet-radar',

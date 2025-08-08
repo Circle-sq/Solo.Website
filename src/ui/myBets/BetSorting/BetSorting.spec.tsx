@@ -2,7 +2,7 @@ import { screen, fireEvent } from '@testing-library/react';
 import type { RecoilState, MutableSnapshot } from 'recoil';
 import { useRecoilValue } from 'recoil';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import { MyBetsTab } from 'src/common/enums';
 

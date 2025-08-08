@@ -5,7 +5,7 @@ import { Fragment, useRef } from 'react';
 import { useRecoilValue } from 'recoil';
 import { useOnClickOutside } from 'usehooks-ts';
 
-import { GolfIcon } from '@sc-ui/icons/svg';
+import { GolfIcon } from '@solo-ui/icons/svg';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { useEventCounters } from 'src/appState/customHooks';

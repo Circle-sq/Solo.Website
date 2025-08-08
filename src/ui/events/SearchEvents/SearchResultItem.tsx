@@ -1,7 +1,7 @@
 import { useSetAtom } from 'jotai';
 
-import { LeftUpArrowIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { LeftUpArrowIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import type { EventItem } from 'src/common/types/event';
 import { isSearchModalOpenAtom } from 'src/store/common/atoms';

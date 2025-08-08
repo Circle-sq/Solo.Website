@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, cssColor } from '@sc-ui/system';
+import { fontWeight, cssColor } from '@solo-ui/system';
 
 export const SummaryContainer = styled.div`
     padding-bottom: 16px;

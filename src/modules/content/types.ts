@@ -1,4 +1,4 @@
-import type { UserSettings } from '@sc-account/types';
+import type { UserSettings } from '@solo-account/types';
 import type { IconCategory } from 'src/common/enums';
 
 export interface Content {

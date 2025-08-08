@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, DarkBluePalette, GreyPalette } from '@sc-ui/system';
+import { fontWeight, DarkBluePalette, GreyPalette } from '@solo-ui/system';
 
 export const S_CardStake = styled.div`
     display: flex;

@@ -1,6 +1,6 @@
 import { render, cleanup } from '@testing-library/react';
 
-import { cssColor } from '@sc-ui/system';
+import { cssColor } from '@solo-ui/system';
 
 import { BetStatus } from 'src/common/enums';
 

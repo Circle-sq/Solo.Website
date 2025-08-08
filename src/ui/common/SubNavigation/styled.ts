@@ -8,7 +8,7 @@ import {
     GreyPalette,
     Opacities,
     cssColor,
-} from '@sc-ui/system';
+} from '@solo-ui/system';
 
 import { S_SwiperContainer } from 'src/ui/common/Carousel/styled';
 import Link from 'src/utils/Router/Link';

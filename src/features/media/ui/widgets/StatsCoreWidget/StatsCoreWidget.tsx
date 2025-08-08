@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-import { useThemeSwitchContext, ThemeNames } from '@sc-ui/system';
+import { useThemeSwitchContext, ThemeNames } from '@solo-ui/system';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 

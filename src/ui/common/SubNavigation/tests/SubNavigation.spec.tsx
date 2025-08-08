@@ -1,8 +1,8 @@
 import { List, Map } from 'immutable';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
-import MockComponent from '@sc-tests/unit/mocks/MockComponent';
-import { GreyPalette, LightBluePalette } from '@sc-ui/system';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
+import MockComponent from '@solo-tests/unit/mocks/MockComponent';
+import { GreyPalette, LightBluePalette } from '@solo-ui/system';
 
 import SubNavigation from '../SubNavigation';
 import { mockUseAppStateContext } from './test-helper';
@@ -70,7 +70,7 @@ vi.mock('src/ui/common/LiveSportsModal/LiveSportsModal', () => ({ default: MockC
 
 let isDesktop = false;
 
-vi.mock('@sc-hooks', () => ({
+vi.mock('@solo-hooks', () => ({
     __esModule: true,
     useWindowWidth: () => ({ isDesktop }),
 }));

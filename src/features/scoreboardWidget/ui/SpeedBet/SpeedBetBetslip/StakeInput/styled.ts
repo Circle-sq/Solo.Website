@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { GenericColors, DarkBluePalette, GreenPalette, Opacities, RedPalette } from '@sc-ui/system';
+import { GenericColors, DarkBluePalette, GreenPalette, Opacities, RedPalette } from '@solo-ui/system';
 
 export const S_StakeInput = styled.div`
     width: 130px;

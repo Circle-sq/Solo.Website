@@ -1,6 +1,6 @@
 import { useAtomValue, useSetAtom } from 'jotai';
 
-import { userSettingsAtom } from '@sc-account/store/atoms';
+import { userSettingsAtom } from '@solo-account/store/atoms';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 import Loader from 'src/ui/common/Loader/Loader';

@@ -5,8 +5,8 @@ import type { MouseEvent } from 'react';
 import { useEffect, useMemo } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import { GlobeIcon, PlayIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { GlobeIcon, PlayIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { sportIconsSelector } from 'src/common/store/icons/selectors';
 import { SPORT_ICONS } from 'src/config/sport-icons';

@@ -1,10 +1,10 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import some from 'lodash/some';
 import { useRecoilCallback } from 'recoil';
 import { useEventListener } from 'usehooks-ts';
 
-import { SuccessCheckmarkIcon } from '@sc-ui/icons/svg';
-import { store } from '@sc-utils/jotai';
+import { SuccessCheckmarkIcon } from '@solo-ui/icons/svg';
+import { store } from '@solo-utils/jotai';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { RouteName } from 'src/common/enums';

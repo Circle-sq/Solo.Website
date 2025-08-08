@@ -4,7 +4,7 @@ import orderBy from 'lodash/orderBy';
 import type { CSSProperties } from 'react';
 import { useRecoilState } from 'recoil';
 
-import { CupIcon, ClockIcon } from '@sc-ui/icons/svg';
+import { CupIcon, ClockIcon } from '@solo-ui/icons/svg';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import EventsFilter from 'src/ui/common/EventsFilter/EventsFilter';

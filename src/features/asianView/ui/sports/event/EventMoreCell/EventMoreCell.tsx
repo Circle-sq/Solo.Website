@@ -2,11 +2,11 @@ import { useAtomValue } from 'jotai';
 import { useDispatch } from 'react-redux';
 import { setRecoil } from 'recoil-nexus';
 
-import { eventMarketsCountAtomFamily } from '@sc-asianView/store/marketsCount';
-import { eventMediaAtom } from '@sc-media/store/atoms';
-import { RightArrowIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
-import { useJotaiCallback } from '@sc-utils/jotai';
+import { eventMarketsCountAtomFamily } from '@solo-asianView/store/marketsCount';
+import { eventMediaAtom } from '@solo-media/store/atoms';
+import { RightArrowIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
+import { useJotaiCallback } from '@solo-utils/jotai';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { RouteName } from 'src/common/enums';

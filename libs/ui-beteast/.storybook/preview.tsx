@@ -6,7 +6,7 @@ import type { Preview } from '@storybook/react';
 import { themes as SbThemes, ThemeProvider, ensure as ensureTheme } from '@storybook/theming';
 import type { FC, ReactNode } from 'react';
 
-import { ThemeNames, getThemeOptions } from '@sc-ui/system';
+import { ThemeNames, getThemeOptions } from '@solo-ui/system';
 
 /* eslint-disable-next-line */
 import '../../../src_sassbuild/buildcss/main.css';

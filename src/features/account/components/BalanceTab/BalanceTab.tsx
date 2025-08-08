@@ -4,8 +4,8 @@ import isEmpty from 'lodash/isEmpty';
 import map from 'lodash/map';
 import type { MultiValue, SingleValue } from 'react-select';
 
-import { currenciesAtomWithQuery } from '@sc-account/store/queries';
-import type { MediaOption } from '@sc-media/ui/videoStream/dropdown/types';
+import { currenciesAtomWithQuery } from '@solo-account/store/queries';
+import type { MediaOption } from '@solo-media/ui/videoStream/dropdown/types';
 
 import { hasLanguageSwitcherInAccountMenu } from 'src/config/features_flags';
 import { isStandalone } from 'src/infra.client';

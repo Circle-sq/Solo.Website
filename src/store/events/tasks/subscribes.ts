@@ -1,12 +1,12 @@
 import forEach from 'lodash/forEach';
 import { getRecoil, setRecoil } from 'recoil-nexus';
 
-import { updateSelectionStatuses } from '@sc-asianView/store/helpers/updaters';
-import { updateMainLineMarketIdTask } from '@sc-asianView/store/tasks/mainLine';
-import { addMarketTask } from '@sc-asianView/store/tasks/market';
-import { syncPriceChangeTransaction } from '@sc-betslip/store/transactions/betslip';
-import { eventMediaAtom } from '@sc-media/store/atoms';
-import type { CallbackParams } from '@sc-utils/jotai';
+import { updateSelectionStatuses } from '@solo-asianView/store/helpers/updaters';
+import { updateMainLineMarketIdTask } from '@solo-asianView/store/tasks/mainLine';
+import { addMarketTask } from '@solo-asianView/store/tasks/market';
+import { syncPriceChangeTransaction } from '@solo-betslip/store/transactions/betslip';
+import { eventMediaAtom } from '@solo-media/store/atoms';
+import type { CallbackParams } from '@solo-utils/jotai';
 
 import { WsMessageType } from 'src/utils/socket-io/enums';
 import type { WsPayloadGeneral } from 'src/utils/socket-io/types';

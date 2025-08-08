@@ -23,7 +23,7 @@ const competitionsMock = [
             id: '02_sr:tournament:7',
             name: 'UEFA Champions League',
             externalId: {
-                instance: 'skycity',
+                instance: 'solo',
                 provider: 'bet-radar',
                 feedId: 'sr:tournament:7',
                 sportId: 'bet-radar',
@@ -54,7 +54,7 @@ const competitionsMock = [
             id: '02_sr:tournament:46',
             name: 'Superettan',
             externalId: {
-                instance: 'skycity',
+                instance: 'solo',
                 provider: 'bet-radar',
                 feedId: 'sr:tournament:46',
                 sportId: 'bet-radar',
@@ -88,7 +88,7 @@ const mappedCompetitions = [
             id: '02_sr:tournament:7',
             name: 'UEFA Champions League',
             externalId: {
-                instance: 'skycity',
+                instance: 'solo',
                 provider: 'bet-radar',
                 feedId: 'sr:tournament:7',
                 sportId: 'bet-radar',
@@ -119,7 +119,7 @@ const mappedCompetitions = [
             id: '02_sr:tournament:46',
             name: 'Superettan',
             externalId: {
-                instance: 'skycity',
+                instance: 'solo',
                 provider: 'bet-radar',
                 feedId: 'sr:tournament:46',
                 sportId: 'bet-radar',
@@ -162,7 +162,7 @@ describe('utils', () => {
         });
 
         it('should return ₩ for an unknown currency', () => {
-            expect(currencyToSymbol('XYZ' as CurrencyType)).toBe(CurrencySymbol.KRW);
+            expect(currencyToSymbol('RUB' as CurrencyType)).toBe(CurrencySymbol.USD);
         });
     });
 

@@ -4,12 +4,12 @@ import type { NumberFormatValues } from 'react-number-format';
 import { NumericFormat } from 'react-number-format';
 import { useRecoilCallback } from 'recoil';
 
-import useFetchWalletConfigs, { CurrencyType } from '@sc-betslip/ui/StakeInput/hooks/useFetchWalletConfigs';
-import { StakeInput as StakeInputUI } from '@sc-ui/beteast';
+import useFetchWalletConfigs, { CurrencyType } from '@solo-betslip/ui/StakeInput/hooks/useFetchWalletConfigs';
+import { StakeInput as StakeInputUI } from '@solo-ui/beteast';
 import { useAppStateContext } from 'src/appState/AppState';
 import { useAtomValue } from 'jotai';
 
-import { currencySelector } from '@sc-account/store/selectors';
+import { currencySelector } from '@solo-account/store/selectors';
 import { EMPTY_STRING } from 'src/utils/constants';
 import { STAKE_INPUT_MAX_LENGTH } from '../../store/configs';
 import { closeNumpadTask, openNumpadTask } from '../../store/tasks/numpad';

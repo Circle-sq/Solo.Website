@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, GenericColors } from '@sc-ui/system';
+import { breakpoints, GenericColors } from '@solo-ui/system';
 
 export const S_ScoreboardContainer = styled.div`
     position: relative;

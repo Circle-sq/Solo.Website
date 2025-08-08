@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, radius, cssColor } from '@sc-ui/system';
+import { fontWeight, radius, cssColor } from '@solo-ui/system';
 
 export const S_MarketHeaderWrapper = styled.div`
     border-radius: ${`${radius.main} ${radius.main} 0 0`};

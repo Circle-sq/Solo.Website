@@ -1,4 +1,4 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import isNumber from 'lodash/isNumber';
 import sortBy from 'lodash/sortBy';
 import { observer } from 'mobx-react-lite';
@@ -7,9 +7,9 @@ import Masonry from 'react-masonry-css';
 import { useSelector } from 'react-redux';
 import { useSetRecoilState } from 'recoil';
 
-import { api } from '@sc-api/api';
-import { SubKey } from '@sc-features/subscription-manager/subKeys';
-import { SubscribeElement } from '@sc-features/subscription-manager/SubscribeElement';
+import { api } from '@solo-api/api';
+import { SubKey } from '@solo-features/subscription-manager/subKeys';
+import { SubscribeElement } from '@solo-features/subscription-manager/SubscribeElement';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import type { MarketModel } from 'src/appState/models/models/MarketModel';

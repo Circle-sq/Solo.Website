@@ -2,7 +2,7 @@ import { List } from 'immutable';
 import isUndefined from 'lodash/isUndefined';
 import { computed, observable, runInAction, makeObservable } from 'mobx';
 
-import { timeout } from '@sc-webapi/mobx-utils/timeout';
+import { timeout } from '@solo-webapi/mobx-utils/timeout';
 
 import { RequestStatus } from 'src/common/enums';
 import type { Competition } from 'src/common/types/competition';

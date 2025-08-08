@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { GenericColors, Opacities } from '@sc-ui/system';
+import { GenericColors, Opacities } from '@solo-ui/system';
 
 export const S_Betting = styled.aside`
     width: 100%;

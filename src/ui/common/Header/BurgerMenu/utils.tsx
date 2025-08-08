@@ -1,6 +1,6 @@
 import type { ReactElement } from 'react';
 
-import { AllSportsIcon, CrossBetIcon, LiveSportsIcon } from '@sc-ui/icons/svg';
+import { AllSportsIcon, CrossBetIcon, LiveSportsIcon } from '@solo-ui/icons/svg';
 
 import type { SportCount } from 'src/appState/sportsList/types';
 import { RouteName, SportTab, SportType } from 'src/common/enums';

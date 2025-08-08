@@ -1,4 +1,4 @@
-import { useWindowResize } from '@sc-hooks';
+import { useWindowResize } from '@solo-hooks';
 import { observer } from 'mobx-react-lite';
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';

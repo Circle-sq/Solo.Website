@@ -1,4 +1,4 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { setDefaultOptions } from 'date-fns';
 import isNil from 'lodash/isNil';
 import isNull from 'lodash/isNull';
@@ -6,8 +6,8 @@ import isUndefined from 'lodash/isUndefined';
 import { observer } from 'mobx-react-lite';
 import { useSelector } from 'react-redux';
 
-import LiveMatchTracker from '@sc-media/ui/liveMatchTracker/LiveMatchTracker';
-import VideoStream from '@sc-media/ui/videoStream/VideoStream';
+import LiveMatchTracker from '@solo-media/ui/liveMatchTracker/LiveMatchTracker';
+import VideoStream from '@solo-media/ui/videoStream/VideoStream';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import ScoreboardWidget from 'src/features/scoreboardWidget/ui/ScoreboardWidget';

@@ -1,4 +1,4 @@
-import type { MatchTermParam, RangeTermParam, StringBoolean, YesNo, ShouldMatchTermParam } from '@sc-api/types';
+import type { MatchTermParam, RangeTermParam, StringBoolean, YesNo, ShouldMatchTermParam } from '@solo-api/types';
 
 import type { BetStatus, SportType } from 'src/common/enums';
 
@@ -7,7 +7,7 @@ export interface AggregatedSport {
     name: string;
     tags: {
         'website-show'?: string[];
-        'skycity-events'?: string[];
+        'solo-events'?: string[];
         'market-group'?: string[];
         region?: string[];
         outright?: string[];

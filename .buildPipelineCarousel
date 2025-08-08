@@ -1,5 +1,5 @@
-@Library("gp-pipeline") _
+@Library("solo-pipeline") _
 
 buildFrontendCarousel {
-    serviceName = "gpp-website"
+    serviceName = "solo-website"
 }

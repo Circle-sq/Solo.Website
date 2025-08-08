@@ -1,4 +1,4 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import compact from 'lodash/compact';
 import filter from 'lodash/filter';
 import find from 'lodash/find';
@@ -11,12 +11,12 @@ import { useEffect, useMemo, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
 
-import { SubKey } from '@sc-features/subscription-manager/subKeys';
-import { SubscribeElement } from '@sc-features/subscription-manager/SubscribeElement';
-import { eventMediaAtom } from '@sc-media/store/atoms';
-import EventMediaButtons from '@sc-media/ui/actionButtons/EventMediaButtons';
-import { RightArrowIcon } from '@sc-ui/icons/svg';
-import { DarkBluePalette } from '@sc-ui/system';
+import { SubKey } from '@solo-features/subscription-manager/subKeys';
+import { SubscribeElement } from '@solo-features/subscription-manager/SubscribeElement';
+import { eventMediaAtom } from '@solo-media/store/atoms';
+import EventMediaButtons from '@solo-media/ui/actionButtons/EventMediaButtons';
+import { RightArrowIcon } from '@solo-ui/icons/svg';
+import { DarkBluePalette } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { SportType } from 'src/common/enums';

@@ -3,7 +3,7 @@ import get from 'lodash/get';
 import isEmpty from 'lodash/isEmpty';
 import { useRecoilValue } from 'recoil';
 
-import { currencySelector } from '@sc-account/store/selectors';
+import { currencySelector } from '@solo-account/store/selectors';
 
 import useTranslatedCurrency from 'src/appState/customHooks/useTranslatedCurrency';
 import { I18n } from 'src/ui/common/Language/I18n';

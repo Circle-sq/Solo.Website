@@ -6,9 +6,9 @@ import type { ChangeEvent, KeyboardEvent } from 'react';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useDebounceValue } from 'usehooks-ts';
 
-import { useSearchEventsByValueApi } from '@sc-api/events/queries';
-import { CloseIcon, SearchIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { useSearchEventsByValueApi } from '@solo-api/events/queries';
+import { CloseIcon, SearchIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import type { EventItem } from 'src/common/types/event';

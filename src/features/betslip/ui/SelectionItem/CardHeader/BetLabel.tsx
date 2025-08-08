@@ -1,5 +1,5 @@
-import BuildABetCardHeaderLabel from '@sc-buildABet/ui/betslip/CardHeaderLabel/CardHeaderLabel';
-import { CrossBetIcon } from '@sc-ui/icons/svg';
+import BuildABetCardHeaderLabel from '@solo-buildABet/ui/betslip/CardHeaderLabel/CardHeaderLabel';
+import { CrossBetIcon } from '@solo-ui/icons/svg';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 

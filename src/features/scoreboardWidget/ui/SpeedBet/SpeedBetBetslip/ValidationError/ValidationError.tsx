@@ -1,4 +1,4 @@
-import type { BetError } from '@sc-betslip/api/types/error';
+import type { BetError } from '@solo-betslip/api/types/error';
 
 import useTranslatedCurrency from 'src/appState/customHooks/useTranslatedCurrency';
 import { I18n } from 'src/ui/common/Language/I18n';

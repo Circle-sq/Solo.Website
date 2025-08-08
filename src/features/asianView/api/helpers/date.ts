@@ -1,6 +1,6 @@
 import { addDays, endOfDay, startOfDay } from 'date-fns';
 
-import { DayOffset, TimePeriod } from '@sc-asianView/enums';
+import { DayOffset, TimePeriod } from '@solo-asianView/enums';
 
 const startDate = (date: Date, dayOffset: number) => startOfDay(addDays(date, dayOffset)).toISOString();
 

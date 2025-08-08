@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { GenericColors, GreyPalette, LightBluePalette } from '@sc-ui/system';
+import { GenericColors, GreyPalette, LightBluePalette } from '@solo-ui/system';
 
 import Button from 'src/ui/common/Button/Button';
 

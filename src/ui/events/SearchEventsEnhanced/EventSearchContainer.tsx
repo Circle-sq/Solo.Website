@@ -2,8 +2,8 @@ import { InputAdornment, Stack } from '@mui/material';
 import { useAtom, useAtomValue } from 'jotai';
 import { type ChangeEvent, useRef } from 'react';
 
-import { CloseIcon, SearchIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { CloseIcon, SearchIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { I18n } from 'src/ui/common/Language/I18n';

@@ -1,6 +1,6 @@
 import { endOfDay, startOfDay, subDays } from 'date-fns';
 
-import { DayOffset, LHNTimeTab, type TimePeriod } from '@sc-asianView/enums';
+import { DayOffset, LHNTimeTab, type TimePeriod } from '@solo-asianView/enums';
 
 import { getQueryStartTimes } from '../helpers/date';
 

@@ -1,4 +1,4 @@
-import { PortalLanguageShortcuts } from '@sc-webapi/handlers/handlerDynamicContent/types';
+import { PortalLanguageShortcuts } from '@solo-webapi/handlers/handlerDynamicContent/types';
 
 import { getLanguage } from './getLanguage';
 

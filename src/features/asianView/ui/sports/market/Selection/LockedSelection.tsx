@@ -1,4 +1,4 @@
-import SmallLockIcon from '@sc-asianView/icons/SmallLockIcon';
+import SmallLockIcon from '@solo-asianView/icons/SmallLockIcon';
 
 import { S_SmallLockWrapper } from './styled';
 

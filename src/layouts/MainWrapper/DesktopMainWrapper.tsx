@@ -1,7 +1,7 @@
-import { useAsianViewFlag } from '@sc-feature-flags';
+import { useAsianViewFlag } from '@solo-feature-flags';
 import { observer } from 'mobx-react-lite';
 
-import AsianViewPage from '@sc-asianView/ui/AsianViewPage';
+import AsianViewPage from '@solo-asianView/ui/AsianViewPage';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { RouteName } from 'src/common/enums';

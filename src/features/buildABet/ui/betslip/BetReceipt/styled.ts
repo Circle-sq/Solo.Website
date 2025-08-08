@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
-import { S_BaseBetLegContent } from '@sc-betslip/ui/betReceipt/BetReceiptItems/styled';
-import { cssColor } from '@sc-ui/system';
+import { S_BaseBetLegContent } from '@solo-betslip/ui/betReceipt/BetReceiptItems/styled';
+import { cssColor } from '@solo-ui/system';
 
 export const S_BuildABetSelection = styled(S_BaseBetLegContent)`
     flex-wrap: unset;

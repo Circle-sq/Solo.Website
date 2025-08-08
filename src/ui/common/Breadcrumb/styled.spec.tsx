@@ -3,7 +3,7 @@ import { fromJS, Map, List } from 'immutable';
 import type { PropsWithChildren } from 'react';
 import { describe, expect, it, vi } from 'vitest';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import type { AppState } from 'src/appState/AppState';
 
@@ -27,7 +27,7 @@ const normalizedCompetitionLocations = [
                     platformObject: {
                         externalId: {
                             feedId: 'sr:tournament:8',
-                            instance: 'skycity',
+                            instance: 'solo',
                             provider: 'bet-radar',
                             sportId: 'bet-radar',
                         },
@@ -134,7 +134,7 @@ const defaultCompetitionLocations = {
             platformObject: {
                 externalId: {
                     feedId: 'sr:tournament:8',
-                    instance: 'skycity',
+                    instance: 'solo',
                     provider: 'bet-radar',
                     sportId: 'bet-radar',
                 },

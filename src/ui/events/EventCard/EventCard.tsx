@@ -1,4 +1,4 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import get from 'lodash/get';
 import isEmpty from 'lodash/isEmpty';
 import some from 'lodash/some';
@@ -6,9 +6,9 @@ import { observer } from 'mobx-react-lite';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { SubKey } from '@sc-features/subscription-manager/subKeys';
-import { SubscribeElement } from '@sc-features/subscription-manager/SubscribeElement';
-import type { MediaOption } from '@sc-media/ui/videoStream/dropdown/types';
+import { SubKey } from '@solo-features/subscription-manager/subKeys';
+import { SubscribeElement } from '@solo-features/subscription-manager/SubscribeElement';
+import type { MediaOption } from '@solo-media/ui/videoStream/dropdown/types';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { RequestStatus } from 'src/common/enums';

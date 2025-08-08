@@ -1,9 +1,9 @@
-import { useBetLinkGolfFlag } from '@sc-feature-flags';
+import { useBetLinkGolfFlag } from '@solo-feature-flags';
 import { useAtomValue } from 'jotai';
 import { useCallback } from 'react';
 import { atom, useRecoilState } from 'recoil';
 
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { relogin } from 'src/utils/portal-commands';

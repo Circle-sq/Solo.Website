@@ -33,7 +33,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -316,7 +316,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -421,7 +421,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -526,7 +526,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -631,7 +631,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -736,7 +736,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -841,7 +841,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -946,7 +946,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -1051,7 +1051,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -1156,7 +1156,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -1261,7 +1261,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -1366,7 +1366,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -1468,7 +1468,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -1573,7 +1573,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -1675,7 +1675,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -1777,7 +1777,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -1879,7 +1879,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -1984,7 +1984,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -2089,7 +2089,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -2194,7 +2194,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -2294,7 +2294,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -2394,7 +2394,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -2499,7 +2499,7 @@
         "highlight": [
           "no"
         ],
-        "skycity-events": [
+        "solo-events": [
           "-"
         ],
         "category-label": [
@@ -5903,7 +5903,7 @@
         "id": "02_sr:tournament:480",
         "name": "Copa Sudamericana",
         "externalId": {
-          "instance": "skycity",
+          "instance": "solo",
           "provider": "bet-radar",
           "feedId": "sr:tournament:480"
         }
@@ -5918,7 +5918,7 @@
         "id": "02_sr:tournament:384",
         "name": "Copa Libertadores",
         "externalId": {
-          "instance": "skycity",
+          "instance": "solo",
           "provider": "bet-radar",
           "feedId": "sr:tournament:384"
         }
@@ -5933,7 +5933,7 @@
         "id": "02_sr:tournament:13685",
         "name": "U20 Campeonato Brasileiro",
         "externalId": {
-          "instance": "skycity",
+          "instance": "solo",
           "provider": "bet-radar",
           "feedId": "sr:tournament:13685"
         }
@@ -5948,7 +5948,7 @@
         "id": "02_sr:tournament:915",
         "name": "Pro League",
         "externalId": {
-          "instance": "skycity",
+          "instance": "solo",
           "provider": "bet-radar",
           "feedId": "sr:tournament:915"
         }
@@ -5963,7 +5963,7 @@
         "id": "02_sr:tournament:169",
         "name": "Vysshaya Liga",
         "externalId": {
-          "instance": "skycity",
+          "instance": "solo",
           "provider": "bet-radar",
           "feedId": "sr:tournament:169"
         }
@@ -5978,7 +5978,7 @@
         "id": "02_sr:tournament:41",
         "name": "Veikkausliiga",
         "externalId": {
-          "instance": "skycity",
+          "instance": "solo",
           "provider": "bet-radar",
           "feedId": "sr:tournament:41"
         }
@@ -5993,7 +5993,7 @@
         "id": "02_sr:tournament:709",
         "name": "Premier League",
         "externalId": {
-          "instance": "skycity",
+          "instance": "solo",
           "provider": "bet-radar",
           "feedId": "sr:tournament:709"
         }
@@ -6008,7 +6008,7 @@
         "id": "02_sr:tournament:170",
         "name": "HNL",
         "externalId": {
-          "instance": "skycity",
+          "instance": "solo",
           "provider": "bet-radar",
           "feedId": "sr:tournament:170"
         }
@@ -6023,7 +6023,7 @@
         "id": "02_sr:tournament:202",
         "name": "Ekstraklasa",
         "externalId": {
-          "instance": "skycity",
+          "instance": "solo",
           "provider": "bet-radar",
           "feedId": "sr:tournament:202"
         }
@@ -6038,7 +6038,7 @@
         "id": "02_sr:tournament:205",
         "name": "FNL",
         "externalId": {
-          "instance": "skycity",
+          "instance": "solo",
           "provider": "bet-radar",
           "feedId": "sr:tournament:205"
         }
@@ -6053,7 +6053,7 @@
         "id": "02_sr:tournament:491",
         "name": "3. Liga",
         "externalId": {
-          "instance": "skycity",
+          "instance": "solo",
           "provider": "bet-radar",
           "feedId": "sr:tournament:491"
         }
@@ -6068,7 +6068,7 @@
         "id": "02_sr:tournament:183",
         "name": "National",
         "externalId": {
-          "instance": "skycity",
+          "instance": "solo",
           "provider": "bet-radar",
           "feedId": "sr:tournament:183"
         }
@@ -6083,7 +6083,7 @@
         "id": "02_sr:tournament:1129",
         "name": "Premier League 2",
         "externalId": {
-          "instance": "skycity",
+          "instance": "solo",
           "provider": "bet-radar",
           "feedId": "sr:tournament:1129"
         }
@@ -6098,7 +6098,7 @@
         "id": "02_sr:tournament:35",
         "name": "Bundesliga",
         "externalId": {
-          "instance": "skycity",
+          "instance": "solo",
           "provider": "bet-radar",
           "feedId": "sr:tournament:35"
         }
@@ -6113,7 +6113,7 @@
         "id": "02_sr:tournament:34",
         "name": "Ligue 1",
         "externalId": {
-          "instance": "skycity",
+          "instance": "solo",
           "provider": "bet-radar",
           "feedId": "sr:tournament:34"
         }

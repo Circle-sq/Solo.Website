@@ -1,8 +1,8 @@
 import Fade from '@mui/material/Fade';
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { useAtomValue } from 'jotai';
 
-import { useJotaiCallback } from '@sc-utils/jotai';
+import { useJotaiCallback } from '@solo-utils/jotai';
 
 import { showLoginPopupAtom } from '../../store/atoms';
 import { closeLoginPopupTask } from '../../store/tasks';

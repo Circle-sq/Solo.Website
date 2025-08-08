@@ -1,6 +1,6 @@
 import { css, Global } from '@emotion/react';
 
-import { GreyPalette } from '@sc-ui/system';
+import { GreyPalette } from '@solo-ui/system';
 
 export const GlobalStyles = () => (
     <Global

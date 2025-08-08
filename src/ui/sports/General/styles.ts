@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, DarkBluePalette, GenericColors, cssColor } from '@sc-ui/system';
+import { fontWeight, DarkBluePalette, GenericColors, cssColor } from '@solo-ui/system';
 
 export const Container = styled.div`
     display: flex;

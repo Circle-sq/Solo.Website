@@ -3,11 +3,11 @@ import filter from 'lodash/filter';
 import get from 'lodash/get';
 import reject from 'lodash/reject';
 
-import { queryKeys } from '@sc-account/api/queryKeys';
-import { isAuthenticatedAtom, userDataAtom } from '@sc-account/store/atoms';
-import type { FreebetCredits } from '@sc-account/types';
-import { api } from '@sc-api/api';
-import { store } from '@sc-utils/jotai';
+import { queryKeys } from '@solo-account/api/queryKeys';
+import { isAuthenticatedAtom, userDataAtom } from '@solo-account/store/atoms';
+import type { FreebetCredits } from '@solo-account/types';
+import { api } from '@solo-api/api';
+import { store } from '@solo-utils/jotai';
 
 import { Currency } from 'src/common/enums';
 import { getValue } from 'src/common/recoil/snapshot';

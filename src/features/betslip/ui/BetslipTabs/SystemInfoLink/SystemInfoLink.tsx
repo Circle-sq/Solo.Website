@@ -1,10 +1,10 @@
 import type { MouseEvent } from 'react';
 
-import { InfoOutlineIcon } from '@sc-ui/icons/svg';
+import { InfoOutlineIcon } from '@solo-ui/icons/svg';
 
 import { BETTING_RULES, LINK_NAME, windowFeatures } from '../configs';
 import { S_SystemInfoLink } from '../styled';
-import { cssColor } from '@sc-ui/system';
+import { cssColor } from '@solo-ui/system';
 
 let referredRulesTab: null | Window = null;
 

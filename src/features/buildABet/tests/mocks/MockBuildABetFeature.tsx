@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import filter from 'lodash/filter';
 
-import { isBuildABetMarket } from '@sc-buildABet/utils/helpers';
+import { isBuildABetMarket } from '@solo-buildABet/utils/helpers';
 
 import type { MockEvent } from './types';
 import { mockEvent } from './mockData';

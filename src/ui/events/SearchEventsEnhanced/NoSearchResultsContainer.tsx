@@ -1,9 +1,9 @@
 import { Stack, Typography } from '@mui/material';
 import { useAtomValue, useSetAtom } from 'jotai';
 
-import { CrossBetIcon, InfoBlueIcon as InfoIcon, LiveSportsIcon, RightArrowIcon, SportsIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
-import { useWindowWidth } from '@sc-hooks';
+import { CrossBetIcon, InfoBlueIcon as InfoIcon, LiveSportsIcon, RightArrowIcon, SportsIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
+import { useWindowWidth } from '@solo-hooks';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { RouteName } from 'src/common/enums';

@@ -1,12 +1,12 @@
 [
     {
         "id": 1,
-        "universe": "skycity",
+        "universe": "solo",
         "title": null,
         "background": {
             "id": 1,
             "label": null,
-            "url": "https://s3.eu-central-1.amazonaws.com/skycityhub-sandbox-cms/images/ffb31f9a-72d8-4502-8b05-ff9779d65b7b.png",
+            "url": "https://s3.eu-central-1.amazonaws.com/solohub-sandbox-cms/images/ffb31f9a-72d8-4502-8b05-ff9779d65b7b.png",
             "width": 1080,
             "height": 338,
             "caption": null,
@@ -29,12 +29,12 @@
     },
     {
         "id": 2,
-        "universe": "skycity",
+        "universe": "solo",
         "title": null,
         "background": {
             "id": 2,
             "label": null,
-            "url": "https://s3.eu-central-1.amazonaws.com/skycityhub-sandbox-cms/images/4bde8795-b67d-48af-bc0c-4e6048004004.png",
+            "url": "https://s3.eu-central-1.amazonaws.com/solohub-sandbox-cms/images/4bde8795-b67d-48af-bc0c-4e6048004004.png",
             "width": 1080,
             "height": 338,
             "caption": null,
@@ -57,12 +57,12 @@
     },
     {
         "id": 44,
-        "universe": "skycity",
+        "universe": "solo",
         "title": null,
         "background": {
             "id": 2,
             "label": null,
-            "url": "https://s3.eu-central-1.amazonaws.com/skycityhub-sandbox-cms/images/4bde8795-b67d-48af-bc0c-4e6048004004.png",
+            "url": "https://s3.eu-central-1.amazonaws.com/solohub-sandbox-cms/images/4bde8795-b67d-48af-bc0c-4e6048004004.png",
             "width": 1080,
             "height": 338,
             "caption": null,
@@ -85,12 +85,12 @@
     },
     {
         "id": 55,
-        "universe": "skycity",
+        "universe": "solo",
         "title": null,
         "background": {
             "id": 2,
             "label": null,
-            "url": "https://s3.eu-central-1.amazonaws.com/skycityhub-sandbox-cms/images/4bde8795-b67d-48af-bc0c-4e6048004004.png",
+            "url": "https://s3.eu-central-1.amazonaws.com/solohub-sandbox-cms/images/4bde8795-b67d-48af-bc0c-4e6048004004.png",
             "width": 1080,
             "height": 338,
             "caption": null,
@@ -113,12 +113,12 @@
     },
     {
         "id": 3,
-        "universe": "skycity",
+        "universe": "solo",
         "title": null,
         "background": {
             "id": 3,
             "label": null,
-            "url": "https://s3.eu-central-1.amazonaws.com/skycityhub-sandbox-cms/images/845c050d-1d0c-4f79-9abf-750135256c65.png",
+            "url": "https://s3.eu-central-1.amazonaws.com/solohub-sandbox-cms/images/845c050d-1d0c-4f79-9abf-750135256c65.png",
             "width": 1080,
             "height": 338,
             "caption": null,

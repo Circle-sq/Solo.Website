@@ -2,16 +2,16 @@ import { useAtomValue, useSetAtom } from 'jotai';
 import isEmpty from 'lodash/isEmpty';
 import { useRecoilCallback } from 'recoil';
 
-import { LHNTab } from '@sc-asianView/enums';
-import { lhnTabAtom } from '@sc-asianView/store/lhn';
-import type { GtmSelection } from '@sc-betslip/api/types/placedBet';
-import { betslipSelectionsAtom } from '@sc-betslip/store/atoms/selections';
-import { useToggleStandardSelection } from '@sc-betslip/store/hooks/useToggleStandardSelection';
-import { showBetReceiptSelector } from '@sc-betslip/store/selectors/betReceipt';
-import { hasOfferSelector } from '@sc-betslip/store/selectors/offer';
-import { isPlaceBetLoadingSelector } from '@sc-betslip/store/selectors/placeBet';
-import { resetBetslipStateTransaction } from '@sc-betslip/store/transactions/betslip';
-import { store } from '@sc-utils/jotai';
+import { LHNTab } from '@solo-asianView/enums';
+import { lhnTabAtom } from '@solo-asianView/store/lhn';
+import type { GtmSelection } from '@solo-betslip/api/types/placedBet';
+import { betslipSelectionsAtom } from '@solo-betslip/store/atoms/selections';
+import { useToggleStandardSelection } from '@solo-betslip/store/hooks/useToggleStandardSelection';
+import { showBetReceiptSelector } from '@solo-betslip/store/selectors/betReceipt';
+import { hasOfferSelector } from '@solo-betslip/store/selectors/offer';
+import { isPlaceBetLoadingSelector } from '@solo-betslip/store/selectors/placeBet';
+import { resetBetslipStateTransaction } from '@solo-betslip/store/transactions/betslip';
+import { store } from '@solo-utils/jotai';
 
 import { getValue } from 'src/common/recoil/snapshot';
 import { PriceType } from 'src/common/types/selectionPrice';

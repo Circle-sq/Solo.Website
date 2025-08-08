@@ -1,4 +1,4 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import type { SyntheticEvent } from 'react';
 import { useDispatch } from 'react-redux';
 

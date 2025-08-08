@@ -1,7 +1,7 @@
 import userEvent from '@testing-library/user-event';
 import type { PropsWithChildren } from 'react';
 
-import { renderWithTheme } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithTheme } from '@solo-tests/unit/mocks/renderMocks';
 
 import * as utils from 'src/infra.client';
 import { SPORT_BOOK_MESSAGES } from 'src/utils/constants';

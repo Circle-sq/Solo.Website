@@ -1,8 +1,8 @@
 import type { PropsWithChildren, ReactElement, MouseEvent } from 'react';
 import { forwardRef } from 'react';
 
-import { DownArrowIcon, UpArrowIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { DownArrowIcon, UpArrowIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { S_ExpandIcon, S_SelectButton, S_SelectToggle } from './styled';
 

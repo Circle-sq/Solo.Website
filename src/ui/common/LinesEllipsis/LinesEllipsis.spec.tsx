@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react';
 
-import { renderWithTheme } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithTheme } from '@solo-tests/unit/mocks/renderMocks';
 
 import { TypeLineName } from 'src/common/enums';
 import { LANGUAGES } from 'src/utils/constants';

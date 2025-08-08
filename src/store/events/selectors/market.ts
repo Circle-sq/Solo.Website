@@ -1,4 +1,4 @@
-import { selectorFamily } from '@sc-utils/jotai';
+import { selectorFamily } from '@solo-utils/jotai';
 import includes from 'lodash/includes';
 import size from 'lodash/size';
 

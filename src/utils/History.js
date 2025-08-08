@@ -1,4 +1,3 @@
-// TODO @VA: create safe access for window here SC-3447
 const History = window.history || {};
 
 // Fallback for IE<10

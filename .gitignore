@@ -1,0 +1,87 @@
+# compiled output
+dist
+tmp
+/out-tsc
+
+# dependencies
+node_modules
+
+# Config files (security sensitive)
+.npmrc
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+.nx/cache
+.nx/workspace-data
+
+# legacy stuff
+coverage
+build
+.cache
+src_sassbuild/buildcss/entry.js
+
+
+.idea
+.vscode
+
+
+npm
+_*.sh
+
+.env
+config.json
+meta-build.json
+server/
+dist-typescript-check/
+storybook-static/
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+reports/
+*.heapsnapshot
+
+.scannerwork/
+test-results/
+playwright-report/
+playwright/.cache/
+
+.swc/
+index.html
+dump.rdb
+
+# ui visual testing
+build-storybook.log
+chromatic.config.json
+test-output.txt
+
+# Ignore Vite temporary files
+vite.config.mts.timestamp-*

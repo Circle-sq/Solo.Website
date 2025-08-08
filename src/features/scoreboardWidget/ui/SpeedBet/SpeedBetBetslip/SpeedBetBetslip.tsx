@@ -1,5 +1,5 @@
 import Box from '@mui/material/Box';
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import isEmpty from 'lodash/isEmpty';
 import { useRecoilValue } from 'recoil';
 

@@ -1,11 +1,11 @@
-import { useAsianInPlayHandicapLineFlag } from '@sc-feature-flags';
+import { useAsianInPlayHandicapLineFlag } from '@solo-feature-flags';
 import sortBy from 'lodash/sortBy';
 import { observer } from 'mobx-react-lite';
 
-import { SubKey } from '@sc-features/subscription-manager/subKeys';
-import { SubscribeElement } from '@sc-features/subscription-manager/SubscribeElement';
-import { LockIcon } from '@sc-ui/icons/svg';
-import { DarkBluePalette } from '@sc-ui/system';
+import { SubKey } from '@solo-features/subscription-manager/subKeys';
+import { SubscribeElement } from '@solo-features/subscription-manager/SubscribeElement';
+import { LockIcon } from '@solo-ui/icons/svg';
+import { DarkBluePalette } from '@solo-ui/system';
 
 import type { MarketModel } from 'src/appState/models/models/MarketModel';
 import { SelectionIdentifier } from 'src/common/enums';

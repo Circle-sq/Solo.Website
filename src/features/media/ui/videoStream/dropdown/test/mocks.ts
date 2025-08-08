@@ -274,14 +274,14 @@ export const sportsMock = {
         id: 'americanfootball',
         name: 'American Football',
         displayOrder: 97,
-        tags: { 'skycity-events': ['-'], 'market-group': ['-'], category: ['-'], outright: ['no'], country: ['-'] },
+        tags: { 'solo-events': ['-'], 'market-group': ['-'], category: ['-'], outright: ['no'], country: ['-'] },
     },
     badminton: {
         id: 'badminton',
         name: 'Badminton',
         displayOrder: 92,
         tags: {
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['-'],
             category: ['-'],
             outright: ['no'],
@@ -293,14 +293,14 @@ export const sportsMock = {
         id: 'baseball',
         name: 'Baseball',
         displayOrder: 99,
-        tags: { 'skycity-events': ['-'], 'market-group': ['Main'], category: ['-'], outright: ['no'], country: ['-'] },
+        tags: { 'solo-events': ['-'], 'market-group': ['Main'], category: ['-'], outright: ['no'], country: ['-'] },
     },
     basketball: {
         id: 'basketball',
         name: 'Basketball',
         displayOrder: 98,
         tags: {
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'overtime-length': ['5'],
             'market-group': ['-'],
             category: ['-'],
@@ -315,7 +315,7 @@ export const sportsMock = {
         name: 'Beach volleyball',
         displayOrder: 93,
         tags: {
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Handicaps', 'Totals', 'Point bets'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -327,7 +327,7 @@ export const sportsMock = {
         name: 'Boxing/MMA',
         displayOrder: 89,
         tags: {
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Other'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -339,7 +339,7 @@ export const sportsMock = {
         name: 'Combat Sports',
         displayOrder: 80,
         tags: {
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Other'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -352,7 +352,7 @@ export const sportsMock = {
         name: 'Darts',
         displayOrder: 88,
         tags: {
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Handicaps', "180's", 'Totals', 'Set Betting'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -366,7 +366,7 @@ export const sportsMock = {
         displayOrder: 100,
         tags: {
             'website-show': ['yes'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['main', 'test mg', 'asian', 'corners'],
             outright: ['no'],
             country: ['-'],
@@ -379,7 +379,7 @@ export const sportsMock = {
         name: 'Formula One',
         displayOrder: 86,
         tags: {
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Top Drivers', 'Head-to-head', 'Other/Specials', 'Outright'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -391,7 +391,7 @@ export const sportsMock = {
         name: 'Futsal',
         displayOrder: 85,
         tags: {
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Handicap', 'Handicaps', 'Totals', 'Halves', 'Team', 'Race to', 'Other'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -403,7 +403,7 @@ export const sportsMock = {
         name: 'Golf',
         displayOrder: 87,
         tags: {
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Special Bets', 'Outrights', 'Specials Bets'],
             'golf-tour': ['-'],
             outright: ['no'],
@@ -416,7 +416,7 @@ export const sportsMock = {
         name: 'Handball',
         displayOrder: 81,
         tags: {
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Halves'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -428,7 +428,7 @@ export const sportsMock = {
         name: 'Ice Hockey',
         displayOrder: 94,
         tags: {
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Periods', 'Game Props', 'Player Props'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -441,7 +441,7 @@ export const sportsMock = {
         name: 'Motorbikes',
         displayOrder: 84,
         tags: {
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Outright'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -454,7 +454,7 @@ export const sportsMock = {
         name: 'Rugby League',
         displayOrder: 83,
         tags: {
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Halftime', 'Players'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -466,7 +466,7 @@ export const sportsMock = {
         name: 'Rugby Union',
         displayOrder: 82,
         tags: {
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Halftime', 'Players'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -478,7 +478,7 @@ export const sportsMock = {
         name: 'Snooker',
         displayOrder: 90,
         tags: {
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Frames', 'Breaks', 'Race to', 'Other'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -492,7 +492,7 @@ export const sportsMock = {
         name: 'Table Tennis',
         displayOrder: 91,
         tags: {
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -505,7 +505,7 @@ export const sportsMock = {
         displayOrder: 96,
         tags: {
             'tennis-tour': ['-'],
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main', 'Game Bets', 'Set Bets'],
             outright: ['no'],
             'ante-post': ['no'],
@@ -517,7 +517,7 @@ export const sportsMock = {
         name: 'Volleyball',
         displayOrder: 95,
         tags: {
-            'skycity-events': ['-'],
+            'solo-events': ['-'],
             'market-group': ['Main'],
             outright: ['no'],
             'ante-post': ['no'],

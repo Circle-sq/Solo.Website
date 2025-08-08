@@ -2,7 +2,7 @@ import type { Map as ImmutableMap } from 'immutable';
 import isNil from 'lodash/isNil';
 import { selectorFamily } from 'recoil';
 
-import { isSelectionSpSelectorFamily } from '@sc-betslip/store/selectors/selections';
+import { isSelectionSpSelectorFamily } from '@solo-betslip/store/selectors/selections';
 
 import { OddsFormat, type BetStatus } from 'src/common/enums';
 

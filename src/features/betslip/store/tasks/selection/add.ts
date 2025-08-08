@@ -4,7 +4,7 @@ import isEmpty from 'lodash/isEmpty';
 import size from 'lodash/size';
 import type { CallbackInterface } from 'recoil';
 
-import { findBuildABetByEventId } from '@sc-buildABet/utils/helpers';
+import { findBuildABetByEventId } from '@solo-buildABet/utils/helpers';
 
 import { getValue } from 'src/common/recoil/snapshot';
 

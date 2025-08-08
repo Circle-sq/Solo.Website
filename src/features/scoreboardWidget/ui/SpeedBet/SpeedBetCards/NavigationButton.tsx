@@ -1,5 +1,5 @@
-import { LeftArrowIcon, RightArrowIcon } from '@sc-ui/icons/svg';
-import { GenericColors, Opacities } from '@sc-ui/system';
+import { LeftArrowIcon, RightArrowIcon } from '@solo-ui/icons/svg';
+import { GenericColors, Opacities } from '@solo-ui/system';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 import { capitalizeString } from 'src/utils/format';

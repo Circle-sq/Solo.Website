@@ -2,9 +2,9 @@ import { useAtomValue } from 'jotai';
 import get from 'lodash/get';
 import { observer } from 'mobx-react-lite';
 
-import { oddsFormatSelector } from '@sc-account/store/selectors';
-import type { PlacedBuildABetLeg } from '@sc-betslip/api/types/placedBet';
-import { BuildABetIcon, BuildABetLeg } from '@sc-buildABet/ui';
+import { oddsFormatSelector } from '@solo-account/store/selectors';
+import type { PlacedBuildABetLeg } from '@solo-betslip/api/types/placedBet';
+import { BuildABetIcon, BuildABetLeg } from '@solo-buildABet/ui';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { getOddsFormatPrice } from 'src/utils/common';

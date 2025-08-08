@@ -2,7 +2,7 @@ import isNull from 'lodash/isNull';
 import { useMemo } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import { isBuildABetType } from '@sc-buildABet/utils/typeGuards';
+import { isBuildABetType } from '@solo-buildABet/utils/typeGuards';
 
 import type { Leg } from '../api/types/leg';
 import { pickFreeBetCredit } from '../helpers/freeBet';

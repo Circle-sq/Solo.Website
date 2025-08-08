@@ -1,5 +1,5 @@
-import { SortBy } from '@sc-asianView/enums';
-import type { EventGroup } from '@sc-asianView/types';
+import { SortBy } from '@solo-asianView/enums';
+import type { EventGroup } from '@solo-asianView/types';
 
 import { SportType } from 'src/common/enums';
 import type { CompetitionLocationItem } from 'src/common/types/competition';
@@ -30,7 +30,7 @@ const competition: CompetitionLocationItem = {
         id: '02_sr:tournament:1127',
         name: 'Primera Division Women',
         externalId: {
-            instance: 'skycity',
+            instance: 'solo',
             provider: 'bet-radar',
             feedId: 'sr:tournament:1127',
             sportId: 'bet-radar',

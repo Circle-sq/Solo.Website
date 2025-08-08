@@ -1,4 +1,4 @@
-import { RedPalette } from '@sc-ui/system';
+import { RedPalette } from '@solo-ui/system';
 
 const RedArrowUpIcon = () => (
     <svg xmlns='http://www.w3.org/2000/svg' width='8' height='11' viewBox='0 0 8 11'>

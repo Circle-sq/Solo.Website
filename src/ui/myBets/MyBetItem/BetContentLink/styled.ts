@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, cssColor } from '@sc-ui/system';
+import { breakpoints, cssColor } from '@solo-ui/system';
 
 import { InactiveIcon } from 'src/ui/common/ActiveSportIcon/styled';
 import { S_EventInfoColumn, EventRowActiveIcon, NumberRow } from 'src/ui/common/EventInfographics/styled';

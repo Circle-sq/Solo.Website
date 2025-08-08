@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints } from '@sc-ui/system';
+import { breakpoints } from '@solo-ui/system';
 
 import { S_ScrolledContent } from 'src/layouts/MainWrapper/styled';
 import { S_GroupName } from 'src/ui/events/EventGroupHeader/styled';

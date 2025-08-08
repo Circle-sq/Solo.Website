@@ -2,7 +2,7 @@ import { fromJS, List, Map } from 'immutable';
 import map from 'lodash/map';
 import type { ReactNode } from 'react';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import EventsInPlay from './EventsInPlay';
 
@@ -115,7 +115,7 @@ vi.mock('src/appState/AppState', function AppState() {
                                         externalId: {
                                             eventId: undefined,
                                             feedId: 'sr:tournament:782',
-                                            instance: 'skycity',
+                                            instance: 'solo',
                                             producerId: undefined,
                                             provider: 'bet-radar',
                                             sportId: undefined,
@@ -132,7 +132,7 @@ vi.mock('src/appState/AppState', function AppState() {
                                         externalId: {
                                             eventId: undefined,
                                             feedId: 'sr:tournament:1654',
-                                            instance: 'skycity',
+                                            instance: 'solo',
                                             producerId: undefined,
                                             provider: 'bet-radar',
                                             sportId: undefined,

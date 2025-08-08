@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, cssColor } from '@sc-ui/system';
+import { fontWeight, cssColor } from '@solo-ui/system';
 
 import { ModalRouteName } from 'src/common/enums';
 import Checkbox from 'src/ui/common/Checkbox';

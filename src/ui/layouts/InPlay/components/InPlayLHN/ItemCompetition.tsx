@@ -5,8 +5,8 @@ import { useRecoilValue } from 'recoil';
 import {
     useCompetitionIconUrlQuerySelector,
     useCompetitionLocationIconUrlQuerySelector,
-} from '@sc-api/icons/querySelectors';
-import { CupIcon, DownArrowIcon, UpArrowIcon } from '@sc-ui/icons/svg';
+} from '@solo-api/icons/querySelectors';
+import { CupIcon, DownArrowIcon, UpArrowIcon } from '@solo-ui/icons/svg';
 
 import { flags } from 'src/assets/icons/competitionLocationIcon/flags';
 import ESoccerIcon from 'src/assets/icons/ESoccerIcon';

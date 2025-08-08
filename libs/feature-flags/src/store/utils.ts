@@ -1,14 +1,14 @@
 import type { UnleashClient } from '@unleash/proxy-client-react';
 
 enum FeatureFlag {
-    AsianInPlayHandicapLine = 'SC-11808',
-    AsianView = 'SC-9661',
-    BetLinkGolf = 'SC-8007',
-    ChineseLangSupport = 'SC-11884-CN',
-    JapaneseLangSupport = 'SC-11884-JP',
-    Search = 'SC-10491',
-    SpeedBet = 'SC-12689',
-    InPlayLHN = 'SC-13265',
+    AsianInPlayHandicapLine = 'SOLO-11808',
+    AsianView = 'SOLO-9661',
+    BetLinkGolf = 'SOLO-8007',
+    ChineseLangSupport = 'SOLO-11884-CN',
+    JapaneseLangSupport = 'SOLO-11884-JP',
+    Search = 'SOLO-10491',
+    SpeedBet = 'SOLO-12689',
+    InPlayLHN = 'SOLO-13265',
 }
 
 export const getFeatureFlags = (client: UnleashClient) => ({

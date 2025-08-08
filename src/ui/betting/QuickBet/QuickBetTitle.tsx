@@ -1,8 +1,8 @@
 import { CircularProgress, Stack, Typography } from '@mui/material';
 import { useRecoilValue } from 'recoil';
 
-import { betslipBetsCounterSelector } from '@sc-betslip/store/selectors/betslipBets';
-import { typographyColor } from '@sc-ui/system';
+import { betslipBetsCounterSelector } from '@solo-betslip/store/selectors/betslipBets';
+import { typographyColor } from '@solo-ui/system';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 

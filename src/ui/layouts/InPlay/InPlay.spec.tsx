@@ -1,8 +1,8 @@
 import { fromJS, List, Map } from 'immutable';
 import map from 'lodash/map';
 
-import MockComponent from '@sc-tests/unit/mocks/MockComponent';
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import MockComponent from '@solo-tests/unit/mocks/MockComponent';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import InPlay from './InPlay';
 

@@ -252,7 +252,7 @@ export const liveTabBets = [
                 sport: {
                     id: 'football',
                     name: 'Football',
-                    url: 'http://trading-api:8080/operator-sports/skycity/football',
+                    url: 'http://trading-api:8080/operator-sports/solo/football',
                 },
                 eachWayTerms: null,
                 inPlay: false,
@@ -273,7 +273,7 @@ export const liveTabBets = [
                 competition: {
                     id: '89',
                     name: 'National League',
-                    url: 'http://trading-api:8080/operator-competitions/skycity/89',
+                    url: 'http://trading-api:8080/operator-competitions/solo/89',
                 },
             },
         ],

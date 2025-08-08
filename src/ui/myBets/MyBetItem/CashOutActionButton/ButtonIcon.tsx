@@ -1,5 +1,5 @@
-import { LockIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { LockIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import Icon from 'src/ui/common/Icon/Icon';
 

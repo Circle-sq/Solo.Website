@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, breakpoints, cssColor } from '@sc-ui/system';
+import { fontWeight, breakpoints, cssColor } from '@solo-ui/system';
 
 import { S_MarketGroupContainer } from 'src/ui/events/MarketGroup/styled';
 import { MARKET_TEMPLATES_SETTINGS, NUMBERS } from 'src/utils/constants';

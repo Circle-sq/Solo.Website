@@ -5,7 +5,7 @@ import { memo, type PropsWithChildren } from 'react';
 import { useSelector } from 'react-redux';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import { PlayIcon, HighlightsCupIcon, GolfIcon } from '@sc-ui/icons/svg';
+import { PlayIcon, HighlightsCupIcon, GolfIcon } from '@solo-ui/icons/svg';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import type { SportCount } from 'src/appState/sportsList/types';

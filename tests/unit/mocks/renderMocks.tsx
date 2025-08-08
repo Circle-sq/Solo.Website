@@ -4,22 +4,22 @@ import set from 'lodash/set';
 import type { PropsWithChildren, ReactElement, ReactNode } from 'react';
 import type { MutableSnapshot } from 'recoil';
 
-import { SubscriptionsStorageProvider } from '@sc-data/subscriptions-storage';
-import { DevToolsProvider } from '@sc-devtools/DevTools';
+import { SubscriptionsStorageProvider } from '@solo-data/subscriptions-storage';
+import { DevToolsProvider } from '@solo-devtools/DevTools';
 import {
     type ModelService,
     ModelSubscribeBridgeService,
     type RevisionModel,
-} from '@sc-features/subscription-manager/ModelSubscribeBridgeService';
-import type { PubSubService } from '@sc-features/subscription-manager/types';
-import { WebsocketSubscriptionProvider } from '@sc-features/subscription-manager/WebsocketSubscriptionProvider';
+} from '@solo-features/subscription-manager/ModelSubscribeBridgeService';
+import type { PubSubService } from '@solo-features/subscription-manager/types';
+import { WebsocketSubscriptionProvider } from '@solo-features/subscription-manager/WebsocketSubscriptionProvider';
 
 import type { ReduxState } from 'src/appState/redux/types';
 import { WebsocketNamespace } from 'src/utils/socket-io/types';
 
 import MockAppWrapper from './MockAppWrapper';
 
-export { renderWithTheme } from '@sc-ui/system';
+export { renderWithTheme } from '@solo-ui/system';
 
 export const renderWithAppWrapper = (
     ui: ReactNode,

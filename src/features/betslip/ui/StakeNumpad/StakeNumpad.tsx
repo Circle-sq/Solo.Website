@@ -1,11 +1,11 @@
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import { useAtomValue } from 'jotai';
 import { useRecoilCallback } from 'recoil';
 
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
-import { currencySelector } from '@sc-account/store/selectors';
-import { BinIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
+import { currencySelector } from '@solo-account/store/selectors';
+import { BinIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { Currency } from 'src/common/enums';
 import { I18n } from 'src/ui/common/Language/I18n';

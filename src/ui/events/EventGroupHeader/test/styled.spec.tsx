@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react';
 
-import { renderWithTheme } from '@sc-tests/unit/mocks/renderMocks';
-import { DarkBluePalette, GreyPalette } from '@sc-ui/system';
+import { renderWithTheme } from '@solo-tests/unit/mocks/renderMocks';
+import { DarkBluePalette, GreyPalette } from '@solo-ui/system';
 
 import { S_HeaderGroup, S_SelectionColumnLabel } from '../styled';
 

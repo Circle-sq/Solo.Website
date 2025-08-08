@@ -1,8 +1,8 @@
 import type { EventsMap } from '@socket.io/component-emitter';
 import type { ManagerOptions, Socket, SocketOptions } from 'socket.io-client';
 
-import type { PlacedBet } from '@sc-betslip/api/types/placedBet';
-import type { ReferredBet } from '@sc-betslip/api/types/referredBet';
+import type { PlacedBet } from '@solo-betslip/api/types/placedBet';
+import type { ReferredBet } from '@solo-betslip/api/types/referredBet';
 
 import type { OfferStatus, OfferUser } from 'src/common/enums';
 

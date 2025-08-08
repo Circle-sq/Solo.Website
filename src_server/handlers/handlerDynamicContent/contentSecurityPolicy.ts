@@ -4,10 +4,10 @@ import isEmpty from 'lodash/isEmpty';
 import map from 'lodash/map';
 import some from 'lodash/some';
 
-import type { ConfigServer } from '@sc-webapi/ConfigServer';
-import { AppLocals, ResponseHeaders } from '@sc-webapi/enums';
-import type { PlatformApi } from '@sc-webapi/realtime-server/PlatformApi/PlatformApi';
-import { filterHostPortalsAPI, filterHostPortalsENV } from '@sc-webapi/utils';
+import type { ConfigServer } from '@solo-webapi/ConfigServer';
+import { AppLocals, ResponseHeaders } from '@solo-webapi/enums';
+import type { PlatformApi } from '@solo-webapi/realtime-server/PlatformApi/PlatformApi';
+import { filterHostPortalsAPI, filterHostPortalsENV } from '@solo-webapi/utils';
 
 export const CSP_DEFAULT_POLICY = `frame-ancestors 'self'`;
 export const COOKIE_NAME = 'frameOrigin';

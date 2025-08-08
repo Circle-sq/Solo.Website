@@ -1,4 +1,4 @@
-import type { EffectArgs } from '@sc-utils/jotai';
+import type { EffectArgs } from '@solo-utils/jotai';
 
 import { buildEventChannel, buildMarketChannel } from 'src/utils/socket-io/buildChannel';
 import { socketIoClientAsianViewGeneral } from 'src/utils/socket-io/clients';

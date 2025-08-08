@@ -5,12 +5,12 @@ import { useRecoilCallback } from 'recoil';
 import { setRecoil } from 'recoil-nexus';
 import { w3cwebsocket as WebSocket } from 'websocket';
 
-import LoginPopup from '@sc-account/components/LoginPopup/LoginPopup';
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
-import { freebetCreditsAtomWithQuery } from '@sc-account/store/queries';
-import { api } from '@sc-api/api';
-import DevToolsPopup from '@sc-devtools/DevToolsPopup';
-import { useWebsocketLogsDevTool } from '@sc-devtools/hooks';
+import LoginPopup from '@solo-account/components/LoginPopup/LoginPopup';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
+import { freebetCreditsAtomWithQuery } from '@solo-account/store/queries';
+import { api } from '@solo-api/api';
+import DevToolsPopup from '@solo-devtools/DevToolsPopup';
+import { useWebsocketLogsDevTool } from '@solo-devtools/hooks';
 
 import type Application from 'src/app';
 import { useAppStateContext } from 'src/appState/AppState';

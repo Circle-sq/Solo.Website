@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, breakpoints, cssColor } from '@sc-ui/system';
+import { fontWeight, breakpoints, cssColor } from '@solo-ui/system';
 
 import type { SelectionValueType } from '../types';
 

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-import BalanceTabFreeBetSection from '@sc-account/components/BalanceTab/BalanceTabFreeBetSection';
+import BalanceTabFreeBetSection from '@solo-account/components/BalanceTab/BalanceTabFreeBetSection';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { DropdownMenuPlacement } from 'src/common/enums';

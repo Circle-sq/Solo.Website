@@ -16,7 +16,7 @@ export * from './lib/colors/red';
 export * from './lib/colors/io-blue-light';
 export * from './lib/colors/blue-light';
 
-export type { SkyCityVariablesNamespace } from './theme';
+export type { SoloVariablesNamespace } from './theme';
 
 export { ThemeNames, getThemeOptions } from './lib/theme-names.js';
 export { ThemeSelect } from './lib/ThemeSelect.js';

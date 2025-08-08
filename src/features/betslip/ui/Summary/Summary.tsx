@@ -2,7 +2,7 @@ import { useAtomValue } from 'jotai';
 import { memo, useCallback, useEffect } from 'react';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import { isAuthenticatedAtom } from '@sc-account/store/atoms';
+import { isAuthenticatedAtom } from '@solo-account/store/atoms';
 
 import { BetslipTab } from 'src/common/enums';
 

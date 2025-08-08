@@ -2,7 +2,7 @@ import { useMutationState, useMutation } from '@tanstack/react-query';
 import { useAtomValue } from 'jotai';
 import { useRecoilValue, useRecoilCallback, useSetRecoilState } from 'recoil';
 
-import { userDataAtom } from '@sc-account/store/atoms';
+import { userDataAtom } from '@solo-account/store/atoms';
 
 import { MutationStatus } from 'src/common/enums/status';
 

@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import Popper from '@mui/material/Popper';
 import TextField from '@mui/material/TextField';
 
-import { fontWeight, radius, breakpoints, cssColor } from '@sc-ui/system';
+import { fontWeight, radius, breakpoints, cssColor } from '@solo-ui/system';
 
 import { S_BaseOverlay } from 'src/ui/common/Backdrop/styled';
 

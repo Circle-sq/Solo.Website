@@ -1,4 +1,4 @@
-import { api } from '@sc-api/api';
+import { api } from '@solo-api/api';
 
 import { buildCacheUrl } from 'src/appState/utils';
 import type { IconCategory } from 'src/common/enums';

@@ -1,5 +1,5 @@
-import MockComponent from '@sc-tests/unit/mocks/MockComponent';
-import { buildSubUnsubWrapper, renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import MockComponent from '@solo-tests/unit/mocks/MockComponent';
+import { buildSubUnsubWrapper, renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import type { LanguageStore } from 'src/appState/LanguageStore';
 import { BetStatus } from 'src/common/enums';

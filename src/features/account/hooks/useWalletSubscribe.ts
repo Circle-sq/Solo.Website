@@ -3,10 +3,10 @@ import { queryClientAtom } from 'jotai-tanstack-query';
 import uniqBy from 'lodash/uniqBy';
 import { useEffect } from 'react';
 
-import { queryKeys } from '@sc-account/api/queryKeys';
-import { usePossibleBets } from '@sc-betslip/api/possibleBets/queries';
-import { PossibleBetsTriggeredBy } from '@sc-betslip/enums';
-import { store, useJotaiCallback } from '@sc-utils/jotai';
+import { queryKeys } from '@solo-account/api/queryKeys';
+import { usePossibleBets } from '@solo-betslip/api/possibleBets/queries';
+import { PossibleBetsTriggeredBy } from '@solo-betslip/enums';
+import { store, useJotaiCallback } from '@solo-utils/jotai';
 
 import { isStandalone } from 'src/infra.client';
 import isLocal from 'src/utils/isLocal';

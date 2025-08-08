@@ -1,4 +1,4 @@
-import { renderWithTheme } from '@sc-ui/system';
+import { renderWithTheme } from '@solo-ui/system';
 
 import type { AppState } from 'src/appState/AppState';
 import type { LanguagesState } from 'src/appState/LanguagesState';

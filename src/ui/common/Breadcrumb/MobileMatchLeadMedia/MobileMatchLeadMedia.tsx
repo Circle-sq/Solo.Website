@@ -2,8 +2,8 @@ import { observer } from 'mobx-react-lite';
 import { type MouseEvent, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { FootballFieldIcon, PlayOutlineIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { FootballFieldIcon, PlayOutlineIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import type { EventModel } from 'src/appState/models/models/EventModel';

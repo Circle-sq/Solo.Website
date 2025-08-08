@@ -9,7 +9,7 @@ const importOrderRules = [
         groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
         pathGroups: [
             {
-                pattern: '@sc-*/**',
+                pattern: '@solo-*/**',
                 group: 'internal',
                 position: 'before',
             },
@@ -74,7 +74,7 @@ export default [
                                 'src/appState/Environment/ThemesStar/beteast-theme',
                                 './Environment/ThemesStar/themed',
                             ],
-                            message: 'deprecated, use @sc-ui/system instead',
+                            message: 'deprecated, use @solo-ui/system instead',
                         },
                     ],
                 },

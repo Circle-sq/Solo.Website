@@ -1,6 +1,6 @@
 import { CircularProgress, Typography } from '@mui/material';
 import Box from '@mui/material/Box';
-import { useWindowWidth } from '@sc-hooks';
+import { useWindowWidth } from '@solo-hooks';
 import filter from 'lodash/filter';
 import get from 'lodash/get';
 import isNull from 'lodash/isNull';
@@ -12,12 +12,12 @@ import { useDispatch } from 'react-redux';
 import { useRecoilState, useRecoilValue, useResetRecoilState, useSetRecoilState } from 'recoil';
 import useDeepCompareEffect from 'use-deep-compare-effect';
 
-import { SubKey } from '@sc-features/subscription-manager/subKeys';
-import { SubscribeElement } from '@sc-features/subscription-manager/SubscribeElement';
-import { eventMediaAtom } from '@sc-media/store/atoms';
-import BetRadarStatisticsButton from '@sc-media/ui/actionButtons/BetRadarStatisticsButton';
-import { DownArrowIcon, FootballFieldIcon, UpArrowIcon } from '@sc-ui/icons/svg';
-import { cssColor, DarkBluePalette, fontWeight } from '@sc-ui/system';
+import { SubKey } from '@solo-features/subscription-manager/subKeys';
+import { SubscribeElement } from '@solo-features/subscription-manager/SubscribeElement';
+import { eventMediaAtom } from '@solo-media/store/atoms';
+import BetRadarStatisticsButton from '@solo-media/ui/actionButtons/BetRadarStatisticsButton';
+import { DownArrowIcon, FootballFieldIcon, UpArrowIcon } from '@solo-ui/icons/svg';
+import { cssColor, DarkBluePalette, fontWeight } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import type { EventModel } from 'src/appState/models/models/EventModel';

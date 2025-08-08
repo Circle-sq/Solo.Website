@@ -1,5 +1,5 @@
-import { renderWithTheme } from '@sc-tests/unit/mocks/renderMocks';
-import { GenericColors } from '@sc-ui/system';
+import { renderWithTheme } from '@solo-tests/unit/mocks/renderMocks';
+import { GenericColors } from '@solo-ui/system';
 
 import { S_CheckboxIcon, S_CheckboxSection } from './styled';
 

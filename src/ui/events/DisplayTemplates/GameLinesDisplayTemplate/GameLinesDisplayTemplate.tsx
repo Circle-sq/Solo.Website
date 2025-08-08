@@ -1,8 +1,8 @@
 import compact from 'lodash/compact';
 import { observer } from 'mobx-react-lite';
 
-import { SubKey } from '@sc-features/subscription-manager/subKeys';
-import { SubscribeElement } from '@sc-features/subscription-manager/SubscribeElement';
+import { SubKey } from '@solo-features/subscription-manager/subKeys';
+import { SubscribeElement } from '@solo-features/subscription-manager/SubscribeElement';
 
 import type { MarketModel } from 'src/appState/models/models/MarketModel';
 import type { SelectionModel } from 'src/appState/models/models/SelectionModel/SelectionModel';

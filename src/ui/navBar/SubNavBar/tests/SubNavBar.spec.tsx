@@ -1,8 +1,8 @@
-import '@sc-tests/unit/mocks/matchMedia.mock';
+import '@solo-tests/unit/mocks/matchMedia.mock';
 import type { PropsWithChildren } from 'react';
 import { Map, List } from 'immutable';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
 
 import { RouteName, SportType } from 'src/common/enums';
 import SubNavBar from 'src/ui/navBar/SubNavBar/SubNavBar';
@@ -43,7 +43,7 @@ vi.mock('src/utils/Router/Link', () => ({
 let isDesktop = false;
 let isTablet = true;
 
-vi.mock('@sc-hooks', () => ({
+vi.mock('@solo-hooks', () => ({
     __esModule: true,
     useWindowWidth: () => ({ isDesktop, isTablet }),
 }));

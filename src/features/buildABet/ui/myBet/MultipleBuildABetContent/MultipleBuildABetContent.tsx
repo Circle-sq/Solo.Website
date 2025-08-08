@@ -1,5 +1,5 @@
-import { BuildABetIcon } from '@sc-buildABet/ui';
-import { S_BuildABetContentItem } from '@sc-buildABet/ui/myBet/styled';
+import { BuildABetIcon } from '@solo-buildABet/ui';
+import { S_BuildABetContentItem } from '@solo-buildABet/ui/myBet/styled';
 
 import type { EventModel } from 'src/appState/models/models/EventModel';
 import type { BetStatus } from 'src/common/enums';

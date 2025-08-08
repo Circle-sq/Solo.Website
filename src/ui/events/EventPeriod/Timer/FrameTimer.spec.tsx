@@ -7,7 +7,7 @@ import type { RafStub } from 'raf-stub';
 import { useCallback, useEffect, useState } from 'react';
 import { RecoilRoot } from 'recoil';
 
-import RecoilObserver from '@sc-tests/unit/mocks/recoil/RecoilObserver';
+import RecoilObserver from '@solo-tests/unit/mocks/recoil/RecoilObserver';
 
 import { SECONDS_IN_MINUTE } from 'src/utils/constants';
 

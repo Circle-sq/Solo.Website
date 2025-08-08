@@ -1,5 +1,5 @@
-import { DownArrowIcon, UpArrowIcon } from '@sc-ui/icons/svg';
-import { cssColor } from '@sc-ui/system';
+import { DownArrowIcon, UpArrowIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 
 import type { BetStatus } from 'src/common/enums';
 import { I18n } from 'src/ui/common/Language/I18n';

@@ -4,8 +4,8 @@ import map from 'lodash/map';
 import startsWith from 'lodash/startsWith';
 import type { ComponentProps, PropsWithChildren } from 'react';
 
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
-import { server } from '@sc-tests/unit/mocks/server.setup';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
+import { server } from '@solo-tests/unit/mocks/server.setup';
 
 import type { EventItem } from 'src/store/events/types';
 
@@ -57,7 +57,7 @@ function MockEventList(props: { events: EventItem[] }) {
     );
 }
 
-vi.mock('@sc-features/subscription-manager/SubscribeElement', () => ({
+vi.mock('@solo-features/subscription-manager/SubscribeElement', () => ({
     SubscribeElement: ({ children }: PropsWithChildren) => children,
 }));
 

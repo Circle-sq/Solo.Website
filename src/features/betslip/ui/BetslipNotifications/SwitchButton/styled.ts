@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { GreyPalette, LightBluePalette } from '@sc-ui/system';
+import { GreyPalette, LightBluePalette } from '@solo-ui/system';
 
 export const Switch = styled.label`
     position: relative;

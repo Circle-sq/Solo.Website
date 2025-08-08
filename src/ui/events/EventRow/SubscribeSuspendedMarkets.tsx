@@ -2,8 +2,8 @@ import filter from 'lodash/filter';
 import isNumber from 'lodash/isNumber';
 import map from 'lodash/map';
 
-import { SubKey } from '@sc-features/subscription-manager/subKeys';
-import { SubscribeElement } from '@sc-features/subscription-manager/SubscribeElement';
+import { SubKey } from '@solo-features/subscription-manager/subKeys';
+import { SubscribeElement } from '@solo-features/subscription-manager/SubscribeElement';
 
 import { useAppStateContext } from '../../../appState/AppState';
 

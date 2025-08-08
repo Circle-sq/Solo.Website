@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { GreenPalette } from '@sc-ui/system';
+import { GreenPalette } from '@solo-ui/system';
 
 export const S_StatisticsContainer = styled.div`
     background-color: ${GreenPalette.green2};

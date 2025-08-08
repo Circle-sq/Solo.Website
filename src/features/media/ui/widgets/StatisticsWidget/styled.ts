@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, GenericColors, GreyPalette, LightBluePalette, Opacities } from '@sc-ui/system';
+import { fontWeight, GenericColors, GreyPalette, LightBluePalette, Opacities } from '@solo-ui/system';
 
 export const S_Statistics = styled.div<{ height?: number }>`
     flex: 1;

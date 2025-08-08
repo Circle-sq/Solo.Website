@@ -1,5 +1,5 @@
-import { renderWithAppWrapper } from '@sc-tests/unit/mocks/renderMocks';
-import MockComponent from '@sc-tests/unit/mocks/MockComponent';
+import { renderWithAppWrapper } from '@solo-tests/unit/mocks/renderMocks';
+import MockComponent from '@solo-tests/unit/mocks/MockComponent';
 
 import SubNavigation from '../SubNavigation';
 import { mockUseAppStateContext } from './test-helper';
@@ -51,7 +51,7 @@ vi.mock('src/ui/events/Search/Search', () => ({ default: MockComponent }));
 vi.mock('src/ui/common/SportsModal/SportsModal', () => ({ default: MockComponent }));
 vi.mock('src/ui/common/LiveSportsModal/LiveSportsModal', () => ({ default: MockComponent }));
 
-vi.mock('@sc-hooks', () => ({
+vi.mock('@solo-hooks', () => ({
     __esModule: true,
     useWindowWidth: () => ({ isDesktop: false }),
     useFirstMount: () => false,

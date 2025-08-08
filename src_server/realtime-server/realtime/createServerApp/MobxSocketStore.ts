@@ -4,7 +4,7 @@ import { autorun } from 'mobx';
 import { createPatch } from 'rfc6902';
 import type ws from 'ws';
 
-import type { Result } from '@sc-webapi/mobx-utils/Result';
+import type { Result } from '@solo-webapi/mobx-utils/Result';
 
 import type { MessageSubscriptionsType } from '../decode';
 import { createMessageUpdateFull, createMessageUpdateDiff, decodeMessageFromClient } from '../decode';
