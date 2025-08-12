@@ -16,7 +16,7 @@ env:
 jobs:
   test:
     runs-on: ubuntu-latest
-    # if: github.event_name == 'pull_request'
+    if: github.event_name == 'pull_request'
 
     steps:
     - name: Checkout code
@@ -65,81 +65,75 @@ jobs:
     - name: Run tests
       run: npm run test
 
+  build-and-push:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main_temp'
 
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
 
-  # build-and-push:
-  #   runs-on: ubuntu-latest
-  #   if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main_temp_ci'
+    - name: Extract short SHA
+      run: |
+        echo "IMAGE_TAG=$(git rev-parse --short=7 "$GITHUB_SHA")" >> "$GITHUB_ENV"
 
-  #   steps:
-  #   - name: Checkout code
-  #     uses: actions/checkout@v4
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ env.AWS_REGION }}
 
-  #   - name: Extract short SHA
-  #     run: |
-  #       echo "IMAGE_TAG=$(git rev-parse --short=7 "$GITHUB_SHA")" >> "$GITHUB_ENV"
+    - name: Login to Amazon ECR
+      uses: aws-actions/amazon-ecr-login@v2
 
-  #   - name: Configure AWS credentials
-  #     uses: aws-actions/configure-aws-credentials@v4
-  #     with:
-  #       aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  #       aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  #       aws-region: ${{ env.AWS_REGION }}
+    - name: Set up Node.js for a build
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20.17.0'
+        cache: 'npm'
 
-  #   - name: Login to Amazon ECR
-  #     uses: aws-actions/amazon-ecr-login@v2
+    - name: Configure CodeArtifact and build
+      run: |
+        # Get CodeArtifact authorization token
+        export CODEARTIFACT_AUTH_TOKEN=$(aws codeartifact get-authorization-token \
+          --domain ${{ env.CODEARTIFACT_DOMAIN }} \
+          --domain-owner ${{ env.CODEARTIFACT_DOMAIN_OWNER }} \
+          --region ${{ env.AWS_REGION }} \
+          --query authorizationToken \
+          --output text)
 
+        # Configure npm (write to .npmrc)
+        REGISTRY_URL="https://${{ env.CODEARTIFACT_DOMAIN }}-${{ env.CODEARTIFACT_DOMAIN_OWNER }}.d.codeartifact.${{ env.AWS_REGION }}.amazonaws.com/npm/npm-solo/"
 
+        # Create .npmrc file
+        echo "@solo:registry=$REGISTRY_URL" > .npmrc
+        echo "//${{ env.CODEARTIFACT_DOMAIN }}-${{ env.CODEARTIFACT_DOMAIN_OWNER }}.d.codeartifact.${{ env.AWS_REGION }}.amazonaws.com/npm/npm-solo/:_authToken=$CODEARTIFACT_AUTH_TOKEN" >> .npmrc
+        echo "save-exact=true" >> .npmrc
+        echo "legacy-peer-deps=true" >> .npmrc
+        echo "always-auth=true" >> .npmrc
 
-  #   - name: Set up Node.js for a build
-  #     uses: actions/setup-node@v4
-  #     with:
-  #       node-version: '20.17.0'
-  #       cache: 'npm'
+        # Install and build
+        npm ci --legacy-peer-deps
+        npm rebuild node-sass
+        npm run build
 
-  #   - name: Configure CodeArtifact and build
-  #     run: |
-  #       # Get CodeArtifact authorization token
-  #       export CODEARTIFACT_AUTH_TOKEN=$(aws codeartifact get-authorization-token \
-  #         --domain ${{ env.CODEARTIFACT_DOMAIN }} \
-  #         --domain-owner ${{ env.CODEARTIFACT_DOMAIN_OWNER }} \
-  #         --region ${{ env.AWS_REGION }} \
-  #         --query authorizationToken \
-  #         --output text)
+        # Run lint and tests
+        npm run lint
+        npm run test
 
-  #       # Configure npm (write to .npmrc)
-  #       REGISTRY_URL="https://${{ env.CODEARTIFACT_DOMAIN }}-${{ env.CODEARTIFACT_DOMAIN_OWNER }}.d.codeartifact.${{ env.AWS_REGION }}.amazonaws.com/npm/npm-solo/"
+    - name: Build and push Docker image
+      run: |
+        # Build Docker image
+        docker build \
+          --build-arg GIT_COMMIT=$GITHUB_SHA \
+          -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG \
+          .
 
-  #       # Create .npmrc file
-  #       echo "@solo:registry=$REGISTRY_URL" > .npmrc
-  #       echo "//${{ env.CODEARTIFACT_DOMAIN }}-${{ env.CODEARTIFACT_DOMAIN_OWNER }}.d.codeartifact.${{ env.AWS_REGION }}.amazonaws.com/npm/npm-solo/:_authToken=$CODEARTIFACT_AUTH_TOKEN" >> .npmrc
-  #       echo "save-exact=true" >> .npmrc
-  #       echo "legacy-peer-deps=true" >> .npmrc
-  #       echo "always-auth=true" >> .npmrc
+        # Push image
+        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
-  #       # Install and build
-  #       npm ci --legacy-peer-deps
-  #       npm rebuild node-sass
-  #       npm run build
-
-  #       # Run lint and tests
-  #       npm run lint
-  #       npm run test
-
-
-
-  #   - name: Build and push Docker image
-  #     run: |
-  #       # Build Docker image
-  #       docker build \
-  #         --build-arg GIT_COMMIT=$GITHUB_SHA \
-  #         -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG \
-  #         .
-
-  #       # Push image
-  #       docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-
-  #   - name: Output image details
-  #     run: |
-  #       echo "Successfully built and pushed:"
-  #       echo "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
+    - name: Output image details
+      run: |
+        echo "Successfully built and pushed:"
+        echo "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
