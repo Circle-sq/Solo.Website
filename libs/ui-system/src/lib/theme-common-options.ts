@@ -3,7 +3,7 @@ import type { ThemeOptions } from '@mui/material/styles';
 import { breakpointsOptions } from '../customizations/breakpoints';
 import { typographyOptions } from '../customizations/typography';
 
-import { BeteastTheme } from './beteast-theme';
+import { SoloTheme } from './solo-theme';
 
 export const CommonThemeOptions: ThemeOptions = {
     palette: {
@@ -14,7 +14,7 @@ export const CommonThemeOptions: ThemeOptions = {
             transparent: 'transparent',
         },
     },
-    star: BeteastTheme,
+    star: SoloTheme,
     breakpoints: breakpointsOptions,
     typography: typographyOptions,
 };

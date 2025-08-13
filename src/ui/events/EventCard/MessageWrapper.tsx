@@ -1,9 +1,9 @@
 import type { PropsWithChildren } from 'react';
 
-const MessageWrapper = ({ children, bwinLoading }: PropsWithChildren & { bwinLoading?: boolean }) => {
+const MessageWrapper = ({ children, loading }: PropsWithChildren & { loading?: boolean }) => {
     return (
         <section className='event-card' data-testid='eventPage'>
-            <div className={`event-card__info${bwinLoading ? '__loader' : ''}`}>{children}</div>
+            <div className={`event-card__info${loading ? '__loader' : ''}`}>{children}</div>
         </section>
     );
 };

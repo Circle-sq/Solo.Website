@@ -24,8 +24,8 @@ export function ThemeSelectorDevTool() {
             <label>
                 <span>theme select: </span>
                 <select value={themeName} onChange={onChangeTheme}>
-                    <option value={ThemeNames.Blue}>DarkBlue - beteast</option>
-                    <option value={ThemeNames.Neon}>Neon - beteast.io</option>
+                    <option value={ThemeNames.Blue}>DarkBlue - solo</option>
+                    <option value={ThemeNames.Neon}>Neon - solo.io</option>
                     <option value={ThemeNames.Contrast}>Contrast - debug</option>
                 </select>
             </label>

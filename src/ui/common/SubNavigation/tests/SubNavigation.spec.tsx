@@ -114,7 +114,6 @@ describe('SubNavigation (sport)', () => {
         expect(footballNavItem.closest('.link')).toHaveClass('active');
     });
 
-    // TODO - SC-15787
     it.skip('should render AZ Sports active when clicked', async () => {
         const props = {
             isInHeader: false,
@@ -231,7 +230,7 @@ describe('SubNavigation (sport)', () => {
         );
     });
 
-    it('should open beteast betting rules', async () => {
+    it('should open solo betting rules', async () => {
         const props = {
             isInHeader: false,
             isNav: false,
@@ -247,14 +246,14 @@ describe('SubNavigation (sport)', () => {
 
         await waitFor(() => {
             expect(windowOpenMock).toHaveBeenCalledWith(
-                'https://rule.beteast8.com',
+                'https://rule.solo.com',
                 '_blank',
                 `width=${1024}, height=${750}`,
             );
         });
     });
 
-    it('should open rollin betting rules for standalone', async () => {
+    it('should open external betting rules for standalone', async () => {
         const props = {
             isInHeader: false,
             isNav: false,
@@ -270,7 +269,7 @@ describe('SubNavigation (sport)', () => {
 
         await waitFor(() => {
             expect(windowOpenMock).toHaveBeenCalledWith(
-                'https://www.rollin.io/en/legal-documents/jhGpFgXdDju8OnbdhDdy',
+                'https://www.external.io/en/legal-documents/jhGpFgXdDju8OnbdhDdy',
                 '_blank',
                 `width=${1024}, height=${750}`,
             );

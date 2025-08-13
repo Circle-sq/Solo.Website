@@ -67,7 +67,7 @@ export type HeaderItemType =
 
 const getFaviconUrl = (): string => faviconBet_East;
 
-const getTitlePage = (): string => 'BETEAST';
+const getTitlePage = (): string => 'SOLO';
 
 interface JsxMetaTag {
     key: string;

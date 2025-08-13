@@ -71,7 +71,7 @@ export default [
                             group: [
                                 'src/appState/Environment/ThemesStar/themed',
                                 'src/appState/Environment/ThemesStar/palette',
-                                'src/appState/Environment/ThemesStar/beteast-theme',
+                                'src/appState/Environment/ThemesStar/solo-theme',
                                 './Environment/ThemesStar/themed',
                             ],
                             message: 'deprecated, use @solo-ui/system instead',

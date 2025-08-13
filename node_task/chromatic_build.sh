@@ -25,6 +25,6 @@ if [[ $affected_libs == *"ui-asian-view"* ]]; then
   build_storybook "ui-asian-view" $CHROMATIC_PROJECT_TOKEN
 fi
 
-if [[ $affected_libs == *"ui-beteast"* ]]; then
-  build_storybook "ui-beteast" $CHROMATIC_BETEAST_TOKEN
+if [[ $affected_libs == *"ui-solo"* ]]; then
+  build_storybook "ui-solo" $CHROMATIC_SOLO_TOKEN
 fi

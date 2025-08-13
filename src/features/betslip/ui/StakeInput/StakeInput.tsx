@@ -5,7 +5,7 @@ import { NumericFormat } from 'react-number-format';
 import { useRecoilCallback } from 'recoil';
 
 import useFetchWalletConfigs, { CurrencyType } from '@solo-betslip/ui/StakeInput/hooks/useFetchWalletConfigs';
-import { StakeInput as StakeInputUI } from '@solo-ui/beteast';
+import { StakeInput as StakeInputUI } from 'libs/ui-solo/src';
 import { useAppStateContext } from 'src/appState/AppState';
 import { useAtomValue } from 'jotai';
 

@@ -4,7 +4,7 @@ import { Source } from '@storybook/blocks';
 import type { Meta, StoryObj } from '@storybook/react';
 import keys from 'lodash/keys';
 
-import { Icon, config } from '@solo-ui/beteast/icons';
+import { Icon, config } from '@solo-ui/solo/icons';
 
 const meta: Meta<typeof Icon> = {
     title: 'Atoms/Icons',

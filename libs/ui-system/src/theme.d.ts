@@ -12,12 +12,12 @@ export interface SoloVariablesNamespace {
 
 declare module '@mui/material/styles' {
     interface Theme {
-        star: typeof BeteastTheme;
+        star: typeof SoloTheme;
     }
 
     interface ThemeOptions {
         sc?: SoloVariablesNamespace;
-        star?: typeof BeteastTheme;
+        star?: typeof SoloTheme;
     }
 
     interface TypographyVariants {

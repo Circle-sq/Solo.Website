@@ -56,7 +56,7 @@
     "test:unit": "vitest --run",
     "test:unit:coverage": "npm run test:unit -- --coverage",
     "test:pr:develop": "vitest --coverage.enabled --changed=origin/develop --run",
-    "build-storybook": "npx nx run ui-beteast:build-storybook",
+    "build-storybook": "npx nx run ui-solo:build-storybook",
     "test:components": "playwright test -c playwright-ct.config.mts",
     "test-ct": "npm run test:components"
   },

@@ -10,9 +10,9 @@ definitions:
     npm i nx --no-save
     git log --oneline origin/develop..HEAD
     affected_libs=$(npx nx show projects --affected --base=$BASE_PARAM --head=$HEAD_PARAM --exclude=sportsbook,ui-asian-view)
-    # Check if the affected libraries include ui-beteast (excluded ui-asian-view)
-    if [[ $affected_libs != *"ui-beteast"* ]]; then
-      echo "No relevant libraries (ui-beteast) affected. Skipping build."
+    # Check if the affected libraries include ui-solo (excluded ui-asian-view)
+    if [[ $affected_libs != *"ui-solo"* ]]; then
+      echo "No relevant libraries (ui-solo) affected. Skipping build."
       exit 0
     fi
     echo "affected libs: $affected_libs"
@@ -32,8 +32,8 @@ definitions:
         npx chromatic --project-token=$chromatic_token --storybookBuildDir=$output_dir --zip --exit-zero-on-changes --ci
       fi
     }
-    if [[ $affected_libs == *"ui-beteast"* ]]; then
-      build_storybook "ui-beteast" $CHROMATIC_BETEAST_TOKEN
+    if [[ $affected_libs == *"ui-solo"* ]]; then
+      build_storybook "ui-solo" $CHROMATIC_SOLO_TOKEN
     fi
 
 pipelines:

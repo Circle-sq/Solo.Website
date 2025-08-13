@@ -1,7 +1,7 @@
 {
-  "name": "ui-beteast",
+  "name": "ui-solo",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/ui-beteast/src",
+  "sourceRoot": "libs/ui-solo/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -18,7 +18,7 @@
       ],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/libs/ui-beteast"
+        "outputPath": "dist/libs/ui-solo"
       },
       "configurations": {
         "development": {
@@ -35,14 +35,14 @@
         "{options.reportsDirectory}"
       ],
       "options": {
-        "reportsDirectory": "../../coverage/libs/ui-beteast"
+        "reportsDirectory": "../../coverage/libs/ui-solo"
       }
     },
     "storybook": {
       "executor": "@nx/storybook:storybook",
       "options": {
         "port": 4400,
-        "configDir": "libs/ui-beteast/.storybook"
+        "configDir": "libs/ui-solo/.storybook"
       },
       "configurations": {
         "ci": {
@@ -56,8 +56,8 @@
         "{options.outputDir}"
       ],
       "options": {
-        "outputDir": "dist/storybook/ui-beteast",
-        "configDir": "libs/ui-beteast/.storybook"
+        "outputDir": "dist/storybook/ui-solo",
+        "configDir": "libs/ui-solo/.storybook"
       },
       "configurations": {
         "ci": {
@@ -68,18 +68,18 @@
     "test-storybook": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "test-storybook -c libs/ui-beteast/.storybook --url=http://localhost:4400"
+        "command": "test-storybook -c libs/ui-solo/.storybook --url=http://localhost:4400"
       }
     },
     "static-storybook": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "ui-beteast:build-storybook",
-        "staticFilePath": "dist/storybook/ui-beteast"
+        "buildTarget": "ui-solo:build-storybook",
+        "staticFilePath": "dist/storybook/ui-solo"
       },
       "configurations": {
         "ci": {
-          "buildTarget": "ui-beteast:build-storybook:ci"
+          "buildTarget": "ui-solo:build-storybook:ci"
         }
       }
     }

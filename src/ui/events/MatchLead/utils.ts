@@ -15,5 +15,5 @@ export const langToLocale = (lang: string | null) => {
 export const getBetRadarStatisticUrl = (requestId: string | number, userLang: string | null): string => {
     const lang = getShortLocale(userLang);
 
-    return `https://s5.sir.sportradar.com/beteast/${lang}/match/${requestId}`;
+    return `https://s5.sir.sportradar.com/solo/${lang}/match/${requestId}`;
 };

@@ -2,9 +2,9 @@ import { BetslipTab } from 'src/common/enums';
 
 import type { TabItem } from './types';
 
-export const BETTING_RULES = 'https://rule.beteast8.com/?id=162';
+export const BETTING_RULES = 'https://rule.solo.com/?id=162';
 
-export const LINK_NAME = 'beteast-systems-betting-rule';
+export const LINK_NAME = 'solo-systems-betting-rule';
 
 export const windowFeatures = 'width=1024, height=750, noopener';
 

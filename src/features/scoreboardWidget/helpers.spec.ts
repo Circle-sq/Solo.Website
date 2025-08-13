@@ -45,7 +45,7 @@ describe('getBetRadarStatisticUrl', () => {
     it('should return the correct URL when userLang is en', () => {
         const requestId = '48334873';
         const userLang = 'en-US';
-        const expectedUrl = `https://s5.sir.sportradar.com/beteast/en/match/48334873`;
+        const expectedUrl = `https://s5.sir.sportradar.com/solo/en/match/48334873`;
 
         const result = getBetRadarStatisticUrl(requestId, userLang);
 
@@ -55,7 +55,7 @@ describe('getBetRadarStatisticUrl', () => {
     it('should return the correct URL when userLang is ko', () => {
         const requestId = '48334873';
         const userLang = 'ko-KR';
-        const expectedUrl = `https://s5.sir.sportradar.com/beteast/ko/match/48334873`;
+        const expectedUrl = `https://s5.sir.sportradar.com/solo/ko/match/48334873`;
 
         const result = getBetRadarStatisticUrl(requestId, userLang);
 
@@ -66,15 +66,15 @@ describe('getBetRadarStatisticUrl', () => {
         const requestId = '48334873';
 
         const enResult = getBetRadarStatisticUrl(requestId, 'en-US');
-        const enExpectedUrl = `https://s5.sir.sportradar.com/beteast/en/match/48334873`;
+        const enExpectedUrl = `https://s5.sir.sportradar.com/solo/en/match/48334873`;
         expect(enResult).toBe(enExpectedUrl);
 
         const koResult = getBetRadarStatisticUrl(requestId, 'ko-KR');
-        const koExpectedUrl = `https://s5.sir.sportradar.com/beteast/ko/match/48334873`;
+        const koExpectedUrl = `https://s5.sir.sportradar.com/solo/ko/match/48334873`;
         expect(koResult).toBe(koExpectedUrl);
 
         const jaResult = getBetRadarStatisticUrl(requestId, 'ja-JP');
-        const jaExpectedUrl = `https://s5.sir.sportradar.com/beteast/ja/match/48334873`;
+        const jaExpectedUrl = `https://s5.sir.sportradar.com/solo/ja/match/48334873`;
         expect(jaResult).toBe(jaExpectedUrl);
     });
 

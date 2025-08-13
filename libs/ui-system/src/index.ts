@@ -1,6 +1,6 @@
 import './theme.d.ts';
 
-export { BeteastTheme } from './lib/beteast-theme';
+export { SoloTheme } from './lib/solo-theme.js';
 export type { EmotionTheme } from './lib/emotion';
 export type { LegacyTheme } from './lib/themed';
 export * from './lib/palettes';

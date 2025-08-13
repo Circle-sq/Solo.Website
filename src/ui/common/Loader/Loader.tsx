@@ -6,12 +6,12 @@ import type { Testable } from 'src/utils/Testable/types';
 import { S_LoadingPlaceholder, S_LoadingPlaceholderLocal, S_LoaderMessage, S_LoaderContainer } from './styled';
 
 interface Props extends Testable {
-    bwinLoading?: boolean;
+    loading?: boolean;
     message?: ReactElement;
 }
 
-const Loader = ({ message, bwinLoading, testId }: Props) => {
-    if (bwinLoading) {
+const Loader = ({ message, loading, testId }: Props) => {
+    if (loading) {
         return <S_LoadingPlaceholder className={isStandalone() ? 'loading__standalone' : ''} />;
     }
 

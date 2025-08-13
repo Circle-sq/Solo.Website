@@ -10,7 +10,7 @@ export default defineConfig({
         'process.env.SITE_THEME': JSON.stringify(process.env.SITE_THEME),
     },
     root: __dirname,
-    cacheDir: '../../node_modules/.vite/libs/ui-beteast',
+    cacheDir: '../../node_modules/.vite/libs/ui-solo',
 
     plugins: [
         react(),
@@ -26,7 +26,7 @@ export default defineConfig({
     // Configuration for building your library.
     // See: https://vitejs.dev/guide/build.html#library-mode
     build: {
-        outDir: '../../dist/libs/ui-beteast',
+        outDir: '../../dist/libs/ui-solo',
         reportCompressedSize: true,
         commonjsOptions: {
             transformMixedEsModules: true,
@@ -34,7 +34,7 @@ export default defineConfig({
         lib: {
             // Could also be a dictionary or array of multiple entry points.
             entry: 'src/index.ts',
-            name: 'ui-beteast',
+            name: 'ui-solo',
             fileName: 'index',
             // Change this to the formats you want to support.
             // Don't forget to update your package.json as well.
@@ -58,7 +58,7 @@ export default defineConfig({
 
         reporters: ['default'],
         coverage: {
-            reportsDirectory: '../../coverage/libs/ui-beteast',
+            reportsDirectory: '../../coverage/libs/ui-solo',
             provider: 'v8',
         },
     },

@@ -12,7 +12,7 @@ import { I18n } from 'src/ui/common/Language/I18n';
 
 import { S_MarginBox, S_Notification, S_NotificationInfo, S_NotificationLink, S_TextWrapper } from './styled';
 
-const NOTIFICATION_INFO_LINK = 'https://rule.beteast8.com/?id=363';
+const NOTIFICATION_INFO_LINK = 'https://rule.solo.com/?id=363';
 
 const CrossBetNotification = () => {
     let referredRulesTab: null | Window = null;

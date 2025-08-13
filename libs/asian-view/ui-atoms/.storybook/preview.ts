@@ -2,7 +2,7 @@ import { ThemeProvider as EmotionThemeProvider } from '@emotion/react';
 import { CssBaseline, ThemeProvider as MuiThemeProvider } from '@mui/material';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 
-import { BeteastTheme } from '@solo-ui/system';
+import { SoloTheme } from '@solo-ui/system';
 
 import { materialTheme } from '../src/lib/theme';
 
@@ -11,16 +11,16 @@ import { GlobalStyles } from './styles';
 /* eslint-disable-next-line */
 import '../../../../src_sassbuild/buildcss/main.css';
 
-const beteast = {
-    star: BeteastTheme,
+const solo = {
+    star: SoloTheme,
 };
 
 export const decorators = [
     withThemeFromJSXProvider({
         themes: {
-            beteast,
+            solo: solo,
         },
-        defaultTheme: 'beteast',
+        defaultTheme: 'solo',
         Provider: EmotionThemeProvider,
         GlobalStyles,
     }),

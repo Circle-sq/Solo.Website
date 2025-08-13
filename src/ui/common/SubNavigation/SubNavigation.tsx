@@ -46,8 +46,8 @@ const STATIC_MENU_ITEMS = 4;
 const MENU_ITEMS_TO_SHOW = 9;
 const DESKTOP_ITEM_WIDTH = 82;
 const MOBILE_ITEM_WIDTH = 78;
-const LIVE_PAGE_URL = 'https://ls.sir.sportradar.com/beteast';
-const BETEAST_BETTING_RULE_URL = 'https://rule.beteast8.com';
+const LIVE_PAGE_URL = 'https://ls.sir.sportradar.com/solo';
+const SOLO_BETTING_RULE_URL = 'https://rule.solo.com';
 
 interface Props {
     propsLinks?: Navigate[];
@@ -75,9 +75,9 @@ const SubNavigation = ({ propsLinks, isNav, isInHeader = false, slideTo = false 
     } = useAppStateContext();
     const { route } = router;
 
-    const ROLLIN_BETTING_RULE_URL = `https://www.rollin.io/${userLangShort}/legal-documents/jhGpFgXdDju8OnbdhDdy`;
+    const EXTERNAL_BETTING_RULE_URL = `https://www.external.io/${userLangShort}/legal-documents/jhGpFgXdDju8OnbdhDdy`;
 
-    const getBettingRuleUrl = () => (standalone ? ROLLIN_BETTING_RULE_URL : BETEAST_BETTING_RULE_URL);
+    const getBettingRuleUrl = () => (standalone ? EXTERNAL_BETTING_RULE_URL : SOLO_BETTING_RULE_URL);
 
     const event =
         route.name !== RouteName.Competition && route.name !== RouteName.Country

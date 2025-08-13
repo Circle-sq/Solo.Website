@@ -14,7 +14,7 @@ const config: StorybookConfig = {
         name: '@storybook/react-vite',
         options: {
             builder: {
-                viteConfigPath: 'libs/ui-beteast/vite.config.mts',
+                viteConfigPath: 'libs/ui-solo/vite.config.mts',
             },
         },
     },

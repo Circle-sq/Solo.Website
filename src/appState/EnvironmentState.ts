@@ -1,6 +1,6 @@
 import { computed, observable, makeObservable } from 'mobx';
 
-import { BeteastTheme } from '@solo-ui/system';
+import { SoloTheme } from '@solo-ui/system';
 
 import { SPORT_REMAPPING as SPORT_REMAPPING_DEFAULT } from 'src/config/config';
 
@@ -19,7 +19,7 @@ export class EmotionTheme {
     }
 
     get star() {
-        return BeteastTheme;
+        return SoloTheme;
     }
 
     get universe(): string {

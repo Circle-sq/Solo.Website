@@ -71,10 +71,10 @@
       "@solo-ui-atoms/asian": [
         "libs/asian-view/ui-atoms/src/index.ts"
       ],
-      "@solo-ui/beteast": [
-        "libs/ui-beteast/src/index.ts"
+      "@solo-ui/solo": [
+        "libs/ui-solo/src/index.ts"
       ],
-      "@solo-ui/beteast/icons": [
+      "@solo-ui/solo/icons": [
         "libs/ui-icons/src/index.ts"
       ],
       "@solo-ui/icons/svg": [

@@ -5,7 +5,7 @@ import fontThemeIconsEot from '@solo-sb-assets/fonts/themeicons.eot';
 import fontThemeIconsSvg from '@solo-sb-assets/fonts/themeicons.svg';
 import fontThemeIconsTtf from '@solo-sb-assets/fonts/themeicons.ttf';
 import fontThemeIconsWoff from '@solo-sb-assets/fonts/themeicons.woff';
-import { fontCssForIcon, fontCssSportIcons } from '@solo-ui/beteast/icons';
+import { fontCssForIcon, fontCssSportIcons } from '@solo-ui/solo/icons';
 import { GreyPalette } from '@solo-ui/system';
 
 export const fontCssThemeIcons = `

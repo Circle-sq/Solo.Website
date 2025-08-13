@@ -129,8 +129,8 @@ const EventCard = (props: Props) => {
 
     if (isPrimaryLoad || (isLoadProgress && isSportWithScoreboard(String(eventNew?.sport)))) {
         return (
-            <MessageWrapper bwinLoading>
-                <Loader bwinLoading />
+            <MessageWrapper loading>
+                <Loader loading />
             </MessageWrapper>
         );
     }

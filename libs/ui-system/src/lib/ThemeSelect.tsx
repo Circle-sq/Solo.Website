@@ -31,7 +31,7 @@ export function ThemeSelect({ value, onChange }: { value: ThemeNames; onChange: 
                 <Box sx={valueStyles}>
                     <PaletteIcon fontSize='small' color='primary' />
                     <Typography variant='body4' sx={{ fontWeight: 'bold' }}>
-                        Neon - beteast.IO
+                        Neon - solo.IO
                     </Typography>
                 </Box>
             );
@@ -52,7 +52,7 @@ export function ThemeSelect({ value, onChange }: { value: ThemeNames; onChange: 
             <Box sx={valueStyles}>
                 <OfflineBoltIcon fontSize='small' color='primary' />
                 <Typography variant='body4' sx={{ fontWeight: 'bold' }}>
-                    DarkBlue - beteast
+                    DarkBlue - solo
                 </Typography>
             </Box>
         );
