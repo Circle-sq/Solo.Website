@@ -13,7 +13,7 @@ const useUpdateUnleashContext = () => {
             const context = {
                 userId: userData.id.toString(),
                 externalId: userData.externalId.toString(),
-                ...(userData.brandId !== null && { brandId: userData.brandId.toString() }),
+                ...(userData.brandId && { brandId: userData.brandId?.toString() }),
             };
 
             void updateContext(context);
