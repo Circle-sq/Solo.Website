@@ -16,7 +16,7 @@ interface Props {
 }
 
 const AccountFreeBetItem = ({ freeBetDetails }: Props) => {
-    const { description = '', koreanDescription = '', expiryDate, amount } = freeBetDetails;
+    const { description = '', languageDescription = '', expiryDate, amount } = freeBetDetails;
     const {
         language: { userLang },
     } = useAppStateContext();
@@ -27,7 +27,7 @@ const AccountFreeBetItem = ({ freeBetDetails }: Props) => {
 
     const freeBetAmount = formatAmountWithCurrency(amount, currency, true);
     const formattedValidityDate = format(new Date(expiryDate), DATE_FORMAT.NUMERIC_FULL_DATE_TIME_W_SEPARATOR);
-    const friendlyDescription = isKoreanLanguage ? koreanDescription : description;
+    const friendlyDescription = isKoreanLanguage ? languageDescription : description;
 
     return (
         <>
@@ -41,7 +41,7 @@ const AccountFreeBetItem = ({ freeBetDetails }: Props) => {
                     <T_UpperBold variant='body5'>{freeBetAmount}</T_UpperBold>
                 </S_Chip>
             </S_FreeBetBadgeWrapper>
-            <S_FreeBetDescription>{`* ${friendlyDescription || koreanDescription}`}</S_FreeBetDescription>
+            <S_FreeBetDescription>{`* ${friendlyDescription || languageDescription}`}</S_FreeBetDescription>
             <S_FreeBetValidity>
                 <I18n langKey='betslip.free-bets.freebets-validity' defaultText='Validity:' />
                 &nbsp;

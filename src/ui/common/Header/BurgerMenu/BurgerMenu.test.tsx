@@ -60,7 +60,7 @@ const handlers = [
                     expiryDate: '2024-11-22T11:30:31Z',
                     campaignId: '7a0101c6-2d4a-11ee-a40e-5057d25f6206',
                     walletId: 1,
-                    koreanDescription: 'My free bet description',
+                    languageDescription: 'My free bet description',
                     amount: 10000,
                     id: 1,
                     createdAt: '2024-10-18T10:30:42Z',

@@ -94,7 +94,7 @@ export interface FreebetBonusCredit {
     description: string;
     expiryDate: string;
     id: number;
-    koreanDescription: string;
+    languageDescription: string;
 }
 
 export interface FreebetCredits {
