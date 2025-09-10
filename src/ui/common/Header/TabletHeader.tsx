@@ -3,6 +3,7 @@ import { useAtomValue } from 'jotai';
 import includes from 'lodash/includes';
 import { observer } from 'mobx-react-lite';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
+import Box from '@mui/material/Box';
 
 import { isAuthenticatedAtom } from '@solo-account/store/atoms';
 
@@ -81,12 +82,14 @@ const TabletHeader = ({ showBurgerMenu, toggleBurgerMenu }: Props) => {
                             >
                                 <LogoNew width='113px' height='31px' />
                             </LogoContainer>
-                            {isAuthenticated && (
-                                <MyBetsLink isActive={showMyBets} onClick={toggleMyBets}>
-                                    <I18n langKey='footer.mobile.mybets.label' defaultText='My Bets' />
-                                </MyBetsLink>
-                            )}
-                            {!showBurgerMenu && <QuickHeader />}
+                            <Box display='flex' gap={2} alignItems='center' flex={1}>
+                                {isAuthenticated && (
+                                    <MyBetsLink isActive={showMyBets} onClick={toggleMyBets}>
+                                        <I18n langKey='footer.mobile.mybets.label' defaultText='My Bets' />
+                                    </MyBetsLink>
+                                )}
+                                {!showBurgerMenu && <QuickHeader />}
+                            </Box>
                         </S_HeaderContainer>
                     )}
                     {showMyBets && <MyBetsModal onClose={toggleMyBets} />}

@@ -37,6 +37,7 @@ export const S_HeaderContainer = styled.header`
 
     @media (max-width: ${breakpoints.bp1279max}) {
         display: flex;
+        justify-content: space-between;
         height: 50px;
         padding: 12px 12px;
         align-items: center;
@@ -51,6 +52,7 @@ export const S_HeaderContainer = styled.header`
 `;
 
 export const S_HamburgerWrapper = styled.div`
+    flex: 1;
     display: flex;
     margin-top: 5px;
     position: relative;
@@ -85,6 +87,7 @@ export const LogoContainer = styled(Link)`
         margin-left: 11px;
     }
     @media (max-width: ${breakpoints.bp1279max}) {
-        margin: -5px;
+        flex: 1;
+        justify-content: center;
     }
 `;

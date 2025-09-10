@@ -14,7 +14,6 @@ export const S_Wrapper = styled.div<{ isAuthenticated?: boolean }>`
     @media (max-width: ${breakpoints.bp1279max}) {
         width: auto;
         position: inherit;
-        margin-left: ${({ isAuthenticated = false }) => (!isAuthenticated ? 'auto' : '0')};
     }
 `;
 
