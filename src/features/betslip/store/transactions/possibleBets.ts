@@ -42,12 +42,7 @@ import { getBetslipBets, getCheckedBets, getUncheckedBets } from '../helpers/bet
 import { defineActiveTab } from '../helpers/betslipTab';
 import { defineSystemBetType, syncPossibleCombinations } from '../helpers/combinations';
 import { updateFreeBets } from '../helpers/freeBets';
-import {
-    filterNotRelevantRelatedProblems,
-    findAccountProblem,
-    formatPossibleBetsProblems,
-    mergeProblems,
-} from '../helpers/problems';
+import { findAccountProblem, formatPossibleBetsProblems, mergeProblems } from '../helpers/problems';
 import { syncBuildABetStake } from '../helpers/stake/sync';
 
 export const updateBetsTransaction =
@@ -134,7 +129,6 @@ export const updateProblemsTransaction =
 
             set(betslipProblemsAtom, mergeProblems(problemsWithSelectionIds));
         } else {
-            const selections = get(betslipSelectionsAtom);
             const hasMultiBet = some(bets, isPossibleBetMultiBetType);
 
             const combination =
@@ -145,17 +139,10 @@ export const updateProblemsTransaction =
                 combination !== undefined ? [combination] : [],
                 betslipTab,
             );
-            const filteredNotRelevantRelatedProblems = filterNotRelevantRelatedProblems(
-                problemsWithSelectionIds,
-                selections,
-                bets,
-            );
 
             set(
                 betslipProblemsAtom,
-                mergeProblems(
-                    compact([...filteredNotRelevantRelatedProblems, findAccountProblem(selectedBetsProblems)]),
-                ),
+                mergeProblems(compact([...problemsWithSelectionIds, findAccountProblem(selectedBetsProblems)])),
             );
         }
     };

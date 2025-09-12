@@ -1,7 +1,6 @@
 import type { RefObject } from 'react';
 
 export interface SelectionValueType {
-    isCrossBet?: boolean;
     isSuspended?: boolean;
     disabled?: boolean;
 }

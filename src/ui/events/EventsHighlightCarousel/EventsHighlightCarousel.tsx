@@ -144,7 +144,6 @@ const EventsHighlightCarousel = ({ sport }: { sport?: string }) => {
                                         key={selectionId}
                                         line={marketLine}
                                         selectionId={selectionId}
-                                        isHandicap={Boolean(marketLine)}
                                     />
                                 ))}
                             </MarqueeCard>

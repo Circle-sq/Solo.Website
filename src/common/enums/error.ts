@@ -1,7 +1,6 @@
 export enum BetslipErrorCode {
     Related = 'related',
     SinglesOnly = 'singles-only',
-    Started = 'started',
     Suspended = 'suspended',
     MinimumActiveSelectionsSingleTab = 'minimum-active-selections-single',
     MinimumActiveSelectionsMultiTab = 'minimum-active-selections-multi',

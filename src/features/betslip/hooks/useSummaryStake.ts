@@ -146,6 +146,7 @@ export const useSummaryStake = () => {
                     if (newDigit === decimalSeparator) {
                         return currentValue.includes(decimalSeparator) ? currentValue : `${currentValue}${newDigit}`;
                     }
+
                     return `${currentValue}${newDigit}`;
                 };
 
@@ -156,17 +157,21 @@ export const useSummaryStake = () => {
                 switch (betslipTab) {
                     case BetslipTab.Multi: {
                         const newValue = appendDigit(multipleBetStakes[BetslipTab.Multi], digit);
+
                         if (isValidNumber(newValue)) {
                             changeSummaryStake(newValue);
                         }
+
                         break;
                     }
 
                     case BetslipTab.System: {
                         const newValue = appendDigit(multipleBetStakes[BetslipTab.System], digit);
+
                         if (isValidNumber(newValue)) {
                             changeSummaryStake(newValue);
                         }
+
                         break;
                     }
 

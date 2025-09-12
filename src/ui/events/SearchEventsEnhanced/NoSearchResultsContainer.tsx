@@ -1,7 +1,7 @@
 import { Stack, Typography } from '@mui/material';
 import { useAtomValue, useSetAtom } from 'jotai';
 
-import { CrossBetIcon, InfoBlueIcon as InfoIcon, LiveSportsIcon, RightArrowIcon, SportsIcon } from '@solo-ui/icons/svg';
+import { InfoBlueIcon as InfoIcon, LiveSportsIcon, RightArrowIcon, SportsIcon } from '@solo-ui/icons/svg';
 import { cssColor } from '@solo-ui/system';
 import { useWindowWidth } from '@solo-hooks';
 
@@ -12,7 +12,6 @@ import { I18n } from 'src/ui/common/Language/I18n';
 
 import { searchWarningAtom } from './store/atoms';
 import { S_EmptyResultsWrapper, S_FullWideButton, S_WarningMessageWrapper } from './styled';
-import { isStandalone } from 'src/infra.client';
 
 const NoSearchResultsContainer = () => {
     const searchWarning = useAtomValue(searchWarningAtom);
@@ -59,20 +58,6 @@ const NoSearchResultsContainer = () => {
                     </Typography>
                     <RightArrowIcon color={cssColor('--icon-arrow-right-color')} fontSize='small' />
                 </S_FullWideButton>
-
-                {/* Cross Betting Link */}
-                {!isStandalone() && (
-                    <S_FullWideButton
-                        testId={`empty-result-link-${RouteName.CrossBetting}`}
-                        onClick={() => handleRedirect(RouteName.CrossBetting)}
-                    >
-                        <CrossBetIcon fontSize={isMobile ? 'medium' : 'large'} />
-                        <Typography variant='h1' data-testid={`empty-result-text-${RouteName.CrossBetting}`}>
-                            <I18n langKey='search.modal.empty.link.cross' defaultText='Cross' />
-                        </Typography>
-                        <RightArrowIcon color={cssColor('--icon-arrow-right-color')} fontSize='small' />
-                    </S_FullWideButton>
-                )}
 
                 {/* Live Sports Link */}
                 <S_FullWideButton

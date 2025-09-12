@@ -37,12 +37,6 @@ export const transformQuery = (query: EventQueryRequest, id = '') => {
         }
     }
 
-    const isCrossBetQuery = updatedQuery?.['market.market-display'] === 'cross-bet-view';
-
-    if (isCrossBetQuery) {
-        return { ...updatedQuery };
-    }
-
     return { ...updatedQuery, reduceMarkets: true };
 };
 

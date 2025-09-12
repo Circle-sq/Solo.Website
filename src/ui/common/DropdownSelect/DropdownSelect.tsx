@@ -19,7 +19,7 @@ import { DarkBluePalette, GreyPalette, GenericColors } from '@solo-ui/system';
 
 import { ThemeNames } from 'src/common/enums';
 import type { ThemeName } from 'src/typings/react-select';
-import type { Option as OptionType } from 'src/ui/crossbetting/FilterDropdown/types';
+import type { Option as OptionType } from 'src/common/types/option';
 
 import { Control, IndicatorsContainer, MenuList, Option } from './DropdownSelectComponents';
 

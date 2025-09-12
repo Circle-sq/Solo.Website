@@ -1,12 +1,10 @@
 import { useWindowWidth } from '@solo-hooks';
-import reject from 'lodash/reject';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import { SportsIcon, CrossBetIcon, LiveSportsIcon, RightArrowIcon } from '@solo-ui/icons/svg';
+import { SportsIcon, LiveSportsIcon, RightArrowIcon } from '@solo-ui/icons/svg';
 import { cssColor } from '@solo-ui/system';
 
-import { IconPositionTypes, RouteName, SportTab, SportType } from 'src/common/enums';
-import { isStandalone } from 'src/infra.client';
+import { IconPositionTypes, RouteName, SportTab } from 'src/common/enums';
 import { closeQuickBetTask } from 'src/ui/betting/store/tasks';
 import InfoAlert from 'src/ui/common/InfoAlert/InfoAlert';
 import { I18n } from 'src/ui/common/Language/I18n';
@@ -25,13 +23,6 @@ const mobileLinks = [
         label: <I18n langKey='footer.mobile.sports.label' defaultText='Sports' />,
     },
     {
-        id: SportTab.Cross,
-        route: RouteName.CrossBetting,
-        params: { sport: SportType.All },
-        Icon: <CrossBetIcon fontSize='small' />,
-        label: <I18n langKey='footer.mobile.cross.label' defaultText='Cross' />,
-    },
-    {
         id: SportTab.Live,
         route: RouteName.InPlay,
         params: { id: PAGE_ROUTE_NAME.betting },
@@ -43,11 +34,9 @@ const mobileLinks = [
 const MobileNavLinks = () => {
     const closeQuickBet = useRecoilCallback(closeQuickBetTask, []);
 
-    const filteredLinks = isStandalone() ? reject(mobileLinks, { route: RouteName.CrossBetting }) : mobileLinks;
-
     return (
         <>
-            {filteredLinks.map((link) => {
+            {mobileLinks.map((link) => {
                 const { route, params, label, id, Icon } = link;
 
                 return (

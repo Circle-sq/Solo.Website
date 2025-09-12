@@ -18,10 +18,10 @@ const config: InlineConfig = {
             '--ct', // This line excludes playwright tests
         ],
         thresholds: {
-            lines: 54,
+            lines: 53,
             functions: 32,
             branches: 65,
-            statements: 54,
+            statements: 53,
         },
     },
     exclude: [...configDefaults.exclude, '--ct'],

@@ -5,7 +5,13 @@ import { atom, useSetRecoilState } from 'recoil';
 import { api } from '@solo-api/api';
 
 import type { SportType } from 'src/common/enums';
-import type { CountersCounterType } from 'src/ui/crossbetting/hooks/types';
+
+interface CountersCounterType {
+    id: string | number;
+    count: number;
+    displayOrder: number;
+    name: string;
+}
 
 interface UseHighlightCompetitions {
     isFetching: boolean;
@@ -71,9 +77,11 @@ const sortByDisplayOrderDesc = (data: HighlightCompetition[]) => {
         if (a.globalDisplayOrder !== b.globalDisplayOrder) {
             return +b.globalDisplayOrder - +a.globalDisplayOrder;
         }
+
         if (a.displayOrder !== b.displayOrder) {
             return +b.displayOrder - +a.displayOrder;
         }
+
         return b.count - a.count;
     });
 };

@@ -12,10 +12,9 @@ import { S_SelectionHighlightCarousel } from './styled';
 interface Props {
     selectionId: number;
     line?: number | null;
-    isHandicap: boolean;
 }
 
-const SelectionHighlightCarousel = ({ selectionId, line, isHandicap }: Props) => {
+const SelectionHighlightCarousel = ({ selectionId, line }: Props) => {
     const isFractional = useAtomValue(isFractionalOddsFormatSelector);
 
     const {
@@ -30,7 +29,7 @@ const SelectionHighlightCarousel = ({ selectionId, line, isHandicap }: Props) =>
         identifier,
         sportId,
         toggleSelection,
-    } = useSelectionState({ selectionId, isHandicap });
+    } = useSelectionState({ selectionId });
 
     const isLocked = isDisabled || !isDisplay;
 

@@ -34,12 +34,10 @@ export const convertBetsToLegs = (bets: PossibleBet[], selections: BetslipSelect
         }
 
         const betLeg = get(bet, 'legs.0');
-        const isCrossBet = betLeg.type === LegType.CrossBet;
         const isBuildABet = betLeg.type === LegType.BuildABet;
-        const isMultiBet = isCrossBet || isBuildABet;
-        const selectionId = `${isMultiBet ? bet.id : betLeg.selection?.id}`;
+        const selectionId = `${isBuildABet ? bet.id : betLeg.selection?.id}`;
 
-        if (isMultiBet) {
+        if (isBuildABet) {
             legs[selectionId] = {
                 ...(bet as unknown as Leg),
                 eventId: get(bet, 'legs.0.event.id'),

@@ -1,6 +1,5 @@
 import { type Dispatch, Fragment, memo, type SetStateAction } from 'react';
 
-import { useAppStateContext } from 'src/appState/AppState';
 import SeparatorLine from 'src/assets/icons/mobileSportIcons/SeparatorLine';
 import {
     S_SportTabItem,
@@ -18,9 +17,7 @@ interface Props {
 const propsAreEqual = (prevProps: Props, nextProps: Props) => prevProps.activeTab === nextProps.activeTab;
 
 const SportTabs = ({ activeTab, setActiveTab }: Props) => {
-    const { router } = useAppStateContext();
-
-    const tabs = getSportTabItems(router.route);
+    const tabs = getSportTabItems();
 
     const handleTabClick = (key: string) => () => {
         setActiveTab(key);

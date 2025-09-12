@@ -45,7 +45,7 @@ describe('SearchButton', () => {
     });
 
     it('redirects to homepage if not on homepage before opening modal', async () => {
-        router.route.name = RouteName.CrossBetting;
+        router.route.name = RouteName.InPlay;
 
         renderWithAppWrapper(
             <>

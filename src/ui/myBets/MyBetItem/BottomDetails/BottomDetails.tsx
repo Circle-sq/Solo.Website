@@ -4,19 +4,16 @@ import { memo, useMemo } from 'react';
 import { oddsFormatSelector } from '@solo-account/store/selectors';
 import { isMultipleBetType } from '@solo-betslip/helpers/combinations';
 import { calcTotalOdds } from '@solo-betslip/helpers/price';
-import { isCrossBetLegType } from '@solo-betslip/typeGuards/leg';
 import { FreeBetsLabel, FreeBetsLabelElWrapper, FreeBetsSelect } from '@solo-betslip/ui/freeBet/dropdown/styled';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import useTranslatedCurrency from 'src/appState/customHooks/useTranslatedCurrency';
-import { OddsFormatLong } from 'src/common/enums';
 import { hasStartingPriceType } from 'src/common/helpers/price';
 import type { MyBet } from 'src/common/types/myBet';
 import { PriceType } from 'src/common/types/selectionPrice';
 import Icon from 'src/ui/common/Icon/Icon';
 import { I18n } from 'src/ui/common/Language/I18n';
 import { getOddsFormatPrice, getShortOddsFormat } from 'src/utils/common';
-import { NUMBERS } from 'src/utils/constants';
 import { formatAmountWithCurrency, formatDecimalPart, moneyWithoutSymbol } from 'src/utils/format';
 
 import {
@@ -64,12 +61,6 @@ const BottomDetails = ({ bet, isSettledOrCancelledBet, hasFreeBetCredits }: Prop
         }
 
         const totalOdds = calcTotalOdds(legs, getShortOddsFormat(oddsFormat));
-
-        if (isCrossBetLegType(firstLeg)) {
-            return oddsFormat === OddsFormatLong.Fractional
-                ? formatDecimalPart(totalOdds)
-                : Number(formatDecimalPart(totalOdds)).toFixed(NUMBERS.two);
-        }
 
         return formatDecimalPart(totalOdds);
     }, [legs, oddsFormat]);

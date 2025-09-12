@@ -47,16 +47,11 @@ export interface CashOutError extends Record<string, unknown> {
 
 export type MyBetLeg = MyMultiBetLeg | MyStandardBetLeg;
 
-export type MyMultiBetLeg = MyBuildABetLeg | MyCrossBetLeg;
+export type MyMultiBetLeg = MyBuildABetLeg;
 
 export interface MyBuildABetLeg extends BaseMyBetLeg {
     marketsAndSelections: MarketAndSelection[];
     type: LegType.BuildABet;
-}
-
-export interface MyCrossBetLeg extends BaseMyBetLeg {
-    marketsAndSelections: MarketAndSelection[];
-    type: LegType.CrossBet;
 }
 
 export interface MyStandardBetLeg extends BaseMyBetLeg {

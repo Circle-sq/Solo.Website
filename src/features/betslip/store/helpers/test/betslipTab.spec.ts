@@ -58,10 +58,11 @@ describe('defineActiveTab', () => {
         expect(activeTab).toBe(BetslipTab.Multi);
     });
 
-    it('should switch to multi tab when 2 cross bets added', () => {
+    it('should switch to multi tab when 2 bets added', () => {
         const betslipBets = [
             {
-                id: '34-7',
+                selectionId: '11',
+                eventId: 1,
             } as unknown,
         ] as Leg[];
 
@@ -169,57 +170,6 @@ describe('defineActiveTab', () => {
         });
 
         expect(activeTab).toBe(BetslipTab.Single);
-    });
-
-    it('should switch from multi to system when a crossbet is added', () => {
-        const betslipBets = [
-            {
-                selectionId: '150',
-                eventId: 21,
-            },
-            {
-                selectionId: '170',
-                eventId: 24,
-            },
-            {
-                selectionId: '175',
-                eventId: 25,
-            },
-        ] as Leg[];
-
-        currentActiveTab = BetslipTab.System;
-        const isTabSelectedByUser = true;
-
-        let activeTab = defineActiveTab({
-            betsCount: size(betslipBets),
-            checkedBetsCount: size(betslipBets),
-            combinations,
-            currentActiveTab,
-            isPossibleBetsLoading,
-            isTabSelectedByUser,
-            hasCheckedMultiBet: false,
-        });
-
-        expect(activeTab).toBe(BetslipTab.System);
-
-        betslipBets.push({
-            selectionId: '184',
-            eventId: 25,
-        } as Leg);
-        betslipBets.push({
-            id: '175-184',
-        } as Leg);
-
-        activeTab = defineActiveTab({
-            betsCount: size(betslipBets),
-            checkedBetsCount: size(betslipBets),
-            combinations,
-            currentActiveTab,
-            isPossibleBetsLoading,
-            hasCheckedMultiBet,
-        });
-
-        expect(activeTab).toBe(BetslipTab.Multi);
     });
 
     it('should not auto switch to sigle when system tab is selected and related selection is added', () => {

@@ -134,15 +134,6 @@ export class Router {
         }
     }
 
-    redirectToCrossPage(params: ParamsType = {}) {
-        this.routeInner = {
-            name: this.routeInner.name,
-            params: clearParams({
-                ...params,
-            }),
-        };
-    }
-
     updateQueryParams(params: { [key: string]: string }) {
         this.routeInner = {
             name: this.routeInner.name,

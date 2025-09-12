@@ -25,10 +25,6 @@ const routes = Object.freeze({
 
     '/allcountries/:sportId': 'allcountries',
 
-    '/crossbetting': 'crossbetting',
-    '/crossbetting/:sport': 'crossbetting',
-    '/crossbetting/:sport/:day': 'crossbetting',
-
     '/inplay/:id': 'inplay',
 
     '/page/:id': 'page',

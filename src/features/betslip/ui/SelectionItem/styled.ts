@@ -15,8 +15,6 @@ import { CardContentFreeBetsWrapper, ContentFirstColumn } from './CardContent/st
 import { S_Container } from './CardHeader/styled';
 import { S_SelectionPriceAction } from './CardStake/SelectionPrice/styled';
 import { S_PossibleWinnings } from './CardStake/styled';
-import { SelectionName } from './CrossBet/CrossBetLeg/styled';
-import { S_CrossBetIconWrapper, S_CardEventName } from './CrossBet/styled';
 import { S_SelectionEvent, S_StandardLeg } from './StandardBet/styled';
 
 interface SelectionContainerProps {
@@ -69,9 +67,8 @@ export const S_SelectionContainer = styled.div<SelectionContainerProps>`
         if (isDisabled) {
             styles += `
                 ${S_StandardLeg}, ${S_PossibleWinnings}, ${S_SelectionPriceAction}, ${S_Container},
-                ${ContentFirstColumn}, ${CardContentFreeBetsWrapper}, ${SelectionName}, ${S_CardEventName},
-                ${S_SelectionName}, ${S_BuildABetCardEventName}, ${S_BuildABetIconWrapper}, ${S_CrossBetIconWrapper},
-                ${S_SelectionEvent} {
+                ${ContentFirstColumn}, ${CardContentFreeBetsWrapper}, ${S_SelectionName},
+                ${S_BuildABetCardEventName}, ${S_BuildABetIconWrapper}, ${S_SelectionEvent} {
                     opacity: 0.5;
                 }
                 pointer-events: none;

@@ -3,7 +3,7 @@ import type { MultiValue, SingleValue } from 'react-select';
 
 import type { MediaOption } from '@solo-media/ui/videoStream/dropdown/types';
 
-import type { Option } from 'src/ui/crossbetting/FilterDropdown/types';
+import type { Option } from '../types/option';
 
 export const hasIdInValue = (
     value: SingleValue<Option | MediaOption> | MultiValue<Option | MediaOption>,

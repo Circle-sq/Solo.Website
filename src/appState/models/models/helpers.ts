@@ -34,3 +34,23 @@ export const getLocationTags = (event: EventModel) => ({
     'tennis-tour': event.getTag('tennis-tour'),
     'tennis-tour-label': event.getTag('tennis-tour-label'),
 });
+
+const MAX_MARKET_TEMPLATE_LENGTH = 3;
+
+export const getMarketTemplates = <T extends { templateId: string }>(markets: T[]): string[] => {
+    const marketTemplates: string[] = [];
+    const uniqueEntries: Set<string> = new Set();
+
+    for (const market of markets) {
+        if (!uniqueEntries.has(market.templateId)) {
+            uniqueEntries.add(market.templateId);
+            marketTemplates.push(market.templateId);
+
+            if (marketTemplates.length === MAX_MARKET_TEMPLATE_LENGTH) {
+                break;
+            }
+        }
+    }
+
+    return marketTemplates.sort();
+};

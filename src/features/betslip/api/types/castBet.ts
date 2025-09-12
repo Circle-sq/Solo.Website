@@ -16,18 +16,12 @@ export interface CastBet<T = CastBetLeg> {
 
 export type CastBetLeg = CastMultiBetLeg | CastStandardBetLeg;
 
-export type CastMultiBetLeg = CastBuildABetLeg | CastCrossBetLeg;
+export type CastMultiBetLeg = CastBuildABetLeg;
 
 export interface CastBuildABetLeg extends BaseLeg {
     event: { id: number };
     marketsAndSelections: MarketAndSelection[];
     type: LegType.BuildABet;
-}
-
-export interface CastCrossBetLeg extends BaseLeg {
-    event: { id: number };
-    marketsAndSelections: MarketAndSelection[];
-    type: LegType.CrossBet;
 }
 
 export interface CastStandardBetLeg extends BaseLeg {

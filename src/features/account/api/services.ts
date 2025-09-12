@@ -26,9 +26,6 @@ export const UserService = {
     }): Promise<UserData> => {
         return api.post('/user/change-odds-update', data);
     },
-    changeCrossInfoDismiss: async (crossInfoDismiss: boolean): Promise<UserData> => {
-        return api.post('/user/cross-info-update', { crossInfoDismiss });
-    },
     changeOddsFormat: async (oddsFormat: OddsFormatLong): Promise<UserData> => {
         return api.post('/user/change-odds', { oddsFormat });
     },

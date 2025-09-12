@@ -1,11 +1,7 @@
 import { BetslipErrorCode } from 'src/common/enums/error';
 
 import type { BetslipNotifications } from '../../api/types/error';
-import {
-    INTERNAL_SERVER_ERROR_MESSAGE,
-    STARTED_BUILD_A_BET_ERROR_MESSAGE,
-    STARTED_CROSS_BET_ERROR_MESSAGE,
-} from '../../configs';
+import { INTERNAL_SERVER_ERROR_MESSAGE, STARTED_BUILD_A_BET_ERROR_MESSAGE } from '../../configs';
 
 import { offerErrors } from './offer';
 
@@ -74,12 +70,6 @@ export const betslipNotifications: BetslipNotifications = {
         type: 'error',
         langKey: 'errors.internal-server',
         defaultText: INTERNAL_SERVER_ERROR_MESSAGE,
-    },
-    [BetslipErrorCode.Started]: {
-        key: BetslipErrorCode.Started,
-        type: 'error',
-        langKey: `betslip:error:${BetslipErrorCode.Started}`,
-        defaultText: STARTED_CROSS_BET_ERROR_MESSAGE,
     },
     [BetslipErrorCode.BuildABetInPlayNotAllowed]: {
         key: BetslipErrorCode.BuildABetInPlayNotAllowed,

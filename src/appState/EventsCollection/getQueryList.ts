@@ -53,18 +53,6 @@ export const getQueryList = (collectionId: string): EventsCollectionQuery => {
         };
     }
 
-    if (collectionId.includes(EVENTS_COLLECTIONS.crossbetting)) {
-        return {
-            'market.display': true,
-            display: true,
-            'tags.outright': 'no',
-            perPage: 20,
-            sort: ['-competition.displayOrder', 'timeSettings.startTime', '-sport.displayOrder', 'competition.name'],
-            state: 'open',
-            started: false,
-        };
-    }
-
     if (collectionId.includes(EVENTS_COLLECTIONS.onLater)) {
         return {
             display: true,

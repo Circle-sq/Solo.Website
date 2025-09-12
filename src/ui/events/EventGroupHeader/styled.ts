@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import { fontWeight, selections, breakpoints, dynamicContainers, DarkBluePalette, GreyPalette } from '@solo-ui/system';
 
 import { S_ContentIcon } from 'src/ui/common/NavigationList/styled';
+import TooltipTruncatedText from 'src/ui/common/TooltipTruncatedText/TooltipTruncatedText';
 
 import type { SelectionColumnLabel } from './types';
 
@@ -261,4 +262,15 @@ export const S_MarginBox = styled.div`
     margin-right: 8px;
     flex-direction: row;
     align-items: center;
+`;
+
+export const S_CountryName = styled.div`
+    white-space: nowrap;
+`;
+
+export const S_CompetitionName = styled(TooltipTruncatedText)`
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 22px;
 `;

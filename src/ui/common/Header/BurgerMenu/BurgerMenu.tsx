@@ -18,8 +18,6 @@ import useHighlightCompetitions from 'src/common/hooks/useHighlightCompetitions/
 import { sportsSportsItemsSelector } from 'src/modules/sports/selectors';
 import { I18n } from 'src/ui/common/Language/I18n';
 import Loader from 'src/ui/common/Loader/Loader';
-import { useBetTypeQuery } from 'src/ui/crossbetting/hooks/useBetTypeQuery';
-import { useDateRangeFilter } from 'src/ui/crossbetting/hooks/useDateRangeFilter';
 import { collectionCounterSelector, collectionTotalSelector } from 'src/ui/events/store/selectors/collections';
 import { useBetlinkGolf } from 'src/ui/sports/useBetlinkGolfFlag';
 
@@ -46,7 +44,6 @@ interface Props {
 }
 
 const upcomingSportsCollectionId = 'all-count';
-const crossSportsCollectionId = 'crossbet-count';
 const inPlaySportsCollectionId = 'live-grouped-sports';
 const streamsCollectionId = 'in-play-streams-count';
 
@@ -61,8 +58,6 @@ const BurgerMenu = ({ toggleBurgerMenu, showBurgerMenu }: Props) => {
     const isSearchFlagEnabled = useAtomValue(searchFlagSelector);
 
     const sports = useSelector(sportsSportsItemsSelector);
-    const dateFilter = useDateRangeFilter();
-    const { betTypeReqParams } = useBetTypeQuery();
     const containerRef = useRef<HTMLDivElement>(null);
 
     const [showFullSportsList, setShowFullSportsList] = useState(false);
@@ -113,7 +108,6 @@ const BurgerMenu = ({ toggleBurgerMenu, showBurgerMenu }: Props) => {
     });
 
     let upcomingEventsSportsCounters = useRecoilValue(collectionCounterSelector(upcomingSportsCollectionId)) || [];
-    let crossEventsSportsCounters = useRecoilValue(collectionCounterSelector(crossSportsCollectionId)) || [];
     let inPlayEventsSportsCounters = useRecoilValue(collectionCounterSelector(inPlaySportsCollectionId)) || [];
     let inPlayStreamsCount = useRecoilValue(collectionTotalSelector(streamsCollectionId));
 
@@ -124,17 +118,6 @@ const BurgerMenu = ({ toggleBurgerMenu, showBurgerMenu }: Props) => {
 
         return { counters: [] };
     }, []);
-
-    const { counters: crossCounters, isLoading: isLoadingCross } = useMemo(() => {
-        if (isEmpty(crossEventsSportsCounters)) {
-            return eventsCounter.getEventsCounterList(crossSportsCollectionId, {
-                ...dateFilter,
-                ...betTypeReqParams,
-            });
-        }
-
-        return { counters: [], isLoading: false };
-    }, [dateFilter, betTypeReqParams]);
 
     const { counters: liveCounters, isLoading: isLoadingLive } = useMemo(() => {
         if (isEmpty(inPlayEventsSportsCounters)) {
@@ -158,10 +141,6 @@ const BurgerMenu = ({ toggleBurgerMenu, showBurgerMenu }: Props) => {
         upcomingEventsSportsCounters = [...upcomingCounters];
     }
 
-    if (isEmpty(crossEventsSportsCounters) && !isEmpty(crossCounters)) {
-        crossEventsSportsCounters = [...crossCounters];
-    }
-
     if (isEmpty(inPlayEventsSportsCounters) && !isEmpty(liveCounters)) {
         inPlayEventsSportsCounters = [...liveCounters];
     }
@@ -176,12 +155,8 @@ const BurgerMenu = ({ toggleBurgerMenu, showBurgerMenu }: Props) => {
     const getFilteredCounters = (): SportCount[] => {
         let counters: SportCount[] = [...upcomingEventsSportsCounters];
 
-        if (activeTab === SportTab.Cross) {
-            counters = crossEventsSportsCounters;
-        } else {
-            if (activeTab === SportTab.Live) {
-                counters = inPlayEventsSportsCounters;
-            }
+        if (activeTab === SportTab.Live) {
+            counters = inPlayEventsSportsCounters;
         }
 
         return counters.reduce((acc: SportCount[], counter: SportCount) => {
@@ -196,7 +171,7 @@ const BurgerMenu = ({ toggleBurgerMenu, showBurgerMenu }: Props) => {
                     ...counter,
                     count,
                     live:
-                        ![SportTab.Cross, SportTab.Live].includes(activeTab as SportTab) &&
+                        ![SportTab.Live].includes(activeTab as SportTab) &&
                         (inPlayEventsSportsCounters || []).some(
                             (inPlaySport: SportCount) => inPlaySport.id === counter.id,
                         ),
@@ -208,10 +183,6 @@ const BurgerMenu = ({ toggleBurgerMenu, showBurgerMenu }: Props) => {
     };
 
     const getIsLoading = (): boolean => {
-        if (activeTab === SportTab.Cross) {
-            return isLoadingCross && !crossEventsSportsCounters.length;
-        }
-
         if (activeTab === SportTab.Live) {
             return isLoadingLive && !inPlayEventsSportsCounters.length;
         }

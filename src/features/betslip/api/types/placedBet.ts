@@ -44,16 +44,11 @@ export type GameId = string | number | null;
 
 export type PlacedBetLeg = PlacedMultiBetLeg | PlacedStandardBetLeg;
 
-export type PlacedMultiBetLeg = PlacedBuildABetLeg | PlacedCrossBetLeg;
+export type PlacedMultiBetLeg = PlacedBuildABetLeg;
 
 export interface PlacedBuildABetLeg extends PlacedBetLegBase {
     marketsAndSelections: MarketAndSelection[];
     type: LegType.BuildABet;
-}
-
-export interface PlacedCrossBetLeg extends PlacedBetLegBase {
-    marketsAndSelections: MarketAndSelection[];
-    type: LegType.CrossBet;
 }
 
 export interface PlacedStandardBetLeg extends PlacedBetLegBase {

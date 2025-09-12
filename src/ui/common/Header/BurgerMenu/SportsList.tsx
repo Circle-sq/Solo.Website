@@ -128,14 +128,6 @@ const SportsList = ({
             });
             closeBurgerMenu();
         }
-
-        if (activeTab === SportTab.Cross) {
-            router.redirect(activeTab, {
-                sport: id,
-                day: 0,
-            });
-            closeBurgerMenu();
-        }
     };
 
     const redirectToHighlights = () => {

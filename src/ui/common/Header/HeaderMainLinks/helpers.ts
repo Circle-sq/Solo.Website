@@ -1,6 +1,6 @@
 import includes from 'lodash/includes';
 
-import { RouteName, SportType } from 'src/common/enums';
+import { RouteName } from 'src/common/enums';
 import type { HeaderItem } from 'src/ui/common/Header/HeaderMainLinks/types';
 
 export const asianViewHeader: HeaderItem = {
@@ -21,14 +21,6 @@ export const getTopHeaderItems = (): HeaderItem[] => [
         isActive: (route: string, isLive: boolean) =>
             !isLive && includes([RouteName.Competition, RouteName.Event, RouteName.Sport, RouteName.Country], route),
         testId: 'sportsBettingHeader',
-    },
-    {
-        route: RouteName.CrossBetting,
-        langKey: 'header.crossbetting.label',
-        defaultText: 'cross',
-        params: { sport: SportType.All },
-        isActive: (route: string, isLive: boolean) => route === RouteName.CrossBetting && !isLive,
-        testId: 'crossBettingHeader',
     },
     {
         route: RouteName.InPlay,

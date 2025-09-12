@@ -6,11 +6,11 @@ import { DownArrowIcon, UpArrowIcon } from '@solo-ui/icons/svg';
 import { cssColor } from '@solo-ui/system';
 
 import CustomScrollbar from 'src/ui/common/CustomScrollbar';
-import { S_DropdownOption } from 'src/ui/crossbetting/FilterDropdown/styled';
-import type { Option as OptionType } from 'src/ui/crossbetting/FilterDropdown/types';
+import type { Option as OptionType } from 'src/common/types/option';
 
 import {
     S_DropdownIconWrapper,
+    S_DropdownOption,
     S_DropdownOptionsContainer,
     S_DropdownValueContainer,
     S_ScrollBarInner,

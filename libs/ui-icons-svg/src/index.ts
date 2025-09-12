@@ -13,7 +13,6 @@ export { default as CheckboxIcon } from './CheckboxIcon';
 export { default as ClockIcon } from './ClockIcon';
 export { default as CloseIcon } from './CloseIcon';
 export { default as CoinsPileIcon } from './CoinsPileIcon';
-export { default as CrossBetIcon } from './CrossBetIcon';
 export { default as CupIcon } from './CupIcon';
 export { default as DownArrowIcon } from './DownArrowIcon';
 export { default as FilterIcon } from './FilterIcon';

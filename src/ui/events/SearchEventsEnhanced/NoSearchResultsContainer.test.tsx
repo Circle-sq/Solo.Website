@@ -46,7 +46,7 @@ describe('NoSearchResultsContainer', () => {
         const { getByTestId } = renderComponent();
 
         const links = getByTestId(/empty-result-links/);
-        expect(links.children).toHaveLength(3);
+        expect(links.children).toHaveLength(2);
     });
 
     it('redirects to the correct route when a link is clicked', async () => {

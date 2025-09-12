@@ -1,6 +1,6 @@
-import { isCrossBetLegType, isStandardBetLegType } from '@solo-betslip/typeGuards/leg';
+import { isStandardBetLegType } from '@solo-betslip/typeGuards/leg';
 
-import type { MyBetLeg, MyCrossBetLeg, MyStandardBetLeg } from 'src/common/types/myBet';
+import type { MyBetLeg, MyStandardBetLeg } from 'src/common/types/myBet';
 import { WsChannel } from 'src/utils/socket-io/enums';
 
 export const buildBetsChannel = (accountId: number): string => `${accountId}:${WsChannel.Bets}`;
@@ -12,12 +12,7 @@ export const buildCashoutChannel = ({ id: betId, legs }: { id: string; legs: MyB
 
             eventIds.push(leg.event.id);
 
-            if (isCrossBetLegType<MyCrossBetLeg>(leg)) {
-                leg.marketsAndSelections.forEach((item) => {
-                    marketIds.push(item.market.id);
-                    selectionIds.push(item.selection.id);
-                });
-            } else if (isStandardBetLegType<MyStandardBetLeg>(leg)) {
+            if (isStandardBetLegType<MyStandardBetLeg>(leg)) {
                 marketIds.push(leg.market.id);
                 selectionIds.push(leg.selection.id);
             }

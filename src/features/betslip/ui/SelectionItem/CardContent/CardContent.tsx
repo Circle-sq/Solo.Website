@@ -90,7 +90,7 @@ const CardContent = ({ leg, eventId, freeBets, onRemoveSelection, changeStakeInp
                         onClick={onToggleBetslipBet}
                         data-testid='selectionCheckbox'
                     />
-                    <CardAlertIcon leg={leg} eventId={eventId} />
+                    <CardAlertIcon leg={leg} />
                 </ContentFirstColumn>
                 <ContentLink
                     route='event'

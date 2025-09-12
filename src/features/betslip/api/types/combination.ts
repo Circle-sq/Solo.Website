@@ -29,16 +29,11 @@ export interface Combination<T = CombinationLeg> {
 
 export type CombinationLeg = CombinationMultiBetLeg | CombinationStandardLeg;
 
-export type CombinationMultiBetLeg = CombinationBuildABetLeg | CombinationCrossBetLeg;
+export type CombinationMultiBetLeg = CombinationBuildABetLeg;
 
 export interface CombinationBuildABetLeg extends CombinationBaseLeg {
     marketsAndSelections: MarketAndSelection[];
     type: LegType.BuildABet;
-}
-
-export interface CombinationCrossBetLeg extends CombinationBaseLeg {
-    marketsAndSelections: MarketAndSelection[];
-    type: LegType.CrossBet;
 }
 
 export interface CombinationStandardLeg extends CombinationBaseLeg {

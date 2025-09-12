@@ -70,7 +70,6 @@ export enum PlacedBetType {
 
 export enum LegType {
     BuildABet = 'buildABet',
-    CrossBet = 'crossBet',
     Standard = 'standard',
 }
 
@@ -192,7 +191,6 @@ export enum RouteName {
     Homepage = 'homepage',
     AsianView = 'asian-view',
     Sport = 'sport',
-    CrossBetting = 'crossbetting',
     InPlay = 'inplay',
     MyBets = 'my-bets',
     Country = 'country',
@@ -301,7 +299,6 @@ export enum DropdownMenuPlacement {
 
 export enum SportTab {
     Sports = 'sport',
-    Cross = 'crossbetting',
     Live = 'inplay',
 }
 

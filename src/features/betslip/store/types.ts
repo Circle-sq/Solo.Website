@@ -72,7 +72,6 @@ export interface SelectionPayload {
     priceType: PriceType;
     marketType: MarketType | null;
     isBuildABetRelated?: boolean;
-    isCrossPageRelated?: boolean;
     gtmSelection?: GtmSelection;
 }
 

@@ -5,14 +5,12 @@ import omitBy from 'lodash/omitBy';
 import pickBy from 'lodash/pickBy';
 import some from 'lodash/some';
 
-import { LegType } from 'src/common/enums';
-
 import type { DisableCombinationsIn, Leg, Legs } from '../../api/types/leg';
 import type { Problem } from '../../api/types/problem';
 import { getMultiBetsSelectionIds, isSelectionIncludedInMultiBet } from '../../helpers/multiBet';
 import { isMultiBetType } from '../../typeGuards/bet';
 
-import { disableBetCombinationsIn } from './selection/disableCombinationsIn';
+import { disableCombinationsIn as disableBetCombinationsIn } from './selection/disableCombinationsIn';
 
 export const getBetsWithProblems = (bets: Legs, problems: Problem[]): Legs => {
     return pickBy(bets, (bet) =>
@@ -66,7 +64,7 @@ export const rejectBuildABetFromOtherEvent =
                 return true;
             }
 
-            const disableCombinationsIn = leg.eventId === eventId ? [LegType.CrossBet] : disableBetCombinationsIn();
+            const disableCombinationsIn = disableBetCombinationsIn(leg.eventId === eventId);
 
             return every(disableCombinationsIn, (legType) => !includes(leg.id, legType));
         });
@@ -76,8 +74,7 @@ export const rejectBuildABetFromOtherEvent =
                 return leg;
             }
 
-            const disableCombinationsIn =
-                leg.eventId === eventId ? disableBetCombinationsIn(LegType.CrossBet) : disableBetCombinationsIn();
+            const disableCombinationsIn = disableBetCombinationsIn(leg.eventId === eventId);
 
             return { ...leg, disableCombinationsIn };
         });

@@ -11,7 +11,6 @@ import useSelectionState from './useSelectionState';
 interface Props {
     selectionId: number;
     line?: string | number | null;
-    isHandicap?: boolean;
     isHighlighted?: boolean;
     isAmericanSports?: boolean;
     showIdentifier?: boolean;
@@ -21,7 +20,6 @@ const Selection = ({
     selectionId,
     line,
     isAmericanSports = false,
-    isHandicap = false,
     isHighlighted = false,
     showIdentifier = false,
 }: Props) => {
@@ -41,7 +39,7 @@ const Selection = ({
         identifier,
         sportId,
         toggleSelection,
-    } = useSelectionState({ selectionId, isHandicap });
+    } = useSelectionState({ selectionId });
 
     const showSelectionInlineLine = isAmericanSports && hasSelection && !suspended;
 

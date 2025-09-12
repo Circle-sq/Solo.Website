@@ -44,18 +44,12 @@ export interface Leg<T = MultiBetLeg> {
 
 export type BetLeg = MultiBetLeg | StandardBetLeg;
 
-export type MultiBetLeg = BuildABetLeg | CrossBetLeg;
+export type MultiBetLeg = BuildABetLeg;
 
 export interface BuildABetLeg extends BaseLeg {
     event: { id: number };
     marketsAndSelections: MarketAndSelection[];
     type: LegType.BuildABet;
-}
-
-export interface CrossBetLeg extends BaseLeg {
-    event: { id: number };
-    marketsAndSelections: MarketAndSelection[];
-    type: LegType.CrossBet;
 }
 
 export interface StandardBetLeg extends BaseLeg {
@@ -94,7 +88,7 @@ export interface Legs {
     [id: string]: Leg;
 }
 
-export type DisableCombinationsIn = Array<LegType.BuildABet | LegType.CrossBet>;
+export type DisableCombinationsIn = Array<LegType.BuildABet>;
 
 export interface Result {
     type: BetStatus;

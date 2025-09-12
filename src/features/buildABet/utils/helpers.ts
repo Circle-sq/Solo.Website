@@ -3,7 +3,7 @@ import get from 'lodash/get';
 import includes from 'lodash/includes';
 import size from 'lodash/size';
 
-import type { BuildABetLeg, Leg } from '@solo-betslip/api/types/leg';
+import type { Leg } from '@solo-betslip/api/types/leg';
 import { splitIds } from '@solo-betslip/helpers/multiBet';
 import type { BetslipSelections } from '@solo-betslip/store/types';
 import { isBuildABetType } from '@solo-buildABet/utils/typeGuards';
@@ -24,10 +24,10 @@ export const filterBuildABetMarkets = <T>(markets: T[]) => {
 
 export const findBuildABetBySelectionId =
     (selectionId: number) =>
-    (bet?: Leg): bet is Leg<BuildABetLeg> =>
+    (bet?: Leg): bet is Leg =>
         isBuildABetType(bet) && includes(bet.id, String(selectionId));
 
 export const findBuildABetByEventId =
     (eventId: number) =>
-    (bet?: Leg): bet is Leg<BuildABetLeg> =>
+    (bet?: Leg): bet is Leg =>
         isBuildABetType(bet) && bet.eventId === eventId;

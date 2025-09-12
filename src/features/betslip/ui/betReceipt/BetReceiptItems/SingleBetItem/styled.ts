@@ -33,14 +33,6 @@ export const S_SingleBetHeaderLabel = styled.div`
     display: flex;
     align-items: center;
     font-weight: ${fontWeight.semibold};
-
-    .my-bets-cross-logo {
-        margin-right: 8px;
-
-        path {
-            fill: ${cssColor('--icon-tertiary-color')};
-        }
-    }
 `;
 
 export const S_SingleBetHeaderText = styled(TooltipTruncatedText)`
@@ -79,9 +71,4 @@ export const S_EventNameText = styled.div`
 export const S_LegStakeInfo = styled.div`
     text-align: right;
     margin-top: 4px;
-`;
-
-export const S_MarginBox = styled.div`
-    display: flex;
-    margin-right: 8px;
 `;

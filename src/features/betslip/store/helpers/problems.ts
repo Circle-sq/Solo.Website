@@ -1,4 +1,3 @@
-import every from 'lodash/every';
 import find from 'lodash/find';
 import flatMap from 'lodash/flatMap';
 import get from 'lodash/get';
@@ -17,16 +16,15 @@ import some from 'lodash/some';
 import split from 'lodash/split';
 import uniq from 'lodash/uniq';
 
-import { BetslipTab, LegType } from 'src/common/enums';
+import { BetslipTab } from 'src/common/enums';
 import { BetslipErrorCode, ErrorResource, ErrorStartPointer } from 'src/common/enums/error';
 
 import type { CastBet } from '../../api/types/castBet';
 import type { Combination } from '../../api/types/combination';
-import type { PossibleBet, SelectedBet } from '../../api/types/possibleBet';
+import type { SelectedBet } from '../../api/types/possibleBet';
 import type { Problem } from '../../api/types/problem';
 import { getSelectionIdsFromLeg } from '../../helpers/bet';
 import { splitIds } from '../../helpers/multiBet';
-import { isPossibleBetCrossBetType } from '../../typeGuards/bet';
 import {
     isBetExceedsMaxPayoutErrorType,
     isBetStakeBelowMinimumErrorType,
@@ -148,29 +146,6 @@ export const mergeProblems = (problems: Problem[]): Problem[] => {
             return [...acc, ...problemsByCode];
         },
         [],
-    );
-};
-
-export const filterNotRelevantRelatedProblems = (
-    problems: Problem[],
-    selections: BetslipSelections,
-    bets: PossibleBet[],
-): Problem[] => {
-    return reject(
-        problems,
-        ({ code, selectionIds = [] }) =>
-            code === BetslipErrorCode.Related &&
-            some(
-                selections,
-                ({ selectionId, disableCombinationsIn }) =>
-                    includes(selectionIds, selectionId) && !includes(disableCombinationsIn, LegType.CrossBet),
-            ) &&
-            some(
-                bets,
-                (bet) =>
-                    isPossibleBetCrossBetType(bet) &&
-                    every(splitIds(bet.id), (selectionId) => includes(selectionIds, selectionId)),
-            ),
     );
 };
 

@@ -231,66 +231,6 @@ describe('sendPurchaseToGtm', () => {
         vi.useRealTimers();
     });
 
-    it('should handle crossBet legs', () => {
-        const mockDate = '2024-03-20T10:00:00.000Z';
-        vi.useFakeTimers();
-        vi.setSystemTime(new Date(mockDate));
-
-        const bets = [
-            createMockPlacedBet('bet123', [
-                {
-                    type: 'crossBet',
-                    event: { name: 'Cross Bet Event' },
-                    marketsAndSelections: [{ selection: { id: '101' } }, { selection: { id: '102' } }],
-                },
-            ]),
-        ];
-
-        const selections: BetslipSelections = {
-            '101': createMockBetslipSelection('101', {
-                pageType: 'Cross',
-                urlPath: '/cross/event1',
-                isLive: true,
-                isHighlight: true,
-            }),
-            '102': createMockBetslipSelection('102', {
-                pageType: 'Cross',
-                urlPath: '/cross/event2',
-                isLive: false,
-                isHighlight: false,
-            }),
-        };
-
-        sendPurchaseToGtm(bets, selections);
-
-        // Verify
-        expect(window.dataLayer.push).toHaveBeenCalledTimes(2);
-        expect(window.dataLayer.push).toHaveBeenNthCalledWith(2, {
-            event: 'purchase',
-            ecommerce: {
-                transaction_id: 'bet123',
-                value: 2,
-                currency: 'EUR',
-                coupon: 'EUR',
-                items: expect.arrayContaining([
-                    expect.objectContaining({
-                        item_id: '101',
-                        item_name: 'Cross Bet Event',
-                        item_page: 'Cross',
-                    }),
-                    expect.objectContaining({
-                        item_id: '102',
-                        item_name: 'Cross Bet Event',
-                        item_page: 'Cross',
-                    }),
-                ]),
-            },
-            noAutoTrack: true,
-        });
-
-        vi.useRealTimers();
-    });
-
     it('should handle buildABet legs', () => {
         const mockDate = '2024-03-20T10:00:00.000Z';
         vi.useFakeTimers();
@@ -363,11 +303,6 @@ describe('sendPurchaseToGtm', () => {
                     event: { name: 'Regular Event' },
                 },
                 {
-                    type: 'crossBet',
-                    event: { name: 'Cross Bet Event' },
-                    marketsAndSelections: [{ selection: { id: '302' } }],
-                },
-                {
                     type: 'buildABet',
                     event: { name: 'Build A Bet Event' },
                     marketsAndSelections: [{ selection: { id: '303' } }],
@@ -380,12 +315,6 @@ describe('sendPurchaseToGtm', () => {
                 pageType: 'Regular',
                 urlPath: '/regular',
                 isLive: true,
-                isHighlight: true,
-            }),
-            '302': createMockBetslipSelection('302', {
-                pageType: 'Cross',
-                urlPath: '/cross',
-                isLive: false,
                 isHighlight: true,
             }),
             '303': createMockBetslipSelection('303', {
@@ -404,17 +333,13 @@ describe('sendPurchaseToGtm', () => {
             event: 'purchase',
             ecommerce: {
                 transaction_id: 'bet123',
-                value: 3,
+                value: 2,
                 currency: 'EUR',
                 coupon: 'EUR',
                 items: expect.arrayContaining([
                     expect.objectContaining({
                         item_id: '301',
                         item_name: 'Regular Event',
-                    }),
-                    expect.objectContaining({
-                        item_id: '302',
-                        item_name: 'Cross Bet Event',
                     }),
                     expect.objectContaining({
                         item_id: '303',

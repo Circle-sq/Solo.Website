@@ -8,10 +8,7 @@ import ScrollTopButton from 'src/ui/common/ScrollTopButton/ScrollTopButton';
 import MainCustomScrollbar from 'src/ui/containers/MainCustomScrollbar/MainCustomScrollbar';
 
 const isRouteWithCustomScrollbar = (routeName: string) =>
-    includes(
-        [RouteName.Event, RouteName.Competition, RouteName.Sport, RouteName.Country, RouteName.CrossBetting],
-        routeName,
-    );
+    includes([RouteName.Event, RouteName.Competition, RouteName.Sport, RouteName.Country], routeName);
 
 const WithCustomScrollbarHoc = <P,>(Component: FunctionComponent<PropsWithChildren<P>>) => {
     const WithCustomScrollbarHoc = (props: P & { routeName: string }) => {

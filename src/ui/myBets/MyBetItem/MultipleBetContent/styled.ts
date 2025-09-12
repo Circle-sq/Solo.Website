@@ -33,8 +33,3 @@ export const S_MultipleBetContentItem = styled.div`
 export const S_BetLegDivider = styled.div`
     border-bottom: ${cssColor('--card-betslip-border')};
 `;
-
-export const S_MultiCrossBetLegEvent = styled.div`
-    display: flex;
-    gap: 4px;
-`;

@@ -9,11 +9,11 @@ import { CupIcon, ClockIcon } from '@solo-ui/icons/svg';
 import { useAppStateContext } from 'src/appState/AppState';
 import EventsFilter from 'src/ui/common/EventsFilter/EventsFilter';
 import { I18n } from 'src/ui/common/Language/I18n';
-import FilterDropdown from 'src/ui/crossbetting/FilterDropdown/FilterDropdown';
-import { useEventsSort } from 'src/ui/crossbetting/hooks/useEventsSort';
+import FilterDropdown from 'src/ui/common/FilterDropdown/FilterDropdown';
 import { SORT_OPTIONS, SORT_VALUE } from 'src/ui/events/EventsList/config';
 import { sortCriteriaAtomFamily } from 'src/ui/events/store/atoms';
 import { EVENT_FILTERS } from 'src/utils/constants';
+import { useEventsSort } from 'src/ui/events/hooks/useEventsSort';
 
 interface Props {
     collectionId: string;
@@ -71,7 +71,7 @@ const SortControllerMobile = ({ collectionId }: Props) => {
             value={timeValue}
             maxMenuHeight={1000}
             minMenuHeight={0}
-            placeholder={<I18n langKey='crossbetting.filters.dropdown.sort' defaultText='Sort' />}
+            placeholder={<I18n langKey='common.filters.dropdown.sort' defaultText='Sort' />}
             component={FilterDropdown}
             onChange={handleOnChange}
             styles={{

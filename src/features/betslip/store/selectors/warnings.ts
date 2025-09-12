@@ -25,7 +25,6 @@ import {
     hasPanicModeEnabledErrorSelector,
     hasServerSideErrorSelector,
     hasStartedBuildABetErrorSelector,
-    hasStartedCrossBetErrorSelector,
     sportsbookErrorMessagesSelector,
 } from './errors';
 import { hasOfferSelector, isOfferRejectedSelector, offerStatusSelector, offerUserSelector } from './offer';
@@ -115,7 +114,6 @@ export const betslipNotificationsMappingSelector = selectorFamily<
             const hasPanicModeEnabledError = get(hasPanicModeEnabledErrorSelector);
             const hasServerSideError = get(hasServerSideErrorSelector);
             const hasSuspendedBet = get(hasSuspendedBetSelector);
-            const hasStartedCrossBetError = get(hasStartedCrossBetErrorSelector);
             const hasStartedBuildABetError = get(hasStartedBuildABetErrorSelector);
             const hasBuildABetMaximumSelections = get(hasBuildABetMaximumSelectionsAtomFamily(eventId));
             const hasStakePerLine = get(hasStakePerLineSelector);
@@ -146,7 +144,6 @@ export const betslipNotificationsMappingSelector = selectorFamily<
                 [BetslipErrorCode.BuildABetMaximumSelections]: hasBuildABetMaximumSelections,
                 [BetslipErrorCode.BuildABetInPlayNotAllowed]: hasStartedBuildABetError,
                 [BetslipErrorCode.InternalServerError]: hasServerSideError,
-                [BetslipErrorCode.Started]: hasStartedCrossBetError,
             };
         },
 });

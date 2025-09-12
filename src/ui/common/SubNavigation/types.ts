@@ -6,7 +6,6 @@ export interface Nav {
     isNav: boolean;
     iconType?: string;
     isInHeader?: boolean;
-    isCrossBet?: boolean;
 }
 
 export interface Navigate extends Testable {

@@ -1,5 +1,4 @@
 import { useAsianInPlayHandicapLineFlag } from '@solo-feature-flags';
-import { usePathLocation } from '@solo-hooks';
 import { useAtomValue } from 'jotai';
 import get from 'lodash/get';
 import isEmpty from 'lodash/isEmpty';
@@ -28,15 +27,13 @@ import { selectionSelectorFamily } from 'src/ui/events/store/selectors/selection
 
 interface Params {
     selectionId: number;
-    isHandicap?: boolean;
     isSP?: boolean;
 }
 
 const MISSING_REVISION = -9;
 
-const useSelectionState = ({ selectionId, isSP, isHandicap = false }: Params) => {
+const useSelectionState = ({ selectionId, isSP }: Params) => {
     const { models } = useAppStateContext();
-    const { isCrossPage } = usePathLocation();
 
     const oddsFormat = useAtomValue(oddsFormatSelector);
     const selection = models.getSelection(selectionId);
@@ -46,7 +43,7 @@ const useSelectionState = ({ selectionId, isSP, isHandicap = false }: Params) =>
 
     const { id: eventId, sport: sportId = '', revision: eventRevision = MISSING_REVISION } = event ?? {};
     const { id: marketId, template, revision: marketRevision = MISSING_REVISION } = market ?? {};
-    const { name = '', nameWithoutLine = '', identifier = '', display: isDisplay = false } = selection ?? {};
+    const { name: selectionName = '', identifier = '', display: isDisplay = false } = selection ?? {};
 
     const displayPrice = getDisplayPrice(priceForView, oddsFormat);
     const isSelected = useRecoilValue(isSelectedSelectorFamily(selectionId));
@@ -55,9 +52,7 @@ const useSelectionState = ({ selectionId, isSP, isHandicap = false }: Params) =>
 
     const handicapLabel = getHandicapLabel(selection, isLive, asianInPlayHandicapLineFlag);
     const isOverUnder = isOverUnderSelection(selection);
-    const isNameWithoutLine = isCrossPage && Boolean(nameWithoutLine) && (isOverUnder || isHandicap);
 
-    const selectionName = isNameWithoutLine ? nameWithoutLine : name;
     const priceType = priceForView === PriceType.SP ? PriceType.SP : PriceType.FP;
     const marketType = getMarketType(template?.marketTypeGeneric);
     const price = get(selection, 'price', null);

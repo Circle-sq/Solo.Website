@@ -12,7 +12,7 @@ import { isStandalone } from 'src/infra.client';
 import DropdownSelect from 'src/ui/common/DropdownSelect/DropdownSelect';
 import LanguageSelector from 'src/ui/common/Header/BurgerMenu/LanguageSelector';
 import { I18n } from 'src/ui/common/Language/I18n';
-import type { Option } from 'src/ui/crossbetting/FilterDropdown/types';
+import type { Option } from 'src/common/types/option';
 import { formatAmountWithCurrency } from 'src/utils/format';
 import isLocal from 'src/utils/isLocal';
 

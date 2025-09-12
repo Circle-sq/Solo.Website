@@ -5,7 +5,6 @@ export enum PersistKey {
     Betslip = 'betslip',
     AsianView = 'asianView',
     BuildABet = 'buildABet',
-    CrossBetPage = 'crossBetPage',
     Events = 'events',
 }
 

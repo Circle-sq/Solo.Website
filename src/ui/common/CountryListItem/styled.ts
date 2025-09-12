@@ -1,11 +1,28 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, breakpoints, GenericColors, GreyPalette } from '@solo-ui/system';
+import { fontWeight, breakpoints, GenericColors, GreyPalette, cssColor } from '@solo-ui/system';
 
 import type { ContentIconStyle } from 'src/ui/common/NavigationList/types';
 import TooltipTruncatedText from 'src/ui/common/TooltipTruncatedText/TooltipTruncatedText';
-import { LHNRowColors } from 'src/ui/crossbetting/TopSportsNavigationSidebar/SportItem/styled';
 import Link from 'src/utils/Router/NewLink';
+
+export const LHNRowColors = `
+    color: ${cssColor('--body-text')};
+    background-color: ${cssColor('--list-lhn-item-bg')};
+    border-bottom: 1px solid ${cssColor('--list-lhn-item-border')};
+
+    line-height: 19px;
+    height: 35px;
+
+    &.active {
+        background-color: ${cssColor('--list-lhn-item-active-bg')};
+    }
+
+    &:hover {
+        background-color: ${cssColor('--list-lhn-item-hover-bg')};
+        border-color: ${cssColor('--list-lhn-item-hover-border')};
+    }
+`;
 
 export const S_ToggleButton = styled.button<{ isOpen: boolean }>`
     border: none;
@@ -21,7 +38,7 @@ export const S_ToggleButton = styled.button<{ isOpen: boolean }>`
     }
 `;
 
-export const NavigationLink = styled(Link)`
+export const S_NavigationLink = styled(Link)`
     display: flex;
     justify-items: center;
     align-items: center;
@@ -33,11 +50,6 @@ export const NavigationLink = styled(Link)`
     width: 100%;
 
     ${LHNRowColors};
-`;
-
-export const S_CrossBetNavigationLink = styled(NavigationLink)`
-    padding: 8px 12px 8px 20px;
-    align-items: center;
 `;
 
 export const S_Label = styled(TooltipTruncatedText)`
@@ -69,7 +81,7 @@ export const S_Counter = styled.span`
     font-weight: ${fontWeight.semibold};
 `;
 
-export const CompetitionLink = styled(Link)`
+export const S_CompetitionLink = styled(Link)`
     display: flex;
     justify-items: center;
     align-items: center;
@@ -81,10 +93,6 @@ export const CompetitionLink = styled(Link)`
     width: 100%;
 
     ${LHNRowColors};
-`;
-
-export const S_CrossBetCompetitionLink = styled(CompetitionLink)`
-    padding-left: 28px;
 `;
 
 export const S_CompetitionIcon = styled.i`

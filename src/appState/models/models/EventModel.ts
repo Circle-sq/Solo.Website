@@ -8,7 +8,7 @@ import reject from 'lodash/reject';
 
 import { compareArrays, LazyComputed, lazyComputedField } from 'src/appState/models/LazyComputed';
 import { MobxValueLite } from 'src/appState/models/MobixValueLite';
-import { compareRecordParticipant } from 'src/appState/models/models/helpers';
+import { compareRecordParticipant, getMarketTemplates } from 'src/appState/models/models/helpers';
 import type { MarketModel } from 'src/appState/models/models/MarketModel';
 import type { ModelBoxContext, RawModelType } from 'src/appState/models/ModelWrapper';
 import { ModelWrapper } from 'src/appState/models/ModelWrapper';
@@ -17,7 +17,6 @@ import { getMappedPeriod } from 'src/common/helpers/event';
 import type { Participant, Pitchers, Tags, TimeSettings, TranslationData } from 'src/common/types/event';
 import type { Media, MediaItem } from 'src/common/types/media';
 import type { Score, Statistics } from 'src/common/types/statistics';
-import { getMarketTemplates } from 'src/ui/crossbetting/EventCardMobile/helpers';
 import { TEAM_IDENTIFIER } from 'src/utils/constants';
 
 const TimeSettingsIO = t.type({

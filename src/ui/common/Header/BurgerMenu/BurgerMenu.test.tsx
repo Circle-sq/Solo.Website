@@ -118,7 +118,7 @@ describe('BurgerMenu', () => {
         const { container, getByText } = render();
         //prettier-ignore
         expect(container).toHaveTextContent([
-            'Sports', 'Cross', 'Live Sports',
+            'Sports', 'Live Sports',
             'Football', 'LIVE', '1227',
             'Basketball', '183',
             'Baseball', '10',
@@ -143,7 +143,7 @@ describe('BurgerMenu', () => {
 
         //prettier-ignore
         expect(container).toHaveTextContent([
-            'Sports', 'Cross', 'Live Sports',
+            'Sports', 'Live Sports',
             'Football', 'LIVE', '1227',
             'Basketball', '183',
             'Baseball', '10',
@@ -177,7 +177,7 @@ describe('BurgerMenu', () => {
 
         //prettier-ignore
         expect(container).toHaveTextContent([
-            'Sports', 'Cross', 'Live Sports',
+            'Sports', 'Live Sports',
             'Football', 'LIVE', '1227',
             'Basketball', '183',
             'Baseball', '10',
@@ -203,7 +203,7 @@ describe('BurgerMenu', () => {
 
         //prettier-ignore
         expect(container).toHaveTextContent([
-            'Sports', 'Cross', 'Live Sports',
+            'Sports', 'Live Sports',
             'Football', 'LIVE', '1227',
             'Basketball', '183',
             'Baseball', '10',
@@ -236,7 +236,7 @@ describe('BurgerMenu', () => {
 
         //prettier-ignore
         expect(container).toHaveTextContent([
-            'Sports', 'Cross', 'Live Sports',
+            'Sports', 'Live Sports',
             'Football', 'LIVE', '1227',
             'Basketball', '183',
             'Baseball', '10',
@@ -271,7 +271,7 @@ describe('BurgerMenu', () => {
         await waitFor(() => expect(container).toHaveTextContent('Freebet'));
         //prettier-ignore
         expect(container).toHaveTextContent([
-            'Sports', 'Cross', 'Live Sports',
+            'Sports', 'Live Sports',
             'Football', 'LIVE', '1227',
             'Basketball', '183',
             'Baseball', '10',
@@ -296,7 +296,7 @@ describe('BurgerMenu', () => {
 
         //prettier-ignore
         expect(container).toHaveTextContent([
-            'Sports', 'Cross', 'Live Sports',
+            'Sports', 'Live Sports',
             'Football', 'LIVE', '1227',
             'Basketball', '183',
             'Baseball', '10',
@@ -342,7 +342,7 @@ describe('BurgerMenu', () => {
 
         //prettier-ignore
         expect(container).toHaveTextContent([
-            'Sports', 'Cross', 'Live Sports',
+            'Sports', 'Live Sports',
             'Highlights',
             'Football', '2'
         ].join(''));

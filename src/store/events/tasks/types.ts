@@ -38,7 +38,6 @@ export interface EventMarketCreatedBody {
     bp: boolean;
     bpApplicable: boolean;
     cashoutAvailable: boolean;
-    crossbetAllowed: boolean;
     display: boolean;
     displayOrder: number;
     eachWayStakeReduction: number;

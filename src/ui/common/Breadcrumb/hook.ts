@@ -23,10 +23,10 @@ export const useGoBack = (): (() => void) => {
 
     const fromRoute = useMemo(() => routeFromStorage.getItem(), [routeFromStorage]);
 
-    const { sport: sportRoute, competition, country, inplay, homepage, crossbetting, asianview } = PAGE_ROUTE_NAME;
+    const { sport: sportRoute, competition, country, inplay, homepage, asianview } = PAGE_ROUTE_NAME;
 
     const isRoutesOfInterest = sport !== null && includes([sportRoute, competition, country], fromRoute);
-    const isOtherRoutes = includes([inplay, homepage, crossbetting, competition, asianview], fromRoute);
+    const isOtherRoutes = includes([inplay, homepage, competition, asianview], fromRoute);
 
     return () => {
         if (isRoutesOfInterest || isOtherRoutes) {

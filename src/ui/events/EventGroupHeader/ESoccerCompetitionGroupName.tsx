@@ -2,7 +2,6 @@ import { memo } from 'react';
 
 import { CupIcon } from '@solo-ui/icons/svg';
 
-import { S_CompetitionName, S_CountryName } from 'src/ui/crossbetting/Competitions/styled';
 import {
     S_GroupName,
     S_GroupNameSeparator,
@@ -10,6 +9,8 @@ import {
     S_MarginBox,
 } from 'src/ui/events/EventGroupHeader/styled';
 import type { ESoccerCompetitionGroupNameProps } from 'src/ui/events/EventGroupHeader/types';
+
+import { S_CompetitionName, S_CountryName } from './styled';
 
 const ESoccerCompetitionGroupName = ({
     competitionName,

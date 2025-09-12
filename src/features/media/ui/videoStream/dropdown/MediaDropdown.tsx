@@ -23,7 +23,7 @@ import { setStream as setSelectedStreamsIds } from 'src/modules/media/actions/st
 import { mediaSelector, mediaStreamsItemsSelector } from 'src/modules/media/selectors';
 import { fetchEventWithoutMarketsAtomWithMutation } from 'src/store/events/queries/events';
 import DropdownSelect from 'src/ui/common/DropdownSelect/DropdownSelect';
-import type { Option } from 'src/ui/crossbetting/FilterDropdown/types';
+import type { Option } from 'src/common/types/option';
 
 import { mapStreamsToDropdownOptions, sortMappedStreams } from './helpers';
 import MediaGroupLabel from './MediaGroupLabel';
@@ -74,7 +74,7 @@ const MediaDropdown = ({ setIsDropdownListEvent }: { setIsDropdownListEvent: Dis
         : getTranslation('betslip.tabs.search.event.palceholder', 'Search an event...');
 
     const getEventId = (): number => {
-        if (!isUndefined(optionValue?.sportEventId)) {
+        if (optionValue && !isUndefined(optionValue?.sportEventId)) {
             return +optionValue?.sportEventId;
         }
 

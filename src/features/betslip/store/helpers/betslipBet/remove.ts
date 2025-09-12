@@ -1,23 +1,15 @@
 import omit from 'lodash/omit';
 import omitBy from 'lodash/omitBy';
 import reject from 'lodash/reject';
-import some from 'lodash/some';
 
-import type { BuildABetLeg, Leg, Legs } from '../../../api/types/leg';
-import { isCrossBetType, isMultiBetType } from '../../../typeGuards/bet';
+import type { Leg, Legs } from '../../../api/types/leg';
+import { isMultiBetType } from '../../../typeGuards/bet';
 import type { BetslipSelection } from '../../types';
 
 export const omitBetBySelectionId =
     (selectionId: string) =>
-    (bet: Leg): boolean => {
-        if (isCrossBetType(bet)) {
-            const [{ marketsAndSelections }] = bet.legs ?? [];
-
-            return some(marketsAndSelections, ({ selection }) => selection.id === Number(selectionId));
-        }
-
-        return bet.selectionId === selectionId;
-    };
+    (bet: Leg): boolean =>
+        bet.selectionId === selectionId;
 
 export const removeBetBySelectionId =
     (selectionId: string) =>
@@ -25,7 +17,7 @@ export const removeBetBySelectionId =
         omitBy(bets, omitBetBySelectionId(selectionId));
 
 export const removeBuildABetLeg =
-    (buildABet: Leg<BuildABetLeg>, newBuildABetId: string, selectionId: string) =>
+    (buildABet: Leg, newBuildABetId: string, selectionId: string) =>
     (bets: Legs): Legs => {
         const [leg] = buildABet.legs ?? [];
 

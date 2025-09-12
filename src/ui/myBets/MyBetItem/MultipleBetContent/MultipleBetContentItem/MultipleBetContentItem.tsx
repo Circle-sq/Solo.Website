@@ -1,21 +1,19 @@
 import { observer } from 'mobx-react-lite';
 import { useRecoilCallback } from 'recoil';
 
-import { isCrossBetLegType } from '@solo-betslip/typeGuards/leg';
 import { MultipleBuildABetContent } from '@solo-buildABet/ui/myBet';
 import { isBuildABetLegType } from '@solo-buildABet/utils/typeGuards';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import BetStatusIcon from 'src/assets/icons/betStatusIcon/BetStatusIcon';
 import type { BetStatus } from 'src/common/enums';
-import type { MyBetLeg, MyBuildABetLeg, MyCrossBetLeg } from 'src/common/types/myBet';
+import type { MyBetLeg, MyBuildABetLeg } from 'src/common/types/myBet';
 import { closeMyBetsAndQuickBetTask } from 'src/ui/betting/store/tasks';
 import BetContentLink from 'src/ui/myBets/MyBetItem/BetContentLink/BetContentLink';
 import { getBetLegStatus } from 'src/ui/myBets/utils/helpers';
 
 import { S_BetLegDivider, S_MultipleBetContentItem, S_MultipleBetStatus } from '../styled';
 
-import CrossBetLegInfo from './CrossBetLegInfo';
 import StandardBetLegInfo from './StandardBetLegInfo';
 
 interface Props {
@@ -52,18 +50,6 @@ const MultipleBetContentItem = ({ leg, betStatus, isLastLeg, isSettledBet }: Pro
                 isLastLeg={isLastLeg}
                 isSettledBet={isSettledBet}
             />
-        );
-    }
-
-    if (isCrossBetLegType<MyCrossBetLeg>(leg)) {
-        return (
-            <S_MultipleBetContentItem data-testid={testId}>
-                <BetContentLink eventId={eventId} eventName={eventName} disabled={isDisabled} onClick={handleClick}>
-                    <CrossBetLegInfo leg={leg} event={event} betStatus={betStatus} />
-
-                    {isLastLeg && <S_BetLegDivider />}
-                </BetContentLink>
-            </S_MultipleBetContentItem>
         );
     }
 

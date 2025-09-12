@@ -4,7 +4,6 @@ import type { ReactElement, MouseEvent } from 'react';
 import { useAppStateContext } from 'src/appState/AppState';
 import CompetitionLocationIcon from 'src/assets/icons/competitionLocationIcon/CompetitionLocationIcon';
 import { AMERICAN_SPORTS, SCOREBOARD_SPORTS, SIMULATED_REALITY_LEAGUES } from 'src/config/config';
-import { S_CompetitionName, S_CountryName } from 'src/ui/crossbetting/Competitions/styled';
 import { COMPETITION_ICON, getSelectionIdentifierLabel, PAGE_ROUTE_NAME } from 'src/utils/constants';
 import type { Testable } from 'src/utils/Testable/types';
 
@@ -18,6 +17,8 @@ import {
     S_GroupSelections,
     S_HeaderGroup,
     S_SelectionColumnLabel,
+    S_CompetitionName,
+    S_CountryName,
 } from './styled';
 
 interface EventGroupHeaderProps extends Testable {

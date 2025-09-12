@@ -1,11 +1,8 @@
 import { type ReactElement } from 'react';
 
-import { useSyncCrossSelections } from '@solo-betslip/store/hooks/useSyncCrossSelections';
 import isEmpty from 'lodash/isEmpty';
-import reject from 'lodash/reject';
 import { useAppStateContext } from 'src/appState/AppState';
-import { RouteName, SportType } from 'src/common/enums';
-import { isStandalone } from 'src/infra.client';
+import { SportType } from 'src/common/enums';
 
 import type { SubHeaderItem } from './helpers';
 import { getSubHeaderItems } from './helpers';
@@ -16,13 +13,8 @@ const SubHeader = () => {
         models,
         router: { route },
     } = useAppStateContext();
-    const syncCrossEligibleSelections = useSyncCrossSelections();
 
-    let tabs = getSubHeaderItems();
-
-    if (isStandalone()) {
-        tabs = reject(tabs, { route: RouteName.CrossBetting });
-    }
+    const tabs = getSubHeaderItems();
 
     const isActiveItem = (item: SubHeaderItem, itemLabel: ReactElement): boolean => {
         let isLive = false;
@@ -65,10 +57,9 @@ const SubHeader = () => {
                 const { label, icon, route } = item;
 
                 const isActive = isActiveItem(item, label);
-                const onClick = () => syncCrossEligibleSelections(route);
 
                 return (
-                    <S_NavLink key={route} isActive={isActive} route={route} onClick={onClick}>
+                    <S_NavLink key={route} isActive={isActive} route={route}>
                         <S_Icon>{icon}</S_Icon>
                         <S_TextWrapper>{label}</S_TextWrapper>
                     </S_NavLink>

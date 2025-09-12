@@ -34,8 +34,3 @@ export const S_CardSportAndCompetition = styled(TooltipTruncatedText)`
     height: 22px;
     color: ${cssColor('--text-muted')};
 `;
-
-export const S_MarginBox = styled.div`
-    display: flex;
-    margin-right: 8px;
-`;

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { GreyPalette, fontWeight, cssColor } from '@solo-ui/system';
+import { GreyPalette, fontWeight, cssColor, breakpoints } from '@solo-ui/system';
 
 import { ThemeNames } from 'src/common/enums';
 import type { ThemeName } from 'src/typings/react-select';
@@ -13,6 +13,61 @@ export interface Themes {
 interface DropdownProps extends Themes {
     showAllItems?: boolean;
 }
+
+export const S_DropdownOption = styled.div<{ isSelected: boolean }>`
+    position: relative;
+    box-sizing: border-box;
+    font-size: 12px;
+    padding: 6px 12px;
+    display: flex;
+    white-space: nowrap;
+    line-height: 18px;
+    width: 100%;
+    background-color: ${cssColor('--list-bg')};
+
+    &:hover {
+        background-color: ${cssColor('--dropdown-option-hover-bg')};
+    }
+
+    .competition-filter & {
+        div {
+            max-width: 143px;
+            padding: 0 1px 0 2px;
+        }
+    }
+
+    .country-filter & {
+        div {
+            max-width: 109px;
+        }
+    }
+
+    @media (max-width: ${breakpoints.bp500}) {
+        white-space: normal;
+    }
+
+    &:first-of-type {
+        border-radius: 3px 3px 0 0;
+    }
+
+    &:last-of-type {
+        border-radius: 0 0 3px 3px;
+    }
+
+    ${(props): string => {
+        const { isSelected = false } = props;
+
+        let styles = '';
+
+        if (isSelected) {
+            styles = `
+                font-weight: ${fontWeight.bold};
+                background-color: ${cssColor('--dropdown-option-active-bg')};`;
+        }
+
+        return styles;
+    }}
+`;
 
 export const S_DropdownOptionsContainer = styled.div<DropdownProps>`
     border-radius: 4px;

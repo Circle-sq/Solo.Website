@@ -19,11 +19,6 @@ const MESSAGES: Record<string, (getTranslation: (key: string, defaultText: strin
 
     'Event:suspended': (getTranslation) => getTranslation('errors.event-suspended', 'This event is suspended.'),
     'Market:suspended': (getTranslation) => getTranslation('errors.market-suspended', 'This market is suspended.'),
-    'Market:crossbetAllowed:crossbet-not-allowed': (getTranslation) =>
-        getTranslation(
-            'Market:crossbetAllowed:crossbet-not-allowed',
-            'Cross bets are not allowed for selected selections.',
-        ),
     'Wallet:playableBalance:minimum': (getTranslation) =>
         getTranslation('betslip.balance-warning.description', 'Insufficient funds to place the selected bet(s)'),
 

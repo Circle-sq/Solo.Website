@@ -58,20 +58,6 @@ describe('getQueryList fn', () => {
         expect(getQueryList(EVENTS_COLLECTIONS.highlightCarousel)).toMatchObject(expected);
     });
 
-    it('should return expected query params if collection name contains crossbetting', () => {
-        const expected = {
-            'market.display': true,
-            display: true,
-            'tags.outright': 'no',
-            perPage: 20,
-            sort: ['-competition.displayOrder', 'timeSettings.startTime', '-sport.displayOrder', 'competition.name'],
-            state: 'open',
-            started: false,
-        };
-
-        expect(getQueryList(EVENTS_COLLECTIONS.crossbetting)).toMatchObject(expected);
-    });
-
     it('should return expected query params if collection name contains on-later', () => {
         const expected = {
             display: true,

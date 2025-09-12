@@ -86,17 +86,4 @@ describe('SelectionAction', () => {
         expect(selection).toHaveStyleRule('background-color', cssColor('--button-selected-bg'));
         expect(selection).toHaveStyleRule('background-color', cssColor('--button-selected-hover-bg'), hover);
     });
-
-    it.skip('should have specific background color if crossBet === true', () => {
-        const defaultProps = {
-            isSuspended: false,
-            isSelected: false,
-            priceChange: null,
-            isCrossBet: true,
-        };
-        const { getByTestId } = renderWithTheme(<S_SelectionAction {...defaultProps} data-testid={testId} />);
-        const selection = getByTestId(testId);
-
-        expect(selection).toHaveStyleRule('background-color', GreyPalette.grey2);
-    });
 });

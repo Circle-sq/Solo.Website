@@ -22,7 +22,7 @@ const ItemSelection = ({ id, line }: Props) => {
         identifier,
         sportId,
         toggleSelection,
-    } = useSelectionState({ selectionId: id, isHandicap: Boolean(line) });
+    } = useSelectionState({ selectionId: id });
 
     const isLocked = isDisabled || !isDisplay;
 

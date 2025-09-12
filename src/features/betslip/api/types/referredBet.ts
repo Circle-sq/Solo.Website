@@ -17,17 +17,10 @@ export interface BaseReferredBet extends Omit<BaseBet, 'id'> {
 
 export type ReferredLeg = ReferredMultiBetLeg | ReferredStandardLeg;
 
-export type ReferredMultiBetLeg = ReferredBuildABetLeg | ReferredCrossBetLeg;
+export type ReferredMultiBetLeg = ReferredBuildABetLeg;
 
 interface ReferredBuildABetLeg extends ReferredBaseLeg {
     type: LegType.BuildABet;
-    marketsAndSelections: ReferredMarketAndSelection[];
-    market: null;
-    selection: null;
-}
-
-interface ReferredCrossBetLeg extends ReferredBaseLeg {
-    type: LegType.CrossBet;
     marketsAndSelections: ReferredMarketAndSelection[];
     market: null;
     selection: null;

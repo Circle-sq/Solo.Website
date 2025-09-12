@@ -4,7 +4,7 @@ import { useRecoilValue } from 'recoil';
 import { sportIconUrlSelectorFamily } from 'src/common/store/icons/selectors';
 import { SPORT_ICONS } from 'src/config/sport-icons';
 import { S_ContentIcon } from 'src/ui/common/NavigationList/styled';
-import type { Option } from 'src/ui/crossbetting/FilterDropdown/types';
+import type { Option } from 'src/common/types/option';
 
 import { S_GroupHeaderWrapper, S_SportIcon } from './styled';
 

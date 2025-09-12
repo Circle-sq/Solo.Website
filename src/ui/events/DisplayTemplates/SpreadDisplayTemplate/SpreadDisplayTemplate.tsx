@@ -101,7 +101,6 @@ const SpreadDisplayTemplate = ({ groupName, type, markets }: Props) => {
                                                 line={selection.line}
                                                 selectionId={selection.id}
                                                 showIdentifier
-                                                isHandicap
                                                 isHighlighted
                                                 isAmericanSports
                                             />

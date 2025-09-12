@@ -109,35 +109,5 @@ export const getQueryList = (collectionId: string): EventsCollectionQuery => {
         };
     }
 
-    if (collectionId === 'crossbet-country-competition-count') {
-        return {
-            'aggregations-only': true,
-        };
-    }
-
-    if (collectionId.includes('crossbet-competition-country')) {
-        return {
-            'market.display': true,
-            state: 'open',
-            started: false,
-            display: true,
-            'tags.outright': 'no',
-            aggregations: ['competition.country', 'tags.country'],
-            'aggregations-only': true,
-        };
-    }
-
-    if (collectionId === 'crossbet-count') {
-        return {
-            'market.display': true,
-            state: 'open',
-            started: false,
-            display: true,
-            'tags.outright': 'no',
-            aggregations: ['sport'],
-            'aggregations-only': true,
-        };
-    }
-
     return {};
 };

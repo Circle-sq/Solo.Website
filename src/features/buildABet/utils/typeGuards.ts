@@ -10,7 +10,7 @@ export const isBuildABetLegType = <T1 extends T2, T2 extends BaseLeg = BaseLeg>(
     return leg?.type === LegType.BuildABet && has(leg, 'marketsAndSelections');
 };
 
-export const isBuildABetType = (bet?: Leg): bet is Leg<BuildABetLeg> => {
+export const isBuildABetType = (bet?: Leg): bet is Leg => {
     return isBuildABetLegType<BuildABetLeg>(get(bet, 'legs.0'));
 };
 

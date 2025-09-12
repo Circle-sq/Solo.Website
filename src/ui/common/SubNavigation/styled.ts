@@ -300,13 +300,13 @@ export const S_SubNavMenuSpan = styled.span<Nav>`
     font-weight: ${fontWeight.semibold};
 
     ${(props): string => {
-        const { isInHeader = false, isNav, isCrossBet = false } = props;
+        const { isInHeader = false, isNav } = props;
         const { bp768, bp1280 } = breakpoints;
 
         let style = `
             @media(max-width: ${bp1280}) {
                 margin-left: unset;
-                ${isCrossBet ? '' : 'width: 68px'};
+                width: 68px;
             }
 
             @media screen and (max-width: ${bp768}) {
@@ -317,7 +317,7 @@ export const S_SubNavMenuSpan = styled.span<Nav>`
             }
         `;
 
-        if (isNav && !isCrossBet) {
+        if (isNav) {
             style += `
                 @media(max-width: ${bp1280}) {
                     margin-top: 3px;

@@ -1,7 +1,17 @@
 import { SORT_OPTIONS, SORT_VALUE } from 'src/ui/events/EventsList/config';
 import { useAppStateContext } from 'src/appState/AppState';
-import type { EventSort } from './types';
 import { SportType } from 'src/common/enums';
+
+import type { SortOption } from '../EventsList/types';
+
+interface EventSort {
+    options: SortOption[];
+    sortValue?: string;
+    onSortChange: (value?: string) => void;
+    sortReqParams?: string[];
+    betType?: string;
+    betTypeReqParams?: Record<string, unknown>;
+}
 
 const sortQueries = {
     [SORT_VALUE.competitions]: [

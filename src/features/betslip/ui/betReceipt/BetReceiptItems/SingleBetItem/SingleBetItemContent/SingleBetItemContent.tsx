@@ -1,19 +1,13 @@
 import { SingleBuildABetContent } from '@solo-buildABet/ui';
 import { isBuildABetLegType } from '@solo-buildABet/utils/typeGuards';
 
-import type { PlacedBetLeg, PlacedBuildABetLeg, PlacedCrossBetLeg } from '../../../../../api/types/placedBet';
-import { isCrossBetLegType } from '../../../../../typeGuards/leg';
+import type { PlacedBetLeg, PlacedBuildABetLeg } from '../../../../../api/types/placedBet';
 
-import SingleCrossBet from './SingleCrossBet';
 import SingleStandardBet from './SingleStandardBet';
 
 const SingleBetItemContent = ({ leg }: { leg: PlacedBetLeg }) => {
     if (isBuildABetLegType<PlacedBuildABetLeg>(leg)) {
         return <SingleBuildABetContent leg={leg} />;
-    }
-
-    if (isCrossBetLegType<PlacedCrossBetLeg>(leg)) {
-        return <SingleCrossBet leg={leg} />;
     }
 
     return <SingleStandardBet leg={leg} />;

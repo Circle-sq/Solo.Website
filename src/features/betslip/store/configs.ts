@@ -1,6 +1,5 @@
 import { BetslipTab } from 'src/common/enums';
 import { BetslipErrorCode, MinMaxErrorCode, PriceErrorCode } from 'src/common/enums/error';
-import { MarketType } from 'src/common/enums/market';
 
 import type { BetStake } from '../api/types/bet';
 import type { Combination } from '../api/types/combination';
@@ -45,14 +44,9 @@ export const STAKE_INPUT_MAX_VALUE_LENGTH = 9;
 
 export const STAKE_INPUT_MAX_LENGTH = STAKE_INPUT_MAX_VALUE_LENGTH + STAKE_INPUT_MAX_COMMAS_LENGTH;
 
-export const crossPageMarketTypes = [MarketType.Winner, MarketType.Handicap, MarketType.Total];
-
-export const nonCrossBetCombinableMarketTypes = [MarketType.Winner, MarketType.Handicap];
-
 export const validationCodesWithLegsPointer = [
     BetslipErrorCode.Related,
     BetslipErrorCode.SinglesOnly,
-    BetslipErrorCode.Started,
     BetslipErrorCode.Suspended,
 ];
 
@@ -85,7 +79,7 @@ export const skipErrors = [
 ];
 
 // possible-bets codes
-export const skipErrorsSingles = ['crossbet-not-allowed', BetslipErrorCode.SinglesOnly];
+export const skipErrorsSingles = [BetslipErrorCode.SinglesOnly];
 
 // place-bet codes
 export const skipPlaceBetErrors = [

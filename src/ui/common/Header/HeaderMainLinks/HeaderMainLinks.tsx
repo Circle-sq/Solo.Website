@@ -4,8 +4,6 @@ import isEmpty from 'lodash/isEmpty';
 import { observer } from 'mobx-react-lite';
 import { useMemo } from 'react';
 
-import { useSyncCrossSelections } from '@solo-betslip/store/hooks/useSyncCrossSelections';
-
 import { useAppStateContext } from 'src/appState/AppState';
 import { RouteName, SportType } from 'src/common/enums';
 
@@ -19,8 +17,6 @@ const HeaderMainLinks = () => {
         language: { getTranslation },
         router: { route },
     } = useAppStateContext();
-
-    const syncCrossEligibleSelections = useSyncCrossSelections();
 
     const asianViewFlag = useAsianViewFlag();
 
@@ -76,8 +72,6 @@ const HeaderMainLinks = () => {
                     'header__link--active': isActive,
                 });
 
-                const onClick = () => syncCrossEligibleSelections(itemRoute);
-
                 return (
                     <HeaderStyledLink
                         key={itemRoute}
@@ -86,7 +80,6 @@ const HeaderMainLinks = () => {
                         route={itemRoute}
                         params={params}
                         testId={testId}
-                        onClick={onClick}
                     >
                         {item.route === RouteName.AsianView && (
                             <S_LabelBadge>{getTranslation('common.labels.new', 'NEW')}</S_LabelBadge>

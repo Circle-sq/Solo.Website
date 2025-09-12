@@ -3,12 +3,7 @@ import { useAtomValue } from 'jotai';
 
 import { useJotaiCallback } from '@solo-utils/jotai';
 
-import {
-    cashoutAcceptModeSelector,
-    crossInfoDismissSelector,
-    oddsFormatSelector,
-    oddsUpdateSelector,
-} from '../store/selectors';
+import { cashoutAcceptModeSelector, oddsFormatSelector, oddsUpdateSelector } from '../store/selectors';
 import { updateAccountUserTask } from '../store/tasks';
 
 import { UserService } from './services';
@@ -34,27 +29,6 @@ export const useChangeBetslipSettings = () => {
                     cashoutAcceptMode: context.previousCashoutAcceptMode,
                     oddsUpdate: context.previousOddsUpdate,
                 });
-            }
-        },
-    });
-};
-
-export const useChangeCrossInfoDismiss = () => {
-    const crossInfoDismiss = useAtomValue(crossInfoDismissSelector);
-    const updateAccountUser = useJotaiCallback(updateAccountUserTask);
-
-    return useMutation({
-        mutationFn: UserService.changeCrossInfoDismiss,
-        onMutate: (variables) => {
-            const previousCrossInfoDismiss = crossInfoDismiss;
-
-            updateAccountUser({ crossInfoDismiss: variables });
-
-            return { previousCrossInfoDismiss };
-        },
-        onError: (_, __, context) => {
-            if (context !== undefined) {
-                updateAccountUser({ crossInfoDismiss: context.previousCrossInfoDismiss });
             }
         },
     });

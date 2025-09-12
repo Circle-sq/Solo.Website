@@ -80,7 +80,6 @@ export const REQUEST_ASYNC_STATUS = Object.freeze({
 
 export const EVENTS_COLLECTIONS = Object.freeze({
     highlightCarousel: 'highlight-carousel',
-    crossbetting: 'crossbetting',
     search: 'search',
     onLater: 'on-later',
 } as const);
@@ -194,7 +193,6 @@ export const PAGE_ROUTE_NAME = Object.freeze({
     competition: 'competition',
     inplay: 'inplay',
     event: 'event',
-    crossbetting: 'crossbetting',
     betting: 'betting',
     liveStream: 'live-stream',
     allcountries: 'allcountries',
@@ -212,7 +210,6 @@ export const EVENT_FILTERS = Object.freeze({
     region: 'region',
     country: 'country',
     market: 'market',
-    crossbettingMarkets: 'crossbetting-markets',
 });
 
 export const SPORT_BOOK_MESSAGES = Object.freeze({

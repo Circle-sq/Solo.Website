@@ -96,7 +96,7 @@ describe('calcSingleTabMaxStake', () => {
             123: { maxStake: 50 },
             124: {
                 maxStake: 150,
-                legs: [{ type: LegType.CrossBet, marketsAndSelections: [] }],
+                legs: [{ type: LegType.BuildABet, marketsAndSelections: [] }],
             } as unknown as Legs,
             125: { maxStake: 200 },
         } as unknown as Legs;
@@ -108,7 +108,7 @@ describe('calcSingleTabMaxStake', () => {
         const bets = {
             123: { maxStake: 50 },
             124: {
-                legs: [{ type: LegType.CrossBet, marketsAndSelections: [] }],
+                legs: [{ type: LegType.BuildABet, marketsAndSelections: [] }],
             } as unknown as Legs,
             125: { maxStake: 200 },
         } as unknown as Legs;

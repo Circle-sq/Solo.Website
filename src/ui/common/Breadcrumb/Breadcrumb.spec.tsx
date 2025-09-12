@@ -253,11 +253,6 @@ describe('Breadcrumb', () => {
         const { container } = renderWithAppWrapper(<Breadcrumb />, mockStore);
         expect(container).toHaveTextContent('Live');
     });
-    it('should render Breadcrumb with routeName crossbetting', async () => {
-        _route.name = 'crossbetting';
-        const { container } = renderWithAppWrapper(<Breadcrumb />, mockStore);
-        expect(container).toHaveTextContent('Cross');
-    });
 
     it('should not show "Other" label when there are no data fetched yet', async () => {
         defaultCompetitionLocations.items = [];

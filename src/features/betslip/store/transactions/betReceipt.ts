@@ -13,11 +13,7 @@ import { placeBetStatusAtom } from '../atoms/betslip';
 import { betsAtom } from '../atoms/betslipBets';
 import { betslipSelectionsAtom } from '../atoms/selections';
 import { rejectBuildABetFromOtherEvent, rejectMultiBets } from '../helpers/betslipBets';
-import {
-    enableBuildABetSelectionsRelation,
-    enableCrossBetSelectionsRelation,
-    resetMultiBetSelectionsRelation,
-} from '../helpers/selection/relation';
+import { enableBuildABetSelectionsRelation, resetMultiBetSelectionsRelation } from '../helpers/selection/relation';
 
 export const resetBetReceiptTransaction = ({ get, reset }: TransactionInterface) => {
     const betReceipt = get(betReceiptAtom);
@@ -34,18 +30,10 @@ export const syncRelationsAfterKeepingPlacedBetsTransaction =
     (eventId?: number) =>
     ({ get, set }: TransactionInterface) => {
         const routeName = store.get(routeNameAtom);
-        const isCrossBetPage = routeName === RouteName.CrossBetting;
         const isEventPage = routeName === RouteName.Event;
 
-        if (!isCrossBetPage && !isEventPage) {
+        if (!isEventPage) {
             set(betslipSelectionsAtom, resetMultiBetSelectionsRelation);
-            set(betsAtom, rejectMultiBets([LegType.BuildABet, LegType.CrossBet]));
-
-            return;
-        }
-
-        if (isCrossBetPage) {
-            set(betslipSelectionsAtom, enableCrossBetSelectionsRelation);
             set(betsAtom, rejectMultiBets([LegType.BuildABet]));
 
             return;
@@ -62,6 +50,6 @@ export const syncRelationsAfterKeepingPlacedBetsTransaction =
             }
 
             set(betslipSelectionsAtom, resetMultiBetSelectionsRelation);
-            set(betsAtom, rejectMultiBets([LegType.BuildABet, LegType.CrossBet]));
+            set(betsAtom, rejectMultiBets([LegType.BuildABet]));
         }
     };

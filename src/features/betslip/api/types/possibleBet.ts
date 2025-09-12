@@ -26,16 +26,11 @@ export interface PossibleBet<T = PossibleBetLeg> extends SelectedBet<T> {
 
 export type PossibleBetLeg = PossibleMultiBetLeg | PossibleStandardBetLeg;
 
-export type PossibleMultiBetLeg = PossibleBuildABetLeg | PossibleCrossBetLeg;
+export type PossibleMultiBetLeg = PossibleBuildABetLeg;
 
 export interface PossibleBuildABetLeg extends BasePossibleBetLeg {
     marketsAndSelections: MarketAndSelection[];
     type: LegType.BuildABet;
-}
-
-export interface PossibleCrossBetLeg extends BasePossibleBetLeg {
-    marketsAndSelections: MarketAndSelection[];
-    type: LegType.CrossBet;
 }
 
 export interface PossibleStandardBetLeg extends BasePossibleBetLeg {

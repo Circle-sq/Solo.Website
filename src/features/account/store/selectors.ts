@@ -29,12 +29,6 @@ export const cashoutEnabledSelector = atom((get) => {
     return userData?.cashoutEnabled ?? false;
 });
 
-export const crossInfoDismissSelector = atom((get) => {
-    const userData = get(userDataAtom);
-
-    return userData?.crossInfoDismiss ?? false;
-});
-
 export const oddsFormatSelector = atom((get) => {
     const userData = get(userDataAtom);
     const userSettings = get(userSettingsAtom);

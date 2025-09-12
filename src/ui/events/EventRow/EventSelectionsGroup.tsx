@@ -140,7 +140,6 @@ const EventSelectionsGroup = ({
                             selectionId={selectionId}
                             showIdentifier={isAmericanSports}
                             isAmericanSports={isAmericanSports}
-                            isHandicap={isHandicap}
                         />
                     );
                 })}

@@ -12,7 +12,7 @@ export const S_SelectionValue = styled.span<SelectionValueType>`
     color: ${cssColor('--body-text')};
 
     ${(props): string => {
-        const { disabled, isSuspended = false, isCrossBet = false } = props;
+        const { disabled, isSuspended = false } = props;
 
         let styles = `
             @media(max-width: ${breakpoints.bp500}) {
@@ -25,12 +25,6 @@ export const S_SelectionValue = styled.span<SelectionValueType>`
                 background-color: transparent;
                 pointer-events: none;
                 color: ${cssColor('--text-secondary')};
-            `;
-        }
-
-        if (isCrossBet) {
-            styles += `
-                margin: auto;
             `;
         }
 

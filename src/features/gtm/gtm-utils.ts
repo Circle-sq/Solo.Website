@@ -2,6 +2,7 @@ import type { BetslipSelections, BetslipSelection } from '@solo-betslip/store/ty
 import type { GtmSelection, PlacedBet } from '@solo-betslip/api/types/placedBet';
 import { currencySelector } from '@solo-account/store/selectors';
 import { store as jotaiStore } from 'libs/utils/jotai/src/store';
+import { LegType } from 'src/common/enums';
 
 const PathTypes = {
     HOME: '/',
@@ -10,7 +11,6 @@ const PathTypes = {
     InPlay: '/inplay/',
     COMPETITION: '/competition/',
     COUNTRY: '/country/',
-    CROSSBETTING: '/crossbetting',
     ASIANVIEW: '/asianview',
 };
 const PageTypes = {
@@ -20,7 +20,6 @@ const PageTypes = {
     InPlay: 'Live Sports',
     COMPETITION: 'Competition',
     COUNTRY: 'Country',
-    CROSSBETTING: 'Crossbetting',
     ASIANVIEW: 'Asian View',
     UNKNOWN: 'Unknown',
 };
@@ -44,9 +43,6 @@ const getPageType = (pathname: string) => {
 
         case pathname.startsWith(PathTypes.COUNTRY):
             return PageTypes.COUNTRY;
-
-        case pathname.startsWith(PathTypes.CROSSBETTING):
-            return PageTypes.CROSSBETTING;
 
         case pathname.startsWith(PathTypes.ASIANVIEW):
             return PageTypes.ASIANVIEW;
@@ -101,16 +97,14 @@ export const sendPurchaseToGtm = (bets: PlacedBet[], checkedSelections: BetslipS
                 (acc, leg) => {
                     if ('selection' in leg && leg.selection) {
                         acc[leg.selection.id.toString()] = { event: leg.event };
-                    } else if (
-                        (leg.type === 'crossBet' || leg.type === 'buildABet') &&
-                        leg.marketsAndSelections?.length
-                    ) {
+                    } else if (leg.type === LegType.BuildABet && leg.marketsAndSelections?.length) {
                         leg.marketsAndSelections.forEach((marketAndSelection) => {
                             if (marketAndSelection.selection?.id) {
                                 acc[marketAndSelection.selection.id.toString()] = { event: leg.event };
                             }
                         });
                     }
+
                     return acc;
                 },
                 {} as Record<string, SelectionEventInfo>,

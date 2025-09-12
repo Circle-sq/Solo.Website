@@ -8,12 +8,10 @@ import {
     dynamicContainers,
     fontWeight,
     GenericColors,
-    GreyPalette,
     selections,
 } from '@solo-ui/system';
 
 import DropdownSelect from 'src/ui/common/DropdownSelect/DropdownSelect';
-import { S_DropDownFilterContainer, S_MarketDropdownValueContainer } from 'src/ui/crossbetting/FilterDropdown/styled';
 
 import { S_GroupName, S_HeaderGroup } from '../EventGroupHeader/styled';
 
@@ -450,17 +448,6 @@ export const S_FilterContainer = styled.div`
     min-width: 110px;
     justify-content: flex-start;
     width: 100%;
-
-    ${S_DropDownFilterContainer} {
-        margin: 0 !important;
-        padding: 0 4px 0 0 !important;
-    }
-
-    ${S_MarketDropdownValueContainer} {
-        height: 24px;
-        color: ${GreyPalette.grey7};
-        border-color: ${GreyPalette.grey4};
-    }
 
     @media (max-width: ${breakpoints.bp680}) {
         max-width: 110px;

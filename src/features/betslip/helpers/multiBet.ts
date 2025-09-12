@@ -17,11 +17,9 @@ import { isLegType } from '../typeGuards/leg';
 
 export const splitIds = (betId?: string): string[] => reject(split(betId, DASH), (id) => isEmpty(id) || isLegType(id));
 
-export const isCrossBetId = (betId: string): boolean => includes(betId, LegType.CrossBet);
-
 export const isBuildABetId = (betId: string): boolean => includes(betId, LegType.BuildABet);
 
-export const isMultiBetId = (betId: string): boolean => isBuildABetId(betId) || isCrossBetId(betId);
+export const isMultiBetId = (betId: string): boolean => isBuildABetId(betId);
 
 export const isMultiBetWithTwoSelections = (betId?: string) => size(splitIds(betId)) === MIN_MULTI_BET_SELECTIONS_COUNT;
 

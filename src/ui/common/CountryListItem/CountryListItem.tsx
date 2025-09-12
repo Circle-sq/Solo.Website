@@ -14,7 +14,6 @@ import { useAppStateContext } from 'src/appState/AppState';
 import { getCompetitionLocation } from 'src/appState/utils';
 import CompetitionLocationIcon from 'src/assets/icons/competitionLocationIcon/CompetitionLocationIcon';
 import ESoccerIcon from 'src/assets/icons/ESoccerIcon';
-import { RouteName } from 'src/common/enums';
 import { highlightCompetitionsAtom } from 'src/common/hooks/useHighlightCompetitions/useHighlightCompetitions';
 import { isValidCountry } from 'src/utils/common';
 import { SPORT_TYPE, SPORTS_WITH_TOURNAMENTS, TAGS } from 'src/utils/constants';
@@ -25,14 +24,12 @@ import type { NestedLinkItem } from '../NavigationPanel/types';
 
 import {
     S_CompetitionIcon,
-    CompetitionLink,
+    S_CompetitionLink,
     S_Counter,
     S_Label,
     S_ChildLabel,
-    NavigationLink,
+    S_NavigationLink,
     S_RightSide,
-    S_CrossBetCompetitionLink,
-    S_CrossBetNavigationLink,
     S_ToggleButton,
     S_MarginBox,
 } from './styled';
@@ -64,7 +61,6 @@ const CountryListItem = ({ link, open, sportId }: CountryListItemProps) => {
     const { params } = router.route;
 
     const { competitionId, countryId, ...routeParams } = params;
-    const isCrossBetPage = routeName === RouteName.CrossBetting;
     const highlightCompetitions = useRecoilValue(highlightCompetitionsAtom);
 
     const competitionLinks = useMemo(() => {
@@ -102,10 +98,8 @@ const CountryListItem = ({ link, open, sportId }: CountryListItemProps) => {
 
     const isCategoryCompetition = !SPORTS_WITH_TOURNAMENTS.includes(sportResult) && !isValidCountry(label ?? '');
     const navigationLinkTestId = sportResult && !isCategoryCompetition ? `${sportResult}-${label}` : `${label}`;
-    const showCounter = !isOpen && !isCrossBetPage;
+    const showCounter = !isOpen;
 
-    const S_NavigationLink = isCrossBetPage && link?.menuLevel !== 1 ? S_CrossBetNavigationLink : NavigationLink;
-    const S_CompetitionLink = isCrossBetPage ? S_CrossBetCompetitionLink : CompetitionLink;
     const isESoccerLink = link.params?.countryId === SPORT_TYPE.esoccer.toUpperCase();
     let competitionTag = competitionLocation.tag;
 
@@ -207,13 +201,6 @@ const CountryListItem = ({ link, open, sportId }: CountryListItemProps) => {
                         ...competition.params,
                     };
 
-                    const handleCrossLinkClick = () => {
-                        if (!isCrossBetPage) {
-                            return;
-                        }
-
-                        router.redirectToCrossPage(linkParams);
-                    };
                     const isRouteActive = isEqual(linkParams, { ...params });
                     const competitionLinkClassName = isRouteActive ? 'active' : '';
 
@@ -224,7 +211,6 @@ const CountryListItem = ({ link, open, sportId }: CountryListItemProps) => {
                             testId={`competition-${competition.label?.toString()}`}
                             params={linkParams}
                             linkHref={linkHref}
-                            onClick={handleCrossLinkClick}
                             {...omit(competition, 'params')}
                         >
                             {getCompetitionIcon()}

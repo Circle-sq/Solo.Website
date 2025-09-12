@@ -3,8 +3,9 @@ import styled from '@emotion/styled';
 import { cssColor, fontWeight, GreyPalette } from '@solo-ui/system';
 
 import TooltipTruncatedText from 'src/ui/common/TooltipTruncatedText/TooltipTruncatedText';
-import { LHNRowColors } from 'src/ui/crossbetting/TopSportsNavigationSidebar/SportItem/styled';
 import Link from 'src/utils/Router/NewLink';
+
+import { LHNRowColors } from '../CountryListItem/styled';
 
 import type { ContentIconStyle } from './types';
 

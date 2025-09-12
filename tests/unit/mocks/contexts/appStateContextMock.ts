@@ -99,14 +99,10 @@ export const appStateContextMock: RecursivePartial<AppState> = {
     },
     router: {
         redirect: vi.fn(),
-        url: '/crossbetting?sport=all&day=1&countryId=ENG',
+        url: '/',
         route: {
-            name: 'crossbetting',
-            params: {
-                sport: 'all',
-                day: '1',
-                countryId: 'ENG',
-            },
+            name: 'homepage',
+            params: {},
         },
         routes: [
             {
@@ -114,24 +110,6 @@ export const appStateContextMock: RecursivePartial<AppState> = {
                 matcher: {},
                 params: [],
                 name: 'homepage',
-            },
-            {
-                url: '/crossbetting',
-                matcher: {},
-                params: [],
-                name: 'crossbetting',
-            },
-            {
-                url: '/crossbetting/:sport',
-                matcher: {},
-                params: ['sport'],
-                name: 'crossbetting',
-            },
-            {
-                url: '/crossbetting/:sport/:day',
-                matcher: {},
-                params: ['sport', 'day'],
-                name: 'crossbetting',
             },
         ],
         buildUrl: vi.fn(),

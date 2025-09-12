@@ -32,7 +32,6 @@ import {
     filterSportsbookErrorCodes,
     filterZeroWinExpectationErrors,
     getSportsbookErrors,
-    hasStartedCrossBetError,
 } from '../helpers/errors';
 import type { BetslipWarning } from '../types';
 
@@ -220,11 +219,6 @@ export const hasStartedBuildABetErrorSelector = selector<boolean>({
     get: ({ get }) => {
         return some(get(betslipProblemsAtom), { code: BetslipErrorCode.BuildABetInPlayNotAllowed });
     },
-});
-
-export const hasStartedCrossBetErrorSelector = selector<boolean>({
-    key: 'hasStartedCrossBetErrorSelector',
-    get: ({ get }) => hasStartedCrossBetError(get(betslipProblemsAtom), get(betslipBetsSelector)),
 });
 
 export const sportsbookErrorMessagesSelector = selector<BetslipWarning[]>({

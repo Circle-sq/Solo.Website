@@ -1,7 +1,7 @@
 import omit from 'lodash/omit';
 import type { CallbackInterface } from 'recoil';
 
-import type { BuildABetLeg, Leg } from '../../../api/types/leg';
+import type { Leg } from '../../../api/types/leg';
 import { isMultiBetWithTwoSelections, omitSelectionIdFromMultiBetId } from '../../../helpers/multiBet';
 import { animationRecordsAtom } from '../../atoms/animation';
 import { betsAtom, changedPriceBetIdsAtom, uncheckedBetIdsAtom } from '../../atoms/betslipBets';
@@ -16,7 +16,7 @@ import { syncBuildABetStake } from '../../helpers/stake/sync';
 
 export const removeBuildABetSelectionTask =
     ({ reset, set }: CallbackInterface) =>
-    (buildABet: Leg<BuildABetLeg>, selectionId: string) => {
+    (buildABet: Leg, selectionId: string) => {
         const buildABetId = buildABet.id as string;
         set(betslipSelectionsAtom, removeSelection(selectionId));
 
@@ -35,17 +35,6 @@ export const removeBuildABetSelectionTask =
         set(singleBetStakesAtom, syncBuildABetStake(buildABetId, newBuildABetId));
         set(betsAtom, removeBuildABetLeg(buildABet, newBuildABetId, selectionId));
         set(uncheckedBetIdsAtom, syncUncheckedBetId(buildABetId, newBuildABetId));
-
-        reset(changedPriceBetIdsAtom);
-    };
-
-export const removeCrossSelectionTask =
-    ({ reset, set }: CallbackInterface) =>
-    (selectionId: string) => {
-        set(singleBetStakesAtom, removeSingleBetStake(selectionId));
-        set(betslipSelectionsAtom, removeSelection(selectionId));
-        set(betsAtom, removeBetBySelectionId(selectionId));
-        set(uncheckedBetIdsAtom, removeUncheckedBetId(selectionId));
 
         reset(changedPriceBetIdsAtom);
     };

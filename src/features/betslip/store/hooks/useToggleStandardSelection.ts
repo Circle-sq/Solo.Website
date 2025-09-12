@@ -21,11 +21,7 @@ import { PossibleBetsTriggeredBy } from '../../enums';
 import { animationRecordsAtom } from '../atoms/animation';
 import { betsAtom } from '../atoms/betslipBets';
 import { betslipSelectionsAtom } from '../atoms/selections';
-import {
-    getSelectionsFromEventWithoutCrossBet,
-    hasReachedMaximumSelections,
-    normalizeSelection,
-} from '../helpers/selection/common';
+import { getSelectionsFromEvent, hasReachedMaximumSelections, normalizeSelection } from '../helpers/selection/common';
 import { isSelectedSelectorFamily } from '../selectors/selections';
 import { addBuildABetSelectionTask, addStandardSelectionTask } from '../tasks/selection/add';
 import { removeBuildABetSelectionTask, removeStandardSelectionTask } from '../tasks/selection/remove';
@@ -94,7 +90,7 @@ export const useToggleStandardSelection = () => {
                     // Add BuildABet selection
                     if (isBuildABetRelated) {
                         const selections = getValue(snapshot, betslipSelectionsAtom);
-                        const selectionsFromEvent = getSelectionsFromEventWithoutCrossBet(selections, eventId);
+                        const selectionsFromEvent = getSelectionsFromEvent(selections, eventId);
                         const [animationKey] = keys(selectionsFromEvent);
 
                         if (hasBuildABetReachedMaxSelections(selectionsFromEvent)) {

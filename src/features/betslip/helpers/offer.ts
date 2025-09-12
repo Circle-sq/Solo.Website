@@ -219,7 +219,6 @@ export const convertRefBetsToSelections = (bets: ReferredBet[]): BetslipSelectio
 
             if (isMultiBetLegType<ReferredMultiBetLeg>(leg)) {
                 const isBuildABetRelated = leg.type === LegType.BuildABet;
-                const isCrossPageRelated = leg.type === LegType.CrossBet;
                 const multiBetSelections = reduce(
                     leg.marketsAndSelections,
                     (acc, item) => {
@@ -234,7 +233,6 @@ export const convertRefBetsToSelections = (bets: ReferredBet[]): BetslipSelectio
                             price: leg.price,
                             priceType: leg.priceType,
                             isBuildABetRelated,
-                            isCrossPageRelated,
                         };
                         const selection = { ...normalizeSelection(payload), timestamp: Date.now() + index };
 
@@ -271,14 +269,14 @@ export const getSingleBetStakes = (bets: ReferredBet[]): Record<string, number> 
         bets,
         (acc, bet) => {
             if (isStandardBetLegType<ReferredStandardLeg>(bet?.legs?.[0])) {
-                const id = bet.legs[0].selection.id;
+                const id = String(bet.legs?.[0].selection.id);
                 const value = bet.stakePerLine;
 
                 return { ...acc, [id]: value };
             }
 
             if (isMultiBetLegType<ReferredMultiBetLeg>(bet?.legs?.[0])) {
-                const id = generateBetId(bet.legs[0]);
+                const id = generateBetId(bet.legs?.[0] as ReferredLeg);
                 const value = bet.stakePerLine;
 
                 return { ...acc, [id]: value };

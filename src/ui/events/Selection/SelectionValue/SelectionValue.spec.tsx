@@ -5,7 +5,6 @@ import SelectionValue from './SelectionValue';
 
 const props: Props = {
     displayPrice: '2.1',
-    isCrossBet: false,
     isLocked: true,
     isSuspended: true,
     isDisplay: true,

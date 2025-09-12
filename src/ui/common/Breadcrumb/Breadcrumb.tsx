@@ -113,7 +113,7 @@ const Breadcrumb = ({ waitForRequestToComplete = false }: Props) => {
 
     const competitionLocation = getCompetitionLocation(detectSportId[routeName as keyof typeof detectSportId]);
     const isCounterAllowed = routeName === PAGE_ROUTE_NAME.sport || routeName === PAGE_ROUTE_NAME.allcountries;
-    const shouldGoBackToHomePage = PAGE_ROUTE_NAME.crossbetting === routeName || PAGE_ROUTE_NAME.inplay === routeName;
+    const shouldGoBackToHomePage = PAGE_ROUTE_NAME.inplay === routeName;
 
     const sport = detectSportId[routeName as keyof typeof detectSportId];
 
@@ -163,11 +163,7 @@ const Breadcrumb = ({ waitForRequestToComplete = false }: Props) => {
 
         if (routeName === PAGE_ROUTE_NAME.sport || routeName === PAGE_ROUTE_NAME.allcountries) {
             links = sport;
-        } else if (
-            [PAGE_ROUTE_NAME.event, PAGE_ROUTE_NAME.crossbetting, PAGE_ROUTE_NAME.inplay].some(
-                (name) => name === routeName,
-            )
-        ) {
+        } else if ([PAGE_ROUTE_NAME.event, PAGE_ROUTE_NAME.inplay].some((name) => name === routeName)) {
             links = setLinks;
         } else {
             links = [...sport, ...links, ...setLinks];
@@ -196,18 +192,6 @@ const Breadcrumb = ({ waitForRequestToComplete = false }: Props) => {
                         route: PAGE_ROUTE_NAME.inplay,
                         icon: 'theme-live',
                         label: <I18n langKey='breadcrumb.inlive.betting.label' defaultText='Live' />,
-                    },
-                ]);
-
-                break;
-            }
-
-            case PAGE_ROUTE_NAME.crossbetting: {
-                links = buildLinks(PAGE_ROUTE_NAME.crossbetting, '', [
-                    {
-                        route: PAGE_ROUTE_NAME.crossbetting,
-                        icon: 'theme-cross',
-                        label: <I18n langKey='breadcrumb.crossbetting.betting.label' defaultText='Cross' />,
                     },
                 ]);
 
@@ -309,7 +293,7 @@ const Breadcrumb = ({ waitForRequestToComplete = false }: Props) => {
                 const locationIcon = reduxState.getCompetitionLocationIconUrl(tag, category);
                 const iconUrl = reduxState.getCompetitionIconUrl(competitionEventById);
                 const location = isESoccer
-                    ? getTranslation('crossbetting.bar.sport.esoccer', 'eSoccer')
+                    ? getTranslation('sport-name.esoccer', 'eSoccer')
                     : getCompetitionLocationLabel(getTranslation, category, categoryLabel, false);
 
                 const eSoccerIcon = get(sportIcons, competitionEventById?.sport as string, { url: '' });

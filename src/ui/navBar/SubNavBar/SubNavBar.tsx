@@ -159,18 +159,6 @@ const SubNavBar = ({ events, competitionLocations, competitions }: LiveEvent) =>
                 break;
             }
 
-            case RouteName.CrossBetting: {
-                routeLinks = [
-                    {
-                        route: RouteName.CrossBetting,
-                        label: <I18n langKey='crossbetting.bar.link.crossbetting' defaultText='Cross betting' />,
-                        testId: 'crossBettingTab',
-                    },
-                ];
-
-                break;
-            }
-
             case RouteName.Sport: {
                 const { id } = routeParam;
                 const { route, ...competitionsConfig } = getCompetitionsParams(normalizedCompetitionLocations, id);

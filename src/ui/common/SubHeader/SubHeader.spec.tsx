@@ -36,10 +36,10 @@ vi.mock('src/appState/AppState', function AppState() {
     };
 });
 
-describe('SingleCrossBetContent Card', () => {
-    it('should render 3 tabs ("Sports", "Cross", "Live Sports")', () => {
+describe('SubHeader', () => {
+    it('should render 2 tabs ("Sports", "Live Sports")', () => {
         const { container } = renderWithAppWrapper(<SubHeader />);
 
-        expect(container.textContent).toBe('SportsCrossLive Sports');
+        expect(container.textContent).toBe('SportsLive Sports');
     });
 });

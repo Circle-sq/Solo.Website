@@ -51,7 +51,6 @@ export interface UserData {
     cashoutAcceptMode: BetslipCashout;
     cashoutEnabled: boolean;
     country: string;
-    crossInfoDismiss: boolean;
     currency: string;
     externalId: string;
     id: number;

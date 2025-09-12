@@ -46,23 +46,6 @@ export const S_StandardBetLegContent = styled(S_BaseBetLegContent)`
     flex-wrap: wrap;
 `;
 
-export const S_CrossBetLegContent = styled(S_BaseBetLegContent)`
-    flex-wrap: unset;
-`;
-
-export const S_CrossBetAmount = styled.div`
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-end;
-`;
-
-export const S_SelectionOdd = styled.div`
-    margin-bottom: 16px;
-    line-height: 1em;
-`;
-
 export const S_BetReceiptItems = styled.div`
     margin-top: 16px;
 `;

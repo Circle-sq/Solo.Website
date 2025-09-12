@@ -1,9 +1,9 @@
 import type { ReactElement } from 'react';
 
-import { AllSportsIcon, CrossBetIcon, LiveSportsIcon } from '@solo-ui/icons/svg';
+import { AllSportsIcon, LiveSportsIcon } from '@solo-ui/icons/svg';
 
 import type { SportCount } from 'src/appState/sportsList/types';
-import { RouteName, SportTab, SportType } from 'src/common/enums';
+import { RouteName, SportTab } from 'src/common/enums';
 import { I18n } from 'src/ui/common/Language/I18n';
 import { PAGE_ROUTE_NAME } from 'src/utils/constants';
 import type { ReadonlyRoute } from 'src/utils/Router/types';
@@ -27,7 +27,7 @@ export const MAX_VISIBLE_FREE_BETS = 3;
 export const LANGUAGE_ROW_HEIGHT = 30;
 export const HEIGHT_OFFSET = 10;
 
-export const getSportTabItems = (route: ReadonlyRoute): SportTabItem[] => [
+export const getSportTabItems = (): SportTabItem[] => [
     {
         key: SportTab.Sports,
         className: 'theme-sports',
@@ -35,14 +35,6 @@ export const getSportTabItems = (route: ReadonlyRoute): SportTabItem[] => [
         label: <I18n langKey='footer.mobile.sports.label' defaultText='Sports' />,
         params: { id: PAGE_ROUTE_NAME.homepage },
         route: RouteName.Homepage,
-    },
-    {
-        key: SportTab.Cross,
-        className: 'theme-cross',
-        Icon: <CrossBetIcon fontSize='small' />,
-        label: <I18n langKey='footer.mobile.cross.label' defaultText='Cross' />,
-        params: { sport: SportType.All, day: route?.params?.day },
-        route: RouteName.CrossBetting,
     },
     {
         key: SportTab.Live,
@@ -81,17 +73,12 @@ export const getRouteByTab = (tab: string): RouteName => {
         return RouteName.InPlay;
     }
 
-    if (tab === SportTab.Cross) {
-        return RouteName.CrossBetting;
-    }
-
     return RouteName.Homepage;
 };
 
 export const getActiveTab = (route: string): string => {
     const routeToTabMap: Record<string, string> = {
         [RouteName.InPlay]: SportTab.Live,
-        [RouteName.CrossBetting]: SportTab.Cross,
     };
 
     return routeToTabMap[route] || SportTab.Sports;
@@ -100,7 +87,6 @@ export const getActiveTab = (route: string): string => {
 export const isActiveTabOnCorrespondingRoute = ({ name }: ReadonlyRoute, activeTab: string): boolean => {
     return (
         (name === RouteName.InPlay && activeTab === SportTab.Live) ||
-        (name === RouteName.CrossBetting && activeTab === SportTab.Cross) ||
         ((name === RouteName.Homepage || name === RouteName.Sport || name === RouteName.Country) &&
             activeTab === SportTab.Sports)
     );
@@ -129,10 +115,6 @@ export const isActiveSportRow = (
 
     if (activeTab === SportTab.Sports || activeTab === SportTab.Live) {
         return params?.id === id || params?.sportId === id;
-    }
-
-    if (activeTab === SportTab.Cross) {
-        return params?.sport === id;
     }
 
     return false;

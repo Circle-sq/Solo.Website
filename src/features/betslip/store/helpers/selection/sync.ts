@@ -8,18 +8,6 @@ import type { Selections } from 'src/common/types/selection';
 import type { Legs } from '../../../api/types/leg';
 import type { BetslipSelection, BetslipSelections } from '../../types';
 
-import { getLastSelectionsFromMarkets } from './common';
-import { isBuildABetPageRelated } from './relation';
-
-export const syncLastCrossSelectionByMarketTypes = (selections: BetslipSelections): BetslipSelections => {
-    const lastSelectionsFromMarkets = getLastSelectionsFromMarkets(selections);
-
-    return omitBy(
-        selections,
-        (selection) => !isBuildABetPageRelated(selection) && !has(lastSelectionsFromMarkets, selection.selectionId),
-    );
-};
-
 export const syncBetslipSelectionPrice =
     (selections: Selections) =>
     (selection: BetslipSelection): BetslipSelection => {

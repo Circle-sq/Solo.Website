@@ -4,7 +4,6 @@ import { useMemo } from 'react';
 import type { MyBet } from 'src/common/types/myBet';
 import { formatStrAmount, amountFormatter } from 'src/utils/format';
 import useMyBetState from 'src/ui/myBets/hooks/useMyBetState';
-import { isMyBetCrossBet } from 'src/ui/myBets/utils/typeGuards';
 import { I18n } from 'src/ui/common/Language/I18n';
 
 import { S_CashOutButton, S_CashOutWrapper, S_CashOutValue } from '../styled';
@@ -29,7 +28,7 @@ const CashOutActionButton = ({ bet, onCashOutBet, isConfirmed, isSuccess }: Prop
         useMyBetState(bet, isSuccess);
 
     const showCashOutAmount = isCashOutFulfilled || (!isCashOutLocked && !isCashOutInProgress && !isCancelableBet);
-    const showInfoIcon = !isCashOutFulfilled && !isCashOutLocked && !isMyBetCrossBet(bet);
+    const showInfoIcon = !isCashOutFulfilled && !isCashOutLocked;
 
     const amount = useMemo<string | ReactElement>(() => {
         if (cashOutAmount) {

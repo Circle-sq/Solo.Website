@@ -14,12 +14,10 @@ export const usePathLocation = () => {
     } = useAppStateContext();
 
     const isEventPage = route.name === RouteName.Event;
-    const isCrossPage = route.name === RouteName.CrossBetting;
     const eventId = getEventIdFromRoute(route) ?? lastSelection?.eventId;
 
     return {
         isEventPage,
-        isCrossPage,
         eventId,
     };
 };
