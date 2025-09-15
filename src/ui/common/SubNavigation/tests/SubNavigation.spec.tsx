@@ -245,11 +245,7 @@ describe('SubNavigation (sport)', () => {
         fireEvent.click(getByText(/betting rules/i));
 
         await waitFor(() => {
-            expect(windowOpenMock).toHaveBeenCalledWith(
-                'https://rule.solo.com',
-                '_blank',
-                `width=${1024}, height=${750}`,
-            );
+            expect(windowOpenMock).toHaveBeenCalledWith('', 'betting-rules', `width=${1024}, height=${750}`);
         });
     });
 
@@ -268,11 +264,7 @@ describe('SubNavigation (sport)', () => {
         fireEvent.click(getByText(/betting rules/i));
 
         await waitFor(() => {
-            expect(windowOpenMock).toHaveBeenCalledWith(
-                'https://www.external.io/en/legal-documents/jhGpFgXdDju8OnbdhDdy',
-                '_blank',
-                `width=${1024}, height=${750}`,
-            );
+            expect(windowOpenMock).toHaveBeenCalledWith('', 'betting-rules', `width=${1024}, height=${750}`);
         });
     });
 });

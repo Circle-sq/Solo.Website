@@ -654,3 +654,6 @@ export const BAB_ICON_SIZES = {
     xs: { width: 22.5, height: 12 },
     sm: { width: 30, height: 16 },
 };
+
+export const DEFAULT_EXTERNAL_LINK_WINDOW_WIDTH = 1024;
+export const DEFAULT_EXTERNAL_LINK_WINDOW_HEIGHT = 750;

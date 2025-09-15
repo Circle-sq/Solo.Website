@@ -29,6 +29,7 @@ import SportsModal from 'src/ui/common/SportsModal/SportsModal';
 import SearchEventsDialog from 'src/ui/events/SearchEventsEnhanced/SearchEventsDialog';
 import SearchEventsModal from 'src/ui/events/SearchEventsModal/SearchEventsModal';
 import { useBetlinkGolf } from 'src/ui/sports/useBetlinkGolfFlag';
+import { DEFAULT_EXTERNAL_LINK_WINDOW_HEIGHT, DEFAULT_EXTERNAL_LINK_WINDOW_WIDTH } from 'src/utils/constants';
 
 import { I18n } from '../Language/I18n';
 import LiveSportsModal from '../LiveSportsModal/LiveSportsModal';
@@ -39,15 +40,13 @@ import { S_CountOfGames, S_SubNav, S_SubNavMenu, S_SubNavMenuLink, S_SubNavMenuN
 import SubNavigationIcon from './SubNavigationIcon';
 import { SubNavigationLabel } from './SubNavigationLabel';
 import type { Navigate, NavLink } from './types';
+import { useBettingRules } from 'src/features/betting-rules/hooks/useBettingRules';
 
-const DEFAULT_EXTERNAL_LINK_WINDOW_WIDTH = 1024;
-const DEFAULT_EXTERNAL_LINK_WINDOW_HEIGHT = 750;
 const STATIC_MENU_ITEMS = 4;
 const MENU_ITEMS_TO_SHOW = 9;
 const DESKTOP_ITEM_WIDTH = 82;
 const MOBILE_ITEM_WIDTH = 78;
 const LIVE_PAGE_URL = 'https://ls.sir.sportradar.com/solo';
-const SOLO_BETTING_RULE_URL = 'https://rule.solo.com';
 
 interface Props {
     propsLinks?: Navigate[];
@@ -74,10 +73,6 @@ const SubNavigation = ({ propsLinks, isNav, isInHeader = false, slideTo = false 
         language: { getTranslation, userLangShort },
     } = useAppStateContext();
     const { route } = router;
-
-    const EXTERNAL_BETTING_RULE_URL = `https://www.external.io/${userLangShort}/legal-documents/jhGpFgXdDju8OnbdhDdy`;
-
-    const getBettingRuleUrl = () => (standalone ? EXTERNAL_BETTING_RULE_URL : SOLO_BETTING_RULE_URL);
 
     const event =
         route.name !== RouteName.Competition && route.name !== RouteName.Country
@@ -231,6 +226,8 @@ const SubNavigation = ({ propsLinks, isNav, isInHeader = false, slideTo = false 
         return () => unlock();
     }, [isLiveSportsModalOpen, isSportsModalOpen]);
 
+    const { openBettingRules } = useBettingRules();
+
     const staticLinks = [
         {
             route: null,
@@ -248,7 +245,7 @@ const SubNavigation = ({ propsLinks, isNav, isInHeader = false, slideTo = false 
             label: getTranslation('header.livescore.nav.label', 'Livescore'),
         },
         {
-            onClick: () => externalLink(getBettingRuleUrl()),
+            onClick: () => openBettingRules(), //externalLink(getBettingRuleUrl()),
             testId: 'bettingRules',
             icon: 'theme-icon-bettingrules',
             iconUrl: getIconUrl('theme-icon-bettingrules'),

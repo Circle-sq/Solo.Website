@@ -5,11 +5,7 @@
     "strict": true,
     "jsx": "react-jsx",
     "jsxImportSource": "@emotion/react",
-    "lib": [
-      "dom",
-      "es6",
-      "esnext"
-    ],
+    "lib": ["dom", "es6", "esnext"],
     "downlevelIteration": true,
     "sourceMap": true,
     "experimentalDecorators": true,
@@ -29,69 +25,28 @@
       "vitest/jsdom"
     ],
     "paths": {
-      "@solo-api/*": [
-        "src/api/*"
-      ],
-      "@solo-account/*": [
-        "src/features/account/*"
-      ],
-      "@solo-asianView/*": [
-        "src/features/asianView/*"
-      ],
-      "@solo-betslip/*": [
-        "src/features/betslip/*"
-      ],
-      "@solo-buildABet/*": [
-        "src/features/buildABet/*"
-      ],
-      "@solo-data/subscriptions-storage": [
-        "libs/data-subscriptions-storage/src/index.ts"
-      ],
-      "@solo-devtools/*": [
-        "libs/solo-devtools/*"
-      ],
-      "@solo-feature-flags": [
-        "libs/feature-flags/src/index.ts"
-      ],
-      "@solo-features/subscription-manager/*": [
-        "libs/solo-feature-subscription-manager/*"
-      ],
-      "@solo-hooks": [
-        "src/common/hooks/index.ts"
-      ],
-      "@solo-media/*": [
-        "src/features/media/*"
-      ],
-      "@solo-sb-assets/*": [
-        "libs/assets-shared/*"
-      ],
-      "@solo-tests/*": [
-        "tests/*"
-      ],
-      "@solo-ui-atoms/asian": [
-        "libs/asian-view/ui-atoms/src/index.ts"
-      ],
-      "@solo-ui/solo": [
-        "libs/ui-solo/src/index.ts"
-      ],
-      "@solo-ui/solo/icons": [
-        "libs/ui-icons/src/index.ts"
-      ],
-      "@solo-ui/icons/svg": [
-        "libs/ui-icons-svg/src/index.ts"
-      ],
-      "@solo-ui/system": [
-        "libs/ui-system/src/index.ts"
-      ],
-      "@solo-utils/jotai": [
-        "libs/utils/jotai/src/index.ts"
-      ],
-      "@solo-utils/tanstack": [
-        "libs/utils/tanstack/src/index.ts"
-      ],
-      "@solo-webapi/*": [
-        "src_server/*"
-      ]
+      "@solo-account/*": ["src/features/account/*"],
+      "@solo-api/*": ["src/api/*"],
+      "@solo-asianView/*": ["src/features/asianView/*"],
+      "@solo-betslip/*": ["src/features/betslip/*"],
+      "@solo-buildABet/*": ["src/features/buildABet/*"],
+      "@solo-betting-rules/*": ["src/features/betting-rules/*"],
+      "@solo-data/subscriptions-storage": ["libs/data-subscriptions-storage/src/index.ts"],
+      "@solo-devtools/*": ["libs/solo-devtools/*"],
+      "@solo-feature-flags": ["libs/feature-flags/src/index.ts"],
+      "@solo-features/subscription-manager/*": ["libs/solo-feature-subscription-manager/*"],
+      "@solo-hooks": ["src/common/hooks/index.ts"],
+      "@solo-media/*": ["src/features/media/*"],
+      "@solo-sb-assets/*": ["libs/assets-shared/*"],
+      "@solo-tests/*": ["tests/*"],
+      "@solo-ui-atoms/asian": ["libs/asian-view/ui-atoms/src/index.ts"],
+      "@solo-ui/icons/svg": ["libs/ui-icons-svg/src/index.ts"],
+      "@solo-ui/solo": ["libs/ui-solo/src/index.ts"],
+      "@solo-ui/solo/icons": ["libs/ui-icons/src/index.ts"],
+      "@solo-ui/system": ["libs/ui-system/src/index.ts"],
+      "@solo-utils/jotai": ["libs/utils/jotai/src/index.ts"],
+      "@solo-utils/tanstack": ["libs/utils/tanstack/src/index.ts"],
+      "@solo-webapi/*": ["src_server/*"]
     },
     "noEmit": true,
     "moduleResolution": "Node",
@@ -112,17 +67,9 @@
     "vite.config.mts",
     "vite.server.config.mts"
   ],
-  "exclude": [
-    "node_modules",
-    "build",
-    "dist",
-    "scoreboard_static",
-    "src_sassbuild"
-  ],
+  "exclude": ["node_modules", "build", "dist", "scoreboard_static", "src_sassbuild"],
   "ts-node": {
-    "require": [
-      "tsconfig-paths/register"
-    ],
+    "require": ["tsconfig-paths/register"],
     "transpileOnly": true,
     "files": true
   }
