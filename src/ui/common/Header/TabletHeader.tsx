@@ -82,7 +82,7 @@ const TabletHeader = ({ showBurgerMenu, toggleBurgerMenu }: Props) => {
                             >
                                 <LogoNew width='113px' height='31px' />
                             </LogoContainer>
-                            <Box display='flex' gap={2} alignItems='center' flex={1}>
+                            <Box display='flex' gap={2} alignItems='center' flex={1} justifyContent='flex-end'>
                                 {isAuthenticated && (
                                     <MyBetsLink isActive={showMyBets} onClick={toggleMyBets}>
                                         <I18n langKey='footer.mobile.mybets.label' defaultText='My Bets' />
