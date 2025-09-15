@@ -10,7 +10,7 @@ import { useAppStateContext } from 'src/appState/AppState';
 import China from 'src/assets/countries_flags/china_flag_24px.svg';
 import GreatBritain from 'src/assets/countries_flags/gb_flag_24px.svg';
 import Japan from 'src/assets/countries_flags/japan_flag_24px.svg';
-import KoreaSouth from 'src/assets/countries_flags/southkorea_flag_24px.svg';
+import USA from 'src/assets/countries_flags/usa_flag_24px.svg';
 import { DropdownMenuPlacement, ThemeNames } from 'src/common/enums';
 import DropdownSelect from 'src/ui/common/DropdownSelect/DropdownSelect';
 import { S_Icon, S_Option } from 'src/ui/common/Header/BurgerMenu/styled';
@@ -39,19 +39,19 @@ const LanguageSelector = ({ menuPlacement = DropdownMenuPlacement.Auto, onMenuOp
             label: (
                 <S_Option>
                     <S_Icon src={GreatBritain} />
-                    <I18n langKey={`lang.${LANGUAGES.english}`} defaultText='English' />
+                    <I18n langKey={`lang.${LANGUAGES.englishGB}`} defaultText='English GB' />
                 </S_Option>
             ),
-            value: LANGUAGES.english,
+            value: LANGUAGES.englishGB,
         },
         {
             label: (
                 <S_Option>
-                    <S_Icon src={KoreaSouth} />
-                    <I18n langKey={`lang.${LANGUAGES.korean}`} defaultText='Korean' />
+                    <S_Icon src={USA} />
+                    <I18n langKey={`lang.${LANGUAGES.english}`} defaultText='English' />
                 </S_Option>
             ),
-            value: LANGUAGES.korean,
+            value: LANGUAGES.english,
         },
         {
             label: (

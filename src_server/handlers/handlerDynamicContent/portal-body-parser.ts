@@ -12,18 +12,16 @@ import { AppLocals, ResponseHeaders } from '@solo-webapi/enums';
 import type { PlatformApi } from '@solo-webapi/realtime-server/PlatformApi/PlatformApi';
 import { unleash } from '@solo-webapi/unleash-client';
 
-import { LANGUAGES } from 'src/utils/constants';
-
 import { COOKIE_NAME, setContentSecurityPolicyAPI, setContentSecurityPolicyENV } from './contentSecurityPolicy';
 import { PortalLanguageShortcuts } from './types';
 
 export const sanitizePortalLanguage = (language: string | undefined): string => {
     if (!isString(language)) {
-        return PortalLanguageShortcuts.en;
+        return PortalLanguageShortcuts.enGB;
     }
 
     if (isEmpty(language)) {
-        return PortalLanguageShortcuts.en;
+        return PortalLanguageShortcuts.enGB;
     }
 
     if (!isEmpty(PortalLanguageShortcuts[language])) {
@@ -38,7 +36,7 @@ export const sanitizePortalLanguage = (language: string | undefined): string => 
         return language;
     }
 
-    return PortalLanguageShortcuts.en;
+    return PortalLanguageShortcuts.enGB;
 };
 const portalOptionalFields = ['redirectURL', 'userLang', 'portalMessage', 'loginjwt', 'theme', 'guestCurrency'];
 const portalBodyMandatoryFields = ['logintoken', 'dateFormat', 'shortDateFormat', 'language', 'oddsFormat', 'gameId'];
@@ -48,7 +46,7 @@ export const extractPayload = (req: Request): Request['portalBody'] => {
         const defaultLanguageHeader = req?.headers?.['default-language'] as string | undefined;
         const acceptLanguageHeader = req?.headers?.['accept-language'];
 
-        const language = sanitizePortalLanguage(defaultLanguageHeader || acceptLanguageHeader || LANGUAGES.en);
+        const language = sanitizePortalLanguage(defaultLanguageHeader || acceptLanguageHeader);
 
         return {
             loginjwt: '',

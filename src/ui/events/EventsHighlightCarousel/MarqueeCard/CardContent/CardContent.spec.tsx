@@ -25,6 +25,12 @@ vi.mock('src/appState/AppState', () => {
             apiWrapper: {
                 getUniformsList: vi.fn(),
             },
+            language: {
+                userLang: 'en-GB',
+                getTranslation(_key: string, defaultValue: string) {
+                    return defaultValue;
+                },
+            },
         }),
         default: vi.fn(),
     };

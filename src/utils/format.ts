@@ -217,7 +217,7 @@ export const formatStake = (stake: string, isKRWCurrency = false): string => {
         if (/[.]/.exec(stake) !== null) {
             return formatStrAmountInput(stake);
         } else {
-            return numStake === 0 ? '' : formatNumberByLanguage(numStake, LANGUAGES.korean);
+            return numStake === 0 ? '' : formatNumberByLanguage(numStake, LANGUAGES.englishGB);
         }
     }
 };

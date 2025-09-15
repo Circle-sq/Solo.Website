@@ -31,9 +31,9 @@ describe('PortalBodyParser', () => {
     });
 
     it('get language', () => {
-        expect(sanitizePortalLanguage('')).toBe('en-US');
-        expect(sanitizePortalLanguage(undefined)).toBe('en-US');
-        expect(sanitizePortalLanguage('ro')).toBe('en-US');
+        expect(sanitizePortalLanguage('')).toBe('en-GB');
+        expect(sanitizePortalLanguage(undefined)).toBe('en-GB');
+        expect(sanitizePortalLanguage('ro')).toBe('en-GB');
         expect(sanitizePortalLanguage('ko')).toBe('ko-KR');
         expect(sanitizePortalLanguage('en')).toBe('en-US');
         expect(sanitizePortalLanguage('en-US')).toBe('en-US');
@@ -41,7 +41,7 @@ describe('PortalBodyParser', () => {
     });
 
     it('should extract the payload (no data)', () => {
-        const language = 'en-US';
+        const language = 'en-GB';
         expect(extractPayload({} as Request)).toEqual({ logintoken: '', loginjwt: '', language });
         expect(extractPayload({ portalBody: {} } as Request)).toEqual({ logintoken: '', loginjwt: '', language });
     });
@@ -68,7 +68,7 @@ describe('PortalBodyParser', () => {
         expect(extractPayload({ portalBody: { logintoken: 'foo', loginjwt: 'bar' } } as Request)).toEqual({
             logintoken: 'foo',
             loginjwt: 'bar',
-            language: 'en-US',
+            language: 'en-GB',
         });
         expect(consoleSpy).toHaveBeenCalledWith(
             expect.any(String),

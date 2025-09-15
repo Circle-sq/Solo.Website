@@ -12,4 +12,3 @@ export interface LineLimit {
 }
 
 export type EllipsisContainer = Partial<Props>;
-export type Lang = 'ko-KR' | 'en-US';

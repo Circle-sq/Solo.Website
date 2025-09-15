@@ -317,6 +317,7 @@ export const LANGUAGES = Object.freeze({
     ja: 'ja',
     korean: 'ko-KR',
     english: 'en-US',
+    englishGB: 'en-GB',
     japanese: 'ja-JP',
     chinese: 'zh-CN',
 } as const);
@@ -325,11 +326,12 @@ export const LANGUAGE_SHORTCUTS: Record<string, string> = {
     [LANGUAGES.ko]: LANGUAGES.korean,
     [LANGUAGES.en]: LANGUAGES.english,
     [LANGUAGES.ja]: LANGUAGES.japanese,
-    default: LANGUAGES.korean,
+    default: LANGUAGES.english,
 } as const;
 
 export const shortLocale: Record<string, string> = {
     [LANGUAGES.english]: LANGUAGES.en,
+    [LANGUAGES.englishGB]: LANGUAGES.en,
     [LANGUAGES.korean]: LANGUAGES.ko,
     [LANGUAGES.japanese]: LANGUAGES.ja,
     default: LANGUAGES.en,

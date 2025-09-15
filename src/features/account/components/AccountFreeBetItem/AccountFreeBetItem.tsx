@@ -4,9 +4,8 @@ import { useAtomValue } from 'jotai';
 import { currencySelector } from '@solo-account/store/selectors';
 import type { FreebetBonusCredit } from '@solo-account/types';
 
-import { useAppStateContext } from 'src/appState/AppState';
 import { I18n } from 'src/ui/common/Language/I18n';
-import { DATE_FORMAT, LANGUAGES } from 'src/utils/constants';
+import { DATE_FORMAT } from 'src/utils/constants';
 import { formatAmountWithCurrency } from 'src/utils/format';
 
 import { S_Chip, S_FreeBetBadgeWrapper, S_FreeBetDescription, S_FreeBetValidity, T_UpperBold } from './styled';
@@ -17,17 +16,11 @@ interface Props {
 
 const AccountFreeBetItem = ({ freeBetDetails }: Props) => {
     const { description = '', languageDescription = '', expiryDate, amount } = freeBetDetails;
-    const {
-        language: { userLang },
-    } = useAppStateContext();
-
-    const isKoreanLanguage = userLang === LANGUAGES.korean;
 
     const currency = useAtomValue(currencySelector);
 
     const freeBetAmount = formatAmountWithCurrency(amount, currency, true);
     const formattedValidityDate = format(new Date(expiryDate), DATE_FORMAT.NUMERIC_FULL_DATE_TIME_W_SEPARATOR);
-    const friendlyDescription = isKoreanLanguage ? languageDescription : description;
 
     return (
         <>
@@ -41,7 +34,7 @@ const AccountFreeBetItem = ({ freeBetDetails }: Props) => {
                     <T_UpperBold variant='body5'>{freeBetAmount}</T_UpperBold>
                 </S_Chip>
             </S_FreeBetBadgeWrapper>
-            <S_FreeBetDescription>{`* ${friendlyDescription || languageDescription}`}</S_FreeBetDescription>
+            <S_FreeBetDescription>{`* ${description || languageDescription}`}</S_FreeBetDescription>
             <S_FreeBetValidity>
                 <I18n langKey='betslip.free-bets.freebets-validity' defaultText='Validity:' />
                 &nbsp;

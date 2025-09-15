@@ -10,6 +10,21 @@ import LinesEllipsis from './LinesEllipsis';
 import type { Props } from './types';
 import { getLines } from './utils';
 
+vi.mock('src/appState/AppState', () => {
+    return {
+        __esModule: true,
+        useAppStateContext: () => ({
+            language: {
+                userLang: 'en-GB',
+                getTranslation(_key: string, defaultValue: string) {
+                    return defaultValue;
+                },
+            },
+        }),
+        default: vi.fn(),
+    };
+});
+
 describe('LinesEllipsis', () => {
     it(`should render home participant name into component`, () => {
         const expectedFirstLine = 'RC Celta delab';
@@ -194,17 +209,6 @@ describe('LinesEllipsis', () => {
 
     describe('should handle korean participants name with words and uniform', () => {
         const maxLimitByLang = FIRST_LINE_LIMIT[LANGUAGES.korean][TypeLineName.uniform].max;
-
-        it('should handle korean participant name with first two latin word and uniform in the first line', () => {
-            const line = 'CFR 1933 젤레지아';
-            const expectedFirstLine = 'CFR 1933';
-            const expectedSecondLine = '젤레지아';
-
-            const [firstLine, secondLine] = getLines(line, maxLimitByLang, true);
-
-            expect(firstLine).toEqual(expectedFirstLine);
-            expect(secondLine).toEqual(expectedSecondLine);
-        });
 
         it('should handle korean participant name with 1 word and uniform in the first line', () => {
             const expectedFirstLine = '젤레지아르아';

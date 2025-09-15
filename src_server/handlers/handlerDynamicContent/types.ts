@@ -1,5 +1,6 @@
 export const PortalLanguageShortcuts: Record<string, string> = {
-    ko: 'ko-KR',
     en: 'en-US',
+    enGB: 'en-GB',
     ja: 'ja-JP',
+    ko: 'ko-KR',
 };

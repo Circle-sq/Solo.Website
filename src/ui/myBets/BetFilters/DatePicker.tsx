@@ -2,13 +2,12 @@ import { ThemeProvider } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 import { DesktopDatePicker as MuiDatePicker, LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFnsV3';
-import { enGB, ko } from 'date-fns/locale';
+import { enGB } from 'date-fns/locale';
 import type { ReactElement } from 'react';
 
-import { useAppStateContext } from 'src/appState/AppState';
 import DatePickerIcon from 'src/assets/icons/DatePickerIcon';
 import type { RangeType } from 'src/ui/myBets/store/types';
-import { DATE_FORMAT, LANGUAGES } from 'src/utils/constants';
+import { DATE_FORMAT } from 'src/utils/constants';
 
 import { StyledPopper, StyledTextField } from './styled';
 
@@ -22,15 +21,9 @@ interface Props {
 }
 
 const DatePicker = ({ label, name, defaultValue, handleDateChange }: Props) => {
-    const {
-        language: { userLang },
-    } = useAppStateContext();
-
-    const locale = userLang === LANGUAGES.korean ? ko : enGB;
-
     return (
         <ThemeProvider theme={theme}>
-            <LocalizationProvider dateAdapter={AdapterDateFns} adapterLocale={locale}>
+            <LocalizationProvider dateAdapter={AdapterDateFns} adapterLocale={enGB}>
                 <MuiDatePicker
                     defaultValue={defaultValue}
                     label={label}

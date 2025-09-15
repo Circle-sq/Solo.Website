@@ -85,7 +85,7 @@ export class AppState {
             env: EnvironmentState.createForContext(),
         };
 
-        let userLang: string | null = LANGUAGES.english;
+        let userLang: string | null = LANGUAGES.englishGB;
 
         if (typeof window !== 'undefined') {
             userLang = getFromSsr<string>(window, '$appStateInit', 'userLang');

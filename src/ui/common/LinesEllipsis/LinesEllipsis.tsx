@@ -1,8 +1,10 @@
 import { LANGUAGES } from 'src/utils/constants';
+import { useAppStateContext } from 'src/appState/AppState';
+
 import { FIRST_LINE_LIMIT } from './configs';
-import { getLines, isKorean } from './utils';
+import { getLines } from './utils';
 import { S_EllipsisContainer } from './styled';
-import type { Props, Lang } from './types';
+import type { Props } from './types';
 
 const DEFAULT_LINE_HEIGHT = 1;
 const DEFAULT_NUMBER_OF_LINES = 2;
@@ -17,9 +19,12 @@ const LinesEllipsis = (props: Props) => {
         ...rest
     } = props;
 
+    const {
+        language: { userLang },
+    } = useAppStateContext();
+
     if (typeLine) {
-        const symbolLang: Lang = isKorean(text) ? LANGUAGES.korean : LANGUAGES.english;
-        const [firstLine, secondLine] = getLines(text, FIRST_LINE_LIMIT[symbolLang][typeLine].max, isKorean(text));
+        const [firstLine, secondLine] = getLines(text, FIRST_LINE_LIMIT[userLang ?? LANGUAGES.englishGB][typeLine].max);
 
         return (
             <>
