@@ -30,20 +30,3 @@ export const S_BetslipBetList = styled.div<{ isMultipleSystemTabs?: boolean }>`
         return style;
     }}
 `;
-
-export const S_BaseBetReferralEnabled = styled.div`
-    position: relative;
-    padding: 8px 0;
-    text-align: center;
-    font-size: 12px;
-    color: ${cssColor('--text-muted')};
-
-    & > svg {
-        vertical-align: sub;
-        margin-right: 8px;
-    }
-`;
-
-export const S_MultipleBetReferralEnabled = styled(S_BaseBetReferralEnabled)`
-    background-color: ${cssColor('--box-betslip-footer-bg')};
-`;

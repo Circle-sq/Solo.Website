@@ -8,20 +8,18 @@ import usePlaceBet from '../../api/placeBet/queries';
 import { usePossibleBets } from '../../api/possibleBets/queries';
 import { PossibleBetsTriggeredBy } from '../../enums';
 import { changedPriceBetIdsAtom } from '../../store/atoms/betslipBets';
-import { showBetReferralSelector } from '../../store/selectors/betReceipt';
 import { showBettingSettingsSelector } from '../../store/selectors/betslip';
 import { isSingleTabSelector, isSystemTabSelector } from '../../store/selectors/betslipTab';
 import { hasOfferSelector } from '../../store/selectors/offer';
 import { isPlaceBetLoadingSelector, showPlaceBetButtonSelector } from '../../store/selectors/placeBet';
 import PlaceBetButton from '../betPlacement/PlaceBetButton';
-import BetReferralEnabled from '../BetReferralEnabled/BetReferralEnabled';
 import BetslipActions from '../BetslipActions/BetslipActions';
 import BetslipNotifications from '../BetslipNotifications/BetslipNotifications';
 import BetslipTabs from '../BetslipTabs/BetslipTabs';
 import BettingSettings from '../BettingSettings/BettingSettings';
 import OfferTimer from '../OfferTimer/OfferTimer';
 import BetslipBetList from '../SelectionList/SelectionList';
-import { S_BetslipBetList, S_MultipleBetReferralEnabled } from '../SelectionList/styled';
+import { S_BetslipBetList } from '../SelectionList/styled';
 import { S_BetslipContent, S_FooterContainer } from '../styled';
 import Summary from '../Summary/Summary';
 import SystemToolbar from '../SystemToolbar/SystemToolbar';
@@ -38,7 +36,6 @@ const BetslipContent = () => {
     const isSystemTab = useRecoilValue(isSystemTabSelector);
     const showBackdrop = useRecoilValue(showBackdropSelector);
     const showBetPlaceButton = useRecoilValue(showPlaceBetButtonSelector);
-    const showBetReferral = useRecoilValue(showBetReferralSelector);
     const showSettings = useRecoilValue(showBettingSettingsSelector);
 
     const isBetslipDisabled = isPlaceBetLoading && !hasOffer;
@@ -60,11 +57,6 @@ const BetslipContent = () => {
             <S_BetslipBetList isMultipleSystemTabs={!isSingleTab}>
                 <BetslipBetList />
 
-                {showBetReferral && (
-                    <S_MultipleBetReferralEnabled>
-                        <BetReferralEnabled />
-                    </S_MultipleBetReferralEnabled>
-                )}
                 {showSettings && <BettingSettings />}
             </S_BetslipBetList>
 

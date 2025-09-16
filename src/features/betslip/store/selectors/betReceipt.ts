@@ -1,4 +1,3 @@
-import every from 'lodash/every';
 import isEmpty from 'lodash/isEmpty';
 import { selector, selectorFamily } from 'recoil';
 
@@ -8,9 +7,6 @@ import { getShortOddsFormat } from 'src/utils/common';
 import { identifyBetType } from '../../helpers/combinations';
 import { calcTotalOdds } from '../../helpers/price';
 import { betReceiptAtom } from '../atoms/betReceipt';
-
-import { betslipBetsSelector } from './betslipBets';
-import { isSingleTabSelector } from './betslipTab';
 
 export const betTypeNameSelector = selector({
     key: 'betTypeNameSelector',
@@ -62,14 +58,5 @@ export const showBetReceiptTotalOddsSelector = selector({
         const betType = get(identifiedBetTypeSelector);
 
         return legs.length > 1 && betType === PlacedBetType.Multi;
-    },
-});
-
-export const showBetReferralSelector = selector({
-    key: 'showBetReferralSelector',
-    get: ({ get }) => {
-        const isSingleTab = get(isSingleTabSelector);
-
-        return every(get(betslipBetsSelector), 'betReferralEnabled') && !isSingleTab;
     },
 });

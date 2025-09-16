@@ -23,12 +23,11 @@ import { removeBetslipBetTask } from '../../store/tasks/betslipBet/remove';
 import { closeNumpadTask } from '../../store/tasks/numpad';
 import { defineBetslipTabAfterRemoveLegTransaction } from '../../store/transactions/betslipTab';
 import { isMultiBetType } from '../../typeGuards/bet';
-import BetReferralEnabled from '../BetReferralEnabled/BetReferralEnabled';
 import StakeNumpad from '../StakeNumpad/StakeNumpad';
 
 import CardContent from './CardContent/CardContent';
 import CardHeader from './CardHeader/CardHeader';
-import { S_SingleBetReferralEnabled, S_SelectionContainer, S_StakeNumpadContainer } from './styled';
+import { S_SelectionContainer, S_StakeNumpadContainer } from './styled';
 
 const SelectionItem = ({ leg }: { leg: Leg }) => {
     const { maxStake = 0, betReferralEnabled = false, eventRevision } = leg;
@@ -51,8 +50,6 @@ const SelectionItem = ({ leg }: { leg: Leg }) => {
         useSelectionStake(betId);
 
     const isSingleTab = activeTab === BetslipTab.Single;
-
-    const showBetReferral = betReferralEnabled && isSingleTab;
 
     useEffect(() => {
         closeNumpad(numpadId);
@@ -106,12 +103,6 @@ const SelectionItem = ({ leg }: { leg: Leg }) => {
                         resetStakes={resetStake}
                     />
                 </S_StakeNumpadContainer>
-            )}
-
-            {showBetReferral && (
-                <S_SingleBetReferralEnabled showNumpad={showNumpad}>
-                    <BetReferralEnabled />
-                </S_SingleBetReferralEnabled>
             )}
         </S_SelectionContainer>
     );
