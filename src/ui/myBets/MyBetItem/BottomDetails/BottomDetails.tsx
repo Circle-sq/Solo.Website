@@ -7,7 +7,6 @@ import { calcTotalOdds } from '@solo-betslip/helpers/price';
 import { FreeBetsLabel, FreeBetsLabelElWrapper, FreeBetsSelect } from '@solo-betslip/ui/freeBet/dropdown/styled';
 
 import { useAppStateContext } from 'src/appState/AppState';
-import useTranslatedCurrency from 'src/appState/customHooks/useTranslatedCurrency';
 import { hasStartingPriceType } from 'src/common/helpers/price';
 import type { MyBet } from 'src/common/types/myBet';
 import { PriceType } from 'src/common/types/selectionPrice';
@@ -36,7 +35,6 @@ interface Props {
 
 const BottomDetails = ({ bet, isSettledOrCancelledBet, hasFreeBetCredits }: Props) => {
     const { legs, currency, totalStake, payout, potentialReturns, type: betType } = bet;
-    const translatedCurrency = useTranslatedCurrency();
 
     const oddsFormat = useAtomValue(oddsFormatSelector);
 
@@ -90,7 +88,7 @@ const BottomDetails = ({ bet, isSettledOrCancelledBet, hasFreeBetCredits }: Prop
                                 </FreeBetsLabel>
                             </FreeBetsSelect>
                         ) : (
-                            moneyWithoutSymbol(totalStake, currency, translatedCurrency)
+                            moneyWithoutSymbol(totalStake, currency)
                         )}
                     </S_StakeOddValue>
                 </S_BetBottomCol>
@@ -114,7 +112,7 @@ const BottomDetails = ({ bet, isSettledOrCancelledBet, hasFreeBetCredits }: Prop
                             </S_StakeOddTitle>
 
                             <S_PotentialReturns data-testid='possibleWinnings'>
-                                {moneyWithoutSymbol(payout, currency, translatedCurrency)}
+                                {moneyWithoutSymbol(payout, currency)}
                             </S_PotentialReturns>
                         </S_RightAlign>
                     ) : (
@@ -135,7 +133,7 @@ const BottomDetails = ({ bet, isSettledOrCancelledBet, hasFreeBetCredits }: Prop
                                 {hasStartingPriceType(legs) ? (
                                     <I18n langKey='bets.selection.na.label' defaultText='n/a' />
                                 ) : (
-                                    moneyWithoutSymbol(potentialReturns, currency, translatedCurrency)
+                                    moneyWithoutSymbol(potentialReturns, currency)
                                 )}
                             </S_PotentialReturns>
                         </S_RightAlign>

@@ -64,7 +64,7 @@ export const walletSelector = atom((get) => {
 export const currencySelector = atom((get) => {
     const wallet = get(walletSelector);
 
-    return wallet?.currency ?? Currency.KRW;
+    return wallet?.currency ?? Currency.GBP;
 });
 
 export const playableBalanceSelector = atom((get) => {

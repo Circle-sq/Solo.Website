@@ -131,17 +131,15 @@ export function money(
         return removeDecimals(result);
     }
 
-    return `${result} ${currencySymbol}`;
+    return `${currencySymbol} ${result}`;
 }
 
-export function moneyWithoutSymbol(amount: number | null, currency: string, translatedCurrency: string): string {
+export function moneyWithoutSymbol(amount: number | null, currency: string): string {
     if (has(CryptoCurrency, currency.toUpperCase())) {
-        return `${amount} ${currency}`;
+        return `${currency} ${amount}`;
     }
 
-    return currency === Currency.KRW && !(amount === null || isNaN(amount))
-        ? `${money(amount, currency, ',', false)} ${translatedCurrency}`
-        : money(amount, currency, ',', false);
+    return money(amount, currency, ',', false);
 }
 
 function formatAmount(amount: number, separator: string): string {
