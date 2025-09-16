@@ -12,7 +12,7 @@ export const S_SummaryTotal = styled.div`
     align-items: center;
     font-size: 16px;
     height: 22px;
-    color: ${cssColor('--alert-success-text')};
+    color: ${cssColor('--alert-primary-text')};
 
     &:not(:last-child) {
         margin-bottom: 4px;

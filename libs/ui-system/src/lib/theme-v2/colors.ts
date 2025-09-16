@@ -8,6 +8,7 @@ import { ioLightBlue } from '../colors/io-blue-light';
 import { red } from '../colors/red';
 import { contrastRed } from '../colors/red-contrast';
 import { yellow } from '../colors/yellow';
+import { orange } from '../colors/orange';
 
 export type Palette = typeof palette;
 export type PaletteColor = keyof Palette;
@@ -23,6 +24,7 @@ export const palette = {
     ioDarkBlue,
     red,
     yellow,
+    orange,
 } as const satisfies Record<string, PartialShades>;
 
 export const cssKeywords = ['transparent', 'inherit', 'initial', 'unset', 'currentColor'] as const;

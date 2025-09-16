@@ -166,6 +166,16 @@ export const variables = {
         neon: 'yellow.300',
         contrast: 'contrastRed.400',
     },
+    '--alert-primary-text': {
+        blue: 'orange.300',
+        neon: 'orange.300',
+        contrast: 'contrastRed.300',
+    },
+    '--alert-secondary-text': {
+        blue: 'orange.400',
+        neon: 'orange.400',
+        contrast: 'contrastRed.300',
+    },
 
     '--alert-inline-success-color': {
         blue: 'green.600',

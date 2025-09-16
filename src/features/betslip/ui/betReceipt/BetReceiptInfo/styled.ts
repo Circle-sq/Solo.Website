@@ -9,7 +9,7 @@ export const S_BetReceiptInfoRow = styled.div<{ highlight?: boolean }>`
     font-size: 16px;
     margin: 0 6px 5px;
     font-weight: ${fontWeight.semibold};
-    color: ${({ highlight }) => (highlight ? cssColor('--text-success') : cssColor('--text-info-color'))};
+    color: ${({ highlight }) => (highlight ? cssColor('--alert-secondary-text') : cssColor('--text-info-color'))};
 `;
 
 export const S_BetReceiptActions = styled.div`
