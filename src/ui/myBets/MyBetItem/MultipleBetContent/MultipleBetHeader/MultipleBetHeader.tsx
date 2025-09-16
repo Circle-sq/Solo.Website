@@ -36,7 +36,7 @@ const MultipleBetHeader = ({ betType, betStatus, legsCounter, isOpen }: Props) =
                     <S_MultipleBetHeaderText>
                         <span>{legsCounter} </span>
                         <span>
-                            <I18n langKey='bets.selection.picks.label' defaultText='picks' />
+                            <I18n langKey='bets.selection.selections.label' defaultText='selections' />
                         </span>
                     </S_MultipleBetHeaderText>
 

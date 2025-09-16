@@ -117,7 +117,7 @@ const MESSAGES: Record<string, (getTranslation: (key: string, defaultText: strin
     'Cashout:cashout-value-changed': (getTranslation) =>
         getTranslation('errors.cashout.changed', 'Cashout value has changed'),
     'Selection:maximum': (getTranslation) =>
-        getTranslation('window.betslip-full.message', 'You have added the maximum number of picks to your bet slip.'),
+        getTranslation('window.betslip-full.message', 'You have added the maximum number of selections to your bet slip.'),
     missing: (getTranslation) => getTranslation('errors.missing', 'Something is missing.'),
 
     ERROR_UNKNOWN: (getTranslation) => getTranslation('errors.unknown', 'Unknown error'),

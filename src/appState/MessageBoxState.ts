@@ -88,7 +88,7 @@ export class MessageBoxState {
                 title: getTranslation('window.betslip-full.title', 'Bet slip full'),
                 message: getTranslation(
                     'window.betslip-full.message',
-                    'You have added the maximum number of picks to your bet slip.',
+                    'You have added the maximum number of selections to your bet slip.',
                 ),
             });
 
@@ -99,7 +99,7 @@ export class MessageBoxState {
             getTranslation('window.betslip-full.title', 'Bet slip full'),
             getTranslation(
                 'window.betslip-full.message',
-                'You have added the maximum number of picks to your bet slip.',
+                'You have added the maximum number of selections to your bet slip.',
             ),
         );
     };

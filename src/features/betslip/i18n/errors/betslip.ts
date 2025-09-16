@@ -30,7 +30,7 @@ export const betslipNotifications: BetslipNotifications = {
         key: BetslipErrorCode.MinimumActiveSelectionsMultiTab,
         type: 'warning',
         langKey: 'betslip.minimum.active.selections.message',
-        defaultText: 'Select at least {count} combinable picks.',
+        defaultText: 'Select at least {count} combinable selections.',
         getParams: (value: string) => ({ count: value }),
     },
     ...offerErrors,
