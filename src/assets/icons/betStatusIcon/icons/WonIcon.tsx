@@ -3,17 +3,9 @@ import SvgElement from 'src/assets/icons/SvgElement/SvgElement';
 
 const WonIcon = ({ testId = 'testId' }: Testable) => (
     <SvgElement testId={testId}>
-        <path
-            fill='#8BD97F'
-            d='M4.5957 7.81975L7.36904 10.6555L12.0976 6.21122L11.12 5.22668L7.36904 8.69335L5.5733 6.84215L4.5957 7.81975Z'
-        />
-        <path
-            fill='#8BD97F'
-            fillRule='evenodd'
-            clipRule='evenodd'
-            d='M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z'
-            data-testid={`bet-status-icon-${testId}`}
-        />
+        <rect width="100%" height="100%" fill="transparent" />
+        <circle cx="8" cy="8" r="7.5" fill="none" stroke="#8BD97F" stroke-width="1" />
+        <text data-testid={`bet-status-icon-${testId}`} x="8" y="12" text-anchor="middle" font-size="11" font-family="Noto Sans" fill="#8BD97F">W</text>
     </SvgElement>
 );
 
