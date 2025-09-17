@@ -1,4 +1,4 @@
-import InfoBlueIcon from 'libs/ui-icons-svg/src/InfoBlueIcon';
+import InfoIcon from 'libs/ui-icons-svg/src/InfoIcon';
 
 import { S_MarketDescription } from 'src/ui/events/DisplayTemplates/styled';
 
@@ -14,7 +14,7 @@ const MarketDescription = ({ description }: Props) => {
     return (
         <S_MarketDescription>
             <div>
-                <InfoBlueIcon fontSize='small' />
+                <InfoIcon fontSize='small' />
             </div>
             {description}
         </S_MarketDescription>

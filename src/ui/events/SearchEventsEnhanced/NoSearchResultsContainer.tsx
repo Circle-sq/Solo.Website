@@ -1,7 +1,7 @@
 import { Stack, Typography } from '@mui/material';
 import { useAtomValue, useSetAtom } from 'jotai';
 
-import { InfoBlueIcon as InfoIcon, LiveSportsIcon, RightArrowIcon, SportsIcon } from '@solo-ui/icons/svg';
+import { InfoIcon, LiveSportsIcon, RightArrowIcon, SportsIcon } from '@solo-ui/icons/svg';
 import { cssColor } from '@solo-ui/system';
 import { useWindowWidth } from '@solo-hooks';
 

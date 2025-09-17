@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, GenericColors, RedPalette } from '@solo-ui/system';
+import { breakpoints, cssColor, GenericColors } from '@solo-ui/system';
 
 export const Live = styled.span`
     margin-right: 5px;
@@ -24,10 +24,10 @@ export const S_LiveLabelTag = styled(Live)`
 export const S_LiveShort = styled(Live)`
     font-style: italic;
     margin-right: 8px;
-    color: ${RedPalette.red4};
+    color: ${cssColor('--text-live')};
 
     &:before {
         border-color: ${GenericColors.transparent} ${GenericColors.transparent} ${GenericColors.transparent}
-            ${RedPalette.red4};
+            ${cssColor('--text-live')};
     }
 `;

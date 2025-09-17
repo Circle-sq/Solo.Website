@@ -1,6 +1,6 @@
 import { memo } from 'react';
 
-import { InfoBlueIcon } from '@solo-ui/icons/svg';
+import { InfoIcon } from '@solo-ui/icons/svg';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { I18n } from 'src/ui/common/Language/I18n';
@@ -28,7 +28,7 @@ const MediaStreamNotification = (props: { streamId: string | null; hasLiveStream
                 <S_Notification>
                     <InfoMessage>
                         <S_MarginBox>
-                            <InfoBlueIcon style={{ fontSize: '14px' }} />
+                            <InfoIcon style={{ fontSize: '14px' }} />
                         </S_MarginBox>
                         <I18n
                             langKey='media.stream.video.dropdown.footer.label'

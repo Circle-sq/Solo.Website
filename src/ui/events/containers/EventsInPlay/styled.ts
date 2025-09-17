@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, fontWeight, GenericColors, RedPalette } from '@solo-ui/system';
+import { breakpoints, cssColor, fontWeight, GenericColors } from '@solo-ui/system';
 
 import LiveLabel from 'src/ui/common/LiveLabel/LiveLabel';
 
@@ -29,7 +29,7 @@ export const Live = styled(LiveLabel)`
     padding-left: 0;
     font-size: 14px;
     font-weight: ${fontWeight.bold};
-    color: ${RedPalette.red4};
+    color: ${cssColor('--text-live')};
     font-family: 'Noto Sans', sans-serif;
 
     &:before {

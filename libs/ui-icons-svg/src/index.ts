@@ -23,7 +23,7 @@ export { default as GlobeIcon } from './GlobeIcon';
 export { default as GolfIcon } from './GolfIcon';
 export { default as HideIcon } from './HideIcon';
 export { default as HighlightsCupIcon } from './HighlightsCupIcon';
-export { default as InfoBlueIcon } from './InfoBlueIcon';
+export { default as InfoIcon } from './InfoIcon';
 export { default as InfoOutlineIcon } from './InfoOutlineIcon';
 export { default as LeftArrowIcon } from './LeftArrowIcon';
 export { default as LeftUpArrowIcon } from './LeftUpArrowIcon';

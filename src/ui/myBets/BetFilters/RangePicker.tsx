@@ -1,4 +1,4 @@
-import { InfoBlueIcon } from '@solo-ui/icons/svg';
+import { InfoIcon } from '@solo-ui/icons/svg';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 import type { DateRange, RangeType } from 'src/ui/myBets/store/types';
@@ -34,7 +34,7 @@ const RangePicker = ({ range, handleDateChange }: Props) => {
             {!isValid && (
                 <S_DateRangeInfo>
                     <S_MarginBox>
-                        <InfoBlueIcon fontSize='small' />
+                        <InfoIcon fontSize='small' />
                     </S_MarginBox>
                     <I18n
                         langKey='mybets.filter.popup.range.info.label'

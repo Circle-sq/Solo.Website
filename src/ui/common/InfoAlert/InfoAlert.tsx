@@ -1,14 +1,13 @@
 import type { PropsWithChildren, ReactElement } from 'react';
 
 import type { BetError } from '@solo-betslip/api/types/error';
-import { InfoBlueIcon } from '@solo-ui/icons/svg';
+import { InfoIcon } from '@solo-ui/icons/svg';
 
 import { ErrorIcon, SuccessIcon, WarningIcon } from 'src/assets/icons/alertIcons';
 
 import { getError } from './errors';
 import { S_InfoAlert, S_InfoBodyMessage, S_InfoHeaderMessage, S_InfoMessage, S_InfoTitleMessage } from './styled';
 import type { AlertIconConfig } from './types';
-import { cssColor } from '@solo-ui/system';
 
 interface Props {
     type: string;
@@ -32,7 +31,7 @@ const InfoAlert = (props: PropsWithChildren<Props>) => {
             icon: <SuccessIcon />,
         },
         info: {
-            icon: <InfoBlueIcon fontSize='small' color={cssColor('--icon-info-bg')} />,
+            icon: <InfoIcon fontSize='small' />,
         },
     };
 

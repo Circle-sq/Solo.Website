@@ -137,13 +137,13 @@ export const variables = {
         contrast: 'contrastRed.700',
     },
     '--alert-info-bg': {
-        blue: 'lightBlue.900',
-        neon: 'ioLightBlue.500',
+        blue: 'orange.500',
+        neon: 'orange.500',
         contrast: 'contrastRed.900',
     },
     '--alert-info-text': {
-        blue: 'lightBlue.200',
-        neon: 'lightBlue.200',
+        blue: 'orange.300',
+        neon: 'orange.300',
         contrast: 'contrastRed.200',
     },
     '--alert-success-bg': {
@@ -619,8 +619,8 @@ export const variables = {
         contrast: 'contrastRed.500',
     },
     '--chip-filters-active-bg': {
-        blue: 'lightBlue.700',
-        neon: 'ioLightBlue.300',
+        blue: 'orange.300',
+        neon: 'orange.300',
         contrast: 'contrastRed.400',
     },
     '--chip-filters-active-border': {
@@ -794,8 +794,8 @@ export const variables = {
         contrast: 'white',
     },
     '--link-selected-bg': {
-        blue: 'red.600',
-        neon: 'red.600',
+        blue: 'orange.300',
+        neon: 'orange.300',
         contrast: 'contrastRed.600',
     },
     '--link-active-border': {
@@ -1468,8 +1468,8 @@ export const variables = {
         contrast: 'contrastRed.800',
     },
     '--tabs-active-border': {
-        blue: 'lightBlue.500',
-        neon: 'lightBlue.500',
+        blue: 'orange.300',
+        neon: 'orange.300',
         contrast: 'contrastRed.300',
     },
     '--tabs-hover-bg': {
@@ -1524,8 +1524,8 @@ export const variables = {
         contrast: 'contrastRed.700',
     },
     '--tab-betting-active-bg': {
-        blue: 'lightBlue.700',
-        neon: 'ioLightBlue.300',
+        blue: 'orange.300',
+        neon: 'orange.300',
         contrast: 'contrastRed.400',
     },
 
@@ -1560,8 +1560,8 @@ export const variables = {
         contrast: 'contrastRed.50',
     },
     '--text-live': {
-        blue: 'red.600',
-        neon: 'red.600',
+        blue: 'orange.300',
+        neon: 'orange.300',
         contrast: 'white',
     },
     '--text-brand-color': {
@@ -1719,18 +1719,13 @@ export const variables = {
         contrast: 'contrastRed.600',
     },
     '--icon-info-color': {
-        blue: 'darkBlue.400',
-        neon: 'darkBlue.300',
+        blue: 'orange.300',
+        neon: 'orange.300',
         contrast: 'contrastRed.600',
     },
     '--icon-arrow-color': {
         blue: 'grey.400',
         neon: 'grey.50',
-        contrast: 'contrastRed.400',
-    },
-    '--icon-info-bg': {
-        blue: 'lightBlue.500',
-        neon: 'lightBlue.200',
         contrast: 'contrastRed.400',
     },
     '--popover-shadow-color': {
