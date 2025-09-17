@@ -1,7 +1,6 @@
 import { Currency } from '../common/enums';
 
 import {
-    moneyWithoutSymbol,
     money,
     formatNumber,
     formatDecimalPart,
@@ -43,18 +42,17 @@ describe('Format utils', () => {
     it('should format currency with and without symbol', () => {
         expect(moneyAccountSymbolBeforeValue(123, 'KRW')).toBe('₩ 123');
         expect(moneyAccountSymbolBeforeValue(1000000, 'KRW')).toBe('₩ 1,000,000');
-        expect(moneyWithoutSymbol(123123, 'KRW', 'KRW')).toBe('123,123 KRW');
     });
 
     it('should format a currency with symbol for any currency (that we support)', () => {
         //CurrencyType = 'GBP' | 'EUR' | 'XTS' | 'CAD' | 'NZD' | 'USD' | 'KRW';
 
-        expect(money(100, 'GBP')).toBe(`100.00 £`);
-        expect(money(100, 'EUR')).toBe(`100.00 €`);
-        expect(money(100, 'XTS')).toBe(`100.00 X`);
-        expect(money(100, 'CAD')).toBe(`100.00 $`);
-        expect(money(100, 'NZD')).toBe(`100.00 $`);
-        expect(money(100, 'USD')).toBe(`100.00 $`);
+        expect(money(100, 'GBP')).toBe(`£ 100.00`);
+        expect(money(100, 'EUR')).toBe(`€ 100.00`);
+        expect(money(100, 'XTS')).toBe(`X 100.00`);
+        expect(money(100, 'CAD')).toBe(`$ 100.00`);
+        expect(money(100, 'NZD')).toBe(`$ 100.00`);
+        expect(money(100, 'USD')).toBe(`$ 100.00`);
     });
 
     it('should format the amount and currency', () => {

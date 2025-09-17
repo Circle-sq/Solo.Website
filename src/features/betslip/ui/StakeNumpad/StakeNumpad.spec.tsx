@@ -40,11 +40,11 @@ describe('StakeNumpad', () => {
 
     it('should display presets and calls event listener', () => {
         const { getByTestId } = render({ ...defaultProps });
-        const presetButtons = PRESETS.map((preset) => getByTestId(`preset-${formatPresetValue(preset)('KRW').value}`));
+        const presetButtons = PRESETS.map((preset) => getByTestId(`preset-${formatPresetValue(preset)('GBP').value}`));
 
         presetButtons.forEach((button, index) => {
             fireEvent.click(button);
-            expect(defaultProps.onPresetChange).toHaveBeenCalledWith(formatPresetValue(PRESETS[index])('KRW').value);
+            expect(defaultProps.onPresetChange).toHaveBeenCalledWith(formatPresetValue(PRESETS[index])('GBP').value);
         });
     });
 

@@ -289,7 +289,7 @@ describe('BurgerMenu', () => {
             'Motorbikes', '1',
             'Click to see the full list',
             'English',
-            'Freebet', '1', '₩ 10,000',
+            'Freebet', '1', '£ 10,000.00',
         ].join(''));
 
         await userEvent.click(getByTestId(/freeBetDropdownToggle/i));
@@ -312,8 +312,8 @@ describe('BurgerMenu', () => {
             'Formula One', '4',
             'Click to see the full list',
             'English',
-            'Freebet', '1', '₩ 10,000',
-            'Free bet!', '₩ 10,000',
+            'Freebet', '1', '£ 10,000.00',
+            'Free bet!', '£ 10,000',
             '* My free bet description',
             `Validity: ${format(new Date('2024-11-22T11:30:31Z'), DATE_FORMAT.NUMERIC_FULL_DATE_TIME_W_SEPARATOR)}`
         ].join(''));

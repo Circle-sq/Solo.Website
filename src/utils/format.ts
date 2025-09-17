@@ -134,12 +134,14 @@ export function money(
     return `${currencySymbol} ${result}`;
 }
 
-export function moneyWithoutSymbol(amount: number | null, currency: string): string {
+export function moneyWithoutSymbol(amount: number | null, currency: string, translatedCurrency: string): string {
     if (has(CryptoCurrency, currency.toUpperCase())) {
         return `${currency} ${amount}`;
     }
 
-    return money(amount, currency, ',', false);
+    return currency === Currency.KRW && !(amount === null || isNaN(amount))
+        ? `${money(amount, currency, ',', false)} ${translatedCurrency}`
+        : money(amount, currency, ',', false);
 }
 
 function formatAmount(amount: number, separator: string): string {

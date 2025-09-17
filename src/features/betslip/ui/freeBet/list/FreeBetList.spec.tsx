@@ -28,7 +28,7 @@ const renderComponent = (props = defaultProps): RenderResult => renderWithAppWra
 describe('FreeBetItem', () => {
     it('should render with default props', () => {
         const { getByTestId } = renderComponent();
-        expect(getByTestId('freebetAmount')).toHaveTextContent(`${CurrencySymbol.KRW} ${10}`);
+        expect(getByTestId('freebetAmount')).toHaveTextContent(`${CurrencySymbol.GBP} ${10}`);
         expect(getByTestId('freebetValidity')).toHaveTextContent(`Validity: 2023.12.29 | 00:00`);
     });
 

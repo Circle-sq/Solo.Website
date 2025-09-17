@@ -114,7 +114,7 @@ const getSingleBetMock = (legs = getSingleBetLeg()): MyBet => {
         affiliate: null,
         eachWay: false,
         placedAt: '2022-08-03T09:39:42Z',
-        currency: 'KRW',
+        currency: 'GBP',
         status: 'open',
         totalStake: totalStake,
         stakePerLine: 500000,
@@ -142,7 +142,7 @@ const getSingleBetMock = (legs = getSingleBetLeg()): MyBet => {
                     type: 'bet-placement',
                     balanceDelta: -500000,
                     balanceAfter: null,
-                    currency: 'KRW',
+                    currency: 'GBP',
                 },
             ],
             tags: {
@@ -205,14 +205,14 @@ describe('BottomDetails', () => {
         const { getByTestId } = render(defaultProps, initState);
 
         const stakeValue = getByTestId('stakeValue');
-        const stakeFormatted = Number(totalStake).toLocaleString();
-        expect(stakeValue.innerHTML).toBe(`${stakeFormatted} KRW`);
+        const stakeFormatted = `${Number(totalStake).toLocaleString()}.00`;
+        expect(stakeValue.innerHTML).toBe(`£ ${stakeFormatted}`);
 
         const oddsDecimal = priceSingleBet.d.toString();
         expect(getByTestId('totalOdds').innerHTML).toEqual(oddsDecimal);
 
-        const potentialReturnsFormatted = Number(potentialReturns).toLocaleString();
-        expect(getByTestId('possibleWinnings').innerHTML).toBe(`${potentialReturnsFormatted} KRW`);
+        const potentialReturnsFormatted = `${Number(potentialReturns).toLocaleString()}.00`;
+        expect(getByTestId('possibleWinnings').innerHTML).toBe(`£ ${potentialReturnsFormatted}`);
     });
 
     it('should provide single bet free bet details', () => {
@@ -225,13 +225,13 @@ describe('BottomDetails', () => {
         const stakeValue = getByTestId('stakeValue');
         const stakeFormatted = Number(totalStake).toLocaleString();
         expect(stakeValue).toHaveTextContent(`Free bet!`);
-        expect(stakeValue).toHaveTextContent(`₩ ${stakeFormatted}`);
+        expect(stakeValue).toHaveTextContent(`£ ${stakeFormatted}`);
 
         const oddsDecimal = priceSingleBet.d.toString();
         expect(getByTestId('totalOdds').innerHTML).toEqual(oddsDecimal);
 
-        const potentialReturnsFormatted = Number(potentialReturns).toLocaleString();
-        expect(getByTestId('possibleWinnings').innerHTML).toBe(`${potentialReturnsFormatted} KRW`);
+        const potentialReturnsFormatted = `${Number(potentialReturns).toLocaleString()}.00`;
+        expect(getByTestId('possibleWinnings').innerHTML).toBe(`£ ${potentialReturnsFormatted}`);
     });
 
     it('should provide settled or cancelled bet details', () => {
@@ -244,7 +244,7 @@ describe('BottomDetails', () => {
         const stakeValue = getByTestId('stakeValue');
         const stakeFormted = Number(totalStake).toLocaleString();
         expect(stakeValue).toHaveTextContent(`Free bet!`);
-        expect(stakeValue).toHaveTextContent(`₩ ${stakeFormted}`);
+        expect(stakeValue).toHaveTextContent(`£ ${stakeFormted}`);
 
         const oddsDecimal = priceSingleBet.d.toString();
         expect(getByTestId('totalOdds').innerHTML).toEqual(oddsDecimal);
@@ -260,11 +260,11 @@ describe('BottomDetails', () => {
         const { getByTestId } = render(defaultProps, initState);
 
         const stakeValue = getByTestId('stakeValue');
-        const stakeFormted = Number(totalStake).toLocaleString();
-        expect(stakeValue.innerHTML).toBe(`${stakeFormted} KRW`);
+        const stakeFormted = `${Number(totalStake).toLocaleString()}.00`;
+        expect(stakeValue.innerHTML).toBe(`£ ${stakeFormted}`);
 
-        const potentialReturnsFormted = Number(potentialReturns).toLocaleString();
-        expect(getByTestId('possibleWinnings').innerHTML).toBe(`${potentialReturnsFormted} KRW`);
+        const potentialReturnsFormted = `${Number(potentialReturns).toLocaleString()}.00`;
+        expect(getByTestId('possibleWinnings').innerHTML).toBe(`£ ${potentialReturnsFormted}`);
     });
 
     it('should provide bet details with spPrice = null', () => {
@@ -275,8 +275,8 @@ describe('BottomDetails', () => {
         const { getByTestId } = render(defaultProps, initState);
 
         const stakeValue = getByTestId('stakeValue');
-        const stakeFormted = Number(totalStake).toLocaleString();
-        expect(stakeValue.innerHTML).toBe(`${stakeFormted} KRW`);
+        const stakeFormted = `${Number(totalStake).toLocaleString()}.00`;
+        expect(stakeValue.innerHTML).toBe(`£ ${stakeFormted}`);
 
         expect(getByTestId('totalOdds').innerHTML).toBe(`SP`);
 
@@ -291,8 +291,8 @@ describe('BottomDetails', () => {
         const { getByTestId } = render(defaultProps, initState);
 
         const stakeValue = getByTestId('stakeValue');
-        const stakeFormted = Number(totalStake).toLocaleString();
-        expect(stakeValue.innerHTML).toBe(`${stakeFormted} KRW`);
+        const stakeFormted = `${Number(totalStake).toLocaleString()}.00`;
+        expect(stakeValue.innerHTML).toBe(`£ ${stakeFormted}`);
 
         const oddsDecimal = priceSP.d.toFixed(2).toString();
         expect(getByTestId('totalOdds').innerHTML).toEqual(oddsDecimal);

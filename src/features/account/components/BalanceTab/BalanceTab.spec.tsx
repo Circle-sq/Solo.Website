@@ -19,7 +19,7 @@ const userData = {
     id: 1,
     oddsFormat: OddsFormatLong.Decimal,
     wallet: {
-        playableBalance: 20000000000,
+        playableBalance: 20000,
     },
 } as UserData;
 
@@ -110,7 +110,7 @@ describe('BalanceTab', () => {
     });
 
     it('balance label section should show current available balance value', async () => {
-        const currentBalance = '₩ 20,000,000,000';
+        const currentBalance = '£ 20,000.00';
         const { findByTestId } = render();
         const totalBalanceValue = await findByTestId('balanceTab-totalBalanceValue');
 
