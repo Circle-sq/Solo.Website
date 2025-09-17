@@ -9,7 +9,7 @@ import { fontCssForIcon, fontCssSportIcons, fontCssThemeIcons } from 'src/ui/com
 import mainStyle from '../../../src_sassbuild/buildcss/main.css?url';
 
 import getUniverseFont from './font-meta';
-import faviconBet_East from './images/bet_east_favicon.webp';
+import favicon from './images/favicon.svg';
 
 interface HeaderItemMetaType {
     id: string;
@@ -65,7 +65,7 @@ export type HeaderItemType =
     | HeaderItemLinkType
     | HeaderItemLinkSimpleType;
 
-const getFaviconUrl = (): string => faviconBet_East;
+const getFaviconUrl = (): string => favicon;
 
 const getTitlePage = (): string => 'SOLO';
 
