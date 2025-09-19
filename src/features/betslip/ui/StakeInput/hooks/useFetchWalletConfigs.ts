@@ -26,7 +26,7 @@ export interface WalletConfig {
     currencyConfig: CurrencyConfig;
 }
 
-const useFetchWalletConfigs = (currency = Currency.KRW) => {
+const useFetchWalletConfigs = (currency = Currency.GBP) => {
     const getWalletConfigs = async () => {
         return api.get<WalletConfig>('/wallet-configs');
     };

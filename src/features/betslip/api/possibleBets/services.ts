@@ -43,7 +43,7 @@ export const getPossibleBetsApi = async ({
     const uncheckedBetIds = getValue(snapshot, uncheckedBetIdsAtom);
     const multipleBetStakes = getValue(snapshot, multipleBetStakesAtom);
     const stakePerLine = get(multipleBetStakes, activeBetslipTab, 0);
-    const currency = get(userData, 'wallet.currency', Currency.KRW);
+    const currency = get(userData, 'wallet.currency', Currency.GBP);
 
     try {
         const data = await api.post<PossibleBetApiResponse, PossibleBetApiData | null>(

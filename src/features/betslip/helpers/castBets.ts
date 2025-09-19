@@ -61,7 +61,7 @@ export const formatCastMultipleBet = (
     return {
         id: betId,
         country: { value: country ?? '' },
-        currency: { value: wallet.currency ?? Currency.KRW },
+        currency: { value: wallet.currency ?? Currency.GBP },
         eachWay,
         legs: map(legs, getCastBetLeg),
         stakePerLine,

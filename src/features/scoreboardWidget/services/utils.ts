@@ -47,7 +47,7 @@ export const formatPossibleBetsPayload = (
         channel: getChannel(),
         combinations: {},
         currency: {
-            value: userData?.wallet?.currency ?? Currency.KRW,
+            value: userData?.wallet?.currency ?? Currency.GBP,
         },
     };
 
@@ -79,7 +79,7 @@ export const formatPlaceBetPayload = (
                     value: userData?.country ?? '',
                 },
                 currency: {
-                    value: userData?.wallet?.currency ?? Currency.KRW,
+                    value: userData?.wallet?.currency ?? Currency.GBP,
                 },
                 eachWay: false,
                 legs: [

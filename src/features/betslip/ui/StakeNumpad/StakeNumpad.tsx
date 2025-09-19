@@ -7,7 +7,6 @@ import { currencySelector } from '@solo-account/store/selectors';
 import { BinIcon } from '@solo-ui/icons/svg';
 import { cssColor } from '@solo-ui/system';
 
-import { Currency } from 'src/common/enums';
 import { I18n } from 'src/ui/common/Language/I18n';
 
 import { closeNumpadTask } from '../../store/tasks/numpad';
@@ -52,9 +51,8 @@ const StakeNumpad = ({
     const numpadKeyboardChangeHandler = (input: string) => () => onNumpadKeyboardChange(input);
 
     const closeNumpad = useRecoilCallback(closeNumpadTask, []);
-    const isKRW = currency === Currency.KRW;
 
-    const precisionType = !isKRW && isMobile ? decimalSeparator : controlFloat;
+    const precisionType = isMobile ? decimalSeparator : controlFloat;
 
     return (
         <S_Container data-testid='stakeNumpad'>

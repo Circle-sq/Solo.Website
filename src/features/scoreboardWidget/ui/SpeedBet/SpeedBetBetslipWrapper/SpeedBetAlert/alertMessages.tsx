@@ -140,7 +140,7 @@ export const minMaxErrors = {
             if (problem.details && 'minLineStake' in problem.details) {
                 const { minLineStake } = problem.details;
 
-                return { minStake: minLineStake ?? 0, currency: currency || 'KRW' };
+                return { minStake: minLineStake ?? 0, currency: currency || 'GBP' };
             }
 
             return undefined;
@@ -160,7 +160,7 @@ export const minMaxErrors = {
             if (problem.details && 'maxStakePerLine' in problem.details) {
                 const { maxStakePerLine } = problem.details;
 
-                return { maxStake: maxStakePerLine ?? 0, currency: currency || 'KRW' };
+                return { maxStake: maxStakePerLine ?? 0, currency: currency || 'GBP' };
             }
 
             return undefined;
