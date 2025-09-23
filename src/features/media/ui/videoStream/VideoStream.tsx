@@ -2,12 +2,14 @@ import { useWindowWidth } from '@solo-hooks';
 import { List } from 'immutable';
 import { useAtomValue } from 'jotai';
 import isEmpty from 'lodash/isEmpty';
+import isNil from 'lodash/isNil';
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { isAuthenticatedAtom } from '@solo-account/store/atoms';
 import { useBlacklistQuery } from '@solo-api/streams/blacklist/queries';
 
+import isLocal from 'src/utils/isLocal';
 import { useAppStateContext } from 'src/appState/AppState';
 import { RequestStatus, RouteName } from 'src/common/enums';
 import type { TimeOut } from 'src/common/types/main';
@@ -157,14 +159,15 @@ const VideoStream = () => {
         !isProviderBlacklisted &&
         isAuthenticated === true &&
         (streamUrlState === RequestStatus.Ready || streamUrlState === RequestStatus.Error) &&
-        streamId !== '';
+        streamId !== '' &&
+        !isNil(streamId);
     const showMediaStreamPlayerLoginMessage = isAuthenticated === false && streamId !== '';
 
     return (
         <>
             {isDesktop && <MediaDropdown setIsDropdownListEvent={setIsDropdownListEvent} />}
 
-            {showPlayer && (
+            {showPlayer ? (
                 <MediaStreamPlayer
                     streamUrl={streamUrl}
                     isAuthenticated={isAuthenticated}
@@ -174,6 +177,21 @@ const VideoStream = () => {
                     mediaIsPlayingVideo={mediaIsPlayingVideo}
                     setMediaIsPlayingVideo={setStoreMediaIsPlayingVideo}
                     streamProvider={streamProvider}
+                />
+            ) : null}
+
+            {/* show some video stream for preview  */}
+            {isLocal() && isAuthenticated && !showPlayer && (
+                <MediaStreamPlayer
+                    streamUrl={'https://www.youtube.com/embed/09LTT0xwdfw?si=e3QxOT6igl-BN-me'}
+                    isAuthenticated={isAuthenticated}
+                    isAutoPlay={isAutoPlay}
+                    setIsAutoPlay={setIsAutoPlay}
+                    streamUrlState={RequestStatus.Ready}
+                    mediaIsPlayingVideo={mediaIsPlayingVideo}
+                    setMediaIsPlayingVideo={setStoreMediaIsPlayingVideo}
+                    streamProvider={'g-live'}
+                    isDefaultPreviewVideo
                 />
             )}
 

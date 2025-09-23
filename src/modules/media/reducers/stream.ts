@@ -16,7 +16,7 @@ import type { MediaStreamState, UpdateStreams } from './types';
 export function SET_STREAM_ID_AND_PROVIDER(state: MediaStreamState, payload: StreamSetAction): MediaStreamState {
     const videoStream = payload.videoStream;
 
-    return state.set('streamId', String(videoStream.streamId)).set('provider', videoStream.provider);
+    return state.set('streamId', videoStream?.streamId?.toString()).set('provider', videoStream.provider);
 }
 
 export function STREAM_GET_REQUEST(state: MediaStreamState): MediaStreamState {

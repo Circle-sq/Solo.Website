@@ -20,6 +20,7 @@ interface Props {
     mediaIsPlayingVideo: boolean;
     setMediaIsPlayingVideo: (value: boolean) => void;
     streamProvider: string;
+    isDefaultPreviewVideo?: boolean;
 }
 
 const MediaStreamPlayer = ({
@@ -31,6 +32,7 @@ const MediaStreamPlayer = ({
     mediaIsPlayingVideo,
     setMediaIsPlayingVideo,
     streamProvider,
+    isDefaultPreviewVideo,
 }: Props) => {
     const isMounted = useIsMounted();
 
@@ -110,7 +112,7 @@ const MediaStreamPlayer = ({
                     {isValidStreamURL ? (
                         <S_PlayerContainer>
                             {isGLiveStreamProvider ? (
-                                <GLivePlayer streamUrl={streamUrl} />
+                                <GLivePlayer streamUrl={streamUrl} isDefaultPreviewVideo={isDefaultPreviewVideo} />
                             ) : isBayesStreamProvider ? (
                                 <BayesPlayer streamUrl={streamUrl} />
                             ) : (
