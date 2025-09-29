@@ -104,7 +104,7 @@ export const S_SubNavMenu = styled.nav<Nav>`
                     &:after {
                         content: '';
                         height: 2px;
-                        background-color: ${cssColor('--tabs-tertiary-active-border')};
+                        background-color: ${cssColor('--tabs-default-active-border')};
                         position: absolute;
                         width: 100%;
                     }

@@ -59,7 +59,7 @@ export const GroupNavMenuLink = styled(Link)`
         left: 0;
         right: 0;
         position: absolute;
-        background-color: ${cssColor('--tab-active-border')};
+        background-color: ${cssColor('--tabs-default-active-border')};
         font-weight: ${fontWeight.bold};
 
         @supports (-webkit-touch-callout: none) {

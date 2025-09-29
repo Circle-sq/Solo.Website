@@ -65,13 +65,13 @@ export const S_TabButton = styled.button<{ active: boolean }>`
 
                 &:after {
                     height: 2px;
-                    background-color: ${cssColor('--tab-active-border')};
+                    background-color: ${cssColor('--tabs-default-active-border')};
                 }
 
                 &:hover:after {
                     height: 2px;
                     display: block;
-                    background-color: ${cssColor('--tab-active-border')};
+                    background-color: ${cssColor('--tabs-default-active-border')};
                 }
             `;
         }

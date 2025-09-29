@@ -39,7 +39,7 @@ export const S_TabButton = styled.button<{ isActive: boolean }>`
         right: 0;
         bottom: 0;
         height: 3px;
-        background-color: ${cssColor('--tab-active-border')};
+        background-color: ${cssColor('--tabs-default-active-border')};
         opacity: ${({ isActive = false }) => (isActive ? '1' : '0')};
         transition: opacity 0.2s;
     }

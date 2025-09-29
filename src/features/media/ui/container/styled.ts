@@ -7,7 +7,6 @@ import {
     DarkBluePalette,
     GenericColors,
     GreyPalette,
-    LightBluePalette,
     cssColor,
 } from '@solo-ui/system';
 
@@ -72,7 +71,7 @@ export const S_TabButton = styled.button<TabButtonProps>`
         right: 0;
         left: 0;
         bottom: 0;
-        background-color: ${LightBluePalette.lightBlue9};
+        background-color: ${cssColor('--tabs-default-active-border')};
     }
 
     ${(props): string => {

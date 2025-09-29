@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { GenericColors, LightBluePalette, RedPalette, fontWeight, cssColor } from '@solo-ui/system';
+import { GenericColors, RedPalette, fontWeight, cssColor } from '@solo-ui/system';
 
 import Link from 'src/utils/Router/Link';
 
@@ -49,7 +49,7 @@ export const S_BarLink = styled(Link)<{ active: boolean }>`
                 right: 0;
                 bottom: 0;
                 height: 2px;
-                background-color: ${LightBluePalette.lightBlue6};
+                background-color: ${cssColor('--tabs-default-active-border')};
             }
         `;
 
@@ -62,7 +62,7 @@ export const S_BarLink = styled(Link)<{ active: boolean }>`
                     right: 0;
                     bottom: 0;
                     height: 2px;
-                    background-color: ${LightBluePalette.lightBlue6};
+                    background-color: ${cssColor('--tabs-default-active-border')};
                 }
             `;
         }

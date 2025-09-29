@@ -1,7 +1,7 @@
 import { useWindowWidth } from '@solo-hooks';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
-import { SportsIcon, LiveSportsIcon, RightArrowIcon } from '@solo-ui/icons/svg';
+import { LiveSportsIcon, RightArrowIcon } from '@solo-ui/icons/svg';
 import { cssColor } from '@solo-ui/system';
 
 import { IconPositionTypes, RouteName, SportTab } from 'src/common/enums';
@@ -19,7 +19,6 @@ const mobileLinks = [
         id: SportTab.Sports,
         route: RouteName.Homepage,
         params: { id: PAGE_ROUTE_NAME.homepage },
-        Icon: <SportsIcon fontSize='small' />,
         label: <I18n langKey='footer.mobile.sports.label' defaultText='Sports' />,
     },
     {

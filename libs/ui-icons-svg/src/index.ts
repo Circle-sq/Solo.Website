@@ -40,7 +40,6 @@ export { default as ScrollTopIcon } from './ScrollTopIcon';
 export { default as SearchIcon } from './SearchIcon';
 export { default as ShowIcon } from './ShowIcon';
 export { default as SpeedBetIcon } from './SpeedBetIcon';
-export { default as SportsIcon } from './SportsIcon';
 export { default as StatisticsErrorIcon } from './StatisticsErrorIcon';
 export { default as SuccessCheckmarkIcon } from './SuccessCheckmarkIcon';
 export { default as UpArrowIcon } from './UpArrowIcon';

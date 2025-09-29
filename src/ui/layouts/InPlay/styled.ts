@@ -108,7 +108,7 @@ export const S_SportsNavigationWrapper = styled.div<{ bg?: string }>`
                             right: 0;
                             bottom: -1px;
                             border-bottom-left-radius: 0;
-                            border-bottom: 2px solid ${cssColor('--tab-active-border')};
+                            border-bottom: 2px solid ${cssColor('--tabs-default-active-border')};
                         }
                     }
 

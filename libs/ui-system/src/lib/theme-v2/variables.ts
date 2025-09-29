@@ -78,8 +78,8 @@ export const variables = {
         contrast: 'contrastRed.800',
     },
     '--button-outlined-betslip-border': {
-        blue: 'lightBlue.500',
-        neon: 'lightBlue.500',
+        blue: 'orange.300',
+        neon: 'orange.300',
         contrast: 'contrastRed.500',
     },
     '--button-disabled-betslip-bg': {
@@ -227,18 +227,18 @@ export const variables = {
     },
 
     '--button-brand-bg': {
-        blue: 'lightBlue.400',
-        neon: 'lightBlue.500',
+        blue: 'orange.300',
+        neon: 'orange.300',
         contrast: 'contrastRed.900',
     },
     '--button-brand-border': {
-        blue: 'lightBlue.400',
-        neon: 'lightBlue.500',
+        blue: 'orange.300',
+        neon: 'orange.300',
         contrast: 'contrastRed.700',
     },
     '--button-brand-hover-bg': {
-        blue: 'lightBlue.300',
-        neon: 'lightBlue.300',
+        blue: 'orange.600',
+        neon: 'orange.600',
         contrast: 'contrastRed.300',
     },
     '--button-brand-disabled-bg': {
@@ -409,8 +409,8 @@ export const variables = {
         contrast: 'contrastRed.700',
     },
     '--chip-large-active-bg': {
-        blue: 'lightBlue.700',
-        neon: 'ioLightBlue.300',
+        blue: 'orange.300',
+        neon: 'orange.300',
         contrast: 'contrastRed.400',
     },
     '--chip-large-outlined-hover-bg': {
@@ -419,8 +419,8 @@ export const variables = {
         contrast: 'contrastRed.500',
     },
     '--chip-large-active-hover-bg': {
-        blue: 'lightBlue.400',
-        neon: 'lightBlue.300',
+        blue: 'orange.600',
+        neon: 'orange.600',
         contrast: 'contrastRed.300',
     },
     '--chip-large-outlined-border': {
@@ -429,13 +429,13 @@ export const variables = {
         contrast: 'contrastRed.400',
     },
     '--chip-large-active-border': {
-        blue: 'lightBlue.700',
-        neon: 'ioLightBlue.300',
+        blue: 'orange.300',
+        neon: 'orange.300',
         contrast: 'contrastRed.400',
     },
     '--chip-large-active-hover-border': {
-        blue: 'lightBlue.400',
-        neon: 'lightBlue.300',
+        blue: 'orange.600',
+        neon: 'orange.600',
         contrast: 'contrastRed.300',
     },
     '--chip-warning-color': {
@@ -898,8 +898,8 @@ export const variables = {
         contrast: 'contrastRed.900',
     },
     '--dropdown-option-active-bg': {
-        blue: 'lightBlue.700',
-        neon: 'ioLightBlue.300',
+        blue: 'orange.300',
+        neon: 'orange.300',
         contrast: 'contrastRed.400',
     },
     '--dropdown-option-hover-bg': {
@@ -1152,11 +1152,6 @@ export const variables = {
         contrast: 'contrastRed.600',
     },
 
-    '--tab-active-border': {
-        blue: 'lightBlue.500',
-        neon: 'lightBlue.500',
-        contrast: 'contrastRed.200',
-    },
     '--switch-default-bg': {
         blue: 'darkBlue.600',
         neon: 'ioDarkBlue.500',
@@ -1502,15 +1497,15 @@ export const variables = {
         neon: 'ioDarkBlue.800',
         contrast: 'contrastRed.700',
     },
-    '--tabs-tertiary-active-border': {
-        blue: 'lightBlue.500',
-        neon: 'lightBlue.500',
-        contrast: 'contrastRed.300',
-    },
     '--tabs-tertiary-hover-bg': {
         blue: 'darkBlue.700',
         neon: 'ioDarkBlue.800',
         contrast: 'contrastRed.700',
+    },
+    '--tabs-default-active-border': {
+        blue: 'orange.300',
+        neon: 'orange.300',
+        contrast: 'contrastRed.300',
     },
 
     '--tab-betting-border': {

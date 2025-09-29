@@ -2,7 +2,7 @@
 import includes from 'lodash/includes';
 import type { ReactElement } from 'react';
 
-import { LiveSportsIcon, SportsIcon } from '@solo-ui/icons/svg';
+import { LiveSportsIcon } from '@solo-ui/icons/svg';
 
 import { RouteName } from 'src/common/enums';
 import { I18n } from 'src/ui/common/Language/I18n';
@@ -13,13 +13,12 @@ export interface SubHeaderItem extends Testable {
     label: ReactElement;
     params: Readonly<Record<string, string>>;
     isActive: (route: string, isLive: boolean) => boolean;
-    icon: ReactElement;
+    icon?: ReactElement;
 }
 
 export const getSubHeaderItems = (): SubHeaderItem[] => [
     {
         route: RouteName.Homepage,
-        icon: <SportsIcon />,
         label: <I18n langKey='header.sportsbetting.label' defaultText='Sports' />,
         params: {},
         isActive: (route: string, isLive: boolean) =>

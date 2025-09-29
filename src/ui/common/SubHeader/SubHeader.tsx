@@ -60,7 +60,7 @@ const SubHeader = () => {
 
                 return (
                     <S_NavLink key={route} isActive={isActive} route={route}>
-                        <S_Icon>{icon}</S_Icon>
+                        {icon && <S_Icon>{icon}</S_Icon>}
                         <S_TextWrapper>{label}</S_TextWrapper>
                     </S_NavLink>
                 );

@@ -1,7 +1,7 @@
 import { Stack, Typography } from '@mui/material';
 import { useAtomValue, useSetAtom } from 'jotai';
 
-import { InfoIcon, LiveSportsIcon, RightArrowIcon, SportsIcon } from '@solo-ui/icons/svg';
+import { InfoIcon, LiveSportsIcon, RightArrowIcon } from '@solo-ui/icons/svg';
 import { cssColor } from '@solo-ui/system';
 import { useWindowWidth } from '@solo-hooks';
 
@@ -52,7 +52,6 @@ const NoSearchResultsContainer = () => {
                     testId={`empty-result-link-${RouteName.Homepage}`}
                     onClick={() => handleRedirect(RouteName.Homepage)}
                 >
-                    <SportsIcon fontSize={isMobile ? 'medium' : 'large'} />
                     <Typography variant='h1' data-testid={`empty-result-text-${RouteName.Homepage}`}>
                         <I18n langKey='search.modal.empty.link.sports' defaultText='Sports' />
                     </Typography>
