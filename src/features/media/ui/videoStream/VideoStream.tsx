@@ -183,7 +183,7 @@ const VideoStream = () => {
             {/* show some video stream for preview  */}
             {isLocal() && isAuthenticated && !showPlayer && (
                 <MediaStreamPlayer
-                    streamUrl={'https://www.youtube.com/embed/09LTT0xwdfw?si=e3QxOT6igl-BN-me'}
+                    streamUrl={'https://www.youtube.com/embed/XKAV4qRIvJ8?si=y61PWCg0Mf8M_6xR'}
                     isAuthenticated={isAuthenticated}
                     isAutoPlay={isAutoPlay}
                     setIsAutoPlay={setIsAutoPlay}
