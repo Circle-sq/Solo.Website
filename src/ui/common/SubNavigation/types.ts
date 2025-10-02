@@ -1,4 +1,4 @@
-import type { ReactElement } from 'react';
+import type { ReactElement, ReactNode } from 'react';
 
 import type { Testable } from 'src/utils/Testable/types';
 
@@ -12,26 +12,24 @@ export interface Navigate extends Testable {
     route: string | null;
     params: { id: string; popup?: string };
     count?: number;
-    icon: string;
+    Icon: ReactNode;
     label: string;
 }
 
 export interface SubNav {
     isInHeader?: boolean;
-    iconType?: string;
     isActive?: boolean;
     isInPlayPage?: boolean;
 }
 
 export interface NoLink {
     isInHeader?: boolean;
-    iconType?: string;
 }
 
 export interface NavLink extends Testable {
     route?: string | null;
     params?: Record<string, string>;
-    icon: string;
+    Icon: ReactNode;
     label?: string | null | ReactElement;
     displayOrder?: number;
     isActiveCallback?: (url: string) => boolean;

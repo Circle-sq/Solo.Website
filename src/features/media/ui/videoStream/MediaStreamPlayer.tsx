@@ -2,6 +2,9 @@ import type { Dispatch, SetStateAction } from 'react';
 import { useState, useEffect, memo } from 'react';
 import { useIsMounted } from 'usehooks-ts';
 
+import { PlayOutlineIcon } from '@solo-ui/icons/src/icons';
+import { Button } from '@mui/material';
+
 import { RequestStatus, StreamProviders } from 'src/common/enums';
 import { I18n } from 'src/ui/common/Language/I18n';
 
@@ -9,7 +12,7 @@ import { BayesPlayer } from '../streamProviderPlayer/BayesPlayer';
 import { BetRadarPlayer } from '../streamProviderPlayer/BetRadarPlayer';
 import { GLivePlayer } from '../streamProviderPlayer/GLivePlayer';
 
-import { S_MediaStreamPlayer, S_MediaStream, S_PlayIcon, S_PlayerContainer } from './styled';
+import { S_MediaStreamPlayer, S_MediaStream, S_PlayerContainer } from './styled';
 
 interface Props {
     streamUrl: string;
@@ -136,7 +139,9 @@ const MediaStreamPlayer = ({
                 </S_MediaStream>
             ) : (
                 <S_MediaStream>
-                    <S_PlayIcon className='sports-video' onClick={onPlayHandler} />
+                    <Button onClick={onPlayHandler} sx={{ cursor: 'pointer', ':hover': { bgcolor: 'unset' } }}>
+                        <PlayOutlineIcon color='white' fontSize='65px' />
+                    </Button>
                 </S_MediaStream>
             )}
         </S_MediaStreamPlayer>

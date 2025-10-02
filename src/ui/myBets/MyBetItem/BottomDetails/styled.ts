@@ -32,6 +32,8 @@ export const S_PotentialReturns = styled.span`
 `;
 
 export const S_StakeOddTitle = styled.div`
+    display: flex;
+    align-items: center;
     font-size: 14px;
     padding-bottom: 8px;
     white-space: nowrap;

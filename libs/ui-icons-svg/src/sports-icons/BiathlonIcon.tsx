@@ -1,0 +1,21 @@
+import type { SVGProps } from 'react';
+
+import { SvgIcon } from '@solo-ui/icons/config/SvgIcon.styled';
+
+const BiathlonIcon = (props: SVGProps<SVGSVGElement>) => (
+    <SvgIcon
+        xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 1050 1050'
+        role='img'
+        aria-label='biathlonIcon'
+        data-testid='biathlonIcon'
+        {...props}
+    >
+        <path
+            fill='#fff'
+            d='m106 698 215-222 314-159-1-42 322-149V56l-20-14-28 11-9 20L56 438v268q0 36 25 14zm400-510-6-52-282 126 14 51zm495 296q-1-3-3-4-2-2-4-3h-5l-5 2q-2 1-104 66T640 690 360 842t-226 88q-3 1-6 3-3 3-3 6-1 4 0 7 1 4 4 6l37 30q2 1 4 1 2 1 4 1h2l67-14q66-13 179-52t265-108q152-70 325-182 2-1 3-2l2-4q1-2 7-41 6-40-23-97m-42-41q0-3-1-5-1-3-4-5-2-2-46-30-45-29-105-42-2-1-4-1-3 1-5 3-2 1-98 67-96 67-224 148-129 82-259 154-131 73-203 88-4 0-6 2-3 3-4 6v6q1 4 4 6l40 37q2 2 4 2 2 1 4 1h2q3 0 51-11 47-10 152-52 106-43 276-129 171-85 420-235 3-2 4-4 2-3 2-6'
+        />
+    </SvgIcon>
+);
+
+export default BiathlonIcon;

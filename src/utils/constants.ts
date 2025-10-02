@@ -585,7 +585,7 @@ export const MATCH_PERIOD = Object.freeze({
     playerFirstDefaultedPlayerSecondWon: 'Player 1 defaulted, player 2 won',
 });
 
-export const COMPETITION_ICON = 'theme-tournaments';
+export const COMPETITION_ICON = 'CupIcon';
 
 export enum MarketGroupNames {
     Multiscores = 'Multiscores',

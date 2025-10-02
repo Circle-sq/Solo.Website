@@ -12,7 +12,8 @@ import { FreeMode, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import type { Swiper as SwiperType } from 'swiper/types';
 
-import { LeftArrowIcon } from '@solo-ui/icons/svg';
+import { CupIcon, LeftArrowIcon } from '@solo-ui/icons/svg';
+import SportIcon from '@solo-ui/icons/config/SportIcon';
 import { cssColor } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
@@ -25,7 +26,6 @@ import { SportType, RequestStatus } from 'src/common/enums';
 import { highlightCompetitionsAtom } from 'src/common/hooks/useHighlightCompetitions/useHighlightCompetitions';
 import { sportIconsSelector } from 'src/common/store/icons/selectors';
 import { SIMULATED_REALITY_LEAGUES } from 'src/config/config';
-import { SPORT_ICONS } from 'src/config/sport-icons';
 import { competitionsItemsSelector } from 'src/modules/competitions/selectors';
 import { eventsItemsSelector } from 'src/modules/events/selectors';
 import {
@@ -139,7 +139,7 @@ const Breadcrumb = ({ waitForRequestToComplete = false }: Props) => {
             {
                 route: PAGE_ROUTE_NAME.sport,
                 params: { id: activeSport },
-                icon: SPORT_ICONS[activeSport] !== undefined ? SPORT_ICONS[activeSport] : 'theme-competitions-all',
+                Icon: <SportIcon fontSize='small' sport={activeSport} defaultIcon={<CupIcon />} />,
                 label: (
                     <>
                         {sportName}&nbsp;
@@ -155,7 +155,7 @@ const Breadcrumb = ({ waitForRequestToComplete = false }: Props) => {
             {
                 route: route,
                 params: { ...competitionsConfig },
-                icon: 'sports-globe',
+                Icon: <SportIcon fontSize='small' sport='default' />,
                 label: <I18n langKey='breadcrumb.competitions.label' defaultText='Competitions' />,
                 highlighted: false,
             },
@@ -190,7 +190,6 @@ const Breadcrumb = ({ waitForRequestToComplete = false }: Props) => {
                 links = buildLinks(PAGE_ROUTE_NAME.inplay, '', [
                     {
                         route: PAGE_ROUTE_NAME.inplay,
-                        icon: 'theme-live',
                         label: <I18n langKey='breadcrumb.inlive.betting.label' defaultText='Live' />,
                     },
                 ]);
@@ -221,7 +220,7 @@ const Breadcrumb = ({ waitForRequestToComplete = false }: Props) => {
                             countryId: countryId,
                             competitionId: competitionId,
                         },
-                        icon: 'theme-competitions-all',
+                        Icon: <CupIcon fontSize='small' />,
                         label: getCompetitionLocationLabel(getTranslation, locationKey, locationLabel),
                     },
                 ]);
@@ -253,7 +252,7 @@ const Breadcrumb = ({ waitForRequestToComplete = false }: Props) => {
                             sportId: slug,
                             countryId: locationKey,
                         },
-                        icon: 'theme-competitions-all',
+                        Icon: <CupIcon fontSize='small' />,
                         label: locationName,
                     },
                 ];
@@ -266,7 +265,7 @@ const Breadcrumb = ({ waitForRequestToComplete = false }: Props) => {
                     preparingLinks.push({
                         route: PAGE_ROUTE_NAME.competition,
                         params: { id: id, slug: slug },
-                        icon: 'theme-competitions-all',
+                        Icon: <CupIcon fontSize='small' />,
                         label: competitionLabel,
                         iconUrl,
                     });
@@ -348,7 +347,6 @@ const Breadcrumb = ({ waitForRequestToComplete = false }: Props) => {
                     >
                         <BreadcrumbLink
                             label={<I18n langKey='live.bar.link.live' defaultText='Live' />}
-                            icon='theme-right'
                             counter={total}
                             liveType={true}
                         />
@@ -400,7 +398,7 @@ const Breadcrumb = ({ waitForRequestToComplete = false }: Props) => {
                     </BackButton>
                     <S_LinksWrapper>
                         <AutoScroller>
-                            {breadcrumbLinks.map(({ route, params, label, icon, counter, liveType, iconUrl }, idx) => {
+                            {breadcrumbLinks.map(({ route, params, label, Icon, counter, liveType, iconUrl }, idx) => {
                                 const textKey = !isNil(label) ? label.toString() : '';
                                 const id = params?.id ?? '';
 
@@ -418,7 +416,7 @@ const Breadcrumb = ({ waitForRequestToComplete = false }: Props) => {
                                     >
                                         <BreadcrumbLink
                                             label={label}
-                                            icon={icon}
+                                            Icon={Icon}
                                             counter={counter}
                                             liveType={liveType}
                                             imageUrl={imageUrl}
@@ -453,7 +451,7 @@ const Breadcrumb = ({ waitForRequestToComplete = false }: Props) => {
                             navigation
                             freeMode
                         >
-                            {breadcrumbLinks.map(({ route, params, label, icon, counter, liveType, iconUrl }, idx) => {
+                            {breadcrumbLinks.map(({ route, params, label, Icon, counter, liveType, iconUrl }, idx) => {
                                 const textKey = !isNil(label) ? label.toString() : '';
                                 const id = params?.id ?? '';
 
@@ -476,7 +474,7 @@ const Breadcrumb = ({ waitForRequestToComplete = false }: Props) => {
                                         <S_BreadcrumbLink route={route} params={params} testId='breadcrumb'>
                                             <BreadcrumbLink
                                                 label={label}
-                                                icon={icon}
+                                                Icon={Icon}
                                                 counter={counter}
                                                 liveType={liveType}
                                                 imageUrl={imageUrl}

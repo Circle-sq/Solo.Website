@@ -9,6 +9,8 @@ import orderBy from 'lodash/orderBy';
 import { observer } from 'mobx-react-lite';
 import { v4 as uuidv4 } from 'uuid';
 
+import { CompetitionsAllIcon, CupIcon, GolfIcon } from '@solo-ui/icons/src/icons';
+
 import { useAppStateContext } from 'src/appState/AppState';
 import type { NestedItem, NestedItemChildren, PreparedNestedItem } from 'src/appState/redux/ReduxStateTypes';
 import type { SportLinkType } from 'src/appState/sportsList/types';
@@ -22,7 +24,7 @@ import { NUMBERS, PAGE_ROUTE_NAME, SPORTS_WITH_TOURNAMENTS } from 'src/utils/con
 import CustomScrollbar from '../CustomScrollbar';
 import type { LinkItem } from '../NavigationPanel/types';
 
-import { AsideWrapper, CloseSidebarButton, CloseSidebarIcon } from './styled';
+import { AsideWrapper, CloseSidebarButton } from './styled';
 
 interface Props {
     popular?: LinkItem[];
@@ -58,7 +60,7 @@ const NavigationSidebar = (props: Props) => {
                 return {
                     label: elem.name,
                     category,
-                    iconName: 'theme-tournaments',
+                    Icon: <CupIcon fontSize='small' />,
                     route: 'competition',
                     params: {
                         id: elem.id,
@@ -84,8 +86,7 @@ const NavigationSidebar = (props: Props) => {
                     getTranslation('lhn.country.all.label', 'All'),
                     competitionLocationLabel,
                 ]).join(' '),
-
-                iconName: 'theme-competitions-all',
+                Icon: <CompetitionsAllIcon />,
                 route: 'country',
                 params: { sportId: sport, countryId: item.countryId },
                 eventNumber: item.eventNumber,
@@ -171,7 +172,7 @@ const NavigationSidebar = (props: Props) => {
         links.forEach((link) => {
             const id = link.params.id;
             const url = sportItems.getIn([id, 'url']);
-            const imageParams = !isUndefined(url) ? { imageUrl: url, iconName: undefined } : {};
+            const imageParams = !isUndefined(url) ? { imageUrl: url, Icon: undefined } : {};
 
             newLinks.push({
                 ...link,
@@ -185,6 +186,7 @@ const NavigationSidebar = (props: Props) => {
                 params: {
                     id: SportType.BetlinkGolf,
                 },
+                Icon: <GolfIcon fontSize='small' />,
                 label: i18nGolf,
                 uuid: uuidv4(),
                 onClick: openBetlinkGolf,
@@ -201,7 +203,6 @@ const NavigationSidebar = (props: Props) => {
     const linkList = createSportLinks(sportsLinks);
     const closeSidebarButton = (
         <CloseSidebarButton params={{ account: null }}>
-            <CloseSidebarIcon name='arrow-left' />
             <I18n langKey='navigation.sidebar.close.button' defaultText='Close' />
         </CloseSidebarButton>
     );

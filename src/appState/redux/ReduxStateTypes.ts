@@ -1,4 +1,4 @@
-import type { ReactElement } from 'react';
+import type { ReactNode } from 'react';
 
 import type { CompetitionTags, PlatformObject } from 'src/common/types/competition';
 import type { LinkItem } from 'src/ui/common/NavigationPanel/types';
@@ -25,15 +25,14 @@ export interface LinkElem {
 
 export interface PreparedNestedItem extends LinkItem {
     route: string;
-    children: NestedItemChildren<unknown>[];
     eventNumber: number;
     label: string;
 }
 
 export interface NestedItemChildren<T> {
     params: T;
-    label: string | ReactElement;
-    iconName: string;
+    label: string;
+    Icon: ReactNode;
     route: string;
     eventNumber: number;
     displayOrder?: number;

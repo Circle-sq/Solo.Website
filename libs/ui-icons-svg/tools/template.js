@@ -28,7 +28,7 @@ const template = ({ imports, interfaces, componentName, props, jsx, exports }, {
     return tpl`
         ${imports};
         ${'\n'}
-        import { SvgIcon } from './helpers/SvgIcon.styled';
+        import { SvgIcon } from '@solo-ui/icons/config/SvgIcon.styled';
         ${'\n'}
         ${interfaces};
         const ${newComponentName} = (${props}: SVGProps<SVGSVGElement>) => (

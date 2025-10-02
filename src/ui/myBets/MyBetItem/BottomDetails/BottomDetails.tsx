@@ -1,6 +1,8 @@
 import { useAtomValue } from 'jotai';
 import { memo, useMemo } from 'react';
 
+import { HelpIcon } from '@solo-ui/icons/svg';
+import { cssColor } from '@solo-ui/system';
 import { oddsFormatSelector } from '@solo-account/store/selectors';
 import { isMultipleBetType } from '@solo-betslip/helpers/combinations';
 import { calcTotalOdds } from '@solo-betslip/helpers/price';
@@ -11,7 +13,6 @@ import useTranslatedCurrency from 'src/appState/customHooks/useTranslatedCurrenc
 import { hasStartingPriceType } from 'src/common/helpers/price';
 import type { MyBet } from 'src/common/types/myBet';
 import { PriceType } from 'src/common/types/selectionPrice';
-import Icon from 'src/ui/common/Icon/Icon';
 import { I18n } from 'src/ui/common/Language/I18n';
 import { getOddsFormatPrice, getShortOddsFormat } from 'src/utils/common';
 import { formatAmountWithCurrency, formatDecimalPart, moneyWithoutSymbol } from 'src/utils/format';
@@ -126,7 +127,7 @@ const BottomDetails = ({ bet, isSettledOrCancelledBet, hasFreeBetCredits }: Prop
                                 />
                                 {hasFreeBetCredits && (
                                     <S_IconWrapper title='Exclude Stake' hasFreeBetCredits={hasFreeBetCredits}>
-                                        <Icon name='help' />
+                                        <HelpIcon fontSize='small' color={cssColor('--icon-color')} />
                                     </S_IconWrapper>
                                 )}
                             </S_StakeOddTitle>

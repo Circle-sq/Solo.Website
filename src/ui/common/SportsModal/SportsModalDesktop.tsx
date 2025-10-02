@@ -6,13 +6,13 @@ import { useRecoilValue } from 'recoil';
 import { useOnClickOutside } from 'usehooks-ts';
 
 import { GolfIcon } from '@solo-ui/icons/svg';
+import SportIcon from '@solo-ui/icons/config/SportIcon';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { useEventCounters } from 'src/appState/customHooks';
 import type { SportModel } from 'src/appState/redux/types';
 import { SportType } from 'src/common/enums';
 import { sportIconsSelector } from 'src/common/store/icons/selectors';
-import { SPORT_ICONS } from 'src/config/sport-icons';
 import { isSportModalOpenAtom } from 'src/store/common/atoms';
 import { useBetlinkGolf } from 'src/ui/sports/useBetlinkGolfFlag';
 import { MODAL_ROUTE_NAME } from 'src/utils/constants';
@@ -126,9 +126,9 @@ const SportsModalDesktop = ({ groups }: Props) => {
                                                         <S_ContentIcon src={sportIcon.url} isLoaded />
                                                     )}
                                                     {isUndefined(sportIcon) && (
-                                                        <S_SportIcon
-                                                            className={SPORT_ICONS[sportId] ?? SPORT_ICONS.default}
-                                                        />
+                                                        <S_SportIcon>
+                                                            <SportIcon fontSize='small' sport={sportId} />
+                                                        </S_SportIcon>
                                                     )}
                                                     {sportName}
                                                 </S_Label>

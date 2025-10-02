@@ -7,7 +7,7 @@ import { observer } from 'mobx-react-lite';
 import { type MouseEvent, useEffect, useMemo, useState } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import { CupIcon, DownArrowIcon, UpArrowIcon } from '@solo-ui/icons/svg';
+import { DownArrowIcon, UpArrowIcon } from '@solo-ui/icons/svg';
 import { cssColor } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
@@ -18,6 +18,7 @@ import { highlightCompetitionsAtom } from 'src/common/hooks/useHighlightCompetit
 import { isValidCountry } from 'src/utils/common';
 import { SPORT_TYPE, SPORTS_WITH_TOURNAMENTS, TAGS } from 'src/utils/constants';
 import { buildQueryUrl } from 'src/utils/Router/url';
+import { RouteName } from 'src/common/enums';
 
 import { S_ContentIcon } from '../NavigationList/styled';
 import type { NestedLinkItem } from '../NavigationPanel/types';
@@ -181,16 +182,12 @@ const CountryListItem = ({ link, open, sportId }: CountryListItemProps) => {
                             return <S_ContentIcon src={iconUrl} isLoaded />;
                         }
 
-                        if (competition.iconName === 'theme-tournaments') {
-                            return (
-                                <S_MarginBox>
-                                    <CupIcon fontSize='small' />
-                                </S_MarginBox>
-                            );
-                        }
+                        if (competition.Icon) {
+                            if (competition.route === RouteName.Country) {
+                                return <S_MarginBox>{competition.Icon}</S_MarginBox>;
+                            }
 
-                        if (competition.iconName !== undefined) {
-                            return <S_CompetitionIcon className={competition.iconName} />;
+                            return <S_CompetitionIcon>{competition.Icon}</S_CompetitionIcon>;
                         }
 
                         return null;

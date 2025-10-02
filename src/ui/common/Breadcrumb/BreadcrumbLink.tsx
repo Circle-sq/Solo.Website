@@ -1,7 +1,7 @@
 import isUndefined from 'lodash/isUndefined';
 import type { ReactNode } from 'react';
 
-import { CupIcon, GlobeIcon, RightArrowIcon } from '@solo-ui/icons/svg';
+import { RightArrowIcon } from '@solo-ui/icons/svg';
 import { cssColor } from '@solo-ui/system';
 
 import { S_ContentIcon } from '../NavigationList/styled';
@@ -12,32 +12,12 @@ interface LinkContentProps {
     label: ReactNode;
     liveType?: boolean;
     counter?: number;
-    icon?: string;
+    Icon?: ReactNode;
     imageUrl?: string;
 }
 
 export const BreadcrumbLink = (props: LinkContentProps) => {
-    const { label, icon, imageUrl, counter = 0, liveType = false } = props;
-
-    const getSportIcon = (iconClass: string) => {
-        if (iconClass === 'theme-competitions-all') {
-            return (
-                <S_MarginBox>
-                    <CupIcon fontSize='small' data-testid='playIcon' />
-                </S_MarginBox>
-            );
-        }
-
-        if (iconClass === 'sports-globe') {
-            return (
-                <S_MarginBox>
-                    <GlobeIcon fontSize='small' color={cssColor('--icon-generic-color')} data-testid='globeIcon' />
-                </S_MarginBox>
-            );
-        }
-
-        return null;
-    };
+    const { label, Icon, imageUrl, counter = 0, liveType = false } = props;
 
     if (liveType && counter > 0) {
         return (
@@ -51,7 +31,11 @@ export const BreadcrumbLink = (props: LinkContentProps) => {
 
     return (
         <>
-            {!isUndefined(imageUrl) ? <S_ContentIcon src={imageUrl} isLoaded={true} /> : getSportIcon(icon as string)}
+            {!isUndefined(imageUrl) ? (
+                <S_ContentIcon src={imageUrl} isLoaded={true} />
+            ) : (
+                <S_MarginBox>{Icon}</S_MarginBox>
+            )}
             {label}
         </>
     );

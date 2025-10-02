@@ -6,12 +6,12 @@ describe('BreadcrumLink', () => {
     const label = <>{`Basketball Betting`}</>;
 
     it('should render breadcrumbicon', () => {
-        const icon = 'sports-globe';
+        const Icon = <svg data-testid='globeIcon' />;
         const counter = 0;
         const liveType = false;
 
         const { getByTestId, queryByTestId } = renderWithTheme(
-            <BreadcrumbLink icon={icon} counter={counter} liveType={liveType} label={label} />,
+            <BreadcrumbLink Icon={Icon} counter={counter} liveType={liveType} label={label} />,
         );
 
         expect(getByTestId('globeIcon')).toBeTruthy();
@@ -19,12 +19,12 @@ describe('BreadcrumLink', () => {
     });
 
     it('should render live button and counter', () => {
-        const icon = 'sports-globe';
+        const Icon = <svg data-testid='globeIcon' />;
         const counter = 1;
         const liveType = true;
 
         const { getByTestId } = renderWithTheme(
-            <BreadcrumbLink icon={icon} counter={counter} liveType={liveType} label={label} />,
+            <BreadcrumbLink Icon={Icon} counter={counter} liveType={liveType} label={label} />,
         );
 
         expect(getByTestId('live-button-label')).toBeTruthy();

@@ -1,28 +1,6 @@
 import { renderWithTheme } from '@solo-tests/unit/mocks/renderMocks';
-import { GenericColors } from '@solo-ui/system';
 
-import { S_CheckboxIcon, S_CheckboxSection } from './styled';
-
-describe('CheckboxIcon', () => {
-    it('should have default state (disabled) properties', () => {
-        const { getByRole } = renderWithTheme(<S_CheckboxIcon isChecked={false}></S_CheckboxIcon>);
-        const buttonEl = getByRole('button');
-
-        expect(buttonEl).toHaveStyleRule('background-color', GenericColors.transparent);
-        expect(buttonEl).toHaveStyleRule('font-size', `16px`);
-        expect(buttonEl).toHaveStyleRule('margin-left', `-1px`);
-    });
-    it('should have enabled state properties', () => {
-        const before = { target: ':before' };
-        const props = { isChecked: true };
-        const { getByRole } = renderWithTheme(<S_CheckboxIcon {...props}></S_CheckboxIcon>);
-        const buttonEl = getByRole('button');
-
-        expect(buttonEl).toHaveStyleRule('background-color', 'var(--icon-selected-bg, #00FF30)', before);
-        expect(buttonEl).toHaveStyleRule('color', 'black', before);
-        expect(buttonEl).toHaveStyleRule('border-radius', `15%`, before);
-    });
-});
+import { S_CheckboxSection } from './styled';
 
 describe('CheckboxSection', () => {
     it('should render CheckboxSection with correct properties', () => {

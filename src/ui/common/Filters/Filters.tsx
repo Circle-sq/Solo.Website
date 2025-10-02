@@ -5,11 +5,7 @@ import type { MouseEvent } from 'react';
 import { useEffect, useMemo } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import { GlobeIcon, PlayIcon } from '@solo-ui/icons/svg';
-import { cssColor } from '@solo-ui/system';
-
 import { sportIconsSelector } from 'src/common/store/icons/selectors';
-import { SPORT_ICONS } from 'src/config/sport-icons';
 import SwiperSlider from 'src/ui/common/Carousel/SwiperSlider';
 import { S_ContentIcon } from 'src/ui/common/NavigationList/styled';
 import { EVENT_FILTERS } from 'src/utils/constants';
@@ -68,53 +64,11 @@ const Filters = ({ active, filters, onChange, type, centered, labelSort = false,
         }
     }, []);
 
-    const getSportIcons = (id: string, sportIconClass: string) => {
-        if (id === 'live-stream') {
-            return (
-                <Box
-                    sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        mr: '8px',
-                    }}
-                >
-                    <PlayIcon fontSize='small' data-testid='playIcon' />
-                </Box>
-            );
-        }
-
-        if (sportIconClass === 'sports-globe') {
-            return (
-                <Box
-                    sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        mr: '8px',
-                    }}
-                >
-                    <GlobeIcon fontSize='small' color={cssColor('--icon-generic-color')} data-testid='globeIcon' />
-                </Box>
-            );
-        }
-
-        return (
-            <Box
-                className={sportIconClass}
-                data-testid='sportIcon'
-                sx={{
-                    fontSize: '16px',
-                    mr: '8px',
-                }}
-            />
-        );
-    };
-
     return (
         <S_FilterWrapper>
             {showSlider ? (
                 <SwiperSlider>
-                    {sortedFilters.map(({ id, label }) => {
-                        const sportIconClass = SPORT_ICONS[id] || SPORT_ICONS.default;
+                    {sortedFilters.map(({ id, label, Icon }) => {
                         const sportIcon = get(sportIcons, id);
 
                         return (
@@ -128,7 +82,15 @@ const Filters = ({ active, filters, onChange, type, centered, labelSort = false,
                                 {sportIcon !== undefined ? (
                                     <S_ContentIcon src={sportIcon.url} isLoaded />
                                 ) : (
-                                    getSportIcons(id, sportIconClass)
+                                    <Box
+                                        sx={{
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            mr: '8px',
+                                        }}
+                                    >
+                                        {Icon}
+                                    </Box>
                                 )}
                                 <span>{label}</span>
                             </FilterItem>

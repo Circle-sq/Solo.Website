@@ -7,8 +7,9 @@ import { useRecoilValue } from 'recoil';
 import { FreeMode, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import SportIcon from '@solo-ui/icons/config/SportIcon';
+
 import { sportIconsSelector } from 'src/common/store/icons/selectors';
-import { SPORT_ICONS } from 'src/config/sport-icons';
 import { S_CountOfGames } from 'src/ui/common/SubNavigation/styled';
 import SubNavigationIcon from 'src/ui/common/SubNavigation/SubNavigationIcon';
 import { SubNavigationLabel } from 'src/ui/common/SubNavigation/SubNavigationLabel';
@@ -52,12 +53,12 @@ const SportsNavigation = ({ pages }: { pages: SearchResultsData[] }) => {
             >
                 {sports.map(({ id, name, eventsCount }) => {
                     const iconUrl = sportIcons[id].url;
-                    const iconType = SPORT_ICONS[id];
+                    const Icon = <SportIcon sport={id} />;
 
                     return (
                         <SwiperSlide key={id}>
                             <S_SlideContent isActive={id === activeSport} onClick={() => setActiveSport(id)}>
-                                <SubNavigationIcon iconUrl={iconUrl} iconType={iconType} testId={name} />
+                                <SubNavigationIcon iconUrl={iconUrl} Icon={Icon} testId={name} />
                                 <SubNavigationLabel label={name} isNav={false} testId={name} />
                                 <S_CountOfGames>{eventsCount}</S_CountOfGames>
                             </S_SlideContent>

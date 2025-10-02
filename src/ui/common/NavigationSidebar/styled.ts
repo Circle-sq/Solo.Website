@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 
 import { fontWeight, radius, breakpoints, GenericColors, GreyPalette, YellowPalette } from '@solo-ui/system';
 
-import Icon from 'src/ui/common/Icon/Icon';
 import Link from 'src/utils/Router/Link';
 
 export const CloseSidebarButton = styled(Link)`
@@ -27,12 +26,6 @@ export const CloseSidebarButton = styled(Link)`
     @media (max-width: ${breakpoints.bp960}) {
         display: block;
     }
-`;
-
-export const CloseSidebarIcon = styled(Icon)`
-    display: inline-block;
-    margin-right: 15px;
-    margin-bottom: -2px;
 `;
 
 export const AsideWrapper = styled.aside`

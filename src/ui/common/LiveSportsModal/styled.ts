@@ -67,11 +67,6 @@ export const S_NavigationLink = styled(Link)`
         background-color: ${cssColor('--list-az-item-hover-bg')};
     }
 
-    &:before {
-        font-size: 15px;
-        margin-right: 8px;
-    }
-
     @media (max-width: ${breakpoints.bp1280}) {
         width: 100%;
         flex: 0 50%;

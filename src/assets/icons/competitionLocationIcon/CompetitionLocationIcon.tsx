@@ -46,14 +46,6 @@ const CompetitionLocationIcon = (props: Props) => {
                     </S_AlignmentBox>
                 );
             } else {
-                if (locationIcon === COMPETITION_ICON) {
-                    return (
-                        <S_AlignmentBox>
-                            <CupIcon fontSize='small' />
-                        </S_AlignmentBox>
-                    );
-                }
-
                 const flag = flags[location as string];
 
                 if (!isUndefined(flag)) {
@@ -68,20 +60,13 @@ const CompetitionLocationIcon = (props: Props) => {
             }
         }
 
-        case locationIcon === COMPETITION_ICON: {
+        case locationIcon === COMPETITION_ICON || SIMULATED_REALITY_LEAGUES.includes(sportLabel): {
             return (
                 <S_AlignmentBox>
                     <CupIcon fontSize='small' />
                 </S_AlignmentBox>
             );
         }
-
-        case SIMULATED_REALITY_LEAGUES.includes(sportLabel):
-            return (
-                <S_AlignmentBox>
-                    <CupIcon fontSize='small' />
-                </S_AlignmentBox>
-            );
 
         default: {
             const defaultCountryFlag = flags['WRL'];

@@ -9,7 +9,7 @@ import { LHNRowColors } from '../CountryListItem/styled';
 
 import type { ContentIconStyle } from './types';
 
-export const Icon = styled.span`
+export const S_Icon = styled.span`
     display: flex;
     flex-direction: column;
     justify-content: center;

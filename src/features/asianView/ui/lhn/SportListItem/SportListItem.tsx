@@ -2,9 +2,9 @@ import { useAtom, useAtomValue } from 'jotai';
 import type { MouseEvent } from 'react';
 
 import { useSportIconUrlQuerySelector } from '@solo-api/icons/querySelectors';
+import SportIcon from '@solo-ui/icons/config/SportIcon';
 
 import { SportType } from 'src/common/enums';
-import { SPORT_ICONS } from 'src/config/sport-icons';
 import { I18n } from 'src/ui/common/Language/I18n';
 
 import { LHNTimeTab } from '../../../enums';
@@ -14,11 +14,11 @@ import type { AggregatedSport } from '../../../types';
 import {
     S_ContentIcon,
     S_NavEventCounter,
-    S_NavIconWrapper,
     S_NavSportName,
     S_NavListItemContentWrapper,
     S_NavLiveIndicator,
     S_NavListItem,
+    S_NavIconWrapper,
 } from './styled';
 
 interface SportListItem {
@@ -61,7 +61,9 @@ const SportListItem = ({ sport, isSecondLevel }: SportListItem) => {
                 {iconUrl ? (
                     <S_ContentIcon src={iconUrl} isLoaded />
                 ) : (
-                    <S_NavIconWrapper className={SPORT_ICONS[sport.id] ?? SPORT_ICONS.default} />
+                    <S_NavIconWrapper>
+                        <SportIcon sport={sport.id} />
+                    </S_NavIconWrapper>
                 )}
                 <S_NavSportName>{sport.name}</S_NavSportName>
             </S_NavListItemContentWrapper>

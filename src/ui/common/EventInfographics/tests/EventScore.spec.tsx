@@ -224,7 +224,7 @@ describe('EventsList > EventScore', () => {
             normalize(
                 [
                     // prettier-ignore
-                    '🏏  1',
+                    '    1',
                     '    0',
                 ].join(''),
             ),
@@ -258,7 +258,7 @@ describe('EventsList > EventScore', () => {
                 [
                     // prettier-ignore
                     '    1',
-                    '🏏  0',
+                    '    0',
                 ].join(''),
             ),
         );

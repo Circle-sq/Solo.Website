@@ -136,27 +136,11 @@ export const S_Notification = styled.div`
     border-top: 1px solid ${GreyPalette.grey2};
 `;
 
-export const DropdownLabelIcon = styled.span`
-    position: relative;
-    margin-top: 2px;
-    font-size: 16px;
-    padding: 0 3px;
-`;
-
 export const InfoMessage = styled.div`
     display: flex;
     align-items: center;
     font-size: 14px;
     line-height: 1.4;
-`;
-
-export const S_PlayIcon = styled.button`
-    background-color: inherit;
-    font-size: 65px;
-    border: 1px solid transparent;
-    cursor: pointer;
-    color: ${GenericColors.white};
-    font-weight: ${fontWeight.bold};
 `;
 
 export const S_MarginBox = styled.div`

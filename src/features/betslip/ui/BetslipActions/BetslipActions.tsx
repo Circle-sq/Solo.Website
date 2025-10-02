@@ -10,7 +10,10 @@ import { hasOfferSelector } from '../../store/selectors/offer';
 import { toggleAllBetslipBetsTask } from '../../store/tasks/betslipBet/toggle';
 
 import ActionButtons from './ActionButtons';
-import { S_ActionButtons, S_BetslipActions, S_CheckboxIcon, S_CheckboxSection, S_CheckboxWrapper } from './styled';
+import { S_ActionButtons, S_BetslipActions, S_CheckboxSection, S_CheckboxWrapper } from './styled';
+import { CheckBoxBlankOutlineIcon, CheckboxIcon } from '@solo-ui/icons/src/icons';
+import { Button } from '@mui/material';
+import { cssColor } from '@solo-ui/system';
 
 const BetslipActions = () => {
     const hasOffer = useRecoilValue(hasOfferSelector);
@@ -28,12 +31,18 @@ const BetslipActions = () => {
     return (
         <S_BetslipActions isDisabled={hasOffer}>
             <S_CheckboxWrapper>
-                <S_CheckboxIcon
-                    isChecked={!hasUncheckedBet}
-                    className={hasUncheckedBet ? 'theme-checkbox-off' : 'theme-check'}
+                <Button
+                    sx={{ minWidth: 'unset', borderRadius: '15%', ':hover': { backgroundColor: 'unset' } }}
                     onClick={onToggleAllBets}
                     data-testid='allSelectionsCheckbox'
-                />
+                >
+                    {hasUncheckedBet ? (
+                        <CheckBoxBlankOutlineIcon fontSize='small' color={cssColor('--icon-default-color')} />
+                    ) : (
+                        <CheckboxIcon fontSize='small' color={cssColor('--icon-selected-bg')} />
+                    )}
+                </Button>
+
                 <S_CheckboxSection>
                     <I18n langKey='betslip.select.all' defaultText='Select all / Unselect All' />
                 </S_CheckboxSection>

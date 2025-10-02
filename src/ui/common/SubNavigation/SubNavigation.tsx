@@ -16,12 +16,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import type { Swiper as SwiperCore } from 'swiper/types';
 import { useScrollLock } from 'usehooks-ts';
 
+import { AZIcon, BettingRulesIcon, GolfIcon, LiveScoreIcon, SearchIcon } from '@solo-ui/icons/src/icons';
+import SportIcon from '@solo-ui/icons/config/SportIcon';
+
 import { useAppStateContext } from 'src/appState/AppState';
 import { useEventCounters } from 'src/appState/customHooks';
 import { RouteName } from 'src/common/enums';
 import { toggleState } from 'src/common/helpers/state';
 import { sportIconsSelector } from 'src/common/store/icons/selectors';
-import { SPORT_ICONS } from 'src/config/sport-icons';
 import { isStandalone } from 'src/infra.client';
 import { isLiveSportsModalOpenAtom, isSearchModalOpenAtom, isSportModalOpenAtom } from 'src/store/common/atoms';
 import { S_SwiperContainer } from 'src/ui/common/Carousel/styled';
@@ -29,18 +31,17 @@ import SportsModal from 'src/ui/common/SportsModal/SportsModal';
 import SearchEventsDialog from 'src/ui/events/SearchEventsEnhanced/SearchEventsDialog';
 import SearchEventsModal from 'src/ui/events/SearchEventsModal/SearchEventsModal';
 import { useBetlinkGolf } from 'src/ui/sports/useBetlinkGolfFlag';
+import { useBettingRules } from 'src/features/betting-rules/hooks/useBettingRules';
 import { DEFAULT_EXTERNAL_LINK_WINDOW_HEIGHT, DEFAULT_EXTERNAL_LINK_WINDOW_WIDTH } from 'src/utils/constants';
 
 import { I18n } from '../Language/I18n';
 import LiveSportsModal from '../LiveSportsModal/LiveSportsModal';
 
-import { getSubNavigationIconType } from './helpers';
 import { useVisibleMenuItems } from './hooks';
 import { S_CountOfGames, S_SubNav, S_SubNavMenu, S_SubNavMenuLink, S_SubNavMenuNoLink } from './styled';
 import SubNavigationIcon from './SubNavigationIcon';
 import { SubNavigationLabel } from './SubNavigationLabel';
 import type { Navigate, NavLink } from './types';
-import { useBettingRules } from 'src/features/betting-rules/hooks/useBettingRules';
 
 const STATIC_MENU_ITEMS = 4;
 const MENU_ITEMS_TO_SHOW = 9;
@@ -119,15 +120,13 @@ const SubNavigation = ({ propsLinks, isNav, isInHeader = false, slideTo = false 
     const visibleSubNavSports = sportsList.sports
         .slice(0, visibleSubNavItems)
         .reduce((accumulator: Partial<NavLink>[], { id, label, displayOrder }) => {
-            const icon =
-                id !== 'olympicgames' ? `sports-icon ${SPORT_ICONS[id] || SPORT_ICONS.default}` : SPORT_ICONS[id];
             const count = countEvents(id)?.count;
 
             accumulator.push({
                 count,
                 route: 'sport',
                 params: { id },
-                icon,
+                Icon: <SportIcon fontSize='large' sport={id} data-testid={`visibleSubNavSport-${id}`} />,
                 label,
                 displayOrder,
                 testId: `visibleSubNavSport-${id}`,
@@ -233,21 +232,21 @@ const SubNavigation = ({ propsLinks, isNav, isInHeader = false, slideTo = false 
             route: null,
             onClick: openSearchModal,
             testId: 'search',
-            icon: 'theme-search',
+            Icon: <SearchIcon data-testid='searchIcon' fontSize='large' />,
             iconUrl: getIconUrl('theme-search'),
             label: getTranslation('header.search.nav.label', 'Search'),
         },
         {
             onClick: () => externalLink(`${LIVE_PAGE_URL}/${userLangShort}`),
             testId: 'livescore',
-            icon: 'theme-icon-livescore',
+            Icon: <LiveScoreIcon data-testid='livescoreIcon' fontSize='large' />,
             iconUrl: getIconUrl('theme-icon-livescore'),
             label: getTranslation('header.livescore.nav.label', 'Livescore'),
         },
         {
-            onClick: () => openBettingRules(), //externalLink(getBettingRuleUrl()),
+            onClick: () => openBettingRules(),
             testId: 'bettingRules',
-            icon: 'theme-icon-bettingrules',
+            Icon: <BettingRulesIcon data-testid='bettingRulesIcon' fontSize='large' />,
             iconUrl: getIconUrl('theme-icon-bettingrules'),
             label: getTranslation('header.bettingrules.nav.label', 'Betting Rules'),
         },
@@ -260,7 +259,13 @@ const SubNavigation = ({ propsLinks, isNav, isInHeader = false, slideTo = false 
             links.push({
                 route: 'sport',
                 params: { id: latestSportId },
-                icon: SPORT_ICONS[latestSportId] || SPORT_ICONS.default,
+                Icon: (
+                    <SportIcon
+                        fontSize='large'
+                        sport={latestSportId}
+                        data-testid={`visibleSubNavSport-${latestSportId}`}
+                    />
+                ),
                 count: countEvents(latestSportId).count,
                 label: reduxState.getSportName(latestSportId),
                 extra: true,
@@ -272,7 +277,7 @@ const SubNavigation = ({ propsLinks, isNav, isInHeader = false, slideTo = false 
             links.push({
                 route: null,
                 onClick: openBetlinkGolf,
-                icon: 'betlink-golf',
+                Icon: <GolfIcon fontSize='large' data-testid='betlinkGolfIcon' />,
                 label: i18nGolf,
                 testId: 'betlinkGolf',
             });
@@ -282,7 +287,7 @@ const SubNavigation = ({ propsLinks, isNav, isInHeader = false, slideTo = false 
             links.push({
                 route: null,
                 onClick: toggleSportsModal,
-                icon: 'theme-menu',
+                Icon: <AZIcon fontSize='large' data-testid='sportsNavigationIcon' />,
                 label: getTranslation('header.azsports.nav.label', 'A-Z Sports'),
                 testId: 'sportsNavigation',
                 iconUrl: getIconUrl('az-sports'),
@@ -307,7 +312,7 @@ const SubNavigation = ({ propsLinks, isNav, isInHeader = false, slideTo = false 
 
     const azMenuLink = {
         route: null,
-        icon: 'theme-menu',
+        Icon: <AZIcon fontSize='large' data-testid='azSportsLinkIcon' />,
         label: <I18n langKey='livefilter.allSports.title' defaultText='A-Z Sports' />,
         text: 'A-Z Sports',
         testId: 'azSportsLink',
@@ -362,7 +367,6 @@ const SubNavigation = ({ propsLinks, isNav, isInHeader = false, slideTo = false 
                     >
                         {linkList.map((link) => {
                             const { route: linkRoute, params, isActiveCallback, label, count, onClick, testId } = link;
-                            const iconType = getSubNavigationIconType(link.icon, isInHeader, isDesktop);
                             const shouldActivateNavElement =
                                 (route.name === RouteName.Country && route.params.sportId === params?.id) ||
                                 (route.name === RouteName.Competition && route.params.slug === params?.id) ||
@@ -441,18 +445,12 @@ const SubNavigation = ({ propsLinks, isNav, isInHeader = false, slideTo = false 
                             }
 
                             return (
-                                <SwiperSlide key={link.icon}>
+                                <SwiperSlide key={label.toString() + testId}>
                                     {isDesktop ? (
-                                        <ItemComponent
-                                            iconType={iconType}
-                                            isInHeader={isInHeader}
-                                            onClick={handleClick}
-                                            {...itemProps}
-                                        >
-                                            <SubNavigationIcon iconType={iconType} iconUrl={iconUrl} testId={testId} />
+                                        <ItemComponent isInHeader={isInHeader} onClick={handleClick} {...itemProps}>
+                                            <SubNavigationIcon Icon={link.Icon} iconUrl={iconUrl} testId={testId} />
                                             <SubNavigationLabel
                                                 testId={testId}
-                                                iconType={iconType}
                                                 isNav={isNav}
                                                 isInHeader={isInHeader}
                                                 label={label}
@@ -462,13 +460,8 @@ const SubNavigation = ({ propsLinks, isNav, isInHeader = false, slideTo = false 
                                             )}
                                         </ItemComponent>
                                     ) : (
-                                        <ItemComponent
-                                            iconType={iconType}
-                                            isInHeader={isInHeader}
-                                            onClick={handleClick}
-                                            {...itemProps}
-                                        >
-                                            <SubNavigationIcon iconType={iconType} iconUrl={iconUrl} testId={testId} />
+                                        <ItemComponent isInHeader={isInHeader} onClick={handleClick} {...itemProps}>
+                                            <SubNavigationIcon Icon={link.Icon} iconUrl={iconUrl} testId={testId} />
                                             <SubNavigationLabel testId={testId} isNav={isNav} label={label} />
                                             {count !== undefined && (
                                                 <S_CountOfGames data-testid={`${testId}Count`}>{count}</S_CountOfGames>

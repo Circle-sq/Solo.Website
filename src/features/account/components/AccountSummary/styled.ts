@@ -1,10 +1,9 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, GenericColors, GreyPalette, LightBluePalette, cssColor } from '@solo-ui/system';
+import { fontWeight, GenericColors, LightBluePalette, cssColor } from '@solo-ui/system';
 
 import Checkbox from 'src/ui/common/Checkbox';
 import { S_CheckmarkWrap } from 'src/ui/common/Checkbox/styled';
-import Icon from 'src/ui/common/Icon/Icon';
 
 export const S_AccountSummary = styled.section`
     display: flex;
@@ -80,19 +79,4 @@ export const S_OddsRadioButtons = styled.div`
 
 export const S_Gap = styled.div`
     margin-right: 8px;
-`;
-
-export const S_HelpIcon = styled(Icon)`
-    color: ${GreyPalette.grey7};
-    display: inline-block;
-    font-size: 1.2em;
-    margin-left: 5px;
-    opacity: 0.7;
-`;
-
-export const S_GiftIcon = styled(Icon)`
-    display: inline-block;
-    font-size: 1em;
-    vertical-align: baseline;
-    margin-right: 5px;
 `;

@@ -3,6 +3,8 @@ import { useAtomValue } from 'jotai';
 import { useState } from 'react';
 import { useRecoilCallback } from 'recoil';
 
+import { DownArrowIcon } from '@solo-ui/icons/src/icons';
+import { cssColor } from '@solo-ui/system';
 import BalancePopup from '@solo-account/components/BalanceTab/BalancePopup';
 import { isAuthenticatedAtom } from '@solo-account/store/atoms';
 import { freebetCreditsAtomWithQuery } from '@solo-account/store/queries';
@@ -18,7 +20,6 @@ import isLocal from 'src/utils/isLocal';
 import {
     S_FreeBetsBadge,
     S_FreeBetsLabelWrapper,
-    S_IconUpDown,
     S_LinkName,
     S_UserBalanceLabel,
     S_UserBalanceWrapper,
@@ -84,7 +85,13 @@ const QuickHeader = () => {
                     )}
                 </S_UserBalanceWrapper>
 
-                {!isTablet && <S_IconUpDown name='arrow-down-fill' />}
+                {!isTablet && (
+                    <DownArrowIcon
+                        fontSize='10px'
+                        color={cssColor('--icon-secondary-color')}
+                        style={{ marginLeft: '6px' }}
+                    />
+                )}
             </S_LinkName>
             {isOpen && <BalancePopup onClose={toggleBalance} />}
         </S_Wrapper>

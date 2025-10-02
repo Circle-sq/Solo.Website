@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
-import { SvgIcon } from 'libs/ui-icons-svg/helpers/SvgIcon.styled';
-
+import { SvgIcon } from '@solo-ui/icons/config/SvgIcon.styled';
 import { GenericColors } from '@solo-ui/system';
 
 export const S_ScrollTopButton = styled.button<{ visible: boolean; left: number; bottom: number }>`

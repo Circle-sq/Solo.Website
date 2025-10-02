@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
 
 import { PlayIcon, HighlightsCupIcon, GolfIcon } from '@solo-ui/icons/svg';
+import SportIcon from '@solo-ui/icons/config/SportIcon';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import type { SportCount } from 'src/appState/sportsList/types';
@@ -13,7 +14,6 @@ import { SportType, IconCategory, RouteName, SportTab } from 'src/common/enums';
 import type { HighlightCompetition } from 'src/common/hooks/useHighlightCompetitions/useHighlightCompetitions';
 import { sportIconsSelector } from 'src/common/store/icons/selectors';
 import type { EventItem } from 'src/common/types/event';
-import { SPORT_ICONS } from 'src/config/sport-icons';
 import { iconUrlSelector } from 'src/modules/content/selectors/icons';
 import { eventSelector } from 'src/modules/events/selectors';
 import { sportsSportsItemsSelector } from 'src/modules/sports/selectors';
@@ -159,7 +159,9 @@ const SportsList = ({
                             {allSportsIconUrl !== undefined ? (
                                 <S_ContentIcon src={allSportsIconUrl} isLoaded />
                             ) : (
-                                <S_SportIcon className={SPORT_ICONS[SportType.All]} />
+                                <S_SportIcon>
+                                    <SportIcon fontSize='small' sport='all' />
+                                </S_SportIcon>
                             )}
                         </S_MobileSportIconWrapper>
                         <span>
@@ -221,7 +223,9 @@ const SportsList = ({
                                         {competitionIconUrl || sportIcon?.url ? (
                                             <S_ContentIcon src={competitionIconUrl || sportIcon?.url} isLoaded />
                                         ) : (
-                                            <S_SportIcon className={SPORT_ICONS[sportId] ?? SPORT_ICONS.default} />
+                                            <S_SportIcon>
+                                                <SportIcon fontSize='small' sport={sportId} />
+                                            </S_SportIcon>
                                         )}
                                     </S_CompetitionIconWrapper>
                                     <S_LinkLabel title={`${competition.name}`}>{competition.name}</S_LinkLabel>
@@ -288,7 +292,9 @@ const SportsList = ({
                             {sportIcon?.url ? (
                                 <S_ContentIcon src={sportIcon.url} isLoaded />
                             ) : (
-                                <S_SportIcon className={SPORT_ICONS[id] ?? SPORT_ICONS.default} />
+                                <S_SportIcon>
+                                    <SportIcon fontSize='small' sport={id} />
+                                </S_SportIcon>
                             )}
                         </S_MobileSportIconWrapper>
                         <span>{sportName}</span>

@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import type { PlatformObject } from 'src/common/types/competition';
 
 export interface LinkItem {
@@ -13,15 +14,22 @@ export interface LinkItem {
         competitionId?: string;
     };
     label?: string;
-    iconName?: string;
+    Icon?: ReactNode;
     route?: string;
     eventNumber?: number;
     id?: string;
     country?: string;
     category?: string;
     imageUrl?: string;
+    locationKey?: string | null;
+    locationLabel?: string | null;
+    locationIcon?: string;
+    sport?: string;
+    sportId?: string;
     uuid?: string;
     displayOrder?: string | number;
+    count?: number;
+    children?: NestedLinkItem[];
     platformObject?: PlatformObject | null;
     onClick?: () => void;
 }

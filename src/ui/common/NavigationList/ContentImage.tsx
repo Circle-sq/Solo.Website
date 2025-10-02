@@ -1,6 +1,7 @@
 import { CircularProgress } from '@mui/material';
 import classNames from 'classnames';
 import { useState } from 'react';
+import isNil from 'lodash/isNil';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { useEventCounters } from 'src/appState/customHooks';
@@ -8,10 +9,11 @@ import { getCompetitionLocationLabel } from 'src/appState/utils';
 import CompetitionLocationIcon from 'src/assets/icons/competitionLocationIcon/CompetitionLocationIcon';
 import ESoccerIcon from 'src/assets/icons/ESoccerIcon';
 import { SportType } from 'src/common/enums';
-import type { LinkItem } from 'src/ui/common/AllCountries/types';
 import NavigationList from 'src/ui/common/NavigationList/NavigationList';
-import { S_ContentIcon, S_Counter, Icon, S_LinkLabel, NavigationLink } from 'src/ui/common/NavigationList/styled';
+import { S_ContentIcon, S_Counter, S_Icon, S_LinkLabel, NavigationLink } from 'src/ui/common/NavigationList/styled';
 import { PAGE_ROUTE_NAME } from 'src/utils/constants';
+
+import type { LinkItem } from '../NavigationPanel/types';
 
 interface Props {
     link: LinkItem;
@@ -30,7 +32,7 @@ const ContentImage = ({ link, activeLink }: Props) => {
     const showEventCount = eventCount !== undefined && eventCount > 0 && link.route === PAGE_ROUTE_NAME.sport;
 
     const showDefaultESoccerIcon =
-        link?.params?.slug === SportType.ESoccer && link.iconName === undefined && link.imageUrl === undefined;
+        link?.params?.slug === SportType.ESoccer && link.Icon === undefined && link.imageUrl === undefined;
 
     const label = <S_LinkLabel title={`${link.label}`}>{link.label}</S_LinkLabel>;
 
@@ -55,9 +57,9 @@ const ContentImage = ({ link, activeLink }: Props) => {
                         {label}
                     </>
                 )}
-                {link.iconName && (
+                {!isNil(link.Icon) && (
                     <>
-                        <Icon className={link.iconName} />
+                        <S_Icon>{link.Icon}</S_Icon>
                         {label}
                     </>
                 )}

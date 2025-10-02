@@ -1,3 +1,4 @@
+import SportIcon from '@solo-ui/icons/config/SportIcon';
 import { observer } from 'mobx-react-lite';
 import { useEffect, useMemo, useState } from 'react';
 import { useRecoilValue } from 'recoil';
@@ -31,11 +32,13 @@ const EventsOnLater = () => {
     }, [sportId]);
 
     const filters = useMemo<Filter[]>(() => {
-        return (sports as Filter[]).reduce((acc: Filter[], x) => {
+        return sports.reduce((acc: Filter[], x) => {
             const sportSelected = x.id === sportId;
             const sportHasCounter = counters.some((y: SportCount) => y.id === x.id);
 
-            return sportHasCounter || sportSelected ? [...acc, x] : acc;
+            return sportHasCounter || sportSelected
+                ? [...acc, { ...x, Icon: <SportIcon fontSize='small' sport={x.id} data-testid='sportIcon' /> }]
+                : acc;
         }, []);
     }, [counters]);
 

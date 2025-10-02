@@ -1,8 +1,9 @@
 import type { GroupBase } from 'react-select';
 import { useRecoilValue } from 'recoil';
 
+import SportIcon from '@solo-ui/icons/config/SportIcon';
+
 import { sportIconUrlSelectorFamily } from 'src/common/store/icons/selectors';
-import { SPORT_ICONS } from 'src/config/sport-icons';
 import { S_ContentIcon } from 'src/ui/common/NavigationList/styled';
 import type { Option } from 'src/common/types/option';
 
@@ -14,14 +15,15 @@ const MediaGroupLabel = (props: Props) => {
     const { label, value } = props as Props & { value: string };
 
     const sportIconUrl = useRecoilValue(sportIconUrlSelectorFamily(value));
-    const sportIcon = SPORT_ICONS[value] ?? SPORT_ICONS.default;
 
     return (
         <S_GroupHeaderWrapper>
             {sportIconUrl !== undefined ? (
                 <S_ContentIcon src={sportIconUrl} isLoaded />
             ) : (
-                <S_SportIcon className={sportIcon} />
+                <S_SportIcon>
+                    <SportIcon fontFamily='small' sport={value} />
+                </S_SportIcon>
             )}
 
             {label}

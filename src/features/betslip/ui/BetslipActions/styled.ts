@@ -56,29 +56,6 @@ export const S_ConfirmDeleteBtn = styled(Button)`
     font-weight: ${fontWeight.medium};
 `;
 
-export const S_CheckboxIcon = styled.button<{ isChecked: boolean }>`
-    cursor: pointer;
-    font-size: 16px;
-    border: 0;
-    margin-left: -1px;
-    padding-right: 0;
-    margin-right: 6px;
-
-    ${(props): string => {
-        const { isChecked } = props;
-
-        return `
-            background-color: transparent;
-            &:before {
-                background-color: ${isChecked ? cssColor('--icon-selected-bg') : 'transparent'};
-                color: ${isChecked ? 'black' : cssColor('--text-secondary')};
-                border-radius: 15%;
-
-            }
-        `;
-    }}
-`;
-
 export const S_CheckboxSection = styled.span`
     width: auto;
     text-align: center;

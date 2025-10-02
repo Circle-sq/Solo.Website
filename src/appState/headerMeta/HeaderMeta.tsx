@@ -4,7 +4,6 @@ import * as React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 
 import swiperStyle from 'src/assets/style/swiper.min.css?url';
-import { fontCssForIcon, fontCssSportIcons, fontCssThemeIcons } from 'src/ui/common/Icon/Icon';
 
 import mainStyle from '../../../src_sassbuild/buildcss/main.css?url';
 
@@ -84,9 +83,6 @@ export class HeaderMeta {
             | 'favicon'
             | 'siteVerification'
             | 'styleMain'
-            | 'styleIcon'
-            | 'styleSportsIcon'
-            | 'styleThemeIcons'
             | 'styleMainFont'
             | 'styleSwiper'
             | 'manifestLink'
@@ -97,9 +93,6 @@ export class HeaderMeta {
             favicon: computed.struct,
             siteVerification: computed.struct,
             styleMain: computed.struct,
-            styleIcon: computed.struct,
-            styleSportsIcon: computed.struct,
-            styleThemeIcons: computed.struct,
             styleMainFont: computed.struct,
             styleSwiper: computed.struct,
             manifestLink: computed.struct,
@@ -179,39 +172,6 @@ export class HeaderMeta {
         };
     }
 
-    private get styleIcon(): HeaderItemType {
-        return {
-            id: 'styleIcon',
-            tag: 'style',
-            attr: {
-                type: 'text/css',
-            },
-            text: fontCssForIcon,
-        };
-    }
-
-    private get styleSportsIcon(): HeaderItemType {
-        return {
-            id: 'styleSportsIcon',
-            tag: 'style',
-            attr: {
-                type: 'text/css',
-            },
-            text: fontCssSportIcons,
-        };
-    }
-
-    private get styleThemeIcons(): HeaderItemType {
-        return {
-            id: 'styleThemeIcons',
-            tag: 'style',
-            attr: {
-                type: 'text/css',
-            },
-            text: fontCssThemeIcons,
-        };
-    }
-
     private get styleMainFont(): HeaderItemType {
         return {
             id: 'styleFont',
@@ -261,13 +221,7 @@ export class HeaderMeta {
 
         out.push(this.styleMain);
 
-        out.push(this.styleIcon);
-
         out.push(this.styleSwiper);
-
-        out.push(this.styleSportsIcon);
-
-        out.push(this.styleThemeIcons);
 
         out.push(this.styleMainFont);
 

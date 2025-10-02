@@ -4,11 +4,13 @@ import { observer } from 'mobx-react-lite';
 import { useRef } from 'react';
 import { useRecoilValue } from 'recoil';
 import { useOnClickOutside } from 'usehooks-ts';
+import { Box } from '@mui/material';
+
+import SportIcon from '@solo-ui/icons/config/SportIcon';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import type { AggregationItem } from 'src/appState/redux/types';
 import { sportIconsSelector } from 'src/common/store/icons/selectors';
-import { SPORT_ICONS } from 'src/config/sport-icons';
 import { isLiveSportsModalOpenAtom } from 'src/store/common/atoms';
 import { useActiveSportCountriesData } from 'src/ui/layouts/InPlay/hooks/useActiveSportCountriesData';
 import { useInPlayLinks } from 'src/ui/layouts/InPlay/hooks/useInPlayLinks';
@@ -85,9 +87,9 @@ const LiveSportsModal = () => {
                         key={foundLiveStream.params.id}
                         route={PAGE_ROUTE_NAME.inplay}
                         params={{ id: foundLiveStream.params.id }}
-                        className={foundLiveStream.icon}
                         onClick={closeModal}
                     >
+                        <Box sx={{ fontSize: '15px', mr: '8px' }}>{foundLiveStream.Icon}</Box>
                         <S_LinkLabel>
                             <I18n langKey='livefilter.live-streaming.title' defaultText='Live Streaming' />
                         </S_LinkLabel>
@@ -97,17 +99,19 @@ const LiveSportsModal = () => {
                 {sportList.map((sport) => {
                     const { id, count, name } = sport;
                     const sportIcon = get(sportIcons, id);
-                    const defaultSportIcon = SPORT_ICONS[id] ?? SPORT_ICONS.default;
 
                     return (
                         <S_NavigationLink
                             key={id}
                             route={PAGE_ROUTE_NAME.inplay}
                             params={{ id: id }}
-                            className={sportIcon?.url ? '' : defaultSportIcon}
                             onClick={closeModal}
                         >
-                            {sportIcon?.url !== undefined ? <S_ContentIcon src={sportIcon.url} isLoaded /> : null}
+                            {sportIcon?.url !== undefined ? (
+                                <S_ContentIcon src={sportIcon.url} isLoaded />
+                            ) : (
+                                <SportIcon fontSize='small' sport={String(id)} />
+                            )}
                             <S_LinkLabel data-testid={`nav-activeazsports-${id}`}>{name}</S_LinkLabel>
                             <S_EventsCounterContainer data-testid={`activeazsports-${id}-count`}>
                                 {count}

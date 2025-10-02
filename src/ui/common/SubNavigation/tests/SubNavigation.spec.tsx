@@ -103,7 +103,7 @@ describe('SubNavigation (sport)', () => {
                         id: 'football',
                     },
                     label: 'Football',
-                    icon: 'football',
+                    Icon: <svg data-testid='footballIcon' />,
                 },
             ],
         };
@@ -142,13 +142,13 @@ describe('SubNavigation (sport)', () => {
                         id: 'olympicgames',
                     },
                     label: 'Olympicgames',
-                    icon: 'OLYMPICGAMES',
+                    Icon: <svg data-testid='olympicgamesIcon' />,
                 },
             ],
         };
 
         const { container } = renderWithAppWrapper(<SubNavigation {...props} />, initState);
-        const icon = container.getElementsByClassName('subnavmobile_icon');
+        const icon = container.getElementsByClassName('sub_nav');
         expect(icon.item(0)?.parentElement?.lastChild).toHaveTextContent('Olympicgames');
     });
 
@@ -163,13 +163,13 @@ describe('SubNavigation (sport)', () => {
                         id: 'olympicgames',
                     },
                     label: 'Olympicgames',
-                    icon: 'OLYMPICGAMES',
+                    Icon: <svg data-testid='olympicgamesIcon' />,
                 },
             ],
         };
 
         const { container } = renderWithAppWrapper(<SubNavigation {...props} />, initState);
-        const icon = container.getElementsByClassName('subnavheadmobile_icon');
+        const icon = container.getElementsByClassName('sub_nav');
         expect(icon.item(0)?.parentElement?.lastChild).toHaveTextContent('Olympicgames');
     });
 
@@ -186,12 +186,12 @@ describe('SubNavigation (sport)', () => {
                         id: 'olympicgames',
                     },
                     label: 'Olympicgames',
-                    icon: 'OLYMPICGAMES',
+                    Icon: <svg data-testid='olympicgamesIcon' />,
                 },
             ],
         };
         const { container } = renderWithAppWrapper(<SubNavigation {...props} />, initState);
-        const icon = container.getElementsByClassName('subnav_icon');
+        const icon = container.getElementsByClassName('sub_nav');
         expect(icon.item(0)?.parentElement?.lastChild).toHaveTextContent('Olympicgames');
     });
 
@@ -208,12 +208,12 @@ describe('SubNavigation (sport)', () => {
                         id: 'olympicgames',
                     },
                     label: 'Olympicgames',
-                    icon: 'OLYMPICGAMES',
+                    Icon: <svg data-testid='olympicgamesIcon' />,
                 },
             ],
         };
         const { container } = renderWithAppWrapper(<SubNavigation {...props} />, initState);
-        const icon = container.getElementsByClassName('subnavhead_icon');
+        const icon = container.getElementsByClassName('sub_nav');
         expect(icon.item(0)?.parentElement?.lastChild).toHaveTextContent('Olympicgames');
     });
 

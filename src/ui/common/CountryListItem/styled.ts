@@ -119,5 +119,5 @@ export const S_ContentIcon = styled.span<ContentIconStyle>`
 
 export const S_MarginBox = styled.div`
     display: flex;
-    margin-right: 8px;
+    margin-right: 4px;
 `;

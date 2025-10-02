@@ -208,8 +208,6 @@ vi.mock('src/ui/common/DropdownSelect/DropdownSelect', () => ({
 
 vi.mock('src/ui/common/Carousel/Carousel', () => ({ default: MockComponent }));
 
-const baseballClass = 'sports-23';
-
 describe('InPlayLayout', () => {
     const collectionId = 'home-count-on-later';
     const initState = {
@@ -220,7 +218,7 @@ describe('InPlayLayout', () => {
         const { findByTestId } = renderWithAppWrapper(<EventsOnLater />, initState);
         const sportIcon = await findByTestId('sportIcon');
 
-        expect(sportIcon).toHaveClass(baseballClass);
+        expect(sportIcon).toHaveAttribute('aria-label', 'baseballIcon');
     });
 
     it('should render message about no upcoming events', async () => {

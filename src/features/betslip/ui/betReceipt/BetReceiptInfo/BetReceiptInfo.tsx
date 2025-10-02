@@ -2,8 +2,8 @@ import { useAtomValue } from 'jotai';
 import { useRecoilState, useRecoilValue } from 'recoil';
 
 import { currencySelector, oddsFormatSelector } from '@solo-account/store/selectors';
-import { CheckboxIcon } from '@solo-ui/icons/svg';
-import { LightBluePalette } from '@solo-ui/system';
+import { CheckBoxBlankOutlineIcon, CheckboxIcon } from '@solo-ui/icons/svg';
+import { LightBluePalette, cssColor } from '@solo-ui/system';
 
 import useTranslatedCurrency from 'src/appState/customHooks/useTranslatedCurrency';
 import { toggleState } from 'src/common/helpers/state';
@@ -15,7 +15,6 @@ import { betReceiptTotalOddsSelector, showBetReceiptTotalOddsSelector } from '..
 
 import {
     S_BetReceiptActions,
-    S_BetReceiptCheckbox,
     S_BetReceiptInfoLabel,
     S_BetReceiptInfoRow,
     S_BetReceiptInfoValue,
@@ -72,7 +71,7 @@ const BetReceiptInfo = () => {
                     {keepPlacedBets ? (
                         <CheckboxIcon fontSize='small' color={LightBluePalette.lightBlue6} />
                     ) : (
-                        <S_BetReceiptCheckbox className='theme-checkbox-off' />
+                        <CheckBoxBlankOutlineIcon fontSize='small' color={cssColor('--text-muted')} />
                     )}
                     <I18n
                         langKey='betslip.receipt.option.keep-bets-in-betslip'

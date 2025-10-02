@@ -1,7 +1,5 @@
-import { LockIcon } from '@solo-ui/icons/svg';
+import { CheckIcon, LockIcon } from '@solo-ui/icons/svg';
 import { cssColor } from '@solo-ui/system';
-
-import Icon from 'src/ui/common/Icon/Icon';
 
 import { S_MarginBox, S_SuccessIconWrapper } from '../styled';
 
@@ -14,7 +12,7 @@ const ButtonIcon = ({ isCashOutLocked, isCashOutFulfilled }: Props) => {
     if (isCashOutFulfilled) {
         return (
             <S_SuccessIconWrapper>
-                <Icon name='checkmark' color={cssColor('--icon-success-color')} />
+                <CheckIcon fontSize='small' color={cssColor('--icon-success-color')} />
             </S_SuccessIconWrapper>
         );
     }

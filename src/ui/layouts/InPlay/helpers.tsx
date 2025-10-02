@@ -1,5 +1,8 @@
 import isUndefined from 'lodash/isUndefined';
 
+import { PlayIcon } from '@solo-ui/icons/src/icons';
+import SportIcon from '@solo-ui/icons/config/SportIcon';
+
 import type { EventModel } from 'src/appState/models/models/EventModel';
 import { getLocationTags } from 'src/appState/models/models/helpers';
 import type { SportCount } from 'src/appState/sportsList/types';
@@ -23,7 +26,7 @@ export const buildInPlayLinks = (
         route: RouteName.InPlay,
         params: { id: RouteName.LiveStream },
         count: streamsCount,
-        icon: 'sports-glyph-video-i',
+        Icon: <PlayIcon fontSize='large' style={{ display: 'flex' }} data-testid='liveStreamLinkIcon' />,
         label: getTranslation('livefilter.live-streaming.title', 'Live Streaming'),
         testId: 'liveStreamLink',
     };
@@ -31,7 +34,7 @@ export const buildInPlayLinks = (
     const highlightsLink = {
         route: RouteName.InPlay,
         params: { id: RouteName.Betting },
-        icon: 'sports-all',
+        Icon: <SportIcon sport='all' fontSize='large' data-testid='highlightsLinkIcon' />,
         label: getTranslation('livefilter.highlights.title', 'Highlights'),
         testId: 'highlightsLink',
     };

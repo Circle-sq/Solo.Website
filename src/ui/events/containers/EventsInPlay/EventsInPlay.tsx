@@ -3,7 +3,7 @@ import ms from 'ms';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import { RightArrowIcon } from '@solo-ui/icons/svg';
+import { PlayIcon, RightArrowIcon } from '@solo-ui/icons/svg';
 import { cssColor } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
@@ -22,6 +22,7 @@ import LiveStream from 'src/ui/layouts/InPlay/components/LiveStream/LiveStream';
 import { EVENT_FILTERS, PAGE_ROUTE_NAME } from 'src/utils/constants';
 
 import { AllEventsLink, S_Count, Live } from './styled';
+import SportIcon from '@solo-ui/icons/config/SportIcon';
 
 const COUNTER_REFRESH_TIMEOUT = ms('30s');
 const collectionId = 'home-count-live-highlights';
@@ -61,7 +62,7 @@ export const InPlayComponent = () => {
     }, COUNTER_REFRESH_TIMEOUT);
 
     const filters = useMemo<Filter[]>(() => {
-        const sportsWithCounters = (sports as Filter[]).reduce((acc: Filter[], x) => {
+        const sportsWithCounters = sports.reduce((acc: Filter[], x) => {
             const sportSelected: boolean = x.id === sportId;
             const sportHasCounter = counters.some((y: SportCount) => y.id === x.id);
 
@@ -69,12 +70,21 @@ export const InPlayComponent = () => {
                 setSportId(undefined);
             }
 
-            return sportHasCounter || sportSelected ? [...acc, x] : acc;
+            return sportHasCounter || sportSelected
+                ? [...acc, { ...x, Icon: <SportIcon fontSize='small' sport={x.id} data-testid='sportIcon' /> }]
+                : acc;
         }, []);
 
         if (streamsCounters.length > 0) {
             sportsWithCounters.unshift({
                 id: 'live-stream',
+                Icon: (
+                    <PlayIcon
+                        style={{ display: 'flex', alignItems: 'center', marginRight: '8px' }}
+                        fontSize='small'
+                        data-testid='playIcon'
+                    />
+                ),
                 label: getTranslation('livefilter.live-streaming.title', 'Live Streaming'),
                 testId: 'live-stream',
             });

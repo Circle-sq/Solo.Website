@@ -1,4 +1,4 @@
-import InfoIcon from 'libs/ui-icons-svg/src/InfoIcon';
+import { InfoIcon } from '@solo-ui/icons/src/icons';
 
 import { S_MarketDescription } from 'src/ui/events/DisplayTemplates/styled';
 

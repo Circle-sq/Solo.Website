@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import CloseIcon from 'libs/ui-icons-svg/src/CloseIcon';
 
+import { CloseIcon } from '@solo-ui/icons/src/icons';
 import { breakpoints, cssColor } from '@solo-ui/system';
 
 import { S_BaseOverlay } from 'src/ui/common/Backdrop/styled';

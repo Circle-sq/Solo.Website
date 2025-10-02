@@ -4,13 +4,12 @@ import { S_SubNavMenuSpan } from './styled';
 
 interface Props {
     testId?: string;
-    iconType?: string;
     isNav: boolean;
     isInHeader?: boolean;
     label: string | ReactElement;
 }
 
-export const SubNavigationLabel = ({ testId, iconType, isNav, isInHeader, label }: Props) => {
+export const SubNavigationLabel = ({ testId, isNav, isInHeader, label }: Props) => {
     const ref = useRef<HTMLSpanElement>(null);
 
     useEffect(() => {
@@ -24,13 +23,7 @@ export const SubNavigationLabel = ({ testId, iconType, isNav, isInHeader, label 
     const isTruncated = (e: HTMLSpanElement) => e.scrollWidth > e.clientWidth;
 
     return (
-        <S_SubNavMenuSpan
-            data-testid={`${testId}Value`}
-            iconType={iconType}
-            isNav={isNav}
-            isInHeader={isInHeader}
-            ref={ref}
-        >
+        <S_SubNavMenuSpan data-testid={`${testId}Value`} isNav={isNav} isInHeader={isInHeader} ref={ref}>
             {label}
         </S_SubNavMenuSpan>
     );

@@ -3,9 +3,9 @@ import { useRecoilValue } from 'recoil';
 
 import { lhnSportAtom } from '@solo-asianView/store/lhn';
 import { S_ContentIcon } from '@solo-asianView/ui/lhn/SportListItem/styled';
+import SportIcon from '@solo-ui/icons/config/SportIcon';
 
 import { sportIconUrlSelectorFamily } from 'src/common/store/icons/selectors';
-import { SPORT_ICONS } from 'src/config/sport-icons';
 
 import { S_Icon } from './styled';
 
@@ -17,9 +17,11 @@ const SportHeaderIcon = () => {
         return <S_ContentIcon src={iconUrl} isLoaded />;
     }
 
-    const sportIcon = SPORT_ICONS[lhnSport] ?? SPORT_ICONS.default;
-
-    return <S_Icon className={sportIcon} />;
+    return (
+        <S_Icon>
+            <SportIcon fontSize='small' sport={lhnSport} />
+        </S_Icon>
+    );
 };
 
 export default SportHeaderIcon;

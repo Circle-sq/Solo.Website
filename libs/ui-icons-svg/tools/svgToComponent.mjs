@@ -2,8 +2,19 @@ import { readdir, renameSync } from "fs";
 import { extname, join, basename } from "path";
 import { execSync } from "child_process";
 
-const SOURCE_DIR = "src-icons";
-const OUTPUT_DIR = "src";
+let SOURCE_DIR = "src-icons-svg/icons";
+let OUTPUT_DIR = "src/icons";
+
+const args = process.argv.slice(2);
+const [source, output] = args;
+
+if (source) {
+    SOURCE_DIR = source;
+}
+
+if(output) {
+    OUTPUT_DIR = output;
+}
 
 const toPascalCase = (name) => name.replace(/(^\w|[-_][a-z])/g, (char) => {
     return char.toUpperCase();

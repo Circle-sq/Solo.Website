@@ -2,8 +2,9 @@ import get from 'lodash/get';
 import type { MouseEvent } from 'react';
 import { useCallback } from 'react';
 import { useRecoilCallback, useRecoilValue } from 'recoil';
+import { Button } from '@mui/material';
 
-import { CloseIcon } from '@solo-ui/icons/svg';
+import { CheckBoxBlankOutlineIcon, CheckboxIcon, CloseIcon } from '@solo-ui/icons/svg';
 import { cssColor } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
@@ -25,13 +26,7 @@ import { S_RemoveSelectionButton } from '../styled';
 
 import CardAlertIcon from './CardAlertIcon';
 import CardBetContent from './CardBetContent';
-import {
-    CardContentFreeBetsWrapper,
-    CardContentMainWrapper,
-    CardContentWrapper,
-    CheckboxIcon,
-    ContentFirstColumn,
-} from './styled';
+import { CardContentFreeBetsWrapper, CardContentMainWrapper, CardContentWrapper, ContentFirstColumn } from './styled';
 
 interface Props {
     leg: Leg;
@@ -84,12 +79,17 @@ const CardContent = ({ leg, eventId, freeBets, onRemoveSelection, changeStakeInp
         <CardContentWrapper>
             <CardContentMainWrapper>
                 <ContentFirstColumn>
-                    <CheckboxIcon
-                        isChecked={isChecked}
-                        className={isChecked ? 'theme-check' : 'theme-checkbox-off'}
+                    <Button
+                        sx={{ minWidth: 'unset', borderRadius: '15%', ':hover': { backgroundColor: 'unset' } }}
                         onClick={onToggleBetslipBet}
                         data-testid='selectionCheckbox'
-                    />
+                    >
+                        {isChecked ? (
+                            <CheckboxIcon fontSize='small' color={cssColor('--icon-selected-bg')} />
+                        ) : (
+                            <CheckBoxBlankOutlineIcon fontSize='small' color={cssColor('--icon-default-color')} />
+                        )}
+                    </Button>
                     <CardAlertIcon leg={leg} />
                 </ContentFirstColumn>
                 <ContentLink

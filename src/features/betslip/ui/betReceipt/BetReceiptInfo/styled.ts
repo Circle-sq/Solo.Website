@@ -40,12 +40,6 @@ export const S_KeepBetsAction = styled.span<{ isActive?: boolean }>`
     }}
 `;
 
-export const S_BetReceiptCheckbox = styled.span`
-    display: inherit;
-    font-size: 16px;
-    color: ${cssColor('--text-muted')};
-`;
-
 export const S_BetReceiptInfoLabel = styled.div``;
 
 export const S_BetReceiptInfoValue = styled(S_BetReceiptInfoLabel)``;

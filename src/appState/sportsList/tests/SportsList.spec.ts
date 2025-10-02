@@ -26,14 +26,13 @@ describe('SportsList', () => {
                 route: 'sport',
                 params: { id: 'football' },
                 label: 'Football',
-                iconName: 'sports-4',
                 testId: 'sport-football',
                 uuid: uuidV4,
             },
         ];
         const sportLinks = getSportsLinks(mockData);
 
-        expect(sportLinks).toEqual(expectedLinks);
+        expect(sportLinks[0]).toEqual(expect.objectContaining(expectedLinks[0]));
     });
 
     it('should handle a non-existent sport', () => {
@@ -50,13 +49,12 @@ describe('SportsList', () => {
                 route: 'sport',
                 params: { id: 'testsport123' },
                 label: 'Testsport123',
-                iconName: 'sports-globe',
                 testId: 'sport-testsport123',
             },
         ];
         const sportLinks = getSportsLinks(mockData);
 
-        expect(sportLinks).toEqual(expectedLinks);
+        expect(sportLinks[0]).toEqual(expect.objectContaining(expectedLinks[0]));
     });
 
     it('should handle an empty list', () => {

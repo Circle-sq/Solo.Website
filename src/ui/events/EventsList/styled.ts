@@ -46,6 +46,8 @@ export const S_EventList = styled.section<{ isLoadingUpcomingContent?: boolean }
 
 export const S_SportIcon = styled.span`
     margin-right: 16px;
+    display: flex;
+    align-items: center;
 
     @media (max-width: ${breakpoints.bp680}) {
         margin-right: 6px;

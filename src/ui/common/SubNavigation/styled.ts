@@ -166,7 +166,7 @@ export const S_SubNavMenuLink = styled(Link)<SubNav>`
     flex-direction: column;
 
     ${(props): string => {
-        const { iconType, isInHeader = false } = props;
+        const { isInHeader = false } = props;
 
         let style = `
             &.header_nav, &.sub_nav {
@@ -193,34 +193,6 @@ export const S_SubNavMenuLink = styled(Link)<SubNav>`
                 flex-direction: column;
             }
         `;
-
-        if (iconType === 'theme-search') {
-            style += `
-                &:before {
-                    content: "";
-                    height: 46px;
-                    width: 2px;
-                    background: ${GreyPalette.grey2};
-                    position: absolute;
-                    top: 8px;
-                    left: 0;
-                    right: 80px;
-                }
-
-                @media(max-width: ${breakpoints.bp1280}){
-                    &:before {
-                        content: ${isInHeader ? '""' : 'none'};
-                    }
-                }
-            `;
-        }
-
-        if (iconType === 'theme-mybets') {
-            style += `
-                border-left: 1px solid ${GreyPalette.grey7};
-                padding-left: 28px;
-            `;
-        }
 
         if (!isInHeader) {
             style += 'margin: 0;';
@@ -360,26 +332,4 @@ export const S_CountOfGames = styled.p`
     margin: 0;
     font-weight: ${fontWeight.medium};
     color: ${cssColor('--navlink-text')};
-`;
-
-export const S_SportIcon = styled.div`
-    @media (min-width: ${breakpoints.bp1280}) {
-        line-height: 0;
-
-        :before {
-            height: 24px;
-            width: 24px;
-            font-size: 24px;
-        }
-    }
-
-    @media screen and (max-width: ${breakpoints.bp768}) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-`;
-
-export const S_AlignmentBox = styled.div`
-    display: flex;
 `;

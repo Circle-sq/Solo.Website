@@ -2,7 +2,7 @@ import { observer } from 'mobx-react-lite';
 import { type MouseEvent, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { FootballFieldIcon, PlayOutlineIcon } from '@solo-ui/icons/svg';
+import { CountIcon, FootballFieldIcon, PlayOutlineIcon } from '@solo-ui/icons/svg';
 import { cssColor } from '@solo-ui/system';
 
 import { useAppStateContext } from 'src/appState/AppState';
@@ -12,7 +12,7 @@ import { activeMediaTabSelector } from 'src/modules/media/selectors';
 import { EVENT_MEDIA_TYPE } from 'src/utils/constants';
 import type { EventMediaType } from 'src/utils/types';
 
-import { S_MobileMatchLeadMedia, S_EventActionLink, S_EventActionIcon } from './styled';
+import { S_MobileMatchLeadMedia, S_EventActionLink } from './styled';
 
 const MobileMatchLeadMedia = () => {
     const dispatch = useDispatch();
@@ -61,7 +61,7 @@ const MobileMatchLeadMedia = () => {
                 isActive={activeMediaTab === stream}
                 onClick={(e: MouseEvent) => handleWidgetActionChange(e, stream)}
             >
-                <S_EventActionIcon className='sports-score' />
+                <CountIcon fontSize='small' />
             </S_EventActionLink>
 
             <S_EventActionLink

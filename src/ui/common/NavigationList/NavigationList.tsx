@@ -3,12 +3,9 @@ import { observer } from 'mobx-react-lite';
 import type { PropsWithChildren } from 'react';
 
 import { useAppStateContext } from 'src/appState/AppState';
-import { SportType } from 'src/common/enums';
 import { buildQueryUrl } from 'src/utils/Router/url';
+import type { LinkItem } from '../NavigationPanel/types';
 
-import type { LinkItem } from '../AllCountries/types';
-
-import BetLinkNavComponent from './BetLinkNavComponent';
 import ContentImage from './ContentImage';
 import { S_Wrapper } from './styled';
 
@@ -31,17 +28,6 @@ const NavigationList = ({ links, children }: PropsWithChildren<Props>) => {
                 const activeHighlightCompetitionLink = buildQueryUrl(routerRoutes, routeName, { ...routeParams });
 
                 const activeLink = isEqual(linkHref, activeHighlightCompetitionLink);
-
-                if (link.params?.id === SportType.BetlinkGolf) {
-                    return (
-                        <BetLinkNavComponent
-                            key={link.params.id}
-                            testId={`competition-${link.label}`}
-                            label={link.label as string}
-                            onClick={() => link.onClick?.()}
-                        />
-                    );
-                }
 
                 return (
                     <ContentImage

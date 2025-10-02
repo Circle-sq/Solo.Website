@@ -81,12 +81,9 @@ export const S_CashOutButton = styled(StatefulButton)<{ isCashOutLocked: boolean
 `;
 
 export const S_SuccessIconWrapper = styled.span`
-    background-color: ${cssColor('--icon-success-bg')};
-    color: ${cssColor('--icon-success-color')};
     padding: 4px 3px;
     margin-right: 8px;
     border-radius: 50px;
-    font-size: 8px;
 `;
 
 export const S_CashOutValue = styled.span`

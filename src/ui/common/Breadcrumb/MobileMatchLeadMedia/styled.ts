@@ -63,7 +63,3 @@ export const S_EventActionLink = styled(Link)<{ isActive?: boolean; disabled?: b
         return styles;
     }};
 `;
-
-export const S_EventActionIcon = styled.span`
-    font-size: 1rem;
-`;

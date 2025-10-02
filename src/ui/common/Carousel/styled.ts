@@ -398,7 +398,6 @@ export const S_SwiperContainer = styled.div`
 
     .swiper-button-prev,
     .swiper-button-next {
-        font-family: 'icons';
         border-radius: 50%;
         border: none;
         cursor: pointer;
@@ -429,14 +428,26 @@ export const S_SwiperContainer = styled.div`
         &:after {
             content: none;
         }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 12px;
+            height: 12px;
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            transform: translate(-50%, -50%);
+            color: ${GenericColors.black};
+        }
     }
 
     .swiper-button-prev {
         left: 0;
 
         &:before {
-            content: '';
-            color: ${GenericColors.black};
+            left: 55%;
+            transform: translate(-50%, -50%) rotate(-135deg);
         }
     }
 
@@ -444,8 +455,8 @@ export const S_SwiperContainer = styled.div`
         right: 0;
 
         &:before {
-            content: '';
-            color: ${GenericColors.black};
+            left: 45%;
+            transform: translate(-50%, -50%) rotate(45deg);
         }
     }
 `;

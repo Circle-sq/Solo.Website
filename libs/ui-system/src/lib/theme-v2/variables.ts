@@ -1584,15 +1584,10 @@ export const variables = {
         neon: 'darkBlue.400',
         contrast: 'contrastRed.400',
     },
-    '--icon-success-bg': {
+    '--icon-success-color': {
         blue: 'green.500',
         neon: 'green.500',
         contrast: 'contrastRed.500',
-    },
-    '--icon-success-color': {
-        blue: 'green.700',
-        neon: 'green.700',
-        contrast: 'contrastRed.700',
     },
     '--icon-primary-color': {
         blue: 'darkBlue.300',

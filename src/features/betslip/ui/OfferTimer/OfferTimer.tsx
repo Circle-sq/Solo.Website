@@ -2,8 +2,8 @@ import type { MouseEvent } from 'react';
 import { useRecoilValue } from 'recoil';
 
 import { RedPalette, YellowPalette } from '@solo-ui/system';
+import { WarningIcon } from '@solo-ui/icons/src/icons';
 
-import Icon from 'src/ui/common/Icon/Icon';
 import { I18n } from 'src/ui/common/Language/I18n';
 import useTimer from 'src/utils/hooks/useTimer';
 
@@ -36,7 +36,7 @@ const OfferTimer = () => {
     if (isOfferExpired) {
         return (
             <S_OfferTimerWrapper bgColor={RedPalette.red7}>
-                <Icon name='warning_filled' color={RedPalette.red4} />
+                <WarningIcon height='1em' color={RedPalette.red4} />
 
                 <S_OfferMessage variant='body3' textColor={RedPalette.red4} data-testid='validationMessage'>
                     <I18n langKey='betslip.offer.error.expired' defaultText='This offer has expired' />
@@ -48,7 +48,7 @@ const OfferTimer = () => {
     if (isOffered) {
         return (
             <S_OfferTimerWrapper bgColor={YellowPalette.yellow2}>
-                <Icon name='warning_filled' color={YellowPalette.yellow3} />
+                <WarningIcon height='1em' color={YellowPalette.yellow3} />
 
                 <S_OfferMessage variant='body3' textColor={YellowPalette.yellow4} data-testid='validationMessage'>
                     <I18n

@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 
 import { fontWeight, breakpoints, DarkBluePalette, GenericColors, GreyPalette, YellowPalette } from '@solo-ui/system';
 
-import Icon from 'src/ui/common/Icon/Icon';
 import Link from 'src/utils/Router/NewLink';
 
 export const S_Wrapper = styled.div<{ isAuthenticated?: boolean }>`
@@ -51,16 +50,6 @@ export const S_UserBalanceLabel = styled('span')`
     @media (max-width: ${breakpoints.bp1280}) {
         font-size: 12px;
     }
-`;
-
-export const S_IconUpDown = styled(Icon)`
-    font-family: icons;
-    font-size: 5px;
-    position: relative;
-    margin: 0 12px;
-    display: block;
-    align-self: flex-start;
-    color: ${DarkBluePalette.darkBlue5};
 `;
 
 export const S_UserBalanceWrapper = styled.div`

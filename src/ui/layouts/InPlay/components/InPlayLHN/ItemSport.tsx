@@ -1,10 +1,10 @@
 import { CircularProgress, Stack, Tooltip, Typography } from '@mui/material';
 
+import SportIcon from '@solo-ui/icons/config/SportIcon';
 import { useSportIconUrlQuerySelector } from '@solo-api/icons/querySelectors';
 import { DownArrowIcon, HideIcon, ShowIcon } from '@solo-ui/icons/svg';
 
 import { useAppStateContext } from 'src/appState/AppState';
-import { SPORT_ICONS } from 'src/config/sport-icons';
 
 import { S_Icon, S_SummaryButton, TooltipStyles } from './styled';
 
@@ -76,7 +76,9 @@ const ItemSport = ({
     return (
         <S_SummaryButton data-testid='in-play-lhn-sport' size='md' onClick={onToggleExpanded}>
             {icon === undefined ? (
-                <Stack component='span' className={SPORT_ICONS[id] ?? SPORT_ICONS.default} sx={{ m: 0 }} />
+                <Stack component='span' sx={{ m: 0 }}>
+                    <SportIcon sport={id} />
+                </Stack>
             ) : (
                 <S_Icon src={icon} />
             )}

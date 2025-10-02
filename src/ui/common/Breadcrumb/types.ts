@@ -7,7 +7,7 @@ export interface Link {
     route?: string;
     originalRoute?: string;
     params?: ParamsType;
-    icon?: string;
+    Icon?: ReactNode;
     label: ReactNode | string;
     highlighted?: boolean;
     counter?: number;

@@ -210,8 +210,6 @@ vi.mock('src/ui/common/Carousel/Carousel', () => ({
     },
 }));
 
-const baseballClass = 'sports-23';
-
 describe('InPlayLayout', () => {
     const collectionId = 'home-count-live-highlights';
     const initState = {
@@ -230,7 +228,7 @@ describe('InPlayLayout', () => {
         const { findAllByTestId } = renderWithAppWrapper(<EventsInPlay />, initState);
         const sportIcon = await findAllByTestId('sportIcon');
 
-        expect(sportIcon[0]).toHaveClass(baseballClass);
+        expect(sportIcon[0]).toHaveAttribute('aria-label', 'baseballIcon');
     });
 
     it('should render live streaming tab', async () => {

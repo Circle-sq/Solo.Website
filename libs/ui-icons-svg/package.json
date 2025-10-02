@@ -5,7 +5,7 @@
   "scripts": {
     "generate": "node ./tools/svgToComponent.mjs",
     "copy:helper": "shx cp -r helpers/ src",
-    "generate:index": "node ./tools-mui/builder.mjs --svg-dir=src --output-dir=src",
+    "generate:index": "node ./tools-mui/builder.mjs --svg-dir=src/icons --output-dir=src/icons",
     "postgenerate": "npm run copy:helper ; npm run generate:index"
   },
   "types": "./index.d.ts",
