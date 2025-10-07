@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { LightBluePalette } from '@solo-ui/system';
+import { cssColor } from '@solo-ui/system';
 
 import Button from 'src/ui/common/Button/Button';
 
@@ -13,12 +13,10 @@ export const LoginButton = styled(Button)`
     display: block;
     margin-top: 30px;
     width: 100%;
-    color: ${LightBluePalette.lightBlue12};
-    background-color: ${LightBluePalette.lightBlue6};
-    border-color: ${LightBluePalette.lightBlue6};
+    color: ${cssColor('--body-text')};
+    background-color: ${cssColor('--button-default-bg')};
 
     &:hover {
-        background-color: ${LightBluePalette.lightBlue9};
-        border-color: ${LightBluePalette.lightBlue9};
+        background-color: ${cssColor('--button-default-hover-bg')};
     }
 `;

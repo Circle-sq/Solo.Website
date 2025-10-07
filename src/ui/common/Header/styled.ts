@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, breakpoints, GreyPalette, LightBluePalette, cssColor } from '@solo-ui/system';
+import { fontWeight, breakpoints, cssColor } from '@solo-ui/system';
 
 import Link from 'src/utils/Router/NewLink';
 
@@ -67,11 +67,11 @@ export const MyBetsLink = styled(Link)<{ isActive: boolean }>`
     margin-left: auto;
     font-weight: ${fontWeight.bold};
 
-    color: ${({ isActive }) => (isActive ? LightBluePalette.lightBlue6 : GreyPalette.grey7)};
+    color: ${({ isActive }) => (isActive ? cssColor('--link-active-text') : cssColor('--body-text'))};
 
     @media (min-width: ${breakpoints.bp960}) {
         &:hover {
-            color: ${LightBluePalette.lightBlue9};
+            color: ${cssColor('--link-hover-text')};
         }
     }
 `;

@@ -97,7 +97,7 @@ export const HeaderStyledLink = styled(Link)<HeaderStyledLinkPropsType>`
 
 export const S_LabelBadge = styled.div`
     color: ${cssColor('--badge-text')};
-    background: ${cssColor('--badge-bg')};
+    background: ${cssColor('--badge-error-bg')};
     position: absolute;
     top: -12px;
     right: 0;

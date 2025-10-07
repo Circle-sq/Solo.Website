@@ -28,13 +28,13 @@ export const S_CloseBetReceiptButton = styled(Button)`
     line-height: 25px;
     height: 48px;
     border-radius: 3px;
-    background-color: ${cssColor('--button-secondary-bg')};
+    background-color: ${cssColor('--button-default-bg')};
     font-weight: ${fontWeight.bold};
-    border: solid 1px ${cssColor('--button-secondary-border')};
+    border: solid 1px ${cssColor('--button-default-border')};
 
     &:hover {
-        border: 1px solid ${cssColor('--button-secondary-hover-border')};
-        background-color: ${cssColor('--button-secondary-hover-bg')};
+        border: 1px solid ${cssColor('--button-default-border')};
+        background-color: ${cssColor('--button-default-hover-bg')};
     }
 `;
 
@@ -56,8 +56,8 @@ export const S_SuccessMessage = styled.div`
     border-radius: 5px;
     font-size: 12px;
     line-height: 16px;
-    color: ${cssColor('--text-success')};
-    background: ${cssColor('--alert-success-bg')};
+    color: ${cssColor('--body-text')};
+    background: ${cssColor('--list-primary-header-bg')};
     font-weight: ${fontWeight.semibold};
 `;
 

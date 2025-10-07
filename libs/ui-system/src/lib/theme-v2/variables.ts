@@ -40,15 +40,25 @@ export const variables = {
         neon: 'white',
         contrast: 'contrastRed.900',
     },
-    '--badge-bg': {
+    '--badge-error-bg': {
         blue: 'red.600',
         neon: 'red.600',
         contrast: 'contrastRed.500',
     },
-    '--badge-error-bg': {
-        blue: 'red.500',
-        neon: 'red.500',
-        contrast: 'contrastRed.500',
+    '--badge-secondary-bg': {
+        blue: 'grey.50',
+        neon: 'grey.50',
+        contrast: 'contrastRed.50',
+    },
+    '--badge-secondary-text': {
+        blue: 'orange.300',
+        neon: 'orange.300',
+        contrast: 'contrastRed.300',
+    },
+    '--badge-generic-border': {
+        blue: 'transparent',
+        neon: 'transparent',
+        contrast: 'transparent',
     },
 
     '--button-outlined-default-border': {
@@ -103,6 +113,11 @@ export const variables = {
         neon: 'debugMint.600',
         contrast: 'contrastRed.600',
     },
+    '--box-secondary-border': {
+        blue: 'orange.300',
+        neon: 'orange.300',
+        contrast: 'contrastRed.300',
+    },
     '--box-default-shadow': {
         blue: 'darkBlue.900',
         neon: 'debugMint.900',
@@ -137,8 +152,8 @@ export const variables = {
         contrast: 'contrastRed.700',
     },
     '--alert-info-bg': {
-        blue: 'orange.500',
-        neon: 'orange.500',
+        blue: 'orange.50',
+        neon: 'orange.50',
         contrast: 'contrastRed.900',
     },
     '--alert-info-text': {
@@ -172,8 +187,8 @@ export const variables = {
         contrast: 'contrastRed.300',
     },
     '--alert-secondary-text': {
-        blue: 'orange.400',
-        neon: 'orange.400',
+        blue: 'orange.200',
+        neon: 'orange.200',
         contrast: 'contrastRed.300',
     },
 
@@ -191,17 +206,6 @@ export const variables = {
         blue: 'green.500',
         neon: 'green.500',
         contrast: 'contrastRed.50',
-    },
-
-    '--button-betslip-login-bg': {
-        blue: 'lightBlue.500',
-        neon: 'lightBlue.500',
-        contrast: 'contrastRed.500',
-    },
-    '--button-betslip-login-hover-bg': {
-        blue: 'lightBlue.300',
-        neon: 'lightBlue.300',
-        contrast: 'contrastRed.300',
     },
 
     '--badge-default-border': {
@@ -226,20 +230,15 @@ export const variables = {
         contrast: 'contrastRed.50',
     },
 
-    '--button-brand-bg': {
-        blue: 'orange.300',
-        neon: 'orange.300',
-        contrast: 'contrastRed.900',
+    '--button-disabled-border': {
+        blue: 'orange.500',
+        neon: 'orange.500',
+        contrast: 'contrastRed.50',
     },
-    '--button-brand-border': {
-        blue: 'orange.300',
-        neon: 'orange.300',
+    '--button-disabled-bg': {
+        blue: 'orange.700',
+        neon: 'orange.700',
         contrast: 'contrastRed.700',
-    },
-    '--button-brand-hover-bg': {
-        blue: 'orange.600',
-        neon: 'orange.600',
-        contrast: 'contrastRed.300',
     },
     '--button-brand-disabled-bg': {
         blue: 'darkBlue.800',
@@ -277,27 +276,21 @@ export const variables = {
         neon: 'white:20%',
         contrast: 'contrastRed.100:20%',
     },
-
-    '--button-disabled-bg': {
-        blue: 'grey.600',
-        neon: 'grey.600',
-        contrast: 'contrastRed.500',
-    },
     '--button-disabled-hover-bg': {
         blue: 'darkBlue.600',
         neon: 'ioDarkBlue.500',
         contrast: 'contrastRed.500',
     },
     '--button-selected-bg': {
-        blue: 'lightBlue.700',
-        neon: 'ioLightBlue.300',
+        blue: 'orange.800',
+        neon: 'orange.800',
         contrast: 'contrastRed.A700',
     },
 
     '--button-selected-hover-bg': {
-        blue: 'lightBlue.400',
-        neon: 'ioLightBlue.400',
-        contrast: 'contrastRed.A700',
+        blue: 'orange.300',
+        neon: 'orange.300',
+        contrast: 'contrastRed.A200',
     },
 
     '--box-selection-header-hover-bg': {
@@ -419,8 +412,8 @@ export const variables = {
         contrast: 'contrastRed.500',
     },
     '--chip-large-active-hover-bg': {
-        blue: 'orange.600',
-        neon: 'orange.600',
+        blue: 'orange.400',
+        neon: 'orange.400',
         contrast: 'contrastRed.300',
     },
     '--chip-large-outlined-border': {
@@ -434,8 +427,8 @@ export const variables = {
         contrast: 'contrastRed.400',
     },
     '--chip-large-active-hover-border': {
-        blue: 'orange.600',
-        neon: 'orange.600',
+        blue: 'orange.400',
+        neon: 'orange.400',
         contrast: 'contrastRed.300',
     },
     '--chip-warning-color': {
@@ -445,9 +438,9 @@ export const variables = {
     },
 
     '--checkbox-bg': {
-        blue: 'lightBlue.500',
-        neon: 'lightBlue.500',
-        contrast: 'contrastRed.500',
+        blue: 'orange.300',
+        neon: 'orange.300',
+        contrast: 'contrastRed.300',
     },
     '--checkbox-color': {
         blue: 'grey.600',
@@ -458,6 +451,21 @@ export const variables = {
         blue: 'grey.600',
         neon: 'grey.600',
         contrast: 'contrastRed.600',
+    },
+    '--checkbox-generic-border': {
+        blue: 'transparent',
+        neon: 'transparent',
+        contrast: 'contrastRed.50',
+    },
+    '--checkbox-generic-bg': {
+        blue: 'transparent',
+        neon: 'transparent',
+        contrast: 'contrastRed.50',
+    },
+    '--checkbox-default-border': {
+        blue: 'orange.300',
+        neon: 'orange.300',
+        contrast: 'contrastRed.300',
     },
 
     '--button-numpad-bg': {
@@ -528,25 +536,25 @@ export const variables = {
         contrast: 'contrastRed.50',
     },
 
-    '--button-secondary-bg': {
-        blue: 'lightBlue.400',
-        neon: 'lightBlue.500',
+    '--button-default-bg': {
+        blue: 'orange.300',
+        neon: 'orange.300',
+        contrast: 'contrastRed.400',
+    },
+    '--button-default-border': {
+        blue: 'orange.300',
+        neon: 'orange.300',
+        contrast: 'contrastRed.400',
+    },
+    '--button-default-hover-bg': {
+        blue: 'orange.400',
+        neon: 'orange.400',
         contrast: 'contrastRed.400',
     },
     '--button-secondary-border': {
         blue: 'transparent',
         neon: 'transparent',
         contrast: 'contrastRed.300',
-    },
-    '--button-secondary-hover-bg': {
-        blue: 'lightBlue.300',
-        neon: 'lightBlue.300',
-        contrast: 'contrastRed.300',
-    },
-    '--button-secondary-hover-border': {
-        blue: 'lightBlue.500',
-        neon: 'lightBlue.500',
-        contrast: 'contrastRed.500',
     },
 
     '--card-betslip-bg': {
@@ -560,15 +568,10 @@ export const variables = {
         contrast: 'contrastRed.400',
     },
 
-    '--button-loading-disabled-text': {
-        blue: 'lightBlue.400',
-        neon: 'lightBlue.500',
-        contrast: 'contrastRed.400',
-    },
-    '--button-loading-disabled-bg': {
-        blue: 'lightBlue.400:30%',
-        neon: 'lightBlue.500:30%',
-        contrast: 'contrastRed.500:30%',
+    '--button-disabled-text': {
+        blue: 'orange.100:65%',
+        neon: 'orange.100:65%',
+        contrast: 'contrastRed.100',
     },
     '--button-text': {
         blue: 'transparent',
@@ -756,8 +759,8 @@ export const variables = {
         contrast: 'contrastRed.300',
     },
     '--icon-selected-bg': {
-        blue: 'lightBlue.500',
-        neon: 'lightBlue.500',
+        blue: 'orange.300',
+        neon: 'orange.300',
         contrast: 'contrastRed.500',
     },
     '--icon-chain-border': {
@@ -797,6 +800,16 @@ export const variables = {
         blue: 'orange.300',
         neon: 'orange.300',
         contrast: 'contrastRed.600',
+    },
+    '--link-active-text': {
+        blue: 'orange.300',
+        neon: 'orange.300',
+        contrast: 'contrastRed.600',
+    },
+    '--link-hover-text': {
+        blue: 'orange.200',
+        neon: 'orange.200',
+        contrast: 'contrastRed.800',
     },
     '--link-active-border': {
         blue: 'lightBlue.500',
@@ -1152,6 +1165,22 @@ export const variables = {
         contrast: 'contrastRed.600',
     },
 
+    '--spinner-primary-color': {
+        blue: 'orange.100',
+        neon: 'orange.100',
+        contrast: 'contrastRed.100',
+    },
+    '--spinner-secondary-color': {
+        blue: 'orange.200',
+        neon: 'orange.200',
+        contrast: 'contrastRed.200',
+    },
+    '--spinner-tertiary-color': {
+        blue: 'orange.300',
+        neon: 'orange.300',
+        contrast: 'contrastRed.300',
+    },
+
     '--switch-default-bg': {
         blue: 'darkBlue.600',
         neon: 'ioDarkBlue.500',
@@ -1264,6 +1293,16 @@ export const variables = {
         contrast: 'contrastRed.400',
     },
 
+    '--progressbar-first-bg': {
+        blue: 'orange.900',
+        neon: 'orange.900',
+        contrast: 'contrastRed.900',
+    },
+    '--progressbar-second-bg': {
+        blue: 'orange.300',
+        neon: 'orange.300',
+        contrast: 'contrastRed.300',
+    },
     '--popup-default-bg': {
         blue: 'darkBlue.800',
         neon: 'debugMint.800',
@@ -1320,19 +1359,19 @@ export const variables = {
         contrast: 'contrastRed.600',
     },
     '--radio-hover-border': {
-        blue: 'lightBlue.500',
-        neon: 'lightBlue.500',
+        blue: 'orange.300',
+        neon: 'orange.300',
         contrast: 'contrastRed.500',
     },
     '--radio-active-bg': {
-        blue: 'lightBlue.500',
-        neon: 'lightBlue.500',
-        contrast: 'contrastRed.500',
+        blue: 'orange.300',
+        neon: 'orange.300',
+        contrast: 'contrastRed.300',
     },
     '--radio-active-border': {
-        blue: 'lightBlue.500',
-        neon: 'lightBlue.500',
-        contrast: 'contrastRed.500',
+        blue: 'orange.300',
+        neon: 'orange.300',
+        contrast: 'contrastRed.300',
     },
     '--radio-active-shadow': {
         blue: 'darkBlue.800',

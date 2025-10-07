@@ -30,6 +30,7 @@ import {
     S_CloseBetReceiptButton,
     S_SuccessMessage,
 } from './styled';
+import { cssColor } from '@solo-ui/system';
 
 const BetReceipt = () => {
     const { router } = useAppStateContext();
@@ -70,7 +71,7 @@ const BetReceipt = () => {
     return (
         <S_BetReceipt data-testid='betReceipt'>
             <S_SuccessMessage data-testid='betPlaceSuccessfulMessage'>
-                <SuccessCheckmarkIcon fontSize='xsmall' />
+                <SuccessCheckmarkIcon fontSize='xsmall' color={cssColor('--icon-generic-color')} />
                 <I18n
                     langKey='betslip.receipt.heading.label'
                     defaultText='Your bet(s) have been successfully placed!'

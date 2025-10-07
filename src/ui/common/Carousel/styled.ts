@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, GenericColors, GreyPalette, LightBluePalette, DarkBluePalette, Opacities } from '@solo-ui/system';
+import { breakpoints, GenericColors, GreyPalette, DarkBluePalette, Opacities, cssColor } from '@solo-ui/system';
 
 import { Image, SlideAnchor } from '../../content/Banners/components/styled';
 
@@ -351,7 +351,7 @@ export const S_ProgressBar = styled.div<ProgressBarProps>`
     left: 0;
     bottom: 0;
     z-index: 10;
-    background-color: ${LightBluePalette.lightBlue1};
+    background-color: ${cssColor('--progressbar-first-bg')};
 
     &:after {
         content: '';
@@ -379,7 +379,7 @@ export const S_ProgressBar = styled.div<ProgressBarProps>`
 
         return `
             &:after {
-                background-color: ${LightBluePalette.lightBlue6};
+                background-color: ${cssColor('--progressbar-second-bg')};
                 animation: slide-progress ${duration}s linear 1;
                 ${isReset ? 'animation: none' : ''}
                 animation-play-state: ${isPaused ? 'paused' : 'running'};

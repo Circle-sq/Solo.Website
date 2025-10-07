@@ -27,5 +27,6 @@ export const S_BetsIndicator = styled.span`
     justify-content: center;
     line-height: 1em;
     margin-left: 4px;
-    background-color: ${cssColor('--badge-error-bg')};
+    color: ${cssColor('--badge-secondary-text')};
+    background-color: ${cssColor('--badge-secondary-bg')};
 `;

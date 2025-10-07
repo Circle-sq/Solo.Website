@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { LightBluePalette } from '@solo-ui/system';
+import { cssColor } from '@solo-ui/system';
 
 import type { Testable } from 'src/utils/Testable/types';
 
@@ -25,7 +25,7 @@ const SpinnerStyled = styled.div`
         margin-left: 5px;
         width: 4px;
         height: 4px;
-        background: ${LightBluePalette.lightBlue7};
+        background: ${cssColor('--box-default-bg')};
         border-radius: 50%;
         animation: dots3 1.5s infinite ease-out;
     }
@@ -47,13 +47,13 @@ const SpinnerStyled = styled.div`
 
     @keyframes dots3 {
         0% {
-            background: ${LightBluePalette.lightBlue7};
+            background: ${cssColor('--spinner-primary-color')};
         }
         50% {
-            background: ${LightBluePalette.lightBlue11};
+            background: ${cssColor('--spinner-secondary-color')};
         }
         100% {
-            background: ${LightBluePalette.lightBlue10};
+            background: ${cssColor('--spinner-tertiary-color')};
         }
     }
 `;

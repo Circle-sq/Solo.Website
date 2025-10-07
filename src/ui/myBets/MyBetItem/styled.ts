@@ -59,18 +59,18 @@ export const S_CashOutButton = styled(StatefulButton)<{ isCashOutLocked: boolean
             });
         } else if (loading) {
             styles += getPlaceButtonStyles({
-                borderColor: cssColor('--button-brand-border'),
-                bgColor: cssColor('--button-loading-disabled-bg'),
-                color: cssColor('--button-loading-disabled-text'),
-                bgHoverColor: cssColor('--button-loading-disabled-bg'),
-                borderHoverColor: cssColor('--button-brand-border'),
+                borderColor: cssColor('--button-disabled-border'),
+                bgColor: cssColor('--button-disabled-bg'),
+                color: cssColor('--button-disabled-text'),
+                bgHoverColor: cssColor('--button-disabled-bg'),
+                borderHoverColor: cssColor('--button-disabled-border'),
             });
         } else {
             styles += getPlaceButtonStyles({
-                borderColor: cssColor('--button-brand-border'),
-                bgColor: cssColor('--button-brand-bg'),
+                borderColor: cssColor('--button-default-border'),
+                bgColor: cssColor('--button-default-bg'),
                 color: cssColor('--body-text'),
-                bgHoverColor: cssColor('--button-brand-hover-bg'),
+                bgHoverColor: cssColor('--button-default-hover-bg'),
             });
         }
 

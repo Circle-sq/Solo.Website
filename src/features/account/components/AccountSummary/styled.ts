@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, GenericColors, LightBluePalette, cssColor } from '@solo-ui/system';
+import { fontWeight, cssColor } from '@solo-ui/system';
 
 import Checkbox from 'src/ui/common/Checkbox';
 import { S_CheckmarkWrap } from 'src/ui/common/Checkbox/styled';
@@ -26,11 +26,15 @@ export const S_BalanceInHeaderCheckbox = styled(Checkbox)`
     ${({ isChecked }) => {
         return `
             ${S_CheckmarkWrap} {
-                background-color: ${GenericColors.transparent};
-                border-color: ${isChecked ? GenericColors.transparent : LightBluePalette.lightBlue5};
+                background-color: ${cssColor('--checkbox-generic-bg')};
+                border-color: ${
+                    isChecked ? cssColor('--checkbox-generic-border') : cssColor('--checkbox-default-border')
+                };
 
                 &:hover {
-                    border-color: ${isChecked ? GenericColors.transparent : LightBluePalette.lightBlue5};
+                    border-color: ${
+                        isChecked ? cssColor('--checkbox-generic-border') : cssColor('--checkbox-default-border')
+                    };
                 }
             }
         `;

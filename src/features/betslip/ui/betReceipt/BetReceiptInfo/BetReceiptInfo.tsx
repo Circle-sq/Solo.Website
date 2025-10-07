@@ -3,7 +3,7 @@ import { useRecoilState, useRecoilValue } from 'recoil';
 
 import { currencySelector, oddsFormatSelector } from '@solo-account/store/selectors';
 import { CheckBoxBlankOutlineIcon, CheckboxIcon } from '@solo-ui/icons/svg';
-import { LightBluePalette, cssColor } from '@solo-ui/system';
+import { cssColor } from '@solo-ui/system';
 
 import useTranslatedCurrency from 'src/appState/customHooks/useTranslatedCurrency';
 import { toggleState } from 'src/common/helpers/state';
@@ -69,7 +69,7 @@ const BetReceiptInfo = () => {
             <S_BetReceiptActions>
                 <S_KeepBetsAction onClick={toggleKeepPlacedBets} isActive={keepPlacedBets} data-testid='keepPlacedBets'>
                     {keepPlacedBets ? (
-                        <CheckboxIcon fontSize='small' color={LightBluePalette.lightBlue6} />
+                        <CheckboxIcon fontSize='small' color={cssColor('--icon-selected-bg')} />
                     ) : (
                         <CheckBoxBlankOutlineIcon fontSize='small' color={cssColor('--text-muted')} />
                     )}

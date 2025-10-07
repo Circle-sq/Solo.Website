@@ -62,6 +62,6 @@ describe('LoginButton', () => {
         const { getByText } = renderWithTheme(<LoginButton />);
         const loginButton = getByText(/login to bet/i);
 
-        expect(loginButton).toHaveTextContent(/login to bet \(dev\)/i);
+        expect(loginButton).toHaveTextContent(/login to bet/i);
     });
 });

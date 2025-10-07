@@ -10,11 +10,11 @@ export const S_LoginButton = styled(Button)`
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    background-color: ${cssColor('--button-betslip-login-bg')};
+    background-color: ${cssColor('--button-default-bg')};
     color: ${cssColor('--body-text')};
 
     &:hover {
-        background-color: ${cssColor('--button-betslip-login-hover-bg')};
+        background-color: ${cssColor('--button-default-hover-bg')};
     }
 `;
 
@@ -36,11 +36,11 @@ export const PlaceButton = styled(StatefulButton)`
     ${({ disabled = false, loading = false }): string => {
         if (disabled && loading) {
             return getPlaceButtonStyles({
-                borderColor: cssColor('--button-brand-border'),
-                bgColor: cssColor('--button-loading-disabled-bg'),
-                color: cssColor('--button-loading-disabled-text'),
-                bgHoverColor: cssColor('--button-loading-disabled-bg'),
-                borderHoverColor: cssColor('--button-brand-border'),
+                borderColor: cssColor('--button-disabled-border'),
+                bgColor: cssColor('--button-disabled-bg'),
+                color: cssColor('--button-disabled-text'),
+                bgHoverColor: cssColor('--button-disabled-bg'),
+                borderHoverColor: cssColor('--button-disabled-border'),
             });
         }
 
@@ -53,10 +53,10 @@ export const PlaceButton = styled(StatefulButton)`
         }
 
         return getPlaceButtonStyles({
-            borderColor: cssColor('--button-brand-border'),
-            bgColor: cssColor('--button-brand-bg'),
+            borderColor: cssColor('--button-default-border'),
+            bgColor: cssColor('--button-default-bg'),
             color: cssColor('--body-text'),
-            bgHoverColor: cssColor('--button-brand-hover-bg'),
+            bgHoverColor: cssColor('--button-default-hover-bg'),
         });
     }}
 `;

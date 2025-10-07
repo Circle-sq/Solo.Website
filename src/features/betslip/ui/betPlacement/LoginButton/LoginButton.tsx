@@ -32,7 +32,7 @@ export const LoginButton = () => {
                 closeMyBetsAndQuickBet();
             }}
         >
-            <I18n langKey='betslip.login-button' defaultText='Login to bet (dev)' />
+            <I18n langKey='betslip.login-button' defaultText='Login to bet' />
         </S_LoginButton>
     );
 };

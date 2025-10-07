@@ -1,4 +1,4 @@
-import { GenericColors, LightBluePalette, RedPalette } from '@solo-ui/system';
+import { cssColor } from '@solo-ui/system';
 
 import { PriceChange } from 'src/common/enums';
 
@@ -14,11 +14,9 @@ export const getPriceChangeStyles = (priceChange: PriceChange) => {
                 last-blink 6s ease-out 5s 1 forwards;
             ${topBottomKey}: 0;
             right: 0;
-            border: ${arrowWidth}px solid ${GenericColors.transparent};
-            border-${topBottomKey}: ${arrowWidth - 1}px solid ${
-                isPriceUp ? RedPalette.red5 : LightBluePalette.lightBlue11
-            };
-            border-right: ${arrowWidth}px solid ${isPriceUp ? RedPalette.red5 : LightBluePalette.lightBlue11};
+            border: ${arrowWidth}px solid ${cssColor('--badge-generic-border')};
+            border-${topBottomKey}: ${arrowWidth - 1}px solid ${cssColor('--badge-secondary-bg')};
+            border-right: ${arrowWidth}px solid ${cssColor('--badge-secondary-bg')};
             border-${topBottomKey}-right-radius: 1px;
         }
     `;

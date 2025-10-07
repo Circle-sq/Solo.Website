@@ -25,5 +25,5 @@ export const S_PossibleWinnings = styled.div`
     max-width: 120px;
     text-align: right;
     font-weight: ${fontWeight.medium};
-    color: ${cssColor('--text-success')};
+    color: ${cssColor('--body-text')};
 `;

@@ -135,7 +135,7 @@ export const S_LiveBtnCounter = styled.span`
     height: 16px;
     width: 16px;
     color: ${cssColor('--badge-text')};
-    background-color: ${cssColor('--badge-bg')};
+    background-color: ${cssColor('--badge-error-bg')};
     font-size: 11px;
     font-weight: ${fontWeight.semibold};
     line-height: 15px;
