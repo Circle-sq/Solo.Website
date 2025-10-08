@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, DarkBluePalette, LightBluePalette, cssColor } from '@solo-ui/system';
+import { fontWeight, cssColor } from '@solo-ui/system';
 
 export const S_Icon = styled.span`
     position: absolute;
@@ -22,13 +22,13 @@ export const S_Icon = styled.span`
         width: 8px;
         height: 8px;
         border-radius: 50%;
-        background-color: ${LightBluePalette.lightBlue6};
+        background-color: ${cssColor('--radio-active-bg')};
     }
 
-    border: 2px solid ${DarkBluePalette.darkBlue5};
+    border: 2px solid ${cssColor('--radio-primary-bg')};
 
     &[aria-checked='true'] {
-        border: 2px solid ${LightBluePalette.lightBlue6};
+        border: 2px solid ${cssColor('--radio-active-border')};
     }
 `;
 

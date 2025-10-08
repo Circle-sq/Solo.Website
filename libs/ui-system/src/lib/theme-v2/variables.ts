@@ -337,11 +337,6 @@ export const variables = {
         contrast: 'contrastRed.800',
     },
 
-    '--button-contained-primary-hover-bg': {
-        blue: 'lightBlue.300',
-        neon: 'lightBlue.500',
-        contrast: 'contrastRed.300',
-    },
     '--button-DatePicker-today-border': {
         blue: 'lightBlue.200',
         neon: 'lightBlue.200',
@@ -495,30 +490,15 @@ export const variables = {
         contrast: 'transparent',
     },
     '--button-preset-hover-bg': {
-        blue: 'lightBlue.700',
-        neon: 'lightBlue.700',
-        contrast: 'contrastRed.700',
-    },
-    '--button-preset-hover-border': {
-        blue: 'lightBlue.300',
-        neon: 'lightBlue.300',
-        contrast: 'contrastRed.300',
+        blue: 'orange.800',
+        neon: 'orange.800',
+        contrast: 'contrastRed.800',
     },
 
     '--button-max-stake-bg': {
         blue: 'darkBlue.700',
         neon: 'ioDarkBlue.700',
         contrast: 'contrastRed.700',
-    },
-    '--button-max-stake-border': {
-        blue: 'lightBlue.300',
-        neon: 'lightBlue.300',
-        contrast: 'contrastRed.300',
-    },
-    '--button-max-stake-text': {
-        blue: 'lightBlue.300',
-        neon: 'lightBlue.300',
-        contrast: 'contrastRed.300',
     },
     '--button-max-stake-disabled-bg': {
         blue: 'darkBlue.700',
@@ -931,10 +911,11 @@ export const variables = {
         neon: 'ioDarkBlue.400',
         contrast: 'contrastRed.600',
     },
-    '--input-DatePicker-border-focused': {
-        blue: 'lightBlue.500',
-        neon: 'lightBlue.500',
-        contrast: 'contrastRed.500',
+
+    '--input-focused-border': {
+        blue: 'orange.300',
+        neon: 'orange.300',
+        contrast: 'contrastRed.300',
     },
 
     '--icon-DatePicker-bg-hover': {
@@ -1250,35 +1231,15 @@ export const variables = {
         contrast: 'contrastRed.100',
     },
 
-    '--button-contained-primary-bg': {
-        blue: 'lightBlue.400',
-        neon: 'lightBlue.500',
-        contrast: 'contrastRed.400',
-    },
     '--button-outlined-primary-hover-bg': {
-        blue: 'lightBlue.400:10%',
-        neon: 'lightBlue.400:10%',
+        blue: 'orange.A100',
+        neon: 'orange.A100',
         contrast: 'contrastRed.400:10%',
-    },
-    '--button-outlined-primary-text': {
-        blue: 'lightBlue.400',
-        neon: 'lightBlue.400',
-        contrast: 'contrastRed.400',
     },
     '--button-outlined-primary-bg': {
         blue: 'darkBlue.800',
         neon: 'ioDarkBlue.800',
         contrast: 'contrastRed.800',
-    },
-    '--button-outlined-primary-border': {
-        blue: 'lightBlue.400',
-        neon: 'lightBlue.400',
-        contrast: 'contrastRed.400',
-    },
-    '--button-contained-primary-active-bg': {
-        blue: 'lightBlue.400',
-        neon: 'lightBlue.400',
-        contrast: 'contrastRed.400',
     },
 
     '--button-contained-secondary-hover-bg': {
@@ -1348,7 +1309,12 @@ export const variables = {
         contrast: 'contrastRed.400',
     },
 
-    '--radio-bg': {
+    '--radio-primary-bg': {
+        blue: 'darkBlue.400',
+        neon: 'darkBlue.400',
+        contrast: 'contrastRed.400',
+    },
+    '--radio-secondary-bg': {
         blue: 'darkBlue.800',
         neon: 'darkBlue.800',
         contrast: 'contrastRed.800',
@@ -1563,6 +1529,11 @@ export const variables = {
         contrast: 'contrastRed.400',
     },
 
+    '--text-primary': {
+        blue: 'orange.300',
+        neon: 'orange.300',
+        contrast: 'contrastRed.300',
+    },
     '--text-secondary': {
         blue: 'grey.400',
         neon: 'darkBlue.300',

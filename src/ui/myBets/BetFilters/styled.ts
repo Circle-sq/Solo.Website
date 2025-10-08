@@ -92,11 +92,11 @@ export const S_ShowResultButton = styled.button`
     cursor: pointer;
     font-weight: ${fontWeight.bold};
     border-radius: ${radius.main};
-    background-color: ${cssColor('--button-contained-primary-bg')};
+    background-color: ${cssColor('--button-default-bg')};
     color: ${cssColor('--body-text')};
 
     &:hover {
-        background-color: ${cssColor('--button-contained-primary-hover-bg')};
+        background-color: ${cssColor('--button-default-hover-bg')};
     }
 `;
 
@@ -170,7 +170,7 @@ export const StyledTextField = styled(TextField)`
         font-family: 'Noto Sans', sans-serif;
 
         &.Mui-focused .MuiOutlinedInput-notchedOutline {
-            border-color: ${cssColor('--input-DatePicker-border-focused')} !important;
+            border-color: ${cssColor('--input-focused-border')} !important;
             border-width: 1px !important;
         }
 

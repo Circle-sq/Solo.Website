@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { DarkBluePalette, LightBluePalette, RedPalette, cssColor } from '@solo-ui/system';
+import { DarkBluePalette, RedPalette, cssColor } from '@solo-ui/system';
 
 export const S_Input = styled.input<{ error?: boolean }>`
     border-radius: 3px;
@@ -20,7 +20,7 @@ export const S_Input = styled.input<{ error?: boolean }>`
     }
 
     &:focus {
-        border: 1px solid ${LightBluePalette.lightBlue9};
+        border: 1px solid ${cssColor('--box-secondary-border')};
     }
 
     &::placeholder {

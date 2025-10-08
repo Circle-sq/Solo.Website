@@ -84,5 +84,5 @@
       }
     }
   },
-  "implicitDependencies": ["assets-shared"]
+  "implicitDependencies": []
 }

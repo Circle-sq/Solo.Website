@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import Typography, { type TypographyProps } from '@mui/material/Typography';
 
-import { fontWeight, RedPalette, typographyColor } from '@solo-ui/system';
+import { cssColor, fontWeight } from '@solo-ui/system';
 
 import { HIGHLIGHTS_HEIGHT, OFFSET_TOP } from '../utils/constants';
 
@@ -58,8 +58,8 @@ export const S_Counter = styled(Typography)<TypographyProps>`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: ${typographyColor.white};
+    color: ${cssColor('--badge-secondary-text')};
     font-weight: ${fontWeight.bold};
-    background-color: ${RedPalette.red5};
+    background-color: ${cssColor('--badge-secondary-bg')};
     border-radius: 8px;
 `;

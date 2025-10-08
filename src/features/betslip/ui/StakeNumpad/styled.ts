@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { GenericColors, cssColor } from '@solo-ui/system';
+import { cssColor } from '@solo-ui/system';
 
 export const S_Container = styled.div`
     padding-top: 7px;
@@ -71,10 +71,10 @@ export const S_PresetControlButton = styled.button`
     transition: all 0.2s;
     background-color: ${cssColor('--button-preset-bg')};
     color: ${cssColor('--body-text')};
-    border: 1px solid ${GenericColors.transparent};
+    border: 1px solid ${cssColor('--checkbox-generic-border')};
 
     &:hover {
-        border: 1px solid ${cssColor('--button-preset-hover-border')};
+        border: 1px solid ${cssColor('--box-secondary-border')};
         background-color: ${cssColor('--button-preset-hover-bg')};
     }
 
@@ -94,9 +94,9 @@ export const S_MaxBetControlButton = styled.button`
     line-height: 1.1;
     grid-column: 4;
     grid-row: 1;
-    border: 1px solid ${cssColor('--button-max-stake-border')};
+    border: 1px solid ${cssColor('--box-secondary-border')};
     background-color: ${cssColor('--button-max-stake-bg')};
-    color: ${cssColor('--button-max-stake-text')};
+    color: ${cssColor('--text-primary')};
 
     &:disabled {
         opacity: 0.5;

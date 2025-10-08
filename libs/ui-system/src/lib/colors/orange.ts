@@ -9,4 +9,5 @@ export const orange: PartialShades = {
     700: '#933819',
     800: '#F48050',
     900: '#FBDFD3',
+    A100: '#32252B',
 };

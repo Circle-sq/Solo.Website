@@ -52,7 +52,7 @@ export const S_RadioButton = styled.span<{ active: boolean }>`
         margin-right: 5px;
         transition: 100ms ease-in;
         border-radius: 50%;
-        background-color: ${cssColor('--radio-bg')};
+        background-color: ${cssColor('--radio-secondary-bg')};
         border: 2px solid ${cssColor('--radio-border')};
         height: 18px;
         width: 18px;

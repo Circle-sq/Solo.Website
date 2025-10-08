@@ -71,13 +71,6 @@ export const S_ButtonClose = styled(Button)`
     }
 `;
 
-export const S_Option_Subtitle = styled.div`
-    font-size: 12px;
-    line-height: 1;
-    margin: -8px 0 16px 24px;
-    color: ${cssColor('--text-success')};
-`;
-
 export const S_Gap = styled.div`
     margin-bottom: 8px;
 `;

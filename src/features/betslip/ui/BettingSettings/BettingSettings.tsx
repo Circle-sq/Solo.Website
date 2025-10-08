@@ -11,15 +11,7 @@ import RadioButton from 'src/ui/common/RadioButton/RadioButton';
 
 import { closeBettingSettingsPopupTask } from '../../store/tasks/betslip';
 
-import {
-    S_BettingSettings,
-    S_BettingSettingsContent,
-    S_ButtonClose,
-    S_Gap,
-    S_Header,
-    S_Option_Subtitle,
-    S_Options,
-} from './styled';
+import { S_BettingSettings, S_BettingSettingsContent, S_ButtonClose, S_Gap, S_Header, S_Options } from './styled';
 
 const BettingSettings = () => {
     const oddsUpdate = useAtomValue(oddsUpdateSelector);
@@ -47,12 +39,7 @@ const BettingSettings = () => {
                         label={<I18n langKey='betslip.settings.accept-odds' defaultText='Accept any odds' />}
                         onChangeValue={() => changeBetslipSettings({ oddsUpdate: BetslipOdds.AcceptOdds })}
                     />
-                    <S_Option_Subtitle>
-                        <I18n
-                            langKey='betslip.settings.accept-odds-note'
-                            defaultText='Fastest live betting experience'
-                        />
-                    </S_Option_Subtitle>
+                    <S_Gap />
 
                     <RadioButton
                         name='bettingSettings'

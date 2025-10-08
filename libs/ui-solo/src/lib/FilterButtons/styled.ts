@@ -25,11 +25,11 @@ export const S_FilterRadioItem = styled.label`
         position: absolute;
 
         &:checked + span {
-            background-color: ${cssColor('--button-contained-primary-active-bg')};
+            background-color: ${cssColor('--button-default-bg')};
             color: ${cssColor('--body-text')};
 
             &:hover {
-                background-color: ${cssColor('--button-contained-primary-active-bg')};
+                background-color: ${cssColor('--button-default-bg')};
             }
         }
     }
@@ -47,8 +47,8 @@ export const S_FilterRadioItem = styled.label`
         text-transform: uppercase;
         font-weight: ${fontWeight.medium};
         background-color: ${cssColor('--button-outlined-primary-bg')};
-        border: 1px solid ${cssColor('--button-outlined-primary-border')};
-        color: ${cssColor('--button-outlined-primary-text')};
+        border: 1px solid ${cssColor('--button-default-border')};
+        color: ${cssColor('--text-primary')};
 
         &:hover {
             background-color: ${cssColor('--button-outlined-primary-hover-bg')};

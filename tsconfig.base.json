@@ -37,7 +37,6 @@
       "@solo-features/subscription-manager/*": ["libs/solo-feature-subscription-manager/*"],
       "@solo-hooks": ["src/common/hooks/index.ts"],
       "@solo-media/*": ["src/features/media/*"],
-      "@solo-sb-assets/*": ["libs/assets-shared/*"],
       "@solo-tests/*": ["tests/*"],
       "@solo-ui-atoms/asian": ["libs/asian-view/ui-atoms/src/index.ts"],
       "@solo-ui/icons/*": ["libs/ui-icons-svg/*"],
