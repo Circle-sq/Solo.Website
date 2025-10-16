@@ -25,7 +25,7 @@ export const ResetFiltersLink = styled.a`
     font-size: 16px;
     margin-top: 12px;
     cursor: pointer;
-    color: ${cssColor('--text-brand-color')};
+    color: ${cssColor('--text-primary')};
     text-decoration: underline;
     font-weight: ${fontWeight.bold};
 

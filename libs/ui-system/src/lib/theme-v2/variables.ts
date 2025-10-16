@@ -338,8 +338,8 @@ export const variables = {
     },
 
     '--button-DatePicker-today-border': {
-        blue: 'lightBlue.200',
-        neon: 'lightBlue.200',
+        blue: 'orange.300',
+        neon: 'orange.300',
         contrast: 'contrastRed.200',
     },
     '--button-DatePicker-arrow-bg-hover': {
@@ -348,13 +348,13 @@ export const variables = {
         contrast: 'contrastRed.300:20%',
     },
     '--button-DatePicker-bg-selected': {
-        blue: 'lightBlue.300',
-        neon: 'lightBlue.300',
+        blue: 'orange.300',
+        neon: 'orange.300',
         contrast: 'contrastRed.300',
     },
     '--button-DatePicker-bg-hover': {
-        blue: 'lightBlue.400:30%',
-        neon: 'lightBlue.400:30%',
+        blue: 'orange.A100',
+        neon: 'orange.A100',
         contrast: 'contrastRed.400:30%',
     },
     '--button-close-bg': {
@@ -653,8 +653,8 @@ export const variables = {
         contrast: 'contrastRed.900',
     },
     '--chip-info-bg': {
-        blue: 'lightBlue.700',
-        neon: 'lightBlue.700',
+        blue: 'orange.300',
+        neon: 'orange.300',
         contrast: 'contrastRed.700',
     },
     '--chip-small-bg': {
@@ -790,11 +790,6 @@ export const variables = {
         blue: 'orange.200',
         neon: 'orange.200',
         contrast: 'contrastRed.800',
-    },
-    '--link-active-border': {
-        blue: 'lightBlue.500',
-        neon: 'lightBlue.200',
-        contrast: 'contrastRed.200',
     },
 
     '--card-marquee-bg': {
@@ -1568,11 +1563,6 @@ export const variables = {
         blue: 'orange.300',
         neon: 'orange.300',
         contrast: 'white',
-    },
-    '--text-brand-color': {
-        blue: 'lightBlue.400',
-        neon: 'lightBlue.500',
-        contrast: 'contrastRed.500',
     },
     '--text-success': {
         blue: 'green.500',

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { GenericColors, GreyPalette, LightBluePalette, cssColor } from '@solo-ui/system';
+import { GenericColors, GreyPalette, cssColor } from '@solo-ui/system';
 
 export const S_Loading = styled.div`
     position: fixed;
@@ -52,7 +52,7 @@ export const S_LoadingPlaceholder = styled.span`
     margin: auto;
     outline: 1px solid hsla(0, 0%, 100%, 0);
     border: 0.5rem solid ${GreyPalette.grey9};
-    border-left-color: ${LightBluePalette.lightBlue6};
+    border-left-color: ${cssColor('--box-secondary-border')};
     margin-top: 2rem;
 
     @-webkit-keyframes spinplaceholder {

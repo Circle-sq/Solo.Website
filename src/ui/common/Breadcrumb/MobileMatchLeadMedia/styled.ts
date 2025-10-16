@@ -29,7 +29,7 @@ export const S_EventActionLink = styled(Link)<{ isActive?: boolean; disabled?: b
         right: 0;
         left: 0;
         bottom: 0;
-        background-color: ${cssColor('--link-active-border')};
+        background-color: ${cssColor('--box-secondary-border')};
     }
 
     ${(props): string => {
