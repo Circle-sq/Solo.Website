@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { GreyPalette, LightBluePalette } from '@solo-ui/system';
+import { GreyPalette, cssColor } from '@solo-ui/system';
 
 export const Switch = styled.label`
     position: relative;
@@ -42,7 +42,7 @@ export const Slider = styled.span<{ checked: boolean }>`
             background-color: ${GreyPalette.grey2};
             &::before {
                 box-shadow: 0px 1px 4px ${GreyPalette.grey2};
-                background-color: ${LightBluePalette.lightBlue6};
+                background-color: ${cssColor('--box-tertiary-pale-bg')};
             }
         `;
         style +=

@@ -68,6 +68,10 @@ export function formatStrAmount(amount: string, separator: string | undefined = 
             return `${numberPart}.00`;
         }
 
+        if (decimalPart.length === 1) {
+            return `${numberPart}.${decimalPart}0`;
+        }
+
         return amount;
     };
 

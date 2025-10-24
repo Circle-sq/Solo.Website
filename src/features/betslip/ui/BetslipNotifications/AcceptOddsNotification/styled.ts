@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { fontWeight, GenericColors, LightBluePalette } from '@solo-ui/system';
+import { cssColor, fontWeight, GenericColors } from '@solo-ui/system';
 
 export const S_AcceptOddsNotification = styled.div`
     padding: 15px 9px;
@@ -10,7 +10,7 @@ export const S_AcceptOddsNotification = styled.div`
     align-items: center;
     border-radius: 5px;
     font-weight: ${fontWeight.bold};
-    background: linear-gradient(90deg, ${LightBluePalette.lightBlue5} 0%, ${LightBluePalette.lightBlue6} 100%);
+    background: linear-gradient(90deg, ${cssColor('--box-tertiary-bg')} 0%, ${cssColor('--box-tertiary-pale-bg')} 100%);
 `;
 
 export const S_FastTimeIcon = styled.div`
@@ -21,7 +21,7 @@ export const S_FastTimeIcon = styled.div`
 export const S_NotificationText = styled.span`
     display: block;
     font-size: 12px;
-    color: ${LightBluePalette.lightBlue12};
+    color: ${cssColor('--text-primary-pale')};
 `;
 
 export const S_NotificationHeader = styled.span`

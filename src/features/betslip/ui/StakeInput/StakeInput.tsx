@@ -4,7 +4,7 @@ import type { NumberFormatValues } from 'react-number-format';
 import { NumericFormat } from 'react-number-format';
 import { useRecoilCallback } from 'recoil';
 
-import useFetchWalletConfigs, { CurrencyType } from '@solo-betslip/ui/StakeInput/hooks/useFetchWalletConfigs';
+import useFetchWalletConfigs from '@solo-betslip/ui/StakeInput/hooks/useFetchWalletConfigs';
 import { StakeInput as StakeInputUI } from 'libs/ui-solo/src';
 import { useAppStateContext } from 'src/appState/AppState';
 import { useAtomValue } from 'jotai';
@@ -28,7 +28,7 @@ export interface Props {
 
 const StakeInput = ({ value, isDisabled, isFreeBet = false, hasError = false, numpadId, onChange }: Props) => {
     const userCurrency = useAtomValue(currencySelector);
-    const { currencyDecimalPrecision, currencyType } = useFetchWalletConfigs(userCurrency as Currency);
+    const { currencyDecimalPrecision } = useFetchWalletConfigs(userCurrency as Currency);
     const inputRef = createRef<HTMLInputElement>();
 
     const closeNumpad = useRecoilCallback(closeNumpadTask, []);
@@ -62,9 +62,6 @@ const StakeInput = ({ value, isDisabled, isFreeBet = false, hasError = false, nu
         }
     };
 
-    const allowedInput = ({ value }: NumberFormatValues) =>
-        !(currencyType !== CurrencyType.Crypto && value.startsWith('0')) && !value.startsWith('.');
-
     const styles = isFreeBet ? [S_FreeBetStakeInput()] : [];
 
     return (
@@ -81,7 +78,6 @@ const StakeInput = ({ value, isDisabled, isFreeBet = false, hasError = false, nu
             allowNegative={false}
             thousandSeparator
             onValueChange={onValueChange}
-            isAllowed={allowedInput}
             error={hasError}
             onClick={() => openNumpad(numpadId)}
         />

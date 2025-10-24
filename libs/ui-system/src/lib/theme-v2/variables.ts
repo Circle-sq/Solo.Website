@@ -118,6 +118,16 @@ export const variables = {
         neon: 'orange.300',
         contrast: 'contrastRed.300',
     },
+    '--box-tertiary-bg': {
+        blue: 'orange.300',
+        neon: 'orange.300',
+        contrast: 'contrastRed.300',
+    },
+    '--box-tertiary-pale-bg': {
+        blue: 'orange.300:80%',
+        neon: 'orange.300:80%',
+        contrast: 'contrastRed.300:80%',
+    },
     '--box-default-shadow': {
         blue: 'darkBlue.900',
         neon: 'debugMint.900',
@@ -1538,6 +1548,11 @@ export const variables = {
         blue: 'grey.300',
         neon: 'grey.300',
         contrast: 'contrastRed.300',
+    },
+    '--text-primary-pale': {
+        blue: 'orange.50',
+        neon: 'orange.50',
+        contrast: 'contrastRed.50',
     },
     '--text-quaternary': {
         blue: 'grey.400',

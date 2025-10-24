@@ -1,6 +1,6 @@
 import userEvent from '@testing-library/user-event';
 import { http, HttpResponse } from 'msw';
-import type { ReactNode } from 'react';
+import { useState, type ReactNode } from 'react';
 import { vi } from 'vitest';
 
 import { isAuthenticatedAtom, userDataAtom } from '@solo-account/store/atoms';
@@ -56,6 +56,20 @@ server.use(...handlers);
 const sleep = async (ms: number): Promise<void> => new Promise((r) => setTimeout(r, ms));
 const delay = 150;
 
+const WrapperStakeInput = ({
+    value,
+    numpadId,
+    isDisabled,
+}: {
+    value: string | number;
+    numpadId: string;
+    isDisabled: boolean;
+}) => {
+    const [stakeValue, setValue] = useState(value);
+
+    return <StakeInput value={stakeValue} isDisabled={isDisabled} onChange={setValue} numpadId={numpadId} />;
+};
+
 const render = (userData: UserData, children: ReactNode) =>
     renderWithAppWrapper(
         <MockStoreProvider
@@ -83,10 +97,7 @@ describe('StakeInput', () => {
     } as UserData;
 
     it('should validate input value and call showNumpadSpy and call on change property in multiple tab', async () => {
-        const { findByTestId } = render(
-            accountState,
-            <StakeInput value='' isDisabled={false} onChange={onChangeSpy} numpadId='1' />,
-        );
+        const { findByTestId } = render(accountState, <WrapperStakeInput value='' isDisabled={false} numpadId='1' />);
         const input = await findByTestId(testId);
 
         await userEvent.type(input, '09a0bc.9.90');
@@ -95,14 +106,10 @@ describe('StakeInput', () => {
         await userEvent.clear(input);
         await userEvent.type(input, '10');
         expect(input).toHaveValue('10');
-        expect(onChangeSpy).toHaveBeenCalled();
     });
 
     it('should validate input value in single tab', async () => {
-        const { findByTestId } = render(
-            accountState,
-            <StakeInput value='' isDisabled={false} onChange={onChangeSpy} numpadId='1' />,
-        );
+        const { findByTestId } = render(accountState, <WrapperStakeInput value='' isDisabled={false} numpadId='1' />);
         const input = await findByTestId(testId);
 
         await userEvent.type(input, '001z0qc.2.10');
