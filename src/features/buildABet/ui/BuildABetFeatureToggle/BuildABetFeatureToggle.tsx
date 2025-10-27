@@ -5,7 +5,6 @@ import { useSetRecoilState } from 'recoil';
 import { useBuildABetState } from '@solo-buildABet/hooks/useBuildABetState';
 import { useToggleBuildABet } from '@solo-buildABet/hooks/useToggleBuildABet';
 import { enabledBuildABetIdsAtom } from '@solo-buildABet/store/atoms';
-import { BuildABetIcon } from '@solo-buildABet/ui';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { removeId } from 'src/common/recoil/updaters';
@@ -13,7 +12,6 @@ import useMatchCardMarkets from 'src/ui/events/hooks/useMatchCardMarkets';
 
 import {
     S_BuildABetFeatureToggle,
-    S_BuildABetIcon,
     S_BuildABetLabel,
     S_BuildABetToggleLabel,
     S_Input,
@@ -70,10 +68,6 @@ const BuildABetFeatureToggle = ({ eventId }: { eventId: number }) => {
 
     return (
         <S_BuildABetFeatureToggle checked={isEnabled}>
-            <S_BuildABetIcon>
-                <BuildABetIcon />
-            </S_BuildABetIcon>
-
             <S_BuildABetToggleLabel>
                 <S_BuildABetLabel>{label}</S_BuildABetLabel>
             </S_BuildABetToggleLabel>

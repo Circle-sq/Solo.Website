@@ -14,17 +14,12 @@ export const S_BuildABetFeatureToggle = styled.div<{ checked: boolean }>`
     background-color: ${({ checked }) => (checked ? cssColor('--toggle-active-bg') : cssColor('--toggle-default-bg'))};
 `;
 
-export const S_BuildABetIcon = styled.div`
-    margin: 5px 8px 0 0;
-    text-align: center;
-`;
-
 export const S_BuildABetLabel = styled.span`
     display: block;
     white-space: nowrap;
     font-size: 13px;
     line-height: 1.4;
-    color: ${cssColor('--text-warning-color')};
+    color: ${cssColor('--text-primary')};
     margin-right: 10px;
     user-select: none;
     font-weight: ${fontWeight.semibold};

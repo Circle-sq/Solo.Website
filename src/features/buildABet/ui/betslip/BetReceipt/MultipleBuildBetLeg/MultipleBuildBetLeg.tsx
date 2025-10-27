@@ -4,11 +4,10 @@ import { observer } from 'mobx-react-lite';
 
 import { oddsFormatSelector } from '@solo-account/store/selectors';
 import type { PlacedBuildABetLeg } from '@solo-betslip/api/types/placedBet';
-import { BuildABetIcon, BuildABetLeg } from '@solo-buildABet/ui';
+import { BuildABetLeg } from '@solo-buildABet/ui';
 
 import { useAppStateContext } from 'src/appState/AppState';
 import { getOddsFormatPrice } from 'src/utils/common';
-import { BAB_ICON_SIZES } from 'src/utils/constants';
 import { formatDecimalPart } from 'src/utils/format';
 
 import {
@@ -17,11 +16,8 @@ import {
     S_BuildABetEventName,
     S_BuildABetSelection,
     S_BuildABetSelectionOdd,
-    S_IconWrapper,
     TextWrapper,
 } from '../styled';
-
-const { width, height } = BAB_ICON_SIZES.xs;
 
 const MultipleBuildBetLeg = ({ leg }: { leg: PlacedBuildABetLeg }) => {
     const { event: legEvent, price, marketsAndSelections } = leg;
@@ -43,10 +39,6 @@ const MultipleBuildBetLeg = ({ leg }: { leg: PlacedBuildABetLeg }) => {
                 <BuildABetLeg marketsAndSelections={marketsAndSelections} />
 
                 <S_BuildABetEventName>
-                    <S_IconWrapper>
-                        <BuildABetIcon width={width} height={height} />
-                    </S_IconWrapper>
-
                     <TextWrapper>{eventName}</TextWrapper>
                 </S_BuildABetEventName>
             </S_BuildABetContent>

@@ -1,4 +1,3 @@
-import { BuildABetIcon } from '@solo-buildABet/ui';
 import { S_BuildABetHeaderTitle } from '@solo-buildABet/ui/myBet/styled';
 
 import type { BetStatus } from 'src/common/enums';
@@ -15,7 +14,6 @@ export const BuildABetHeader = ({ leg, betStatus }: { leg: MyBuildABetLeg; betSt
     return (
         <S_BetHeaderRow>
             <S_BuildABetHeaderTitle data-testid='headerTitle'>
-                <BuildABetIcon />
                 <I18n langKey='header.buildabet.label' defaultText='build a bet' />
             </S_BuildABetHeaderTitle>
 

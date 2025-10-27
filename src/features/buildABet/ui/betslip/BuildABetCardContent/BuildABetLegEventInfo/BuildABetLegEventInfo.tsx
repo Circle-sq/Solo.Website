@@ -4,7 +4,6 @@ import { useRecoilValue } from 'recoil';
 import type { Leg } from '@solo-betslip/api/types/leg';
 import useSelectionState from '@solo-betslip/hooks/useSelectionState';
 import { isSingleTabSelector } from '@solo-betslip/store/selectors/betslipTab';
-import { BuildABetIcon } from '@solo-buildABet/ui';
 
 import { I18n } from 'src/ui/common/Language/I18n';
 
@@ -19,7 +18,7 @@ const BuildABetLegEventInfo = ({ leg }: { leg: Leg }) => {
         <S_CardEventWrapper isSingleTab={isSingleTab}>
             {!isSingleTab && (
                 <S_BuildABetIconWrapper>
-                    <BuildABetIcon className='build-a-bet-icon' />
+                    <I18n langKey='header.buildabet.label' defaultText='Build A Bet' />
                 </S_BuildABetIconWrapper>
             )}
 

@@ -70,10 +70,6 @@ export const S_BuildABetSelectionOdd = styled.div`
     justify-content: center;
 `;
 
-export const S_IconWrapper = styled.div`
-    align-self: flex-start;
-`;
-
 export const TextWrapper = styled.div``;
 
 export const S_SingleBuildABetHeader = styled.div`

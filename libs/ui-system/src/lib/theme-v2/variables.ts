@@ -1146,7 +1146,7 @@ export const variables = {
         contrast: 'contrastRed.800',
     },
     '--toggle-active-bg': {
-        blue: 'yellow.600',
+        blue: 'orange.A100',
         neon: 'ioDarkBlue.800',
         contrast: 'contrastRed.600',
     },
@@ -1173,8 +1173,8 @@ export const variables = {
         contrast: 'contrastRed.500',
     },
     '--switch-warning-active-bg': {
-        blue: 'yellow.500:50%',
-        neon: 'yellow.500:50%',
+        blue: 'orange.600:80%',
+        neon: 'orange.600:80%',
         contrast: 'contrastRed.700:50%',
     },
     '--switch-thumb-warning-bg': {
@@ -1183,8 +1183,8 @@ export const variables = {
         contrast: 'contrastRed.300',
     },
     '--switch-thumb-warning-active-bg': {
-        blue: 'yellow.300',
-        neon: 'yellow.300',
+        blue: 'orange.300',
+        neon: 'orange.300',
         contrast: 'contrastRed.900',
     },
 

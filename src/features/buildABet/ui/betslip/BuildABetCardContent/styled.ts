@@ -47,13 +47,16 @@ export const S_CardEventWrapper = styled.div<{ isSingleTab?: boolean }>`
     display: flex;
     align-items: center;
     margin-top: 15px;
+    justify-content: space-between;
 `;
 
 export const S_BuildABetIconWrapper = styled.div`
-    width: 20px;
-    height: 16px;
     display: flex;
-    align-items: center;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: ${cssColor('--text-primary')};
+    font-style: italic;
+    font-weight: 900;
     margin-right: 5px;
 `;
 
