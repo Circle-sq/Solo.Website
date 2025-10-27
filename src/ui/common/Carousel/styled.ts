@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { breakpoints, GenericColors, GreyPalette, DarkBluePalette, Opacities, cssColor } from '@solo-ui/system';
+import { breakpoints, GenericColors, GreyPalette, DarkBluePalette, Opacities } from '@solo-ui/system';
 
 import { Image, SlideAnchor } from '../../content/Banners/components/styled';
 
@@ -17,12 +17,6 @@ export interface NavigationButton {
 export interface ContainerProps {
     showButtonsOnHover?: boolean;
     isNav?: boolean;
-}
-
-export interface ProgressBarProps {
-    duration: number;
-    isPaused: boolean;
-    isReset: boolean;
 }
 
 export const S_NavigationButton = styled.button<NavigationButton>`
@@ -339,52 +333,6 @@ export const SwiperContainer = styled.div<ContainerProps>`
             }
         `
             : '';
-    }}
-`;
-
-export const S_ProgressBar = styled.div<ProgressBarProps>`
-    border-radius: 20px;
-    overflow: hidden;
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    z-index: 10;
-    background-color: ${cssColor('--progressbar-first-bg')};
-
-    &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        width: 0;
-        border-radius: 20px;
-    }
-
-    @keyframes slide-progress {
-        from {
-            width: 0;
-        }
-        to {
-            width: 100%;
-        }
-    }
-
-    ${(props): string => {
-        const { duration, isPaused, isReset } = props;
-
-        return `
-            &:after {
-                background-color: ${cssColor('--progressbar-second-bg')};
-                animation: slide-progress ${duration}s linear 1;
-                ${isReset ? 'animation: none' : ''}
-                animation-play-state: ${isPaused ? 'paused' : 'running'};
-            }
-        `;
     }}
 `;
 

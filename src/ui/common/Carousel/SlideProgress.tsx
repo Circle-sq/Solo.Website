@@ -1,20 +1,17 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import type { Swiper } from 'swiper/types';
 
 import useTimer, { TimerStatus } from 'src/utils/hooks/useTimer';
-import { S_ProgressBar } from './styled';
 import { NUMBERS } from 'src/utils/constants';
 
 interface Props {
     swiperInstance: Swiper;
     delay: number;
-    transition: number;
+    transition?: number;
     isPaused: boolean;
 }
 
-const SlideProgress = ({ swiperInstance, delay, transition, isPaused }: Props) => {
-    const [isReset, setIsReset] = useState(false);
-
+const SlideProgress = ({ swiperInstance, delay, isPaused }: Props) => {
     const { status, start, pause, reset } = useTimer({
         step: 1,
         endTime: 100,
@@ -31,22 +28,12 @@ const SlideProgress = ({ swiperInstance, delay, transition, isPaused }: Props) =
     }, [status, start]);
 
     useEffect(() => {
-        swiperInstance.on('slideChangeTransitionStart', () => {
-            setIsReset(true);
-        });
-
         swiperInstance.on('slideChangeTransitionEnd', () => {
             reset();
-            setIsReset(false);
         });
 
         swiperInstance.on('touchMove', () => {
-            setIsReset(true);
             reset();
-        });
-
-        swiperInstance.on('sliderMove', () => {
-            setIsReset(false);
         });
 
         return () => {
@@ -65,9 +52,7 @@ const SlideProgress = ({ swiperInstance, delay, transition, isPaused }: Props) =
         }
     }, [isPaused, status, start, pause]);
 
-    const duration = (delay + transition) / NUMBERS.thousand;
-
-    return <S_ProgressBar duration={duration} isPaused={isPaused} isReset={isReset} />;
+    return <></>;
 };
 
 export default SlideProgress;
